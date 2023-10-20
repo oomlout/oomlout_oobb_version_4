@@ -2,12 +2,10 @@ from oobb_get_items_base import *
 import oobb
 import os
 import json
-#import oomB
+import copy
+
 
 # base functions
-
-
-
 def get_default_thing(**kwargs):
 
     thing = {}
@@ -63,7 +61,11 @@ def get_default_thing(**kwargs):
             if deets[var]["value"] != "":
                 id += deets[var]["str"]
     id = id.replace(".","d")
-    print(id)
+    #print(id)
+    extra_test = str(kwargs.get("extra", ""))
+    if "servo_standard" in extra_test:
+        pass
+
     thing.update({"id": id})
     thing.update({"type": f"{type}"})
     try:
@@ -92,8 +94,56 @@ def get_default_thing(**kwargs):
     except:
         pass
     thing.update({"components": []})
+    thing.update({"components_string": []})
+
 
     return thing
+
+
+
+def get_comment(comment, type="p", **kwargs):
+    kwargs["comment"] = comment
+    kwargs["type"] = type
+    m = kwargs.get("m", "*")
+    pos = kwargs.get("pos", [0,0,0])
+    pos = copy.deepcopy(pos)
+    line_length = kwargs.get("line_length", 50)
+    shift_line = 7
+    pos[1] = pos[1] + shift_line
+    return_value = []
+
+    #add \n to comment every line_length characters if no \n
+    if "\n" not in comment:
+        comment = "\n".join([comment[i:i+line_length] for i in range(0, len(comment), line_length)])
+    
+
+    #split comment by \n
+    comment_list = comment.split("\n")
+    
+    pos_line = copy.deepcopy(pos) 
+    # move y up line count shift_line
+    pos_line[1] = pos_line[1] + ((len(comment_list)-1) * shift_line)
+    # add COMMENT to element 0
+    comment_list[0] = f"COMMENT {comment_list[0]}"
+    for comment in comment_list:
+        p3 = copy.deepcopy(kwargs)
+        p3["s"] = "text"
+        p3["text"] = comment
+        p3['depth'] = 1
+        p3["pos"] = copy.deepcopy(pos_line)
+        p3["size"] = 4.5
+        p3["center"] = True
+        p3["m"] = m
+        p3["color"] = "gray"
+        p3["font"] = "Arial:style=Bold"
+
+        if comment != "":
+            return_value.extend(oobb_base.oobb_easy(**p3))
+            pos_line[1] = pos_line[1] - shift_line
+    
+    return return_value
+    
+
 
 def get_default_thing_old_1(**kwargs):
     ######################## old #########################
@@ -186,6 +236,7 @@ def get_default_thing_old_1(**kwargs):
         else:
             deets[var]["str"] = f"_{deets[var]['value']}"
 
+
     id = kwargs.get("size", "")
     for var in deets:
         if deets[var]["value"] != "":
@@ -224,16 +275,13 @@ def get_default_thing_old_1(**kwargs):
 
     return thing
 
-
 def set_variable(name, value, mode=""):
     if mode != "":
         name = name + "_" + mode
     oobb.variables.update({name: value})
 
-
 def gv(name, mode=""):
     return get_variable(name, mode)
-
 
 def get_variable(name, mode=""):
     if mode != "":
@@ -241,7 +289,6 @@ def get_variable(name, mode=""):
     rv = oobb.variables[name]
     # print(f'{name} {rv}')
     return rv
-
 
 def get_hole_pos(x, y, wid, hei, size="oobb"):
     sp = gv("osp")
@@ -253,10 +300,8 @@ def get_hole_pos(x, y, wid, hei, size="oobb"):
     y_mm = -(hei-1) * sp / 2 + (y - 1) * sp
     return x_mm, y_mm
 
-
 def add_thing(thing):
     oobb.things.update({thing["id"]: thing})
-
 
 def dump(mode="json"):
     print(f"dumping {mode}")
@@ -275,7 +320,6 @@ def dump(mode="json"):
             with open(filename, 'w') as outfile:
                 json.dump(oobb.things[thing], outfile, indent=4)
 
-
 def load(mode="json"):
     if mode == "json":
         with open('things.json') as json_file:
@@ -291,7 +335,6 @@ def load(mode="json"):
             except FileNotFoundError:
                 pass
 
-
 def build_things(save_type="none", overwrite=True, filter=""):
     #turn filter into an array if its a string
     if type(filter) == str:
@@ -301,7 +344,6 @@ def build_things(save_type="none", overwrite=True, filter=""):
             if f in thing:
                 print(f'building {thing}')
                 build_thing(thing, save_type, overwrite)
-
 
 def build_thing(thing, save_type="all", overwrite=True):
     modes = ["3dpr", "laser", "true"]
@@ -314,8 +356,14 @@ def build_thing(thing, save_type="all", overwrite=True):
         start = 1.5
         if layers != 1:
             start = 1.5 - (layers / 2)*3
-        opsc.opsc_make_object(f'things/{thing}/{mode}.scad', oobb.things[thing]["components"], mode=mode,
-                              save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)
+        opsc.opsc_make_object(f'things/{thing}/{mode}.scad', oobb.things[thing]["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)
+        # make the description file
+        with open(f'things/{thing}/{mode}.txt', 'w') as outfile:
+            component_strings = oobb.things[thing]["components_string"]
+            for component in component_strings:
+                outfile.write(f'{component}\n')
+            
+
 
 def build_thing_filename(thing, save_type="all", overwrite=True, filename="", depth=3, height = 200, render=True):
     modes = ["3dpr", "laser", "true"]
@@ -330,10 +378,171 @@ def build_thing_filename(thing, save_type="all", overwrite=True, filename="", de
         opsc.opsc_make_object(f'{filename}{mode}.scad', thing, mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start, render=render)
 
 
+def oobb_easy_get_string(**kwargs):
+    return_value = ""
+    p3 = copy.deepcopy(kwargs)
+    
+    if p3["pos"] == [0,0,0]:
+        p3.pop("pos","")    
+    p3.pop("m","")
+
+    order = ["shape", "type","radius_name", "depth", "pos"]
+    value_pairs = []
+    for key in order:
+        if key in p3:
+            value_pairs.append([key, p3[key]])        
+    for key in p3:
+        if key not in order:
+            value_pairs.append([key, p3[key]])
+
+    for pair in value_pairs:
+        key = pair[0]
+        value = pair[1]
+        value = str(p3[key])
+            #remove [ , and ]
+        value = value.replace("[", "")
+        value = value.replace("]", "")
+        value = value.replace(",", "_")
+        value = value.replace(" ", "")
+        if value != "":
+            return_value += f'{value}_{key}_'
+        
+    return return_value[:-1].lower()
+
+def oobb_easy_string(**kwargs ):
+    return oobb_easy(**oobb_easy_string_params(**kwargs))
+
+def oobb_easy_string_params(**kwargs):
+    item = kwargs.get("item", "")
+    #example
+    #oobb_screw_socket_cap_m3_12_mm_depth
+    input_string = item
+
+    variable_names = ["_shape", "_radius_name", "_depth", "_pos"]
+
+    result_dict = {}
+
+    i = 0
+    while i < len(input_string):
+        for variable in variable_names:
+            if input_string.startswith(variable, i):
+                start = i
+                end = i + len(variable)
+                before = input_string[:start]
+                after = input_string[end:]
+                result_dict[variable] = {"before": before, "after": after}
+                i = end
+            
+        i += 1
+    variable_indexes = {'' : 0}
+    for variable in variable_names:
+        #get variable index
+        variable_index = input_string.find(variable)
+        #if it's in the string store it
+        if variable_index != -1:
+            variable_indexes[variable] = input_string.find(variable)
+
+    # Remove sections that pertain to other variables in the "before" section
+    for current_variable in variable_names:
+        #get the index the variable occurs at in input_string
+        index = input_string.find(current_variable)        
+        #find the variable whose index is closest to the current variable but also less
+        closest_variable = ""
+        for variable in variable_names:
+            try:
+                if variable_indexes[variable] < index and variable_indexes[variable] > variable_indexes[closest_variable]:
+                    closest_variable = variable
+            except KeyError:
+                pass # variable not in string
+            
+
+        #value is the string between the two variables
+        try:
+            value = input_string[variable_indexes[closest_variable]:index]
+            #remove the variable name
+            value = value.replace(closest_variable, "")
+            #remove leading and trailing _
+            value = value.strip("_")
+            result_dict[current_variable]["value"] = value
+        except KeyError:
+            pass
+            #print (f"KeyError: {closest_variable} not found in {variable_indexes}")
+        
+    # load into kwargs
+    p3 = copy.deepcopy(kwargs)
+    for variable in variable_names:        
+        if variable in result_dict:
+            value = result_dict[variable]["value"]
+            #remove _mm
+            value = value.replace("_mm", "")
+            p3[variable] = value
+        
+    p3["_type"] = p3.get("_type", "p")
+    
+    if "_depth" in p3:
+        p3["_depth"] = float(p3["_depth"])
+    if "_pos" in p3:
+        pos_split = p3["_pos"].split("_")
+        p3["_pos"] = [float(pos_split[0]), float(pos_split[1]), float(pos_split[2])]
+
+    #go through p3 nd remove the leading _ from each key
+    for key in list(p3.keys()):
+        if key.startswith("_"):
+            p3[key[1:]] = p3[key]
+            del p3[key]
+
+    return p3
+
+
+def append_full(thing, **kwargs):    
+    #thing = kwargs.get("thing", "")
+    comment = kwargs.get("comment", "")
+    item = kwargs.get("item", "")
+    
+
+    p3 = copy.deepcopy(kwargs)
+    if item != "": #item means we are defining by string
+        string_params = oobb_easy_string_params(item=item)
+        p3.update(string_params)
+
+    # descriptino to txt
+    ths = thing["components_string"]
+    p4 = copy.deepcopy(p3)
+    p4.pop("comment", None)
+    p4.pop("thing", None)
+    p4.pop("item", None)
+    string_to_add = oobb_easy_get_string(**p4)
+    ths.append(string_to_add)
+
+    # add item to components
+    th = thing["components"]
+
+    # comment
+    if comment != "":        
+        p4 = copy.deepcopy(p3)
+        p4.pop("type", None)
+        th.extend(get_comment(**p4))
+    
+    # description
+    p4 = copy.deepcopy(p3)
+    p4["comment"] = f"description {string_to_add}\n"
+    p4["m"] = "*"
+    th.extend(get_comment(**p4))
+
+    p4 = copy.deepcopy(p3)
+    th.extend(oobb_easy(**p4))
+    
+    
+    
+
+
+    
+    pass
+
+    
 
 def oe(**kwargs):
     return oobb_easy(**kwargs)
-
 
 def oobb_easy(**kwargs):
     
@@ -376,7 +585,6 @@ def oobb_easy(**kwargs):
             return_value = [return_value]
         return return_value
 
-
 def oobb_easy_array(**kwargs):
     for i in range(0, 3):
         kwargs["repeats"].append(1)
@@ -395,7 +603,6 @@ def oobb_easy_array(**kwargs):
                 kwargs.update({"pos": pos})
                 return_objects.append(oobb_easy(**kwargs))
     return return_objects
-
 
 #shifting routines
 def shift(thing,shift):
@@ -445,11 +652,6 @@ def inclusion(thing, include):
         else:
             pass
     return thing
-
-
-
-
-
 
 ######### convenience functions #########
 

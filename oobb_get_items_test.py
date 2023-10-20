@@ -1,120 +1,509 @@
 import copy
-from oobb_get_items_base import *
-import oobb_base as ob
+import oobb_base
 
-## no longer used
-def get_test_nut(size, depth=4.5, test="radius", difference=0.1, loose=False, **kwargs):
-    shape = f"oobb_nut"
-    radius_name = size
-    name_variable = f"nut_{test}_{size}"
-    switch_portion = test
+
+def get_test_rotation(**kwargs):
+    # default sets
+    width = 5
+    height = 5
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb")
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
     
-    wid = 3
-    hei = 3
-    return get_test(name_variable, switch_portion, difference, wid, hei, radius_name=radius_name, depth=depth, shape=shape, loose=loose, **kwargs)
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    holes = kwargs.get("holes", True)
+    both_holes = kwargs.get("both_holes", False)
+    kwargs["pos"] = pos
+    
+    
+
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 30    
+    comment_extra = ""
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    ########################### rot_y
+
+    pos_current = [300,0,0]
+    pos_shift = 30    
+    comment_extra = " rot_y : 180"
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["rot_y"] = 180
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
 
 
-def get_test(**kwargs):
-    radius = True
-    wid = 3
-    hei = 3
-    padding = kwargs.get("padding", 7)
-    zz = kwargs.get("z", 0)
-    name_variable = kwargs["name_variable"]
-    radius_name = kwargs["radius_name"]
-    difference = kwargs["difference"]
-    depth_adjust = kwargs.get("depth_adjust", 0)
-    if radius:
-        name_variable_full = f'{name_variable}_{radius_name}'
-        radius_mm = ob.gv(f'{name_variable_full}', "true")
-        wid_mm = radius_mm
-        hei_mm = radius_mm
-        wid_tot_mm = (radius_mm + padding) * wid
-        hei_tot_mm = (radius_mm + padding) * hei
+def get_test_oobb_screw_socket_cap(**kwargs):
+    # default sets
+    width = 5
+    height = 5
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb")
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    holes = kwargs.get("holes", True)
+    both_holes = kwargs.get("both_holes", False)
+    kwargs["pos"] = pos
+    
+    
 
-    # switch to making it a test for variable take variable and shape
-    # add tight and loose tolerances
-    depth = kwargs.get("depth", 3)
-    depth_item = depth + depth_adjust
-
-    shape = kwargs["shape"]
-
-    thing = ob.get_default_thing(**kwargs)
-
-    # thing.update({"description": f"test {shape} with variable {name_variable}  portion {switch_portion} difference {difference}"})
-
-    thing.update({"components": []})
-
-    # base shape
-    thing["components"].append(ob.oobb_easy(
-        type="positive", shape="rounded_rectangle", size=[wid_tot_mm, hei_tot_mm, depth]))
-
-    # get rid of size
-    kwargs.pop("size", None)
-
-    total_iterations = 0
-
-    start_x = -wid_tot_mm/2 + (wid_mm+padding)/2
-    start_y = -hei_tot_mm/2 + (hei_mm+padding)/2
-    sizes = ""
-    for w in range(wid):
-        for h in range(hei):
-            x = start_x + w * (wid_mm + padding)
-            y = start_y + h * (hei_mm + padding)
-            z = depth_item + zz
-            total_iterations += 1
-            kwargs["pos"] = [x, y, z]
-            kwargs["name_variable_full"] = name_variable_full
-            dif = (((wid * hei)+1)/2 * -difference) + \
-                (total_iterations) * difference
-
-            kwargs["difference"] = dif
-
-            # kwargs["m"] = "#"
-            p2 = copy.deepcopy(kwargs)
-            depth2 = p2.get("depth2", None)
-            if depth2 != None:
-                #shift pos z down depth2
-                p2["pos"][2] -= depth2
-
-            p2.update({"depth": depth2})
-            p2.update({"m": "#"})
-            rv = get_test_item(**p2)
-            sizes += f"total_itterations: {total_iterations} size: {rv[1]}\n"
-            thing["components"].extend(rv[0])
-            #insert holes for marking 0 point and direction
-            if total_iterations == 1 or total_iterations == 2:
-                p2 = copy.deepcopy(kwargs)
-                #set pos z to 0
-                p2["pos"][2] = -125
-                p2.pop("depth")
-                p2["shape"] = "oobb_hole"
-                p2["radius_name"] = "m1d5"
-                p2["type"] = "n"
-                #p2["m"]= "#"
-                thing["components"].extend(ob.oobb_easy(**p2))
-
-    thing.update(
-        {"description": f"test {shape} with variable {name_variable}  difference {difference} \n sizes \n{sizes}"})
-
-    return thing
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 30    
+    comment_extra = ""
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    pos_current[1] += pos_shift
+    # nut
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nnut : True"
+    oobb_base.append_full(thing, **p4)
+        
+    pos_current[1] += pos_shift
+    # nut and overhang
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["overhang"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nnut : True, overhang : True"
+    oobb_base.append_full(thing, **p4)    
+     
+    pos_current[1] += pos_shift
+    # zz top
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "top"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nzz : top"
+    oobb_base.append_full(thing, **p4) 
 
 
-def get_test_item(**kwargs):
-    name_variable_full = kwargs["name_variable_full"]
-    difference = kwargs["difference"]
-    new_value = []
-    kwargs["type"] = "negative"
-    modes = ["laser", "true", "3dpr"]
-    orig_value = {}
-    for mode in modes:
-        orig_value[mode] = ob.gv(name_variable_full, mode)
-        nv = orig_value[mode] + difference
-        ob.set_variable(name_variable_full, nv, mode)
-        new_value.append(nv)
-    kwargs["m"] = ""
-    obj = ob.oobb_easy(**kwargs)
-    for mode in modes:
-        ob.set_variable(name_variable_full, orig_value[mode], mode)
+    pos_current[1] += pos_shift
+    # zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "bottom"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nzz : bottom"
+    oobb_base.append_full(thing, **p4) 
 
-    return obj, new_value
+    
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "top"
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nclearance : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nclearance : bottom"
+    oobb_base.append_full(thing, **p4) 
+    
+    pos_current[1] += pos_shift
+    # clearance_bottom
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nclearance : bottom nut : True"
+    oobb_base.append_full(thing, **p4) 
+    
+    pos_current[1] += pos_shift
+    # clearance_bottom zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["zz"] = "bottom"
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}{comment_extra}\nclearance : bottom nut : True zz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    ########################### rot_y
+
+    pos_current = [300,0,0]
+    pos_shift = 30    
+    comment_extra = " rot_y : 180"
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}\n{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["rot_y"] = 180
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    pos_current[1] += pos_shift
+    # nut
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True"
+    oobb_base.append_full(thing, **p4)
+        
+    pos_current[1] += pos_shift
+    # nut and overhang
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["overhang"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True, overhang : True"
+    oobb_base.append_full(thing, **p4)    
+     
+    pos_current[1] += pos_shift
+    # zz top
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "top"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "bottom"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "top"
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : bottom"
+    oobb_base.append_full(thing, **p4) 
+    
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : bottom nut : True"
+    oobb_base.append_full(thing, **p4) 
+
+    
+    pos_current[1] += pos_shift
+    # clearance_bottom zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["zz"] = "bottom"
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : bottom nut : True zz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    ########################### rot_y 90
+
+    pos_current = [600,0,0]
+    pos_shift = 30    
+    comment_extra = " rot_y : 90"
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}\n{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["rot_y"] = 90
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    pos_current[1] += pos_shift
+    # nut
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True"
+    oobb_base.append_full(thing, **p4)
+        
+    pos_current[1] += pos_shift
+    # nut and overhang
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["overhang"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True, overhang : True"
+    oobb_base.append_full(thing, **p4)    
+     
+    pos_current[1] += pos_shift
+    # zz top
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "top"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "bottom"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "top"
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : bottom"
+    oobb_base.append_full(thing, **p4) 
+    
+    pos_current[1] += pos_shift
+    # clearance_top
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : bottom nut : True"
+    oobb_base.append_full(thing, **p4) 
+
+    
+    pos_current[1] += pos_shift
+    # clearance_bottom zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["clearance"] = "bottom"
+    p4["zz"] = "bottom"
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nclearance : bottom nut : True zz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    ########################### rot_x 180
+
+    pos_current = [900,0,0]
+    pos_shift = 60    
+    comment_extra = " rot_x : 180"
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}\n{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["rot_x"] = 180
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    pos_current[1] += pos_shift
+    # nut
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True"
+    oobb_base.append_full(thing, **p4)
+        
+    pos_current[1] += pos_shift
+    # nut and overhang
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["overhang"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True, overhang : True"
+    oobb_base.append_full(thing, **p4)    
+     
+    pos_current[1] += pos_shift
+    # zz top
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "top"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "bottom"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    ########################### rot_x -90
+
+    pos_current = [1200,0,0]
+    pos_shift = 60    
+    comment_extra = " rot_x : -90"
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}\n{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["rot_x"] = -90
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    pos_current[1] += pos_shift
+    # nut
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True"
+    oobb_base.append_full(thing, **p4)
+        
+    pos_current[1] += pos_shift
+    # nut and overhang
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["overhang"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True, overhang : True"
+    oobb_base.append_full(thing, **p4)    
+     
+    pos_current[1] += pos_shift
+    # zz top
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "top"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "bottom"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : bottom"
+    oobb_base.append_full(thing, **p4) 
+
+    ########################### rot_x 90 rot_y 90
+
+    pos_current = [1500,0,0]
+    pos_shift = 60    
+    comment_extra = " rot_x : 90 rot_y : 90 rot_z : 90"
+    #basic     
+    
+    item = "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth"
+    p3 = copy.deepcopy(kwargs)
+    p3["comment"] = f"{item}\n{comment_extra}\n"
+    p3["pos"] = copy.deepcopy(pos_current)
+    p3["item"] = item
+    p3["rot_x"] = 90
+    p3["rot_y"] = 90
+    p3["rot_z"] = 90
+    p3["m"] = ""
+    oobb_base.append_full(thing, **p3)
+    
+    
+    pos_current[1] += pos_shift
+    # nut
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True"
+    oobb_base.append_full(thing, **p4)
+        
+    pos_current[1] += pos_shift
+    # nut and overhang
+    p4 = copy.deepcopy(p3)    
+    p4["nut"] = True
+    p4["overhang"] = True
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nnut : True, overhang : True"
+    oobb_base.append_full(thing, **p4)    
+     
+    pos_current[1] += pos_shift
+    # zz top
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "top"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : top"
+    oobb_base.append_full(thing, **p4) 
+
+
+    pos_current[1] += pos_shift
+    # zz bottom
+    p4 = copy.deepcopy(p3)    
+    p4["zz"] = "bottom"    
+    p4["pos"] = copy.deepcopy(pos_current)
+    p4["comment"] = f"{item}\n{comment_extra}\nzz : bottom"
+    oobb_base.append_full(thing, **p4) 
+    
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]

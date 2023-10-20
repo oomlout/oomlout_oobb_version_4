@@ -15,23 +15,28 @@ def make_all(filter=""):
     all_things = []
 
     for type in typs:
-        if filter in type:
-            func = globals()["get_"+type]
-            all_things.extend(func())
-            pass
+        func = globals()["get_"+type]
+        all_things.extend(func())
+
 
     for thing in all_things:
-        try:
-            func = getattr(oobb_get_items_oobb, "get_"+thing["type"])
-        except AttributeError:
+        thing2 = oobb_base.get_default_thing(**thing) # hack to get the id early
+        #print(thing2["id"])
+        #if "holder_" in thing2["id"]:
+            #wait for enter
+        #    enter = input("enter")
+        if filter in thing2["id"]:
             try:
-                func = getattr(oobb_get_items_other, "get_"+thing["type"])
-            except:
-                func = getattr(oobb_get_items_test, "get_"+thing["type"])
+                func = getattr(oobb_get_items_oobb, "get_"+thing["type"])
+            except AttributeError:
+                try:
+                    func = getattr(oobb_get_items_other, "get_"+thing["type"])
+                except:
+                    func = getattr(oobb_get_items_test, "get_"+thing["type"])
 
-        thing = func(**thing)
-        oobb_base.add_thing(thing)
-        pass
+            thing = func(**thing)
+            oobb_base.add_thing(thing)
+            pass
 
 
 # oobb makes
@@ -150,7 +155,7 @@ def get_holders(size="oobb"):
     hls.append({"type": "holder", "extra": "motor_servo_micro_01","width": 4, "height": 3, "thickness": 3, "size": size})
     
     #           standard
-    hls.append({"type": "holder", "extra": "motor_servo_standard_01","width": 5, "height": 3, "thickness": 3, "size": size})
+    hls.append({"type": "holder", "extra": "motor_servo_standard_01","width": 5, "height": 3, "thickness": 15, "size": size})
     #                 bottom    
     hls.append({"type": "holder", "extra": "motor_servo_standard_01_bottom","width": 5, "height": 3, "thickness": 55, "size": size})
 
@@ -756,18 +761,23 @@ def get_tests():
     tests = []
 
     #hole test
-    tests.append({"type": "test", "size": "test", "shape": "oobb_hole",
-                 "name_variable": "hole_radius", "radius_name": "m5", "depth": 4, "depth2":3, "difference": 0.1})
+    #tests.append({"type": "test", "size": "test", "shape": "oobb_hole","name": "hole_radius", "radius_name": "m5", "depth": 4, "depth2":3, "difference": 0.1})
 
 
     # nut test
-    tests.append({"type": "test", "size": "test", "shape": "oobb_nut",
-                 "name_variable": "nut_radius", "radius_name": "m3", "depth": 4, "difference": 0.1, "z": -3})
+    #tests.append({"type": "test", "size": "test", "shape": "oobb_nut","name": "nut_radius", "radius_name": "m3", "depth": 4, "difference": 0.1, "z": -3})
+     
+    #style = "01"
+    #tests.append({"type": "test", "size": "test", "shape": "oobb_threaded_insert", "name": f"threaded_insert_{style}_radius", "style": style, "radius_name": "m3", "depth": 7, "difference": 0.1, "hole": False})
+    #tests.append({"type": "test", "size": "test", "shape": "oobb_threaded_insert", "name": f"threaded_insert_{style}_insertion_cone", "style": style, "radius_name": "m3", "depth": 4, "difference": 0.1, "hole": False, "depth_adjust":3, "insertion_cone":True, "name":"insertion_cone", "padding":9})
 
-    style = "01"
-    tests.append({"type": "test", "size": "test", "shape": "oobb_threaded_insert", "name_variable": f"threaded_insert_{style}_radius", "style": style, "radius_name": "m3", "depth": 7, "difference": 0.1, "hole": False})
-    tests.append({"type": "test", "size": "test", "shape": "oobb_threaded_insert", "name_variable": f"threaded_insert_{style}_insertion_cone", "style": style, "radius_name": "m3", "depth": 4, "difference": 0.1, "hole": False, "depth_adjust":3, "insertion_cone":True, "name":"insertion_cone", "padding":9})
-    
+    # rotation test
+    tests.append({"type": "test", "size": "oobb", "extra": "rotation"})
+
+    # screw test
+    tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_socket_cap"})
+
+
     return tests
 
     for thing in things:
