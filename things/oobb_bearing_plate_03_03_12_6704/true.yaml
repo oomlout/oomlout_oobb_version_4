@@ -1,0 +1,181 @@
+-   depth: 12
+    height: 3.066666666666667
+    holes: false
+    pos:
+    - 0
+    - 0
+    - -6.0
+    shape: oobb_plate
+    thickness: 12
+    type: p
+    width: 3.066666666666667
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_bearing
+    thickness: 12
+    type: n
+    width: 3
+-   height: 3
+    holes: false
+    insertion_cone: false
+    inserts: true
+    pos:
+    - 7.5
+    - 0
+    - 0
+    radius_name: m3
+    shape: oobb_threaded_insert
+    slots: false
+    thickness: 12
+    type: n
+    width: 3
+-   height: 3
+    holes: false
+    insertion_cone: false
+    inserts: true
+    pos:
+    - -7.5
+    - 0
+    - 0
+    radius_name: m3
+    shape: oobb_threaded_insert
+    slots: false
+    thickness: 12
+    type: n
+    width: 3
+-   height: 3
+    holes: perimeter_miss_middle
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    shape: oobb_holes
+    thickness: 12
+    type: n
+    width: 3
+-   height: 3
+    holes: just_middle
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    shape: oobb_holes
+    thickness: 12
+    type: n
+    width: 3
+-   depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 18.0
+    - 0
+    - -6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 30.0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -18.0
+    - 0
+    - -6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 30.0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - 18.0
+    - 6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - -18.0
+    - 6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - 7.5
+    - 6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - -7.5
+    - -6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   inclusion: 3dpr
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_slice
+    type: n

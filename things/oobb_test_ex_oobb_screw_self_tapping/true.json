@@ -1,0 +1,915 @@
+[
+    {
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": ""
+    },
+    {
+        "pos": [
+            0,
+            60,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true
+    },
+    {
+        "pos": [
+            0,
+            120,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "pos": [
+            0,
+            180,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top"
+    },
+    {
+        "pos": [
+            0,
+            240,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom"
+    },
+    {
+        "pos": [
+            0,
+            300,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "nut": true
+    },
+    {
+        "pos": [
+            0,
+            360,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true
+    },
+    {
+        "pos": [
+            0,
+            420,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            0,
+            480,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "top"
+    },
+    {
+        "pos": [
+            0,
+            540,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom"
+    },
+    {
+        "pos": [
+            0,
+            600,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "nut": true
+    },
+    {
+        "pos": [
+            0,
+            660,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true
+    },
+    {
+        "pos": [
+            0,
+            720,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "top"
+    },
+    {
+        "pos": [
+            0,
+            780,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "bottom"
+    },
+    {
+        "pos": [
+            150,
+            0,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            60,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            120,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "overhang": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            180,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            240,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            300,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            360,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            420,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            480,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "top",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            540,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            600,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            660,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            720,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "top",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            150,
+            780,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "bottom",
+        "rot_y": 180
+    },
+    {
+        "pos": [
+            300,
+            0,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            60,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            120,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "overhang": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            180,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            240,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            300,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "nut": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            360,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            420,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            480,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "top",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            540,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            600,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "nut": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            660,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            720,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "top",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            300,
+            780,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "bottom",
+        "rot_y": 90
+    },
+    {
+        "pos": [
+            450,
+            0,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            60,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            120,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "nut": true,
+        "overhang": true,
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            180,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            240,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            300,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "top",
+        "nut": true,
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            360,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            420,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "zz": "bottom",
+        "nut": true,
+        "rot_y": 45,
+        "rot_x": 45
+    },
+    {
+        "pos": [
+            450,
+            480,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "top",
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            540,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            600,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": "bottom",
+        "nut": true,
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            660,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            720,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "top",
+        "rot_x": 45,
+        "rot_y": 45
+    },
+    {
+        "pos": [
+            450,
+            780,
+            0
+        ],
+        "shape": "oobb_screw_self_tapping",
+        "type": "positive",
+        "radius_name": "m3",
+        "depth": 12,
+        "comment_display": true,
+        "m": "",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
+        "nut": true,
+        "zz": "bottom",
+        "rot_x": 45,
+        "rot_y": 45
+    }
+]

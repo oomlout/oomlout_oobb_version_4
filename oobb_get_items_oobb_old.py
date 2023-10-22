@@ -2,6 +2,7 @@ from oobb_get_items_base import *
 from oobb_get_item_common import *
 import oobb_base as ob
 from oobb_get_items_oobb import *
+from oobb_get_items_oobb_old import *
 
 def get_bearing_circle(**kwargs):
     thing = ob.get_default_thing(**kwargs)
@@ -634,7 +635,7 @@ def get_circle_captive(**kwargs):
 
     return thing
 
-def get_ci_holes_center(**kwargs):
+def get_ci_holes_center(thing, **kwargs):
     th = []
     pos = kwargs.get("pos", [0, 0, 0])
     slots = kwargs.get("slots", True)
@@ -645,15 +646,13 @@ def get_ci_holes_center(**kwargs):
         a = 7.5        
         positions = [0, a, 0], [0, -a, 0]
         for pos in positions:
-            th.extend(ob.oobb_easy(t="n", s="oobb_hole",
-                    radius_name="m3", pos=pos, m=""))
+            ob.append_full(thing, t="n", s="oobb_hole", radius_name="m3", pos=pos, m="")
     # add m3 slots
     if slots:        
         a = 7.75        
         positions = [a, 0, 0], [-a, 0, 0]
         for pos in positions:
-            th.extend(ob.oobb_easy(t="n", s="oobb_slot",
-                    radius_name="m3", pos=pos, m="",w=0.5,rotZ=0)) 
+            ob.append_full(thing, t="n", s="oobb_slot", radius_name="m3", pos=pos, m="",w=0.5,rotZ=0)
     if inserts:
         a = 7.5        
         positions = [a, 0, 0], [-a, 0, 0]
@@ -664,7 +663,7 @@ def get_ci_holes_center(**kwargs):
             p3["pos"] = pos
             p3["radius_name"] = "m3"
             p3["insertion_cone"] = False
-            th.extend(ob.oobb_easy(**p3))
+            ob.append_full(thing, **p3)
     return th
 
 def get_holder_old(**kwargs):

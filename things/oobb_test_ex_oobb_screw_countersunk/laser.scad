@@ -1,0 +1,2197 @@
+$fn = 50;
+
+
+difference() {
+	union() {
+		translate(v = [0, 0, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 60, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 120, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 180, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 240, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 300, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -14.5000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 360, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 420, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 480, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 540, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 600, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 660, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 720, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [0, 780, 0]) {
+			rotate(a = [0, 0, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 0, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 60, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 120, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 180, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 240, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 300, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -14.5000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 360, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 420, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 480, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 540, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 600, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 660, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 720, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [150, 780, 0]) {
+			rotate(a = [0, 180, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 0, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 60, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 120, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 180, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 240, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 300, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -14.5000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 360, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 420, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 480, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 540, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 600, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 660, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 720, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [300, 780, 0]) {
+			rotate(a = [0, 90, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 0, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 60, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 120, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 180, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 240, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 300, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -14.5000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 360, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 420, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							linear_extrude(height = 2.5000000000) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 480, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 540, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 600, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 660, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 720, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		translate(v = [450, 780, 0]) {
+			rotate(a = [45, 45, 0]) {
+				difference() {
+					union() {
+						translate(v = [0, 0, -0.8500000000]) {
+							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						}
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12, r = 1.5000000000);
+						}
+						translate(v = [0, 0, -59.5000000000]) {
+							linear_extrude(height = 50) {
+								polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+							}
+						}
+					}
+					union();
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 67, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : True", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_60_0_pos_true_nut", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 127, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : True overhang : True", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_120_0_pos_true_nut_true_overhang", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 187, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_180_0_pos_top_zz", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 247, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottom", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_240_0_pos_bottom_zz", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 307, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : True", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_300_0_pos_top_zz_true_nut", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 367, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottom nut : True", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_360_0_pos_bottom_zz_true_nut", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 427, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : True rot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_420_0_pos_bottom_zz_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 487, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : top", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_480_0_pos_top_clearance", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 547, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottom", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_540_0_pos_bottom_clearance", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 607, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottom nut : True", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_600_0_pos_bottom_clearance_true_nut", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 667, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_660_0_pos_'top'_'bottom'_clearance_true_nut", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 727, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : top", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_720_0_pos_'top'_'bottom'_clearance_true_nut_top_zz", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 787, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : bottom", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_0_780_0_pos_'top'_'bottom'_clearance_true_nut_bottom_zz", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 7, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "rot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_0_0_pos_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 67, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : Truerot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_60_0_pos_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 127, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : True overhang : Truerot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_120_0_pos_true_nut_true_overhang_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 187, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : toprot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_180_0_pos_top_zz_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 247, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottomrot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_240_0_pos_bottom_zz_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 307, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : Truerot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_300_0_pos_top_zz_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 367, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottom nut : Truerot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_360_0_pos_bottom_zz_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 427, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : True rot_y : 180rot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_420_0_pos_bottom_zz_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 487, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : toprot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_480_0_pos_top_clearance_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 547, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottomrot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_540_0_pos_bottom_clearance_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 607, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottom nut : Truerot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_600_0_pos_bottom_clearance_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 667, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : Truerot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_660_0_pos_'top'_'bottom'_clearance_true_nut_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 727, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : toprot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_720_0_pos_'top'_'bottom'_clearance_true_nut_top_zz_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 787, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : bottomrot_y : 180", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [150, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_150_780_0_pos_'top'_'bottom'_clearance_true_nut_bottom_zz_180_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 7, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "rot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_0_0_pos_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 67, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : Truerot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_60_0_pos_true_nut_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 127, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : True overhang : Truerot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_120_0_pos_true_nut_true_overhang_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 187, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : toprot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_180_0_pos_top_zz_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 247, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottomrot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_240_0_pos_bottom_zz_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 307, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : Truerot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_300_0_pos_top_zz_true_nut_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 367, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottom nut : Truerot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_360_0_pos_bottom_zz_true_nut_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 427, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : True rot_y : 180rot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_420_0_pos_bottom_zz_true_nut_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 487, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : toprot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_480_0_pos_top_clearance_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 547, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottomrot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_540_0_pos_bottom_clearance_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 607, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottom nut : Truerot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_600_0_pos_bottom_clearance_true_nut_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 667, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : Truerot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_660_0_pos_'top'_'bottom'_clearance_true_nut_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 727, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : toprot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_720_0_pos_'top'_'bottom'_clearance_true_nut_top_zz_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 787, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : bottomrot_y : 90", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [300, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_300_780_0_pos_'top'_'bottom'_clearance_true_nut_bottom_zz_90_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 7, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "rot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_0_0_pos_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 67, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : Truerot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 74, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_60_0_pos_true_nut_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 127, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "nut : True overhang : Truerot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 134, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_120_0_pos_true_nut_true_overhang_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 187, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : toprot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 194, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_180_0_pos_top_zz_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 247, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottomrot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 254, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_240_0_pos_bottom_zz_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 307, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : Truerot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 314, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_300_0_pos_top_zz_true_nut_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 367, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : bottom nut : Truerot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 374, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_360_0_pos_bottom_zz_true_nut_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 427, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "zz : top nut : True rot_y : 180rot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 434, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_420_0_pos_bottom_zz_true_nut_45_rot_y_45_rot_x", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 487, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : toprot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 494, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_480_0_pos_top_clearance_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 547, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottomrot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 554, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_540_0_pos_bottom_clearance_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 607, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : bottom nut : Truerot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 614, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_600_0_pos_bottom_clearance_true_nut_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 667, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : Truerot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 674, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_660_0_pos_'top'_'bottom'_clearance_true_nut_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 727, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : toprot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 734, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_720_0_pos_'top'_'bottom'_clearance_true_nut_top_zz_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_countersunk_m3_12", valign = "center");
+				}
+			}
+		}
+		color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 787, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "clearance : [top , bottom] nut : True zz : bottomrot_x : 90 rot_y : 45", valign = "center");
+				}
+			}
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [450, 794, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_positive_type_m3_radius_name_12_depth_450_780_0_pos_'top'_'bottom'_clearance_true_nut_bottom_zz_45_rot_x_45_rot_y", valign = "center");
+				}
+			}
+		}
+	}
+	union();
+}

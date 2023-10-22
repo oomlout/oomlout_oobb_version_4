@@ -10,7 +10,7 @@ import oobb_base
 def make_all(filter=""):
     # typs = ["bps","jas","mps","pls","nuts","screws_countersunk","tests","zts"]
     # add orings make a nice summary page maybe tables of details add 2020 maybe
-    typs = ["bearing_plates", "bearing_circles", "buntings", "circles", "holders", "jacks", "jigs", "mounting_plates", "plates", "shaft_couplers","shafts", "soldering_jigs", "smd_magazines", "tool_holders", "trays", "ziptie_holders", "nuts", "wires", "wheels", "screws", "bearings", "nuts", "tests", "bracket_2020_aluminium_extrusions"]
+    typs = ["bearing_plates", "bearing_circles", "buntings", "circles", "holders", "jacks", "jigs", "mounting_plates", "plates", "shaft_couplers","shafts", "soldering_jigs", "smd_magazines", "tool_holders", "trays", "ziptie_holders", "nuts", "wires", "wheels", "screws", "bearings", "nuts", "tests"]
    
     all_things = []
 
@@ -43,34 +43,25 @@ def make_all(filter=""):
 
 def get_bearing_plates(size="oobb"):
     bps = []
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "606","size": size})
-    bps.append({"type": "bearing_plate_jack", "width": 3, "height": 3, "thickness": 12, "bearing_type": "606","size": size})
-    bps.append({"type": "bearing_plate_jack_basic", "width": 3, "height": 3, "thickness": 12, "bearing_type": "606","size": size})
+    #bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "606","size": size})
     
     
 
     # 6704
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704","size": size})
-    bps.append({"type": "bearing_plate_shim", "thickness": 2, "bearing_type": "6704", "size": size})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704", "size": size, "shaft": "motor_gearmotor_01"})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704", "size": size, "shaft": "motor_servo_micro_01"})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_printed"})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704", "size": size, "shaft": "motor_building_block_large_01"})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6704", "size": size, "shaft": "motor_n20"})
-    
-
-
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6803", "size": size})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing_type": "6804", "size": size})
-    bps.append({"type": "bearing_plate", "width": 5, "height": 5, "thickness": 12, "bearing_type": "6808", "size": size})
-    bps.append({"type": "bearing_plate", "width": 7, "height": 5, "thickness": 12, "bearing_type": "6810", "size": size})
-
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704","size": size})
+    bps.append({"type": "bearing_plate_shim", "thickness": 2, "bearing": "6704", "size": size})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_gearmotor_01"})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_servo_micro_01"})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_printed"})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_building_block_large_01"})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_n20"})
+        
     return bps
 
 def get_bearing_circles(size="oobb"):
     bcs = []
-    bcs.append({"type": "bearing_circle", "diameter": 3, "thickness": 12, "bearing_type": "606","size": size})
+    bcs.append({"type": "bearing_circle", "diameter": 3, "thickness": 12, "bearing": "606","size": size})
 
     return bcs
 
@@ -89,18 +80,6 @@ def get_buntings(size="oobb"):
   
     return items
 
-def get_bracket_2020_aluminium_extrusions(size="oobb"):
-    items = []
-    
-    items.append({"type": "bracket_2020_aluminium_extrusion", 
-                  "width": 9, 
-                  "height": 5,
-                  "thickness": 12, 
-                  "extra":"top_side",
-                  "size": size
-                })
-  
-    return items
 
 
 def get_circles(size="oobb"):
@@ -165,9 +144,9 @@ def get_holders(size="oobb"):
     for t in thicknesses:
         ##shifted nema 17s    
         hls.append({"type": "holder", "extra": "motor_stepper_motor_nema_17_flat","width": 5, "height": 3, 
-        "thickness": t, "size": size, "bearing_type": "shifted"})
+        "thickness": t, "size": size, "bearing": "shifted"})
         hls.append({"type": "holder", "extra": "motor_stepper_motor_nema_17_flat","width": 5, "height": 5, 
-        "thickness": t, "size": size, "bearing_type": "shifted"})
+        "thickness": t, "size": size, "bearing": "shifted"})
         ##normal nema 17s
         hls.append({"type": "holder", "extra": "motor_stepper_motor_nema_17_flat","width": 5, "height": 3, 
         "thickness": t, "size": size})
@@ -760,22 +739,17 @@ def get_screws():
 def get_tests():
     tests = []
 
-    #hole test
-    #tests.append({"type": "test", "size": "test", "shape": "oobb_hole","name": "hole_radius", "radius_name": "m5", "depth": 4, "depth2":3, "difference": 0.1})
-
-
-    # nut test
-    #tests.append({"type": "test", "size": "test", "shape": "oobb_nut","name": "nut_radius", "radius_name": "m3", "depth": 4, "difference": 0.1, "z": -3})
-     
-    #style = "01"
-    #tests.append({"type": "test", "size": "test", "shape": "oobb_threaded_insert", "name": f"threaded_insert_{style}_radius", "style": style, "radius_name": "m3", "depth": 7, "difference": 0.1, "hole": False})
-    #tests.append({"type": "test", "size": "test", "shape": "oobb_threaded_insert", "name": f"threaded_insert_{style}_insertion_cone", "style": style, "radius_name": "m3", "depth": 4, "difference": 0.1, "hole": False, "depth_adjust":3, "insertion_cone":True, "name":"insertion_cone", "padding":9})
+    
 
     # rotation test
     tests.append({"type": "test", "size": "oobb", "extra": "rotation"})
 
+    # servo test
+    tests.append({"type": "test", "size": "oobb", "extra": "oobb_motor_servo_standard_01"})
     # screw test
+    tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_countersunk"})
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_socket_cap"})
+    tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_self_tapping"})
 
 
     return tests

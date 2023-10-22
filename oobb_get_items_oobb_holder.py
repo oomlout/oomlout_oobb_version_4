@@ -33,6 +33,164 @@ def get_holder_motor_servo_standard_01_bottom(**kwargs):
     return thing
 
 def get_holder_motor_servo_standard_01(**kwargs):
+    # default sets
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+
+    extra_mm = 1 / oobb_base.gv("osp")
+
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")
+    kwargs.pop("bearing", "")
+
+    
+    # servo shaft at 0,0,0 position
+    pos_plate = [-15,0,-thickness]
+    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+
+    # plate
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p" 
+    p3["shape"] = f"{size}_plate"      
+    p3["width"] = width             
+    p3["height"] = height  
+    p3["depth"] = thickness
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    # hole
+    #      oobb_hole
+    location_hole = []
+    location_hole.append([1,1])
+    location_hole.append([1,2])
+    location_hole.append([1,3])
+    location_hole.append([2,1])
+    location_hole.append([2,3])
+    location_hole.append([3,1])
+    location_hole.append([3,3])
+    location_hole.append([5,1])
+    location_hole.append([5,3])    
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p" 
+    p3["shape"] = f"{size}_holes"    
+    p3["holes"] = "single"
+    p3["radius_name"] = "m6"
+    p3["loc"] = location_hole
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    #      oobe_hole
+    location_hole = []
+    location_hole.append([1,1.5])
+    location_hole.append([1,2.5])
+    location_hole.append([1.5,1])
+    location_hole.append([2.5,1])
+    location_hole.append([1.5,3])
+    location_hole.append([2.5,3])
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n" 
+    p3["shape"] = f"{size}_holes"    
+    p3["radius_name"] = "m3"
+    p3["holes"] = "single"
+    p3["loc"] = location_hole
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #      bearing clearance
+    pos1 = copy.deepcopy(pos)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n" 
+    p3["shape"] = f"oobb_hole"    
+    p3["radius"] = 24/2
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    #      connecting screws
+    #            putting them in at the height of bearing plate
+    pos1 = copy.deepcopy(pos)
+    # add 12 to z
+    pos1[2] = pos1[2] + 12
+    pos2 = copy.deepcopy(pos1)
+    hole_screw_distance = 18    
+    pos1[1] = pos1[1] + hole_screw_distance    
+    pos2[1] = pos2[1] - hole_screw_distance
+
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_screw_socket_cap"
+    p3["radius_name"] = "m3"
+    p3["depth"] = 20
+    p3["nut"] = True
+    p3["pos"] = [pos1,pos2]
+    p3["rot_y"] = 180
+    p3["zz"] = "bottom"
+    p3["clearance"] = "top"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    # servo cutout
+    #      bearing clearance
+    pos1 = copy.deepcopy(pos)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n" 
+    p3["shape"] = f"oobb_motor_servo_standard_01"  
+    p3["clearance"] = ["top", "bottom"]      
+    p3["screw_rot_y"] = 180
+    p3["overhang"] = True
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    # plate     
+    #get_bearing_plate_plate(thing, **kwargs)
+            
+    
+    # hole
+    #      center
+    p3 = copy.deepcopy(kwargs)
+    #p3["m"] = "#"
+    #get_bearing_plate_hole_center(thing,**p3)
+
+    #      perimeter
+    p3 = copy.deepcopy(kwargs)
+    #p3["m"] = "#"
+    #get_bearing_plate_hole_perimeter(thing,**p3)
+
+    #      shaft
+    p3 = copy.deepcopy(kwargs)
+    #p3["m"] = "#"
+    #get_bearing_plate_hole_shaft(thing,**p3)
+
+    # connecting_screw
+    #      perimeter    
+    p3 = copy.deepcopy(kwargs)
+    #p3["m"] = "#"
+    #get_bearing_plate_connecting_screw_perimeter(thing,**p3)
+
+    #      center
+    p3 = copy.deepcopy(kwargs)
+    #p3["m"] = "#"
+    #get_bearing_plate_connecting_screw_center(thing,**p3)
+
+    
+    
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+
+
 
 # default sets
     width = kwargs.get("width", 1)

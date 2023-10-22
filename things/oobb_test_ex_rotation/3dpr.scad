@@ -8,8 +8,8 @@ difference() {
 				difference() {
 					union() {
 						cylinder(h = 3.2000000000, r = 3.0000000000);
-						#translate(v = [0, 0, -12.0000000000]) {
-							cylinder(h = 12.0000000000, r = 1.8000000000);
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12.0000000000, r = 1.5000000000);
 						}
 					}
 					union();
@@ -21,8 +21,8 @@ difference() {
 				difference() {
 					union() {
 						cylinder(h = 3.2000000000, r = 3.0000000000);
-						#translate(v = [0, 0, -12.0000000000]) {
-							cylinder(h = 12.0000000000, r = 1.8000000000);
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12.0000000000, r = 1.5000000000);
 						}
 					}
 					union();

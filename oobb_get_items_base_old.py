@@ -19,7 +19,7 @@ from oobb_get_item_common import *
 
 def get_oobb_bearing(**kwargs):
     objects = []
-    bearing_type = kwargs["bearing_type"]
+    bearing_type = kwargs["bearing"]
     exclude_clearance = kwargs.get("exclude_clearance", False)
 
     modes = ["laser", "true", "3dpr"]
@@ -178,8 +178,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == 0 or w == width-1 or h == 0 or h == height-1:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -190,8 +190,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == 0 or w == width-1 or h == 0 or h == height-1:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -205,8 +205,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == 0 or w == width-1 or h == 0:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -217,8 +217,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == 0:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -229,8 +229,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == width-1:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -241,8 +241,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if h == height-1:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -253,8 +253,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if h == 0:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -265,8 +265,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == width-1:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -296,8 +296,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == 0 and h == 0:
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
@@ -336,8 +336,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         pos_start = [xx + -(width*spacing/2) + spacing/2,
                      yy + -(height*spacing/2) + spacing/2, 0]
         # pos_start = [0,0,0]
-        for w in range(0, width):
-            for h in range(0, height):
+        for w in range(0, int(width)):
+            for h in range(0, int(height)):
                 if w == math.floor(width/2) and h == math.floor(height/2):
                     pass
                 else:
@@ -529,8 +529,8 @@ def get_oobe_holes(**kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]
                 # pos_start = [0,0,0]
-                for w in range(0, width):
-                    for h in range(0, height):
+                for w in range(0, int(width)):
+                    for h in range(0, int(height)):
                         if w == 0 and h == 0:
                             xx = pos_start[0] + w*spacing
                             yy = pos_start[1] + h*spacing
@@ -556,8 +556,8 @@ def get_oobe_holes(**kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]
                 # pos_start = [0,0,0]
-                for w in range(0, width):
-                    for h in range(0, height):
+                for w in range(0, int(width)):
+                    for h in range(0, int(height)):
                         if w == 0 or w == width-1 or h == 0 or h == height-1:
                             xx = pos_start[0] + w*spacing
                             yy = pos_start[1] + h*spacing
@@ -567,8 +567,8 @@ def get_oobe_holes(**kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]
                 # pos_start = [0,0,0]
-                for w in range(0, width):
-                    for h in range(0, height):
+                for w in range(0, int(width)):
+                    for h in range(0, int(height)):
                         if w == 0:
                             xxx = pos_start[0] + w*spacing
                             yyy = pos_start[1] + h*spacing
@@ -579,8 +579,8 @@ def get_oobe_holes(**kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]
                 # pos_start = [0,0,0]
-                for w in range(0, width):
-                    for h in range(0, height):
+                for w in range(0, int(width)):
+                    for h in range(0, int(height)):
                         if w == width-1:
                             xxx = pos_start[0] + w*spacing
                             yyy = pos_start[1] + h*spacing
@@ -591,8 +591,8 @@ def get_oobe_holes(**kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]
                 # pos_start = [0,0,0]
-                for w in range(0, width):
-                    for h in range(0, height):
+                for w in range(0, int(width)):
+                    for h in range(0, int(height)):
                         if h == height-1:
                             xxx = pos_start[0] + w*spacing
                             yyy = pos_start[1] + h*spacing
@@ -603,8 +603,8 @@ def get_oobe_holes(**kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]
                 # pos_start = [0,0,0]
-                for w in range(0, width):
-                    for h in range(0, height):
+                for w in range(0, int(width)):
+                    for h in range(0, int(height)):
                         if h == 0:
                             xxx = pos_start[0] + w*spacing
                             yyy = pos_start[1] + h*spacing
@@ -847,7 +847,7 @@ def get_oobb_motor_servo_micro_01(**kwargs):
         objects.extend(ob.oobb_easy(**p3))
         return objects
 
-def get_oobb_overhang(**kwargs):
+def get_oobb_overhang_old_1(**kwargs):
     return_value = []
     height_layer = 0.3
     width = kwargs.get("width", 3.5)
@@ -1304,12 +1304,12 @@ def get_oobb_powerbank_anker_323(**kwargs):
 
 
 
-def get_oobb_screw_countersunk(**kwargs):
+def get_oobb_screw_countersunk_old_1(**kwargs):
     return get_oobb_countersunk(**kwargs)
 
 
 
-def get_oobb_countersunk(**kwargs):
+def get_oobb_countersunk_old_1(**kwargs):
     objects = []
     top_clearance = kwargs.get("top_clearance", False)
     extra = kwargs.get("extra", "")
@@ -1331,7 +1331,6 @@ def get_oobb_countersunk(**kwargs):
     
 
     for mode in modes:
-
         # countersunk bit
         p2 = copy.deepcopy(kwargs)
         # p2["m"] = ""
@@ -1430,7 +1429,7 @@ def get_oobb_countersunk(**kwargs):
     return objects
 
 
-def get_oobb_screw_self_tapping(include_nut=False, **kwargs):
+def get_oobb_screw_self_tapping_old_1(include_nut=False, **kwargs):
     objects = []
     modes = ["laser", "3dpr", "true"]
     shifts = []    
@@ -1657,6 +1656,7 @@ def get_oobb_threaded_insert(**kwargs):
     objects = []
     modes = kwargs.get("mode", ["laser", "3dpr", "true"])
     hole = kwargs.get("hole", True)
+    typ = kwargs.get("type", "hex")
     if "all" in modes:
         modes = ["laser", "3dpr", "true"]
     if isinstance(modes, str):
@@ -1739,7 +1739,7 @@ def get_oobb_hole(**kwargs):
     try:
         depth = kwargs["depth"]
     except:
-        depth = 250
+        depth = 100
         try:
             kwargs["pos"][2] = pos[2] - depth / 2
         except:
@@ -1932,11 +1932,14 @@ def get_oobb_slot(**kwargs):
             return_value.append(opsc.opsc_easy(**kwargs))
     return return_value
 
-def get_oobb_slice(**kwargs):
+def get_oobb_slice_old_1(**kwargs):
+    
     modes = kwargs.get("mode", ["laser", "3dpr", "true"])
+    pos = kwargs.get("pos", [0, 0, 0])
+    zz = kwargs.get("zz", "bottom")
     return_value = []
     pos = kwargs.get("pos", [0, 0, 0])
-    if pos == [0, 0, 0]:
+    if pos[0] == 0 and pos[1] == 0:
         pos = [250,250,0]
         kwargs["pos"] = pos
     if modes == "all":
@@ -1947,9 +1950,12 @@ def get_oobb_slice(**kwargs):
     for mode in modes:        
         kwargs["shape"] = "cube"
         kwargs["size"] = [500,500,500]
-        pos = kwargs.get("pos", [0, 0, 0])
+        
         #shift 250
-        kwargs["pos"] = [pos[0]-250, pos[1]-250, pos[2] - 0]
+        if zz == "bottom":
+            kwargs["pos"] = [pos[0]-250, pos[1]-250, pos[2] - 0]#
+        elif zz == "top":
+            kwargs["pos"] = [pos[0]-250, pos[1]-250, pos[2] - 500]
         kwargs.update({"inclusion": mode})
         return_value.append(opsc.opsc_easy(**kwargs))
     return return_value

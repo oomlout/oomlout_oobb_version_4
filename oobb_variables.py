@@ -242,35 +242,51 @@ def initialize_variables():
     vl["screw_radius_m1d5"] = m["1d5"]/2, m["1d5"]/2, m["1d5_3dpr"]/2
     vl["screw_countersunk_radius_m1d5"] = [5.8/2, 5.8/2, 7.2/2]    
     vl["screw_countersunk_height_m1d5"] = [1.7/2, 1.7/2, 1.9/2]
-    
+    vl["screw_countersunk_depth_m1d5"] = vl["screw_countersunk_height_m1d5"]
 
     vl["screw_radius_m2"] = m["2"]/2, m["2"]/2, m["2_3dpr"]/2
+     
     vl["screw_self_tapping_hole_radius_m2"] = [1.5/2, 1.5/2, 2.0/2]
     vl["screw_self_tapping_hole_loose_radius_m2"] = [2/2, 2/2, 2.5/2]
     vl["screw_self_tapping_washer_radius_m2"] = [5/2, 5/2, 5.2/2]    
-    vl["screw_self_tapping_height_m2"] = [1.25/2, 1.3/2, 3/2]
+    vl["screw_self_tapping_radius_m2"] = vl["screw_self_tapping_washer_radius_m2"]
+    vl["screw_self_tapping_height_m2"] = [1.25, 1.3, 2]
+    vl["screw_self_tapping_depth_m2"] = vl["screw_self_tapping_height_m2"]
 
 
     vl["screw_radius_m2d5"] = m["2d5"]/2, m["2d5"]/2, m["2d5_3dpr"]/2
     vl["screw_countersunk_radius_m2d5"] = [3.1/2, 4.5/2, 6.5/2]    #added 1.8 to m3 so trying adding 1.8 here
     vl["screw_countersunk_height_m2d5"] = [1.5/2, 1.5/2, 1.7/2]
+    vl["screw_countersunk_depth_m2d5"] = vl["screw_countersunk_height_m2d5"]
+
 
     vl["screw_radius_m3"] = m["3"]/2, m["3"]/2, m["3_3dpr"]/2
     vl["screw_countersunk_radius_m3"] = [4.8/2, 5.8/2, 7.2/2]
     vl["screw_countersunk_height_m3"] = [1.7, 1.7, 1.9]
+    vl["screw_countersunk_depth_m3"] = vl["screw_countersunk_height_m3"]
     vl["screw_socket_cap_radius_m3"] = [5.8/2, 5.8/2, 6/2]
     vl["screw_socket_cap_height_m3"] = [3, 3, 3.2]
     
+
     #larger for a screw sort jig
     ex = 0.5
     vl["screw_radius_m3_sort"] = m["3"]/2+ex, m["3"]/2+ex, m["3_3dpr"]/2+ex
     vl["screw_countersunk_radius_m3_sort"] = [4.8/2+ex, 5.8/2+ex, 7.2/2+ex]
     vl["screw_countersunk_height_m3_sort"] = [1.7+ex, 1.7+ex, 1.9+ex]
+    vl["screw_countersunk_depth_m3_sort"] = vl["screw_countersunk_height_m3_sort"]
+
+    vl["screw_self_tapping_hole_radius_m3"] = [2.5/2, 2.5/2, 3/2]
+    vl["screw_self_tapping_hole_loose_radius_m3"] = [3/2, 3/2, 3.5/2]
+    vl["screw_self_tapping_washer_radius_m3"] = [6/2, 6/2, 6.4/2]    
+    vl["screw_self_tapping_radius_m3"] = vl["screw_self_tapping_washer_radius_m3"]
+    vl["screw_self_tapping_height_m3"] = [1.5, 1.5, 2]
+    vl["screw_self_tapping_depth_m3"] = vl["screw_self_tapping_height_m3"]
 
 
     vl["screw_radius_m6"] = m["6"]/2, m["6"]/2, m["6_3dpr"]/2
     vl["screw_countersunk_radius_m6"] = [6/2, 6/2, 7.2/2]
     vl["screw_countersunk_height_m6"] = [3.3, 3.3, 3.7]
+    vl["screw_countersunk_depth_m6"] = vl["screw_countersunk_height_m6"]
 
     ##### wire variables
     wi_extra = 0.3

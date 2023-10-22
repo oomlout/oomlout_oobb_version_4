@@ -21,9 +21,9 @@ def get_default_thing(**kwargs):
         thing.update({"description": f"{type_string}"})
 
     var_names = ["type", "width", "height", "diameter", "thickness", "radius_name", "depth",
-                 "radius_hole", "width_mounting", "name", "bearing_name", "bearing_type", "oring_type","extra","shaft"]
+                 "radius_hole", "width_mounting", "name", "bearing_name", "bearing", "oring_type","extra","shaft"]
     zfill_values = ["width", "height", "thickness", "depth", "diameter"]
-    acronyms = {"width": "", "height": "", "diameter": "", "thickness": "", "depth": "", "size": "", "type": "", "radius_hole": "rh","radius_name": "", "width_mounting": "mo", "height_mounting": "hm","name": "nm", "bearing_name": "", "bearing_type": "","oring_type":"or", "extra":"ex", "shaft": "sh"}
+    acronyms = {"width": "", "height": "", "diameter": "", "thickness": "", "depth": "", "size": "", "type": "", "radius_hole": "rh","radius_name": "", "width_mounting": "mo", "height_mounting": "hm","name": "nm", "bearing_name": "", "bearing": "","oring_type":"or", "extra":"ex", "shaft": "sh"}
 
     if type == "test":
         var_names.append("radius_name")
@@ -95,6 +95,7 @@ def get_default_thing(**kwargs):
         pass
     thing.update({"components": []})
     thing.update({"components_string": []})
+    thing.update({"components_objects": []})
 
 
     return thing
@@ -202,9 +203,9 @@ def get_default_thing_old_1(**kwargs):
         thing.update({"description": f"{type_dict[type]}"})
 
     var_names = ["type", "width", "height", "diameter", "thickness", "radius_name", "depth",
-                 "radius_hole", "width_mounting", "name", "bearing_name", "bearing_type", "oring_type","extra","shaft"]
+                 "radius_hole", "width_mounting", "name", "bearing_name", "bearing", "oring_type","extra","shaft"]
     zfill_values = ["width", "height", "thickness", "depth", "diameter"]
-    acronyms = {"width": "", "height": "", "diameter": "", "thickness": "", "depth": "", "size": "", "type": "", "radius_hole": "rh","radius_name": "", "width_mounting": "mo", "height_mounting": "hm","name": "nm", "bearing_name": "", "bearing_type": "","oring_type":"or", "extra":"ex", "shaft": "sh"}
+    acronyms = {"width": "", "height": "", "diameter": "", "thickness": "", "depth": "", "size": "", "type": "", "radius_hole": "rh","radius_name": "", "width_mounting": "mo", "height_mounting": "hm","name": "nm", "bearing_name": "", "bearing": "","oring_type":"or", "extra":"ex", "shaft": "sh"}
 
     if type == "test":
         var_names.append("radius_name")
@@ -362,6 +363,14 @@ def build_thing(thing, save_type="all", overwrite=True):
             component_strings = oobb.things[thing]["components_string"]
             for component in component_strings:
                 outfile.write(f'{component}\n')
+        # make the json file
+        with open(f'things/{thing}/{mode}.json', 'w') as outfile:
+            json.dump(oobb.things[thing]["components_objects"], outfile, indent=4)
+
+        # make the yaml file
+        import yaml
+        with open(f'things/{thing}/{mode}.yaml', 'w') as outfile:
+            yaml.dump(oobb.things[thing]["components_objects"], outfile, indent=4)
             
 
 
@@ -385,6 +394,7 @@ def oobb_easy_get_string(**kwargs):
     if p3["pos"] == [0,0,0]:
         p3.pop("pos","")    
     p3.pop("m","")
+    p3.pop("inclusion","")
 
     order = ["shape", "type","radius_name", "depth", "pos"]
     value_pairs = []
@@ -409,7 +419,7 @@ def oobb_easy_get_string(**kwargs):
         
     return return_value[:-1].lower()
 
-def oobb_easy_string(**kwargs ):
+def oobb_easy_string(**kwargs):
     return oobb_easy(**oobb_easy_string_params(**kwargs))
 
 def oobb_easy_string_params(**kwargs):
@@ -418,9 +428,16 @@ def oobb_easy_string_params(**kwargs):
     #oobb_screw_socket_cap_m3_12_mm_depth
     input_string = item
 
-    variable_names = ["_shape", "_radius_name", "_depth", "_pos"]
+    variable_names = [ "_radius_name", "_depth", "_pos","_width", "_height", "_extra", "_nut", "_clearance", "_bearing", "_type","_holes", "_slots", "_inserts", "_insertion_cone", "_overhang", "_inclusion", "_rot","_thickness"]
 
     result_dict = {}
+
+    # shape is first make it the string in front of "_shape"
+    # to deal with bearing being in shape name
+    shape = input_string.split("_shape")[0]
+    result_dict["_shape"] = {}
+    result_dict["_shape"]["value"] = shape
+    input_string = input_string.replace(shape + "_shape", "")
 
     i = 0
     while i < len(input_string):
@@ -470,6 +487,7 @@ def oobb_easy_string_params(**kwargs):
         
     # load into kwargs
     p3 = copy.deepcopy(kwargs)
+    p3["shape"] = result_dict["_shape"]["value"]
     for variable in variable_names:        
         if variable in result_dict:
             value = result_dict[variable]["value"]
@@ -479,11 +497,19 @@ def oobb_easy_string_params(**kwargs):
         
     p3["_type"] = p3.get("_type", "p")
     
-    if "_depth" in p3:
-        p3["_depth"] = float(p3["_depth"])
+    
+
+    #float convert
+    convert_to_floats = ["_depth", "_width", "_height"]
+    for key in convert_to_floats:
+        if key in p3:
+            p3[key] = float(p3[key])
     if "_pos" in p3:
         pos_split = p3["_pos"].split("_")
         p3["_pos"] = [float(pos_split[0]), float(pos_split[1]), float(pos_split[2])]
+    if "_rot" in p3:
+        pos_split = p3["_rot"].split("_")
+        p3["_rot"] = [float(pos_split[0]), float(pos_split[1]), float(pos_split[2])]
 
     #go through p3 nd remove the leading _ from each key
     for key in list(p3.keys()):
@@ -495,49 +521,74 @@ def oobb_easy_string_params(**kwargs):
 
 
 def append_full(thing, **kwargs):    
-    #thing = kwargs.get("thing", "")
-    comment = kwargs.get("comment", "")
-    item = kwargs.get("item", "")
+    #add loop for multiple pos
+    kwargs_original = copy.deepcopy(kwargs)
+    poss = kwargs.get("pos", [0,0,0])
+    #if poss isn't a list of lists make it one
+    if type(poss[0]) != list:
+        poss = [poss]
     
+    for pos in poss:
+        kwargs = copy.deepcopy(kwargs_original)
+        kwargs["pos"] = pos
 
-    p3 = copy.deepcopy(kwargs)
-    if item != "": #item means we are defining by string
-        string_params = oobb_easy_string_params(item=item)
-        p3.update(string_params)
+        #thing = kwargs.get("thing", "")
+        comment = kwargs.get("comment", "")
+        comment_display = kwargs.get("comment_display", False)
+        m = kwargs.get("m", "")
+        item = kwargs.get("item", "")
+        
 
-    # descriptino to txt
-    ths = thing["components_string"]
-    p4 = copy.deepcopy(p3)
-    p4.pop("comment", None)
-    p4.pop("thing", None)
-    p4.pop("item", None)
-    string_to_add = oobb_easy_get_string(**p4)
-    ths.append(string_to_add)
+        p3 = copy.deepcopy(kwargs)
+        if item != "": #item means we are defining by string
+            string_params = oobb_easy_string_params(item=item)
+            p3.update(string_params)
 
-    # add item to components
-    th = thing["components"]
-
-    # comment
-    if comment != "":        
+        # add yaml to components   
+        ths = thing["components_objects"]
         p4 = copy.deepcopy(p3)
-        p4.pop("type", None)
+        p4.pop("comment", None)
+        p4.pop("thing", None)
+        p4.pop("item", None)
+        ths.append(p4)
+
+
+        # descriptino to txt
+        ths = thing["components_string"]
+        p4 = copy.deepcopy(p3)
+        p4.pop("comment", None)
+        p4.pop("thing", None)
+        p4.pop("item", None)
+        string_to_add = oobb_easy_get_string(**p4)
+        ths.append(string_to_add)
+
+        # add item to components
+        th = thing["components"]
+
+        # comment
+        if comment != "":        
+            p4 = copy.deepcopy(p3)
+            p4.pop("type", None)
+            p4["m"] = "*"
+            if comment_display:
+                p4["m"] = m
+            th.extend(get_comment(**p4))
+        
+        # description
+        p4 = copy.deepcopy(p3)
+        p4["comment"] = f"description {string_to_add}\n"
+        p4["m"] = "*"
         th.extend(get_comment(**p4))
-    
-    # description
-    p4 = copy.deepcopy(p3)
-    p4["comment"] = f"description {string_to_add}\n"
-    p4["m"] = "*"
-    th.extend(get_comment(**p4))
 
-    p4 = copy.deepcopy(p3)
-    th.extend(oobb_easy(**p4))
-    
-    
-    
+        p4 = copy.deepcopy(p3)
+        th.extend(oobb_easy(**p4))
+        
+        
+        
 
 
-    
-    pass
+        
+        pass
 
     
 
@@ -593,9 +644,9 @@ def oobb_easy_array(**kwargs):
     return_objects = []
 
     repeats = kwargs["repeats"]
-    for x in range(0, repeats[0]):
-        for y in range(0, repeats[1]):
-            for z in range(0, repeats[2]):
+    for x in range(0, int(repeats[0])):
+        for y in range(0, int(repeats[1])):
+            for z in range(0, int(repeats[2])):
                 pos = [0, 0, 0]
                 pos[0] = kwargs["pos_start"][0]+x*kwargs["shift_arr"][0]
                 pos[1] = kwargs["pos_start"][1]+y*kwargs["shift_arr"][1]
