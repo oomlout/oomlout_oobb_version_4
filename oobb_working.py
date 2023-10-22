@@ -12,7 +12,7 @@ def main(**kwargs):
     #filter = "oobb_plate_03_01_03"
     #filter = "oobb_bearing_plate_03_03_12_6704_ex_horn_adapter_screws_sh_motor_servo_standard_01"
     #filter = "oobb_test_ex_oobb_motor_servo_standard_01"
-    filter = "oobb_holder_05_03_15_ex_motor_servo_standard_01"
+    filter = "oobb_holder_05_03_30_ex_motor_servo_standard_01_bottom"
     
     #filter = "oobb_test_ex_oobb_screw_self_tapping"
     #filter = "test"

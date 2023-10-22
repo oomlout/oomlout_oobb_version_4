@@ -321,7 +321,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_servo_standard_01_shape_n_type_motor_servo_standard_01_extra_5_width_3_height_15_thickness_'top'_'bottom'_clearance_180_screw_rot_y_true_overhang", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_servo_standard_01_shape_n_type_motor_servo_standard_01_extra_5_width_3_height_15_thickness_180_screw_rot_y_true_overhang", valign = "center");
 				}
 			}
 		}

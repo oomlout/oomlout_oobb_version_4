@@ -5,7 +5,7 @@ from oobb_get_items_base_old import *
 
 def get_oobb_motor_servo_standard_01(**kwargs):
     include_screws = kwargs.get("include_screws", True)    
-    clearance = kwargs.get("clearance", False)
+    clearance = kwargs.get("clearance", ["top", "bottom"])
     typ = kwargs.get("type", "p")
     kwargs["type"] = "p"
 
@@ -55,33 +55,33 @@ def get_oobb_motor_servo_standard_01(**kwargs):
         poss.append([x1, y2, 0])
         poss.append([x2, y1, 0])
         poss.append([x2, y2, 0])
-        for pos in poss:
-            p3 = copy.deepcopy(kwargs)
-            p3["pos"] = [xx+pos[0], yy+pos[1], zz+pos[2]]
-            p3["shape"] = "oobb_hole"
-            p3["radius_name"] = "m3"
-            #p3["m"] = "#"
-            return_value.extend(ob.oobb_easy(**p3))
-            if include_screws:
+        if clearance != "": #don't incleude holes for the bottom piece
+            for pos in poss:
                 p3 = copy.deepcopy(kwargs)
-                shift_screw = -2
-                p3["pos"] = [xx+pos[0], yy+pos[1], zz+pos[2]+shift_screw] #the thickness of a socket head screw plus a bit
-                p3["shape"] = "oobb_screw_socket_cap"
+                p3["pos"] = [xx+pos[0], yy+pos[1], zz+pos[2]]
+                p3["shape"] = "oobb_hole"
                 p3["radius_name"] = "m3"
-                p3["nut"] = True
-                p3["clearance"] = ["bottom","top"]
-                p3["depth"] = screw_depth
-                p3["zz"] = "top"
-                p3["rot_z"] = 360/12
-                p3.pop("top_clearance", None)
-                #p3["top_clearance"] = True
-                if screw_rot_y:
-                    p3["rot_y"] = 180
-                    p3["zz"] = "bottom"
-                    p3["pos"][2] = p3["pos"][2] 
-                #p3["m"] ="#"
-
+                #p3["m"] = "#"
                 return_value.extend(ob.oobb_easy(**p3))
+                if include_screws:
+                    p3 = copy.deepcopy(kwargs)
+                    shift_screw = -2
+                    p3["pos"] = [xx+pos[0], yy+pos[1], zz+pos[2]+shift_screw] #the thickness of a socket head screw plus a bit
+                    p3["shape"] = "oobb_screw_socket_cap"
+                    p3["radius_name"] = "m3"
+                    p3["nut"] = True
+                    p3["clearance"] = clearance
+                    p3["depth"] = screw_depth
+                    p3["zz"] = "top"
+                    p3["rot_z"] = 360/12                
+                    #p3["top_clearance"] = True
+                    if screw_rot_y:
+                        p3["rot_y"] = 180
+                        p3["zz"] = "bottom"
+                        p3["pos"][2] = p3["pos"][2] 
+                    #p3["m"] ="#"
+
+                    return_value.extend(ob.oobb_easy(**p3))
 
         
         if "only_holes" not in part:

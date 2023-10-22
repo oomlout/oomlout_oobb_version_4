@@ -136,7 +136,7 @@ def get_holders(size="oobb"):
     #           standard
     hls.append({"type": "holder", "extra": "motor_servo_standard_01","width": 5, "height": 3, "thickness": 15, "size": size})
     #                 bottom    
-    hls.append({"type": "holder", "extra": "motor_servo_standard_01_bottom","width": 5, "height": 3, "thickness": 55, "size": size})
+    hls.append({"type": "holder", "extra": "motor_servo_standard_01_bottom","width": 5, "height": 3, "thickness": 30, "size": size})
 
 
     #### nema 17

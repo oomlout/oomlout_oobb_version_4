@@ -97,7 +97,7 @@ def get_oobb_cube_center(**kwargs):
         new_pos = [kwargs["pos"][0] - kwargs["size"][0]/2,
                 kwargs["pos"][1] - kwargs["size"][1]/2, kwargs["pos"][2] - kwargs["size"][2]/2]
     kwargs.update({"pos": new_pos})
-    return opsc.opsc_easy(**kwargs)
+    return ob.oobb_easy(**kwargs)
 
 
 def get_oobb_circle(**kwargs):
