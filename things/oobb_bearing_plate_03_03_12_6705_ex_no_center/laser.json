@@ -1,0 +1,417 @@
+[
+    {
+        "type": "p",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_plate",
+        "extra_mm": true,
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            -6.0
+        ],
+        "holes": false
+    },
+    {
+        "type": "negative",
+        "width": 3,
+        "height": 12,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_cylinder",
+        "depth": 12,
+        "radius": 14.2,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "mode": "all"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_bearing",
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_hole",
+        "pos": [
+            7.5,
+            0,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_hole",
+        "pos": [
+            -7.5,
+            0,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            -7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_nut",
+        "pos": [
+            7.5,
+            0,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_nut",
+        "pos": [
+            -7.5,
+            0,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_nut",
+        "pos": [
+            0,
+            7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "zz": "middle",
+        "shape": "oobb_nut",
+        "pos": [
+            0,
+            -7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_holes",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "holes": "perimeter_miss_middle",
+        "radius_name": "m6"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_holes",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "holes": "just_middle",
+        "radius_name": "m6"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            8.0,
+            -18.0,
+            6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -8.0,
+            18.0,
+            6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -8.0,
+            -18.0,
+            -6.0
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            8.0,
+            18.0,
+            -6.0
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            5.303,
+            5.303,
+            6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -5.303,
+            -5.303,
+            -6.0
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            5.303,
+            5.303,
+            6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -5.303,
+            -5.303,
+            -6.0
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "shape": "oobb_slice",
+        "mode": "3dpr",
+        "pos": [
+            0,
+            0,
+            6.0
+        ],
+        "zz": "bottom"
+    },
+    {
+        "type": "n",
+        "shape": "oobb_slice",
+        "mode": "3dpr",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "zz": "top"
+    }
+]

@@ -7,7 +7,8 @@ def get_oobb_motor_servo_standard_01(**kwargs):
     include_screws = kwargs.get("include_screws", True)    
     clearance = kwargs.get("clearance", ["top", "bottom"])
     typ = kwargs.get("type", "p")
-    kwargs["type"] = "p"
+    kwargs["type"] = "p" #setting it to positive because it's a rotation object
+    
 
     screw_rot_y = kwargs.get("screw_rot_y", False) # whether the head is on the top or the bottom
     screw_depth = kwargs.get("screw_depth", 8) 
@@ -146,7 +147,7 @@ def get_oobb_motor_servo_standard_01(**kwargs):
 
     elif part == "shaft":
         
-        pos = kwargs.get("pos", [0, 0, 0])
+        pos = copy.deepcopy(pos)
         x = pos[0]
         y = pos[1]
         z = pos[2]
@@ -187,40 +188,53 @@ def get_oobb_motor_servo_standard_01(**kwargs):
 
             # add screw holes
             p4 = copy.deepcopy(kwargs)        
+            pos1 = copy.deepcopy(pos)
+            #move down 2
+            shift_z = screw_depth_shaft
+            pos1[2] = pos1[2] - 1.5 - 2 + shift_z
+            pos2 = copy.deepcopy(pos1)
             
+            
+            shift_y = -7.375
+            pos1[1] = pos1[1] + shift_y
+            pos2[1] = pos2[1] - shift_y
+
+            poss = []
+            poss.append(pos1)
+            poss.append(pos2)
             p4["shape"] = "oobb_screw_self_tapping"
             #p4["shape"] = "oobb_screw_self_tapping"
             p4["radius_name"] = "m2"
             p4["zz"] = "top"        
             p4["depth"] = 15
             p4["overhang"] = True
+            p4["clearance"] = "top"
             p4["nut"] = True
-            #x = -5.215
-            #y = -5.215
-            #z = 0
-            x = -0
-            y = -7.375
-            z = screw_depth_shaft
-            
+            p4["loose"] = "screw"
+            p4["pos"] = poss
             #p4["m"] = "#"
 
-            p4["pos"] = [p4["pos"][0] + x, p4["pos"][1] + y, p4["pos"][2]+z]
+            
             return_value.extend(ob.oobb_easy(**p4))
-            p5 = copy.deepcopy(p4)
-            x = -x
-            y = -y
-            p5["pos"] = [pos[0] + x, pos[1] + y, pos[2]+z]
-            return_value.extend(ob.oobb_easy(**p5))
-
+            
             # middle screw clearnce
-            p5 = copy.deepcopy(p4)
-            p5["pos"] = [0, 0, pos[2]+z]
-            p5["radius_name"] = "m3"
-            #p5["m"] = "#"
-            return_value.extend(ob.oobb_easy(**p5))
+            p4  = copy.deepcopy(kwargs)
+            p4["pos"] = [0, 0, 0]
+            p4["shape"] = "oobb_hole"
+            p4["radius_name"] = "m6"
+            #p4["m"] = "#"
+            return_value.extend(ob.oobb_easy(**p4))
         
+        return_value_2 = {}
+        return_value_2["type"]  = "rotation"
+        return_value_2["typetype"]  = typ
+        return_value_2["pos"] = pos_original
+        return_value_2["rot"] = rot
+        return_value_2["objects"] = return_value
+        return_value_2 = [return_value_2]
 
-        return return_value
+        return return_value_2
+
 
 #partial
 def get_oobb_nut(**kwargs):
@@ -266,6 +280,8 @@ def get_oobb_nut(**kwargs):
                 depth = ob.gv(f"nut_depth_{l_string}{radius_name}", mode)
             if zz == "top":
                 p2["pos"][2] = p2["pos"][2] - depth
+            elif zz == "middle":
+                p2["pos"][2] = p2["pos"][2] - depth/2
             p2.update(
                 {"height": depth})
             return_value.append(opsc.opsc_easy(**p2))
@@ -319,6 +335,7 @@ def get_oobb_nut(**kwargs):
         if hole:
             p3 = copy.deepcopy(kwargs)
             p3["shape"] = "oobb_hole"
+            p3.pop("depth", "")
             return_value.extend(ob.oobb_easy(**p3))
     return return_value
 
@@ -375,11 +392,19 @@ def get_oobb_overhang(**kwargs):
 def get_oobb_plate(**kwargs):
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
+    extra_mm = kwargs.get("extra_mm", False)
     depth_mm = kwargs.get("depth", 3)
 
+    
+    #add extra_mm
+    if extra_mm:
+        width = width + 1/15 
+        height = height + 1/15
+    
     width_mm = width * ob.gv("osp") - ob.gv("osp_minus")
     height_mm = height * ob.gv("osp") - ob.gv("osp_minus")
     
+
 
     # if 1 x 1 than just cylinder
     if kwargs["width"] == 1 and kwargs["height"] == 1:
@@ -413,6 +438,7 @@ def get_rot(**kwargs):
         kwargs.pop('rot_z', None)
     return rot
 
+    
 
 
 def get_oobb_screw_countersunk(**kwargs):
@@ -438,6 +464,7 @@ def get_oobb_screw(**kwargs):
     nut_include = kwargs.get("nut_include", kwargs.get("include_nut",kwargs.get("nut", False)))    
     overhang = kwargs.get("overhang", False)
     radius_name = kwargs.get("radius_name", "m3")
+    loose = kwargs.get("loose", "")
     depth = float(kwargs.get("depth", 250))
     zz = kwargs.get("zz", "none")
     
@@ -502,13 +529,30 @@ def get_oobb_screw(**kwargs):
             p3["r2"] = ob.gv(f"screw_countersunk_radius_{radius_name}", mode)
             p3["r1"] = ob.gv(f"hole_radius_{radius_name}", mode)
             #p3["m"] = "#"
-            return_value.extend(ob.oobb_easy(**p3))            
+            return_value.extend(ob.oobb_easy(**p3))   
+
+            if "top" in clearance and mode == "3dpr":            
+                depth_head = 50  
+                # screw top
+                p3 = copy.deepcopy(kwargs)        
+                p3["shape"] = "cylinder"
+                p3["pos"] = [pos1[0], pos1[1], pos1[2]+dep/2]
+                p3["r"] = ob.gv(f"screw_{style}_radius_{radius_name}", mode)
+                p3["h"] = depth_head        
+                p3["inclusion"] = mode        
+                p3.pop("radius_name", None)
+                p3.pop("radius", None)
+                p3["m"] = "#"
+                return_value.append(ob.oobb_easy(**p3))  
         
         # hole    
         if hole:
             radius = ob.gv(f"hole_radius_{radius_name}", mode)
             if style == "self_tapping":
-                radius = ob.gv(f"screw_self_tapping_hole_radius_{radius_name}", mode)
+                if "screw" in loose:    
+                    radius = ob.gv(f"screw_self_tapping_hole_loose_radius_{radius_name}", mode)
+                else:
+                    radius = ob.gv(f"screw_self_tapping_hole_radius_{radius_name}", mode)
             p3 = copy.deepcopy(kwargs)
             p3.pop("radius_name", "")
             p3["radius"] = radius
@@ -526,6 +570,9 @@ def get_oobb_screw(**kwargs):
             p3["shape"] = "oobb_nut"
             p3["inclusion"] = mode        
             p3["pos"] = [pos1[0], pos1[1], pos1[2] -depth]
+            p3.pop("loose", "")
+            if "nut" in loose:
+                p3["loose"] = True
             p3.pop("extra", "")
             if "bottom" in clearance:
                 h_nut = ob.gv(f'nut_depth_{radius_name}', mode)
@@ -580,7 +627,7 @@ def get_oobb_slice(**kwargs):
 
 
     if pos[0] == 0 and pos[1] == 0:
-        pos = [-250,-250,0]
+        pos = [-250,-250,pos[2]]
         p3["pos"] = pos
     
     if modes == "all":

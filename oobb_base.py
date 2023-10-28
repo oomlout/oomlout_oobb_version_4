@@ -3,7 +3,27 @@ import oobb
 import os
 import json
 import copy
+import oobb_get_items_other
+import oobb_get_items_base
+import oobb_get_items_oobb
+import oobb_get_items_test
 
+
+
+def get_thing_from_dict(thing_dict):
+    try:
+        func = getattr(oobb_get_items_oobb, "get_"+thing_dict["type"])
+    except AttributeError:
+        try:
+            func = getattr(oobb_get_items_other, "get_"+thing_dict["type"])
+        except:
+            func = getattr(oobb_get_items_test, "get_"+thing_dict["type"])
+
+    thing = func(**thing_dict)
+
+    return thing
+    
+    pass
 
 # base functions
 def get_default_thing(**kwargs):
@@ -96,6 +116,9 @@ def get_default_thing(**kwargs):
     thing.update({"components": []})
     thing.update({"components_string": []})
     thing.update({"components_objects": []})
+
+    folder = f"things/{id}"
+    thing.update({"folder": folder})
 
 
     return thing
@@ -336,7 +359,7 @@ def load(mode="json"):
             except FileNotFoundError:
                 pass
 
-def build_things(save_type="none", overwrite=True, filter=""):
+def build_things(save_type="none", overwrite=True, filter="", modes=["3dpr", "laser", "true"]):
     #turn filter into an array if its a string
     if type(filter) == str:
         filter = [filter]
@@ -344,10 +367,14 @@ def build_things(save_type="none", overwrite=True, filter=""):
         for thing in oobb.things:
             if f in thing:
                 print(f'building {thing}')
-                build_thing(thing, save_type, overwrite)
+                build_thing(thing, save_type, overwrite,modes=modes)
 
-def build_thing(thing, save_type="all", overwrite=True):
-    modes = ["3dpr", "laser", "true"]
+def build_thing(thing, save_type="all", overwrite=True, modes=["3dpr", "laser", "true"]):    
+    
+    if type(modes) != list:
+        modes = [modes]
+    if "all" in modes:
+        modes = ["3dpr", "laser", "true"]
     for mode in modes:
         depth = oobb.things[thing].get(
             "depth_mm", oobb.things[thing].get("thickness_mm", 3))
@@ -524,71 +551,76 @@ def append_full(thing, **kwargs):
     #add loop for multiple pos
     kwargs_original = copy.deepcopy(kwargs)
     poss = kwargs.get("pos", [0,0,0])
+    shapes = kwargs.get("shape", "")
     #if poss isn't a list of lists make it one
     if type(poss[0]) != list:
         poss = [poss]
-    
-    for pos in poss:
-        kwargs = copy.deepcopy(kwargs_original)
-        kwargs["pos"] = pos
+    if type(shapes) != list:
+        shapes = [shapes]
 
-        #thing = kwargs.get("thing", "")
-        comment = kwargs.get("comment", "")
-        comment_display = kwargs.get("comment_display", False)
-        m = kwargs.get("m", "")
-        item = kwargs.get("item", "")
-        
+    for shape in shapes:
+        for pos in poss:
+            kwargs = copy.deepcopy(kwargs_original)
+            kwargs["pos"] = pos
+            kwargs["shape"] = shape
 
-        p3 = copy.deepcopy(kwargs)
-        if item != "": #item means we are defining by string
-            string_params = oobb_easy_string_params(item=item)
-            p3.update(string_params)
+            #thing = kwargs.get("thing", "")
+            comment = kwargs.get("comment", "")
+            comment_display = kwargs.get("comment_display", False)
+            m = kwargs.get("m", "")
+            item = kwargs.get("item", "")
+            
 
-        # add yaml to components   
-        ths = thing["components_objects"]
-        p4 = copy.deepcopy(p3)
-        p4.pop("comment", None)
-        p4.pop("thing", None)
-        p4.pop("item", None)
-        ths.append(p4)
+            p3 = copy.deepcopy(kwargs)
+            if item != "": #item means we are defining by string
+                string_params = oobb_easy_string_params(item=item)
+                p3.update(string_params)
 
-
-        # descriptino to txt
-        ths = thing["components_string"]
-        p4 = copy.deepcopy(p3)
-        p4.pop("comment", None)
-        p4.pop("thing", None)
-        p4.pop("item", None)
-        string_to_add = oobb_easy_get_string(**p4)
-        ths.append(string_to_add)
-
-        # add item to components
-        th = thing["components"]
-
-        # comment
-        if comment != "":        
+            # add yaml to components   
+            ths = thing["components_objects"]
             p4 = copy.deepcopy(p3)
-            p4.pop("type", None)
+            p4.pop("comment", None)
+            p4.pop("thing", None)
+            p4.pop("item", None)
+            ths.append(p4)
+
+
+            # descriptino to txt
+            ths = thing["components_string"]
+            p4 = copy.deepcopy(p3)
+            p4.pop("comment", None)
+            p4.pop("thing", None)
+            p4.pop("item", None)
+            string_to_add = oobb_easy_get_string(**p4)
+            ths.append(string_to_add)
+
+            # add item to components
+            th = thing["components"]
+
+            # comment
+            if comment != "":        
+                p4 = copy.deepcopy(p3)
+                p4.pop("type", None)
+                p4["m"] = "*"
+                if comment_display:
+                    p4["m"] = m
+                th.extend(get_comment(**p4))
+            
+            # description
+            p4 = copy.deepcopy(p3)
+            p4["comment"] = f"description {string_to_add}\n"
             p4["m"] = "*"
-            if comment_display:
-                p4["m"] = m
             th.extend(get_comment(**p4))
-        
-        # description
-        p4 = copy.deepcopy(p3)
-        p4["comment"] = f"description {string_to_add}\n"
-        p4["m"] = "*"
-        th.extend(get_comment(**p4))
 
-        p4 = copy.deepcopy(p3)
-        th.extend(oobb_easy(**p4))
-        
-        
-        
+            p4 = copy.deepcopy(p3)
+            th.extend(oobb_easy(**p4))
+            
+            
+            
 
 
-        
-        pass
+            
+            pass
 
     
 
@@ -596,45 +628,61 @@ def oe(**kwargs):
     return oobb_easy(**kwargs)
 
 def oobb_easy(**kwargs):
-    
-    # sort out shortcut names
-    key_mappings = {"type": "t", "shape": "s", "radius_name": "rn"}
+    #add loop for multiple pos
+    kwargs_original = copy.deepcopy(kwargs)
+    poss = kwargs.get("pos", [0,0,0])
+    shapes = kwargs.get("shape", "")
+    #if poss isn't a list of lists make it one
+    if type(poss[0]) != list:
+        poss = [poss]
+    if type(shapes) != list:
+        shapes = [shapes]
 
-    for new_key, old_key in key_mappings.items():
-        value = kwargs.get(old_key)
-        if value is not None:
-            kwargs[new_key] = value
-            del kwargs[old_key]
+    return_value_2 = []
+    for shape in shapes:
+        for pos in poss:
+            kwargs = copy.deepcopy(kwargs_original)
+            kwargs["pos"] = pos
+            kwargs["shape"] = shape
+            # sort out shortcut names
+            key_mappings = {"type": "t", "shape": "s", "radius_name": "rn"}
+
+            for new_key, old_key in key_mappings.items():
+                value = kwargs.get(old_key)
+                if value is not None:
+                    kwargs[new_key] = value
+                    del kwargs[old_key]
 
 
-    shape = kwargs.get('shape',"")
+            shape = kwargs.get('shape',"")
 
 
-    if "oobb" in shape or "oobe" in shape:
-        # if its an oobb_plat then call get_oobb_plate
-        shape = kwargs["shape"]
-        if shape == "oobb_pl":
-            return_value = []
-            holes = kwargs.get("holes", True)
-            return_value.append(get_oobb_plate(**kwargs))
-            if holes:
-                return_value.extend(get_oobb_holes(**kwargs))
-            return return_value
-        if shape == "oobe_pl":
-            return_value = []
-            return_value.append(get_oobe_plate(**kwargs))
-            return_value.extend(get_oobe_holes(**kwargs))
-            return return_value
-        else:
-            # Call the function dynamically using its string name
-            func = globals()[f'get_{shape}']
-            return func(**kwargs)
-    else:
-        return_value = opsc.opsc_easy(**kwargs)
-        #if return value is a dict
-        if type(return_value) == dict:
-            return_value = [return_value]
-        return return_value
+            if "oobb" in shape or "oobe" in shape:
+                # if its an oobb_plat then call get_oobb_plate
+                shape = kwargs["shape"]
+                if shape == "oobb_pl":
+                    return_value = []
+                    holes = kwargs.get("holes", True)
+                    return_value.append(get_oobb_plate(**kwargs))
+                    if holes:
+                        return_value.extend(get_oobb_holes(**kwargs))
+                    return_value_2.append(return_value)
+                if shape == "oobe_pl":
+                    return_value = []
+                    return_value.append(get_oobe_plate(**kwargs))
+                    return_value.extend(get_oobe_holes(**kwargs))
+                    return_value_2.append(return_value)
+                else:
+                    # Call the function dynamically using its string name
+                    func = globals()[f'get_{shape}']
+                    return_value_2.append(func(**kwargs))
+            else:
+                return_value = opsc.opsc_easy(**kwargs)
+                #if return value is a dict
+                if type(return_value) == dict:
+                    return_value = [return_value]
+                return_value_2.append(return_value)
+    return return_value_2
 
 def oobb_easy_array(**kwargs):
     for i in range(0, 3):
@@ -658,22 +706,43 @@ def oobb_easy_array(**kwargs):
 #shifting routines
 def shift(thing,shift):
     # iterate through by index
-    for i in range(0,len(thing)):
-        things = thing[i]
-        #if thing isn't a list make it one
-        if type(things) != list:
-            things = [things]
+    mode = "components"
+
+    if "components" in thing:
+        return_thing = thing
+        thing = thing["components"]        
+        mode = "thing"
+    # pop things out of deeper lists
+        #do it 8 times
+    for i in range(0,8):
+        thing_2 = []
+        for th in thing:
+            if type(th) == list:
+                thing_2.extend(th)
+            else:
+                thing_2.append(th)
+        thing = thing_2
+
         # iterate through each component
-        for component in things:
-            component = copy.deepcopy(component)
-            thing[i] = component
-            component["pos"][0] += shift[0]
-            component["pos"][1] += shift[1]
-            component["pos"][2] += shift[2]
-    return thing
+    for component in thing:  
+        component["pos"] = copy.deepcopy(component["pos"])     
+        component["pos"][0] += shift[0]
+        component["pos"][1] += shift[1]
+        component["pos"][2] += shift[2]
+    if mode == "components":
+        return thing
+    else:
+        return return_thing
 
 def highlight(thing):
     add_all(thing,"m","#")
+    return thing
+
+def color_set(thing, color):
+    th = thing
+    if "components" in thing:
+        th = thing["components"]
+    add_all(th, "color", color)
     return thing
 
 def remove_if(thing, name, value):
@@ -688,8 +757,13 @@ def remove_if(thing, name, value):
     return thing
 
 def add_all(thing, name, value):
-    for component in thing:
-        component.update({name: value})
+    #component might be a list of list do it recursively
+    if type(thing) == list:
+        if "type" not in thing:          
+            for component in thing:
+                add_all(component, name, value)
+    else:
+        thing.update({name: value})
     return thing
 
 def inclusion(thing, include):    

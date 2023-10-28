@@ -25,7 +25,7 @@ def initialize_variables():
     bearing_d["6702"] = {"id":15, "id_e":0, "od":21, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6703"] = {"id":17, "id_e":0, "od":23, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6704"] = {"id":20, "id_e":0, "od":27, "od_e":0.2, "depth":4, "depth_e":-0.4, "inner_holes":1}
-    bearing_d["6705"] = {"id":25, "id_e":0, "od":32, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
+    bearing_d["6705"] = {"id":25, "id_e":0, "od":32, "od_e":0.2, "depth":4, "depth_e":0.4, "inner_holes":1}
     bearing_d["6706"] = {"id":30, "id_e":0, "od":37, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6707"] = {"id":35, "id_e":0, "od":44, "od_e":0.2, "depth":5, "depth_e":0, "inner_holes":1}
     bearing_d["6800"] = {"id":10, "id_e":0, "od":19, "od_e":0.2, "depth":5, "depth_e":0, "inner_holes":1}
@@ -247,10 +247,10 @@ def initialize_variables():
     vl["screw_radius_m2"] = m["2"]/2, m["2"]/2, m["2_3dpr"]/2
      
     vl["screw_self_tapping_hole_radius_m2"] = [1.5/2, 1.5/2, 2.0/2]
-    vl["screw_self_tapping_hole_loose_radius_m2"] = [2/2, 2/2, 2.5/2]
-    vl["screw_self_tapping_washer_radius_m2"] = [5/2, 5/2, 5.2/2]    
+    vl["screw_self_tapping_hole_loose_radius_m2"] = [2/2, 2/2, 2.75/2]
+    vl["screw_self_tapping_washer_radius_m2"] = [5/2, 5/2, 5.5/2]    
     vl["screw_self_tapping_radius_m2"] = vl["screw_self_tapping_washer_radius_m2"]
-    vl["screw_self_tapping_height_m2"] = [1.25, 1.3, 2]
+    vl["screw_self_tapping_height_m2"] = [1.25, 1.3, 2.5]
     vl["screw_self_tapping_depth_m2"] = vl["screw_self_tapping_height_m2"]
 
 

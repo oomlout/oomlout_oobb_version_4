@@ -5,20 +5,11 @@
         "width": 5,
         "height": 3,
         "thickness": 15,
-        "shape": "oobb_plate",
-        "depth": 15,
-        "pos": [
-            -15,
-            0,
-            -15
-        ]
-    },
-    {
-        "type": "p",
-        "extra": "motor_servo_standard_01",
-        "width": 5,
-        "height": 3,
-        "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
         "shape": "oobb_holes",
         "holes": "single",
         "radius_name": "m6",
@@ -72,6 +63,11 @@
         "width": 5,
         "height": 3,
         "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
         "shape": "oobb_holes",
         "radius_name": "m3",
         "holes": "single",
@@ -89,15 +85,7 @@
                 1
             ],
             [
-                2.5,
-                1
-            ],
-            [
                 1.5,
-                3
-            ],
-            [
-                2.5,
                 3
             ]
         ],
@@ -113,8 +101,13 @@
         "width": 5,
         "height": 3,
         "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
         "shape": "oobb_hole",
-        "radius": 12.0,
+        "radius": 13.0,
         "pos": [
             0,
             0,
@@ -127,9 +120,14 @@
         "width": 5,
         "height": 3,
         "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
         "shape": "oobb_screw_socket_cap",
         "radius_name": "m3",
-        "depth": 20,
+        "depth": 26,
         "nut": true,
         "pos": [
             0,
@@ -138,7 +136,8 @@
         ],
         "rot_y": 180,
         "zz": "bottom",
-        "clearance": "top"
+        "clearance": "top",
+        "overhang": true
     },
     {
         "type": "n",
@@ -146,9 +145,14 @@
         "width": 5,
         "height": 3,
         "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
         "shape": "oobb_screw_socket_cap",
         "radius_name": "m3",
-        "depth": 20,
+        "depth": 26,
         "nut": true,
         "pos": [
             0,
@@ -157,7 +161,8 @@
         ],
         "rot_y": 180,
         "zz": "bottom",
-        "clearance": "top"
+        "clearance": "top",
+        "overhang": true
     },
     {
         "type": "n",
@@ -165,13 +170,84 @@
         "width": 5,
         "height": 3,
         "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
+        "shape": "oobb_screw_socket_cap",
+        "radius_name": "m3",
+        "depth": 26,
+        "nut": true,
+        "pos": [
+            8,
+            18,
+            12
+        ],
+        "rot_y": 180,
+        "zz": "bottom",
+        "clearance": "top",
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "extra": "motor_servo_standard_01",
+        "width": 5,
+        "height": 3,
+        "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
+        "shape": "oobb_screw_socket_cap",
+        "radius_name": "m3",
+        "depth": 26,
+        "nut": true,
+        "pos": [
+            -8,
+            -18,
+            12
+        ],
+        "rot_y": 180,
+        "zz": "bottom",
+        "clearance": "top",
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "extra": "motor_servo_standard_01",
+        "width": 5,
+        "height": 3,
+        "thickness": 15,
+        "thickness_top": 9,
+        "thickness_middle": 15,
+        "thickness_bottom": 24,
+        "screw_bottom_length": 40,
+        "screw_bottom_middle": 6,
         "shape": "oobb_motor_servo_standard_01",
         "screw_rot_y": 180,
         "overhang": true,
         "pos": [
             0,
             0,
-            0
+            -7.5
+        ]
+    },
+    {
+        "type": "p",
+        "extra": "motor_servo_standard_01",
+        "width": 5,
+        "height": 3,
+        "thickness": 15,
+        "size": "oobb",
+        "shape": "oobb_plate",
+        "extra_mm": true,
+        "depth": 15,
+        "pos": [
+            -15,
+            0,
+            -24
         ]
     }
 ]

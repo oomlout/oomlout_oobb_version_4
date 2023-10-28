@@ -18,20 +18,22 @@ from oobb_get_item_common import *
 
 
 def get_oobb_bearing(**kwargs):
+    p3 = copy.deepcopy(kwargs)
     objects = []
-    bearing_type = kwargs["bearing"]
-    exclude_clearance = kwargs.get("exclude_clearance", False)
+    bearing_type = p3["bearing"]
+    exclude_clearance = p3.get("exclude_clearance", False)
 
     modes = ["laser", "true", "3dpr"]
     for mode in modes:
-        kwargs["inclusion"] = mode
-        kwargs["id"] = ob.gv(f"bearing_{bearing_type}_id", mode)
-        kwargs["od"] = ob.gv(f"bearing_{bearing_type}_od", mode)
-        kwargs["depth"] = ob.gv(f"bearing_{bearing_type}_depth", mode)
-        kwargs["shape"] = "bearing"
-        kwargs["clearance"] = ob.gv(f"bearing_{bearing_type}_clearance", mode)
-        kwargs.update({"exclude_clearance": exclude_clearance})
-        objects.append(opsc.opsc_easy(**kwargs))
+        p3["inclusion"] = mode
+        p3["id"] = ob.gv(f"bearing_{bearing_type}_id", mode)
+        p3["od"] = ob.gv(f"bearing_{bearing_type}_od", mode)
+        p3["depth"] = ob.gv(f"bearing_{bearing_type}_depth", mode)
+        p3["shape"] = "bearing"
+        p3["pos"] = copy.deepcopy(p3["pos"])
+        p3["clearance"] = ob.gv(f"bearing_{bearing_type}_clearance", mode)
+        p3.update({"exclude_clearance": exclude_clearance})
+        objects.append(opsc.opsc_easy(**p3))
 
     return objects
 
@@ -2074,6 +2076,8 @@ def get_oobb_nut_old_1(loose=False, through=False, **kwargs):
             extra_z = 0
             if zz == "top":
                 extra_z = -depth
+            if zz == "middle":
+                extra_z = -depth/2
             adjusters = [[depth+extra_z, depth + height_layer + extra_z]]
             adjusters.append([-height_layer + extra_z, -height_layer*2 + extra_z])
             if overhang:

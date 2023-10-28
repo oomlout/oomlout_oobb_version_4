@@ -1,4 +1,5 @@
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     extra: horn_adapter_screws
     height: 12
     mode: all
@@ -6,7 +7,7 @@
     - 0
     - 0
     - 0
-    radius: 12.0
+    radius: 11.7
     shaft: motor_servo_standard_01
     shape: oobb_cylinder
     t: p
@@ -26,39 +27,128 @@
     thickness: 12
     type: n
     width: 3
--   extra: horn_adapter_screws
+-   bearing: '6704'
+    depth: 9
     height: 3
-    holes: false
-    insertion_cone: false
-    inserts: true
+    hole: true
     pos:
     - 7.5
     - 0
-    - 0
+    - 6.0
     radius_name: m3
     shaft: motor_servo_standard_01
-    shape: oobb_threaded_insert
-    slots: false
+    shape: oobb_hole
     thickness: 12
     type: n
     width: 3
--   extra: horn_adapter_screws
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
     height: 3
-    holes: false
-    insertion_cone: false
-    inserts: true
+    hole: true
     pos:
     - -7.5
     - 0
-    - 0
+    - 6.0
     radius_name: m3
     shaft: motor_servo_standard_01
-    shape: oobb_threaded_insert
-    slots: false
+    shape: oobb_hole
     thickness: 12
     type: n
     width: 3
--   extra: horn_adapter_screws
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 6.0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 6.0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
+    height: 3
+    hole: true
+    pos:
+    - 7.5
+    - 0
+    - 6.0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_threaded_insert
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
+    height: 3
+    hole: true
+    pos:
+    - -7.5
+    - 0
+    - 6.0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_threaded_insert
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 6.0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_threaded_insert
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    depth: 9
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 6.0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_threaded_insert
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    extra: horn_adapter_screws
     height: 3
     holes: perimeter_miss_middle
     pos:
@@ -71,19 +161,51 @@
     thickness: 12
     type: n
     width: 3
--   extra: horn_adapter_screws
+-   bearing: '6704'
+    extra: horn_adapter_screws
     height: 3
     part: shaft
     pos:
     - 0
     - 0
-    - -6.0
+    - 0
+    rot:
+    - 0
+    - 0
+    - 45
     shaft: motor_servo_standard_01
     shape: oobb_motor_servo_standard_01
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
+    extra: horn_adapter_screws
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -3
+    shaft: motor_servo_standard_01
+    shape: oobb_bearing
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    extra: horn_adapter_screws
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -6
+    shaft: motor_servo_standard_01
+    shape: oobb_bearing
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
     extra: horn_adapter_screws
     height: 3
     nut: true
@@ -102,7 +224,8 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     extra: horn_adapter_screws
     height: 3
     nut: true
@@ -121,7 +244,8 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     extra: horn_adapter_screws
     height: 3
     nut: true
@@ -140,7 +264,8 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     extra: horn_adapter_screws
     height: 3
     nut: true
@@ -163,7 +288,7 @@
     pos:
     - 0
     - 0
-    - -0.5
+    - -20
     shape: oobb_slice
     type: n
     zz: top

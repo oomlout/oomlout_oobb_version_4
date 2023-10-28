@@ -1,0 +1,196 @@
+-   extra: motor_servo_standard_01_top
+    height: 3
+    holes: single
+    loc:
+    -   - 1
+        - 1
+    -   - 1
+        - 2
+    -   - 1
+        - 3
+    -   - 2
+        - 1
+    -   - 2
+        - 3
+    -   - 3
+        - 1
+    -   - 3
+        - 3
+    -   - 5
+        - 1
+    -   - 5
+        - 3
+    pos:
+    - -15
+    - 0
+    - -9
+    radius_name: m6
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_holes
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: p
+    width: 5
+-   extra: motor_servo_standard_01_top
+    height: 3
+    holes: single
+    loc:
+    -   - 1
+        - 1.5
+    -   - 1
+        - 2.5
+    -   - 1.5
+        - 1
+    -   - 1.5
+        - 3
+    pos:
+    - -15
+    - 0
+    - -9
+    radius_name: m3
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_holes
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+-   extra: motor_servo_standard_01_top
+    height: 3
+    pos:
+    - 0
+    - 0
+    - 0
+    radius: 13.0
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_hole
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+-   clearance: top
+    depth: 26
+    extra: motor_servo_standard_01_top
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - 18
+    - 12
+    radius_name: m3
+    rot_y: 180
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_screw_socket_cap
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+    zz: bottom
+-   clearance: top
+    depth: 26
+    extra: motor_servo_standard_01_top
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - -18
+    - 12
+    radius_name: m3
+    rot_y: 180
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_screw_socket_cap
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+    zz: bottom
+-   clearance: top
+    depth: 26
+    extra: motor_servo_standard_01_top
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 8
+    - 18
+    - 12
+    radius_name: m3
+    rot_y: 180
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_screw_socket_cap
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+    zz: bottom
+-   clearance: top
+    depth: 26
+    extra: motor_servo_standard_01_top
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -8
+    - -18
+    - 12
+    radius_name: m3
+    rot_y: 180
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    shape: oobb_screw_socket_cap
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+    zz: bottom
+-   extra: motor_servo_standard_01_top
+    height: 3
+    overhang: true
+    pos:
+    - 0
+    - 0
+    - -7.5
+    screw_bottom_length: 40
+    screw_bottom_middle: 6
+    screw_rot_y: 180
+    shape: oobb_motor_servo_standard_01
+    thickness: 9
+    thickness_bottom: 24
+    thickness_middle: 15
+    thickness_top: 9
+    type: n
+    width: 5
+-   depth: 9
+    extra: motor_servo_standard_01_top
+    extra_mm: true
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -9
+    shape: oobb_plate
+    size: oobb
+    thickness: 9
+    type: p
+    width: 3

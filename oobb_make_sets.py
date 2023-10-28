@@ -1,9 +1,5 @@
 
 #import oobb_get_items_oobb
-import oobb_get_items_other
-import oobb_get_items_base
-import oobb_get_items_oobb
-import oobb_get_items_test
 import oobb_base
 
 
@@ -21,25 +17,19 @@ def make_all(filter=""):
 
     for thing in all_things:
         thing2 = oobb_base.get_default_thing(**thing) # hack to get the id early
-        #print(thing2["id"])
-        #if "holder_" in thing2["id"]:
-            #wait for enter
-        #    enter = input("enter")
-        if filter in thing2["id"]:
-            try:
-                func = getattr(oobb_get_items_oobb, "get_"+thing["type"])
-            except AttributeError:
-                try:
-                    func = getattr(oobb_get_items_other, "get_"+thing["type"])
-                except:
-                    func = getattr(oobb_get_items_test, "get_"+thing["type"])
-
-            thing = func(**thing)
-            oobb_base.add_thing(thing)
-            pass
+        
+        if not isinstance(filter, list):
+            filter = [filter]
+        
+        if any(f in thing2["id"] for f in filter):
+            type = thing
+            thing_2 = oobb_base.get_thing_from_dict(thing)
+            oobb_base.add_thing(thing_2)
 
 
 # oobb makes
+
+
 
 def get_bearing_plates(size="oobb"):
     bps = []
@@ -56,7 +46,13 @@ def get_bearing_plates(size="oobb"):
     bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
     bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_building_block_large_01"})
     bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_n20"})
-        
+
+    # 6705
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705","size": size})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705","extra": "no_center", "size": size})
+    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
+    
+
     return bps
 
 def get_bearing_circles(size="oobb"):
@@ -134,9 +130,19 @@ def get_holders(size="oobb"):
     hls.append({"type": "holder", "extra": "motor_servo_micro_01","width": 4, "height": 3, "thickness": 3, "size": size})
     
     #           standard
+    #                 all
+    hls.append({"type": "holder", "extra": "motor_servo_standard_01_all_debug","width": 5, "height": 3, "thickness": 00, "size": size})
+    hls.append({"type": "holder", "extra": "motor_servo_standard_01_all_print","width": 5, "height": 3, "thickness": 00, "size": size})
+
+
     hls.append({"type": "holder", "extra": "motor_servo_standard_01","width": 5, "height": 3, "thickness": 15, "size": size})
+
+    
+    #                 top
+    hls.append({"type": "holder", "extra": "motor_servo_standard_01_top","width": 5, "height": 3, "thickness": 9, "size": size})
+
     #                 bottom    
-    hls.append({"type": "holder", "extra": "motor_servo_standard_01_bottom","width": 5, "height": 3, "thickness": 30, "size": size})
+    hls.append({"type": "holder", "extra": "motor_servo_standard_01_bottom","width": 5, "height": 3, "thickness": 24, "size": size})
 
 
     #### nema 17
@@ -263,6 +269,8 @@ def get_plates(size="oobb"):
         premo_plates.append([2,1])
         premo_plates.append([3,3])
         premo_plates.append([5,5])
+        premo_plates.append([6,3])
+        premo_plates.append([5,3])
         premo_thicknesses = [6, 9, 12, 15,21,30]
         for plate in premo_plates:
             for thickness in premo_thicknesses:
@@ -553,29 +561,25 @@ def get_trays(size="oobb"):
 
     ts = []    
     
-    ts.append([3,1])    
-    ts.append([2,1])
+
+    wids = 12
+    heis = 12
+    for wid in range(1,wids):
+        for hei in range(1,heis):
+            ts.append([wid,hei])
+
     ts.append([3,1.5])    
-    ts.append([2,2])    
-    ts.append([3,2])
-    ts.append([4,2])
-    ts.append([5,2])
     ts.append([2,2.5])
     ts.append([3,2.5])
     ts.append([4,2.5])
-    ts.append([5,3])
-    ts.append([4,3])
-    ts.append([3,3])
-    ts.append([4,4])
-    ts.append([5,5])
     """
     ts.append([3,3])
     """
-    thicknesses = [12, 15, 18, 21, 24, 27, 30]
+    thicknesses = [12, 18, 30]
     for tray in ts:
-        trays.append({"type": "tray_lid", "width": tray[0], "height": tray[1], "thickness": 2, "size": size})
-        trays.append({"type": "tray_lid_thin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})
-        trays.append({"type": "tray_lid_thin_spin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})
+        #trays.append({"type": "tray_lid", "width": tray[0], "height": tray[1], "thickness": 2, "size": size})
+        #trays.append({"type": "tray_lid_thin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})
+        #trays.append({"type": "tray_lid_thin_spin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})
         for thickness in thicknesses:
             trays.append({"type": "tray", "width": tray[0], "height": tray[1], "thickness": thickness, "size": size})
             #trv vertical ones with oobb added for mounting on a wall
@@ -583,7 +587,7 @@ def get_trays(size="oobb"):
             #trt thin trays for faster printing
             trays.append({"type": "tray_thin", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
             #trts thin trays for faster printing with a screw holder
-            trays.append({"type": "tray_thin_spin", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
+            #trays.append({"type": "tray_thin_spin", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
 
 
     return trays

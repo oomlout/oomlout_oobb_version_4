@@ -14,6 +14,12 @@ def main():
     render = False
     render = True
 
+    overwrite = False
+    #overwrite = True
+
+    git = False
+    git = True
+
     pass
     folder_things = "things"
     details = []    
@@ -23,6 +29,12 @@ def main():
                         "shift_y": 12*15
                         })
     
+    #smd
+    details.append({    "name":"oomlout_oobb_bundle_smd_magazine", "matches": ["oobb_tray"],
+                        "shift_x": 5*15,
+                        "shift_y": 5*15
+                        })
+
     # decorations
     details.append({    "name":"oomlout_oobb_bundle_decorations", "matches": ["oobb_decoration"]})
     details.append({    "name":"oomlout_oobe_bundle_decorations", "matches": ["oobe_decoration"]})
@@ -30,6 +42,16 @@ def main():
                         "matches": ["oobb_bunting_alphabet"],
                         "shift_x": 13*15,
                         "shift_y": 15*15
+                        })
+    details.append({    "name":"oomlout_oobb_bundle_holder_05_03_00_ex_motor_servo_standard_01",
+                        "matches": [
+                            "oobb_bearing_plate_03_03_12_6705_ex_no_center",
+                            "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01",
+                            "oobb_holder_05_03_09_ex_motor_servo_standard_01_top",
+                            "oobb_holder_05_03_15_ex_motor_servo_standard_01"
+                            ],
+                        "shift_x": 6*15,
+                        "shift_y": 5*15
                         })
     
     #plates_basic
@@ -92,10 +114,11 @@ def main():
         shift_y = detail.get("shift_y", 75)
         #render
         if render:
-            make_all_3dpr_file(folder_bundle, shift_x, shift_y, overwrite=True)
+            make_all_3dpr_file(folder_bundle, shift_x, shift_y, overwrite=overwrite)
         import oom_git
         directory = folder_bundle
-        oom_git.push_to_git(directory = directory)
+        if git:
+            oom_git.push_to_git(directory = directory)
     
 def make_all_3dpr_file(folder_bundle, shift_x = 140, shift_y = 75, **kwargs):
     overwrite = kwargs.get("overwrite", False)

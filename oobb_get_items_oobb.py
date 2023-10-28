@@ -25,7 +25,6 @@ def get_holder(**kwargs):
     else:
         Exception("No extra")
 
-
 def get_plate(**kwargs):
 
     # default sets
@@ -39,8 +38,9 @@ def get_plate(**kwargs):
         
     # extra sets
     holes = kwargs.get("holes", True)
-    both_holes = kwargs.get("both_holes", False)
+    both_holes = kwargs.get("both_holes", False)    
     kwargs["pos"] = pos
+    
     
 
     # get the default thing

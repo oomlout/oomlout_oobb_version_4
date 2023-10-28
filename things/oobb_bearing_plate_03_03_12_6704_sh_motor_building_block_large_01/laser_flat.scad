@@ -27,6 +27,13 @@ union() {
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 12, r = 12.0000000000);
 						}
+						*color(alpha = 1.0000000000, c = "gray") {
+							translate(v = [0, 7, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_slice", valign = "center");
+								}
+							}
+						}
 					}
 					union() {
 						translate(v = [14.2500000000, 4.7500000000, -10.0000000000]) {
@@ -34,6 +41,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -50,6 +63,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -60,6 +79,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -76,6 +101,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -87,6 +118,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -116,6 +163,22 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
 									}
 									union();
 								}
@@ -127,6 +190,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -156,37 +235,13 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, 7.5000000000, 6.0000000000]) {
-							rotate(a = [0, 0, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
-										}
 										translate(v = [0, 0, -12.0000000000]) {
-											cylinder(h = 12, r = 1.5000000000);
+											cylinder(h = 12, r = 1.8000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											linear_extrude(height = 2.5000000000) {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
-										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, -7.5000000000, -6.0000000000]) {
-							rotate(a = [0, 180, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -223,56 +278,6 @@ union() {
 									}
 								}
 							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [-7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_-7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 14, 0]) {
@@ -357,22 +362,15 @@ union() {
 							}
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 21.5000000000, 6.0000000000]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_7.5_6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
+							translate(v = [0, 14, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_n_type_3dpr_mode_top_zz", valign = "center");
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 6.5000000000, -6.0000000000]) {
-								rotate(a = [0, 180, 0]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-7.5_-6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_180_0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
+						translate(v = [-250, -250, -500]) {
+							cube(size = [500, 500, 500]);
 						}
-						cube(size = [500, 500, 500]);
 					}
 				}
 			}
@@ -403,6 +401,13 @@ union() {
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 12, r = 12.0000000000);
 						}
+						*color(alpha = 1.0000000000, c = "gray") {
+							translate(v = [0, 7, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_slice", valign = "center");
+								}
+							}
+						}
 					}
 					union() {
 						translate(v = [14.2500000000, 4.7500000000, -10.0000000000]) {
@@ -410,6 +415,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -426,6 +437,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -436,6 +453,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -452,6 +475,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -463,6 +492,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -492,6 +537,22 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
 									}
 									union();
 								}
@@ -503,6 +564,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -532,37 +609,13 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, 7.5000000000, 6.0000000000]) {
-							rotate(a = [0, 0, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
-										}
 										translate(v = [0, 0, -12.0000000000]) {
-											cylinder(h = 12, r = 1.5000000000);
+											cylinder(h = 12, r = 1.8000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											linear_extrude(height = 2.5000000000) {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
-										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, -7.5000000000, -6.0000000000]) {
-							rotate(a = [0, 180, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -599,56 +652,6 @@ union() {
 									}
 								}
 							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [-7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_-7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 14, 0]) {
@@ -733,22 +736,15 @@ union() {
 							}
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 21.5000000000, 6.0000000000]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_7.5_6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
+							translate(v = [0, 14, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_n_type_3dpr_mode_top_zz", valign = "center");
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 6.5000000000, -6.0000000000]) {
-								rotate(a = [0, 180, 0]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-7.5_-6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_180_0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
+						translate(v = [-250, -250, -500]) {
+							cube(size = [500, 500, 500]);
 						}
-						cube(size = [500, 500, 500]);
 					}
 				}
 			}
@@ -779,6 +775,13 @@ union() {
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 12, r = 12.0000000000);
 						}
+						*color(alpha = 1.0000000000, c = "gray") {
+							translate(v = [0, 7, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_slice", valign = "center");
+								}
+							}
+						}
 					}
 					union() {
 						translate(v = [14.2500000000, 4.7500000000, -10.0000000000]) {
@@ -786,6 +789,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -802,6 +811,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -812,6 +827,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -828,6 +849,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -839,6 +866,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -868,6 +911,22 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
 									}
 									union();
 								}
@@ -879,6 +938,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -908,37 +983,13 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, 7.5000000000, 6.0000000000]) {
-							rotate(a = [0, 0, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
-										}
 										translate(v = [0, 0, -12.0000000000]) {
-											cylinder(h = 12, r = 1.5000000000);
+											cylinder(h = 12, r = 1.8000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											linear_extrude(height = 2.5000000000) {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
-										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, -7.5000000000, -6.0000000000]) {
-							rotate(a = [0, 180, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -975,56 +1026,6 @@ union() {
 									}
 								}
 							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [-7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_-7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 14, 0]) {
@@ -1109,22 +1110,15 @@ union() {
 							}
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 21.5000000000, 6.0000000000]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_7.5_6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
+							translate(v = [0, 14, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_n_type_3dpr_mode_top_zz", valign = "center");
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 6.5000000000, -6.0000000000]) {
-								rotate(a = [0, 180, 0]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-7.5_-6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_180_0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
+						translate(v = [-250, -250, -500]) {
+							cube(size = [500, 500, 500]);
 						}
-						cube(size = [500, 500, 500]);
 					}
 				}
 			}
@@ -1155,6 +1149,13 @@ union() {
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 12, r = 12.0000000000);
 						}
+						*color(alpha = 1.0000000000, c = "gray") {
+							translate(v = [0, 7, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_slice", valign = "center");
+								}
+							}
+						}
 					}
 					union() {
 						translate(v = [14.2500000000, 4.7500000000, -10.0000000000]) {
@@ -1162,6 +1163,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -1178,6 +1185,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -1188,6 +1201,12 @@ union() {
 								difference() {
 									union() {
 										cylinder(h = 3, r = 2.9000000000);
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
@@ -1204,6 +1223,12 @@ union() {
 										translate(v = [0, 0, -25.0000000000]) {
 											cylinder(h = 25, r = 1.5000000000);
 										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -25.0000000000]) {
+											cylinder(h = 25, r = 1.5000000000);
+										}
 									}
 									union();
 								}
@@ -1215,6 +1240,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -1244,6 +1285,22 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
 									}
 									union();
 								}
@@ -1255,6 +1312,22 @@ union() {
 									union() {
 										translate(v = [0, 0, -0.8500000000]) {
 											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.5000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.8000000000);
+										}
+										translate(v = [0, 0, -12.0000000000]) {
+											linear_extrude(height = 2.5000000000) {
+												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
+											}
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -1284,37 +1357,13 @@ union() {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
 										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, 7.5000000000, 6.0000000000]) {
-							rotate(a = [0, 0, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
-										}
 										translate(v = [0, 0, -12.0000000000]) {
-											cylinder(h = 12, r = 1.5000000000);
+											cylinder(h = 12, r = 1.8000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											linear_extrude(height = 2.5000000000) {
 												polygon(points = [[3.1735000000, 0.0000000000], [1.5867500000, 2.7483316189], [-1.5867500000, 2.7483316189], [-3.1735000000, 0.0000000000], [-1.5867500000, -2.7483316189], [1.5867500000, -2.7483316189]]);
 											}
-										}
-									}
-									union();
-								}
-							}
-						}
-						translate(v = [0, -7.5000000000, -6.0000000000]) {
-							rotate(a = [0, 180, 0]) {
-								difference() {
-									union() {
-										translate(v = [0, 0, -0.8500000000]) {
-											cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
 										}
 										translate(v = [0, 0, -12.0000000000]) {
 											cylinder(h = 12, r = 1.5000000000);
@@ -1351,56 +1400,6 @@ union() {
 									}
 								}
 							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [-7.5000000000, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_threaded_insert_shape_n_type_m3_radius_name_-7.5_0_0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_false_holes_false_slots_true_inserts_false_insertion_cone", valign = "center");
-								}
-							}
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [-7.5000000000, 0, -6.0000000000]) {
-							cylinder(h = 6, r = 1.9000000000);
-						}
-						translate(v = [-7.5000000000, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 14, 0]) {
@@ -1485,22 +1484,15 @@ union() {
 							}
 						}
 						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 21.5000000000, 6.0000000000]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_7.5_6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
+							translate(v = [0, 14, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_n_type_3dpr_mode_top_zz", valign = "center");
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 6.5000000000, -6.0000000000]) {
-								rotate(a = [0, 180, 0]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-7.5_-6.0_pos_3_width_3_height_12_thickness_motor_building_block_large_01_shaft_0_180_0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
+						translate(v = [-250, -250, -500]) {
+							cube(size = [500, 500, 500]);
 						}
-						cube(size = [500, 500, 500]);
 					}
 				}
 			}

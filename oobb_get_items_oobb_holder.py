@@ -1,10 +1,62 @@
 import copy
 import oobb_base
+from oobb_get_items_oobb_bearing_plate import *
 
-def get_holder_motor_servo_standard_01_bottom(**kwargs):
-    
 
+def get_holder_motor_servo_standard_01_all_print(**kwargs):
     p3 = copy.deepcopy(kwargs)
+    p3 = get_holder_motor_servo_standard_01_base_extra_variables(**p3)
+    
+    
+    thing = oobb_base.get_default_thing(**p3)
+
+    top = get_holder_motor_servo_standard_01_top(**kwargs)
+    top = oobb_base.shift(top, [0, 0, 9])
+    #set color red
+    oobb_base.color_set(top, "red")
+    bottom = get_holder_motor_servo_standard_01_bottom(**kwargs)
+    bottom = oobb_base.shift(bottom, [15*6, 0, 9+15+24])
+    #set color green
+    oobb_base.color_set(bottom, "green")
+    main = get_holder_motor_servo_standard_01(**kwargs)
+    main = oobb_base.shift(main, [15*12, 0, 9+15])
+    #set color blue
+    oobb_base.color_set(main, "blue")
+
+    p3 = {}    
+    p3["type"] = "bearing_plate"
+    p3["width"] = 3
+    p3["height"] = 3
+    p3["thickness"] = 12
+    p3["size"] = "oobb"    
+    p3["bearing"] = "6705"
+    p3["extra"] = "no_center"
+    bearing_holder = oobb_base.get_thing_from_dict(p3)
+    bearing_holder = oobb_base.shift(bearing_holder, [0, 15*4, 0])
+
+    p3 = {  "type": "bearing_plate",
+            "width": 3, 
+            "height": 3, 
+            "thickness": 12, 
+            "bearing": "6705", 
+            "size": "oobb", 
+            "shaft": "motor_servo_standard_01", 
+            "extra": "horn_adapter_screws"}
+    bearing_middle = oobb_base.get_thing_from_dict(p3)
+    bearing_middle = oobb_base.shift(bearing_middle, [15*7, 15*4, 0])
+
+    thing["components"].extend(top["components"])
+    thing["components"].extend(bottom["components"])
+    thing["components"].extend(main["components"])
+    thing["components"].extend(bearing_holder["components"])
+    thing["components"].extend(bearing_middle["components"])
+
+    return thing
+
+
+def get_holder_motor_servo_standard_01_all_debug(**kwargs):
+    p3 = copy.deepcopy(kwargs)
+    p3 = get_holder_motor_servo_standard_01_base_extra_variables(**p3)
     pos = kwargs.get("pos", [0, 0, 0])
     size = kwargs.get("size", "oobb") 
     height = kwargs.get("height", 10)
@@ -12,18 +64,49 @@ def get_holder_motor_servo_standard_01_bottom(**kwargs):
     thickness = kwargs.get("thickness", 3)  
 
 
-    p3["include_plate"] = False
     p3["clearance"] = "bottom"
-    p3["depth_screw"] = 30
-    thing =  get_holder_motor_servo_standard_01(**p3)    
+    p3["depth_screw"] = p3.get("screw_length_bottom", 40)
+    thing = oobb_base.get_default_thing(**p3)
 
+    top = get_holder_motor_servo_standard_01_top(**kwargs)
+    #set color red
+    oobb_base.color_set(top, "red")
+    bottom = get_holder_motor_servo_standard_01_bottom(**kwargs)
+    #set color green
+    oobb_base.color_set(bottom, "green")
+    main = get_holder_motor_servo_standard_01(**kwargs)
+    #set color blue
+    oobb_base.color_set(main, "blue")
+
+    thing["components"].extend(top["components"])
+    thing["components"].extend(bottom["components"])
+    thing["components"].extend(main["components"])
+
+    return thing
+
+def get_holder_motor_servo_standard_01_bottom(**kwargs):
     
-    depth_top_plate = 15
-    oobb_spacing = 15
-    pos_plate = [-oobb_spacing,0, -depth_top_plate - thickness]
+    p3 = copy.deepcopy(kwargs)
+    p3 = get_holder_motor_servo_standard_01_base_extra_variables(**p3)
+    pos = kwargs.get("pos", [0, 0, 0])
+    size = kwargs.get("size", "oobb") 
+    height = kwargs.get("height", 10)
+    width = kwargs.get("width", 10)
+    thickness_middle = p3.get("thickness_middle", 15)
+    thickness_top = p3.get("thickness_top", 9)
+    thickness_bottom = p3.get("thickness_bottom", 24)
+    thickness = thickness_bottom
+
+    p3["clearance"] = "bottom"
+    p3["depth_screw"] = 40
+    thing =  get_holder_motor_servo_standard_01_base(**p3)    
+
+    depth_top_plate = thickness_top+thickness_middle+thickness
+
+    pos_plate = [-15,0,-depth_top_plate]
     pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
     
-    extra_mm = 1 / oobb_base.gv("osp") 
+
 
     # plate
     pos1 = copy.deepcopy(pos_plate)
@@ -32,6 +115,7 @@ def get_holder_motor_servo_standard_01_bottom(**kwargs):
     p3["shape"] = f"{size}_plate"      
     p3["width"] = width             
     p3["height"] = height  
+    p3["extra_mm"] = True
     p3["depth"] = thickness
     p3["pos"] = pos1
     oobb_base.append_full(thing, **p3)   
@@ -42,8 +126,9 @@ def get_holder_motor_servo_standard_01_bottom(**kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "negative" 
     p3["shape"] = f"oobb_cube_center"      
-    p3["size"] = [15,10,3] 
-    shift = [14.5,0,-thickness-depth_top_plate]
+    p3["size"] = [20,10,3] 
+    
+    shift = [14.5,0,-depth_top_plate]
     p3["pos"] = [pos1[0] + shift[0], pos1[1] + shift[1], pos1[2] + shift[2]]
     
     #p3["m"] = "#"
@@ -52,7 +137,101 @@ def get_holder_motor_servo_standard_01_bottom(**kwargs):
     return thing
 
 def get_holder_motor_servo_standard_01(**kwargs):
-    # default sets
+# default sets
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    #thickness = 12
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    include_plate = kwargs.get("include_plate", True)
+    clearance = kwargs.get("clearance", ["top", "bottom"])
+    extra_mm = 1 / oobb_base.gv("osp")
+
+    p3 = copy.deepcopy(kwargs)
+    p3 = get_holder_motor_servo_standard_01_base_extra_variables(**p3)
+    thickness = p3.get("thickness_middle", 15)
+    thickness_top = p3.get("thickness_top", 9)
+    thing =  get_holder_motor_servo_standard_01_base(**p3)  
+
+    # servo shaft at 0,0,0 position
+    pos_plate = [-15,0,-thickness-thickness_top]
+    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+
+      
+
+    # plate
+    if include_plate:
+        pos1 = copy.deepcopy(pos_plate)
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "p" 
+        p3["shape"] = f"{size}_plate"      
+        p3["width"] = width             
+        p3["height"] = height  
+        p3["extra_mm"] = True
+        p3["depth"] = thickness
+        p3["pos"] = pos1
+        oobb_base.append_full(thing, **p3)
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+def get_holder_motor_servo_standard_01_top(**kwargs):
+# default sets
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    #thickness = 9
+    size = kwargs.get("size", "oobb")
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    include_plate = kwargs.get("include_plate", True)
+    clearance = kwargs.get("clearance", ["top", "bottom"])
+    extra_mm = 1 / oobb_base.gv("osp")
+
+
+    
+    # servo shaft at 0,0,0 position
+    pos_plate = [-15,0,0-9]
+    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+
+    p3 = copy.deepcopy(kwargs)
+    p3 = get_holder_motor_servo_standard_01_base_extra_variables(**p3)
+    thickness = p3.get("thickness_top", 9)
+    thing =  get_holder_motor_servo_standard_01_base(**p3)    
+
+    pos1 = copy.deepcopy(pos_plate)
+    #make x pos[0]
+    pos1[0] = pos[0]    
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p" 
+    p3["shape"] = f"{size}_plate"      
+    p3["width"] = 3             
+    p3["height"] = 3  
+    p3["extra_mm"] = True
+    p3["depth"] = thickness
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+
+def get_holder_motor_servo_standard_01_base_extra_variables(**kwargs):
+    p3 = copy.deepcopy(kwargs)
+    p3["thickness_top"] = 9
+    p3["thickness_middle"] = 15
+    p3["thickness_bottom"] = 24
+    p3["screw_bottom_length"] = 40
+    p3["screw_bottom_middle"] = 6
+    return p3
+
+def get_holder_motor_servo_standard_01_base(**kwargs):
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
     thickness = kwargs.get("thickness", 3)
@@ -63,6 +242,7 @@ def get_holder_motor_servo_standard_01(**kwargs):
     include_plate = kwargs.get("include_plate", True)
     clearance = kwargs.get("clearance", ["top", "bottom"])
     extra_mm = 1 / oobb_base.gv("osp")
+    bearing = kwargs.get("bearing", "6705")
 
     # get the default thing
     thing = oobb_base.get_default_thing(**kwargs)
@@ -73,18 +253,6 @@ def get_holder_motor_servo_standard_01(**kwargs):
     # servo shaft at 0,0,0 position
     pos_plate = [-15,0,-thickness]
     pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
-
-    # plate
-    if include_plate:
-        pos1 = copy.deepcopy(pos_plate)
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "p" 
-        p3["shape"] = f"{size}_plate"      
-        p3["width"] = width             
-        p3["height"] = height  
-        p3["depth"] = thickness
-        p3["pos"] = pos1
-        oobb_base.append_full(thing, **p3)
 
     # hole
     #      oobb_hole
@@ -113,9 +281,9 @@ def get_holder_motor_servo_standard_01(**kwargs):
     location_hole.append([1,1.5])
     location_hole.append([1,2.5])
     location_hole.append([1.5,1])
-    location_hole.append([2.5,1])
+    #location_hole.append([2.5,1])
     location_hole.append([1.5,3])
-    location_hole.append([2.5,3])
+    #location_hole.append([2.5,3])
     pos1 = copy.deepcopy(pos_plate)
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n" 
@@ -132,7 +300,7 @@ def get_holder_motor_servo_standard_01(**kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n" 
     p3["shape"] = f"oobb_hole"    
-    p3["radius"] = 24/2
+    p3["radius"] = 26/2
     p3["pos"] = pos1
     oobb_base.append_full(thing, **p3)
 
@@ -142,27 +310,43 @@ def get_holder_motor_servo_standard_01(**kwargs):
     # add 12 to z
     pos1[2] = pos1[2] + 12
     pos2 = copy.deepcopy(pos1)
-    hole_screw_distance = 18    
+    pos3 = copy.deepcopy(pos1)
+    pos4 = copy.deepcopy(pos1)
+    hole_screw_distance = 18
+
     pos1[1] = pos1[1] + hole_screw_distance    
+    pos3[1] = pos3[1] + hole_screw_distance
     pos2[1] = pos2[1] - hole_screw_distance
+    pos4[1] = pos4[1] - hole_screw_distance
+
+    joint_dis_x = 8
+    pos3[0] = pos3[0] + joint_dis_x
+    pos4[0] = pos4[0] - joint_dis_x
+
+    
+    poss = [pos1,pos2,pos3,pos4]
 
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n"
     p3["shape"] = f"oobb_screw_socket_cap"
     p3["radius_name"] = "m3"
-    depth_screw = p3.get("depth_screw", 20)
+    depth_screw = p3.get("depth_screw", 25)
+    depth_screw = depth_screw + 1
     p3["depth"] = depth_screw
     p3["nut"] = True
-    p3["pos"] = [pos1,pos2]
+    p3["pos"] = poss
     p3["rot_y"] = 180
     p3["zz"] = "bottom"
     p3["clearance"] = "top"
+    p3["overhang"] = True
     #p3["m"] = "#"
     oobb_base.append_full(thing, **p3)
 
     # servo cutout
     #      bearing clearance
     pos1 = copy.deepcopy(pos)
+    # remove 3 from z
+    pos1[2] = pos1[2] - 3 - 4 - 0.5
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n" 
     p3["shape"] = f"oobb_motor_servo_standard_01"  

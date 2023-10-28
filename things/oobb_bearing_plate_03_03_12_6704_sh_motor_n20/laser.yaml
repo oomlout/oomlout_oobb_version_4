@@ -25,36 +25,6 @@
     type: n
     width: 3
 -   height: 3
-    holes: false
-    insertion_cone: false
-    inserts: true
-    pos:
-    - 7.5
-    - 0
-    - 0
-    radius_name: m3
-    shaft: motor_n20
-    shape: oobb_threaded_insert
-    slots: false
-    thickness: 12
-    type: n
-    width: 3
--   height: 3
-    holes: false
-    insertion_cone: false
-    inserts: true
-    pos:
-    - -7.5
-    - 0
-    - 0
-    radius_name: m3
-    shaft: motor_n20
-    shape: oobb_threaded_insert
-    slots: false
-    thickness: 12
-    type: n
-    width: 3
--   height: 3
     holes: perimeter_miss_middle
     pos:
     - 0
@@ -149,46 +119,11 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
-    height: 3
-    nut: true
-    overhang: true
-    pos:
-    - 0
-    - 7.5
-    - 6.0
-    radius_name: m3
-    rot:
-    - 0
-    - 0
-    - 0
-    shaft: motor_n20
-    shape: oobb_screw_countersunk
-    thickness: 12
-    type: n
-    width: 3
--   depth: 12
-    height: 3
-    nut: true
-    overhang: true
-    pos:
-    - 0
-    - -7.5
-    - -6.0
-    radius_name: m3
-    rot:
-    - 0
-    - 180
-    - 0
-    shaft: motor_n20
-    shape: oobb_screw_countersunk
-    thickness: 12
-    type: n
-    width: 3
--   inclusion: 3dpr
+-   mode: 3dpr
     pos:
     - 0
     - 0
     - 0
     shape: oobb_slice
     type: n
+    zz: top
