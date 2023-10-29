@@ -22,6 +22,7 @@ def make_all(filter=""):
             filter = [filter]
         
         if any(f in thing2["id"] for f in filter):
+            print(f"adding {thing2['id']}")
             type = thing
             thing_2 = oobb_base.get_thing_from_dict(thing)
             oobb_base.add_thing(thing_2)
@@ -562,9 +563,11 @@ def get_trays(size="oobb"):
     ts = []    
     
 
-    wids = 12
-    heis = 12
-    for wid in range(1,wids):
+    wids = 12 + 1
+    heis = 12 + 1
+    wids = list(range(1,wids))
+    wids.append(1.5)
+    for wid in wids:
         for hei in range(1,heis):
             ts.append([wid,hei])
 
@@ -575,7 +578,7 @@ def get_trays(size="oobb"):
     """
     ts.append([3,3])
     """
-    thicknesses = [12, 18, 30]
+    thicknesses = [9, 12, 15, 18, 30]
     for tray in ts:
         #trays.append({"type": "tray_lid", "width": tray[0], "height": tray[1], "thickness": 2, "size": size})
         #trays.append({"type": "tray_lid_thin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})

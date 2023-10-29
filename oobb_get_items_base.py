@@ -542,7 +542,7 @@ def get_oobb_screw(**kwargs):
                 p3["inclusion"] = mode        
                 p3.pop("radius_name", None)
                 p3.pop("radius", None)
-                p3["m"] = "#"
+                #p3["m"] = ""
                 return_value.append(ob.oobb_easy(**p3))  
         
         # hole    

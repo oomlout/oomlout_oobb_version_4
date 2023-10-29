@@ -4568,7 +4568,7 @@ def get_tray_vertical(**kwargs):
     rotY=90
     th.append(opsc.opsc_easy(type="p", shape="rounded_rectangle", size = [wid,hei,thick],  pos=[x, y, z], rotY=rotY, m=""))
     ### add holes
-    for xx in range(0, height):
+    for xx in range(0, int(height)):
         x = -width * 15 / 2 - 15
         y = -(height/2*15) + 7.5 + xx * 15
         z = 15 + 7.5
