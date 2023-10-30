@@ -5,16 +5,16 @@ difference() {
 	union() {
 		hull() {
 			translate(v = [-17.0000000000, 17.0000000000, 0]) {
-				cylinder(h = 3, r = 5);
+				cylinder(h = 15, r = 5);
 			}
 			translate(v = [17.0000000000, 17.0000000000, 0]) {
-				cylinder(h = 3, r = 5);
+				cylinder(h = 15, r = 5);
 			}
 			translate(v = [-17.0000000000, -17.0000000000, 0]) {
-				cylinder(h = 3, r = 5);
+				cylinder(h = 15, r = 5);
 			}
 			translate(v = [17.0000000000, -17.0000000000, 0]) {
-				cylinder(h = 3, r = 5);
+				cylinder(h = 15, r = 5);
 			}
 		}
 	}
@@ -29,6 +29,7 @@ difference() {
 						translate(v = [0, 0, -0.9500000000]) {
 							cylinder(r1 = 1.8000000000, r2 = 3.6000000000);
 						}
+						cylinder(h = 50, r = 3.6000000000);
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 6, r = 1.8000000000);
 						}
@@ -50,6 +51,7 @@ difference() {
 						translate(v = [0, 0, -0.9500000000]) {
 							cylinder(r1 = 1.8000000000, r2 = 3.6000000000);
 						}
+						cylinder(h = 50, r = 3.6000000000);
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 6, r = 1.8000000000);
 						}
@@ -71,6 +73,7 @@ difference() {
 						translate(v = [0, 0, -0.9500000000]) {
 							cylinder(r1 = 1.8000000000, r2 = 3.6000000000);
 						}
+						cylinder(h = 50, r = 3.6000000000);
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 6, r = 1.8000000000);
 						}
@@ -92,6 +95,7 @@ difference() {
 						translate(v = [0, 0, -0.9500000000]) {
 							cylinder(r1 = 1.8000000000, r2 = 3.6000000000);
 						}
+						cylinder(h = 50, r = 3.6000000000);
 						translate(v = [0, 0, -6.0000000000]) {
 							cylinder(h = 6, r = 1.8000000000);
 						}
