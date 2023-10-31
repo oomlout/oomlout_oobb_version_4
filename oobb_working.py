@@ -16,7 +16,7 @@ def main(**kwargs):
     #filter = "oobb_test_ex_oobb_motor_servo_standard_01"
     #filter = "oobb_holder_05_03_00_ex_motor_servo_standard_01"
     
-    filter = "oobb_plate"
+    filter = "oobb_tray_03_1d5_15"
 
     #oobb_servo_holder
     #filter = []
@@ -40,10 +40,10 @@ def main(**kwargs):
     save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
-    save_type = "all"
+    #save_type = "all"
 
-    #overwrite = True
-    overwrite = False
+    overwrite = True
+    #overwrite = False
     
     #modes = ["laser", "3dpr", "true"]
     modes = ["3dpr"]

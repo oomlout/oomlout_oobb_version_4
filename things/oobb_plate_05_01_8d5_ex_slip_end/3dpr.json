@@ -1,0 +1,30 @@
+[
+    {
+        "type": "p",
+        "width": 5,
+        "height": 1,
+        "thickness": 8.5,
+        "extra": "slip_end",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_plate",
+        "depth": 8.5
+    },
+    {
+        "type": "n",
+        "width": 5,
+        "height": 1,
+        "thickness": 8.5,
+        "extra": "slip_end",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "both_holes": false
+    }
+]
