@@ -14,9 +14,9 @@ def main(**kwargs):
     #filter = "oobb_bearing_plate_03_03_12_6704_ex_horn_adapter_screws_sh_motor_servo_standard_01"
     #filter = "oobb_bearing_plate_03_03_12_6705"
     #filter = "oobb_test_ex_oobb_motor_servo_standard_01"
-    #filter = "oobb_holder_05_03_00_ex_motor_servo_standard_01"
+    filter = "oobb_holder_05_03_00_ex_motor_servo_standard_01_all_print"
     
-    filter = "oobb_tray_03_1d5_15"
+    #filter = "servo_standard"
 
     #oobb_servo_holder
     #filter = []
@@ -40,12 +40,12 @@ def main(**kwargs):
     save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
-    #save_type = "all"
+    save_type = "all"
 
     overwrite = True
     #overwrite = False
     
-    #modes = ["laser", "3dpr", "true"]
+    modes = ["laser", "3dpr", "true"]
     modes = ["3dpr"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 

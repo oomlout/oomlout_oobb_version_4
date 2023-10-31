@@ -1,13 +1,12 @@
 [
     {
-        "type": "p",
+        "type": "positive",
         "width": 3,
         "height": 12,
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_servo_standard_01",
         "extra": "horn_adapter_screws",
-        "t": "p",
         "shape": "oobb_cylinder",
         "depth": 12,
         "radius": 11.7,
@@ -43,7 +42,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             7.5,
@@ -61,7 +59,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             -7.5,
@@ -79,7 +76,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             0,
@@ -97,7 +93,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             0,
@@ -115,7 +110,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_threaded_insert",
         "pos": [
             7.5,
@@ -133,7 +127,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_threaded_insert",
         "pos": [
             -7.5,
@@ -151,7 +144,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_threaded_insert",
         "pos": [
             0,
@@ -169,7 +161,6 @@
         "shaft": "motor_servo_standard_01",
         "zz": "bottom",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_threaded_insert",
         "pos": [
             0,
@@ -260,7 +251,7 @@
         "pos": [
             18.0,
             0,
-            -6.0
+            6.0
         ],
         "rot": [
             0,
@@ -284,7 +275,7 @@
         "pos": [
             -18.0,
             0,
-            -6.0
+            6.0
         ],
         "rot": [
             0,
@@ -308,7 +299,7 @@
         "pos": [
             0,
             18.0,
-            6.0
+            -6.0
         ],
         "rot": [
             0,
@@ -332,7 +323,7 @@
         "pos": [
             0,
             -18.0,
-            6.0
+            -6.0
         ],
         "rot": [
             0,

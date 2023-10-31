@@ -1,7 +1,7 @@
 import oobb
 import oobb_base
 import opsc
-
+import yaml
 import os
 from solid import *
 from solid.utils import *
@@ -9,16 +9,17 @@ from solid.utils import *
 import os
 import shutil
 
-def main():
+def main(**kwargs):
 
-    render = False
-    render = True
+    render = kwargs.get("render", False)
+    overwrite = kwargs.get("overwrite", False)
+    git = kwargs.get("git", False)
+    filter = kwargs.get("filter", False)
+    #if filter isn't a list make it one
+    if not isinstance(filter, list):
+        filter = [filter]
 
-    overwrite = False
-    #overwrite = True
-
-    git = False
-    git = True
+    
 
     pass
     folder_things = "things"
@@ -48,7 +49,9 @@ def main():
                             "oobb_bearing_plate_03_03_12_6705_ex_no_center",
                             "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01",
                             "oobb_holder_05_03_09_ex_motor_servo_standard_01_top",
-                            "oobb_holder_05_03_15_ex_motor_servo_standard_01"
+                            "oobb_holder_05_03_15_ex_motor_servo_standard_01",
+                            "oobb_holder_05_03_00_ex_motor_servo_standard_01_all_print",
+                            "oobb_bearing_plate_03_03_12_6705_ex_no_center"
                             ],
                         "shift_x": 6*15,
                         "shift_y": 5*15
@@ -96,29 +99,44 @@ def main():
 
     for detail in details:
         name = detail["name"]
-        matches = detail["matches"]
-        #folder_bundle = f"git/{name}"
-        folder_bundle = f"C:/GH/oobb_bundle/{name}"
-        #if folder_bundle doesnt exists then make it
-        if not os.path.isdir(folder_bundle):
-            os.makedirs(folder_bundle)
-        
-        
-        print(f"processing {name}")
-        #go through each folder in things   
-        for folder in os.listdir(folder_things):
-            for match in matches:
-                if match in folder:
-                    copy_folder(folder_things, folder, folder_bundle, name )
-        shift_x = detail.get("shift_x", 140)
-        shift_y = detail.get("shift_y", 75)
-        #render
-        if render:
-            make_all_3dpr_file(folder_bundle, shift_x, shift_y, overwrite=overwrite)
-        import oom_git
-        directory = folder_bundle
-        if git:
-            oom_git.push_to_git(directory = directory)
+        #if any filter string is in name then do it
+        if any(x in name for x in filter):
+            matches = detail["matches"]
+            #folder_bundle = f"git/{name}"
+            folder_bundle = f"C:/GH/oobb_bundle/{name}"
+            kwargs["folder_bundle"] = folder_bundle
+            #if folder_bundle doesnt exists then make it
+            if not os.path.isdir(folder_bundle):
+                os.makedirs(folder_bundle)
+            
+            
+            print(f"processing {name}")
+            
+            
+            #go through each folder in things   
+            for folder in os.listdir(folder_things):
+                for match in matches:
+                    if match in folder:
+                        copy_folder(folder_things, folder, folder_bundle, name )
+            
+            #do resolutions
+            import oom_base
+            oom_base.image_resolutions_dir(directory=folder_bundle, overwrite=True)
+
+            # copy production files
+            copy_folder_production(**kwargs)
+
+            #render
+            if render:
+                shift_x = detail.get("shift_x", 140)
+                shift_y = detail.get("shift_y", 75)
+                make_all_3dpr_file(folder_bundle, shift_x, shift_y, overwrite=overwrite)
+            
+            
+            import oom_git
+            directory = folder_bundle
+            if git:
+                oom_git.push_to_git(directory = directory)
     
 def make_all_3dpr_file(folder_bundle, shift_x = 140, shift_y = 75, **kwargs):
     overwrite = kwargs.get("overwrite", False)
@@ -208,7 +226,9 @@ def copy_folder(folder_things, folder, folder_bundle, name):
             #make the new filename the folder things name plus a _ and the file name
             new_file_name = folder + "_" + file
             src = os.path.join(folder_bundle_src_folder, file)
+            src = src.replace("/", "\\")
             dst = os.path.join(folder_bundle, new_file_name)
+            dst = dst.replace("/", "\\")
             #if src exists copy it to dst
             if os.path.isfile(src):
                 #copy the file to the new folder
@@ -218,12 +238,66 @@ def copy_folder(folder_things, folder, folder_bundle, name):
                 #print (f"        copied {src} to {dst}")
             else:
                 print(f"        {src} does not exist")
+                pass
     
 
+def copy_folder_production(**kwargs):
+    folder_bundle = kwargs.get("folder_bundle", "")
+    folder_oobb_production_folder = f"{folder_bundle}/oobb_production"
+    file_oobb_produciont_yaml = f"{folder_oobb_production_folder}/oobb_production.yaml"
+    #load details into yaml
+    with open(file_oobb_produciont_yaml, "r") as f:
+        details = yaml.load(f, Loader=yaml.FullLoader)
+    
+    production_files = details["oobb_production_file"]
+    for production_file in production_files:
+        file_source = production_file["file_source"]
+        file_source = f"{folder_bundle}/{file_source}"
+        file_render = production_file["file_render"]
+        file_render = f"{folder_bundle}/{file_render}"
+        file_type = production_file["file_type"]
+        file_render_extension = production_file.get("file_render_extension","png")        
+        file_extension = production_file["file_extension"]
+        index = production_file["index"]
+        file_destination = f"{folder_oobb_production_folder}/{file_type}_{index}.{file_extension}"
+        render_destination = f"{folder_oobb_production_folder}/images/{file_type}_{index}.{file_render_extension}"
+        try:
+            shutil.copyfile(file_source, file_destination)
+            #if file_render fodler doesn't exist make it
+            if not os.path.isdir(f"{folder_oobb_production_folder}/images"):
+                os.makedirs(f"{folder_oobb_production_folder}/images")
+            shutil.copyfile(file_render, render_destination)
+        except Exception as e:
+            print(f"    {e}")
+    import oom_markdown
+    p3 = {}
+    p3["file_template"] = details.get("template", "templates/oobb_production_readme.md.j2")
+    p3["file_output"] = f"{folder_oobb_production_folder}/readme.md"
+    p3["dict_data"] = details
+    
+    oom_markdown.get_jinja2_template(**p3)
+
+
+        
 
 
 
 
 
 if __name__ == "__main__":
-    main()
+    kwargs = {}
+    kwargs["filter"] = "servo"
+    
+    rend = False
+    #rend = True
+    kwargs["render"] = rend
+    
+    overwrite = False
+    #overwrite = True
+    kwargs["overwrite"] = overwrite
+
+    git = False
+    #git = True
+    kwargs["git"] = git
+
+    main(**kwargs)

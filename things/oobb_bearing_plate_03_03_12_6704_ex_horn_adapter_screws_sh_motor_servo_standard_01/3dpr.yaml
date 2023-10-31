@@ -10,9 +10,8 @@
     radius: 11.7
     shaft: motor_servo_standard_01
     shape: oobb_cylinder
-    t: p
     thickness: 12
-    type: p
+    type: positive
     width: 3
 -   bearing: '6704'
     depth: 12
@@ -28,7 +27,6 @@
     type: n
     width: 3
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -43,7 +41,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -58,7 +55,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -73,7 +69,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -88,7 +83,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -103,7 +97,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -118,7 +111,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -133,7 +125,6 @@
     width: 3
     zz: bottom
 -   bearing: '6704'
-    depth: 9
     height: 3
     hole: true
     pos:
@@ -213,7 +204,7 @@
     pos:
     - 18.0
     - 0
-    - -6.0
+    - 6.0
     radius_name: m3
     rot:
     - 0
@@ -233,7 +224,7 @@
     pos:
     - -18.0
     - 0
-    - -6.0
+    - 6.0
     radius_name: m3
     rot:
     - 0
@@ -253,7 +244,7 @@
     pos:
     - 0
     - 18.0
-    - 6.0
+    - -6.0
     radius_name: m3
     rot:
     - 0
@@ -273,7 +264,7 @@
     pos:
     - 0
     - -18.0
-    - 6.0
+    - -6.0
     radius_name: m3
     rot:
     - 0
