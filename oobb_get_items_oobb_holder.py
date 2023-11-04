@@ -1,8 +1,25 @@
 import copy
 import oobb_base
 from oobb_get_items_oobb_bearing_plate import *
+import oobb_get_items_oobb_holder_electronic
 
 
+# electronic
+#      button
+def get_holder_electronic_button_11_mm_panel_mount(**kwargs):
+    return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_button_11_mm_panel_mount(**kwargs)
+
+def get_holder_electronic_button_11_mm_panel_mount_x4(**kwargs):
+    return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_button_11_mm_panel_mount_x4(**kwargs)
+
+
+#      potentiometer
+def get_holder_electronic_potentiometer_17_mm(**kwargs):
+    return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_potentiometer_17_mm(**kwargs)
+
+# motor
+
+#       servo_standard_01
 def get_holder_motor_servo_standard_01_all_print(**kwargs):
     p3 = copy.deepcopy(kwargs)
     p3 = get_holder_motor_servo_standard_01_base_extra_variables(**p3)
@@ -11,15 +28,16 @@ def get_holder_motor_servo_standard_01_all_print(**kwargs):
     thing = oobb_base.get_default_thing(**p3)
 
     top = get_holder_motor_servo_standard_01_top(**kwargs)
-    top = oobb_base.shift(top, [0, 0, 9])
     #set color red
     oobb_base.color_set(top, "red")
-    bottom = get_holder_motor_servo_standard_01_bottom(**kwargs)
-    bottom = oobb_base.shift(bottom, [15*6, 0, 9+15+24])
+
+    #bottom = get_holder_motor_servo_standard_01_bottom(**kwargs)    
+    #bottom = oobb.shift(bottom, [0,0,+15+24])
     #set color green
-    oobb_base.color_set(bottom, "green")
+    #oobb_base.color_set(bottom, "green")
+    
     main = get_holder_motor_servo_standard_01(**kwargs)
-    main = oobb_base.shift(main, [15*12, 0, 9+15])
+    main = oobb.shift(main, [0,0,9+15/2])
     #set color blue
     oobb_base.color_set(main, "blue")
 
@@ -31,8 +49,11 @@ def get_holder_motor_servo_standard_01_all_print(**kwargs):
     p3["size"] = "oobb"    
     p3["bearing"] = "6705"
     p3["extra"] = "no_center"
-    bearing_holder = oobb_base.get_thing_from_dict(p3)
-    bearing_holder = oobb_base.shift(bearing_holder, [0, 15*4, 0])
+    p3["pos"] = [0,0,0]
+    bearing_holder_1 = oobb_base.get_thing_from_dict(p3)
+    p3 = copy.deepcopy(p3)
+    bearing_holder_2 = oobb_base.get_thing_from_dict(p3)
+    
 
     p3 = {  "type": "bearing_plate",
             "width": 3, 
@@ -43,13 +64,28 @@ def get_holder_motor_servo_standard_01_all_print(**kwargs):
             "shaft": "motor_servo_standard_01", 
             "extra": "horn_adapter_screws"}
     bearing_middle = oobb_base.get_thing_from_dict(p3)
-    bearing_middle = oobb_base.shift(bearing_middle, [15*7, 15*4, 0])
+    
 
-    thing["components"].extend(top["components"])
-    thing["components"].extend(bottom["components"])
-    thing["components"].extend(main["components"])
-    thing["components"].extend(bearing_holder["components"])
-    thing["components"].extend(bearing_middle["components"])
+
+    elements = [[top,[0,0,0],[0, 0, 9]],                 
+                [main,[0,180,0],[15*4, 0, 7.5]],
+                [bearing_holder_1,[0,180,0],[0,15*4,6]],
+                [bearing_holder_2,[0,180,0],[15*4,15*4,6]],
+                [bearing_middle,[0,180,0],[15*7, 15*4, 6]]
+                ]
+
+    for element in elements:
+        components = element[0]["components"]
+        return_value_2 = {}
+        return_value_2["type"]  = "rotation"
+        return_value_2["typetype"]  = "positive"
+        return_value_2["pos"] = element[2]
+        return_value_2["rot"] = element[1]
+        return_value_2["objects"] = components
+        oobb_base.append_full(thing, **return_value_2)
+
+
+    
 
     return thing
 
@@ -394,139 +430,3 @@ def get_holder_motor_servo_standard_01_base(**kwargs):
         return thing
     else: # only return the elements
         return thing["components"]
-
-
-
-
-# default sets
-    width = kwargs.get("width", 1)
-    height = kwargs.get("height", 1)
-    thickness = kwargs.get("thickness", 3)
-    size = kwargs.get("size", "oobb")
-    pos = kwargs.get("pos", [0, 0, 0])    
-    extra = kwargs.get("extra", "")
-    full_object = kwargs.get("full_object", True)
-        
-    # extra sets
-    holes = kwargs.get("holes", True)
-    both_holes = kwargs.get("both_holes", False)
-    kwargs["pos"] = pos
-
-    # get the default thing
-    thing = oobb_base.get_default_thing(**kwargs)
-    th = thing["components"]
-    kwargs.pop("size","")
-
-    # add plate
-    plate_pos = [-15,0,-thickness]
-    p3 = copy.deepcopy(kwargs)    
-    p3["type"] = "p"   
-    p3["s"] = f"{size}_plate"
-    p3["width"] = width
-    p3["height"] = height  
-    p3["depth_mm"] = thickness
-    p3["pos"] = [pos[0]  + plate_pos[0], pos[1] + plate_pos[1], pos[2] + plate_pos[2]]
-    #p3["m"] = ""        
-    th.append(oobb_base.oobb_easy(**p3))
-    
-    # add holes
-    locs = []
-    locs.append([1,1])
-    locs.append([1,2])
-    locs.append([1,3])
-    locs.append([2,1])
-    locs.append([2,3])
-    locs.append([3,1])
-    locs.append([3,3])
-    locs.append([5,1])
-    locs.append([5,3])
-    p3 = copy.deepcopy(kwargs)
-    p3["type"] = "n"
-    p3["s"] = f"{size}_holes"
-    p3["width"] = width
-    p3["height"] = height
-    p3["pos"] = plate_pos
-    p3["holes"] = "single"
-    p3["loc"]  = locs    
-    #p3["m"] = "#"
-    th.extend(oobb_base.oobb_easy(**p3))   
-
-    # bearing clearance     
-    p3 = copy.deepcopy(kwargs)
-    p3["type"] = "n"
-    p3["s"] = f"oobb_hole"
-    p3["radius"] = 24/2
-    #p3["m"] = "#"
-    th.extend(oobb_base.oobb_easy(**p3))
-
-    # servo clearance
-    pos_shift = [0, 0, -2]
-    p3 = copy.deepcopy(kwargs)
-    p3["type"] = "n"
-    p3["s"] = f"oobb_motor_servo_standard_01"
-    p3["pos"] = [pos[0] + pos_shift[0], pos[1] + pos_shift[1], pos[2] + pos_shift[2]]
-    p3["part"] = "all"
-    p3["bottom_clearance"] = True
-    p3["include_screws"] = True
-    p3["top_clearance"] = True
-    p3["overhang"] = True
-    #p3["screw_rot_y"] = 180
-    p3["screw_depth"] = 12
-
-    #p3["m"] = "#"
-    th.extend(oobb_base.oobb_easy(**p3))
-    
-
-    
-
-
-    if full_object:   
-        return thing
-    else: # only return the elements
-        return th
-    
-    
-    
-    
-    # add bearing size hole
-
-    # circle clearance
-    
-    
-
-        #top clearance
-
-
-    # bearing attachments
-    holes = []
-    holes.append([0,18,0,"m3"])
-    holes.append([0,-18,0,"m3"])
-    for hole in holes:
-        p2 = copy.deepcopy(kwargs)
-        p2.pop("size")
-        p2["type"] = "n"
-        p2["shape"] = "oobb_screw_socket_cap"
-        p2["radius_name"] = hole[3]
-        p2["pos"][0] = hole[0]
-        p2["pos"][1] = hole[1]
-        p2["pos"][2] = hole[2]-4
-        p2["depth"] = 25
-        p2["rotY"] = 180        
-        p2["top_clearance"] = True
-        p2["include_nut"] = False
-        #p2["m"] = "#"
-        if "bottom" in t: #the type passed to the routine but not type                         
-            screw_extra = 15 # 40 mm screw
-            p2["depth"] = p2["depth"] + screw_extra #go to 30
-            #p2["m"] = "#"            
-            p2["pos"][2] = p2["pos"][2] - screw_extra
-            p2["overhang"] = True
-
-
-
-        th.append(oobb_base.oobb_easy(**p2))
-
-
-
-    
-    return thing

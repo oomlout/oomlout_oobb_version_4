@@ -1,0 +1,134 @@
+[
+    {
+        "extra": "i2c",
+        "thickness": 6,
+        "width": 3,
+        "height": 3,
+        "num_pins": 4,
+        "polarized": true,
+        "pos": [
+            0,
+            0,
+            -6
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -6
+        ],
+        "type": "positive",
+        "shape": "oobb_plate",
+        "depth": 6
+    },
+    {
+        "extra": "i2c",
+        "thickness": 6,
+        "width": 3,
+        "height": 3,
+        "num_pins": 4,
+        "polarized": true,
+        "pos": [
+            0,
+            0,
+            -6
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -6
+        ],
+        "hole_sides": [
+            "left",
+            "right",
+            "top"
+        ],
+        "type": "p",
+        "shape": "oobb_holes",
+        "holes": [
+            "left",
+            "right",
+            "top"
+        ],
+        "both_holes": true
+    },
+    {
+        "thickness": 6,
+        "width": 3,
+        "height": 3,
+        "num_pins": 4,
+        "polarized": true,
+        "pos": [
+            7.5,
+            -15,
+            -6
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -6
+        ],
+        "type": "negative",
+        "shape": "oobb_nut",
+        "radius_name": "m3",
+        "zz": "bottom",
+        "overhang": true,
+        "rot": [
+            0,
+            0,
+            15.0
+        ],
+        "nut": false
+    },
+    {
+        "thickness": 6,
+        "width": 3,
+        "height": 3,
+        "num_pins": 4,
+        "polarized": true,
+        "pos": [
+            7.5,
+            15,
+            -6
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -6
+        ],
+        "type": "negative",
+        "shape": "oobb_nut",
+        "radius_name": "m3",
+        "zz": "bottom",
+        "overhang": true,
+        "rot": [
+            0,
+            0,
+            15.0
+        ],
+        "nut": false
+    },
+    {
+        "extra": "i2c",
+        "thickness": 6,
+        "width": 3,
+        "height": 3,
+        "num_pins": 4,
+        "polarized": true,
+        "pos": [
+            0,
+            0,
+            -3
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -6
+        ],
+        "shape": "oobb_wire_i2c",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    }
+]

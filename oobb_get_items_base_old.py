@@ -3,7 +3,7 @@ import math
 
 #print pythonpathenvironment variable
 import os
-print(os.environ['PYTHONPATH'])
+
 
 
 
@@ -14,7 +14,7 @@ import oobb
 import oobb_base as ob
 from oobb_variables import *
 from oobb_get_item_common import *
-
+from oobb_get_items_base import *
 
 
 def get_oobb_bearing(**kwargs):
@@ -2179,80 +2179,6 @@ def get_oobb_standoff(loose=False, hole=False, **kwargs):
 
 
 
-def get_oobb_wire_base(**kwargs):
-
-    width = kwargs.get("width", 2)
-    height = kwargs.get("height", 2)
-    pos = kwargs.get("pos", [0, 0, 0])
-    polarized = kwargs.get("polarized", False)
-    through = kwargs.get("through", True)
-
-
-    modes = kwargs.get("mode", ["laser", "3dpr", "true"])
-    if modes == "all":
-        modes = ["laser", "3dpr", "true"]
-    if type(modes) == str:
-        modes = [modes]
-    return_value = []
-    for mode in modes:
-        #depth = ob.gv("wi_depth", mode) 
-        depth = 3
-        extra = ob.gv("wi_extra", mode)
-        i01 = ob.gv("wi_i01", mode)        
-        p2 = copy.deepcopy(kwargs)
-        length = ob.gv("wi_length", mode)
-        if through:
-            ##wire pass piece
-            wid = 3
-            hei = 9
-            depth = 10
-            size = [wid, hei, depth]
-            x = 26.589
-            y = 0
-            z = 0 
-            pos = [kwargs["pos"][0] + x, kwargs["pos"][1] + y, kwargs["pos"][2] + z]
-            p2["shape"] = "oobb_cube_center"
-            p2["pos"] = pos
-            p2["size"] = size    
-            p2["inclusion"] = mode   
-            p2["m"] = ""
-            ##wire escape =             
-            return_value.append(ob.oe(**p2))
-        
-        if width == 3:
-            #big escape            
-            p3 = copy.deepcopy(kwargs)
-            p3["s"] = "oobb_wire_clearance_square"
-            p3["pos"] = [22.5,0,0]
-            p3["depth"] = depth
-            p3["m"] = "#"
-            return_value.append(get_common(**p3))
-                
-
-    #polariation dot
-    if polarized:
-        p2 = copy.deepcopy(kwargs)
-        p2["shape"] = "oobb_cylinder"
-        x = 0.5
-        shape = kwargs.get("shape", "")
-        y = -9 #default for ba
-        if shape == "oobb_wire_basic":
-            y = -9
-        z = 3/2
-        p2["pos"] = [kwargs["pos"][0] + x, kwargs["pos"][1] + y, kwargs["pos"][2] + z]
-        p2["r"] = 1.5
-        p2["depth"] = 3
-        p2["inclusion"] = "all"
-        #p2["m"] = "#"
-        return_value.extend(ob.oobb_easy(**p2))
-
-    return return_value
-
-# basic
-def get_oobb_wire_basic(**kwargs):
-    kwargs["num_pins"] = 3
-    kwargs.update({"polarized": True})
-    return get_oobb_wire_generic(**kwargs)
 # hv
 def get_oobb_wire_higher_voltage(**kwargs):
     kwargs["num_pins"] = 2
@@ -2269,89 +2195,6 @@ def get_oobb_wire_motor(**kwargs):
     kwargs.update({"polarized": False})
     return get_oobb_wire_generic(**kwargs)
 
-def get_oobb_wire_generic(**kwargs):
-    pos = kwargs.get("pos", [0, 0, 0])      
-    num_pins = kwargs.get("num_pins", 2)
-    polarized = kwargs.get("polarized", False)
-    modes = kwargs.get("mode", ["laser", "3dpr", "true"])
-    if modes == "all":
-        modes = ["laser", "3dpr", "true"]
-    if type(modes) == str:
-        modes = [modes]
-    return_value = []
-    pole_extra = 0
-    if polarized:
-        pole_extra = 1
-    shift = 2 - num_pins
-
-    return_value = get_oobb_wire_base(**kwargs)
-    for mode in modes:
-        #depth = ob.gv("wi_depth", mode) 
-        depth = 3
-        extra = ob.gv("wi_extra", mode)
-        i01 = ob.gv("wi_i01", mode)        
-        
-        length = ob.gv("wi_length", mode)
-        ##wire back piece
-        wbp = copy.deepcopy(kwargs)
-        wid = 5
-        hei = i01 * num_pins - 2
-        depth = 3
-        #depth = 8
-        size = [wid, hei, depth]
-        x = 25.567
-        y = 2.54 + (shift) * 2.54/2
-        z = 0 
-        wbp["pos"] = [kwargs["pos"][0] + x, kwargs["pos"][1] + y, kwargs["pos"][2] + z]
-        wbp["shape"] = "oobb_cube_center"
-        wbp["size"] = size    
-        wbp["inclusion"] = mode    
-        return_value.append(ob.oe(**wbp))
-        
-        ##big piece front        
-        bpf = copy.deepcopy(wbp)
-        wid = length - 8
-        hei = i01 * (num_pins+polarized) + extra
-        size = [wid, hei, depth]
-        x = 3.354
-        y = wbp["pos"][1] - 2.54 / 2 * polarized
-        z = 0
-        pos = [kwargs["pos"][0] + x, kwargs["pos"][1] + y, kwargs["pos"][2] + z]
-        bpf["shape"] = "oobb_cube_center"
-        bpf["pos"] = pos
-        bpf["size"] = size    
-        #bpf["m"] = "#"
-        bpf["inclusion"] = mode    
-        return_value.append(ob.oe(**bpf))
-        
-        ##big piece back
-        bpb = copy.deepcopy(wbp)        
-        wid = length
-        hei = i01 * num_pins + extra
-        size = [wid, hei, depth]        
-        x = 16.038
-        y = wbp["pos"][1]
-        z = 0
-        pos = [kwargs["pos"][0] + x, kwargs["pos"][1] + y, kwargs["pos"][2] + z]
-        bpb["pos"] = pos
-        bpb["size"] = size
-        return_value.append(ob.oe(**bpb))
-        
-        ##key piece
-        kp = copy.deepcopy(bpf)
-        wid = i01 + extra
-        hei = i01 * (num_pins + 2 + polarized) + extra
-        size = [wid, hei, depth]
-        x = 7.77
-        y = bpf["pos"][1]
-        z = 0
-        pos = [kwargs["pos"][0] + x, kwargs["pos"][1] + y, kwargs["pos"][2] + z]        
-        kp["pos"] = pos
-        kp["size"] = size    
-        return_value.append(ob.oe(**kp))
-
-
-    return return_value
 
 
 # 2 wire unpolarized 
@@ -2649,63 +2492,9 @@ def get_oobb_electronics_microswitch_standard(**kwargs):
     return return_value
 
 def get_oobb_electronics_potentiometer_17(**kwargs):
-    part = kwargs.get("part", "all")    
-
-    if part == "all":
-        clearance = kwargs.get("clearance", False)
-        extra_clearance = 0
-        if clearance:
-            extra_clearance = 20
-        return_value = []
-        p2 = copy.deepcopy(kwargs)        
-        p2["r"] = [18/2, 7.5/2, 6/2]
-        p2["h"] = [9+extra_clearance, 7, 14]
-        return_value.extend((get_cylinders(**p2)))
-        return_value = ob.shift(return_value, [0, 0, -9-extra_clearance])
-        #return_value = ob.shift(return_value, [0, 0, -30])
-
-        #add a keying cube 1.2 x 2.8 x 2.5 plus 0.5 at 0,8
-        p2 = copy.deepcopy(kwargs)
-        extra = 0.5
-        height = 2.8
-        width = 1.2
-        depth = 2.6
-        p2["size"] = [width+extra, height+extra, depth+extra]
-        #offset pos for center postion
-        p2["pos"] = [p2["pos"][0]-8, p2["pos"][1], p2["pos"][2]]
-        return_value.append((get_oobb_cube_center(**p2)))
-
-        # add a cube for the wires 18 x 25.5 x 3 at 0, -3.75, 0
-        p2 = copy.deepcopy(kwargs)
-        extra = 0
-        height = 12.5
-        width = 18
-        depth = 3+extra_clearance
-        p2["size"] = [width+extra, height+extra, depth+extra]
-        #offset pos for center postion    
-        p2["pos"] = [p2["pos"][0], p2["pos"][1]-5.75, p2["pos"][2] - depth]
-        return_value.append((get_oobb_cube_center(**p2)))
-
-        # add a cube for the wire bottoms
-        p2 = copy.deepcopy(kwargs)
-        extra = 0
-        height = 5.5
-        width = 13
-        #depth = 3
-        p2["size"] = [width+extra, height+extra, depth+extra]
-        #offset pos for center postion    
-        p2["pos"] = [p2["pos"][0], p2["pos"][1]-13.75, p2["pos"][2] -depth]
-        return_value.append((get_oobb_cube_center(**p2)))
-    elif part == "shaft":
-        return_value = []  
-        p2 = copy.deepcopy(kwargs)
-        p2["r"] = 5.9/2
-        p2["shape"] = "oobb_hole"                
-        return_value.extend(ob.oe(**p2))        
-        return return_value
+    return get_oobb_electronic_potentiometer_17_mm(**kwargs)
 
 
-    return return_value
 
 def get_oobb_electronics_pushbutton_11(**kwargs):
 

@@ -7,7 +7,13 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12.0000000000, r = 1.5000000000);
+						}
 						cylinder(h = 3.2000000000, r = 3.0000000000);
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12.0000000000, r = 1.8000000000);
+						}
 						translate(v = [0, 0, -12.0000000000]) {
 							cylinder(h = 12.0000000000, r = 1.5000000000);
 						}
@@ -20,7 +26,13 @@ difference() {
 			rotate(a = [0, 180, 0]) {
 				difference() {
 					union() {
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12.0000000000, r = 1.5000000000);
+						}
 						cylinder(h = 3.2000000000, r = 3.0000000000);
+						translate(v = [0, 0, -12.0000000000]) {
+							cylinder(h = 12.0000000000, r = 1.8000000000);
+						}
 						translate(v = [0, 0, -12.0000000000]) {
 							cylinder(h = 12.0000000000, r = 1.5000000000);
 						}
@@ -29,7 +41,7 @@ difference() {
 				}
 			}
 		}
-		color(alpha = 1.0000000000, c = "gray") {
+		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth", valign = "center");
@@ -43,7 +55,7 @@ difference() {
 				}
 			}
 		}
-		color(alpha = 1.0000000000, c = "gray") {
+		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [300, 14, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y : 180", valign = "center");

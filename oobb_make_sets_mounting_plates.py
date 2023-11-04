@@ -4,6 +4,7 @@ def get_mounting_plates(size="oobb"):
     mounting_plates = []
     mounting_plates.extend(get_mounting_plates_aliexpress())
     mounting_plates.extend(get_mounting_plates_bigtreetech())
+    mounting_plates.extend(get_mounting_plates_cytron())
     mounting_plates.extend(get_mounting_plates_dangerousprototypes())
     mounting_plates.extend(get_mounting_plates_electrolama())
 
@@ -110,7 +111,28 @@ def get_mounting_plates_bigtreetech(size="oobb"):
     mounting_plates.append(pl)
     
     return mounting_plates
-    
+
+def get_mounting_plates_cytron(size="oobb"):
+    mounting_plates = []
+    # company : cytron
+    #      maker_pi_rp2040
+    pl = { "type": "mounting_plate",
+            "name": "cytron_maker_pi_rp2040",
+            "width": 8,
+            "height": 6,
+            "thickness": 3,
+            "width_mounting": 82,
+            "height_mounting": 58,
+            "radius_hole": "m3",
+            "size": size}
+    mounting_plates.append(pl)
+    pl3 = copy.deepcopy(pl)
+    pl3["type"] = "mounting_plate_top"
+    pl3["width"] = pl3["width"]-1
+    mounting_plates.append(pl3)
+
+    return mounting_plates
+
 def get_mounting_plates_dangerousprototypes(size="oobb"):
     mounting_plates = []
     # company : dangerousprototypes

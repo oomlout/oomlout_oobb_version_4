@@ -160,6 +160,7 @@ def get_comment(comment, type="p", **kwargs):
         p3["m"] = m
         p3["color"] = "gray"
         p3["font"] = "Arial:style=Bold"
+        p3.pop("objects", "")
 
         if comment != "":
             return_value.extend(oobb_base.oobb_easy(**p3))
@@ -547,7 +548,15 @@ def oobb_easy_string_params(**kwargs):
     return p3
 
 
-def append_full(thing, **kwargs):    
+def append_full(thing, **kwargs):
+    #test for objects if so iterate
+    objects = kwargs.get("objects", [])
+    m = kwargs.get("m", "")
+    if objects != []:
+        for object in objects:     
+            object["m"] = m
+            append_full(thing, **object)
+        return    
     #add loop for multiple pos
     kwargs_original = copy.deepcopy(kwargs)
     poss = kwargs.get("pos", [0,0,0])
@@ -591,6 +600,7 @@ def append_full(thing, **kwargs):
             p4.pop("comment", None)
             p4.pop("thing", None)
             p4.pop("item", None)
+            p4.pop("objects", "")
             string_to_add = oobb_easy_get_string(**p4)
             ths.append(string_to_add)
 

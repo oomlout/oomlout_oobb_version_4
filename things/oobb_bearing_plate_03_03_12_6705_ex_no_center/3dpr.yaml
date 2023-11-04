@@ -1,34 +1,6 @@
 -   bearing: '6705'
     depth: 12
     extra: no_center
-    extra_mm: true
-    height: 3
-    holes: false
-    pos:
-    - 0
-    - 0
-    - -6.0
-    shape: oobb_plate
-    thickness: 12
-    type: p
-    width: 3
--   bearing: '6705'
-    depth: 12
-    extra: no_center
-    height: 12
-    mode: all
-    pos:
-    - 0
-    - 0
-    - 0
-    radius: 14.2
-    shape: oobb_cylinder
-    thickness: 12
-    type: negative
-    width: 3
--   bearing: '6705'
-    depth: 12
-    extra: no_center
     height: 3
     pos:
     - 0
@@ -172,6 +144,7 @@
     depth: 12
     extra: no_center
     height: 3
+    m: '#'
     nut: true
     overhang: true
     pos:
@@ -191,6 +164,7 @@
     depth: 12
     extra: no_center
     height: 3
+    m: '#'
     nut: true
     overhang: true
     pos:
@@ -210,6 +184,7 @@
     depth: 12
     extra: no_center
     height: 3
+    m: '#'
     nut: true
     overhang: true
     pos:
@@ -229,6 +204,7 @@
     depth: 12
     extra: no_center
     height: 3
+    m: '#'
     nut: true
     overhang: true
     pos:
@@ -320,14 +296,6 @@
     thickness: 12
     type: n
     width: 3
--   mode: 3dpr
-    pos:
-    - 0
-    - 0
-    - 6.0
-    shape: oobb_slice
-    type: n
-    zz: bottom
 -   mode: 3dpr
     pos:
     - 0

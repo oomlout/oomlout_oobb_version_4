@@ -1,0 +1,78 @@
+[
+    {
+        "extra": "motor",
+        "thickness": 3,
+        "width": 3,
+        "height": 3,
+        "num_pins": 2,
+        "polarized": false,
+        "pos": [
+            0,
+            0,
+            -3
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -3
+        ],
+        "type": "positive",
+        "shape": "oobb_plate",
+        "depth": 3
+    },
+    {
+        "extra": "motor",
+        "thickness": 3,
+        "width": 3,
+        "height": 3,
+        "num_pins": 2,
+        "polarized": false,
+        "pos": [
+            0,
+            0,
+            -3
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -3
+        ],
+        "hole_sides": [
+            "left",
+            "right",
+            "top"
+        ],
+        "type": "p",
+        "shape": "oobb_holes",
+        "holes": [
+            "left",
+            "right",
+            "top"
+        ],
+        "both_holes": true
+    },
+    {
+        "extra": "motor",
+        "thickness": 3,
+        "width": 3,
+        "height": 3,
+        "num_pins": 2,
+        "polarized": false,
+        "pos": [
+            0,
+            0,
+            -3
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -3
+        ],
+        "shape": "oobb_wire_motor",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    }
+]

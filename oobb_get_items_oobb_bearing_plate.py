@@ -77,14 +77,14 @@ def get_bearing_plate(**kwargs):
 
     # slice section
     
-    z_level = 0
+    z_level = pos[2]
     if extra == "horn_adapter_screws":   
         z_level = -20 # NO SLIC
     else: 
-        z_level = 0
+        z_level = pos[2]
     
     # slices and conditional slices
-    if shaft == "m6":
+    if shaft == "m6" and extra != "no_center":
         #shift coomponents to the right and down half thickness
         components_second = copy.deepcopy(thing["components"])
         components_second = oobb_base.shift(components_second, shift = [50, 0 , +thickness/2])

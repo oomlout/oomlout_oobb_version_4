@@ -96,8 +96,8 @@ def get_circles(size="oobb"):
     circles.append({"type": "circle", "diameter": 1.5, "thickness": 12, "extra":"nut_m6", "size": size})
 
 
-    circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"electronics_potentiometer_17", "size": size})
-    circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 6, "shaft":"electronics_potentiometer_17", "size": size})
+    circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"electronic_potentiometer_17_mm", "size": size})
+    circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 6, "shaft":"electronic_potentiometer_17_mm", "size": size})
     
     circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
     circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
@@ -165,21 +165,19 @@ def get_holders(size="oobb"):
 
     #electronics
         #microswitch_standard
-    hls.append({"type": "holder", "extra": "electronics_microswitch_standard","width": 3, "height": 3, "thickness": 3, "size": size}) 
-    hls.append({"type": "holder", "extra": "electronics_microswitch_standard","width": 3, "height": 3, "thickness": 6, "size": size})            
+    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 3, "size": size}) 
+    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 6, "size": size})            
         #potentimeter_17
-    hls.append({"type": "holder", "extra": "electronics_potentiometer_17","width": 3, "height": 3, "thickness": 3, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_potentiometer_17","width": 3, "height": 3, "thickness": 12, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_potentiometer_17","width": 3, "height": 4, "thickness": 12, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 12, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 3, "size": size})
         #pushbutton_11
-    hls.append({"type": "holder", "extra": "electronics_pushbutton_11","width": 3, "height": 3, "thickness": 3, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_pushbutton_11","width": 3, "height": 3, "thickness": 21, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_pushbutton_11","width": 3, "height": 4, "thickness": 21, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_pushbutton_11_x4","width": 3, "height": 3, "thickness": 3, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_pushbutton_11_x4","width": 3, "height": 3, "thickness": 21, "size": size})
-    hls.append({"type": "holder", "extra": "electronics_pushbutton_11_x4","width": 3, "height": 4, "thickness": 21, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount","width": 3, "height": 3, "thickness": 3, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount","width": 3, "height": 3, "thickness": 21, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount_x4","width": 3, "height": 3, "thickness": 3, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount_x4","width": 3, "height": 3, "thickness": 21, "size": size})
+    
         #mcu
-    hls.append({"type": "holder", "extra": "electronics_mcu_atmega328_shennie","width": 3, "height": 4, "thickness": 6, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_mcu_atmega328_shennie","width": 3, "height": 4, "thickness": 6, "size": size})
 
     # powerbank
     #      anker_323
@@ -479,7 +477,7 @@ def get_shaft_couplers(size="oobb"):
 def get_soldering_jigs(size="oobb"):
     sjs = []
     
-    sjs.append({"type": "soldering_jig", "extra": "electronics_mcu_pi_pico_socket", "width": 3, "height": 5, "thickness": 9, "size": size})
+    sjs.append({"type": "soldering_jig", "extra": "electronic_mcu_pi_pico_socket", "width": 3, "height": 5, "thickness": 9, "size": size})
     
     return sjs
 
@@ -550,8 +548,8 @@ def get_tool_holders(size="oobb"):
     tools.append(["tool_tdpb_glue_stick_prit_medium",4,5,28+extra_thick])
 
     #specialty tools
-    tools.append(["tool_electronics_crimp_jst_wc_260",5,5,24+extra_thick])
-    tools.append(["tool_electronics_crimp_molex_11010185",7,5,18+extra_thick])
+    tools.append(["tool_electronic_crimp_jst_wc_260",5,5,24+extra_thick])
+    tools.append(["tool_electronic_crimp_molex_11010185",7,5,18+extra_thick])
 
     for tool in tools:
         tool_holders.append({"type": "tool_holder_vertical", "width": tool[1], "height": tool[2],  "thickness": tool[3], "extra": tool[0], "size": size})
@@ -569,7 +567,9 @@ def get_trays(size="oobb"):
     wids.append(1.5)
     for wid in wids:
         for hei in range(1,heis):
-            ts.append([wid,hei])
+            #don't add duplicates
+            if [hei,wid] not in ts:
+                ts.append([wid,hei])
 
     ts.append([3,1.5])    
     ts.append([2,2.5])
@@ -618,26 +618,16 @@ def get_wheels(size="oobb"):
 def get_wires(size="oobb"):
     wis = []
     thicknesses = [3,6]
-    widths = [2,3]
-    extras = ["motor","basic","higher_voltage","i2c"]
+    #widths = [2,3]
+    widths = [3]
+    extras = ["motor","basic","higher_voltage","i2c","motor_stepper"]
+    #extras = ["basic"]
     for thickness in thicknesses:        
         for width in widths:
             for extra in extras:
                 wis.append({"type": "wire", "extra": extra, "thickness": thickness, "width": width, "height": 3, "size": size})
     for extra in extras:
-        wis.append({"type": "wire", "extra": f'{extra}_base', "thickness": 6, "width": 3, "height": 3, "size": size})  
-    
-    #base plates
-    wis.append({"type": "wire", "extra": "base", "thickness": 3, "width": 2, "height": 3, "size": size})                    
-    wis.append({"type": "wire", "extra": "base", "thickness": 3, "width": 
-    3, "height": 3, "size": size})                    
-    wis.append({"type": "wire", "extra": "base_cap", "thickness": 3, "width": 3, "height": 3, "size": size})                    
-    #wis.append({"type": "wire", "extra": "base_holder", "thickness": 3, "width": 3, "height": 3, "size": size})                    
-    
-    #cap    
-    wis.append({"type": "wire", "extra": "cap", "thickness": 3, "width": 3, "height": 3, "size": size})                    
-    
-    
+        wis.append({"type": "wire", "extra": f'{extra}', "thickness": 6, "width": 3, "height": 3, "size": size})  
     
     #spacer    
     thicknesses = [3,6,9,12]
@@ -757,7 +747,8 @@ def get_tests():
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_countersunk"})
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_socket_cap"})
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_self_tapping"})
-
+    # wire test
+    tests.append({"type": "test", "size": "oobb", "extra": "oobb_wire"})
 
     return tests
 

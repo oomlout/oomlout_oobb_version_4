@@ -2,6 +2,7 @@ import copy
 import oobb_base
 
 
+# rotation
 def get_test_rotation(**kwargs):
     # default sets
     width = 5
@@ -60,6 +61,7 @@ def get_test_rotation(**kwargs):
     else: # only return the elements
         return thing["components"]
 
+# motor
 def get_test_oobb_motor_servo_standard_01(**kwargs):
     # default sets
     pos = kwargs.get("pos", [0, 0, 0])
@@ -132,7 +134,7 @@ def get_test_oobb_motor_servo_standard_01(**kwargs):
     else: # only return the elements
         return thing["components"]
 
-
+# screw
 def get_test_oobb_screw_socket_cap(**kwargs):
     kwargs["style"] =  "socket_cap"
     return get_test_oobb_screw(**kwargs)
@@ -144,7 +146,6 @@ def get_test_oobb_screw_countersunk(**kwargs):
 def get_test_oobb_screw_self_tapping(**kwargs):
     kwargs["style"] =  "self_tapping"
     return get_test_oobb_screw(**kwargs)
-
 
 def get_test_oobb_screw(**kwargs):
     # default sets
@@ -322,10 +323,6 @@ def get_test_oobb_screw(**kwargs):
         return thing
     else: # only return the elements
         return thing["components"]
-
-
-
-    
 
 def get_test_oobb_screw_socket_cap_old_1(**kwargs):
     # default sets
@@ -815,6 +812,77 @@ def get_test_oobb_screw_socket_cap_old_1(**kwargs):
     p4["pos"] = copy.deepcopy(pos_current)
     p4["comment"] = f"{item}\n{comment_extra}\nzz : bottom"
     oobb_base.append_full(thing, **p4) 
+    
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+# wire
+def get_test_oobb_wire(**kwargs):
+    # default sets
+    style = kwargs.get("style", "wire")
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 60
+    comment_extra = ""
+    
+    versions = []
+    
+
+    styles = ["motor","motor_stepper","basic","higher_voltage","i2c","spacer"]
+
+    for style in styles:
+        base = {}    
+        base["shape"] = f"oobb_wire_{style}"
+        base["comment_extra"] = ""
+        base["comment_display"] = True
+        #base["m"] = ""
+        base["extra"] = {}
+        versions.append(copy.deepcopy(base))
+    
+    rots = []
+    rots.append([[0,0,0], {}, ""])
+    rots.append([[150,0,0], {"rot_y":180}, "rot_y : 180"])
+    rots.append([[300,0,0], {"rot_y":90}, "rot_y : 90"])
+    rots.append([[450,0,0], {"rot_x":45, "rot_y": 45}, "rot_x : 90 rot_y : 45"])
+
+
+    for r in rots:
+        pos_current = r[0]
+        extra_extra = r[1]
+        comment_extra_extra = r[2]
+
+        for v in versions:                        
+            p3 = copy.deepcopy(kwargs)
+            comment_extra = v["comment_extra"]
+            p3["shape"] = v["shape"] 
+            p3["type"] = "positive"
+            
+            p3["comment"] = f"{v['shape']}_\n{comment_extra}{comment_extra_extra}"
+            comment_display = v.get("comment_display", False)
+            p3["comment_display"]   = comment_display
+            p3["pos"] = copy.deepcopy(pos_current)
+            p3["m"] = ""
+            p3.update(v["extra"])
+            p3.update(extra_extra)
+            oobb_base.append_full(thing, **p3)
+            pos_current[1] += pos_shift
+        
+        
     
 
     if full_object:   

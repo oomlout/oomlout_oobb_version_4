@@ -297,7 +297,7 @@ if __name__ == "__main__":
     kwargs["overwrite"] = overwrite
 
     git = False
-    #git = True
+    git = True
     kwargs["git"] = git
 
     main(**kwargs)

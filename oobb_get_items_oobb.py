@@ -7,9 +7,36 @@ import oobb_base
 
 import copy
 
+# helpers
+def get_plate_dict(**kwargs):
+    size = kwargs.get("size", "oobb")
+    thickness = kwargs.get("thickness", 3)
+    pos_plate = kwargs.get("pos_plate", [0, 0, 0])
 
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "positive" 
+    p3["shape"] = f"{size}_plate"      
+    p3["depth"] = thickness
+    p3["pos"] = pos1
+    return p3
 
+def get_plate_hole_dict(**kwargs):
+    pos_plate = kwargs.get("pos_plate", [0, 0, 0])
+    size = kwargs.get("size", "oobb")
+    hole_sides = kwargs.get("hole_sides", ["left","right","top"])
 
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p" 
+    p3["shape"] = f"{size}_holes"    
+    p3["holes"] = hole_sides
+    p3["both_holes"] = True
+    p3["pos"] = pos1
+
+    return p3
+
+# holder
 def get_holder(**kwargs):
     p3 = copy.deepcopy(kwargs)
     extra = p3.get("extra", "")
@@ -25,6 +52,7 @@ def get_holder(**kwargs):
     else:
         Exception("No extra")
 
+# plate
 def get_plate(**kwargs):
 
     # default sets
@@ -109,7 +137,8 @@ def get_plate(**kwargs):
         return thing
     else: # only return the elements
         return th
-    
+
+# test    
 def get_test(**kwargs):
     p3 = copy.deepcopy(kwargs)
     extra = p3.get("extra", "")
@@ -119,6 +148,22 @@ def get_test(**kwargs):
         # Get the module object for the current file
         current_module = __import__("oobb_get_items_test")
         function_name = "get_test_" + extra
+        # Call the function using the string variable
+        function_to_call = getattr(current_module, function_name)
+        return function_to_call(**kwargs)
+    else:
+        Exception("No extra")
+
+# wire
+def get_wire(**kwargs):
+    p3 = copy.deepcopy(kwargs)
+    extra = p3.get("extra", "")
+    p3.pop("extra")
+    p3["type"] = f'wire_{extra}'
+    if extra != "":
+        # Get the module object for the current file
+        current_module = __import__("oobb_get_items_oobb_wire")
+        function_name = "get_wire_" + extra
         # Call the function using the string variable
         function_to_call = getattr(current_module, function_name)
         return function_to_call(**kwargs)

@@ -2162,8 +2162,8 @@ def get_mounting_plate_generic(**kwargs):
         pos = [hole["x"], hole["y"], 0]
         depth2 = depth +6
         th.extend(ob.oobb_easy(t="p", s="oobb_hole_standoff", pos=pos, radius_name=radius_hole, depth = depth2, m=""))
-        pos = [hole["x"], hole["y"], depth2]
-        th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk", rotY=180, pos=pos, radius_name=radius_hole, depth=depth2, include_nut=False, m=""))
+        pos = [hole["x"], hole["y"], 0]
+        th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk", rot=[0,180,0], pos=pos, radius_name=radius_hole, depth=depth2, include_nut=False, m="#"))
             
     return thing
 
@@ -4144,7 +4144,7 @@ def get_tray(**kwargs):
     th = thing["components"]
 
     th.append(ob.oobb_easy(t="p", s=f"{size}_plate", width=width, 
-    height=height, depth=thickness, pos=[0, 0, 0], m=""))
+    height=height, depth=thickness, pos=[0, 0, 0], extra_mm=True, m=""))
 
     #take out the inside    
     th.append(ob.oobb_easy(t="n", s=f"sphere_rectangle", size=[(width*15)-3,(height*15)-3,thickness+20], pos=[0, 0, 3], r=4, m=""))
@@ -4154,7 +4154,7 @@ def get_tray(**kwargs):
     holes = [[1,1],[width,1],[1,height],[width,height]]
     for h in holes:            
         x,y = ob.get_hole_pos(h[0], h[1], width, height)
-        th.extend(ob.oobb_easy(t="n", shape=f"oobb_screw_countersunk", clearance="top", width=width, height=height, radius_name="m3", depth=6, pos=[x, y, 3], include_nut=False, m=""))
+        th.extend(ob.oobb_easy(t="n", shape=f"oobb_screw_countersunk", width=width, height=height, clearance = "top", radius_name="m3", depth=6, pos=[x, y, 2], include_nut=False, m=""))
 
 
     return thing
@@ -4622,7 +4622,7 @@ def get_wheel(**kwargs):
 
     return thing
 
-def get_wire(**kwargs):
+def get_wire_old(**kwargs):
     extra = kwargs.get("extra")
     kwargs.pop("extra")
     kwargs["type"] = f'wire_{extra}'
