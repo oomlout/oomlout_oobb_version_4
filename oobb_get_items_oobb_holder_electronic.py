@@ -5,9 +5,24 @@ import oobb_get_items_oobb
 
 #button
 def get_holder_electronic_button_11_mm_panel_mount(**kwargs):
+    thickness = kwargs.get("thickness", 3)
     pos_item = [0,0,-1.5]
+    if thickness == 3:
+        pos_item[2] += 18 - 3
     kwargs["pos_item"] = pos_item    
-    return get_holder_electronic_base(**kwargs)
+    return_value = get_holder_electronic_base(**kwargs)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "positive"
+    p3["shape"] = "oobb_cylinder"
+    p3["radius"] = 16/2
+    p3["depth"] = 15    
+    p3["zz"] = "bottom"
+    p3.pop("size","")
+    #p3["m"] = "#"
+    oobb_base.append_full(return_value, **p3)
+
+
+    return return_value
 
 def get_holder_electronic_button_11_mm_panel_mount_x4(**kwargs):
     pos_item = []    
@@ -44,6 +59,7 @@ def get_holder_electronic_base(**kwargs):
         extra = extra.replace(f"_x{i}","") 
 
     # servo shaft at 0,0,0 position
+    
     pos_plate = [0,0,-thickness]
     pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
     kwargs["pos_plate"] =  pos_plate
@@ -54,10 +70,11 @@ def get_holder_electronic_base(**kwargs):
     oobb_base.append_full(thing, **p3)
 
     # cutout
-    p3 = copy.deepcopy(kwargs)
-    p3 = get_plate_cutout_dict(**p3)
-    #p3["m"] = "#"
-    oobb_base.append_full(thing, **p3)
+    if thickness != 3:
+        p3 = copy.deepcopy(kwargs)
+        p3 = get_plate_cutout_dict(**p3)
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
 
     # hole    
     p3 = copy.deepcopy(kwargs)
@@ -78,7 +95,7 @@ def get_holder_electronic_base(**kwargs):
     p3["shape"] = f"oobb_{extra}"  
     p3["pos"] = pos_item
     p3["rot"] = rot_item
-    p3["m"] = "#"
+    #p3["m"] = "#"
     oobb_base.append_full(thing, **p3)
 
     

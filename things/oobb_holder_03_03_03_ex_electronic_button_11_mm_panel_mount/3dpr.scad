@@ -6,7 +6,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -3]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_3_depth_0_0_-3_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_-3_pos_plate", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_3_depth_0_0_-3_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_13.5_pos_item_0_0_-3_pos_plate", valign = "center");
 				}
 			}
 		}
@@ -29,10 +29,18 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -3]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-3_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-3_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_13.5_pos_item_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
 				}
 			}
 		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 14, 0]) {
+				linear_extrude(height = 3) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_cylinder_shape_positive_type_15_depth_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_13.5_pos_item_8.0_radius_bottom_zz", valign = "center");
+				}
+			}
+		}
+		cylinder(h = 15, r = 8.0000000000);
 	}
 	union() {
 		translate(v = [7.5000000000, -15, 0]) {
@@ -77,39 +85,16 @@ difference() {
 				}
 			}
 		}
-		translate(v = [0, 0, -1.5000000000]) {
+		translate(v = [0, 0, 13.5000000000]) {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -18]) {
+						translate(v = [0, 0, -18]) {
 							cylinder(h = 18, r = 6.0000000000);
 						}
-						#cylinder(h = 12, r = 3.5000000000);
+						cylinder(h = 12, r = 3.5000000000);
 					}
 					union();
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [1.5000000000, 14, -3]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description rounded_rectangle_shape_negative_type_1.5_0_-3_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_-3_pos_plate_23_22_1.5_size", valign = "center");
-				}
-			}
-		}
-		translate(v = [1.5000000000, 0, -3]) {
-			hull() {
-				translate(v = [-6.5000000000, 6.0000000000, 0]) {
-					cylinder(h = 1.5000000000, r = 5);
-				}
-				translate(v = [6.5000000000, 6.0000000000, 0]) {
-					cylinder(h = 1.5000000000, r = 5);
-				}
-				translate(v = [-6.5000000000, -6.0000000000, 0]) {
-					cylinder(h = 1.5000000000, r = 5);
-				}
-				translate(v = [6.5000000000, -6.0000000000, 0]) {
-					cylinder(h = 1.5000000000, r = 5);
 				}
 			}
 		}
@@ -278,21 +263,21 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [7.5000000000, -1, 0]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_negative_type_m3_radius_name_3_depth_7.5_-15_0_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_-3_pos_plate_false_nut", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_negative_type_m3_radius_name_3_depth_7.5_-15_0_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_13.5_pos_item_0_0_-3_pos_plate_false_nut", valign = "center");
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [7.5000000000, 29, 0]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_negative_type_m3_radius_name_3_depth_7.5_15_0_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_-3_pos_plate_false_nut", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_negative_type_m3_radius_name_3_depth_7.5_15_0_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_13.5_pos_item_0_0_-3_pos_plate_false_nut", valign = "center");
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, -1.5000000000]) {
+			translate(v = [0, 14, 13.5000000000]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_electronic_button_11_mm_panel_mount_shape_negative_type_0_0_-1.5_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_-3_pos_plate_0_0_0_rot", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_electronic_button_11_mm_panel_mount_shape_negative_type_0_0_13.5_pos_electronic_button_11_mm_panel_mount_extra_3_width_3_height_3_thickness_0_0_13.5_pos_item_0_0_-3_pos_plate_0_0_0_rot", valign = "center");
 				}
 			}
 		}

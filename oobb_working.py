@@ -20,10 +20,13 @@ def main(**kwargs):
   
     # electronic
     #filter = "holder_03_03_03_ex_electronic_potentiometer"
-    filter = "holder_03_03_21_ex_electronic_button_11_mm_panel_mount_x4"
+    filter = "holder_03_03_03_ex_electronic_button_11_mm_panel_mount"
     
+    # mounting_plate
+    #filter = "raspberry_pi_pico"
+
     # wire
-    #filter = "oobb_wire_03_03_03_ex_spacer"
+    #filter = "oobb_wire_03_03_09_ex_basic"
     #filter = "oobb_wire"
 
     #oobb_servo_holder

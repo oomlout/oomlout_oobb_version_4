@@ -4,6 +4,7 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_plate",
         "extra_mm": true,
         "depth": 12,
@@ -19,8 +20,8 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
-        "shape": "oobb_bearing",
         "bearing": "6704",
+        "shape": "oobb_bearing",
         "depth": 12,
         "pos": [
             0,
@@ -33,40 +34,67 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
-        "holes": false,
-        "slots": false,
-        "inserts": true,
-        "shape": "oobb_threaded_insert",
+        "bearing": "6704",
+        "shape": "oobb_hole",
         "pos": [
             7.5,
             0,
             0
         ],
         "radius_name": "m3",
-        "insertion_cone": false
+        "hole": true
     },
     {
         "type": "n",
         "width": 3,
         "height": 3,
         "thickness": 12,
-        "holes": false,
-        "slots": false,
-        "inserts": true,
-        "shape": "oobb_threaded_insert",
+        "bearing": "6704",
+        "shape": "oobb_hole",
         "pos": [
             -7.5,
             0,
             0
         ],
         "radius_name": "m3",
-        "insertion_cone": false
+        "hole": true
     },
     {
         "type": "n",
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            -7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_holes",
         "pos": [
             0,
@@ -81,6 +109,7 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_holes",
         "pos": [
             0,
@@ -95,11 +124,12 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_screw_countersunk",
         "pos": [
             18.0,
             0,
-            -6.0
+            6.0
         ],
         "rot": [
             0,
@@ -116,11 +146,12 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_screw_countersunk",
         "pos": [
             -18.0,
             0,
-            -6.0
+            6.0
         ],
         "rot": [
             0,
@@ -137,11 +168,12 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_screw_countersunk",
         "pos": [
             0,
             18.0,
-            6.0
+            -6.0
         ],
         "rot": [
             0,
@@ -158,10 +190,33 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_screw_countersunk",
         "pos": [
             0,
             -18.0,
+            -6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            5.303,
+            5.303,
             6.0
         ],
         "rot": [
@@ -179,31 +234,11 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shape": "oobb_screw_countersunk",
         "pos": [
-            0,
-            7.5,
-            6.0
-        ],
-        "rot": [
-            0,
-            0,
-            0
-        ],
-        "depth": 12,
-        "radius_name": "m3",
-        "nut": true,
-        "overhang": true
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "shape": "oobb_screw_countersunk",
-        "pos": [
-            0,
-            -7.5,
+            -5.303,
+            -5.303,
             -6.0
         ],
         "rot": [
@@ -215,6 +250,61 @@
         "radius_name": "m3",
         "nut": true,
         "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            5.303,
+            5.303,
+            6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -5.303,
+            -5.303,
+            -6.0
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "shape": "oobb_slice",
+        "mode": "3dpr",
+        "pos": [
+            0,
+            0,
+            6.0
+        ],
+        "zz": "bottom"
     },
     {
         "type": "n",

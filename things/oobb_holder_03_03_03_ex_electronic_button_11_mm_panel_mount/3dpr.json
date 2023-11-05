@@ -8,7 +8,7 @@
         "pos_item": [
             0,
             0,
-            -1.5
+            13.5
         ],
         "pos_plate": [
             0,
@@ -24,34 +24,6 @@
         ]
     },
     {
-        "type": "negative",
-        "extra": "electronic_button_11_mm_panel_mount",
-        "width": 3,
-        "height": 3,
-        "thickness": 3,
-        "pos_item": [
-            0,
-            0,
-            -1.5
-        ],
-        "pos_plate": [
-            0,
-            0,
-            -3
-        ],
-        "shape": "rounded_rectangle",
-        "size": [
-            23,
-            22,
-            1.5
-        ],
-        "pos": [
-            1.5,
-            0,
-            -3
-        ]
-    },
-    {
         "type": "p",
         "extra": "electronic_button_11_mm_panel_mount",
         "width": 3,
@@ -60,7 +32,7 @@
         "pos_item": [
             0,
             0,
-            -1.5
+            13.5
         ],
         "pos_plate": [
             0,
@@ -94,7 +66,7 @@
         "pos_item": [
             0,
             0,
-            -1.5
+            13.5
         ],
         "pos_plate": [
             0,
@@ -120,7 +92,7 @@
         "pos_item": [
             0,
             0,
-            -1.5
+            13.5
         ],
         "pos_plate": [
             0,
@@ -146,7 +118,7 @@
         "pos_item": [
             0,
             0,
-            -1.5
+            13.5
         ],
         "pos_plate": [
             0,
@@ -157,13 +129,33 @@
         "pos": [
             0,
             0,
-            -1.5
+            13.5
         ],
         "rot": [
             0,
             0,
             0
+        ]
+    },
+    {
+        "type": "positive",
+        "extra": "electronic_button_11_mm_panel_mount",
+        "width": 3,
+        "height": 3,
+        "thickness": 3,
+        "pos_item": [
+            0,
+            0,
+            13.5
         ],
-        "m": "#"
+        "shape": "oobb_cylinder",
+        "radius": 8.0,
+        "depth": 15,
+        "zz": "bottom",
+        "pos": [
+            0,
+            0,
+            0
+        ]
     }
 ]

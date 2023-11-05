@@ -2,6 +2,55 @@ import copy
 
 from oobb_get_items_base_old import *
 
+# cylinder
+def get_oobb_cylinder(**kwargs):
+    zz = kwargs.get("zz", "center")
+    radius_name = kwargs.get("radius_name", "")
+    
+    modes = ["laser", "3dpr", "true"]
+    return_value = []
+    # deciding how to define depth either string or name
+    try:
+        depth = kwargs["depth"]
+    except:
+        try:
+            depth = kwargs["depth_mm"]
+        except:
+            depth = 250
+    # figuring out z so it is in the middle of the object
+    try:
+        kwargs["pos"][2] = kwargs["pos"][2] - depth / 2
+    except:
+        try:
+            kwargs["z"] = kwargs["z"] - depth / 2
+        except:
+            pass
+    if zz == "bottom":
+        kwargs["pos"][2] += depth / 2
+    if zz == "rop":
+        kwargs["pos"][2] -= depth / 2
+
+    for mode in modes:
+        kwargs["shape"] = "cylinder"
+        if radius_name != "":
+            kwargs.update({"r": ob.gv(radius_name, mode)})
+        else:
+            try:
+                kwargs.update({"r": kwargs["radius"]})
+            except:
+                try:
+                    kwargs.update({"r": kwargs["r"]})
+                except:
+                    #using r1 and r2
+                    pass
+                
+        if isinstance(depth, str):
+            kwargs.update({"h": ob.gv(depth, mode)})
+        else:
+            kwargs.update({"h": depth})
+        kwargs.update({"inclusion": mode})
+        return_value.append(opsc.opsc_easy(**kwargs))
+    return return_value
 
 # electronic
 

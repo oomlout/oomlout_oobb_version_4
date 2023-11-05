@@ -1,5 +1,39 @@
 [
     {
+        "type": "p",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_plate",
+        "extra_mm": true,
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            -6.0
+        ],
+        "holes": false
+    },
+    {
+        "type": "negative",
+        "width": 3,
+        "height": 12,
+        "thickness": 12,
+        "bearing": "6705",
+        "extra": "no_center",
+        "shape": "oobb_cylinder",
+        "depth": 12,
+        "radius": 14.2,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "mode": "all"
+    },
+    {
         "type": "n",
         "width": 3,
         "height": 3,
@@ -195,8 +229,7 @@
         "depth": 12,
         "radius_name": "m3",
         "nut": true,
-        "overhang": true,
-        "m": "#"
+        "overhang": true
     },
     {
         "type": "n",
@@ -219,8 +252,7 @@
         "depth": 12,
         "radius_name": "m3",
         "nut": true,
-        "overhang": true,
-        "m": "#"
+        "overhang": true
     },
     {
         "type": "n",
@@ -243,8 +275,7 @@
         "depth": 12,
         "radius_name": "m3",
         "nut": true,
-        "overhang": true,
-        "m": "#"
+        "overhang": true
     },
     {
         "type": "n",
@@ -267,8 +298,7 @@
         "depth": 12,
         "radius_name": "m3",
         "nut": true,
-        "overhang": true,
-        "m": "#"
+        "overhang": true
     },
     {
         "type": "n",

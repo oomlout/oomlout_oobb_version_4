@@ -7,6 +7,8 @@ def get_mounting_plates(size="oobb"):
     mounting_plates.extend(get_mounting_plates_cytron())
     mounting_plates.extend(get_mounting_plates_dangerousprototypes())
     mounting_plates.extend(get_mounting_plates_electrolama())
+    mounting_plates.extend(get_mounting_plates_pimoroni())
+    mounting_plates.extend(get_mounting_plates_raspberry_pi())
 
     return mounting_plates
 
@@ -167,3 +169,46 @@ def get_mounting_plates_electrolama(size="oobb"):
     
 
     return mounting_plates
+
+def get_mounting_plates_pimoroni(size="oobb"):
+    mounting_plates = []
+    # company : dangerousprototypes
+    #      bus pirate 5
+    pl = { "type": "mounting_plate",
+            "name": "pimoroni_pim613_servo_2040",
+            "width": 6,
+            "height": 5,
+            "thickness": 3,
+            "width_mounting": 56.5,
+            "height_mounting": 36.5,
+            "radius_hole": "m2d5",
+            "size": size}
+    mounting_plates.append(pl)
+    pl3 = copy.deepcopy(pl)
+    pl3["type"] = "mounting_plate_top"
+    pl3["width"] = pl3["width"]-1
+    mounting_plates.append(pl3)
+
+    return mounting_plates
+
+def get_mounting_plates_raspberry_pi(size="oobb"):
+    mounting_plates = []
+    # company : dangerousprototypes
+    #      bus pirate 5
+    pl = { "type": "mounting_plate",
+            "name": "raspberry_pi_pico",
+            "width": 5,
+            "height": 3,
+            "thickness": 3,
+            "width_mounting": 47,
+            "height_mounting": 11.5,
+            "radius_hole": "m2",
+            "size": size}
+    mounting_plates.append(pl)
+    pl3 = copy.deepcopy(pl)
+    pl3["type"] = "mounting_plate_top"
+    pl3["width"] = pl3["width"]-1
+    mounting_plates.append(pl3)
+
+    return mounting_plates
+

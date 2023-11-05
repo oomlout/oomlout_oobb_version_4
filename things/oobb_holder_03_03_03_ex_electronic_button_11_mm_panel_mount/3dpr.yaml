@@ -8,7 +8,7 @@
     pos_item:
     - 0
     - 0
-    - -1.5
+    - 13.5
     pos_plate:
     - 0
     - 0
@@ -16,28 +16,6 @@
     shape: oobb_plate
     thickness: 3
     type: positive
-    width: 3
--   extra: electronic_button_11_mm_panel_mount
-    height: 3
-    pos:
-    - 1.5
-    - 0
-    - -3
-    pos_item:
-    - 0
-    - 0
-    - -1.5
-    pos_plate:
-    - 0
-    - 0
-    - -3
-    shape: rounded_rectangle
-    size:
-    - 23
-    - 22
-    - 1.5
-    thickness: 3
-    type: negative
     width: 3
 -   both_holes: true
     extra: electronic_button_11_mm_panel_mount
@@ -57,7 +35,7 @@
     pos_item:
     - 0
     - 0
-    - -1.5
+    - 13.5
     pos_plate:
     - 0
     - 0
@@ -77,7 +55,7 @@
     pos_item:
     - 0
     - 0
-    - -1.5
+    - 13.5
     pos_plate:
     - 0
     - 0
@@ -98,7 +76,7 @@
     pos_item:
     - 0
     - 0
-    - -1.5
+    - 13.5
     pos_plate:
     - 0
     - 0
@@ -110,15 +88,14 @@
     width: 3
 -   extra: electronic_button_11_mm_panel_mount
     height: 3
-    m: '#'
     pos:
     - 0
     - 0
-    - -1.5
+    - 13.5
     pos_item:
     - 0
     - 0
-    - -1.5
+    - 13.5
     pos_plate:
     - 0
     - 0
@@ -131,3 +108,20 @@
     thickness: 3
     type: negative
     width: 3
+-   depth: 15
+    extra: electronic_button_11_mm_panel_mount
+    height: 3
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_item:
+    - 0
+    - 0
+    - 13.5
+    radius: 8.0
+    shape: oobb_cylinder
+    thickness: 3
+    type: positive
+    width: 3
+    zz: bottom

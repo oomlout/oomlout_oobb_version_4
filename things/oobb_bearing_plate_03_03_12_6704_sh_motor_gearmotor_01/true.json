@@ -1,14 +1,14 @@
 [
     {
-        "type": "p",
+        "type": "positive",
         "width": 3,
         "height": 12,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
-        "t": "p",
         "shape": "oobb_cylinder",
         "depth": 12,
-        "radius": 12.0,
+        "radius": 11.7,
         "pos": [
             0,
             0,
@@ -21,9 +21,9 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_bearing",
-        "bearing": "6704",
         "depth": 12,
         "pos": [
             0,
@@ -36,6 +36,71 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_gearmotor_01",
+        "shape": "oobb_hole",
+        "pos": [
+            7.5,
+            0,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_gearmotor_01",
+        "shape": "oobb_hole",
+        "pos": [
+            -7.5,
+            0,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_gearmotor_01",
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_gearmotor_01",
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            -7.5,
+            0
+        ],
+        "radius_name": "m3",
+        "hole": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_holes",
         "pos": [
@@ -51,6 +116,7 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_motor_gearmotor_01",
         "pos": [
@@ -65,12 +131,13 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_screw_countersunk",
         "pos": [
             18.0,
             0,
-            -6.0
+            6.0
         ],
         "rot": [
             0,
@@ -87,12 +154,13 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_screw_countersunk",
         "pos": [
             -18.0,
             0,
-            -6.0
+            6.0
         ],
         "rot": [
             0,
@@ -109,12 +177,13 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_screw_countersunk",
         "pos": [
             0,
             18.0,
-            6.0
+            -6.0
         ],
         "rot": [
             0,
@@ -131,12 +200,13 @@
         "width": 3,
         "height": 3,
         "thickness": 12,
+        "bearing": "6704",
         "shaft": "motor_gearmotor_01",
         "shape": "oobb_screw_countersunk",
         "pos": [
             0,
             -18.0,
-            6.0
+            -6.0
         ],
         "rot": [
             0,

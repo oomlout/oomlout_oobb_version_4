@@ -494,7 +494,7 @@ def get_bunting_alphabet(**kwargs):
     p2 = copy.deepcopy(kwargs)
     p2["height"] = thickness
     p2["hole_type"] = ["top","bottom","just_middle"]
-    th.append(get_plate(**p2)["components"])
+    th.append(oobb_get_items_oobb.get_plate(**p2)["components"])
     # find the start point needs to be half the width_mm plus half ob.gv("osp")
     
     shift_y = 0

@@ -20,7 +20,7 @@ from oobb_get_items_base import *
 def get_oobb_bearing(**kwargs):
     p3 = copy.deepcopy(kwargs)
     objects = []
-    bearing_type = p3["bearing"]
+    bearing_type = p3.get("bearing", p3.get("bearing_type", "608"))
     exclude_clearance = p3.get("exclude_clearance", False)
 
     modes = ["laser", "true", "3dpr"]
@@ -1964,7 +1964,7 @@ def get_oobb_slice_old_1(**kwargs):
     #rv = 
     #th.append(ob.oobb_easy(t="n", s="cube", size=[500, 500, 500], pos=[-500/2, -500/2, 0], inclusion=inclusion, m=""))    
 
-def get_oobb_cylinder(**kwargs):
+def get_oobb_cylinder_old_1(**kwargs):
 
     radius_name = kwargs.get("radius_name", "")
 

@@ -7,6 +7,7 @@ def make_all(filter=""):
     # typs = ["bps","jas","mps","pls","nuts","screws_countersunk","tests","zts"]
     # add orings make a nice summary page maybe tables of details add 2020 maybe
     typs = ["bearing_plates", "bearing_circles", "buntings", "circles", "holders", "jacks", "jigs", "mounting_plates", "plates", "shaft_couplers","shafts", "soldering_jigs", "smd_magazines", "tool_holders", "trays", "ziptie_holders", "nuts", "wires", "wheels", "screws", "bearings", "nuts", "tests"]
+    #typs = ["bearing_plates", "bearing_circles", "mounting_plates", "trays", "tests","plates"]
    
     all_things = []
 
@@ -233,7 +234,8 @@ def get_plates(size="oobb"):
     plates = []
     
     
-    sizes = ["oobb", "oobe"]
+    #sizes = ["oobb", "oobe"]
+    sizes = ["oobb"]
     
     for size in sizes:
         #all 3m thicks 1x1 to 10x10
@@ -331,13 +333,13 @@ def get_plates(size="oobb"):
     plates.append({"type": "plate", "width": 10, "height": 7,
                 "thickness": 3, "size": size, "name": "oobb_pl_a6"})
 
-
+    """
     size = "oobe"
     thicknesses = [3]
     for thickness in thicknesses:
         plates.append({"type": "plate", "width": 28, "height": 20, "thickness": thickness, "size": size, "name": "oobe_warehouse_box"})
         plates.append({"type": "plate", "width": 21, "height": 21, "thickness": thickness, "size": size, "name": "oobe_shelf_tray"})
-    
+    """
 
     #add oobe holes to all oobb plates
     for plate in plates:

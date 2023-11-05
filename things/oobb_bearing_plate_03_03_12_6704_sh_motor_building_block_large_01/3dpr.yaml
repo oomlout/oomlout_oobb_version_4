@@ -1,16 +1,16 @@
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 12
     mode: all
     pos:
     - 0
     - 0
     - 0
-    radius: 12.0
+    radius: 11.7
     shaft: motor_building_block_large_01
     shape: oobb_cylinder
-    t: p
     thickness: 12
-    type: p
+    type: positive
     width: 3
 -   bearing: '6704'
     depth: 12
@@ -24,7 +24,60 @@
     thickness: 12
     type: n
     width: 3
--   height: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_building_block_large_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - -7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_building_block_large_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 0
+    radius_name: m3
+    shaft: motor_building_block_large_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 0
+    radius_name: m3
+    shaft: motor_building_block_large_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
     holes: perimeter_miss_middle
     pos:
     - 0
@@ -36,7 +89,8 @@
     thickness: 12
     type: n
     width: 3
--   height: 3
+-   bearing: '6704'
+    height: 3
     pos:
     - 0
     - 0
@@ -46,14 +100,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - 18.0
     - 0
-    - -6.0
+    - 6.0
     radius_name: m3
     rot:
     - 0
@@ -64,14 +119,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - -18.0
     - 0
-    - -6.0
+    - 6.0
     radius_name: m3
     rot:
     - 0
@@ -82,14 +138,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - 0
     - 18.0
-    - 6.0
+    - -6.0
     radius_name: m3
     rot:
     - 0
@@ -100,14 +157,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - 0
     - -18.0
-    - 6.0
+    - -6.0
     radius_name: m3
     rot:
     - 0

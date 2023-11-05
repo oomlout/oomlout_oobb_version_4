@@ -1,0 +1,404 @@
+{
+    "description": "plate 3x1x8.5",
+    "id": "oobb_plate_03_01_8d5_ex_slip_center",
+    "type": "plate",
+    "width": 3,
+    "height": 1,
+    "thickness": 8.5,
+    "extra": "slip_center",
+    "width_mm": 44,
+    "thickness_mm": 8.5,
+    "height_mm": 14,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "plate main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT plate main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "text",
+                "color": "gray",
+                "center": true,
+                "comment": "description oobb_plate_shape_p_type_8.5_depth_3_width_1_height_8.5_thickness_slip_center_extra\n",
+                "size": 4.5,
+                "pos": [
+                    0,
+                    14,
+                    0
+                ],
+                "height": 1,
+                "width": 3,
+                "m": "*",
+                "depth": 1,
+                "text": "COMMENT description oobb_plate_shape_p_type_8.5_depth_3_width_1_height_8.5_thickness_slip_center_extra",
+                "font": "Arial:style=Bold",
+                "extra": "slip_center"
+            }
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    44,
+                    14,
+                    8.5
+                ],
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "height": 1,
+                "width": 3,
+                "depth": 8.5,
+                "extra": "slip_center"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "holes main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT holes main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "text",
+                "color": "gray",
+                "center": true,
+                "comment": "description oobb_holes_shape_n_type_3_width_1_height_8.5_thickness_slip_center_extra_false_both_holes\n",
+                "size": 4.5,
+                "pos": [
+                    0,
+                    14,
+                    0
+                ],
+                "height": 1,
+                "width": 3,
+                "m": "*",
+                "depth": 1,
+                "text": "COMMENT description oobb_holes_shape_n_type_3_width_1_height_8.5_thickness_slip_center_extra_false_both_holes",
+                "font": "Arial:style=Bold",
+                "extra": "slip_center"
+            }
+        ],
+        [
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            -15.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            15.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            -15.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            15.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            -15.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            15.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ]
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "extra slip_center",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT extra slip_center",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.7,
+                "radius": 4.7,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "laser",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.7,
+                "radius": 4.7,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "3dpr",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.7,
+                "radius": 4.7,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "true",
+                "m": ""
+            }
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.0,
+                "radius": 10.0,
+                "h": 8.5,
+                "pos": [
+                    0,
+                    0,
+                    0.0
+                ],
+                "inclusion": "laser",
+                "m": "",
+                "depth": 8.5
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.0,
+                "radius": 10.0,
+                "h": 8.5,
+                "pos": [
+                    0,
+                    0,
+                    0.0
+                ],
+                "inclusion": "3dpr",
+                "m": "",
+                "depth": 8.5
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.0,
+                "radius": 10.0,
+                "h": 8.5,
+                "pos": [
+                    0,
+                    0,
+                    0.0
+                ],
+                "inclusion": "true",
+                "m": "",
+                "depth": 8.5
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_p_type_8.5_depth_3_width_1_height_8.5_thickness_slip_center_extra",
+        "oobb_holes_shape_n_type_3_width_1_height_8.5_thickness_slip_center_extra_false_both_holes"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "width": 3,
+            "height": 1,
+            "thickness": 8.5,
+            "extra": "slip_center",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_plate",
+            "depth": 8.5
+        },
+        {
+            "type": "n",
+            "width": 3,
+            "height": 1,
+            "thickness": 8.5,
+            "extra": "slip_center",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_holes",
+            "both_holes": false
+        }
+    ],
+    "folder": "things/oobb_plate_03_01_8d5_ex_slip_center"
+}

@@ -75,7 +75,9 @@ def get_oobb_wire_base(**kwargs):
 
     # plate
     p3 = copy.deepcopy(kwargs)
-    p3 = oobb_get_items_oobb.get_plate_dict(**p3)    
+    p3 = oobb_get_items_oobb.get_plate_dict(**p3) 
+    if thickness == 9:
+        p3["pos"][2] += 3
     oobb_base.append_full(thing, **p3)
 
     # hole    
@@ -96,7 +98,7 @@ def get_oobb_wire_base(**kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["shape"] = f"oobb_wire_{extra}"
     p3["rot"] = [0,0,180]
-    p3["pos"][2] = p3["pos"][2] - 3
+    p3["pos"][2] += -3
     #p3["m"] = "#"
     oobb_base.append_full(thing, **p3)
 

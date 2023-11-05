@@ -1,4 +1,5 @@
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     extra_mm: true
     height: 3
     holes: false
@@ -21,35 +22,56 @@
     thickness: 12
     type: n
     width: 3
--   height: 3
-    holes: false
-    insertion_cone: false
-    inserts: true
+-   bearing: '6704'
+    height: 3
+    hole: true
     pos:
     - 7.5
     - 0
     - 0
     radius_name: m3
-    shape: oobb_threaded_insert
-    slots: false
+    shape: oobb_hole
     thickness: 12
     type: n
     width: 3
--   height: 3
-    holes: false
-    insertion_cone: false
-    inserts: true
+-   bearing: '6704'
+    height: 3
+    hole: true
     pos:
     - -7.5
     - 0
     - 0
     radius_name: m3
-    shape: oobb_threaded_insert
-    slots: false
+    shape: oobb_hole
     thickness: 12
     type: n
     width: 3
--   height: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 0
+    radius_name: m3
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 0
+    radius_name: m3
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
     holes: perimeter_miss_middle
     pos:
     - 0
@@ -60,7 +82,8 @@
     thickness: 12
     type: n
     width: 3
--   height: 3
+-   bearing: '6704'
+    height: 3
     holes: just_middle
     pos:
     - 0
@@ -71,14 +94,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - 18.0
     - 0
-    - -6.0
+    - 6.0
     radius_name: m3
     rot:
     - 0
@@ -88,14 +112,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - -18.0
     - 0
-    - -6.0
+    - 6.0
     radius_name: m3
     rot:
     - 0
@@ -105,14 +130,15 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - 0
     - 18.0
-    - 6.0
+    - -6.0
     radius_name: m3
     rot:
     - 0
@@ -122,13 +148,32 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
     - 0
     - -18.0
+    - -6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 5.303
+    - 5.303
     - 6.0
     radius_name: m3
     rot:
@@ -139,30 +184,14 @@
     thickness: 12
     type: n
     width: 3
--   depth: 12
+-   bearing: '6704'
+    depth: 12
     height: 3
     nut: true
     overhang: true
     pos:
-    - 0
-    - 7.5
-    - 6.0
-    radius_name: m3
-    rot:
-    - 0
-    - 0
-    - 0
-    shape: oobb_screw_countersunk
-    thickness: 12
-    type: n
-    width: 3
--   depth: 12
-    height: 3
-    nut: true
-    overhang: true
-    pos:
-    - 0
-    - -7.5
+    - -5.303
+    - -5.303
     - -6.0
     radius_name: m3
     rot:
@@ -173,6 +202,50 @@
     thickness: 12
     type: n
     width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 5.303
+    - 5.303
+    - 6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -5.303
+    - -5.303
+    - -6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   mode: 3dpr
+    pos:
+    - 0
+    - 0
+    - 6.0
+    shape: oobb_slice
+    type: n
+    zz: bottom
 -   mode: 3dpr
     pos:
     - 0
