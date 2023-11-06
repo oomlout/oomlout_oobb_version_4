@@ -20,13 +20,16 @@ def main(**kwargs):
   
     # electronic
     #filter = "holder_03_03_03_ex_electronic_potentiometer"
-    filter = "holder_03_03_03_ex_electronic_button_11_mm_panel_mount"
-    
+    #filter = "holder_03_03_03_ex_electronic_button_11_mm_panel_mount"
+
+    # holder
+    filter = "stick_single_axis_16_mm"
+
     # mounting_plate
-    #filter = "raspberry_pi_pico"
+    #filter = "aliexpress_usb_micro_breakout_01"
 
     # wire
-    #filter = "oobb_wire_03_03_09_ex_basic"
+    #filter = "oobb_wire_03_03_12_ex_basic"
     #filter = "oobb_wire"
 
     #oobb_servo_holder
@@ -41,7 +44,7 @@ def main(**kwargs):
     #filter = "oobb_test_ex_oobb_wire"
     #filter = "test"
 
-    #filter = ""
+    #ilter = ""
 
 
     oobb_make_sets.make_all(filter=filter)

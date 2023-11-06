@@ -80,7 +80,7 @@ def initialize_variables():
     m["1d5"] = 1.6
     m["1d5_3dpr"] = 1.8
     m["2"] = 2
-    m["2_3dpr"] = 2.2
+    m["2_3dpr"] = 2.7
     m["2d5"] = 2.5
     m["2d5_3dpr"] = 3.1
     m["3"] = 3
@@ -253,15 +253,15 @@ def initialize_variables():
     vl["screw_self_tapping_height_m2"] = [1.25, 1.3, 2.5]
     vl["screw_self_tapping_depth_m2"] = vl["screw_self_tapping_height_m2"]
 
-    vl["screw_countersunk_radius_m2"] = [3.6/2, 4/2, 5/2]    #added 1.8 to m3 so trying adding 1.8 here
-    vl["screw_countersunk_height_m2"] = [1.3/2, 1.3/2, 1.5/2]
+    vl["screw_countersunk_radius_m2"] = [3.6/2, 4/2, 6/2]    #added 1.8 to m3 so trying adding 1.8 here
+    vl["screw_countersunk_height_m2"] = [1.3/2, 1.3/2, 1.7/2]
     vl["screw_countersunk_depth_m2"] = vl["screw_countersunk_height_m2"]
 
 
 
     vl["screw_radius_m2d5"] = m["2d5"]/2, m["2d5"]/2, m["2d5_3dpr"]/2
-    vl["screw_countersunk_radius_m2d5"] = [3.1/2, 4.5/2, 6.5/2]    #added 1.8 to m3 so trying adding 1.8 here
-    vl["screw_countersunk_height_m2d5"] = [1.5/2, 1.5/2, 1.7/2]
+    vl["screw_countersunk_radius_m2d5"] = [3.1/2, 4.5/2, 6.7/2]    #added 1.8 to m3 so trying adding 1.8 here
+    vl["screw_countersunk_height_m2d5"] = [1.5/2, 1.5/2, 1.9/2]
     vl["screw_countersunk_depth_m2d5"] = vl["screw_countersunk_height_m2d5"]
 
 

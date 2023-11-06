@@ -165,21 +165,24 @@ def get_holders(size="oobb"):
 
 
     #electronics
-        #microswitch_standard
-    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 3, "size": size}) 
-    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 6, "size": size})            
-        #potentimeter_17
-    hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 12, "size": size})
-    hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 3, "size": size})
-        #pushbutton_11
+    #      button_11
     hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount","width": 3, "height": 3, "thickness": 3, "size": size})
     hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount","width": 3, "height": 3, "thickness": 21, "size": size})
     hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount_x4","width": 3, "height": 3, "thickness": 3, "size": size})
     hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount_x4","width": 3, "height": 3, "thickness": 21, "size": size})
-    
-        #mcu
+    #      mcu
     hls.append({"type": "holder", "extra": "electronic_mcu_atmega328_shennie","width": 3, "height": 4, "thickness": 6, "size": size})
-
+    #      microswitch_standard
+    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 3, "size": size}) 
+    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 6, "size": size})            
+    #      potentimeter
+    #            17_mm
+    hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 12, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 3, "size": size})
+    #            stick_single_axis_16_mm
+    hls.append({"type": "holder", "extra": "electronic_potentiometer_stick_single_axis_16_mm","width": 3, "height": 3, "thickness": 3, "size": size})
+    hls.append({"type": "holder", "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm","width": 3, "height": 1, "thickness": 9, "size": size})
+    
     # powerbank
     #      anker_323
     hls.append({"type": "holder", "extra": "powerbank_anker_323","width": 7, "height": 13, "thickness": 6, "size": size})
@@ -628,9 +631,15 @@ def get_wires(size="oobb"):
         for width in widths:
             for extra in extras:
                 wis.append({"type": "wire", "extra": extra, "thickness": thickness, "width": width, "height": 3, "size": size})
-    for extra in extras:
-        wis.append({"type": "wire", "extra": f'{extra}', "thickness": 6, "width": 3, "height": 3, "size": size})  
-    
+    extra = ["motor", "basic"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size})  
+    extra = ["basic","basic","basic","basic"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 15, "width": 3, "height": 3, "size": size})  
+    extra = ["basic","basic","basic"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})  
+        
+
+
     #spacer    
     thicknesses = [3,6,9,12]
     for thickness in thicknesses:

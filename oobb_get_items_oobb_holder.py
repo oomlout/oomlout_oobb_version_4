@@ -17,6 +17,12 @@ def get_holder_electronic_button_11_mm_panel_mount_x4(**kwargs):
 def get_holder_electronic_potentiometer_17_mm(**kwargs):
     return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_potentiometer_17_mm(**kwargs)
 
+def get_holder_electronic_potentiometer_stick_single_axis_16_mm(**kwargs):
+    return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_potentiometer_stick_single_axis_16_mm(**kwargs)
+def get_holder_electronic_potentiometer_stick_single_axis_16_mm_arm(**kwargs):
+    return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_potentiometer_stick_single_axis_16_mm_arm(**kwargs)
+
+
 # motor
 
 #       servo_standard_01

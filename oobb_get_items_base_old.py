@@ -89,7 +89,7 @@ def get_oobb_bolt(include_nut=True, **kwargs):
     return objects
 
 
-def get_oobb_cube_center(**kwargs):
+def get_oobb_cube_center_old_1(**kwargs):
     kwargs.update({"shape": "cube"})
     all = kwargs.get("all", False)
     if not all:

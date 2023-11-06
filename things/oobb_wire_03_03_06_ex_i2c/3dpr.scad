@@ -6,7 +6,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -6]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_6_depth_0_0_-6_pos_i2c_extra_6_thickness_3_width_3_height_4_num_pins_true_polarized_0_0_-6_pos_plate", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_6_depth_0_0_-6_pos_i2c_extra_6_thickness_3_width_3_height_0_0_-6_pos_plate", valign = "center");
 				}
 			}
 		}
@@ -29,7 +29,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -6]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-6_pos_i2c_extra_6_thickness_3_width_3_height_4_num_pins_true_polarized_0_0_-6_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-6_pos_i2c_extra_6_thickness_3_width_3_height_0_0_-6_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
 				}
 			}
 		}
@@ -37,7 +37,7 @@ difference() {
 			translate(v = [0, 14, -3]) {
 				rotate(a = [0, 0, 180]) {
 					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_wire_i2c_shape_0_0_-3_pos_i2c_extra_6_thickness_3_width_3_height_4_num_pins_true_polarized_0_0_-6_pos_plate_0_0_180_rot", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_wire_i2c_shape_0_0_-3_pos_i2c_extra_6_thickness_3_width_3_height_0_0_-6_pos_plate_0_0_180_rot", valign = "center");
 					}
 				}
 			}
@@ -237,7 +237,7 @@ difference() {
 			translate(v = [7.5000000000, -1, -6]) {
 				rotate(a = [0, 0, 15.0000000000]) {
 					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_negative_type_m3_radius_name_7.5_-15_-6_pos_6_thickness_3_width_3_height_4_num_pins_true_polarized_0_0_-6_pos_plate_bottom_zz_true_overhang_0_0_15.0_rot_false_nut", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_negative_type_m3_radius_name_7.5_-15_-6_pos_6_thickness_3_width_3_height_0_0_-6_pos_plate_bottom_zz_true_overhang_0_0_15.0_rot_false_nut", valign = "center");
 					}
 				}
 			}
@@ -275,7 +275,7 @@ difference() {
 			translate(v = [7.5000000000, 29, -6]) {
 				rotate(a = [0, 0, 15.0000000000]) {
 					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_negative_type_m3_radius_name_7.5_15_-6_pos_6_thickness_3_width_3_height_4_num_pins_true_polarized_0_0_-6_pos_plate_bottom_zz_true_overhang_0_0_15.0_rot_false_nut", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_negative_type_m3_radius_name_7.5_15_-6_pos_6_thickness_3_width_3_height_0_0_-6_pos_plate_bottom_zz_true_overhang_0_0_15.0_rot_false_nut", valign = "center");
 					}
 				}
 			}

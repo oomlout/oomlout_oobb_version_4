@@ -1,8 +1,6 @@
 -   depth: 6
     extra: motor_stepper
     height: 3
-    num_pins: 4
-    polarized: false
     pos:
     - 0
     - 0
@@ -26,8 +24,6 @@
     - left
     - right
     - top
-    num_pins: 4
-    polarized: false
     pos:
     - 0
     - 0
@@ -41,10 +37,8 @@
     type: p
     width: 3
 -   height: 3
-    num_pins: 4
     nut: false
     overhang: true
-    polarized: false
     pos:
     - 7.5
     - -15
@@ -64,10 +58,8 @@
     width: 3
     zz: bottom
 -   height: 3
-    num_pins: 4
     nut: false
     overhang: true
-    polarized: false
     pos:
     - 7.5
     - 15
@@ -88,8 +80,6 @@
     zz: bottom
 -   extra: motor_stepper
     height: 3
-    num_pins: 4
-    polarized: false
     pos:
     - 0
     - 0

@@ -160,7 +160,9 @@ def get_wire(**kwargs):
     extra = p3.get("extra", "")
     p3.pop("extra")
     p3["type"] = f'wire_{extra}'
-    if extra != "":
+    if extra != "":        
+        if type(extra) == list:
+            extra = "_".join(extra)
         # Get the module object for the current file
         current_module = __import__("oobb_get_items_oobb_wire")
         function_name = "get_wire_" + extra

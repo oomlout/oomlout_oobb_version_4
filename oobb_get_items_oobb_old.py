@@ -494,7 +494,6 @@ def get_bunting_alphabet(**kwargs):
     p2 = copy.deepcopy(kwargs)
     p2["height"] = thickness
     p2["hole_type"] = ["top","bottom","just_middle"]
-    th.append(oobb_get_items_oobb.get_plate(**p2)["components"])
     # find the start point needs to be half the width_mm plus half ob.gv("osp")
     
     shift_y = 0
@@ -2128,6 +2127,20 @@ def get_mounting_plate_generic(**kwargs):
     hole_pattern = kwargs.get("hole_pattern", "perimeter")
     x_shift = kwargs.get("x_shift", 0)
     y_shift = kwargs.get("y_shift", 0)
+    extra = kwargs.get("extra", "")
+    pos_original = kwargs.get("pos", [0, 0, 0])
+
+    if extra != "":        
+        split = extra.split("_")
+        #string to dict each element is named it's index
+        split_dict = {}
+        for i in range(0, len(split)):
+            split_dict[str(i)] = split[i]
+        extras = {}
+        extras["width"] = float(split_dict.get("2", 10))
+        extras["height"] = float(split_dict.get("4", 10))
+        extras["x"] = float(split_dict.get("6", 0))
+        extras["y"] = float(split_dict.get("8", 0))
 
     th = thing["components"]
     th.append(ob.oobb_easy(t="p", s="oobb_plate", width=width,
@@ -2164,7 +2177,20 @@ def get_mounting_plate_generic(**kwargs):
         th.extend(ob.oobb_easy(t="p", s="oobb_hole_standoff", pos=pos, radius_name=radius_hole, depth = depth2, m=""))
         pos = [hole["x"], hole["y"], 0]
         th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk", rot=[0,180,0], pos=pos, radius_name=radius_hole, depth=depth2, include_nut=False, m="#"))
-            
+
+    if extra != "":
+        p3 = copy.deepcopy(kwargs)
+        pos1 = copy.deepcopy(pos_original)
+        p3["type"] = "negative"
+        p3["shape"] = "oobb_cube_center"
+        p3["size"] = [extras["width"], extras["height"], 100]
+        pos1[0] += extras["x"]
+        pos1[1] += extras["y"]
+        pos1[2] += -100/2
+        p3["pos"] = pos1
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+
     return thing
 
 def get_mounting_plate_u(**kwargs):

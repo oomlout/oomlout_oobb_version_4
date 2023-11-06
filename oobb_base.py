@@ -30,8 +30,8 @@ def get_default_thing(**kwargs):
 
     thing = {}
 
-    type = kwargs["type"]
-    type_string = type.replace("_"," ")
+    typ = kwargs["type"]
+    type_string = typ.replace("_"," ")
     width = kwargs.get("width", "0")
     height = kwargs.get("height", "0")
     thickness = kwargs.get("thickness", "0")
@@ -70,10 +70,13 @@ def get_default_thing(**kwargs):
         else:
             deets[var].update({"value": kwargs.get(var, "")})
         deets[var].update({"acronym": acronyms[var]})
+        value_string = deets[var]["value"]
+        if isinstance(value_string, list):
+            value_string = "_".join(value_string)
         if deets[var]["acronym"] != "":
-            deets[var]["str"] = f"_{deets[var]['acronym']}_{deets[var]['value']}"
+            deets[var]["str"] = f"_{deets[var]['acronym']}_{value_string}"
         else:
-            deets[var]["str"] = f"_{deets[var]['value']}"
+            deets[var]["str"] = f"_{value_string}"
 
     id = kwargs.get("size", "")
     for var in deets:
@@ -87,9 +90,9 @@ def get_default_thing(**kwargs):
         pass
 
     thing.update({"id": id})
-    thing.update({"type": f"{type}"})
+    thing.update({"type": f"{typ}"})
     try:
-        thing.update({"type_oobb": f"{type_dict[type]}"})
+        thing.update({"type_oobb": f"{type_dict[typ]}"})
     except:
         pass
 

@@ -2,55 +2,8 @@ import copy
 
 from oobb_get_items_base_old import *
 
-# cylinder
-def get_oobb_cylinder(**kwargs):
-    zz = kwargs.get("zz", "center")
-    radius_name = kwargs.get("radius_name", "")
-    
-    modes = ["laser", "3dpr", "true"]
-    return_value = []
-    # deciding how to define depth either string or name
-    try:
-        depth = kwargs["depth"]
-    except:
-        try:
-            depth = kwargs["depth_mm"]
-        except:
-            depth = 250
-    # figuring out z so it is in the middle of the object
-    try:
-        kwargs["pos"][2] = kwargs["pos"][2] - depth / 2
-    except:
-        try:
-            kwargs["z"] = kwargs["z"] - depth / 2
-        except:
-            pass
-    if zz == "bottom":
-        kwargs["pos"][2] += depth / 2
-    if zz == "rop":
-        kwargs["pos"][2] -= depth / 2
 
-    for mode in modes:
-        kwargs["shape"] = "cylinder"
-        if radius_name != "":
-            kwargs.update({"r": ob.gv(radius_name, mode)})
-        else:
-            try:
-                kwargs.update({"r": kwargs["radius"]})
-            except:
-                try:
-                    kwargs.update({"r": kwargs["r"]})
-                except:
-                    #using r1 and r2
-                    pass
-                
-        if isinstance(depth, str):
-            kwargs.update({"h": ob.gv(depth, mode)})
-        else:
-            kwargs.update({"h": depth})
-        kwargs.update({"inclusion": mode})
-        return_value.append(opsc.opsc_easy(**kwargs))
-    return return_value
+
 
 # electronic
 
@@ -166,6 +119,121 @@ def get_oobb_electronic_potentiometer_17_mm(**kwargs):
         p2["shape"] = "oobb_hole"                
         return_value.extend(ob.oe(**p2))        
         return return_value
+
+
+    return_value_2 = {}
+    return_value_2["type"]  = "rotation"
+    return_value_2["typetype"]  = typ
+    return_value_2["pos"] = pos_original
+    return_value_2["rot"] = rot_original
+    return_value_2["objects"] = return_value
+    return_value_2 = [return_value_2]
+
+    return return_value_2
+
+def get_oobb_electronic_potentiometer_stick_single_axis_16_mm(**kwargs):
+    clearance = kwargs.get("clearance", ["top", "bottom"])
+    typ = kwargs.get("type", "positive")
+    kwargs["type"] = "positive" #setting it to positive because it's a rotation object
+    
+    extra = kwargs.get("extra", "")
+    rot_original = get_rot(**kwargs)       
+    rot = [0,0,0]
+    kwargs["rot"] = rot
+    pos = copy.deepcopy(kwargs.get("pos", [0, 0, 0]))
+    pos_original = copy.deepcopy(pos)
+    pos = [0,0,0]
+    kwargs["pos"]  = pos    
+    part = kwargs.get("part", "all")
+    width_stick = kwargs.get("width_stick", 2)
+
+    return_value = []
+
+
+    if part == "all":
+        clearance = kwargs.get("clearance", False)
+        extra_clearance = 0
+        if clearance:
+            extra_clearance = 20
+        return_value = []
+        
+        # main cube
+        p3 = copy.deepcopy(kwargs)
+        pos1 = copy.deepcopy(pos)        
+        p3["shape"] = "oobb_cube_center"      
+        cube_depth = 12  
+        p3["size"] = [16,16,cube_depth]
+        p3["zz"] = "bottom"
+        p3["pos"] = pos1
+        #p3["m"] = "#"        
+        return_value.extend(ob.oobb_easy(**p3))
+
+        # feet cubes
+        p3 = copy.deepcopy(kwargs)        
+        pos1 = copy.deepcopy(pos)        
+        poss = []
+        shift_y = 15/2
+        shift_x = 13.5/2
+        poss.append([pos1[0]+shift_x, pos1[1]+shift_y, pos1[2]])
+        poss.append([pos1[0]-shift_x, pos1[1]+shift_y, pos1[2]])
+        poss.append([pos1[0]+shift_x, pos1[1]-shift_y, pos1[2]])
+        poss.append([pos1[0]-shift_x, pos1[1]-shift_y, pos1[2]])
+        p3["shape"] = "oobb_cube_center"        
+        p3["size"] = [3,1.5,4]
+        p3["zz"] = "top"
+        p3["pos"] = poss
+        #p3["m"] = "#"        
+        return_value.extend(ob.oobb_easy(**p3))
+
+        # extra side plastics
+        # feet cubes
+        p3 = copy.deepcopy(kwargs)        
+        pos1 = copy.deepcopy(pos)        
+        poss = []
+        shift_x = 11/2
+        poss.append([pos1[0]+shift_x, pos1[1], pos1[2]])
+        poss.append([pos1[0]-shift_x, pos1[1], pos1[2]])
+        p3["shape"] = "oobb_cube_center"        
+        p3["size"] = [2,19,3.5]
+        p3["zz"] = "bottom"
+        p3["pos"] = poss
+        #p3["m"] = "#"        
+        return_value.extend(ob.oobb_easy(**p3))
+
+
+        # pot cube
+        p3 = copy.deepcopy(kwargs)
+        pos1 = copy.deepcopy(pos)        
+        pos1[0] += 16/2 + 4/2
+        pos1[2] += -4
+        p3["shape"] = "oobb_cube_center"        
+        p3["size"] = [4,12,16]
+        p3["zz"] = "bottom"
+        p3["pos"] = pos1        
+        #p3["m"] = "#"        
+        return_value.extend(ob.oobb_easy(**p3))
+        
+        # other side clearance cube
+        p3 = copy.deepcopy(p3)
+        p3["size"] = [1.5,12,16]
+        pos1 = copy.deepcopy(pos)
+        pos1[0] -= 16/2 + 1.5/2        
+        pos1[2] += -4
+        p3["pos"] = pos1
+        
+        return_value.extend(ob.oobb_easy(**p3))
+
+        # stick
+        p3 = copy.deepcopy(kwargs)
+        pos1 = copy.deepcopy(pos)                
+        pos1[2] += cube_depth
+        p3["shape"] = "oobb_cube_center"        
+        p3["size"] = [width_stick,1,9]
+        p3["zz"] = "bottom"
+        p3["pos"] = pos1        
+        #p3["m"] = "#"        
+        return_value.extend(ob.oobb_easy(**p3))
+        
 
 
     return_value_2 = {}
@@ -827,6 +895,75 @@ def get_oobb_screw(**kwargs):
 
 
     return return_value_2
+
+# shapes
+def get_oobb_cube_center(**kwargs):
+    p3 = copy.deepcopy(kwargs)
+    zz = kwargs.get("zz", "center")
+    
+    p3["shape"] = "cube"
+    pos1 = copy.deepcopy(p3["pos"])
+    pos1[0] = pos1[0] - p3["size"][0]/2
+    pos1[1] = pos1[1] - p3["size"][1]/2
+    if zz == "center":
+        pos1[2] = pos1[2] - p3["size"][2]/2
+    elif zz == "top":
+        pos1[2] = pos1[2] - p3["size"][2]
+    elif zz == "bottom":
+        pos1[2] = pos1[2]
+
+    p3["pos"] = pos1
+    return ob.oobb_easy(**p3)
+
+def get_oobb_cylinder(**kwargs):
+    zz = kwargs.get("zz", "center")
+    radius_name = kwargs.get("radius_name", "")
+    
+    modes = ["laser", "3dpr", "true"]
+    return_value = []
+    # deciding how to define depth either string or name
+    try:
+        depth = kwargs["depth"]
+    except:
+        try:
+            depth = kwargs["depth_mm"]
+        except:
+            depth = 250
+    # figuring out z so it is in the middle of the object
+    try:
+        kwargs["pos"][2] = kwargs["pos"][2] - depth / 2
+    except:
+        try:
+            kwargs["z"] = kwargs["z"] - depth / 2
+        except:
+            pass
+    if zz == "bottom":
+        kwargs["pos"][2] += depth / 2
+    if zz == "rop":
+        kwargs["pos"][2] -= depth / 2
+
+    for mode in modes:
+        kwargs["shape"] = "cylinder"
+        if radius_name != "":
+            kwargs.update({"r": ob.gv(radius_name, mode)})
+        else:
+            try:
+                kwargs.update({"r": kwargs["radius"]})
+            except:
+                try:
+                    kwargs.update({"r": kwargs["r"]})
+                except:
+                    #using r1 and r2
+                    pass
+                
+        if isinstance(depth, str):
+            kwargs.update({"h": ob.gv(depth, mode)})
+        else:
+            kwargs.update({"h": depth})
+        kwargs.update({"inclusion": mode})
+        return_value.append(opsc.opsc_easy(**kwargs))
+    return return_value
+
 
 # wire
 def get_oobb_wire_basic(**kwargs):

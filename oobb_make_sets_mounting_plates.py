@@ -86,12 +86,15 @@ def get_mounting_plates_aliexpress(size="oobb"):
           "thickness": 3,           
           "radius_hole": "m3", 
           "size": size,
-          "mounting_holes": mounting_holes}    
+          "mounting_holes": mounting_holes,
+          "extra": "clearance_hole_10_mm_10_mm_0_mm_6_mm"}    
     mounting_plates.append(pl)
+    
     pl2 = copy.deepcopy(pl)
     pl2["type"] = "mounting_plate_top"    
     pl2["height"] = pl2["height"]-1
     pl2["width"] = pl2["width"]-1
+    pl2.pop("extra", "")
     mounting_plates.append(pl2)
 
     

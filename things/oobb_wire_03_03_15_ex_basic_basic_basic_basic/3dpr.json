@@ -1,0 +1,220 @@
+[
+    {
+        "extra": [
+            "basic",
+            "basic",
+            "basic",
+            "basic"
+        ],
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -15
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "type": "positive",
+        "shape": "oobb_plate",
+        "depth": 15
+    },
+    {
+        "extra": [
+            "basic",
+            "basic",
+            "basic",
+            "basic"
+        ],
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -15
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "hole_sides": [
+            "left",
+            "right",
+            "top"
+        ],
+        "type": "p",
+        "shape": "oobb_holes",
+        "holes": [
+            "left",
+            "right",
+            "top"
+        ],
+        "both_holes": true
+    },
+    {
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            7.5,
+            -15,
+            -15
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "type": "negative",
+        "shape": "oobb_nut",
+        "radius_name": "m3",
+        "zz": "bottom",
+        "overhang": true,
+        "rot": [
+            0,
+            0,
+            15.0
+        ],
+        "nut": false
+    },
+    {
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            7.5,
+            15,
+            -15
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "type": "negative",
+        "shape": "oobb_nut",
+        "radius_name": "m3",
+        "zz": "bottom",
+        "overhang": true,
+        "rot": [
+            0,
+            0,
+            15.0
+        ],
+        "nut": false
+    },
+    {
+        "extra": [
+            "basic",
+            "basic",
+            "basic",
+            "basic"
+        ],
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -3
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "shape": "oobb_wire_basic",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    },
+    {
+        "extra": [
+            "basic",
+            "basic",
+            "basic",
+            "basic"
+        ],
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -6
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "shape": "oobb_wire_basic",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    },
+    {
+        "extra": [
+            "basic",
+            "basic",
+            "basic",
+            "basic"
+        ],
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -9
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "shape": "oobb_wire_basic",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    },
+    {
+        "extra": [
+            "basic",
+            "basic",
+            "basic",
+            "basic"
+        ],
+        "thickness": 15,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -12
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -15
+        ],
+        "shape": "oobb_wire_basic",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    }
+]

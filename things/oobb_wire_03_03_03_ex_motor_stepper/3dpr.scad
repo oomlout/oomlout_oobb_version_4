@@ -6,7 +6,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -3]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_3_depth_0_0_-3_pos_motor_stepper_extra_3_thickness_3_width_3_height_4_num_pins_false_polarized_0_0_-3_pos_plate", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_3_depth_0_0_-3_pos_motor_stepper_extra_3_thickness_3_width_3_height_0_0_-3_pos_plate", valign = "center");
 				}
 			}
 		}
@@ -29,7 +29,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -3]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-3_pos_motor_stepper_extra_3_thickness_3_width_3_height_4_num_pins_false_polarized_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-3_pos_motor_stepper_extra_3_thickness_3_width_3_height_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
 				}
 			}
 		}
@@ -37,7 +37,7 @@ difference() {
 			translate(v = [0, 14, -3]) {
 				rotate(a = [0, 0, 180]) {
 					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_wire_motor_stepper_shape_0_0_-3_pos_motor_stepper_extra_3_thickness_3_width_3_height_4_num_pins_false_polarized_0_0_-3_pos_plate_0_0_180_rot", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_wire_motor_stepper_shape_0_0_-3_pos_motor_stepper_extra_3_thickness_3_width_3_height_0_0_-3_pos_plate_0_0_180_rot", valign = "center");
 					}
 				}
 			}

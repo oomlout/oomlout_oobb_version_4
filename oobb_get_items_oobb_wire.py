@@ -6,40 +6,38 @@ import oobb_get_items_oobb
 
 # basic
 def get_wire_basic(**kwargs):
-    kwargs["num_pins"] = 3
-    kwargs.update({"polarized": True})
+    return get_oobb_wire_base(**kwargs)
+
+def get_wire_basic_basic_basic(**kwargs):
+    return get_oobb_wire_base(**kwargs)
+
+def get_wire_basic_basic_basic_basic(**kwargs):
     return get_oobb_wire_base(**kwargs)
 
 def get_wire_higher_voltage(**kwargs):
-    kwargs["num_pins"] = 2
-    kwargs.update({"polarized": True})
     return get_oobb_wire_base(**kwargs)
 
 def get_wire_i2c(**kwargs):
-    kwargs["num_pins"] = 4
-    kwargs.update({"polarized": True})
     return get_oobb_wire_base(**kwargs)
 
 def get_wire_motor(**kwargs):
-    kwargs["num_pins"] = 2
-    kwargs.update({"polarized": False})
     return get_oobb_wire_base(**kwargs)
 
+def get_wire_motor_basic(**kwargs):
+    return get_oobb_wire_base(**kwargs)
+
+
+
 def get_wire_motor_stepper(**kwargs):
-    kwargs["num_pins"] = 4
-    kwargs.update({"polarized": False})
     return get_oobb_wire_base(**kwargs)
 
 def get_wire_spacer(**kwargs):
-    kwargs["num_pins"] = 0
     return get_oobb_wire_base(**kwargs)
     
 def get_wire_spacer_long(**kwargs):
-    kwargs["num_pins"] = 0
     return get_oobb_wire_base(**kwargs)
     
 def get_wire_spacer_u(**kwargs):
-    kwargs["num_pins"] = 0
     return get_oobb_wire_base(**kwargs)
 
 
@@ -55,10 +53,6 @@ def get_oobb_wire_base(**kwargs):
     full_object = kwargs.get("full_object", True)
         
     # extra sets
-    num_pins = kwargs.get("num_pins", 2)
-    polarized = kwargs.get("polarized", False)
-    holes = kwargs.get("holes", ["left", "right", "top"] )
-    modes = kwargs.get("mode", ["laser", "3dpr", "true"])
     kwargs["pos"] = pos
     
     # get the default thing
@@ -95,12 +89,19 @@ def get_oobb_wire_base(**kwargs):
         oobb_base.append_full(thing, **p3)
     
     # cutout
-    p3 = copy.deepcopy(kwargs)
-    p3["shape"] = f"oobb_wire_{extra}"
-    p3["rot"] = [0,0,180]
-    p3["pos"][2] += -3
-    #p3["m"] = "#"
-    oobb_base.append_full(thing, **p3)
+    z_shift = -3    
+    if type(extra) is not list:
+        extras = [extra]
+    else:
+        extras = extra
+    for extra in extras:
+        p3 = copy.deepcopy(kwargs)
+        p3["shape"] = f"oobb_wire_{extra}"
+        p3["rot"] = [0,0,180]
+        p3["pos"][2] += z_shift
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+        z_shift += -3 
 
 
     if full_object:   
