@@ -11,6 +11,7 @@ import oobb_get_items_test
 
 
 def get_thing_from_dict(thing_dict):
+    full_object = thing_dict.get("full_object", False)
     try:
         func = getattr(oobb_get_items_oobb, "get_"+thing_dict["type"])
     except AttributeError:
@@ -22,6 +23,7 @@ def get_thing_from_dict(thing_dict):
     thing = func(**thing_dict)
 
     return thing
+
     
     pass
 

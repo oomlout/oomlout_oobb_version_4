@@ -1,0 +1,31 @@
+[
+    {
+        "type": "p",
+        "diameter": 15,
+        "thickness": 3,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_circle",
+        "width": 15,
+        "height": 15,
+        "depth": 3
+    },
+    {
+        "type": "n",
+        "diameter": 15,
+        "thickness": 3,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 15,
+        "height": 15,
+        "both_holes": true,
+        "circle": true
+    }
+]

@@ -1,0 +1,89 @@
+[
+    {
+        "type": "p",
+        "width": 3,
+        "height": 1,
+        "thickness": 14,
+        "extra": "ninety_degree",
+        "pos": [
+            0,
+            0,
+            -7.0
+        ],
+        "shape": "oobb_plate",
+        "depth": 14,
+        "r": 2.5
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 1,
+        "thickness": 14,
+        "extra": "ninety_degree",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "loc": [
+            [
+                1,
+                1
+            ],
+            [
+                3,
+                1
+            ]
+        ]
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 1,
+        "thickness": 14,
+        "extra": "ninety_degree",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "loc": [
+            [
+                2.5,
+                1
+            ],
+            [
+                1.5,
+                1
+            ]
+        ]
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 1,
+        "thickness": 14,
+        "extra": "ninety_degree",
+        "pos": [
+            0.0,
+            7.0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "depth": 14,
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ]
+    }
+]

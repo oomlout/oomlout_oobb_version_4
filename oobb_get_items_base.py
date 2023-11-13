@@ -2,6 +2,31 @@ import copy
 
 from oobb_get_items_base_old import *
 
+# circle
+def get_oobb_circle(**kwargs):
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    extra_mm = kwargs.get("extra_mm", False)
+    depth = kwargs.get("depth", 3)
+
+    
+    #add extra_mm
+    if extra_mm:
+        width = width + 1/15 
+        height = height + 1/15
+    
+    width_mm = width * ob.gv("osp") - ob.gv("osp_minus")
+    height_mm = height * ob.gv("osp") - ob.gv("osp_minus")
+    
+
+
+       
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = "cylinder"
+    p3["r"] = (width * ob.gv("osp") - ob.gv("osp_minus"))/2
+    p3["h"] = depth
+    return [opsc.opsc_easy(**p3)]
+
 
 
 
@@ -899,7 +924,7 @@ def get_oobb_screw(**kwargs):
 # shapes
 def get_oobb_cube_center(**kwargs):
     p3 = copy.deepcopy(kwargs)
-    zz = kwargs.get("zz", "center")
+    zz = kwargs.get("zz", "bottom")
     
     p3["shape"] = "cube"
     pos1 = copy.deepcopy(p3["pos"])

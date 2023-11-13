@@ -145,7 +145,12 @@ def get_oobb_holes(holes=["all"], **kwargs):
     middle = kwargs.get("middle", True)
     size = kwargs.get("size", "oobb")
     both_holes = kwargs.get("both_holes", False)
-
+    circle = kwargs.get("circle", False)
+    diameter = kwargs.get("diameter", 0)
+    if diameter != 0:
+        width = diameter
+        height = diameter
+    
     
 
     x = pos[0]
@@ -169,12 +174,32 @@ def get_oobb_holes(holes=["all"], **kwargs):
     xx = x
     yy = y
     if "all" in holes:
-        for mode in modes:
-            # find the start point needs to be half the width_mm plus half osp
+        if not circle:
+            for mode in modes:
+                # find the start point needs to be half the width_mm plus half osp
+                pos_start = [xx + -(width*spacing/2) + spacing/2,
+                            yy + -(height*spacing/2) + spacing/2, z]
+                objects.extend(ob.oobb_easy_array(type="negative", shape="hole", inclusion=mode, repeats=[
+                            width, height], pos_start=pos_start, shift_arr=[spacing, spacing], r=ob.gv(f"hole_radius_{radius_name}", mode)))
+        else:
+            acceptable_holes  = []            
             pos_start = [xx + -(width*spacing/2) + spacing/2,
-                         yy + -(height*spacing/2) + spacing/2, z]
-            objects.extend(ob.oobb_easy_array(type="negative", shape="hole", inclusion=mode, repeats=[
-                           width, height], pos_start=pos_start, shift_arr=[spacing, spacing], r=ob.gv(f"hole_radius_{radius_name}", mode)))
+                        yy + -(height*spacing/2) + spacing/2, z]
+            #find the acceptable holes
+            for w in range(0, math.floor(width)):
+                for h in range(0, math.floor(height)):
+                    x = pos_start[0] + w*spacing
+                    y = pos_start[1] + h*spacing
+                    # only include if inside a circle of radius width * ob,gv("osp")/2
+                    r = width*spacing/2 - 5
+                    if math.sqrt(x**2 + y**2) <= r:
+                        acceptable_holes.append([w,h])
+            #now add the holes
+            for mode in modes:
+                for hole in acceptable_holes:
+                    x = pos_start[0] + hole[0]*spacing
+                    y = pos_start[1] + hole[1]*spacing
+                    objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[x, y, 0], radius_name=radius_name, m=m))
     if "perimeter" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
@@ -359,8 +384,11 @@ def get_oobb_holes(holes=["all"], **kwargs):
         #make width two times minus one
         p2["width"] = width*2-1
         p2["height"] = height*2-1
+        if diameter != 0:
+            p2["diameter"] = diameter * 2 - 1        
         #add holes
         p2["holes"] = holes
+        #p2["m"] = "#"
         objects.extend(get_oobe_holes(**p2))
 
     return objects
@@ -485,6 +513,14 @@ def get_oobe_holes(**kwargs):
     y = kwargs["pos"][1]
     z = kwargs["pos"][2]
     spacing = ob.gv("osp") / 2
+
+    circle = kwargs.get("circle", False)
+    diameter = kwargs.get("diameter", 0)
+    if diameter != 0:
+        width = diameter
+        height = diameter
+
+
     #if holes isn't an array make it one
     if not isinstance(holes, list):
         holes = [holes]
@@ -496,12 +532,33 @@ def get_oobe_holes(**kwargs):
             xx = x  
             yy = y
             if hole == "all":
-                pos_start = [x + -(width*ob.gv("ospe")/2) + ob.gv("ospe")/2,
-                            y + -(height*ob.gv("ospe")/2) + ob.gv("ospe")/2, z]
+                if not circle:
+                    pos_start = [x + -(width*ob.gv("ospe")/2) + ob.gv("ospe")/2,
+                                y + -(height*ob.gv("ospe")/2) + ob.gv("ospe")/2, z]
 
-                
-                objects.extend(ob.oobb_easy_array(type="negative", shape="hole", inclusion=mode, repeats=[
-                            width, height], pos_start=pos_start, shift_arr=[ob.gv("ospe"), ob.gv("ospe")], r=ob.gv("hole_radius_m3", mode)))
+                    
+                    objects.extend(ob.oobb_easy_array(type="negative", shape="hole", inclusion=mode, repeats=[
+                                width, height], pos_start=pos_start, shift_arr=[ob.gv("ospe"), ob.gv("ospe")], r=ob.gv("hole_radius_m3", mode)))
+                else:
+                    acceptable_holes  = []   
+                    spacing = 7.5         
+                    pos_start = [xx + -(width*spacing/2) + spacing/2,
+                                yy + -(height*spacing/2) + spacing/2, z]
+                    #find the acceptable holes
+                    for w in range(0, math.floor(width)):
+                        for h in range(0, math.floor(height)):
+                            x = pos_start[0] + w*spacing
+                            y = pos_start[1] + h*spacing
+                            # only include if inside a circle of radius width * ob,gv("osp")/2
+                            r = width*spacing/2 - 2
+                            if math.sqrt(x**2 + y**2) <= r:
+                                acceptable_holes.append([w,h])
+                    #now add the holes
+                    for mode in modes:
+                        for hole in acceptable_holes:
+                            x = pos_start[0] + hole[0]*spacing
+                            y = pos_start[1] + hole[1]*spacing
+                            objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[x, y, 0], radius_name=radius_name, m=m))                    
             if "circle" in holes:
                 # find the start point needs to be half the width_mm plus half osp
                 pos_start = [xx + -(width*spacing/2) + spacing/2,

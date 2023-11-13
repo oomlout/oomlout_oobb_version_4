@@ -27,6 +27,10 @@ def get_wire_motor_basic(**kwargs):
     return get_oobb_wire_base(**kwargs)
 
 
+def get_wire_basic_basic_motor(**kwargs):
+    return get_oobb_wire_base(**kwargs)
+
+
 
 def get_wire_motor_stepper(**kwargs):
     return get_oobb_wire_base(**kwargs)

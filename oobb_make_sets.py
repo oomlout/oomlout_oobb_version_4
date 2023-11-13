@@ -94,14 +94,14 @@ def get_circles(size="oobb"):
             circles.append({"type": "circle", "diameter": s, "thickness": t, "size": size})
 
 
-    circles.append({"type": "circle", "diameter": 1.5, "thickness": 12, "extra":"nut_m6", "size": size})
+    #circles.append({"type": "circle", "diameter": 1.5, "thickness": 12, "extra":"nut_m6", "size": size})
 
 
-    circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"electronic_potentiometer_17_mm", "size": size})
-    circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 6, "shaft":"electronic_potentiometer_17_mm", "size": size})
+    #circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"electronic_potentiometer_17_mm", "size": size})
+    #circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 6, "shaft":"electronic_potentiometer_17_mm", "size": size})
     
-    circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
-    circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
+    #circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
+    #circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
 
     return circles
 
@@ -361,6 +361,29 @@ def get_plates(size="oobb"):
     plates.append({"type": "plate", "width": 5, "height": 2,
                   "thickness": 3, "extra":"gorm", "size": size})
 
+    #ninety_degree plates    
+    plates.append({"type": "plate", "width": 3, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
+    plates.append({"type": "plate", "width": 4, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
+    plates.append({"type": "plate", "width": 5, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
+
+    # l
+    thicknesses = [3,15]
+    sizes = []
+    sizes.append([3,3])
+    sizes.append([5,2])
+    for thick in thicknesses:
+        for siz in sizes:
+            plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"l", "size": size})
+    
+    # u
+    thicknesses = [3,15]
+    sizes = []
+    sizes.append([3,3])
+    for thick in thicknesses:
+        for siz in sizes:
+            plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"u", "size": size})
+
+    
     # slip_center and slip_end
     widths = [3,5, 7]
     thicknesses = [8.5]
@@ -602,7 +625,7 @@ def get_trays(size="oobb"):
 
 def get_wheels(size="oobb"):
     wheels = []
-    types = [["wheel",6],["bearing_wheel",9],["bearing_wheel",15]]
+    types = [["wheel",6],["wheel",9],["wheel",15]]
     for t in types:
         type, thickness = t
         wheels.append({"type": type, "thickness": thickness, "oring_type":"314", "size": size})        
@@ -611,6 +634,8 @@ def get_wheels(size="oobb"):
         wheels.append({"type": type, "thickness": thickness, "oring_type":"327", "size": size})
         wheels.append({"type": type, "thickness": thickness, "oring_type":"333", "size": size})
         wheels.append({"type": type, "thickness": thickness, "oring_type":"339", "size": size})
+    
+    wheels.append({"type": "wheel", "thickness": 15, "width":2, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"size": size})
 
     #make both_holes true for all
     for wheel in wheels:
@@ -632,7 +657,9 @@ def get_wires(size="oobb"):
             for extra in extras:
                 wis.append({"type": "wire", "extra": extra, "thickness": thickness, "width": width, "height": 3, "size": size})
     extra = ["motor", "basic"]
-    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size})  
+    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size}) 
+    extra = ["basic", "basic", "motor"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})  
     extra = ["basic","basic","basic","basic"]
     wis.append({"type": "wire", "extra": extra, "thickness": 15, "width": 3, "height": 3, "size": size})  
     extra = ["basic","basic","basic"]

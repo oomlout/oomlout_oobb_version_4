@@ -17,16 +17,26 @@ def main(**kwargs):
     #filter = "oobb_holder_05_03_00_ex_motor_servo_standard_01_all_print"
     
     #filter = "tray_03_03"
-  
+    
+    # circle
+    #filter = "circle"
+
     # electronic
     #filter = "holder_03_03_03_ex_electronic_potentiometer"
     #filter = "holder_03_03_03_ex_electronic_button_11_mm_panel_mount"
 
     # holder
-    filter = "stick_single_axis_16_mm"
+    #filter = "oobb_wire_03_03_09_ex_motor_basic"
 
     # mounting_plate
     #filter = "aliexpress_usb_micro_breakout_01"
+
+    # plate
+    #filter = "ninety_degree"
+    filter = ["ex_l","_u"]
+
+    # wheel
+    #filter = "twenty_twenty_aluminium_extrusion"
 
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"

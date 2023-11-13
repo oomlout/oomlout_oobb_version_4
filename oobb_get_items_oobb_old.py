@@ -19,7 +19,7 @@ def get_bearing_circle(**kwargs):
     kwargs.update({"exclude_d3_holes": True})
     kwargs.update({"exclude_center_holes": True})
     
-    th.extend(get_circle(**kwargs)["components"])
+    #th.extend(get_circle(**kwargs)["components"])
     # adding connecting screws
     connecting_screws = []
     a = 10.607
@@ -518,7 +518,7 @@ def get_bunting_alphabet(**kwargs):
 
     return thing 
 
-def get_circle(**kwargs):
+def get_circle_old_1(**kwargs):
 
     diameter_big = kwargs.get("diameter", 1)
     
@@ -4619,7 +4619,7 @@ def get_tray_vertical(**kwargs):
 
     return thing
 
-def get_wheel(**kwargs):
+def get_wheel_old_1(**kwargs):
     oring_type = kwargs.get("oring_type", "327")
     #figuring out radius
     od = ob.gv(f"oring_{oring_type}_od", "true")
