@@ -330,76 +330,55 @@ def get_plate_ninety_degree(**kwargs):
     oobb_base.append_full(thing,**p3)      
     #th.append(oobb_base.oobb_easy(**p3))
     
-    # add holes
+    holes_m6_vertical = []
+    holes_m6_horizontal = []
+    holes_m3_vertical = []
+    holes_m3_horizontal = []    
+    
+    for i in range(1,width+1):
+        #vertical even horizontal odd
+        if i%2 == 0:
+            holes_m6_vertical.append([i,0,"m6"])    
+        else:
+            holes_m6_horizontal.append([i,90,"m6"])
+
+        if i+1 <= width:
+            holes_m3_horizontal.append([i+0.5,90,"m3"])
+            holes_m3_vertical.append([i+0.5,0,"m3"])
+    hole_list = []
+    hole_list.extend(holes_m6_vertical)
+    hole_list.extend(holes_m6_horizontal)
+    hole_list.extend(holes_m3_vertical)
+    hole_list.extend(holes_m3_horizontal)
+
     if holes:
-        locs = []
-        locs.append([1,1])
-        locs.append([width,1])
-        th.append(oobb_base.get_comment("holes main","n"))
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "n"
-        p3["shape"] = f"{size}_holes"
-        p3["width"] = width
-        p3["height"] = height
-        p3["pos"] = pos
-        p3["both_holes"] = both_holes
-        p3["holes"] = "single"
-        p3["radius_name"] = "m6"
-        p3["loc"] = locs
-        #p3["m"] = ""
-        oobb_base.append_full(thing,**p3)      
+        for hole in hole_list:
+            p3 = copy.deepcopy(kwargs)
+            pos1 = copy.deepcopy(pos)
+            x_shift = (hole[0]-1) * 15 - width/2 * 15 + 7.5
+            pos1[0] += x_shift            
+            z_shift = -thickness/2
+            y_shift = 0
+            if hole[1] == 90:
+                y_shift = thickness/2
+                z_shift = 0
+            pos1[1] += y_shift
+            pos1[2] += z_shift
+            p3["type"] = "n"
+            p3["shape"] = f"{size}_hole"
+            p3["width"] = width
+            p3["height"] = height
+            p3["pos"] = pos1
+            p3["both_holes"] = both_holes
+            p3["holes"] = "single"
+            p3["radius_name"] = hole[2]
+            p3["rot"] = [hole[1],0,0]
+            #p3["m"] = "#"
+            p3["depth"] = thickness
+            oobb_base.append_full(thing,**p3)      
         
-        p4 = copy.deepcopy(p3)
-        locs = []
-        locs.append([width-0.5,1])
-        locs.append([1.5,1])
-        p4["radius_name"] = "m3"
-        p4["loc"] = locs
-        oobb_base.append_full(thing,**p4)
         
-    # through holes
-    locs = []        
-    #m6 holes
-    for i in range(1,width-1):        
-        pos1 = copy.deepcopy(pos)        
-        x = -((width - 1)/2 * 15) + i*15
-        pos1[0] += x
-        locs.append(pos1)
-    for pos1 in locs:
-        th.append(oobb_base.get_comment("holes main","n"))
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "n"
-        p3["shape"] = f"{size}_hole"
-        p3["width"] = width
-        p3["height"] = height
-        pos1[1] = pos1[1] + thickness/2
-        p3["pos"] = pos1
-        p3["depth"] = thickness
-        p3["radius_name"] = "m6"
-        p3["rot"] = [90,0,0 ]
-        #p3["m"] = "#"
-        oobb_base.append_full(thing,**p3) 
-    #m3  
-    locs = []        
-    for i in range(1,width-2):        
-        pos1 = copy.deepcopy(pos)        
-        x = -((width - 1)/2 * 15) + (i+0.5)*15
-        pos1[0] += x
-        locs.append(pos1)
-    for pos1 in locs:
-        th.append(oobb_base.get_comment("holes main","n"))
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "n"
-        p3["shape"] = f"{size}_hole"
-        p3["width"] = width
-        p3["height"] = height
-        pos1[1] = pos1[1] + thickness/2
-        p3["pos"] = pos1
-        p3["depth"] = thickness
-        p3["radius_name"] = "m3"
-        p3["rot"] = [90,0,0 ]
-        #p3["m"] = "#"
-        oobb_base.append_full(thing,**p3) 
+    
     
     if full_object:   
         return thing

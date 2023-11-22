@@ -362,10 +362,11 @@ def get_plates(size="oobb"):
                   "thickness": 3, "extra":"gorm", "size": size})
 
     #ninety_degree plates    
-    plates.append({"type": "plate", "width": 3, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
-    plates.append({"type": "plate", "width": 4, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
-    plates.append({"type": "plate", "width": 5, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
-
+    max = 12
+    for i in range(2,max):
+        plates.append({"type": "plate", "width": i, "height": 1,
+                    "thickness": 14, "extra":"ninety_degree", "size": size})
+    
     # l
     thicknesses = [3,15]
     sizes = []

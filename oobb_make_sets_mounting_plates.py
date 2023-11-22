@@ -9,6 +9,7 @@ def get_mounting_plates(size="oobb"):
     mounting_plates.extend(get_mounting_plates_electrolama())
     mounting_plates.extend(get_mounting_plates_pimoroni())
     mounting_plates.extend(get_mounting_plates_raspberry_pi())
+    mounting_plates.extend(get_mounting_plates_other())
 
     return mounting_plates
 
@@ -170,6 +171,17 @@ def get_mounting_plates_electrolama(size="oobb"):
     mounting_holes.append({"x": 31.5, "y": -10})
     mounting_plates.append({"type": "mounting_plate", "width": 7, "height": 4, "thickness": 3, "mounting_holes": mounting_holes, "radius_hole": "m3", "name": "electrolama_basic_hub", "size": size})
     
+
+    return mounting_plates
+
+def get_mounting_plates_other(size="oobb"):
+    mounting_plates = []
+    # netgear
+    #      hub
+    mounting_holes = []
+    mounting_holes.append({"x": -17.5, "y": 0})
+    mounting_holes.append({"x": 27.5, "y": 0})
+    mounting_plates.append({"type": "mounting_plate", "width": 9, "height": 9, "thickness": 3, "mounting_holes": mounting_holes, "standoff": False, "radius_hole": "m3", "name": "netgear_5_port_gigabit_switch_gs105v5", "size": size})
 
     return mounting_plates
 

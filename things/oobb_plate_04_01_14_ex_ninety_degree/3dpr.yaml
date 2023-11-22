@@ -11,46 +11,48 @@
     type: p
     width: 4
 -   both_holes: true
+    depth: 14
     extra: ninety_degree
     height: 1
     holes: single
-    loc:
-    -   - 1
-        - 1
-    -   - 4
-        - 1
     pos:
+    - -7.5
     - 0
-    - 0
-    - 0
+    - -7.0
     radius_name: m6
-    shape: oobb_holes
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole
     thickness: 14
     type: n
     width: 4
 -   both_holes: true
+    depth: 14
     extra: ninety_degree
     height: 1
     holes: single
-    loc:
-    -   - 3.5
-        - 1
-    -   - 1.5
-        - 1
     pos:
+    - 22.5
+    - 0
+    - -7.0
+    radius_name: m6
+    rot:
     - 0
     - 0
     - 0
-    radius_name: m3
-    shape: oobb_holes
+    shape: oobb_hole
     thickness: 14
     type: n
     width: 4
--   depth: 14
+-   both_holes: true
+    depth: 14
     extra: ninety_degree
     height: 1
+    holes: single
     pos:
-    - -7.5
+    - -22.5
     - 7.0
     - 0
     radius_name: m6
@@ -62,9 +64,11 @@
     thickness: 14
     type: n
     width: 4
--   depth: 14
+-   both_holes: true
+    depth: 14
     extra: ninety_degree
     height: 1
+    holes: single
     pos:
     - 7.5
     - 7.0
@@ -78,11 +82,103 @@
     thickness: 14
     type: n
     width: 4
--   depth: 14
+-   both_holes: true
+    depth: 14
     extra: ninety_degree
     height: 1
+    holes: single
+    pos:
+    - -15.0
+    - 0
+    - -7.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 4
+-   both_holes: true
+    depth: 14
+    extra: ninety_degree
+    height: 1
+    holes: single
     pos:
     - 0.0
+    - 0
+    - -7.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 4
+-   both_holes: true
+    depth: 14
+    extra: ninety_degree
+    height: 1
+    holes: single
+    pos:
+    - 15.0
+    - 0
+    - -7.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 4
+-   both_holes: true
+    depth: 14
+    extra: ninety_degree
+    height: 1
+    holes: single
+    pos:
+    - -15.0
+    - 7.0
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 4
+-   both_holes: true
+    depth: 14
+    extra: ninety_degree
+    height: 1
+    holes: single
+    pos:
+    - 0.0
+    - 7.0
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 4
+-   both_holes: true
+    depth: 14
+    extra: ninety_degree
+    height: 1
+    holes: single
+    pos:
+    - 15.0
     - 7.0
     - 0
     radius_name: m3

@@ -29,11 +29,12 @@ def main(**kwargs):
     #filter = "oobb_wire_03_03_09_ex_motor_basic"
 
     # mounting_plate
-    #filter = "aliexpress_usb_micro_breakout_01"
+    filter = "netgear_5_port_gigabit_switch_gs105v5"
 
     # plate
     #filter = "ninety_degree"
-    filter = ["ex_l","_u"]
+    #filter = "oobb_plate_07_01_14_ex_ninety_degree"
+    #filter = ["ex_l","_u"]
 
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"
@@ -71,7 +72,7 @@ def main(**kwargs):
     #overwrite = False
     
     modes = ["laser", "3dpr", "true"]
-    modes = ["3dpr"]
+    #modes = ["3dpr"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
     #copy_files = True

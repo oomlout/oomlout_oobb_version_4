@@ -2128,6 +2128,7 @@ def get_mounting_plate_generic(**kwargs):
     x_shift = kwargs.get("x_shift", 0)
     y_shift = kwargs.get("y_shift", 0)
     extra = kwargs.get("extra", "")
+    standoff = kwargs.get("standoff", True)
     pos_original = kwargs.get("pos", [0, 0, 0])
 
     if extra != "":        
@@ -2174,7 +2175,8 @@ def get_mounting_plate_generic(**kwargs):
         th.extend(ob.oobb_easy(t="n", s="oobb_hole", pos=pos, radius_name=radius_hole, m=""))
         pos = [hole["x"], hole["y"], 0]
         depth2 = depth +6
-        th.extend(ob.oobb_easy(t="p", s="oobb_hole_standoff", pos=pos, radius_name=radius_hole, depth = depth2, m=""))
+        if standoff:
+            th.extend(ob.oobb_easy(t="p", s="oobb_hole_standoff", pos=pos, radius_name=radius_hole, depth = depth2, m=""))
         pos = [hole["x"], hole["y"], 0]
         th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk", rot=[0,180,0], pos=pos, radius_name=radius_hole, depth=depth2, include_nut=False, m="#"))
 
