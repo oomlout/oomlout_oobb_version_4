@@ -146,7 +146,10 @@ def get_oobb_holes(holes=["all"], **kwargs):
     size = kwargs.get("size", "oobb")
     both_holes = kwargs.get("both_holes", False)
     circle = kwargs.get("circle", False)
-    diameter = kwargs.get("diameter", 0)
+    diameter_full = kwargs.get("diameter", 0)
+    diameter = diameter_full
+    if diameter_full % 1 != 0:
+        diameter = diameter_full - diameter_full % 1
     if diameter != 0:
         width = diameter
         height = diameter
@@ -180,7 +183,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, z]
                 objects.extend(ob.oobb_easy_array(type="negative", shape="hole", inclusion=mode, repeats=[
-                            width, height], pos_start=pos_start, shift_arr=[spacing, spacing], r=ob.gv(f"hole_radius_{radius_name}", mode)))
+                            width, height], pos_start=pos_start, shift_arr=[spacing, spacing], middle=middle, r=ob.gv(f"hole_radius_{radius_name}", mode)))
         else:
             acceptable_holes  = []            
             pos_start = [xx + -(width*spacing/2) + spacing/2,
@@ -193,7 +196,11 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     # only include if inside a circle of radius width * ob,gv("osp")/2
                     r = width*spacing/2 - 5
                     if math.sqrt(x**2 + y**2) <= r:
-                        acceptable_holes.append([w,h])
+                        # check if middle
+                        if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
+                            pass
+                        else:
+                            acceptable_holes.append([w,h])
             #now add the holes
             for mode in modes:
                 for hole in acceptable_holes:
@@ -384,8 +391,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         #make width two times minus one
         p2["width"] = width*2-1
         p2["height"] = height*2-1
-        if diameter != 0:
-            p2["diameter"] = diameter * 2 - 1        
+        if diameter != diameter_full:
+            p2["diameter"] = (diameter_full+0.5) * 2 - 1        
         #add holes
         p2["holes"] = holes
         #p2["m"] = "#"
@@ -552,7 +559,11 @@ def get_oobe_holes(**kwargs):
                             # only include if inside a circle of radius width * ob,gv("osp")/2
                             r = width*spacing/2 - 2
                             if math.sqrt(x**2 + y**2) <= r:
-                                acceptable_holes.append([w,h])
+                                # check if middle
+                                if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
+                                    pass
+                                else:
+                                    acceptable_holes.append([w,h])
                     #now add the holes
                     for mode in modes:
                         for hole in acceptable_holes:
@@ -671,6 +682,9 @@ def get_oobe_holes(**kwargs):
                                         xxx, yyy, 0], radius_name=radius_name, m=m))
         return objects
 
+
+def get_oobb_motor_gearmotor_tt_motor_01(**kwargs):
+    return get_oobb_motor_gearmotor_01(**kwargs)
 
 def get_oobb_motor_gearmotor_01(**kwargs):
     part = kwargs.get("part", "all")
@@ -1117,6 +1131,7 @@ def get_oobb_motor_building_block_large_01(**kwargs):
 def get_oobb_motor_n20(**kwargs):
     include_screws = kwargs.get("include_screws", True)
     top_clearance = kwargs.get("top_clearance", False)
+    radius_extra = kwargs.get("radius_extra", 0.25)
     #z zero is base of shaft
     part = kwargs.get("part", "all")
     thickness = kwargs.get("thickness", 3)   
@@ -1133,15 +1148,15 @@ def get_oobb_motor_n20(**kwargs):
 
         p3 = copy.deepcopy(kwargs)
         p3["shape"] = "d_shaft"
-        r = 3/2        
-        r_plus = 0.2
-        id = 2.5
-        p3["r"] = r/2 + r_plus
+        r = 3/2 + radius_extra
+        r_plus = 0
+        id = 2.5 + radius_extra 
+        p3["r"] = r + r_plus
         p3["id"] = id + r_plus
         p3["depth"] = 250
         p3["pos"] = [x, y,125]
         p3["comment"] = ["shaft for n20 motor"]
-        p3["m"] = "#"
+        #p3["m"] = "#"
         objects.extend(ob.oobb_easy(**p3))
 
 

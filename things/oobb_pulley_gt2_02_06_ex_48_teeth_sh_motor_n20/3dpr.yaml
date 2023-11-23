@@ -1,0 +1,38 @@
+-   depth: 6.5
+    diameter: 2
+    extra: 48_teeth
+    number_of_teeth: 48
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: pulley_gt2
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 48_teeth
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 1
+-   diameter: 2
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_motor_n20
+    thickness: 6
+    type: n

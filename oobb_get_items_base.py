@@ -141,6 +141,7 @@ def get_oobb_electronic_potentiometer_17_mm(**kwargs):
         return_value = []  
         p2 = copy.deepcopy(kwargs)
         p2["r"] = 5.9/2
+        p2["type"] = typ
         p2["shape"] = "oobb_hole"                
         return_value.extend(ob.oe(**p2))        
         return return_value
@@ -271,6 +272,8 @@ def get_oobb_electronic_potentiometer_stick_single_axis_16_mm(**kwargs):
 
     return return_value_2
 
+
+
 # helpers
 def get_oobb_overhang(**kwargs):
     return_value = []
@@ -372,7 +375,8 @@ def get_oobb_slice(**kwargs):
 
 # motor
 def get_oobb_motor_servo_standard_01(**kwargs):
-    include_screws = kwargs.get("include_screws", True)    
+    include_screws = kwargs.get("include_screws", True)   
+    overhang = kwargs.get("overhang", True)
     clearance = kwargs.get("clearance", ["top", "bottom"])
     typ = kwargs.get("type", "p")
     kwargs["type"] = "p" #setting it to positive because it's a rotation object
@@ -381,7 +385,7 @@ def get_oobb_motor_servo_standard_01(**kwargs):
     screw_rot_y = kwargs.get("screw_rot_y", False) # whether the head is on the top or the bottom
     screw_depth = kwargs.get("screw_depth", 8) 
     screw_depth_shaft = kwargs.get("screw_depth_shaft", 6)
-    extra = kwargs.get("extra", "")
+    extra = kwargs.get("extra", "horn_adapter_screws")
     rot = get_rot(**kwargs)   
     rot_y = rot[1]
     kwargs.pop("rot","")
@@ -575,7 +579,7 @@ def get_oobb_motor_servo_standard_01(**kwargs):
             p4["radius_name"] = "m2"
             p4["zz"] = "top"        
             p4["depth"] = 15
-            p4["overhang"] = True
+            p4["overhang"] = overhang
             p4["clearance"] = "top"
             p4["nut"] = True
             p4["loose"] = "screw"
@@ -761,7 +765,7 @@ def get_oobb_screw(**kwargs):
     kwargs.pop("style", None)
     clearance = kwargs.get("clearance", "")
     nut_include = kwargs.get("nut_include", kwargs.get("include_nut",kwargs.get("nut", False)))    
-    overhang = kwargs.get("overhang", False)
+    overhang = kwargs.get("overhang", True)
     radius_name = kwargs.get("radius_name", "m3")
     loose = kwargs.get("loose", "")
     depth = float(kwargs.get("depth", 250))
@@ -778,6 +782,7 @@ def get_oobb_screw(**kwargs):
 
     # storing pos and popping it out to add it in rotation element     
     pos_original = copy.deepcopy(copy.deepcopy(kwargs.get("pos", [0, 0, 0])))
+    pos_original_original = copy.deepcopy(pos_original)
     kwargs.pop("pos", None)
     
 
@@ -819,6 +824,10 @@ def get_oobb_screw(**kwargs):
             #p3["m"] = ""
             return_value.append(ob.oobb_easy(**p3))
         if style == "countersunk":
+            if zz == "top":
+                pass
+            elif zz == "bottom":
+                pos_original[2] = copy.deepcopy(pos_original_original[2]) + depth
             shifts = [0, -depth, -depth]
             p3 = copy.deepcopy(kwargs)
             p3["shape"] = "cylinder"
@@ -828,6 +837,7 @@ def get_oobb_screw(**kwargs):
             pos1 = copy.deepcopy(pos_base)
             #pos1[2] = pos1[2] - dep / 2 #hold over mistake but fixed now maybe in bearing plate works check trays
             pos1[2] = pos1[2] - dep
+
             p3["pos"] = pos1            
             p3["r2"] = ob.gv(f"screw_countersunk_radius_{radius_name}", mode)
             p3["r1"] = ob.gv(f"hole_radius_{radius_name}", mode)
@@ -871,9 +881,11 @@ def get_oobb_screw(**kwargs):
         if nut_include:
             pos1 = copy.deepcopy(pos_for_overhang)
             p3 = copy.deepcopy(kwargs)
+            p3.pop("zz","")
             # maybe add a nut level argument later
             p3["shape"] = "oobb_nut"
-            p3["inclusion"] = mode        
+            p3["inclusion"] = mode   
+            p3["overhang"] = overhang
             p3["pos"] = [pos1[0], pos1[1], pos1[2] -depth]
             p3.pop("loose", "")
             if "nut" in loose:

@@ -13,12 +13,12 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 12) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_cylinder_shape_p_type_12_depth_3_width_12_height_12_thickness_motor_gearmotor_01_shaft_p_t_12.0_radius_all_mode", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_cylinder_shape_positive_type_12_depth_3_width_12_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_11.7_radius_all_mode", valign = "center");
 				}
 			}
 		}
 		translate(v = [0, 0, -6.0000000000]) {
-			cylinder(h = 12, r = 12.0000000000);
+			cylinder(h = 12, r = 11.7000000000);
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 7, 0]) {
@@ -29,12 +29,12 @@ difference() {
 		}
 	}
 	union() {
-		translate(v = [18.0000000000, 0, -6.0000000000]) {
+		translate(v = [18.0000000000, 0, 6.0000000000]) {
 			rotate(a = [0, 180, 30.0000000000]) {
 				difference() {
 					union() {
-						translate(v = [0, 0, -0.8500000000]) {
-							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						translate(v = [0, 0, -1.7000000000]) {
+							cylinder(h = 1.7000000000, r1 = 1.5000000000, r2 = 2.4000000000);
 						}
 						translate(v = [0, 0, -12.0000000000]) {
 							cylinder(h = 12, r = 1.5000000000);
@@ -65,12 +65,12 @@ difference() {
 				}
 			}
 		}
-		translate(v = [-18.0000000000, 0, -6.0000000000]) {
+		translate(v = [-18.0000000000, 0, 6.0000000000]) {
 			rotate(a = [0, 180, 30.0000000000]) {
 				difference() {
 					union() {
-						translate(v = [0, 0, -0.8500000000]) {
-							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						translate(v = [0, 0, -1.7000000000]) {
+							cylinder(h = 1.7000000000, r1 = 1.5000000000, r2 = 2.4000000000);
 						}
 						translate(v = [0, 0, -12.0000000000]) {
 							cylinder(h = 12, r = 1.5000000000);
@@ -101,12 +101,12 @@ difference() {
 				}
 			}
 		}
-		translate(v = [0, 18.0000000000, 6.0000000000]) {
+		translate(v = [0, 18.0000000000, -6.0000000000]) {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						translate(v = [0, 0, -0.8500000000]) {
-							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						translate(v = [0, 0, -1.7000000000]) {
+							cylinder(h = 1.7000000000, r1 = 1.5000000000, r2 = 2.4000000000);
 						}
 						translate(v = [0, 0, -12.0000000000]) {
 							cylinder(h = 12, r = 1.5000000000);
@@ -137,12 +137,12 @@ difference() {
 				}
 			}
 		}
-		translate(v = [0, -18.0000000000, 6.0000000000]) {
+		translate(v = [0, -18.0000000000, -6.0000000000]) {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						translate(v = [0, 0, -0.8500000000]) {
-							cylinder(r1 = 1.5000000000, r2 = 2.4000000000);
+						translate(v = [0, 0, -1.7000000000]) {
+							cylinder(h = 1.7000000000, r1 = 1.5000000000, r2 = 2.4000000000);
 						}
 						translate(v = [0, 0, -12.0000000000]) {
 							cylinder(h = 12, r = 1.5000000000);
@@ -176,7 +176,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_bearing_shape_n_type_12_depth_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_6704_bearing", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_bearing_shape_n_type_12_depth_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft", valign = "center");
 				}
 			}
 		}
@@ -197,9 +197,49 @@ difference() {
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [7.5000000000, 14, 0]) {
+				linear_extrude(height = 3) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_hole_shape_n_type_m3_radius_name_7.5_0_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_true_hole", valign = "center");
+				}
+			}
+		}
+		translate(v = [7.5000000000, 0, -50.0000000000]) {
+			cylinder(h = 100, r = 1.5000000000);
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [-7.5000000000, 14, 0]) {
+				linear_extrude(height = 3) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_hole_shape_n_type_m3_radius_name_-7.5_0_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_true_hole", valign = "center");
+				}
+			}
+		}
+		translate(v = [-7.5000000000, 0, -50.0000000000]) {
+			cylinder(h = 100, r = 1.5000000000);
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 21.5000000000, 0]) {
+				linear_extrude(height = 3) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_hole_shape_n_type_m3_radius_name_0_7.5_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_true_hole", valign = "center");
+				}
+			}
+		}
+		translate(v = [0, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.5000000000);
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 6.5000000000, 0]) {
+				linear_extrude(height = 3) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_hole_shape_n_type_m3_radius_name_0_-7.5_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_true_hole", valign = "center");
+				}
+			}
+		}
+		translate(v = [0, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.5000000000);
+		}
+		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_perimeter_miss_middle_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_perimeter_miss_middle_holes", valign = "center");
 				}
 			}
 		}
@@ -218,7 +258,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_gearmotor_01_shape_n_type_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_shaft_part", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_gearmotor_01_shape_n_type_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_shaft_part", valign = "center");
 				}
 			}
 		}
@@ -226,34 +266,34 @@ difference() {
 			cube(size = [5.5000000000, 3.8500000000, 100]);
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [18.0000000000, 14, -6.0000000000]) {
+			translate(v = [18.0000000000, 14, 6.0000000000]) {
 				rotate(a = [0, 180, 30.0000000000]) {
 					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_18.0_0_-6.0_pos_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_0_180_30.0_rot_true_nut_true_overhang", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_18.0_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_0_180_30.0_rot_true_nut_true_overhang", valign = "center");
 					}
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-18.0000000000, 14, -6.0000000000]) {
+			translate(v = [-18.0000000000, 14, 6.0000000000]) {
 				rotate(a = [0, 180, 30.0000000000]) {
 					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-18.0_0_-6.0_pos_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_0_180_30.0_rot_true_nut_true_overhang", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-18.0_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_0_180_30.0_rot_true_nut_true_overhang", valign = "center");
 					}
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 32.0000000000, 6.0000000000]) {
+			translate(v = [0, 32.0000000000, -6.0000000000]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_18.0_6.0_pos_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_18.0_-6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, -4.0000000000, 6.0000000000]) {
+			translate(v = [0, -4.0000000000, -6.0000000000]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-18.0_6.0_pos_3_width_3_height_12_thickness_motor_gearmotor_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-18.0_-6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_gearmotor_01_shaft_0_0_0_rot_true_nut_true_overhang", valign = "center");
 				}
 			}
 		}

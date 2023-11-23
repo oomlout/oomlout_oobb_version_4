@@ -137,8 +137,9 @@ def get_comment(comment, type="p", **kwargs):
     pos = kwargs.get("pos", [0,0,0])
     pos = copy.deepcopy(pos)
     line_length = kwargs.get("line_length", 50)
+    comment_shift_line = kwargs.get("comment_shift_line", 0)
     shift_line = 7
-    pos[1] = pos[1] + shift_line
+    pos[1] = pos[1] + shift_line + comment_shift_line
     return_value = []
 
     #add \n to comment every line_length characters if no \n

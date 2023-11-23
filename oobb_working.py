@@ -19,22 +19,35 @@ def main(**kwargs):
     #filter = "tray_03_03"
     
     # circle
-    #filter = "circle"
+    #filter = "circle_1d5"
 
     # electronic
     #filter = "holder_03_03_03_ex_electronic_potentiometer"
     #filter = "holder_03_03_03_ex_electronic_button_11_mm_panel_mount"
 
+    # gear
+    #filter = "gear"
+    #filter = "gear_02_03"
+    #filter = "gear_02_06_ex_16_teeth_sh_motor_servo_standard_01"
+    #filter = "motor_gearmotor_tt_motor_01"
+
+
     # holder
     #filter = "oobb_wire_03_03_09_ex_motor_basic"
 
     # mounting_plate
-    filter = "netgear_5_port_gigabit_switch_gs105v5"
+    #filter = "netgear_5_port_gigabit_switch_gs105v5"
 
     # plate
     #filter = "ninety_degree"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
+
+    # pulley
+    #filter = "pulley"
+    #filter = "pulley_gt2_01_06_ex_20_teeth_shield_sh_motor_n20"
+    #filter = "40_teeth_shield_sh_motor_servo"
+    filter = "20_teeth_shield_sh_motor_n20"
 
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"
@@ -71,8 +84,8 @@ def main(**kwargs):
     overwrite = True
     #overwrite = False
     
-    modes = ["laser", "3dpr", "true"]
-    #modes = ["3dpr"]
+    #modes = ["laser", "3dpr", "true"]
+    modes = ["3dpr"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
     #copy_files = True

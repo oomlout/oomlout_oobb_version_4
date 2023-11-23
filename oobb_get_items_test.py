@@ -1,6 +1,104 @@
 import copy
 import oobb_base
 
+# gear
+def get_test_gear(**kwargs):
+    # default sets
+    style = kwargs.get("style", "socket_cap")
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 100
+    comment_extra = ""
+    thickness = 3
+
+    versions = []
+    base = {}    
+    base["shape"] = f"gear"  
+    base["type"] = "p"   
+    base["shape"] = f"gear"
+    base["diametral_pitch"] = 0.53333333
+    base["number_of_teeth"] = 3 * 8  
+    base["depth"] = thickness
+    base["pos"] = pos_current
+    base["comment_extra"] = ""
+    base["comment_display"] = True
+    base["comment_shift_line"] = 30
+    #base["m"] = ""
+    base["extra"] = {}
+
+    versions.append(copy.deepcopy(base))
+
+    """ variables to play with
+    number_of_teeth = params.get("number_of_teeth", 24)
+    circular_pitch = params.get("circular_pitch", False) # couldn't figure this one out
+    diametral_pitch = params.get("diametral_pitch", 0.533333) #(teeth / diameter mm) gear 15 mm wide has 8 teeth
+    pressure_angle = params.get("pressure_angle", 28)
+    clearance = params.get("clearance", 1)
+    gear_thickness = params.get("gear_thickness", 6)
+    rim_thickness = params.get("rim_thickness", gear_thickness)
+    rim_width = params.get("rim_width", 0)
+    hub_thickness = params.get("hub_thickness", 0)
+    hub_diameter = params.get("hub_diameter", 0)
+    bore_diameter = params.get("bore_diameter", 0)
+    circles = params.get("circles", 0)
+    backlash = params.get("backlash", 1)
+    twist = params.get("twist", 0)
+    involute_facets = params.get("involute_facets", 0)
+    flat = params.get("flat", False)
+    """
+
+    b = copy.deepcopy(base)
+
+    #versions.append(b)
+    
+    
+    tests = {}
+    tests["pressure_angle"] = [0,14.5, 20, 25, 28, 30, 35,60]
+    tests["clearance"] = [0, 0.5, 1, 5]
+    tests["backlash"] = [0, 0.5, 1, 2, -1]
+
+    a_extra = "clearance"    
+    b_extra = "backlash"                     
+    
+    for b in tests[a_extra]:        
+        for a in tests[b_extra]:            
+            for v in versions:                       
+                    p3 = copy.deepcopy(v)
+                    comment_extra = v["comment_extra"]                     
+                    comment_extra += f" {a_extra} : {a}\n"
+                    comment_extra += f" {b_extra} : {b}"
+
+                    depth = v["depth"]            
+                    p3["comment"] = f"{v['shape']}_{depth}\n{comment_extra}"
+                    p3["pos"] = copy.deepcopy(pos_current)
+                    p3[b_extra] = b
+                    p3[a_extra] = a
+                    p3["m"] = ""
+                    extra = v.get("extra", {})
+                    p3.update(extra)
+                    oobb_base.append_full(thing, **p3)
+                    pos_current[1] += pos_shift
+        pos_current[0] += pos_shift
+        pos_current[1] = 0    
+    pos_current[0] += pos_shift
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
 
 # rotation
 def get_test_rotation(**kwargs):
@@ -62,6 +160,91 @@ def get_test_rotation(**kwargs):
         return thing["components"]
 
 # motor
+
+#      motor_n20_shaft
+def get_test_motor_n20_shaft(**kwargs):
+    # default sets
+    style = kwargs.get("style", "socket_cap")
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,-30,0]
+    pos_shift = 15
+    comment_extra = ""
+    thickness = 3
+
+    #oobb plate
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = f"oobb_plate"
+    p3["type"] = "p"
+    p3["width"] = 1.5
+    p3["height"] = 5
+    p3["depth"] = 3
+    oobb_base.append_full(thing, **p3)
+
+    versions = []
+    base = {}    
+    base["type"] = "n"   
+    base["shape"] = f"oobb_motor_n20"  
+    base["part"] = f"shaft"    
+    base["pos"] = pos_current
+    base["comment_extra"] = ""
+    #base["comment_display"] = True
+    base["comment_shift_line"] = 30
+    #base["m"] = ""
+    base["extra"] = {}
+
+    versions.append(copy.deepcopy(base))
+
+    b = copy.deepcopy(base)
+
+    #versions.append(b)
+    
+    
+    tests = {}
+    tests["radius_extra"] = [0,0.1,0.2,0.3,0.4]
+    
+    a_extra = "radius_extra"    
+    #b_extra = "backlash"                     
+    
+    #for b in tests[a_extra]:        
+    for a in tests[a_extra]:            
+        for v in versions:                       
+                p3 = copy.deepcopy(v)
+                comment_extra = v["comment_extra"]                     
+                comment_extra += f" {a_extra} : {a}\n"
+                #comment_extra += f" {b_extra} : {b}"
+
+                extra_detail_a = a
+                p3["comment"] = f"{v['shape']}_{a}_{extra_detail_a}\n{comment_extra}"
+                p3["pos"] = copy.deepcopy(pos_current)
+                #p3[b_extra] = b
+                p3[a_extra] = a
+                p3["m"] = ""
+                extra = v.get("extra", {})
+                p3.update(extra)
+                oobb_base.append_full(thing, **p3)
+                pos_current[1] += pos_shift
+    pos_current[0] += pos_shift
+    pos_current[1] = 0    
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+#      motor_servo_standard_01
 def get_test_oobb_motor_servo_standard_01(**kwargs):
     # default sets
     pos = kwargs.get("pos", [0, 0, 0])
@@ -133,6 +316,8 @@ def get_test_oobb_motor_servo_standard_01(**kwargs):
         return thing
     else: # only return the elements
         return thing["components"]
+
+
 
 # screw
 def get_test_oobb_screw_socket_cap(**kwargs):

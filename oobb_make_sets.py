@@ -6,7 +6,7 @@ import oobb_base
 def make_all(filter=""):
     # typs = ["bps","jas","mps","pls","nuts","screws_countersunk","tests","zts"]
     # add orings make a nice summary page maybe tables of details add 2020 maybe
-    typs = ["bearing_plates", "bearing_circles", "buntings", "circles", "holders", "jacks", "jigs", "mounting_plates", "plates", "shaft_couplers","shafts", "soldering_jigs", "smd_magazines", "tool_holders", "trays", "ziptie_holders", "nuts", "wires", "wheels", "screws", "bearings", "nuts", "tests"]
+    typs = ["bearing_plates", "bearing_circles", "buntings", "circles", "gears", "holders", "jacks", "jigs", "mounting_plates", "plates", "pulleys", "shaft_couplers","shafts", "soldering_jigs", "smd_magazines", "tool_holders", "trays", "ziptie_holders", "nuts", "wires", "wheels", "screws", "bearings", "nuts", "tests"]
     #typs = ["bearing_plates", "bearing_circles", "mounting_plates", "trays", "tests","plates"]
    
     all_things = []
@@ -105,6 +105,23 @@ def get_circles(size="oobb"):
 
     return circles
 
+def get_gears(size="oobb"):
+    gears = []
+    
+    #extra thicknesses
+    gear_size = [1.5,2,3,4,5,7,9]
+    thicknesses = [3,6]
+    shafts = ["", "m3", "electronic_potentiometer_17_mm", "motor_n20", "motor_servo_standard_01","motor_gearmotor_tt_motor_01"]
+    
+
+    for shaft in shafts:
+            for s in gear_size:
+                for t in thicknesses:                
+                    teeth = f"{s * 8}_teeth"
+                    gears.append({"type": "gear", "diameter": s, "thickness": t, "size": size, "extra":teeth, "shaft": f"{shaft}"})
+    
+
+    return gears
 
 def get_holders(size="oobb"):
     hls = []
@@ -125,7 +142,7 @@ def get_holders(size="oobb"):
 
 
     #       gear
-    hls.append({"type": "holder", "extra": "motor_gearmotor_01","width": 6, "height": 3, "thickness": 6, "size": size})
+    #hls.append({"type": "holder", "extra": "motor_gearmotor_01","width": 6, "height": 3, "thickness": 6, "size": size})
     
     #      servo
     #           micro
@@ -399,6 +416,24 @@ def get_plates(size="oobb"):
 
 
     return plates
+
+def get_pulleys(size="oobb"):
+    pulleys = []
+    
+    #extra thicknesses
+    pulley_size = [16,20,24,30,36,40,48,60,72,144]    
+    thicknesses = [6,9]
+    shafts = ["", "m3", "electronic_potentiometer_17_mm", "motor_n20", "motor_servo_standard_01","motor_gearmotor_tt_motor_01"]
+    shields = ["_shield", ""]
+
+    for shaft in shafts:
+        for shield in shields:
+            for s in pulley_size:
+                for t in thicknesses:                
+                    pulleys.append({"type": "pulley_gt2", "thickness": t, "size": size, "extra":f"{s}_teeth{shield}", "shaft":shaft})
+
+
+    return pulleys
 
 
 def get_shafts(size="oobb"):
@@ -776,6 +811,13 @@ def get_tests():
     tests = []
 
     
+    # gear test
+    tests.append({"type": "test", "size": "oobb", "extra": "gear"})
+
+    # motor test#
+    #      motor_n20
+    tests.append({"type": "test", "size": "oobb", "extra": "motor_n20_shaft"})
+
 
     # rotation test
     tests.append({"type": "test", "size": "oobb", "extra": "rotation"})
