@@ -16,6 +16,7 @@
     diameter: 1.0
     extra: 12.0_teeth
     height: 1.5
+    middle: false
     pos:
     - 0
     - 0
@@ -25,3 +26,13 @@
     thickness: 3
     type: n
     width: 1.5
+-   diameter: 1.5
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_motor_n20
+    thickness: 3
+    type: n

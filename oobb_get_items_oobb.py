@@ -175,15 +175,15 @@ def get_gear(**kwargs):
     # shaft
     if shaft == "":
         shaft = "m6"
-    if shaft == "m6" or shaft == "m3":
+    if shaft.startswith("m6") or shaft.startswith("m3"):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "n"
         p3["shape"] = f"{size}_hole"
-        p3["radius_name"] = shaft        
+        p3["radius_name"] = shaft.split("_")[0]      
         pos1 = copy.deepcopy(pos)        
         p3["pos"] = pos1
         #p3["m"] = "#"  
-        oobb_base.append_full(thing,**p3)        
+        oobb_base.append_full(thing,**p3)  
     else:
         p3 = copy.deepcopy(kwargs)
         p3.pop("extra","")
@@ -201,6 +201,54 @@ def get_gear(**kwargs):
         #p3["m"] = "#"  
         oobb_base.append_full(thing,**p3)
     
+    # if grub screw
+    if "grubscrew" in shaft:
+        #get grubscrew size split based on _ and it's the one after "grubscrew"
+        grubscrew_list = shaft.split("_")
+        size_grubscrew = "m3"
+        for i, s in enumerate(grubscrew_list):
+            if s == "grubscrew":
+                size_grubscrew = grubscrew_list[i+1]
+                break
+        #add raised hub
+        #add the hole
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"{size}_hole"
+        p3["radius_name"] = size_grubscrew
+        depth = 100
+        p3["depth"] = depth
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += thickness/2
+        p3["pos"] = pos1
+        p3["rot"] = [0,90,45]
+        #p3["m"] = "#"
+        oobb_base.append_full(thing,**p3)
+
+        p4 = copy.deepcopy(p3)
+        p4.pop("extra","")
+        p4.pop("depth","")
+        p4["shape"] = f"{size}_nut"
+        pos1 = copy.deepcopy(p3["pos"])    
+        dist = 3    
+        pos1[0] += dist
+        pos1[1] += dist
+        posa = copy.deepcopy(pos1)
+        posa[2] += 3
+        posb = copy.deepcopy(pos1)
+        posb[2] += 6
+        p4["pos"] = [pos1,posa,posb]
+        #p4["m"] = "#"
+        oobb_base.append_full(thing,**p4)
+        
+
+
+
+        #add raised hub
+
+
+
+
     if full_object:   
         return thing
     else: # only return the elements
@@ -609,7 +657,7 @@ def get_pulley_gt2(**kwargs):
 
     if screws_connecting:
         pos1 = copy.deepcopy(pos)
-        pos1[0] += 5.303
+        pos1[0] += -5.303
         pos1[1] += 5.303
         pos1[2] += thickness + thickness_shield * 2
         p3 = copy.deepcopy(kwargs)
@@ -626,7 +674,7 @@ def get_pulley_gt2(**kwargs):
         
         p4 = copy.deepcopy(p3)
         pos1 = copy.deepcopy(pos)
-        pos1[0] += -5.303
+        pos1[0] += 5.303
         pos1[1] += -5.303
         pos1[2] += 0
         p4["pos"] = pos1
@@ -660,7 +708,7 @@ def get_pulley_gt2(**kwargs):
     # shaft
     if shaft == "":
         shaft = "m6"
-    if shaft == "m6" or shaft == "m3":
+    if shaft.startswith("m6") or shaft.startswith("m3"):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "n"
         p3["shape"] = f"{size}_hole"
@@ -668,8 +716,7 @@ def get_pulley_gt2(**kwargs):
         pos1 = copy.deepcopy(pos)        
         p3["pos"] = pos1
         #p3["m"] = "#"  
-        oobb_base.append_full(thing,**p3)
-        
+        oobb_base.append_full(thing,**p3)        
     else:
         p3 = copy.deepcopy(kwargs)
         p3.pop("extra","")
@@ -686,6 +733,46 @@ def get_pulley_gt2(**kwargs):
         p3["pos"] = pos1
         p3["m"] = "#"  
         oobb_base.append_full(thing,**p3)
+
+    # if grub screw
+    if "grubscrew" in shaft:
+        #get grubscrew size split based on _ and it's the one after "grubscrew"
+        grubscrew_list = shaft.split("_")
+        size_grubscrew = "m3"
+        for i, s in enumerate(grubscrew_list):
+            if s == "grubscrew":
+                size_grubscrew = grubscrew_list[i+1]
+                break
+        #add raised hub
+        #add the hole
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"{size}_hole"
+        p3["radius_name"] = size_grubscrew
+        depth = 100
+        p3["depth"] = depth
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += thickness/2
+        p3["pos"] = pos1
+        p3["rot"] = [0,90,45]
+        #p3["m"] = "#"
+        oobb_base.append_full(thing,**p3)
+
+        p4 = copy.deepcopy(p3)
+        p4.pop("extra","")
+        p4.pop("depth","")
+        p4["shape"] = f"{size}_nut"
+        pos1 = copy.deepcopy(p3["pos"])    
+        dist = 3    
+        pos1[0] += dist
+        pos1[1] += dist
+        posa = copy.deepcopy(pos1)
+        posa[2] += 3
+        posb = copy.deepcopy(pos1)
+        posb[2] += 6
+        p4["pos"] = [pos1,posa,posb]
+        #p4["m"] = "#"
+        oobb_base.append_full(thing,**p4)
 
 
     #if shields slice at thickness / 2

@@ -41,7 +41,7 @@ difference() {
 		}
 	}
 	union() {
-		translate(v = [5.3030000000, 5.3030000000, 8.5000000000]) {
+		translate(v = [-5.3030000000, 5.3030000000, 8.5000000000]) {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
@@ -113,7 +113,7 @@ difference() {
 				}
 			}
 		}
-		translate(v = [-5.3030000000, -5.3030000000, 0]) {
+		translate(v = [5.3030000000, -5.3030000000, 0]) {
 			rotate(a = [0, 180, 0]) {
 				difference() {
 					union() {
@@ -186,17 +186,17 @@ difference() {
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [5.3030000000, 19.3030000000, 8.5000000000]) {
+			translate(v = [-5.3030000000, 19.3030000000, 8.5000000000]) {
 				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_8.5_depth_5.303_5.303_8.5_pos_6_thickness_144_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_6_diameter_true_nut_include", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_8.5_depth_-5.303_5.303_8.5_pos_6_thickness_144_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_6_diameter_true_nut_include", valign = "center");
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-5.3030000000, 8.6970000000, 0]) {
+			translate(v = [5.3030000000, 8.6970000000, 0]) {
 				rotate(a = [0, 180, 0]) {
 					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_8.5_depth_-5.303_-5.303_0_pos_6_thickness_144_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_6_diameter_true_nut_include_0_180_0_rot", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_8.5_depth_5.303_-5.303_0_pos_6_thickness_144_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_6_diameter_true_nut_include_0_180_0_rot", valign = "center");
 					}
 				}
 			}

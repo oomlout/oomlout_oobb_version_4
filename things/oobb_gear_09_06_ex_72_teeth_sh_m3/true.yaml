@@ -1,0 +1,39 @@
+-   depth: 6
+    diameter: 9
+    diametral_pitch: 0.53333333
+    extra: 72_teeth
+    number_of_teeth: 72
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m3
+    shape: gear
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 9
+    extra: 72_teeth
+    height: 9
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m3
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 9
+-   diameter: 9
+    extra: 72_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: m3
+    shape: oobb_hole
+    thickness: 6
+    type: n

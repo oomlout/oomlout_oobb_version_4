@@ -16,6 +16,7 @@
     diameter: 9
     extra: 72_teeth
     height: 9
+    middle: false
     pos:
     - 0
     - 0
@@ -25,3 +26,13 @@
     thickness: 3
     type: n
     width: 9
+-   diameter: 9
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_motor_n20
+    thickness: 3
+    type: n

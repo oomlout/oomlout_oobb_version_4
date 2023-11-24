@@ -1,0 +1,50 @@
+[
+    {
+        "type": "p",
+        "diameter": 4,
+        "thickness": 6,
+        "extra": "32_teeth",
+        "shaft": "",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "gear",
+        "diametral_pitch": 0.53333333,
+        "number_of_teeth": 32,
+        "depth": 6
+    },
+    {
+        "type": "n",
+        "diameter": 3.5,
+        "thickness": 6,
+        "extra": "32_teeth",
+        "shaft": "",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "width": 4,
+        "height": 4,
+        "shape": "oobb_holes",
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "diameter": 4,
+        "thickness": 6,
+        "extra": "32_teeth",
+        "shaft": "",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m6"
+    }
+]

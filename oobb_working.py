@@ -27,9 +27,10 @@ def main(**kwargs):
 
     # gear
     #filter = "gear"
-    #filter = "gear_02_03"
+    #filter = "gear_03_09"
     #filter = "gear_02_06_ex_16_teeth_sh_motor_servo_standard_01"
     #filter = "motor_gearmotor_tt_motor_01"
+    #filter = "_8_teeth"
 
 
     # holder
@@ -46,8 +47,8 @@ def main(**kwargs):
     # pulley
     #filter = "pulley"
     #filter = "pulley_gt2_01_06_ex_20_teeth_shield_sh_motor_n20"
-    #filter = "40_teeth_shield_sh_motor_servo"
-    filter = "20_teeth_shield_sh_motor_n20"
+    filter = "72_teeth_shield_sh_m6_grub"
+    #filter = "20_teeth_shield_sh_motor_n20"
 
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"

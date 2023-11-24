@@ -7,6 +7,7 @@
     - 0
     - 0
     - 0
+    shaft: ''
     shape: gear
     thickness: 6
     type: p
@@ -15,11 +16,24 @@
     diameter: 1.0
     extra: 12.0_teeth
     height: 1.5
+    middle: false
     pos:
     - 0
     - 0
     - 0
+    shaft: ''
     shape: oobb_holes
     thickness: 6
     type: n
     width: 1.5
+-   diameter: 1.5
+    extra: 12.0_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    shaft: ''
+    shape: oobb_hole
+    thickness: 6
+    type: n

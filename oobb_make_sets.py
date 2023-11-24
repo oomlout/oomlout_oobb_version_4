@@ -109,7 +109,7 @@ def get_gears(size="oobb"):
     gears = []
     
     #extra thicknesses
-    gear_size = [1.5,2,3,4,5,7,9]
+    gear_size = [1, 1.5,2,3,4,5,7,9]
     thicknesses = [3,6]
     shafts = ["", "m3", "electronic_potentiometer_17_mm", "motor_n20", "motor_servo_standard_01","motor_gearmotor_tt_motor_01"]
     
@@ -120,6 +120,15 @@ def get_gears(size="oobb"):
                     teeth = f"{s * 8}_teeth"
                     gears.append({"type": "gear", "diameter": s, "thickness": t, "size": size, "extra":teeth, "shaft": f"{shaft}"})
     
+    gear_size = [2,3,4,5,7,9]
+    shafts = ["m6_grubscrew_m3"]
+    thicknesses = [9]
+    for shaft in shafts:
+            for s in gear_size:
+                for t in thicknesses:                
+                    teeth = f"{s * 8}_teeth"
+                    gears.append({"type": "gear", "diameter": s, "thickness": t, "size": size, "extra":teeth, "shaft": f"{shaft}"})
+
 
     return gears
 
@@ -425,6 +434,17 @@ def get_pulleys(size="oobb"):
     thicknesses = [6,9]
     shafts = ["", "m3", "electronic_potentiometer_17_mm", "motor_n20", "motor_servo_standard_01","motor_gearmotor_tt_motor_01"]
     shields = ["_shield", ""]
+
+    for shaft in shafts:
+        for shield in shields:
+            for s in pulley_size:
+                for t in thicknesses:                
+                    pulleys.append({"type": "pulley_gt2", "thickness": t, "size": size, "extra":f"{s}_teeth{shield}", "shaft":shaft})
+
+    pulley_size = [60,72,144]    
+    thicknesses = [6,9]
+    shafts = ["m6_grubscrew_m3"]
+    shields = ["_shield"]
 
     for shaft in shafts:
         for shield in shields:

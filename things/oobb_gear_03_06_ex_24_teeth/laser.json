@@ -4,6 +4,7 @@
         "diameter": 3,
         "thickness": 6,
         "extra": "24_teeth",
+        "shaft": "",
         "pos": [
             0,
             0,
@@ -19,6 +20,7 @@
         "diameter": 3,
         "thickness": 6,
         "extra": "24_teeth",
+        "shaft": "",
         "pos": [
             0,
             0,
@@ -28,6 +30,21 @@
         "width": 3,
         "height": 3,
         "both_holes": true,
-        "circle": true
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "diameter": 3,
+        "thickness": 6,
+        "extra": "24_teeth",
+        "shaft": "",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m6"
     }
 ]

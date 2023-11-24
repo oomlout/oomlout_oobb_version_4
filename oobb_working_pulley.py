@@ -80,8 +80,8 @@ def main(**kwargs):
     #save_type = "3dpr"
     save_type = "all"
 
-    overwrite = True
-    #overwrite = False
+    #overwrite = True
+    overwrite = False
     
     modes = ["laser", "3dpr", "true"]
     #modes = ["3dpr"]

@@ -38,7 +38,7 @@ union() {
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 14, 0]) {
 								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_3_diameter_3_thickness_24_teeth_extra_motor_n20_shaft_3_width_3_height_true_both_holes_true_circle", valign = "center");
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_3_diameter_3_thickness_24_teeth_extra_motor_n20_shaft_3_width_3_height_true_both_holes_true_circle_false_middle", valign = "center");
 								}
 							}
 						}
@@ -48,7 +48,16 @@ union() {
 						translate(v = [0.0000000000, -15.0000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 3.0000000000);
 						}
-						translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
+						translate(v = [0.0000000000, 15.0000000000, -50.0000000000]) {
+							cylinder(h = 100, r = 3.0000000000);
+						}
+						translate(v = [15.0000000000, 0.0000000000, -50.0000000000]) {
+							cylinder(h = 100, r = 3.0000000000);
+						}
+						translate(v = [-15.0000000000, 0.0000000000, -50.0000000000]) {
+							cylinder(h = 100, r = 3.0000000000);
+						}
+						translate(v = [0.0000000000, -15.0000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 3.0000000000);
 						}
 						translate(v = [0.0000000000, 15.0000000000, -50.0000000000]) {
@@ -63,24 +72,6 @@ union() {
 						translate(v = [0.0000000000, -15.0000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 3.0000000000);
 						}
-						translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.0000000000);
-						}
-						translate(v = [0.0000000000, 15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.0000000000);
-						}
-						translate(v = [15.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.0000000000);
-						}
-						translate(v = [-15.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.0000000000);
-						}
-						translate(v = [0.0000000000, -15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.0000000000);
-						}
-						translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.0000000000);
-						}
 						translate(v = [0.0000000000, 15.0000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 3.0000000000);
 						}
@@ -93,7 +84,16 @@ union() {
 						translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 1.5000000000);
 						}
-						translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
+						translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
+							cylinder(h = 100, r = 1.5000000000);
+						}
+						translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
+							cylinder(h = 100, r = 1.5000000000);
+						}
+						translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
+							cylinder(h = 100, r = 1.5000000000);
+						}
+						translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 1.5000000000);
 						}
 						translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
@@ -108,29 +108,28 @@ union() {
 						translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 1.5000000000);
 						}
-						translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
 						translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 1.5000000000);
 						}
 						translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
 							cylinder(h = 100, r = 1.5000000000);
 						}
-						translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
+						*color(alpha = 1.0000000000, c = "gray") {
+							translate(v = [0, 14, 0]) {
+								linear_extrude(height = 1) {
+									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_n20_shape_n_type_3_diameter_3_thickness_motor_n20_shaft_shaft_part", valign = "center");
+								}
+							}
 						}
-						translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
-						}
-						translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.5000000000);
+						translate(v = [0, 0, 125]) {
+							difference() {
+								translate(v = [0, 0, -250]) {
+									cylinder(h = 250, r = 1.7500000000);
+								}
+								translate(v = [-1.7500000000, 1.0000000000, -250]) {
+									cube(size = [3.5000000000, 0.7500000000, 250]);
+								}
+							}
 						}
 					}
 				}

@@ -30,6 +30,20 @@
         "width": 7,
         "height": 7,
         "both_holes": true,
-        "circle": true
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "diameter": 7,
+        "thickness": 6,
+        "shaft": "motor_n20",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_motor_n20",
+        "part": "shaft"
     }
 ]
