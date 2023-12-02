@@ -35,42 +35,6 @@ difference() {
 				}
 			}
 		}
-		translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 0]) {
 				linear_extrude(height = 1) {
@@ -93,54 +57,6 @@ difference() {
 		translate(v = [0, 0, 4.5000000000]) {
 			rotate(a = [0, 90, 45]) {
 				cylinder(h = 100, r = 1.8000000000);
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [3, 17, 4.5000000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_n_type_m3_radius_name_3_3_4.5_pos_2_diameter_9_thickness_m6_grubscrew_m3_shaft_0_90_45_rot", valign = "center");
-					}
-				}
-			}
-		}
-		translate(v = [3, 3, 4.5000000000]) {
-			rotate(a = [0, 90, 45]) {
-				linear_extrude(height = 2.5000000000) {
-					polygon(points = [[3.4620000000, 0.0000000000], [1.7310000000, 2.9981799479], [-1.7310000000, 2.9981799479], [-3.4620000000, 0.0000000000], [-1.7310000000, -2.9981799479], [1.7310000000, -2.9981799479]]);
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [3, 17, 7.5000000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_n_type_m3_radius_name_3_3_7.5_pos_2_diameter_9_thickness_m6_grubscrew_m3_shaft_0_90_45_rot", valign = "center");
-					}
-				}
-			}
-		}
-		translate(v = [3, 3, 7.5000000000]) {
-			rotate(a = [0, 90, 45]) {
-				linear_extrude(height = 2.5000000000) {
-					polygon(points = [[3.4620000000, 0.0000000000], [1.7310000000, 2.9981799479], [-1.7310000000, 2.9981799479], [-3.4620000000, 0.0000000000], [-1.7310000000, -2.9981799479], [1.7310000000, -2.9981799479]]);
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [3, 17, 10.5000000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_n_type_m3_radius_name_3_3_10.5_pos_2_diameter_9_thickness_m6_grubscrew_m3_shaft_0_90_45_rot", valign = "center");
-					}
-				}
-			}
-		}
-		translate(v = [3, 3, 10.5000000000]) {
-			rotate(a = [0, 90, 45]) {
-				linear_extrude(height = 2.5000000000) {
-					polygon(points = [[3.4620000000, 0.0000000000], [1.7310000000, 2.9981799479], [-1.7310000000, 2.9981799479], [-3.4620000000, 0.0000000000], [-1.7310000000, -2.9981799479], [1.7310000000, -2.9981799479]]);
-				}
 			}
 		}
 	}

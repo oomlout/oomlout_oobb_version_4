@@ -5,6 +5,11 @@ import oobb_get_items_oobb_holder_electronic
 
 
 # electronic
+#      battery_box
+def get_holder_electronic_battery_box_aa_battery_4_cell(**kwargs):
+    return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_battery_box_aa_battery_4_cell(**kwargs)
+
+
 #      button
 def get_holder_electronic_button_11_mm_panel_mount(**kwargs):
     return     oobb_get_items_oobb_holder_electronic.get_holder_electronic_button_11_mm_panel_mount(**kwargs)
@@ -430,6 +435,359 @@ def get_holder_motor_servo_standard_01_base(**kwargs):
     #p3["m"] = "#"
     #get_bearing_plate_connecting_screw_center(thing,**p3)
 
+    
+    
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+#      stepper
+
+#           nema_17
+def get_holder_motor_stepper_nema_17_flat_shifted_spacer_10_mm(**kwargs):
+    return get_holder_motor_stepper_nema_17_flat_shifted(**kwargs)
+
+def get_holder_motor_stepper_nema_17_flat_shifted(**kwargs):
+    width = kwargs.get("width", 1)
+    pos = kwargs.get("pos", [0, 0, 0])
+
+    p3 = copy.deepcopy(kwargs)
+    
+    #pos_plate
+    pos_plate = [-15,0,0]
+    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+    p3["pos_plate"] =  pos_plate
+    
+    #pos_item
+    pos_item = [0,0,0]
+    pos_item = [pos_item[0] + pos[0], pos_item[1] + pos[1], pos_item[2] + pos[2]]
+    p3["pos_item"] =  pos_item
+
+    #oobb_holes
+    oobb_holes = []
+    hei = [1,3]
+    for h in hei:
+        oobb_holes.append([1,h])
+        oobb_holes.append([2,h])
+        #oobb_holes.append([3,h])
+        #oobb_holes.append([4,h])
+        #oobb_holes.append([5,h])
+    oobb_holes.append([1,2])
+    oobb_holes.append([2,2])
+    p3["oobb_holes"] = oobb_holes
+    
+    #oobe_holes
+    oobe_holes = []
+    for i in hei:
+        oobe_holes.append([1.5,i])
+        oobe_holes.append([2.5,i])
+        #oobe_holes.append([3.5,i])        
+        #oobe_holes.append([4.5,i])
+    oobe_holes.append([1,1.5])
+    oobe_holes.append([1,2.5])
+    oobe_holes.append([1.5,2])
+    oobe_holes.append([2,1.5])
+    oobe_holes.append([2,2.5])
+    p3["oobe_holes"] = oobe_holes    
+
+
+    connecting_screws = []
+    #connecting_screws.append([0,0,0])
+    p3["connecting_screws"] = connecting_screws
+    
+    return_value = get_holder_motor_generic(**p3)
+
+    thing = return_value
+
+    return thing
+
+def get_holder_motor_stepper_nema_17_flat(**kwargs):
+    width = kwargs.get("width", 1)
+    pos = kwargs.get("pos", [0, 0, 0])
+
+    p3 = copy.deepcopy(kwargs)
+    
+    #pos_plate
+    pos_plate = [0,0,0]
+    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+    p3["pos_plate"] =  pos_plate
+    
+    #pos_item
+    pos_item = [0,0,0]
+    pos_item = [pos_item[0] + pos[0], pos_item[1] + pos[1], pos_item[2] + pos[2]]
+    p3["pos_item"] =  pos_item
+
+    #oobb_holes
+    oobb_holes = []
+    hei = [1,3]
+    for h in hei:
+        oobb_holes.append([1,h])
+        #oobb_holes.append([2,h])
+        #oobb_holes.append([3,h])
+        #oobb_holes.append([4,h])
+        oobb_holes.append([5,h])
+    oobb_holes.append([1,2])
+    oobb_holes.append([5,2])
+    p3["oobb_holes"] = oobb_holes
+    
+    #oobe_holes
+    oobe_holes = []
+    for i in hei:
+        oobe_holes.append([1.5,i])
+        #oobe_holes.append([2.5,i])
+        #oobe_holes.append([3.5,i])
+        oobe_holes.append([4.5,i])
+    oobe_holes.append([1,1.5])
+    oobe_holes.append([1,2.5])
+    oobe_holes.append([5,1.5])
+    oobe_holes.append([5,2.5])
+    p3["oobe_holes"] = oobe_holes    
+
+
+    connecting_screws = []
+    #connecting_screws.append([0,0,0])
+    p3["connecting_screws"] = connecting_screws
+    
+    return_value = get_holder_motor_generic(**p3)
+
+    thing = return_value
+
+    return thing
+   
+
+#      tt_01
+def get_holder_motor_tt_01(**kwargs):
+    width = kwargs.get("width", 1)
+    pos = kwargs.get("pos", [0, 0, 0])
+
+    p3 = copy.deepcopy(kwargs)
+    
+    #pos_plate
+    pos_plate = [-15 * 1.5,0,-3]
+    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+    p3["pos_plate"] =  pos_plate
+    
+    #pos_item
+    pos_item = [0,0,0]
+    pos_item = [pos_item[0] + pos[0], pos_item[1] + pos[1], pos_item[2] + pos[2]]
+    p3["pos_item"] =  pos_item
+
+    #oobb_holes
+    oobb_holes = []
+    hei = [1,3]
+    for h in hei:
+        oobb_holes.append([1,h])
+        oobb_holes.append([2,h])
+        oobb_holes.append([3,h])
+        oobb_holes.append([4,h])
+        oobb_holes.append([5,h])
+        oobb_holes.append([6,h])
+    oobb_holes.append([1,2])
+    oobb_holes.append([6,2])
+    p3["oobb_holes"] = oobb_holes
+    
+    #oobe_holes
+    oobe_holes = []
+    for i in hei:
+        oobe_holes.append([1.5,i])
+        oobe_holes.append([2.5,i])
+        oobe_holes.append([3.5,i])
+        #oobe_holes.append([4.5,i])
+        #oobe_holes.append([5.5,i])
+    oobe_holes.append([1,1.5])
+    oobe_holes.append([1,2.5])
+    oobe_holes.append([6,1.5])
+    oobe_holes.append([6,2.5])
+    p3["oobe_holes"] = oobe_holes    
+
+
+    connecting_screws = []
+    connecting_screws.append([0,0,0])
+    p3["connecting_screws"] = connecting_screws
+    
+    return_value = get_holder_motor_generic(**p3)
+
+    thing = return_value
+
+    # add bearing block screws
+    p3 = copy.deepcopy(kwargs)
+    p3.pop("size","")
+    #p3["m"] = "#"
+    p3["thickness"] = 12
+    p3["bearing"] = "6705"
+    pos1 = copy.deepcopy(pos)
+    pos1[2] = pos1[2] + 1.5
+    p3["pos"] = pos1
+
+    get_bearing_plate_connecting_screw_perimeter(thing,**p3)
+
+            # bearing
+            #p3 = copy.deepcopy(kwargs)
+            #p3.pop("size","")    
+            #p3["type"] = "n" 
+            #p3["shape"] = f"oobb_bearing"
+            #p3["bearing"] = "6705"
+            #p3["width"] = width             
+            #pos1 = copy.deepcopy(pos)
+            #pos1[2] = pos1[2] + 3
+            #p3["pos"] = pos1
+            #p3["m"] = "#"
+            #oobb_base.append_full(thing, **p3)   
+    
+    #add oobb_wire_spacer
+    p3 = copy.deepcopy(kwargs)
+    p3.pop("size","")
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_wire_spacer"
+    p3["thickness"] = 6
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += -45
+    pos1[2] += 0
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+    
+    #add countersunk screws
+    p3 = copy.deepcopy(kwargs)
+    p3.pop("size","")
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_screw_countersunk"
+    p3["radius_name"] = "m3"
+    p3["depth"] = 25
+    poss = []
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += -45 - 7.5
+    pos1[1] += 15
+    pos1[2] += -3
+    pos2 = copy.deepcopy(pos1)
+    pos2[1] = -pos2[1]
+    poss.append(pos1)
+    poss.append(pos2)
+    p3["pos"]  = poss
+    p3["rot"]  = [0,180,0]
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+
+
+    return thing
+    
+def get_holder_motor_generic(**kwargs):    
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos_plate = kwargs.get("pos_plate", copy.deepcopy(pos))
+    pos_item = kwargs.get("pos_item", copy.deepcopy(pos))
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    extra_mm = 1 / oobb_base.gv("osp")
+    bearing = kwargs.get("bearing", "6705")
+    oobb_holes = kwargs.get("oobb_holes", [])
+    oobe_holes = kwargs.get("oobe_holes", [])
+    connecting_screws = kwargs.get("connecting_screws", [])
+
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")
+    kwargs.pop("bearing", "")
+
+    #plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = f"{size}_plate"
+    p3["width"] = width
+    p3["height"] = height    
+    p3["depth"] = thickness
+    p3["extra_mm"] = True
+    p3["pos"] = pos_plate    
+    oobb_base.append_full(thing, **p3)
+
+    # hole
+    #      oobb_hole
+    location_hole = oobb_holes
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p" 
+    p3["shape"] = f"{size}_holes"    
+    p3["holes"] = "single"
+    p3["radius_name"] = "m6"
+    p3["loc"] = location_hole
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    #      oobe_hole
+    location_hole = oobe_holes
+    pos1 = copy.deepcopy(pos_plate)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n" 
+    p3["shape"] = f"{size}_holes"    
+    p3["radius_name"] = "m3"
+    p3["holes"] = "single"
+    p3["loc"] = location_hole
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #      connecting screws
+    if len(connecting_screws) > 0:
+        poss = connecting_screws
+
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_screw_socket_cap"
+        p3["radius_name"] = "m3"
+        depth_screw = p3.get("depth_screw", 25)
+        depth_screw = depth_screw + 1
+        p3["depth"] = depth_screw
+        p3["nut"] = True
+        p3["pos"] = poss
+        p3["rot_y"] = 180
+        p3["zz"] = "bottom"
+        p3["clearance"] = "top"
+        p3["overhang"] = True
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+
+    extra_remove = ["_flat", "_jack", "_shifted", ]
+    for er in extra_remove:
+        if er in extra:
+            extra = extra.replace(er,"")
+
+    extra_no_motor = extra.replace("motor_stepper_nema_17_","")
+    
+    
+
+    # item cutout    
+    pos1 = copy.deepcopy(pos_item)
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n" 
+    p3["shape"] = f"oobb_motor_stepper_nema_17"  
+    p3["overhang"] = True
+    p3["pos"] = pos1
+    #p3["part"] = "shaft"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    if "spacer" in extra_no_motor:
+        spacer_depth = float(extra_no_motor.replace("spacer_","").replace("_mm",""))        
+        p3 = copy.deepcopy(kwargs)
+        p3["spacer_depth"] = spacer_depth
+        p3["type"] = "p" 
+        p3["shape"] = f"oobb_motor_stepper_nema_17"  
+        p3["overhang"] = True
+        pos1 = copy.deepcopy(pos_item)
+        pos1[2] += -thickness
+        p3["pos"] = pos1
+        p3["part"] = "spacer"
+        p3["zz"] = "top"
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+    # plate     
+    #get_bearing_plate_plate(thing, **kwargs)
+            
     
     
     if full_object:   

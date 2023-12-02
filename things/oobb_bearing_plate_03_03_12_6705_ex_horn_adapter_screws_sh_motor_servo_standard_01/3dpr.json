@@ -40,14 +40,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             7.5,
             0,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -58,14 +57,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             -7.5,
             0,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -76,14 +74,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             0,
             7.5,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -94,14 +91,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_hole",
         "pos": [
             0,
             -7.5,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -112,14 +108,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_nut",
         "pos": [
             7.5,
             0,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -130,14 +125,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_nut",
         "pos": [
             -7.5,
             0,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -148,14 +142,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_nut",
         "pos": [
             0,
             7.5,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -166,14 +159,13 @@
         "thickness": 12,
         "bearing": "6705",
         "shaft": "motor_servo_standard_01",
-        "zz": "bottom",
+        "zz": "middle",
         "hole": true,
-        "depth": 9,
         "shape": "oobb_nut",
         "pos": [
             0,
             -7.5,
-            -6.0
+            0
         ],
         "radius_name": "m3"
     },
@@ -345,12 +337,71 @@
     },
     {
         "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "shaft": "motor_servo_standard_01",
+        "extra": "horn_adapter_screws",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            5.303,
+            5.303,
+            6.0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "shaft": "motor_servo_standard_01",
+        "extra": "horn_adapter_screws",
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -5.303,
+            -5.303,
+            -6.0
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 12,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
         "shape": "oobb_slice",
         "mode": "3dpr",
         "pos": [
             0,
             0,
-            -20
+            6.0
+        ],
+        "zz": "bottom"
+    },
+    {
+        "type": "n",
+        "shape": "oobb_slice",
+        "mode": "3dpr",
+        "pos": [
+            0,
+            0,
+            0
         ],
         "zz": "top"
     }

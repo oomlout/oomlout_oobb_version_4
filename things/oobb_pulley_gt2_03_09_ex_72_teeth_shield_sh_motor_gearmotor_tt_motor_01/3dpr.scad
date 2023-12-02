@@ -41,7 +41,7 @@ difference() {
 		}
 	}
 	union() {
-		translate(v = [5.3030000000, 5.3030000000, 11.5000000000]) {
+		translate(v = [-5.3030000000, 5.3030000000, 11.5000000000]) {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
@@ -113,7 +113,7 @@ difference() {
 				}
 			}
 		}
-		translate(v = [-5.3030000000, -5.3030000000, 0]) {
+		translate(v = [5.3030000000, -5.3030000000, 0]) {
 			rotate(a = [0, 180, 0]) {
 				difference() {
 					union() {
@@ -186,17 +186,17 @@ difference() {
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [5.3030000000, 19.3030000000, 11.5000000000]) {
+			translate(v = [-5.3030000000, 19.3030000000, 11.5000000000]) {
 				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_11.5_depth_5.303_5.303_11.5_pos_9_thickness_72_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_3_diameter_true_nut_include", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_11.5_depth_-5.303_5.303_11.5_pos_9_thickness_72_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_3_diameter_true_nut_include", valign = "center");
 				}
 			}
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-5.3030000000, 8.6970000000, 0]) {
+			translate(v = [5.3030000000, 8.6970000000, 0]) {
 				rotate(a = [0, 180, 0]) {
 					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_11.5_depth_-5.303_-5.303_0_pos_9_thickness_72_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_3_diameter_true_nut_include_0_180_0_rot", valign = "center");
+						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_11.5_depth_5.303_-5.303_0_pos_9_thickness_72_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_3_diameter_true_nut_include_0_180_0_rot", valign = "center");
 					}
 				}
 			}
@@ -251,7 +251,13 @@ difference() {
 		translate(v = [15.0000000000, 0.0000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 3.2500000000);
 		}
+		translate(v = [-7.5000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-7.5000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
 		translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
@@ -260,10 +266,22 @@ difference() {
 		translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
+		translate(v = [7.5000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
+		translate(v = [7.5000000000, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-7.5000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-7.5000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
 		translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
@@ -272,10 +290,22 @@ difference() {
 		translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
+		translate(v = [7.5000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
+		translate(v = [7.5000000000, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-7.5000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [-7.5000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-7.5000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
 		translate(v = [0.0000000000, -7.5000000000, -50.0000000000]) {
@@ -284,7 +314,13 @@ difference() {
 		translate(v = [0.0000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
+		translate(v = [7.5000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [7.5000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [7.5000000000, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
@@ -294,8 +330,11 @@ difference() {
 				}
 			}
 		}
-		#translate(v = [-2.7500000000, -1.9250000000, -50]) {
-			cube(size = [5.5000000000, 3.8500000000, 100]);
+		#translate(v = [-2.5000000000, -1.6750000000, -6]) {
+			cube(size = [5.0000000000, 3.3500000000, 6]);
+		}
+		#translate(v = [0, 0, -50.0000000000]) {
+			cylinder(h = 100, r = 1.3500000000);
 		}
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, 5.7500000000]) {

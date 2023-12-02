@@ -43,6 +43,7 @@
     type: p
     width: 3
 -   height: 3
+    hole: true
     nut: false
     overhang: true
     pos:
@@ -57,13 +58,14 @@
     rot:
     - 0
     - 0
-    - 15.0
+    - 0
     shape: oobb_nut
     thickness: 12
     type: negative
     width: 3
     zz: bottom
 -   height: 3
+    hole: true
     nut: false
     overhang: true
     pos:
@@ -78,7 +80,7 @@
     rot:
     - 0
     - 0
-    - 15.0
+    - 0
     shape: oobb_nut
     thickness: 12
     type: negative
@@ -89,6 +91,7 @@
     - basic
     - basic
     height: 3
+    m: '#'
     pos:
     - 0
     - 0
@@ -109,6 +112,7 @@
     - basic
     - basic
     height: 3
+    m: '#'
     pos:
     - 0
     - 0
@@ -129,6 +133,7 @@
     - basic
     - basic
     height: 3
+    m: '#'
     pos:
     - 0
     - 0

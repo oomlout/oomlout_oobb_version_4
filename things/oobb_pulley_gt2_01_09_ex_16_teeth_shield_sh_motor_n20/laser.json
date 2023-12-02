@@ -1,0 +1,64 @@
+[
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "16_teeth_shield",
+        "shaft": "motor_n20",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            1
+        ],
+        "shape": "pulley_gt2",
+        "number_of_teeth": 16,
+        "depth": 9.5
+    },
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "16_teeth_shield",
+        "shaft": "motor_n20",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0.5
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 6.095541401273885,
+        "depth": 1
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "16_teeth_shield",
+        "shaft": "motor_n20",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "shaft": "motor_n20",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_motor_n20",
+        "part": "shaft",
+        "m": "#"
+    }
+]

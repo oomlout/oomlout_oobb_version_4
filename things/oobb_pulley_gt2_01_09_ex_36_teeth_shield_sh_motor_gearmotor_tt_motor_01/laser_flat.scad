@@ -38,6 +38,25 @@ union() {
 						cylinder(h = 1, r = 12.4649681529);
 					}
 					union() {
+						translate(v = [0, 0, 2]) {
+							rotate(a = [0, 0, 0]) {
+								difference() {
+									union() {
+										#cylinder(h = 1.2500000000, r = 2.5000000000);
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 0.7500000000);
+										}
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.0000000000);
+										}
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 0.7500000000);
+										}
+									}
+									union();
+								}
+							}
+						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 7, 0]) {
 								linear_extrude(height = 1) {
@@ -59,8 +78,8 @@ union() {
 								}
 							}
 						}
-						#translate(v = [-2.7500000000, -1.9250000000, -50]) {
-							cube(size = [5.5000000000, 3.8500000000, 100]);
+						#translate(v = [-2.7000000000, -1.8750000000, -6]) {
+							cube(size = [5.4000000000, 3.7500000000, 6]);
 						}
 					}
 				}
@@ -102,6 +121,25 @@ union() {
 						cylinder(h = 1, r = 12.4649681529);
 					}
 					union() {
+						translate(v = [0, 0, 2]) {
+							rotate(a = [0, 0, 0]) {
+								difference() {
+									union() {
+										#cylinder(h = 1.2500000000, r = 2.5000000000);
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 0.7500000000);
+										}
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.0000000000);
+										}
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 0.7500000000);
+										}
+									}
+									union();
+								}
+							}
+						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 7, 0]) {
 								linear_extrude(height = 1) {
@@ -123,8 +161,8 @@ union() {
 								}
 							}
 						}
-						#translate(v = [-2.7500000000, -1.9250000000, -50]) {
-							cube(size = [5.5000000000, 3.8500000000, 100]);
+						#translate(v = [-2.7000000000, -1.8750000000, -6]) {
+							cube(size = [5.4000000000, 3.7500000000, 6]);
 						}
 					}
 				}
@@ -166,6 +204,25 @@ union() {
 						cylinder(h = 1, r = 12.4649681529);
 					}
 					union() {
+						translate(v = [0, 0, 2]) {
+							rotate(a = [0, 0, 0]) {
+								difference() {
+									union() {
+										#cylinder(h = 1.2500000000, r = 2.5000000000);
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 0.7500000000);
+										}
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 1.0000000000);
+										}
+										#translate(v = [0, 0, -12.0000000000]) {
+											cylinder(h = 12, r = 0.7500000000);
+										}
+									}
+									union();
+								}
+							}
+						}
 						*color(alpha = 1.0000000000, c = "gray") {
 							translate(v = [0, 7, 0]) {
 								linear_extrude(height = 1) {
@@ -187,8 +244,8 @@ union() {
 								}
 							}
 						}
-						#translate(v = [-2.7500000000, -1.9250000000, -50]) {
-							cube(size = [5.5000000000, 3.8500000000, 100]);
+						#translate(v = [-2.7000000000, -1.8750000000, -6]) {
+							cube(size = [5.4000000000, 3.7500000000, 6]);
 						}
 					}
 				}

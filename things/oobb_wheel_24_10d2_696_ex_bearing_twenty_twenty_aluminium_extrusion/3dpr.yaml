@@ -1,0 +1,116 @@
+-   bearing: '696'
+    both_holes: true
+    depth: 6
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    radius: 12.0
+    shape: oobb_cylinder
+    thickness: 10.2
+    type: positive
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    radius: 5
+    shape: oobb_hole
+    thickness: 10.2
+    type: negative
+-   bearing: '696'
+    both_holes: true
+    depth: 2.0999999999999996
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 4.05
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    r1: 12.0
+    r2: 8.0
+    shape: oobb_cylinder
+    thickness: 10.2
+    type: positive
+-   bearing: '696'
+    both_holes: true
+    depth: 2.0999999999999996
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - -4.05
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    r1: 8.0
+    r2: 12.0
+    shape: oobb_cylinder
+    thickness: 10.2
+    type: positive
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 5.1
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    shape: oobb_bearing
+    thickness: 10.2
+    type: negative
+    zz: top
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - -5.1
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    shape: oobb_bearing
+    thickness: 10.2
+    type: negative
+    zz: bottom
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    shape: oobb_slice
+    thickness: 10.2
+    type: negative

@@ -18,6 +18,14 @@ def main(**kwargs):
     
     #filter = "tray_03_03"
     
+    # bearing plate
+    #filter = "bearing_plate"
+    #filter = "oobb_bearing_plate_03_03_12_6705"
+    #filter = "oobb_bearing_plate_03_03_12_6705_sh_motor_tt_01"
+    #filter = "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01"
+    #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
+    #filter = "606"
+
     # circle
     #filter = "circle_1d5"
 
@@ -27,35 +35,49 @@ def main(**kwargs):
 
     # gear
     #filter = "gear"
-    #filter = "gear_03_09"
+    #filter = "gear_01_03_12_ex"
+    #filter = "gear_09_06_ex_72_teeth"
     #filter = "gear_02_06_ex_16_teeth_sh_motor_servo_standard_01"
     #filter = "motor_gearmotor_tt_motor_01"
     #filter = "_8_teeth"
+    #filter = "oobb_gear_01_06_ex_8_teeth_sh_motor_tt_01"
 
-
-    # holder
-    #filter = "oobb_wire_03_03_09_ex_motor_basic"
+    # holder    
+    #filter = "oobb_holder"
+    #filter = "oobb_holder_06_03_06_ex_motor_tt_01"
+    #filter = "oobb_holder_05_03_06_ex_motor_stepper_nema_17_flat_shifted"
+    #filter = "nema_17"
+    #
+    # filter = "electronic_battery_box_aa_battery_4_cell"
 
     # mounting_plate
     #filter = "netgear_5_port_gigabit_switch_gs105v5"
+
+    # other
+    #filter = "_other"
+    filter = "oobb_other_02_02_29_ex_corner_cube"
 
     # plate
     #filter = "ninety_degree"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
+    #filter = "oobb_plate_07_01_14_ex_ninety_degree"
+    #filter = "oobb_plate_03_03_44_ex_ninety_degree"
 
     # pulley
     #filter = "pulley"
     #filter = "pulley_gt2_01_06_ex_20_teeth_shield_sh_motor_n20"
-    filter = "72_teeth_shield_sh_m6_grub"
+    #filter = "72_teeth_shield_sh_m6_grub"
     #filter = "20_teeth_shield_sh_motor_n20"
 
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"
+    #filter = "oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion"
 
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"
-    #filter = "oobb_wire"
+    #filter = "oobb_wire_02_03_06_ex_basic"
+    #filter = "basic"
 
     #oobb_servo_holder
     #filter = []
@@ -67,6 +89,8 @@ def main(**kwargs):
     
     # test
     #filter = "oobb_test_ex_oobb_wire"
+    #filter = "oobb_test_ex_motor_tt_01"
+    #filter = "oobb_test_ex_oobb_nut"
     #filter = "test"
 
     #ilter = ""

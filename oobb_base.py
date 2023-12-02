@@ -65,16 +65,26 @@ def get_default_thing(**kwargs):
         # if zfill
         if var in zfill_values:
             val = kwargs.get(var, "")
-            if val != "":
-                deets[var].update({"value": str(kwargs.get(var, "")).zfill(2)})
+            if isinstance(val, list):
+                for i in range(0,len(val)):
+                    val[i] = str(val[i]).zfill(2)
+                val = "_".join(val)
+                deets[var].update({"value": val})
             else:
-                deets[var].update({"value": kwargs.get(var, "")})
+                if val != "":
+                    deets[var].update({"value": str(val).zfill(2)})
+                else:
+                    deets[var].update({"value": kwargs.get(val, "")})
         else:
             deets[var].update({"value": kwargs.get(var, "")})
         deets[var].update({"acronym": acronyms[var]})
         value_string = deets[var]["value"]
-        if isinstance(value_string, list):
+        #print(value_string)
+        #if it's a list
+        if type(value_string) == list:
             value_string = "_".join(value_string)
+
+        
         if deets[var]["acronym"] != "":
             deets[var]["str"] = f"_{deets[var]['acronym']}_{value_string}"
         else:
@@ -616,6 +626,7 @@ def append_full(thing, **kwargs):
             # comment
             if comment != "":        
                 p4 = copy.deepcopy(p3)
+                p4.pop("rot","")
                 p4.pop("type", None)
                 p4["m"] = "*"
                 if comment_display:

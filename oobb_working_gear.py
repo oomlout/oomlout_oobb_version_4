@@ -84,7 +84,7 @@ def main(**kwargs):
     overwrite = False
     
     modes = ["laser", "3dpr", "true"]
-    #modes = ["3dpr"]
+    #modes = ["3dpr"]5
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
     #copy_files = True

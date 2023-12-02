@@ -1,7 +1,7 @@
 [
     {
         "type": "p",
-        "diameter": 1.5,
+        "diameter": 1,
         "thickness": 3,
         "extra": "12.0_teeth",
         "shaft": "",
@@ -12,12 +12,12 @@
         ],
         "shape": "gear",
         "diametral_pitch": 0.53333333,
-        "number_of_teeth": 12.0,
+        "number_of_teeth": 8,
         "depth": 3
     },
     {
         "type": "n",
-        "diameter": 1.0,
+        "diameter": 1,
         "thickness": 3,
         "extra": "12.0_teeth",
         "shaft": "",
@@ -26,16 +26,16 @@
             0,
             0
         ],
-        "width": 1.5,
-        "height": 1.5,
         "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
         "both_holes": true,
         "circle": true,
         "middle": false
     },
     {
         "type": "n",
-        "diameter": 1.5,
+        "diameter": 1,
         "thickness": 3,
         "extra": "12.0_teeth",
         "shaft": "",

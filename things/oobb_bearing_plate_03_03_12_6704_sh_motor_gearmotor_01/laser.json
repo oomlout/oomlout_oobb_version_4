@@ -6,6 +6,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_cylinder",
         "depth": 12,
         "radius": 11.7,
@@ -23,6 +28,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_bearing",
         "depth": 12,
         "pos": [
@@ -38,6 +48,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_hole",
         "pos": [
             7.5,
@@ -54,6 +69,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_hole",
         "pos": [
             -7.5,
@@ -70,6 +90,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_hole",
         "pos": [
             0,
@@ -86,6 +111,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_hole",
         "pos": [
             0,
@@ -102,6 +132,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_holes",
         "pos": [
             0,
@@ -118,11 +153,16 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
-        "shape": "oobb_motor_gearmotor_01",
-        "pos": [
+        "pos_plate": [
             0,
             0,
             0
+        ],
+        "shape": "oobb_motor_tt_01",
+        "pos": [
+            0,
+            0,
+            0.0
         ],
         "part": "shaft"
     },
@@ -133,6 +173,51 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_bearing",
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            -3
+        ]
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_bearing",
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            -6
+        ]
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_screw_countersunk",
         "pos": [
             18.0,
@@ -156,6 +241,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_screw_countersunk",
         "pos": [
             -18.0,
@@ -179,6 +269,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_screw_countersunk",
         "pos": [
             0,
@@ -202,6 +297,11 @@
         "thickness": 12,
         "bearing": "6704",
         "shaft": "motor_gearmotor_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
         "shape": "oobb_screw_countersunk",
         "pos": [
             0,

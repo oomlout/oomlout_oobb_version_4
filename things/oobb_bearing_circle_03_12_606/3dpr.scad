@@ -130,9 +130,6 @@ difference() {
 					translate(v = [0, 0, -50]) {
 						cylinder(h = 100, r = 7.5250000000);
 					}
-					translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 4.0250000000);
-					}
 				}
 			}
 		}

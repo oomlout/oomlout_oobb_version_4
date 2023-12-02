@@ -32,7 +32,7 @@ difference() {
 				}
 			}
 		}
-		gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+		gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 151, 0]) {
 				linear_extrude(height = 1) {
@@ -62,7 +62,7 @@ difference() {
 			}
 		}
 		translate(v = [0, 100, 0]) {
-			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 251, 0]) {
@@ -93,7 +93,7 @@ difference() {
 			}
 		}
 		translate(v = [0, 200, 0]) {
-			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 351, 0]) {
@@ -124,7 +124,7 @@ difference() {
 			}
 		}
 		translate(v = [0, 300, 0]) {
-			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 451, 0]) {
@@ -155,7 +155,7 @@ difference() {
 			}
 		}
 		translate(v = [0, 400, 0]) {
-			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [100, 51, 0]) {
@@ -186,7 +186,7 @@ difference() {
 			}
 		}
 		translate(v = [100, 0, 0]) {
-			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [100, 151, 0]) {
@@ -217,7 +217,7 @@ difference() {
 			}
 		}
 		translate(v = [100, 100, 0]) {
-			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [100, 251, 0]) {
@@ -248,7 +248,7 @@ difference() {
 			}
 		}
 		translate(v = [100, 200, 0]) {
-			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [100, 351, 0]) {
@@ -279,7 +279,7 @@ difference() {
 			}
 		}
 		translate(v = [100, 300, 0]) {
-			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [100, 451, 0]) {
@@ -310,7 +310,7 @@ difference() {
 			}
 		}
 		translate(v = [100, 400, 0]) {
-			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 0.5000000000, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [200, 51, 0]) {
@@ -341,7 +341,7 @@ difference() {
 			}
 		}
 		translate(v = [200, 0, 0]) {
-			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [200, 151, 0]) {
@@ -372,7 +372,7 @@ difference() {
 			}
 		}
 		translate(v = [200, 100, 0]) {
-			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [200, 251, 0]) {
@@ -403,7 +403,7 @@ difference() {
 			}
 		}
 		translate(v = [200, 200, 0]) {
-			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [200, 351, 0]) {
@@ -434,7 +434,7 @@ difference() {
 			}
 		}
 		translate(v = [200, 300, 0]) {
-			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [200, 451, 0]) {
@@ -465,7 +465,7 @@ difference() {
 			}
 		}
 		translate(v = [200, 400, 0]) {
-			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 1, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [300, 51, 0]) {
@@ -496,7 +496,7 @@ difference() {
 			}
 		}
 		translate(v = [300, 0, 0]) {
-			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [300, 151, 0]) {
@@ -527,7 +527,7 @@ difference() {
 			}
 		}
 		translate(v = [300, 100, 0]) {
-			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 0.5000000000, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [300, 251, 0]) {
@@ -558,7 +558,7 @@ difference() {
 			}
 		}
 		translate(v = [300, 200, 0]) {
-			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [300, 351, 0]) {
@@ -589,7 +589,7 @@ difference() {
 			}
 		}
 		translate(v = [300, 300, 0]) {
-			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = 2, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 		color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [300, 451, 0]) {
@@ -620,7 +620,7 @@ difference() {
 			}
 		}
 		translate(v = [300, 400, 0]) {
-			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 6, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 28, rim_thickness = 6, rim_width = 0, twist = 0);
+			gear(backlash = 5, bore_diameter = 0, circles = 0, circular_pitch = false, clearance = -1, diametral_pitch = 0.5333333300, flat = false, gear_thickness = 3, hub_diameter = 0, hub_thickness = 0, involute_facets = 0, number_of_teeth = 24, pressure_angle = 20, rim_thickness = 3, rim_width = 0, twist = 0);
 		}
 	}
 	union();

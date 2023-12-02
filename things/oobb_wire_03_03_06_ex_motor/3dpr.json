@@ -69,9 +69,10 @@
         "rot": [
             0,
             0,
-            15.0
+            0
         ],
-        "nut": false
+        "nut": false,
+        "hole": true
     },
     {
         "thickness": 6,
@@ -95,9 +96,10 @@
         "rot": [
             0,
             0,
-            15.0
+            0
         ],
-        "nut": false
+        "nut": false,
+        "hole": true
     },
     {
         "extra": "motor",
@@ -119,6 +121,7 @@
             0,
             0,
             180
-        ]
+        ],
+        "m": "#"
     }
 ]

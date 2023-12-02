@@ -115,10 +115,12 @@ def get_circle_base(**kwargs):
 # gear
 def get_gear(**kwargs):
 
+
+
     # default sets
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
-    diameter = kwargs.get("diameter", 1)
+    diameter = kwargs.get("diameter", 1)    
     width = diameter
     height = diameter   
     thickness = kwargs.get("thickness", 3)
@@ -136,7 +138,18 @@ def get_gear(**kwargs):
     # get the default thing
     thing = oobb_base.get_default_thing(**kwargs)
     th = thing["components"]
+    
+
+
+    #if diameter is an array
+    if isinstance(diameter, list):
+        return get_gear_double_stack(**kwargs)
+
     kwargs.pop("size","")
+    diameter = int(diameter)
+    kwargs["diameter"] = diameter
+    width = int(width)
+    height = int(height)
 
     th.append(oobb_base.get_comment("gear main","p"))
     # add plate
@@ -144,7 +157,11 @@ def get_gear(**kwargs):
     p3["type"] = "p"   
     p3["shape"] = f"gear"
     p3["diametral_pitch"] = 0.53333333
-    p3["number_of_teeth"] = width * 8  
+    p3["number_of_teeth"] = width * 8     
+    if isinstance(width, list):
+        p3["number_of_teeth"] = []
+        for w in width:
+            p3["number_of_teeth"].append(w * 8)
     p3["depth"] = thickness
     p3["pos"] = pos
     #p3["m"] = ""  
@@ -173,6 +190,12 @@ def get_gear(**kwargs):
         #th.extend(oobb_base.oobb_easy(**p3))   
     
     # shaft
+    p3 = copy.deepcopy(kwargs)
+    p3["thing"] = thing
+
+    add_oobb_shaft(**p3)
+    # shaft
+    """
     if shaft == "":
         shaft = "m6"
     if shaft.startswith("m6") or shaft.startswith("m3"):
@@ -183,7 +206,7 @@ def get_gear(**kwargs):
         pos1 = copy.deepcopy(pos)        
         p3["pos"] = pos1
         #p3["m"] = "#"  
-        oobb_base.append_full(thing,**p3)  
+        oobb_base.append_full(thing,**p3)
     else:
         p3 = copy.deepcopy(kwargs)
         p3.pop("extra","")
@@ -197,10 +220,14 @@ def get_gear(**kwargs):
             p3["rot"] = [0,0,45]
             pos1[2] += 2
             p3["overhang"] = False
+        elif shaft == "motor_tt_01":            
+            pos1[2] -= 1
+            
         p3["pos"] = pos1
-        #p3["m"] = "#"  
-        oobb_base.append_full(thing,**p3)
-    
+        p3["m"] = "#"  
+        oobb_base.append_full(thing, **p3)
+    """
+        
     # if grub screw
     if "grubscrew" in shaft:
         #get grubscrew size split based on _ and it's the one after "grubscrew"
@@ -239,7 +266,7 @@ def get_gear(**kwargs):
         posb[2] += 6
         p4["pos"] = [pos1,posa,posb]
         #p4["m"] = "#"
-        oobb_base.append_full(thing,**p4)
+        
         
 
 
@@ -247,6 +274,92 @@ def get_gear(**kwargs):
         #add raised hub
 
 
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return th
+
+def add_oobb_shaft(**kwargs):
+    thing = kwargs.get("thing")
+    kwargs.pop("thing","")
+    pos = kwargs.get("pos", [0,0,0])
+    size = kwargs.get("size", "oobb")
+    shaft = kwargs.get("shaft", "m6")
+    thickness = kwargs.get("thickness", 3)
+    # shaft
+    if shaft == "":
+        shaft = "m6"
+    if shaft.startswith("m6") or shaft.startswith("m3"):
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"{size}_hole"
+        p3["radius_name"] = shaft.split("_")[0]      
+        pos1 = copy.deepcopy(pos)        
+        p3["pos"] = pos1
+        #p3["m"] = "#"  
+        oobb_base.append_full(thing, **p3)
+    else:
+        p3 = copy.deepcopy(kwargs)
+        p3.pop("extra","")
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_{shaft}"     
+        p3["part"] = "shaft"   
+        pos1 = copy.deepcopy(pos)        
+        
+        
+        if shaft == "motor_servo_standard_01":
+            p3["rot"] = [0,0,45]
+            pos1[2] += 2
+            p3["overhang"] = False
+        elif shaft == "motor_tt_01":            
+            pos1[2] += thickness - 1
+            p3["depth"] = 50
+            
+        p3["pos"] = pos1
+        p3["m"] = "#"  
+        oobb_base.append_full(thing, **p3)
+
+def get_gear_double_stack(**kwargs):
+
+    # default sets
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    diameter = kwargs.get("diameter", 1)    
+    width = diameter
+    height = diameter   
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb")
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    shaft = kwargs.get("shaft", "m6")
+        
+    # extra sets
+    holes = kwargs.get("holes", True)
+    both_holes = kwargs.get("both_holes", True)    
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    th = thing["components"]
+    kwargs.pop("size","")
+
+    pos_gear = [0,0,0]
+    holes = True
+    for i in range(0,len(diameter)):    
+        p3 = copy.deepcopy(kwargs)
+        p3["full_object"] = False
+        p3["thickness"] = thickness/2
+        p3["diameter"] = int(diameter[i])
+        p3["pos"] = pos_gear
+        #p3["holes"] = holes
+        p3["both_holes"] = False
+        p3["extra"] = extra[i]
+        th.append(oobb_base.get_thing_from_dict(p3))
+        pos_gear[2] += thickness / 2
+        holes = True
 
 
     if full_object:   
@@ -264,6 +377,22 @@ def get_holder(**kwargs):
         # Get the module object for the current file
         current_module = __import__("oobb_get_items_oobb_holder")
         function_name = "get_holder_" + extra
+        # Call the function using the string variable
+        function_to_call = getattr(current_module, function_name)
+        return function_to_call(**kwargs)
+    else:
+        Exception("No extra")
+
+# holder
+def get_other(**kwargs):
+    p3 = copy.deepcopy(kwargs)
+    extra = p3.get("extra", "")
+    p3.pop("extra")
+    p3["type"] = f'holder_{extra}'
+    if extra != "":
+        # Get the module object for the current file
+        current_module = __import__("oobb_get_items_oobb_other")
+        function_name = "get_other_" + extra
         # Call the function using the string variable
         function_to_call = getattr(current_module, function_name)
         return function_to_call(**kwargs)
@@ -430,13 +559,16 @@ def get_plate_l(**kwargs):
     else: # only return the elements
         return th
 
-
 def get_plate_ninety_degree(**kwargs):
 
     # default sets
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
     thickness = kwargs.get("thickness", 3)
+    thickness_oobb = 0
+    if thickness >= 14:
+        thickness_oobb = (thickness + 1) /15
+        
     size = kwargs.get("size", "oobb")
     pos = kwargs.get("pos", [0, 0, 0])
     extra = kwargs.get("extra", "")
@@ -475,46 +607,52 @@ def get_plate_ninety_degree(**kwargs):
     holes_m3_vertical = []
     holes_m3_horizontal = []    
     
-    for i in range(1,width+1):
-        #vertical even horizontal odd
-        if i%2 == 0:
-            holes_m6_vertical.append([i,0,"m6"])    
-        else:
-            holes_m6_horizontal.append([i,90,"m6"])
+    for w in range(1,width+1):
+        for h in range(1,height+1):
+            for t in range(1,int(thickness_oobb)+1):
+                #vertical even horizontal odd                
+                if w%2 == 0:
+                    holes_m6_vertical.append([[h,w,t],[0,0,0],"m6"])    
+                else:
+                    holes_m6_horizontal.append([[h,w,t],[90,0,0],"m6"])
 
-        if i+1 <= width:
-            holes_m3_horizontal.append([i+0.5,90,"m3"])
-            holes_m3_vertical.append([i+0.5,0,"m3"])
+                if w+1 <= width:
+                    holes_m3_horizontal.append([[h,w+0.5,t],[90,0,0],"m3"])
+                    holes_m3_vertical.append([[h,w+0.5,t],[0,0,0],"m3"])
     hole_list = []
     hole_list.extend(holes_m6_vertical)
     hole_list.extend(holes_m6_horizontal)
     hole_list.extend(holes_m3_vertical)
     hole_list.extend(holes_m3_horizontal)
-
     if holes:
         for hole in hole_list:
             p3 = copy.deepcopy(kwargs)
             pos1 = copy.deepcopy(pos)
-            x_shift = (hole[0]-1) * 15 - width/2 * 15 + 7.5
+            #x
+            x_shift = (hole[0][1]-1) * 15 - width/2 * 15 + 7.5
+            
+            #y
+            y_shift = (hole[0][0]-1) * 15 - height/2 * 15 + 7.5
+            
+            #z            
+            z_shift = (hole[0][2]-1) * 15 - thickness_oobb/2 * 15 + 7.5
+            
+
             pos1[0] += x_shift            
-            z_shift = -thickness/2
-            y_shift = 0
-            if hole[1] == 90:
-                y_shift = thickness/2
-                z_shift = 0
             pos1[1] += y_shift
             pos1[2] += z_shift
             p3["type"] = "n"
-            p3["shape"] = f"{size}_hole"
+            p3["shape"] = f"{size}_hole_new"
             p3["width"] = width
             p3["height"] = height
             p3["pos"] = pos1
             p3["both_holes"] = both_holes
             p3["holes"] = "single"
             p3["radius_name"] = hole[2]
-            p3["rot"] = [hole[1],0,0]
+            p3["rot"] = hole[1]
+            p3["zz"] = "middle"
             #p3["m"] = "#"
-            p3["depth"] = thickness
+            p3["depth"] = 250
             oobb_base.append_full(thing,**p3)      
         
         

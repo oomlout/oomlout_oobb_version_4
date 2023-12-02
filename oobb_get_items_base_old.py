@@ -22,15 +22,29 @@ def get_oobb_bearing(**kwargs):
     objects = []
     bearing_type = p3.get("bearing", p3.get("bearing_type", "608"))
     exclude_clearance = p3.get("exclude_clearance", False)
+    zz = p3.get("zz", "center")
+    pos = p3.get("pos", [0, 0, 0])
 
     modes = ["laser", "true", "3dpr"]
     for mode in modes:
         p3["inclusion"] = mode
-        p3["id"] = ob.gv(f"bearing_{bearing_type}_id", mode)
-        p3["od"] = ob.gv(f"bearing_{bearing_type}_od", mode)
-        p3["depth"] = ob.gv(f"bearing_{bearing_type}_depth", mode)
+        id = ob.gv(f"bearing_{bearing_type}_id", mode)
+        od = ob.gv(f"bearing_{bearing_type}_od", mode)
+        depth = ob.gv(f"bearing_{bearing_type}_depth", mode)
+        p3["id"] = id
+        p3["od"] = od
+        p3["depth"] = depth
         p3["shape"] = "bearing"
-        p3["pos"] = copy.deepcopy(p3["pos"])
+
+        pos1 = copy.deepcopy(pos)
+        if zz == "center" or zz == "middle":
+            pos1[2] +=  0
+        elif zz == "top":
+            pos1[2] += -depth/2
+        elif zz == "bottom":
+            pos1[2] += depth/2
+
+        p3["pos"] = pos1
         p3["clearance"] = ob.gv(f"bearing_{bearing_type}_clearance", mode)
         p3.update({"exclude_clearance": exclude_clearance})
         objects.append(opsc.opsc_easy(**p3))
@@ -146,7 +160,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     size = kwargs.get("size", "oobb")
     both_holes = kwargs.get("both_holes", False)
     circle = kwargs.get("circle", False)
-    diameter_full = kwargs.get("diameter", 0)
+    diameter_full = int(kwargs.get("diameter", 0))
     diameter = diameter_full
     if diameter_full % 1 != 0:
         diameter = diameter_full - diameter_full % 1
@@ -194,7 +208,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
                     # only include if inside a circle of radius width * ob,gv("osp")/2
-                    r = width*spacing/2 - 5
+                    r = width*spacing/2 - 7.5
                     if math.sqrt(x**2 + y**2) <= r:
                         # check if middle
                         if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
@@ -393,6 +407,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         p2["height"] = height*2-1
         if diameter != diameter_full:
             p2["diameter"] = (diameter_full+0.5) * 2 - 1        
+        else:
+            p2["diameter"] = (diameter_full) * 2 - 1        
         #add holes
         p2["holes"] = holes
         #p2["m"] = "#"
@@ -508,8 +524,8 @@ def get_oobb_holes_old(**kwargs):
 def get_oobe_holes(**kwargs):
     objects = []
     modes = ["laser", "3dpr", "true"]
-    width = kwargs["width"]
-    height = kwargs["height"]
+    width = kwargs.get("width", 0)
+    height = kwargs.get("height", 0)
     middle = kwargs.get("middle", True)
     kwargs["pos"] = kwargs.get("pos", [0, 0, 0])
     holes = kwargs.get("holes", ["all"])
@@ -523,7 +539,7 @@ def get_oobe_holes(**kwargs):
 
     circle = kwargs.get("circle", False)
     diameter = kwargs.get("diameter", 0)
-    if diameter != 0:
+    if diameter != 0 and width == 0 and height == 0:
         width = diameter
         height = diameter
 
@@ -557,7 +573,7 @@ def get_oobe_holes(**kwargs):
                             x = pos_start[0] + w*spacing
                             y = pos_start[1] + h*spacing
                             # only include if inside a circle of radius width * ob,gv("osp")/2
-                            r = width*spacing/2 - 2
+                            r = width*spacing/2 - 5
                             if math.sqrt(x**2 + y**2) <= r:
                                 # check if middle
                                 if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
@@ -683,15 +699,21 @@ def get_oobe_holes(**kwargs):
         return objects
 
 
+def get_oobb_motor_tt_01(**kwargs):
+    return get_oobb_motor_gearmotor_01(**kwargs)
+
 def get_oobb_motor_gearmotor_tt_motor_01(**kwargs):
     return get_oobb_motor_gearmotor_01(**kwargs)
 
 def get_oobb_motor_gearmotor_01(**kwargs):
     part = kwargs.get("part", "all")
-    screw_lift = kwargs.get("screw_lift", 0)
+    screw_lift = kwargs.get("screw_lift", -3)
+    radius_extra = kwargs.get("radius_extra", 0.4)
+    clearance = kwargs.get("clearance", 1)
     if part == "all":
         objects = []
         pos = kwargs.get("pos", [0, 0, 0])
+        pos_original = copy.deepcopy(pos)
         x = pos[0]
         y = pos[1]
         z = pos[2]
@@ -703,7 +725,7 @@ def get_oobb_motor_gearmotor_01(**kwargs):
         p2 = copy.deepcopy(kwargs)
         p2["pos"] = [x, y, z]
         p2["shape"] = "oobb_hole"
-        p2["radius_name"] = "m8"
+        p2["radius"] = 26/2
         objects.extend(ob.oobb_easy(**p2))
 
         # clearance hole
@@ -719,7 +741,7 @@ def get_oobb_motor_gearmotor_01(**kwargs):
         for pos in poss:
             p4 = copy.deepcopy(kwargs)
             p4["pos"] = [x+pos[0], y+pos[1], z+pos[2]+screw_lift]
-            p4["shape"] = "oobb_countersunk"
+            p4["shape"] = "oobb_screw_countersunk"
             p4["radius_name"] = "m3"
             p4["include_nut"] = False
             p4["depth"] = 25
@@ -728,9 +750,9 @@ def get_oobb_motor_gearmotor_01(**kwargs):
 
         # rear clearance cubes
         p5 = copy.deepcopy(kwargs)
-        height = 10
+        height = 30
         width = 12
-        p5["pos"] = [x-31-height/2, y-width/2, z]
+        p5["pos"] = [x-31-height/2-9.5, y-width/2, z]
         p5["shape"] = "cube"
         p5["size"] = [height, width, 2]
         #p5["m"] = "#"
@@ -752,46 +774,53 @@ def get_oobb_motor_gearmotor_01(**kwargs):
         #p5["m"] = ""
         objects.append(ob.oobb_easy(**p5))
 
+        #main_cube
+        p3 = copy.deepcopy(kwargs)
+        p3["shape"] = "oobb_cube_center"
+        width = 65
+        height = 22            
+        depth = 19
+        p3["size"] = [width + clearance, height + clearance, depth]
+        pos1 = copy.deepcopy(pos_original)        
+        pos1[0] += -width/2 + 11.35
+        pos1[2] += -depth
+        p3["pos"] = pos1
         
+        
+        #p3["m"] = "#"
+        objects.append(ob.oobb_easy(**p3))
+
+
         return objects
     elif part == "shaft":
-        """ waiting to be able to do intersects and multi level things
-        objects = []    
-        pos = kwargs.get("pos", [0,0,0])
-        x = pos[0]
-        y = pos[1]
-        z = pos[2]
-        
-        shaft_dia = 5.5
-        p2 = copy.deepcopy(kwargs)
-        p2["shape"] = "oobb_hole"
-        p2["radius"] = shaft_dia /2
-        objects.extend(ob.oobb_easy(**p2))
-
-        p3 = copy.deepcopy(kwargs)
-        p3["shape"] = "oobb_cube_center"
-        p3["size"] = [shaft_dia,0.875,100]
-        p3["pos"] = [x,y+2.313,-50]
-        objects.append(ob.oobb_easy(**p3))
-
-        p4 = copy.deepcopy(p3)
-        p4["pos"] = [x,y-2.313,-50]
-        objects.append(ob.oobb_easy(**p4))
-        """
         objects = []
         pos = kwargs.get("pos", [0, 0, 0])
-        x = pos[0]
-        y = pos[1]
-        z = pos[2]
+        depth = kwargs.get("depth", 6)
 
-        shaft_dia = 5.5
-        shaft_height = 3.75+.1
+        shaft_dia = 5.5 - 0.5
+        shaft_height = (3.75+.1) - 0.5
 
         p3 = copy.deepcopy(kwargs)
         p3["shape"] = "oobb_cube_center"
-        p3["size"] = [shaft_dia, shaft_height, 100]
-        p3["pos"] = [x, y, -50]
+        p3["size"] = [shaft_dia + radius_extra, shaft_height + radius_extra, depth]
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += -depth
+        p3["pos"] = pos1
         objects.append(ob.oobb_easy(**p3))
+
+        #add screw hole 2d5
+        p3 = copy.deepcopy(kwargs)
+        p3["shape"] = "oobb_screw_self_tapping"
+        p3["radius_name"] = "m2"
+        p3["clearance"] = ["top"]
+        p3["depth"] = 12
+        pos1 = copy.deepcopy(pos)
+        pos1[2] += 2
+        p3["pos"] = pos1
+        #p3["m"] = "#"  
+        objects.append(ob.oobb_easy(**p3))
+
+
         return objects
 
 

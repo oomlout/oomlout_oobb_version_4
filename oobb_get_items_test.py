@@ -161,6 +161,180 @@ def get_test_rotation(**kwargs):
 
 # motor
 
+#      motor_tt_01
+def get_test_motor_tt_01(**kwargs):
+    # default sets    
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 15
+    comment_extra = ""
+    thickness = 3
+
+    #oobb plate
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = f"oobb_plate"
+    p3["type"] = "p"
+    p3["width"] = 1.5
+    p3["height"] = 5
+    p3["depth"] = 7
+    pos1 = copy.deepcopy(p3["pos"])
+    pos1[2] += -6
+    p3["pos"] = pos1
+    #oobb_base.append_full(thing, **p3)
+
+    versions = []
+    base = {}    
+    base["type"] = "p"   
+    base["shape"] = f"oobb_motor_tt_01"  
+    #base["part"] = f"shaft"    
+    #base["depth"] = 50
+    base["pos"] = pos_current
+    base["comment_extra"] = ""
+    #base["comment_display"] = True
+    base["comment_shift_line"] = 30
+    #base["m"] = "#"
+    base["extra"] = {}
+
+    versions.append(copy.deepcopy(base))
+
+    b = copy.deepcopy(base)
+
+    #versions.append(b)
+    
+    
+    tests = {}
+    tests["radius_extra"] = [0]
+    
+    a_extra = "radius_extra"    
+    #b_extra = "backlash"                     
+    
+    #for b in tests[a_extra]:        
+    for a in tests[a_extra]:            
+        for v in versions:                       
+                p3 = copy.deepcopy(v)
+                comment_extra = v["comment_extra"]                     
+                comment_extra += f" {a_extra} : {a}\n"
+                #comment_extra += f" {b_extra} : {b}"
+
+                extra_detail_a = a
+                p3["comment"] = f"{v['shape']}_{a}_{extra_detail_a}\n{comment_extra}"
+                p3["pos"] = copy.deepcopy(pos_current)
+                #p3[b_extra] = b
+                p3[a_extra] = a
+                #p3["m"] = ""
+                extra = v.get("extra", {})
+                p3.update(extra)
+                oobb_base.append_full(thing, **p3)
+                pos_current[1] += pos_shift
+    pos_current[0] += pos_shift
+    pos_current[1] = 0    
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+
+#      motor_tt_01_shaft
+def get_test_motor_tt_01_shaft(**kwargs):
+    # default sets    
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,-30,0]
+    pos_shift = 15
+    comment_extra = ""
+    thickness = 3
+
+    #oobb plate
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = f"oobb_plate"
+    p3["type"] = "p"
+    p3["width"] = 1.5
+    p3["height"] = 5
+    p3["depth"] = 7
+    pos1 = copy.deepcopy(p3["pos"])
+    pos1[2] += -6
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    versions = []
+    base = {}    
+    base["type"] = "n"   
+    base["shape"] = f"oobb_motor_tt_01"  
+    base["part"] = f"shaft"    
+    base["depth"] = 50
+    base["pos"] = pos_current
+    base["comment_extra"] = ""
+    #base["comment_display"] = True
+    base["comment_shift_line"] = 30
+    #base["m"] = "#"
+    base["extra"] = {}
+
+    versions.append(copy.deepcopy(base))
+
+    b = copy.deepcopy(base)
+
+    #versions.append(b)
+    
+    
+    tests = {}
+    tests["radius_extra"] = [0,0.1,0.2,0.3,0.4]
+    
+    a_extra = "radius_extra"    
+    #b_extra = "backlash"                     
+    
+    #for b in tests[a_extra]:        
+    for a in tests[a_extra]:            
+        for v in versions:                       
+                p3 = copy.deepcopy(v)
+                comment_extra = v["comment_extra"]                     
+                comment_extra += f" {a_extra} : {a}\n"
+                #comment_extra += f" {b_extra} : {b}"
+
+                extra_detail_a = a
+                p3["comment"] = f"{v['shape']}_{a}_{extra_detail_a}\n{comment_extra}"
+                p3["pos"] = copy.deepcopy(pos_current)
+                #p3[b_extra] = b
+                p3[a_extra] = a
+                #p3["m"] = ""
+                extra = v.get("extra", {})
+                p3.update(extra)
+                oobb_base.append_full(thing, **p3)
+                pos_current[1] += pos_shift
+    pos_current[0] += pos_shift
+    pos_current[1] = 0    
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+
 #      motor_n20_shaft
 def get_test_motor_n20_shaft(**kwargs):
     # default sets
@@ -317,6 +491,150 @@ def get_test_oobb_motor_servo_standard_01(**kwargs):
     else: # only return the elements
         return thing["components"]
 
+#nut
+def get_test_oobb_nut(**kwargs):
+    # default sets
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 50
+    comment_extra = ""
+    
+    versions = []
+    base = {}    
+    base["shape"] = f"oobb_nut"
+    base["radius_name"] = "m3"
+    base["comment_extra"] = ""
+    base["comment_display"] = True
+    #base["m"] = ""
+    base["extra"] = {}
+
+    versions.append(copy.deepcopy(base))
+
+    
+
+    
+    b = copy.deepcopy(base)    
+    b["extra"]["overhang"] = True
+    b["comment_extra"] = "overhang : True\n"
+    versions.append(b)
+
+    b = copy.deepcopy(base)    
+    b["extra"]["overhang"] = True
+    b["extra"]["hole"] = True
+    b["comment_extra"] = "overhang : True hole: True\n"
+    versions.append(b)
+
+
+    b = copy.deepcopy(base)    
+    b["extra"]["zz"] = "top"
+    b["comment_extra"] = "zz : top\n"
+    versions.append(b)
+
+    #zz bottom
+    b = copy.deepcopy(base)
+    b["extra"]["zz"] = "bottom"
+    b["comment_extra"] = "zz : bottom\n"
+    versions.append(b)
+
+    #zz middle
+    b = copy.deepcopy(base)
+    b["extra"]["zz"] = "middle"
+    b["comment_extra"] = "zz : middle\n"
+    versions.append(b)
+
+    #longer
+    b = copy.deepcopy(base)    
+    b["extra"]["depth"] = 25
+    b["comment_extra"] = "depth : 25\n"
+    versions.append(b)
+
+    b = copy.deepcopy(base)    
+    b["extra"]["zz"] = "top"
+    b["extra"]["depth"] = 25
+    b["comment_extra"] = "zz : top depth : 25\n"
+    versions.append(b)
+
+    #zz middle
+    b = copy.deepcopy(base)
+    b["extra"]["zz"] = "middle"
+    b["extra"]["depth"] = 25
+    b["comment_extra"] = "zz : middle depth : 25\n"
+    versions.append(b)
+
+    #clearance top
+    b = copy.deepcopy(base)
+    b["extra"]["clearance"] = "top"
+    b["comment_extra"] = "clearance : top\n"
+    versions.append(b)
+
+    #clearance bottom
+    b = copy.deepcopy(base)
+    b["extra"]["clearance"] = "bottom"
+    b["comment_extra"] = "clearance : bottom\n"
+    versions.append(b)
+
+    #loose
+    b = copy.deepcopy(base)    
+    b["extra"]["extra"] = "loose"
+    b["comment_extra"] = "extra : loose\n"
+    #versions.append(b)
+
+    #tight
+    b = copy.deepcopy(base)
+    b["extra"]["extra"] = "tight"
+    b["comment_extra"] = "extra : tight\n"
+    #versions.append(b)
+
+
+    rots = []
+    rots.append([[0,0,0], {}, ""])
+    rots.append([[150,0,0], {"rot":[0,360/12,0]}, "rot_y : 360/12"])
+    rots.append([[300,0,0], {"rot":[0,90,0]}, "rot_y : 90"])
+    rots.append([[450,0,0], {"rot":[90,45,0]}, "rot_x : 90 rot_y : 45"])
+
+    for r in rots:
+        pos_current = r[0]
+        extra_extra = r[1]
+        comment_extra_extra = r[2]
+
+        for v in versions:                        
+            p3 = copy.deepcopy(kwargs)
+            comment_extra = v["comment_extra"]
+            p3["shape"] = v["shape"] 
+            p3["type"] = "positive"
+            radius_name = v["radius_name"]
+            p3["radius_name"] = radius_name            
+            p3["comment"] = f"{v['shape']}_{radius_name}\n{comment_extra}{comment_extra_extra}"
+            comment_display = v.get("comment_display", False)
+            p3["comment_display"]   = comment_display
+            p3["pos"] = copy.deepcopy(pos_current)
+            rot = v.get("rot", [0,0,0])
+            p3["rot"] = rot
+            p3["m"] = ""
+            p3.update(v["extra"])
+            p3.update(extra_extra)
+            oobb_base.append_full(thing, **p3)
+            pos_current[1] += pos_shift
+        
+        
+    
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
 
 
 # screw

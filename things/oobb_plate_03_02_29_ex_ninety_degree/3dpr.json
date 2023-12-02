@@ -1,0 +1,689 @@
+[
+    {
+        "type": "p",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            0,
+            0,
+            -14.5
+        ],
+        "shape": "oobb_plate",
+        "depth": 29,
+        "r": 2.5
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            0.0,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            0.0,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            0.0,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            0.0,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -15.0,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -15.0,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -15.0,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -15.0,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            15.0,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            15.0,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            15.0,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            15.0,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m6",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            -7.5,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            -7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            -7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            7.5,
+            -7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 2,
+        "thickness": 29,
+        "extra": "ninety_degree",
+        "pos": [
+            7.5,
+            7.5,
+            7.5
+        ],
+        "shape": "oobb_hole_new",
+        "both_holes": true,
+        "holes": "single",
+        "radius_name": "m3",
+        "rot": [
+            90,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "m": "#",
+        "depth": 250
+    }
+]

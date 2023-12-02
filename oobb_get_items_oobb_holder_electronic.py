@@ -3,6 +3,33 @@ import oobb_base
 import oobb_get_items_oobb
 
 
+# battery_box
+def get_holder_electronic_battery_box_aa_battery_4_cell(**kwargs):
+    thickness = kwargs.get("thickness", 3)
+    pos_item = [6,0,0]
+    kwargs["pos_item"] = pos_item  
+    kwargs["pos_plate"] = [0,7.5,0]  
+    
+    p3 = copy.deepcopy(kwargs)
+    p3["hole_sides"] = ["right"]
+    p3["include_connecting_screws"] = False
+    p3["include_cutout"] = False
+    p3["include_nut"] = True
+    return_value = get_holder_electronic_base(**p3)
+
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "positive"
+    p3["shape"] = "oobb_cylinder"
+    p3["radius"] = 16/2
+    p3["depth"] = 15    
+    p3["zz"] = "bottom"
+    p3.pop("size","")
+    #p3["m"] = "#"
+    #oobb_base.append_full(return_value, **p3)
+
+
+    return return_value
+
 #button
 def get_holder_electronic_button_11_mm_panel_mount(**kwargs):
     thickness = kwargs.get("thickness", 3)
@@ -155,9 +182,14 @@ def get_holder_electronic_base(**kwargs):
     pos = kwargs.get("pos", [0, 0, 0])
     pos_item = kwargs.get("pos_item", [0, 0, 0])
     rot_item = kwargs.get("rot_item", [0, 0, 0])
+    hole_sides = kwargs.get("hole_sides", ["left","right","top"])
     extra = kwargs.get("extra", "")    
     full_object = kwargs.get("full_object", True)
     part = kwargs.get("part", "all")
+    pos_plate = kwargs.get("pos_plate", [0, 0, 0])
+    include_connecting_screws = kwargs.get("include_connecting_screws", True)
+    include_cutout = kwargs.get("include_cutout", True)
+    include_hole = kwargs.get("include_hole", True)
     
 
     thing = oobb_base.get_default_thing(**kwargs)
@@ -169,8 +201,8 @@ def get_holder_electronic_base(**kwargs):
 
     # servo shaft at 0,0,0 position
     
-    pos_plate = [0,0,-thickness]
-    pos_plate = [pos_plate[0] + pos[0], pos_plate[1] + pos[1], pos_plate[2] + pos[2]]
+    pos_plate_shift = [0,0,-thickness]
+    pos_plate = [pos_plate[0] + pos_plate_shift[0], pos_plate[1] + pos_plate_shift[1], pos_plate[2] + pos_plate_shift[2]]
     kwargs["pos_plate"] =  pos_plate
 
     # plate
@@ -179,24 +211,29 @@ def get_holder_electronic_base(**kwargs):
     oobb_base.append_full(thing, **p3)
 
     # cutout
-    if thickness != 3:
+    if include_cutout:
+        if thickness != 3:
+            p3 = copy.deepcopy(kwargs)
+            p3 = get_plate_cutout_dict(**p3)
+            #p3["m"] = "#"
+            oobb_base.append_full(thing, **p3)
+
+    # hole    
+    if include_hole:
         p3 = copy.deepcopy(kwargs)
-        p3 = get_plate_cutout_dict(**p3)
+        p3["hole_sides"] = hole_sides
+        p3["both_holes"] = True
+        p3.pop("diameter","")
+        p3 = oobb_get_items_oobb.get_plate_hole_dict(**p3)
         #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
 
-    # hole    
-    p3 = copy.deepcopy(kwargs)
-    p3["hole_sides"] = ["left","right","top"]
-    p3 = oobb_get_items_oobb.get_plate_hole_dict(**p3)
-    #p3["m"] = "#"
-    oobb_base.append_full(thing, **p3)
-
     # screw
-    p3 = get_plate_screw_dict(**kwargs)
-    p3["type"] = "negative"
-    p3["m"] = "#"
-    oobb_base.append_full(thing, **p3)
+    if include_connecting_screws:
+        p3 = get_plate_screw_dict(**kwargs)
+        p3["type"] = "negative"
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
 
     # item    
     p3 = copy.deepcopy(kwargs)
@@ -204,7 +241,7 @@ def get_holder_electronic_base(**kwargs):
     p3["shape"] = f"oobb_{extra}"  
     p3["pos"] = pos_item
     p3["rot"] = rot_item
-    p3["m"] = "#"
+    #p3["m"] = "#"
     oobb_base.append_full(thing, **p3)
 
     

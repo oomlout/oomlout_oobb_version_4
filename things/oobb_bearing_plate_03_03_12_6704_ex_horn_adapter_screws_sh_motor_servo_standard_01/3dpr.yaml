@@ -275,11 +275,59 @@
     thickness: 12
     type: n
     width: 3
+-   bearing: '6704'
+    depth: 12
+    extra: horn_adapter_screws
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 5.303
+    - 5.303
+    - 6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    extra: horn_adapter_screws
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -5.303
+    - -5.303
+    - -6.0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
 -   mode: 3dpr
     pos:
     - 0
     - 0
-    - -20
+    - 6.0
+    shape: oobb_slice
+    type: n
+    zz: bottom
+-   mode: 3dpr
+    pos:
+    - 0
+    - 0
+    - 0
     shape: oobb_slice
     type: n
     zz: top
