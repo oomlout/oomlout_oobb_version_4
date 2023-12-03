@@ -84,50 +84,15 @@
         "width": 2,
         "height": 2,
         "thickness": 29,
-        "shape": "oobb_hole_new",
-        "zz": "middle",
+        "shape": "oobb_cube_new",
+        "size": [
+            15,
+            15,
+            29
+        ],
+        "zz": "top",
         "pos": [
-            0,
             7.5,
-            0
-        ],
-        "rot": [
-            0,
-            90,
-            0
-        ],
-        "radius_name": "m3"
-    },
-    {
-        "type": "n",
-        "extra": "corner_cube",
-        "width": 2,
-        "height": 2,
-        "thickness": 29,
-        "shape": "oobb_hole_new",
-        "zz": "middle",
-        "pos": [
-            -7.5,
-            0,
-            0
-        ],
-        "rot": [
-            0,
-            0,
-            0
-        ],
-        "radius_name": "m3"
-    },
-    {
-        "type": "n",
-        "extra": "corner_cube",
-        "width": 2,
-        "height": 2,
-        "thickness": 29,
-        "shape": "oobb_hole_new",
-        "zz": "middle",
-        "pos": [
-            0,
             0,
             -7.5
         ],
@@ -135,7 +100,78 @@
             90,
             0,
             0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "corner_cube",
+        "width": 2,
+        "height": 2,
+        "thickness": 29,
+        "shape": "oobb_cube_new",
+        "size": [
+            15,
+            15,
+            29
         ],
-        "radius_name": "m3"
+        "zz": "top",
+        "pos": [
+            -7.5,
+            -7.5,
+            0
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "corner_cube",
+        "width": 2,
+        "height": 2,
+        "thickness": 29,
+        "shape": "oobb_cube_new",
+        "size": [
+            15,
+            15,
+            29
+        ],
+        "zz": "top",
+        "pos": [
+            0,
+            7.5,
+            7.5
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "corner_cube",
+        "width": 2,
+        "height": 2,
+        "thickness": 29,
+        "shape": "oobb_cube_new",
+        "size": [
+            15,
+            15,
+            29
+        ],
+        "zz": "top",
+        "pos": [
+            0,
+            7.5,
+            -7.5
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ]
     }
 ]

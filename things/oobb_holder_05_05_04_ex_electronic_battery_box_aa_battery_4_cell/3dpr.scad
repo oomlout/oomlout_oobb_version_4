@@ -6,7 +6,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 21.5000000000, -4]) {
 				linear_extrude(height = 5) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_4_depth_0_7.5_-4_pos_electronic_battery_box_aa_battery_4_cell_extra_5_width_5_height_4_thickness_6_0_0_pos_item_0_7.5_-4_pos_plate_'right'_hole_sides_false_include_connecting_screws_false_include_cutout_true_include_nut", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_4_depth_0_7.5_-4_pos_electronic_battery_box_aa_battery_4_cell_extra_5_width_5_height_4_thickness_6_0_0_pos_item_0_7.5_-4_pos_plate_'right'_'top'_hole_sides_false_include_connecting_screws_false_include_cutout_true_include_nut", valign = "center");
 				}
 			}
 		}
@@ -29,7 +29,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 21.5000000000, -4]) {
 				linear_extrude(height = 5) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_7.5_-4_pos_electronic_battery_box_aa_battery_4_cell_extra_5_width_5_height_4_thickness_6_0_0_pos_item_0_7.5_-4_pos_plate_'right'_hole_sides_false_include_connecting_screws_false_include_cutout_true_include_nut_true_both_holes_'right'_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_7.5_-4_pos_electronic_battery_box_aa_battery_4_cell_extra_5_width_5_height_4_thickness_6_0_0_pos_item_0_7.5_-4_pos_plate_'right'_'top'_hole_sides_false_include_connecting_screws_false_include_cutout_true_include_nut_true_both_holes_'right'_'top'_holes", valign = "center");
 				}
 			}
 		}
@@ -740,6 +740,21 @@ difference() {
 				}
 			}
 		}
+		translate(v = [-30.0000000000, -22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 3.2500000000);
+		}
+		translate(v = [-30.0000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 3.2500000000);
+		}
+		translate(v = [-30.0000000000, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 3.2500000000);
+		}
+		translate(v = [-30.0000000000, 22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 3.2500000000);
+		}
+		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 3.2500000000);
+		}
 		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 3.2500000000);
 		}
@@ -754,6 +769,33 @@ difference() {
 		}
 		translate(v = [30.0000000000, 37.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 3.2500000000);
+		}
+		translate(v = [-30.0000000000, -22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -15.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 15.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 30.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
 		}
 		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
@@ -782,6 +824,33 @@ difference() {
 		translate(v = [30.0000000000, 37.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
+		translate(v = [-30.0000000000, -22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -15.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 15.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 30.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
 		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
@@ -807,6 +876,33 @@ difference() {
 			cylinder(h = 100, r = 1.8000000000);
 		}
 		translate(v = [30.0000000000, 37.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -15.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, -7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 0.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 7.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 15.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 22.5000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 30.0000000000, -50.0000000000]) {
+			cylinder(h = 100, r = 1.8000000000);
+		}
+		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
 		}
 		translate(v = [-30.0000000000, 37.5000000000, -50.0000000000]) {
@@ -839,7 +935,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [6, 14, 0]) {
 				linear_extrude(height = 5) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_electronic_battery_box_aa_battery_4_cell_shape_negative_type_6_0_0_pos_electronic_battery_box_aa_battery_4_cell_extra_5_width_5_height_4_thickness_6_0_0_pos_item_0_7.5_-4_pos_plate_'right'_hole_sides_false_include_connecting_screws_false_include_cutout_true_include_nut_0_0_0_rot", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_electronic_battery_box_aa_battery_4_cell_shape_negative_type_6_0_0_pos_electronic_battery_box_aa_battery_4_cell_extra_5_width_5_height_4_thickness_6_0_0_pos_item_0_7.5_-4_pos_plate_'right'_'top'_hole_sides_false_include_connecting_screws_false_include_cutout_true_include_nut_0_0_0_rot", valign = "center");
 				}
 			}
 		}

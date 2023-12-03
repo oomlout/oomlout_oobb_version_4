@@ -46,6 +46,7 @@ def main(**kwargs):
     #filter = "oobb_holder"
     #filter = "oobb_holder_06_03_06_ex_motor_tt_01"
     #filter = "oobb_holder_05_03_06_ex_motor_stepper_nema_17_flat_shifted"
+    #filter = "oobb_holder_05_05_04_ex_electronic_battery_box_aa_battery_4_cell"
     #filter = "nema_17"
     #
     # filter = "electronic_battery_box_aa_battery_4_cell"

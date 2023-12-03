@@ -11,7 +11,7 @@ def get_holder_electronic_battery_box_aa_battery_4_cell(**kwargs):
     kwargs["pos_plate"] = [0,7.5,0]  
     
     p3 = copy.deepcopy(kwargs)
-    p3["hole_sides"] = ["right"]
+    p3["hole_sides"] = ["right", "top"]
     p3["include_connecting_screws"] = False
     p3["include_cutout"] = False
     p3["include_nut"] = True

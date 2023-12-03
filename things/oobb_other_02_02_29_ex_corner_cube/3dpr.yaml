@@ -64,48 +64,76 @@
 -   extra: corner_cube
     height: 2
     pos:
-    - 0
     - 7.5
     - 0
-    radius_name: m3
-    rot:
-    - 0
-    - 90
-    - 0
-    shape: oobb_hole_new
-    thickness: 29
-    type: n
-    width: 2
-    zz: middle
--   extra: corner_cube
-    height: 2
-    pos:
     - -7.5
-    - 0
-    - 0
-    radius_name: m3
-    rot:
-    - 0
-    - 0
-    - 0
-    shape: oobb_hole_new
-    thickness: 29
-    type: n
-    width: 2
-    zz: middle
--   extra: corner_cube
-    height: 2
-    pos:
-    - 0
-    - 0
-    - -7.5
-    radius_name: m3
     rot:
     - 90
     - 0
     - 0
-    shape: oobb_hole_new
+    shape: oobb_cube_new
+    size:
+    - 15
+    - 15
+    - 29
     thickness: 29
     type: n
     width: 2
-    zz: middle
+    zz: top
+-   extra: corner_cube
+    height: 2
+    pos:
+    - -7.5
+    - -7.5
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_cube_new
+    size:
+    - 15
+    - 15
+    - 29
+    thickness: 29
+    type: n
+    width: 2
+    zz: top
+-   extra: corner_cube
+    height: 2
+    pos:
+    - 0
+    - 7.5
+    - 7.5
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_cube_new
+    size:
+    - 15
+    - 15
+    - 29
+    thickness: 29
+    type: n
+    width: 2
+    zz: top
+-   extra: corner_cube
+    height: 2
+    pos:
+    - 0
+    - 7.5
+    - -7.5
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_cube_new
+    size:
+    - 15
+    - 15
+    - 29
+    thickness: 29
+    type: n
+    width: 2
+    zz: top
