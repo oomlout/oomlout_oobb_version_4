@@ -396,10 +396,8 @@ def get_plates(size="oobb"):
 
     #non both_holes ones
     #gorm plates
-    plates.append({"type": "plate", "width": 7, "height": 4,
-                  "thickness": 3, "extra":"gorm", "size": size})
-    plates.append({"type": "plate", "width": 5, "height": 2,
-                  "thickness": 3, "extra":"gorm", "size": size})
+    #plates.append({"type": "plate", "width": 7, "height": 4, "thickness": 3, "extra":"gorm", "size": size})
+    #plates.append({"type": "plate", "width": 5, "height": 2, "thickness": 3, "extra":"gorm", "size": size})
 
     #ninety_degree plates    
     max = 12
@@ -447,9 +445,10 @@ def get_plates(size="oobb"):
     for width in widths:
         for thickness in thicknesses:
             for extra in extras:
-                plates.append({"type": "plate", "width": width, "height": 1, "thickness": thickness, "extra":extra, "size": size})
+                pass
+                #plates.append({"type": "plate", "width": width, "height": 1, "thickness": thickness, "extra":extra, "size": size})
 
-    plates.append({"type": "plate", "width": 3, "height": 3, "thickness": thickness, "extra":"slip_corner", "size": size})
+    #plates.append({"type": "plate", "width": 3, "height": 3, "thickness": thickness, "extra":"slip_corner", "size": size})
 
 
 
