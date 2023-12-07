@@ -56,7 +56,7 @@ def main(**kwargs):
 
     # other
     #filter = "_other"
-    filter = "oobb_other_02_02_29_ex_corner_cube"
+    #filter = "oobb_other_02_02_29_ex_corner_cube"
 
     # plate
     #filter = "ninety_degree"
@@ -72,7 +72,7 @@ def main(**kwargs):
     #filter = "20_teeth_shield_sh_motor_n20"
 
     # wheel
-    #filter = "twenty_twenty_aluminium_extrusion"
+    filter = "twenty_twenty_aluminium_extrusion"
     #filter = "oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion"
 
     # wire

@@ -722,6 +722,9 @@ def get_wheels(size="oobb"):
     wheels.append({"type": "wheel", "thickness": 10.2, "diameter":24, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "696", "size": size})
     wheels.append({"type": "wheel", "thickness": 15, "diameter":29, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "606", "size": size})
 
+    
+    wheels.append({"type": "wheel", "thickness": 12+3, "diameter":24, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "606", "size": size})
+
     #make both_holes true for all
     for wheel in wheels:
         wheel["both_holes"] = True
