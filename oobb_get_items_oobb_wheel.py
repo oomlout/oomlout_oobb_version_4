@@ -6,7 +6,102 @@ import oobb_get_items_oobb_old
 
 
 def get_wheel(**kwargs):
-    return oobb_get_items_oobb_old.get_wheel_old_1(**kwargs)
+    bearing = kwargs.get("bearing", "")
+    connecting_screws = kwargs.get("connecting_screws", False)
+    thickness = kwargs.get("thickness", 3)
+    oring_type = kwargs.get("oring_type", "")
+    pos = kwargs.get("pos", [0,0,0])
+    pos_plate = kwargs.get("pos_plate", [0,0,0])
+    pos_plate[0] += pos[0]
+    pos_plate[1] += pos[1]
+    pos_plate[2] += pos[2]
+    #figuring out radius
+    minus_bit = 1.5
+    if oring_type != "": #if no oring
+        od = oobb_base.gv(f"oring_{oring_type}_od", "true")
+        id = oobb_base.gv(f"oring_{oring_type}_id", "true")
+        idt = oobb_base.gv(f"oring_{oring_type}_id_tight", "true")            
+        radius = idt + (od-id)/2 + 0.5 - minus_bit #(to account for the minusing) 
+        diameter_big = radius*2/oobb_base.gv("osp")
+    else:
+        diameter = kwargs.get("diameter", 3)
+        diameter_big = diameter
+        radius = (diameter * 15 - 1)/2
+    diameter = int(round(diameter_big, 0))
+    #if diameter is even take one off to make it odd
+    if diameter % 2 == 0:
+        diameter -= 1
+
+    kwargs.update({"diameter": diameter})
+    thing = oobb_base.get_default_thing(**kwargs)    
+    kwargs.update({"diameter": diameter_big})
+    kwargs.pop("size","")
+    
+    #circle
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "positive"
+    p3["shape"] = "oobb_circle"
+    p3["depth"] = thickness
+    p3["radius"] = radius
+    p3["pos"] = pos
+    p3["zz"] = "middle"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    
+    #holes
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "negative"
+    p3["shape"] = "oobb_holes"
+    p3["circle"] = True
+    p3["both_holes"] = False
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #oring
+    if oring_type != "":
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = "oobb_oring"
+        p3["oring_type"] = oring_type
+        p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+    else:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = "oobb_tire"
+        radius_tube = 5
+        p3["depth"] = radius_tube
+        p3["id"] = radius - radius_tube/2
+        p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+
+    
+    #bearing 
+    if bearing != "":
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = "oobb_bearing"
+        p3["bearing"] = bearing
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+        connecting_screws = True
+
+    #connecting_screws
+    if connecting_screws:
+        import oobb_get_items_oobb_bearing_plate
+        oobb_get_items_oobb_bearing_plate.get_bearing_plate_connecting_screw_perimeter(thing = thing, **kwargs)
+        
+
+    if bearing != "" or oring_type != "":
+        #slice
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative"
+        p3["shape"] = "oobb_slice"
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+
+    return thing
 
 def get_wheel_bearing(**kwargs):
     return oobb_get_items_oobb_old.get_wheel_old_1(**kwargs)

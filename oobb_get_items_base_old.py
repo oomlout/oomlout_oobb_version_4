@@ -151,8 +151,8 @@ def get_oobb_plate_old(**kwargs):
 def get_oobb_holes(holes=["all"], **kwargs):
     objects = []
     modes = ["laser", "3dpr", "true"]
-    width = kwargs["width"]
-    height = kwargs["height"]
+    width = kwargs.get("width", 0)
+    height = kwargs.get("height", 0)
     pos = kwargs.get("pos", [0, 0, 0])
     pos = copy.deepcopy(pos)
     radius_name = kwargs.get("radius_name", "m6")
@@ -432,7 +432,14 @@ def get_oobb_oring(**kwargs):
 
     return objects
 
-    return
+def get_oobb_tire(**kwargs):
+    objects = []
+    
+    
+    kwargs["shape"] = "oring"
+    objects.append(opsc.opsc_easy(**kwargs))
+
+    return objects
 
 
 def get_oobe_plate(**kwargs):
@@ -1992,47 +1999,52 @@ def get_oobb_tube(**kwargs):
 
 
 
-def get_oobb_slot(**kwargs):
+def get_oobb_slot_old(**kwargs):
+    
     modes = kwargs.get("mode", ["laser", "3dpr", "true"])
+    depth = kwargs.get("depth", "")
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos = copy.deepcopy(pos)
+    zz = kwargs.get("zz", "middle")
+    radius = kwargs.get("radius", "")
+    radius_name = kwargs.get("radius_name", "")
+    radius_1 = kwargs.get("radius_1", "")
+    radius_2 = kwargs.get("radius_2", "")
+    
+    
+    #      mode sorting
     if modes == "all":
-        modes = ["laser", "3dpr", "true"]
-    if type(modes) == str:
+        modes = ["laser", "3dpr", "true"]    
+    if type(modes) != list:
         modes = [modes]
 
-    z = kwargs.get("z", 0)
-    if z == 0:
-        pos = kwargs.get("pos", [0, 0, 0])
+    #      depth sorting
+    if depth == "":
+            depth = 250
+            pos[2] = pos[2] - depth / 2
+
+    #      zz sorting
+    if zz == "middle":
+        pos[2] = pos[2] - depth / 2
+    elif zz == "bottom":
+        pos[2] = pos[2] - depth
+    elif zz == "top":
+        pass
 
     return_value = []
-    try:
-        depth = kwargs["depth"]
-    except:
-        depth = 250
-        try:
-            kwargs["pos"][2] = pos[2] - depth / 2
-        except:
-            kwargs["z"] = z - depth / 2
-
-    try:
-        radius_name = kwargs["radius_name"]
-        for mode in modes:
-            kwargs["shape"] = "slot_small"
-            try:
-                kwargs.update({"r": ob.gv("hole_radius_"+radius_name, mode)})
-            except:
-                r = ob.gv(radius_name, mode)
-                kwargs.update({"r": r})
-            kwargs.update({"h": depth})
-            kwargs.update({"inclusion": mode})
-            return_value.append(opsc.opsc_easy(**kwargs))
-    except:
-        for mode in modes:
-            r = kwargs.get("r", kwargs.get("radius", 0))
-            kwargs["shape"] = "slot_small"
-            kwargs.update({"r": r})
-            kwargs.update({"h": depth})
-            kwargs.update({"inclusion": mode})
-            return_value.append(opsc.opsc_easy(**kwargs))
+    p3 = copy.deepcopy(kwargs)
+    for mode in modes:
+        if radius_name != "":
+            radius = ob.gv("hole_radius_"+radius_name, mode)
+        p3["shape"] = "slot"
+        if radius_1 == "":        
+            p3["r"] = radius
+        else:
+            p3["r1"] = radius_1
+            p3["r2"] = radius_2
+        p3["h"] = depth
+        p3.update({"inclusion": mode})
+        return_value.append(opsc.opsc_easy(**p3))
     return return_value
 
 def get_oobb_slice_old_1(**kwargs):

@@ -7,7 +7,9 @@ def get_oobb_circle(**kwargs):
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
     extra_mm = kwargs.get("extra_mm", False)
+    pos = kwargs.get("pos", [0, 0, 0])
     depth = kwargs.get("depth", 3)
+    zz = kwargs.get("zz", "bottom")
 
     
     #add extra_mm
@@ -15,6 +17,14 @@ def get_oobb_circle(**kwargs):
         width = width + 1/15 
         height = height + 1/15
     
+    #zz 
+    if zz == "bottom":
+        pos[2] += 0
+    elif zz == "top":
+        pos[2] += -depth
+    elif zz == "middle":
+        pos[2] += -depth/2
+
     width_mm = width * oobb_base.gv("osp") - oobb_base.gv("osp_minus")
     height_mm = height * oobb_base.gv("osp") - oobb_base.gv("osp_minus")
     
@@ -1147,10 +1157,23 @@ def get_oobb_nut(**kwargs):
 
 # plate
 def get_oobb_plate(**kwargs):
+    kwargs = copy.deepcopy(kwargs)
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
     extra_mm = kwargs.get("extra_mm", False)
     depth_mm = kwargs.get("depth", 3)
+    pos = copy.deepcopy(kwargs.get("pos", [0, 0, 0]))
+    zz = kwargs.get("zz", "bottom")
+
+    
+
+    if zz == "top":
+        pos[2] += -depth_mm
+    elif zz == "middle":
+        pos[2] += -depth_mm/2
+    else:
+        pos[2] += 0
+    kwargs["pos"] = pos
 
     
     #add extra_mm
@@ -1359,6 +1382,86 @@ def get_oobb_screw(**kwargs):
             #    p3["pos"] = [pos[0], pos[1], pos[2]-0.3]         
             return_value.extend(oobb_base.oobb_easy(**p3))
 
+    # packaging as a rotation object
+    return_value_2 = {}
+    return_value_2["type"]  = "rotation"
+    return_value_2["typetype"]  = typ
+    return_value_2["pos"] = pos_original
+    return_value_2["rot"] = rot_original
+    return_value_2["objects"] = return_value
+    return_value_2 = [return_value_2]
+
+
+    return return_value_2
+
+
+# slot
+def get_oobb_slot(**kwargs):
+    
+    modes = kwargs.get("mode", ["laser", "3dpr", "true"])
+    depth = kwargs.get("depth", "")
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos = copy.deepcopy(pos)
+    zz = kwargs.get("zz", "middle")
+    radius = kwargs.get("radius", "")
+    radius_name = kwargs.get("radius_name", "")
+    radius_1 = kwargs.get("radius_1", "")
+    radius_2 = kwargs.get("radius_2", "")
+    
+    
+    #      mode sorting
+    if modes == "all":
+        modes = ["laser", "3dpr", "true"]    
+    if type(modes) != list:
+        modes = [modes]
+
+    #      depth sorting
+    if depth == "":
+            depth = 250
+            pos[2] = pos[2] - depth / 2
+
+    #      zz sorting
+    if zz == "middle":
+        pos[2] = pos[2] - depth / 2
+        kwargs["pos"] = pos
+    elif zz == "bottom":
+        pos[2] = pos[2] - depth
+        kwargs["pos"] = pos
+    elif zz == "top":
+        pass
+
+
+
+    # setting up for rotation object
+    typ = kwargs.get("type", "p")
+    kwargs["type"] = "positive" #needs to be positive for the difference to work
+    rot_original = get_rot(**kwargs)   
+    kwargs.pop("rot", None)
+    kwargs.pop("rot_x", None)
+    kwargs.pop("rot_y", None)
+    kwargs.pop("rot_z", None)
+
+    # storing pos and popping it out to add it in rotation element     
+    pos_original = copy.deepcopy(copy.deepcopy(kwargs.get("pos", [0, 0, 0])))
+    pos_original_original = copy.deepcopy(pos_original)
+    kwargs.pop("pos", None)
+
+
+    return_value = []
+    p3 = copy.deepcopy(kwargs)
+    for mode in modes:
+        if radius_name != "":
+            radius = ob.gv("hole_radius_"+radius_name, mode)
+        p3["shape"] = "slot"
+        if radius_1 == "":        
+            p3["r"] = radius
+        else:
+            p3["r1"] = radius_1
+            p3["r2"] = radius_2
+        p3["h"] = depth
+        p3.update({"inclusion": mode})
+        return_value.append(opsc.opsc_easy(**p3))
+    
     # packaging as a rotation object
     return_value_2 = {}
     return_value_2["type"]  = "rotation"

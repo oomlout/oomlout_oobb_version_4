@@ -1322,6 +1322,91 @@ def get_test_oobb_screw_socket_cap_old_1(**kwargs):
     else: # only return the elements
         return thing["components"]
 
+# shape
+def get_test_oobb_shape_slot(**kwargs):
+    # default sets
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+        
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    
+    pos_current = [0,0,0]
+    pos_shift = 50
+    comment_extra = ""
+    
+    versions = []
+    base = {}    
+    base["shape"] = f"oobb_slot"
+    base["r1"] = 5
+    base["r2"] = 10
+    base["width"] = 20
+    base["depth"]   = 10
+    base["comment_shift_line"] = 15
+    base["comment_extra"] = ""
+    base["comment_display"] = True
+    #base["m"] = ""
+    base["extra"] = {}
+
+    versions.append(copy.deepcopy(base))
+    
+    b = copy.deepcopy(base)
+    b["zz"] = "top"
+    b["comment_extra"] = "zz : top"
+    versions.append(b)
+
+    b = copy.deepcopy(base)
+    b["zz"] = "bottom"
+    b["comment_extra"] = "zz : bottom"
+    versions.append(b)
+
+    b = copy.deepcopy(base)
+    b["zz"] = "middle"
+    b["comment_extra"] = "zz : middle"
+    versions.append(b)
+
+
+
+
+    rots = []
+    rots.append([[0,0,0], {}, ""])
+    rots.append([[150,0,0], {"rot":[0,360/12,0]}, "rot_y : 360/12"])
+    rots.append([[300,0,0], {"rot":[0,90,0]}, "rot_y : 90"])
+    rots.append([[450,0,0], {"rot":[90,45,0]}, "rot_x : 90 rot_y : 45"])
+
+    for r in rots:
+        pos_current = r[0]
+        extra_extra = r[1]
+        comment_extra_extra = r[2]
+
+        for v in versions:                        
+            p3 = copy.deepcopy(kwargs)
+            p3.update(v)
+            comment_extra = v["comment_extra"]
+            p3["comment"] = f"{v['shape']}\n{comment_extra}{comment_extra_extra}"
+            comment_display = v.get("comment_display", False)
+            p3["pos"] = copy.deepcopy(pos_current)
+            p3.update(v["extra"])
+            p3.update(extra_extra)
+            oobb_base.append_full(thing, **p3)
+            pos_current[1] += pos_shift
+        
+        
+    
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+
 # wire
 def get_test_oobb_wire(**kwargs):
     # default sets

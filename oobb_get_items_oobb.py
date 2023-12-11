@@ -37,11 +37,25 @@ def get_plate_hole_dict(**kwargs):
     return p3
 
 # circle
-def get_circle(**kwargs):
+def get_circle(**kwargs):    
     p3 = copy.deepcopy(kwargs)
-    extra = p3.get("extra", "")
+    extra = p3.get("extra", "")    
+    thickness = p3.get("thickness", 3)
+    zz = p3.get("zz", "bottom")
+    pos = p3.get("pos", [0, 0, 0])
+    #extra     
     p3.pop("extra", "")
     p3["type"] = f'plate_{extra}'
+
+
+    #zz
+    if zz == "bottom":
+        pos[2] += 0
+    elif zz == "middle":
+        pos[2] += -thickness/2
+    elif zz == "top":
+        pos[2] += -thickness
+
     if extra != "":
         # Get the module object for the current file        
         function_name = "get_plate_" + extra
@@ -951,22 +965,21 @@ def get_test(**kwargs):
 def get_wheel(**kwargs):
     p3 = copy.deepcopy(kwargs)
     extra = p3.get("extra", "")
-    p3.pop("extra")
+    p3.pop("extra","")
     p3["type"] = f'wheel_{extra}'
-    if extra != "":        
-        if type(extra) == list:
-            extra = "_".join(extra)
-        # Get the module object for the current file
-        current_module = __import__("oobb_get_items_oobb_wheel")
-        if extra != "":
-            function_name = "get_wheel_" + extra
-        else:
-            function_name = "get_wheel"
-        # Call the function using the string variable
-        function_to_call = getattr(current_module, function_name)
-        return function_to_call(**kwargs)
+    
+    if type(extra) == list:
+        extra = "_".join(extra)
+    # Get the module object for the current file
+    current_module = __import__("oobb_get_items_oobb_wheel")
+    if extra != "":
+        function_name = "get_wheel_" + extra
     else:
-        Exception("No extra")
+        function_name = "get_wheel"
+    # Call the function using the string variable
+    function_to_call = getattr(current_module, function_name)
+    return function_to_call(**kwargs)
+    
 
 # wire
 def get_wire(**kwargs):

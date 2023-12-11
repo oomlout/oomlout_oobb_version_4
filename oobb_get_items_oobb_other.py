@@ -5,6 +5,206 @@ import oobb_base
 from oobb_get_items_oobb_bearing_plate import *
 import oobb_get_items_oobb_holder_electronic
 
+def get_other_bolt_stacker(**kwargs):    
+    diameter = kwargs.get("diameter", "")
+    if diameter != "":
+        return get_other_bolt_stacker_cylinder(**kwargs)
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    thickness = kwargs.get("thickness", 3)
+    thickness = 9
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos_plate = kwargs.get("pos_plate", copy.deepcopy(pos))
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    extra_mm = 1 / oobb_base.gv("osp")
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")
+    kwargs.pop("bearing", "")
+
+    shift_plate = [0,0,0]
+    pos_plate[0] += shift_plate[0]
+    pos_plate[1] += shift_plate[1]
+    pos_plate[2] += shift_plate[2]
+
+
+    #plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = f"oobb_plate"
+    p3["width"] = width + extra_mm * 2
+    p3["height"] = height + extra_mm 
+    p3["depth"] = 3
+    pos1 = copy.deepcopy(pos_plate)
+    pos1[0] += 0
+    pos1[1] += 0
+    pos1[2] += thickness
+    p3["pos"] = pos1
+    p3["zz"] = "top"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #cone
+    extra_flare_bottom = 2
+    extra_flare_top = extra_flare_bottom + 10
+    thickness_wall = 1.5
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = f"oobb_slot"
+    wid = 15*(height-1) - 1
+    p3["width"] = wid
+    radius_small = (15*width - 1)/2 + extra_flare_top 
+    radius_big = (15*width - 1 + extra_flare_bottom)/2
+    p3["radius_1"] = radius_small    
+    p3["radius_2"] = radius_big
+    p3["depth"] = thickness - 3
+    p3["rot"] = [0,0,90]
+    p3["zz"] = "top"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #cone interior void
+    p3 = copy.deepcopy(p3)
+    p3["type"] = "n"
+    p3["width"] = wid - 2*thickness_wall
+    p3["radius_2"] += -thickness_wall
+    p3["radius_1"] += -thickness_wall
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+
+
+    
+    #holes
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_holes"
+    p3["both_holes"] = True
+    pos1 = copy.deepcopy(pos)
+    oobb_base.append_full(thing, **p3)
+
+
+
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+def get_other_bolt_stacker_cylinder(**kwargs):    
+    diameter = kwargs.get("diameter", "")
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos_plate = kwargs.get("pos_plate", copy.deepcopy(pos))
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")
+    kwargs.pop("bearing", "")
+
+    shift_plate = [0,0,0]
+    pos_plate[0] += shift_plate[0]
+    pos_plate[1] += shift_plate[1]
+    pos_plate[2] += shift_plate[2]
+
+
+    #cylinder
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = f"oobb_cylinder"
+    diameter_mm = 15*diameter - 1
+    cylinder_main_diameter_mm = diameter_mm
+    
+    p3["radius"] = diameter_mm/2    
+    p3["pos"] = pos_plate    
+    p3["depth"] = thickness
+    p3["zz"] = "bottom"
+    oobb_base.append_full(thing, **p3)
+
+    #holes
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_hole_new"
+    p3["radius_name"] = "m6"
+    hole_depth = 1.5
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += 0
+    pos1[1] += 0
+    pos1[2] += 0
+    p3["pos"] = pos1
+    oobb_base.append_full(thing, **p3)
+
+    #nut
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_nut"
+    p3["radius_name"] = "m6"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += 0
+    pos1[1] += 0
+    pos1[2] += hole_depth
+    depth = 6
+    nut_depth = depth
+    p3["depth"] = depth
+    p3["pos"] = pos1
+    p3["zz"] = "bottom"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #resting cylinder
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_cylinder"
+    diameter_mm = 13    
+    cylinder_resting_diameter_mm = diameter_mm
+    p3["radius"] = diameter_mm/2
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += 0
+    pos1[1] += 0
+    pos1[2] += hole_depth + nut_depth
+    depth = 6
+    cylinder_resting_depth_mm = depth
+    p3["depth"] = depth
+    p3["pos"] = pos1
+    p3["zz"] = "bottom"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    #opening cone
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_cylinder"
+    diameter_top = cylinder_main_diameter_mm
+    diameter_bottom = cylinder_resting_diameter_mm
+    p3["r2"] = diameter_top/2
+    p3["r1"] = diameter_bottom/2
+    p3["depth"] = thickness - hole_depth - nut_depth - cylinder_resting_depth_mm
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += 0
+    pos1[1] += 0
+    pos1[2] += thickness
+    p3["pos"] = pos1
+    p3["zz"] = "top"
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+
+
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+
 def get_other_corner_cube(**kwargs):    
     return get_other_corner_cube_relief(**kwargs)
 

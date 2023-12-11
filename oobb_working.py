@@ -56,6 +56,8 @@ def main(**kwargs):
 
     # other
     #filter = "_other"
+    #filter = "bolt_stacker"
+    #filter = "oobb_other_01_06_03_ex_bolt_stacker"
     #filter = "oobb_other_02_02_29_ex_corner_cube"
 
     # plate
@@ -72,8 +74,10 @@ def main(**kwargs):
     #filter = "20_teeth_shield_sh_motor_n20"
 
     # wheel
-    filter = "twenty_twenty_aluminium_extrusion"
+    #filter = "twenty_twenty_aluminium_extrusion"
     #filter = "oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion"
+    #filter = "oobb_wheel_01_06_or_314"
+    filter = "wheel"
 
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"
@@ -92,6 +96,7 @@ def main(**kwargs):
     #filter = "oobb_test_ex_oobb_wire"
     #filter = "oobb_test_ex_motor_tt_01"
     #filter = "oobb_test_ex_oobb_nut"
+    #filter = "oobb_test_ex_oobb_shape_slot"
     #filter = "test"
 
     #ilter = ""

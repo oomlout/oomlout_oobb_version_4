@@ -270,6 +270,12 @@ def get_others(size="oobb"):
     #      corner_cube
     ots.append({"type": "other", "extra": "corner_cube","width": 2, "height": 2, "thickness": 29, "size": size})
 
+    #      bolt_stacker
+    ots.append({"type": "other", "extra": "bolt_stacker","diameter": 1.5,  "thickness": 24, "size": size})
+
+    ots.append({"type": "other", "extra": "bolt_stacker","width": 1,  "height":6, "thickness": 3, "size": size})
+
+
     return ots
 
 
@@ -710,15 +716,18 @@ def get_trays(size="oobb"):
 def get_wheels(size="oobb"):
     wheels = []
     types = [["wheel",6],["wheel",9],["wheel",15]]
+    types = [["wheel",6]]
     for t in types:
         type, thickness = t
-        wheels.append({"type": type, "thickness": thickness, "oring_type":"314", "size": size})        
-        wheels.append({"type": type, "thickness": thickness, "oring_type":"319", "size": size})
-        wheels.append({"type": type, "thickness": thickness, "oring_type":"323", "size": size})
-        wheels.append({"type": type, "thickness": thickness, "oring_type":"327", "size": size})
-        wheels.append({"type": type, "thickness": thickness, "oring_type":"333", "size": size})
-        wheels.append({"type": type, "thickness": thickness, "oring_type":"339", "size": size})
+        wheels.append({"type": type, "thickness": thickness, "oring_type":"314", "size": size})                
+        #wheels.append({"type": type, "thickness": thickness, "oring_type":"319", "size": size})
+        #wheels.append({"type": type, "thickness": thickness, "oring_type":"323", "size": size})
+        #wheels.append({"type": type, "thickness": thickness, "oring_type":"327", "size": size})
+        #wheels.append({"type": type, "thickness": thickness, "oring_type":"333", "size": size})
+        #wheels.append({"type": type, "thickness": thickness, "oring_type":"339", "size": size})
     
+    wheels.append({"type": "wheel", "diameter":3, "thickness": 9, "bearing":"606", "size": size})
+
     wheels.append({"type": "wheel", "thickness": 10.2, "diameter":24, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "696", "size": size})
     wheels.append({"type": "wheel", "thickness": 15, "diameter":29, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "606", "size": size})
 
@@ -878,6 +887,8 @@ def get_tests():
     tests = []
 
     
+    
+
     # gear test
     tests.append({"type": "test", "size": "oobb", "extra": "gear"})
 
@@ -908,6 +919,9 @@ def get_tests():
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_socket_cap"})
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_screw_self_tapping"})
     
+    # shape tests
+    tests.append({"type": "test", "size": "oobb", "extra": "oobb_shape_slot"})
+
     # wire test
     tests.append({"type": "test", "size": "oobb", "extra": "oobb_wire"})
 
