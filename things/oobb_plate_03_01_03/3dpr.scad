@@ -3,14 +3,18 @@ $fn = 50;
 
 difference() {
 	union() {
-		*translate(v = [0, 7, 0]) {
-			linear_extrude(height = 1) {
-				text(halign = "center", size = 4.5000000000, text = "COMMENT plate main", valign = "center");
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 7, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT plate main", valign = "center");
+				}
 			}
 		}
-		*translate(v = [0, 14, 0]) {
-			linear_extrude(height = 1) {
-				text(halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_p_type_3_depth_3_width_1_height_3_thickness_true_both_holes", valign = "center");
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_p_type_3_depth_3_width_1_height_3_thickness_true_both_holes", valign = "center");
+				}
 			}
 		}
 		hull() {
@@ -29,14 +33,18 @@ difference() {
 		}
 	}
 	union() {
-		*translate(v = [0, 7, 0]) {
-			linear_extrude(height = 1) {
-				text(halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 7, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
+				}
 			}
 		}
-		*translate(v = [0, 14, 0]) {
-			linear_extrude(height = 1) {
-				text(halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_3_width_1_height_3_thickness_true_both_holes", valign = "center");
+		*color(alpha = 1.0000000000, c = "gray") {
+			translate(v = [0, 14, 0]) {
+				linear_extrude(height = 1) {
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_3_width_1_height_3_thickness_true_both_holes", valign = "center");
+				}
 			}
 		}
 		translate(v = [-15.0000000000, 0.0000000000, 0]) {

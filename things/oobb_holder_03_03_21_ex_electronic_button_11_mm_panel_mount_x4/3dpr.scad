@@ -29,7 +29,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -21]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-21_pos_electronic_button_11_mm_panel_mount_x4_extra_3_width_3_height_21_thickness_-6_6_-1.5_6_6_-1.5_-6_-6_-1.5_6_-6_-1.5_pos_item_0_0_-21_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-21_pos_electronic_button_11_mm_panel_mount_x4_extra_3_width_3_height_21_thickness_-6_6_-1.5_6_6_-1.5_-6_-6_-1.5_6_-6_-1.5_pos_item_0_0_-21_pos_plate_'left'_'right'_'top'_hole_sides_true_both_holes_'left'_'right'_'top'_holes", valign = "center");
 				}
 			}
 		}
@@ -81,10 +81,10 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -18]) {
+						translate(v = [0, 0, -18]) {
 							cylinder(h = 18, r = 6.0000000000);
 						}
-						#cylinder(h = 12, r = 3.5000000000);
+						cylinder(h = 12, r = 3.5000000000);
 					}
 					union();
 				}
@@ -94,10 +94,10 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -18]) {
+						translate(v = [0, 0, -18]) {
 							cylinder(h = 18, r = 6.0000000000);
 						}
-						#cylinder(h = 12, r = 3.5000000000);
+						cylinder(h = 12, r = 3.5000000000);
 					}
 					union();
 				}
@@ -107,10 +107,10 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -18]) {
+						translate(v = [0, 0, -18]) {
 							cylinder(h = 18, r = 6.0000000000);
 						}
-						#cylinder(h = 12, r = 3.5000000000);
+						cylinder(h = 12, r = 3.5000000000);
 					}
 					union();
 				}
@@ -120,10 +120,10 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -18]) {
+						translate(v = [0, 0, -18]) {
 							cylinder(h = 18, r = 6.0000000000);
 						}
-						#cylinder(h = 12, r = 3.5000000000);
+						cylinder(h = 12, r = 3.5000000000);
 					}
 					union();
 				}

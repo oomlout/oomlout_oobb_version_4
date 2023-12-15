@@ -29,7 +29,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -3]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-3_pos_electronic_potentiometer_stick_single_axis_16_mm_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_0_rot_item_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-3_pos_electronic_potentiometer_stick_single_axis_16_mm_extra_3_width_3_height_3_thickness_0_0_-1.5_pos_item_0_0_0_rot_item_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_true_both_holes_'left'_'right'_'top'_holes", valign = "center");
 				}
 			}
 		}
@@ -39,16 +39,16 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -3.0000000000]) {
+						translate(v = [0, 0, -3.0000000000]) {
 							cylinder(h = 3, r = 1.5000000000);
 						}
-						#translate(v = [0, 0, -1.9000000000]) {
+						translate(v = [0, 0, -1.9000000000]) {
 							cylinder(h = 1.9000000000, r1 = 1.8000000000, r2 = 3.6000000000);
 						}
-						#translate(v = [0, 0, -3.0000000000]) {
+						translate(v = [0, 0, -3.0000000000]) {
 							cylinder(h = 3, r = 1.8000000000);
 						}
-						#translate(v = [0, 0, -3.0000000000]) {
+						translate(v = [0, 0, -3.0000000000]) {
 							cylinder(h = 3, r = 1.5000000000);
 						}
 					}
@@ -60,16 +60,16 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [0, 0, -3.0000000000]) {
+						translate(v = [0, 0, -3.0000000000]) {
 							cylinder(h = 3, r = 1.5000000000);
 						}
-						#translate(v = [0, 0, -1.9000000000]) {
+						translate(v = [0, 0, -1.9000000000]) {
 							cylinder(h = 1.9000000000, r1 = 1.8000000000, r2 = 3.6000000000);
 						}
-						#translate(v = [0, 0, -3.0000000000]) {
+						translate(v = [0, 0, -3.0000000000]) {
 							cylinder(h = 3, r = 1.8000000000);
 						}
-						#translate(v = [0, 0, -3.0000000000]) {
+						translate(v = [0, 0, -3.0000000000]) {
 							cylinder(h = 3, r = 1.5000000000);
 						}
 					}
@@ -81,34 +81,34 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						#translate(v = [-8.0000000000, -8.0000000000, 0]) {
+						translate(v = [-8.0000000000, -8.0000000000, 0]) {
 							cube(size = [16, 16, 12]);
 						}
-						#translate(v = [5.2500000000, 6.7500000000, -4]) {
+						translate(v = [5.2500000000, 6.7500000000, -4]) {
 							cube(size = [3, 1.5000000000, 4]);
 						}
-						#translate(v = [-8.2500000000, 6.7500000000, -4]) {
+						translate(v = [-8.2500000000, 6.7500000000, -4]) {
 							cube(size = [3, 1.5000000000, 4]);
 						}
-						#translate(v = [5.2500000000, -8.2500000000, -4]) {
+						translate(v = [5.2500000000, -8.2500000000, -4]) {
 							cube(size = [3, 1.5000000000, 4]);
 						}
-						#translate(v = [-8.2500000000, -8.2500000000, -4]) {
+						translate(v = [-8.2500000000, -8.2500000000, -4]) {
 							cube(size = [3, 1.5000000000, 4]);
 						}
-						#translate(v = [4.5000000000, -9.5000000000, 0]) {
+						translate(v = [4.5000000000, -9.5000000000, 0]) {
 							cube(size = [2, 19, 3.5000000000]);
 						}
-						#translate(v = [-6.5000000000, -9.5000000000, 0]) {
+						translate(v = [-6.5000000000, -9.5000000000, 0]) {
 							cube(size = [2, 19, 3.5000000000]);
 						}
-						#translate(v = [8.0000000000, -6.0000000000, -4]) {
+						translate(v = [8.0000000000, -6.0000000000, -4]) {
 							cube(size = [4, 12, 16]);
 						}
-						#translate(v = [-9.5000000000, -6.0000000000, -4]) {
+						translate(v = [-9.5000000000, -6.0000000000, -4]) {
 							cube(size = [1.5000000000, 12, 16]);
 						}
-						#translate(v = [-1.0000000000, -0.5000000000, 12]) {
+						translate(v = [-1.0000000000, -0.5000000000, 12]) {
 							cube(size = [2, 1, 9]);
 						}
 					}

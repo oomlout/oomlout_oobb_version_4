@@ -2,32 +2,32 @@ import oomB
 
 def dxf_copy_to_laser():
     directory_base = fr"things"
-    directory_laser= fr'C:\GH\oomlout_oobb_v3\useful_files\oobb_laser'
+    directory_laser= fr'C:\GH\oomlout_oobb_version_4\useful_files\oobb_laser'
     oomB.file_copy_search(directory_base,"laser-flat.dxf",output_dir=directory_laser)
 
 def folders_to_folder_dxf():
-    input_dir = fr'C:\GH\oomlout_oobb_v3\things'
-    output_dir = fr'C:\GH\oomlout_oobb_v3\useful_files\oobb_laser'
+    input_dir = fr'C:\GH\oomlout_oobb_version_4\things'
+    output_dir = fr'C:\GH\oomlout_oobb_version_4\useful_files\oobb_laser'
     filename = "laser_flat.dxf"
     copy_and_rename_file(input_dir, output_dir, filename)
     copy_dir = fr"C:\DB\Dropbox\LALA-Laser Files\oobb_files"
     oomB.file_copy_filter(input_dir=output_dir, output_dir=copy_dir, filter_str="")
 
 def folders_to_folder_stl():
-    input_dir = fr'C:\GH\oomlout_oobb_v3\things'
-    output_dir = fr'C:\GH\oomlout_oobb_v3\useful_files\oobb_3dpr'
+    input_dir = fr'C:\GH\oomlout_oobb_version_4\things'
+    output_dir = fr'C:\GH\oomlout_oobb_version_4\useful_files\oobb_3dpr'
     filename = "3dpr.stl"
     copy_and_rename_file(input_dir, output_dir, filename)
     
 def folders_to_folder_svg():
-    input_dir = fr'C:\GH\oomlout_oobb_v3\things'
-    output_dir = fr'C:\GH\oomlout_oobb_v3\useful_files\oobb_svg'
+    input_dir = fr'C:\GH\oomlout_oobb_version_4\things'
+    output_dir = fr'C:\GH\oomlout_oobb_version_4\useful_files\oobb_svg'
     filename = "laser-flat.svg"
     copy_and_rename_file(input_dir, output_dir, filename)
 
 def folders_to_folder_png():
-    input_dir = fr'C:\GH\oomlout_oobb_v3\things'
-    output_dir = fr'C:\GH\oomlout_oobb_v3\useful_files\oobb_png'
+    input_dir = fr'C:\GH\oomlout_oobb_version_4\things'
+    output_dir = fr'C:\GH\oomlout_oobb_version_4\useful_files\oobb_png'
     filename = "3dpr.png"
     copy_and_rename_file(input_dir, output_dir, filename)
 

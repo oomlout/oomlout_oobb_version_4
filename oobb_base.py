@@ -351,6 +351,15 @@ def dump(mode="json"):
             json.dump(oobb.things, outfile)
         with open('variables.json', 'w') as outfile:
             json.dump(oobb.variables, outfile)
+    elif mode == "pickle":
+        import pickle
+        #create temporary directory
+        if not os.path.exists("temporary"):
+            os.makedirs("temporary")
+        with open('temporary/things.pickle', 'wb') as outfile:
+            pickle.dump(oobb.things, outfile)
+        with open('temporary/variables.pickle', 'wb') as outfile:
+            pickle.dump(oobb.variables, outfile)
     elif mode == "folder":
         for thing in oobb.things:
             #print a single dot with no new line
@@ -401,6 +410,8 @@ def build_thing(thing, save_type="all", overwrite=True, modes=["3dpr", "laser", 
         start = 1.5
         if layers != 1:
             start = 1.5 - (layers / 2)*3
+        if "bunting" in thing:
+            start = 0.5
         opsc.opsc_make_object(f'things/{thing}/{mode}.scad', oobb.things[thing]["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)
         # make the description file
         with open(f'things/{thing}/{mode}.txt', 'w') as outfile:
@@ -566,10 +577,37 @@ def oobb_easy_string_params(**kwargs):
 
 def append_full(thing, **kwargs):
     #test for objects if so iterate
-    objects = kwargs.get("objects", [])
+    objects_raw = kwargs.get("objects", [])
+    #objects might be a list of list of lists unpop it to be a single list of dicts do it recursively
+
+    objects = []
+    for object in objects_raw:
+        if type(object) == list:
+            for object_2 in object:
+                if type(object_2) == list:
+                    for object_3 in object_2:
+                        if type(object_3) == list:
+                            for object_4 in object_3:
+                                if type(object_4) == list:
+                                    for object_5 in object_4:
+                                        if type(object_5) == list:
+                                            for object_6 in object_5:
+                                                objects.append(object_6)
+                                        else:
+                                            objects.append(object_5)
+                                else:
+                                    objects.append(object_4)
+                        else:
+                            objects.append(object_3)
+                else:
+                    objects.append(object_2)        
+        else:
+            objects.append(object)
+    
+
     m = kwargs.get("m", "")
     if objects != []:
-        for object in objects:     
+        for object in objects:            
             object["m"] = m
             append_full(thing, **object)
         return    

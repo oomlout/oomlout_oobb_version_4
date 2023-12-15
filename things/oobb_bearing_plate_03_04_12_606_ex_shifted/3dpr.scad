@@ -714,7 +714,7 @@ difference() {
 								}
 								difference() {
 									translate(v = [0, 0, -50]) {
-										cylinder(h = 100, r = 7.5250000000);
+										cylinder(h = 100, r = 6.2750000000);
 									}
 								}
 							}
@@ -1564,7 +1564,7 @@ difference() {
 				}
 				difference() {
 					translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 7.5250000000);
+						cylinder(h = 100, r = 6.2750000000);
 					}
 				}
 			}

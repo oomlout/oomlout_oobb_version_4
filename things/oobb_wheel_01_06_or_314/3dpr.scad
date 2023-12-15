@@ -38,26 +38,10 @@ difference() {
 				}
 			}
 		}
-		#rotate_extrude(angle = 360) {
+		rotate_extrude(angle = 360) {
 			translate(v = [12.8750000000, 0, 0]) {
 				circle(r = 2.6650000000);
 			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_negative_type_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter", valign = "center");
-				}
-			}
-		}
-		translate(v = [-250, -250, 0]) {
-			cube(size = [500, 500, 500]);
-		}
-		translate(v = [-250, -250, 0]) {
-			cube(size = [500, 500, 500]);
-		}
-		translate(v = [-250, -250, 0]) {
-			cube(size = [500, 500, 500]);
 		}
 	}
 }

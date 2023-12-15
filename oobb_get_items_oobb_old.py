@@ -490,12 +490,26 @@ def get_bunting_alphabet(**kwargs):
     width_working = width - 2
     text_size = width_working * 95/5
 
-
-    p2 = copy.deepcopy(kwargs)
-    p2["height"] = thickness
-    p2["hole_type"] = ["top","bottom","just_middle"]
+    # plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = "oobb_plate"
+    p3["depth"] = thickness
+    oobb_base.append_full(thing, **p3)
+    
+    # holes
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = "oobb_holes"
+    p3["height"] = 1
+    p3["holes"] = ["all"]
+    p3["both_holes"] = True
+    p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
     # find the start point needs to be half the width_mm plus half ob.gv("osp")
     
+
+
     shift_y = 0
     if width == 3:
         shift_y = -5
@@ -505,7 +519,7 @@ def get_bunting_alphabet(**kwargs):
     p2 = copy.deepcopy(kwargs)
     p2["type"] = "p"
     p2["shape"] = "text"
-    p2["text"] = extra
+    p2["text"] = extra.upper()
     p2["size"] = text_size
     p2["pos"] = [0,shift_y,0]
     p2["height"] = thickness
@@ -1379,7 +1393,7 @@ def get_holder_motor_servo_micro_01(**kwargs):
             "only_screws": True,  
             "m": "#"          
             }
-    add_items.extend(get_bearing_plate(**p2)["components"])    
+    #add_items.extend(get_bearing_plate(**p2)["components"])    
     add_items_output = []
     #only add 3dpr and remove back hole
     for item in add_items:
@@ -2290,7 +2304,7 @@ def get_shaft_coupler(**kwargs):
     #kwargs.update({"exclude_d3_holes": True})
     kwargs.update({"exclude_center_holes": True})
     
-    th.extend(get_circle(**kwargs)["components"])
+    #th.extend(get_circle(**kwargs)["components"])
     # adding connecting screws
     spac = 7.5
     holes = [[0,spac],[spac,0],[-spac,0],[0,-spac]]
@@ -2325,11 +2339,10 @@ def get_shaft(**kwargs):
     
     if "countersunk" in extra:
         th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk",
-              radius_name="m3", pos=[0, 0, thickness+1.5], depth= thickness + 3, include_nut = False, rotY = 180, m="#"))
+              radius_name="m3", pos=[0, 0, -1.5], depth= thickness + 3, include_nut = False, rot = [0,180,0], m=""))
     
     if "nut" in extra:
-        th.extend(ob.oobb_easy(t="n", s="oobb_nut",
-              radius_name="m3", pos=[0, 0, -1.5-.6], depth= thickness + 3, m="#"))
+        th.extend(ob.oobb_easy(t="n", s="oobb_nut", radius_name="m3", pos=[0, 0, -1.5], zz="bottom", overhang=True, m=""))
 
     return thing
 
@@ -4469,7 +4482,7 @@ def get_tray_thin(**kwargs):
     for h in holes:          
         x,y = ob.get_hole_pos(h[0], h[1], width, height)        
         pos = [x + base_pos[0], y + base_pos[1], base_pos[2]+wall_thickness]  
-        th.extend(ob.oobb_easy(t="n", s=f"oobb_screw_socket_cap", radius_name="m3", depth=10, pos=pos, include_nut=False, m=""))
+        th.extend(ob.oobb_easy(t="n", s=f"oobb_screw_socket_cap", radius_name="m3", depth=10, pos=pos, include_nut=False, m="", overhang = False))
 
 
     return thing

@@ -1,0 +1,26 @@
+-   depth: 1
+    extra: '1'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_plate
+    size: oobb
+    thickness: 1
+    type: p
+    width: 5
+-   both_holes: true
+    extra: '1'
+    height: 1
+    holes:
+    - all
+    m: '#'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_holes
+    size: oobb
+    thickness: 1
+    type: n
+    width: 5

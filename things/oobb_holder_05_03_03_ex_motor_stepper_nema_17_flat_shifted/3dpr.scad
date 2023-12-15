@@ -39,7 +39,7 @@ difference() {
 			rotate(a = [0, 0, 0]) {
 				difference() {
 					union() {
-						translate(v = [15.2660000000, 15.2660000000, 3]) {
+						translate(v = [15.5000000000, 15.5000000000, 3]) {
 							rotate(a = [0, 0, 0]) {
 								difference() {
 									union() {
@@ -60,7 +60,7 @@ difference() {
 								}
 							}
 						}
-						translate(v = [-15.2660000000, 15.2660000000, 3]) {
+						translate(v = [-15.5000000000, 15.5000000000, 3]) {
 							rotate(a = [0, 0, 0]) {
 								difference() {
 									union() {
@@ -81,7 +81,7 @@ difference() {
 								}
 							}
 						}
-						translate(v = [15.2660000000, -15.2660000000, 3]) {
+						translate(v = [15.5000000000, -15.5000000000, 3]) {
 							rotate(a = [0, 0, 0]) {
 								difference() {
 									union() {
@@ -102,7 +102,7 @@ difference() {
 								}
 							}
 						}
-						translate(v = [-15.2660000000, -15.2660000000, 3]) {
+						translate(v = [-15.5000000000, -15.5000000000, 3]) {
 							rotate(a = [0, 0, 0]) {
 								difference() {
 									union() {

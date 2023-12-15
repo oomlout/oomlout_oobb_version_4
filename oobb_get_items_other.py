@@ -49,7 +49,7 @@ def get_screw_countersunk(**kwargs):
 
     thing.update({"components": []})
     thing["components"].extend(ob.oe(
-        t="positive", s="oobb_countersunk", rn=wid, depth=depth, include_nut=False))
+        t="positive", s="oobb_screw_countersunk", rn=wid, depth=depth, include_nut=False))
 
     return thing
 

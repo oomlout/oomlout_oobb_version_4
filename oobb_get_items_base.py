@@ -1156,6 +1156,9 @@ def get_oobb_nut(**kwargs):
     return return_value_2
 
 # plate
+def get_oobb_pl(**kwargs):
+    return get_oobb_plate(**kwargs)
+
 def get_oobb_plate(**kwargs):
     kwargs = copy.deepcopy(kwargs)
     width = kwargs.get("width", 1)

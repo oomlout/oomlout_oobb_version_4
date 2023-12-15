@@ -211,6 +211,9 @@ def copy_folder(folder_things, folder, folder_bundle, name):
                     )    
     details.append({"folder_bundle" : "png",
                     "files" : ["3dpr.png", "laser.png", "laser_flat.png", "true.png"]}
+                    )  
+    details.append({"folder_bundle" : "laser",
+                    "files" : ["laser_flat.dxf", "laser_flat.svg", "laser_flat.pdf"]}
                     )
     
     folder_bundle_start = folder_bundle
@@ -235,7 +238,7 @@ def copy_folder(folder_things, folder, folder_bundle, name):
                 shutil.copyfile(src, dst)
                 #print a dot with no new line
                 print(".", end="")
-                #print (f"        copied {src} to {dst}")
+                print (f"        copied {src} to {dst}")
             else:
                 print(f"        {src} does not exist")
                 pass
@@ -246,36 +249,37 @@ def copy_folder_production(**kwargs):
     folder_oobb_production_folder = f"{folder_bundle}/oobb_production"
     file_oobb_produciont_yaml = f"{folder_oobb_production_folder}/oobb_production.yaml"
     #load details into yaml
-    with open(file_oobb_produciont_yaml, "r") as f:
-        details = yaml.load(f, Loader=yaml.FullLoader)
-    
-    production_files = details["oobb_production_file"]
-    for production_file in production_files:
-        file_source = production_file["file_source"]
-        file_source = f"{folder_bundle}/{file_source}"
-        file_render = production_file["file_render"]
-        file_render = f"{folder_bundle}/{file_render}"
-        file_type = production_file["file_type"]
-        file_render_extension = production_file.get("file_render_extension","png")        
-        file_extension = production_file["file_extension"]
-        index = production_file["index"]
-        file_destination = f"{folder_oobb_production_folder}/{file_type}_{index}.{file_extension}"
-        render_destination = f"{folder_oobb_production_folder}/images/{file_type}_{index}.{file_render_extension}"
-        try:
-            shutil.copyfile(file_source, file_destination)
-            #if file_render fodler doesn't exist make it
-            if not os.path.isdir(f"{folder_oobb_production_folder}/images"):
-                os.makedirs(f"{folder_oobb_production_folder}/images")
-            shutil.copyfile(file_render, render_destination)
-        except Exception as e:
-            print(f"    {e}")
-    import oom_markdown
-    p3 = {}
-    p3["file_template"] = details.get("template", "templates/oobb_production_readme.md.j2")
-    p3["file_output"] = f"{folder_oobb_production_folder}/readme.md"
-    p3["dict_data"] = details
-    
-    oom_markdown.get_jinja2_template(**p3)
+    if os.path.isfile(file_oobb_produciont_yaml):
+        with open(file_oobb_produciont_yaml, "r") as f:
+            details = yaml.load(f, Loader=yaml.FullLoader)
+        
+        production_files = details["oobb_production_file"]
+        for production_file in production_files:
+            file_source = production_file["file_source"]
+            file_source = f"{folder_bundle}/{file_source}"
+            file_render = production_file["file_render"]
+            file_render = f"{folder_bundle}/{file_render}"
+            file_type = production_file["file_type"]
+            file_render_extension = production_file.get("file_render_extension","png")        
+            file_extension = production_file["file_extension"]
+            index = production_file["index"]
+            file_destination = f"{folder_oobb_production_folder}/{file_type}_{index}.{file_extension}"
+            render_destination = f"{folder_oobb_production_folder}/images/{file_type}_{index}.{file_render_extension}"
+            try:
+                shutil.copyfile(file_source, file_destination)
+                #if file_render fodler doesn't exist make it
+                if not os.path.isdir(f"{folder_oobb_production_folder}/images"):
+                    os.makedirs(f"{folder_oobb_production_folder}/images")
+                shutil.copyfile(file_render, render_destination)
+            except Exception as e:
+                print(f"    {e}")
+        import oom_markdown
+        p3 = {}
+        p3["file_template"] = details.get("template", "templates/oobb_production_readme.md.j2")
+        p3["file_output"] = f"{folder_oobb_production_folder}/readme.md"
+        p3["dict_data"] = details
+        
+        oom_markdown.get_jinja2_template(**p3)
 
 
         
@@ -286,7 +290,9 @@ def copy_folder_production(**kwargs):
 
 if __name__ == "__main__":
     kwargs = {}
-    kwargs["filter"] = "servo"
+    #filter = "bunting"
+    filter = ""
+    kwargs["filter"] = filter
     
     rend = False
     #rend = True

@@ -34,6 +34,7 @@ def get_oobb_bearing(**kwargs):
         p3["id"] = id
         p3["od"] = od
         p3["depth"] = depth
+        
         p3["shape"] = "bearing"
 
         pos1 = copy.deepcopy(pos)
@@ -45,7 +46,7 @@ def get_oobb_bearing(**kwargs):
             pos1[2] += depth/2
 
         p3["pos"] = pos1
-        p3["clearance"] = ob.gv(f"bearing_{bearing_type}_clearance", mode)
+        p3["clearance_bearing"] = ob.gv(f"bearing_{bearing_type}_clearance", mode)
         p3.update({"exclude_clearance": exclude_clearance})
         objects.append(opsc.opsc_easy(**p3))
 
@@ -2125,12 +2126,14 @@ def get_oobb_cylinder_old_1(**kwargs):
 
 def get_oobb_nut_loose(**kwargs):
     kwargs["loose"] = True
-    return get_oobb_nut(**kwargs)
+    import oobb_get_items_base
+    return oobb_get_items_base.get_oobb_nut(**kwargs)
 
 
 def get_oobb_nut_through(**kwargs):
     kwargs["through"] = True
-    return get_oobb_nut(**kwargs)
+    import oobb_get_items_base
+    return oobb_get_items_base.get_oobb_nut(**kwargs)
 
 
 def get_oobb_nut_old_1(loose=False, through=False, **kwargs):

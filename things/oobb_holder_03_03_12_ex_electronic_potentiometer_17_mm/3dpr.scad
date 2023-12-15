@@ -29,7 +29,7 @@ difference() {
 		*color(alpha = 1.0000000000, c = "gray") {
 			translate(v = [0, 14, -12]) {
 				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-12_pos_electronic_potentiometer_17_mm_extra_3_width_3_height_12_thickness_0_0_-1.5_pos_item_0_0_90_rot_item_0_0_-12_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes", valign = "center");
+					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-12_pos_electronic_potentiometer_17_mm_extra_3_width_3_height_12_thickness_0_0_-1.5_pos_item_0_0_90_rot_item_0_0_-12_pos_plate_'left'_'right'_'top'_hole_sides_true_both_holes_'left'_'right'_'top'_holes", valign = "center");
 				}
 			}
 		}

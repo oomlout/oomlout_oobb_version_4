@@ -26,6 +26,10 @@ def main(**kwargs):
     #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
     #filter = "606"
 
+    # bunting
+    #filter = "bunting"
+    #filter = "oobb_bunting_alphabet_13"
+
     # circle
     #filter = "circle_1d5"
 
@@ -62,6 +66,8 @@ def main(**kwargs):
 
     # plate
     #filter = "ninety_degree"
+    #filter = "ex_t"
+    filter = "oobb_plate_03_02_03_ex_t"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
@@ -73,11 +79,15 @@ def main(**kwargs):
     #filter = "72_teeth_shield_sh_m6_grub"
     #filter = "20_teeth_shield_sh_motor_n20"
 
+    # shaft
+    #filter = "shaft"
+
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"
     #filter = "oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion"
     #filter = "oobb_wheel_01_06_or_314"
-    filter = "wheel"
+    #filter = "oobb_wheel_1d75_7d5_606"
+    #filter = "wheel"
 
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"
@@ -99,7 +109,7 @@ def main(**kwargs):
     #filter = "oobb_test_ex_oobb_shape_slot"
     #filter = "test"
 
-    #ilter = ""
+    #filter = ""
 
 
     oobb_make_sets.make_all(filter=filter)
@@ -122,9 +132,11 @@ def main(**kwargs):
     #copy_files = True
     copy_files = False
     if copy_files:
-        copy_files()
+        oobb_base.dump("pickle")
+        copy_files_routine()
         
-def copy_files(**kwargs):
+        
+def copy_files_routine(**kwargs):
         oobb_markdown.make_markdown()
         oobb_dxf_laser_copy.folders_to_folder_dxf()
         oobb_dxf_laser_copy.folders_to_folder_stl()

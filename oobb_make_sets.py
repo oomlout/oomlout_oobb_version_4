@@ -70,7 +70,7 @@ def get_buntings(size="oobb"):
     items = []
     
     #letters = "HELEN"
-    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789".lower()
     #letters = "AZO"
     widths = [3,5,7,13]
     #widths = [13]
@@ -202,10 +202,10 @@ def get_holders(size="oobb"):
     hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount_x4","width": 3, "height": 3, "thickness": 3, "size": size})
     hls.append({"type": "holder", "extra": "electronic_button_11_mm_panel_mount_x4","width": 3, "height": 3, "thickness": 21, "size": size})
     #      mcu
-    hls.append({"type": "holder", "extra": "electronic_mcu_atmega328_shennie","width": 3, "height": 4, "thickness": 6, "size": size})
+    #hls.append({"type": "holder", "extra": "electronic_mcu_atmega328_shennie","width": 3, "height": 4, "thickness": 6, "size": size})
     #      microswitch_standard
-    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 3, "size": size}) 
-    hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 6, "size": size})            
+    #hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 3, "size": size}) 
+    #hls.append({"type": "holder", "extra": "electronic_microswitch_standard","width": 3, "height": 3, "thickness": 6, "size": size})            
     #      potentimeter
     #            17_mm
     hls.append({"type": "holder", "extra": "electronic_potentiometer_17_mm","width": 3, "height": 3, "thickness": 12, "size": size})
@@ -435,6 +435,18 @@ def get_plates(size="oobb"):
         for siz in sizes:
             plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"l", "size": size})
     
+    # t
+    thicknesses = [3,15]
+    thicknesses = [3]
+    sizes = []
+    sizes.append([3,2])    
+    sizes.append([3,3])  
+    sizes.append([5,2])  
+    sizes.append([5,5])  
+    for thick in thicknesses:
+        for siz in sizes:
+            plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"t", "size": size})
+
     # u
     thicknesses = [3,15]
     sizes = []
@@ -595,7 +607,7 @@ def get_shaft_couplers(size="oobb"):
 def get_soldering_jigs(size="oobb"):
     sjs = []
     
-    sjs.append({"type": "soldering_jig", "extra": "electronic_mcu_pi_pico_socket", "width": 3, "height": 5, "thickness": 9, "size": size})
+    #sjs.append({"type": "soldering_jig", "extra": "electronic_mcu_pi_pico_socket", "width": 3, "height": 5, "thickness": 9, "size": size})
     
     return sjs
 
@@ -666,8 +678,8 @@ def get_tool_holders(size="oobb"):
     tools.append(["tool_tdpb_glue_stick_prit_medium",4,5,28+extra_thick])
 
     #specialty tools
-    tools.append(["tool_electronic_crimp_jst_wc_260",5,5,24+extra_thick])
-    tools.append(["tool_electronic_crimp_molex_11010185",7,5,18+extra_thick])
+    #tools.append(["tool_electronic_crimp_jst_wc_260",5,5,24+extra_thick])
+    #tools.append(["tool_electronic_crimp_molex_11010185",7,5,18+extra_thick])
 
     for tool in tools:
         tool_holders.append({"type": "tool_holder_vertical", "width": tool[1], "height": tool[2],  "thickness": tool[3], "extra": tool[0], "size": size})
@@ -727,6 +739,7 @@ def get_wheels(size="oobb"):
         #wheels.append({"type": type, "thickness": thickness, "oring_type":"339", "size": size})
     
     wheels.append({"type": "wheel", "diameter":3, "thickness": 9, "bearing":"606", "size": size})
+    wheels.append({"type": "wheel", "diameter":1.75, "thickness": 7.5, "bearing":"606", "size": size})
 
     wheels.append({"type": "wheel", "thickness": 10.2, "diameter":24, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "696", "size": size})
     wheels.append({"type": "wheel", "thickness": 15, "diameter":29, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "606", "size": size})

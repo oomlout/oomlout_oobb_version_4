@@ -23,18 +23,22 @@ def get_wheel(**kwargs):
         idt = oobb_base.gv(f"oring_{oring_type}_id_tight", "true")            
         radius = idt + (od-id)/2 + 0.5 - minus_bit #(to account for the minusing) 
         diameter_big = radius*2/oobb_base.gv("osp")
+        diameter = int(round(diameter_big, 0))
+        if diameter % 2 == 0:
+            diameter -= 1
     else:
         diameter = kwargs.get("diameter", 3)
         diameter_big = diameter
         radius = (diameter * 15 - 1)/2
-    diameter = int(round(diameter_big, 0))
+    
     #if diameter is even take one off to make it odd
-    if diameter % 2 == 0:
-        diameter -= 1
+    
 
     kwargs.update({"diameter": diameter})
     thing = oobb_base.get_default_thing(**kwargs)    
+    
     kwargs.update({"diameter": diameter_big})
+    
     kwargs.pop("size","")
     
     #circle
@@ -64,7 +68,7 @@ def get_wheel(**kwargs):
         p3["type"] = "negative"
         p3["shape"] = "oobb_oring"
         p3["oring_type"] = oring_type
-        p3["m"] = "#"
+        #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
     else:
         p3 = copy.deepcopy(kwargs)
@@ -73,7 +77,7 @@ def get_wheel(**kwargs):
         radius_tube = 5
         p3["depth"] = radius_tube
         p3["id"] = radius - radius_tube/2
-        p3["m"] = "#"
+        #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
 
     
@@ -82,8 +86,10 @@ def get_wheel(**kwargs):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "negative"
         p3["shape"] = "oobb_bearing"
+        if diameter_big == 1.75:
+            p3["clearance"] = "top"
         p3["bearing"] = bearing
-        #p3["m"] = "#"
+        p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
         connecting_screws = True
 
@@ -93,13 +99,31 @@ def get_wheel(**kwargs):
         oobb_get_items_oobb_bearing_plate.get_bearing_plate_connecting_screw_perimeter(thing = thing, **kwargs)
         
 
-    if bearing != "" or oring_type != "":
+    if bearing != "" and diameter_big != 1.75:
+        #add second side
+        #shift coomponents to the right and down half thickness
+        components_second = copy.deepcopy(thing["components"])
+
+        #put into a rotation object
+        return_value_2 = {}
+        return_value_2["type"]  = "rotation"
+        return_value_2["typetype"]  = "p"
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += 50
+        return_value_2["pos"] = pos1
+        return_value_2["rot"] = [180,0,0]
+        return_value_2["objects"] = components_second
+        return_value_2 = [return_value_2]
+
+        thing["components"] = thing["components"] + return_value_2
+
         #slice
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "negative"
         p3["shape"] = "oobb_slice"
         #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
+
 
     return thing
 
