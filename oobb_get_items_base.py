@@ -123,6 +123,55 @@ def get_oobb_cube_new(**kwargs):
     return return_value_2
 
 
+def get_oobb_cylinder_hollow(**kwargs):
+    # setting up for rotation object
+    typ = kwargs.get("type", "p")
+    kwargs["type"] = "positive" #needs to be positive for the difference to work
+    rot_original = get_rot(**kwargs)   
+    kwargs.pop("rot", None)
+    kwargs.pop("rot_x", None)
+    kwargs.pop("rot_y", None)
+    kwargs.pop("rot_z", None)
+
+    # storing pos and popping it out to add it in rotation element     
+    pos_original = copy.deepcopy(copy.deepcopy(kwargs.get("pos", [0, 0, 0])))
+    pos_original_original = copy.deepcopy(pos_original)
+    kwargs.pop("pos", None)
+    pos = [0,0,0]
+    kwargs["pos"] = pos
+
+    return_value = []
+
+    wall_thickness = kwargs.get("wall_thickness", 2)
+
+    #positive_cylinder
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = "cylinder"
+    p3["type"] = "positive"
+    return_value.append(opsc.opsc_easy(**p3))
+
+    #negative_cylinder
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = "cylinder"
+    p3["type"] = "negative"
+    if "r1" in p3:
+        p3["r1"] = p3["r1"] - wall_thickness
+        p3["r2"] = p3["r2"] - wall_thickness
+    else:
+        p3["r"] = p3["r"] - wall_thickness
+    return_value.append(opsc.opsc_easy(**p3))
+
+    # packaging as a rotation object
+    return_value_2 = {}
+    return_value_2["type"]  = "rotation"
+    return_value_2["typetype"]  = typ
+    return_value_2["pos"] = pos_original
+    return_value_2["rot"] = rot_original
+    return_value_2["objects"] = return_value
+    return_value_2 = [return_value_2]
+
+    return return_value_2
+
 # cylinder
 def get_oobb_cylinder(**kwargs):
     zz = kwargs.get("zz", "center")

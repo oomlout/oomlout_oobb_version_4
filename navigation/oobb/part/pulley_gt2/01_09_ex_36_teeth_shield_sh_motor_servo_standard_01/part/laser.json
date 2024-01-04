@@ -1,0 +1,70 @@
+[
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "36_teeth_shield",
+        "shaft": "motor_servo_standard_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            1
+        ],
+        "shape": "pulley_gt2",
+        "number_of_teeth": 36,
+        "depth": 9.5
+    },
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "36_teeth_shield",
+        "shaft": "motor_servo_standard_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0.5
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 12.464968152866241,
+        "depth": 1
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "36_teeth_shield",
+        "shaft": "motor_servo_standard_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "shaft": "motor_servo_standard_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            2
+        ],
+        "shape": "oobb_motor_servo_standard_01",
+        "part": "shaft",
+        "rot": [
+            0,
+            0,
+            45
+        ],
+        "overhang": false,
+        "m": "#"
+    }
+]

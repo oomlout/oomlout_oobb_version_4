@@ -1,0 +1,130 @@
+-   depth: 3
+    extra: electronic_potentiometer_stick_single_axis_16_mm
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -3
+    pos_item:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -3
+    rot_item:
+    - 0
+    - 0
+    - 0
+    shape: oobb_plate
+    thickness: 3
+    type: positive
+    width: 3
+-   both_holes: true
+    extra: electronic_potentiometer_stick_single_axis_16_mm
+    height: 3
+    hole_sides:
+    - left
+    - right
+    - top
+    holes:
+    - left
+    - right
+    - top
+    pos:
+    - 0
+    - 0
+    - -3
+    pos_item:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -3
+    rot_item:
+    - 0
+    - 0
+    - 0
+    shape: oobb_holes
+    thickness: 3
+    type: p
+    width: 3
+-   depth: 3
+    extra: electronic_potentiometer_stick_single_axis_16_mm
+    height: 3
+    nut: false
+    pos:
+    - 7.5
+    - -15
+    - 0
+    pos_item:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -3
+    radius_name: m3
+    rot_item:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 3
+    type: negative
+    width: 3
+-   depth: 3
+    extra: electronic_potentiometer_stick_single_axis_16_mm
+    height: 3
+    nut: false
+    pos:
+    - 7.5
+    - 15
+    - 0
+    pos_item:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -3
+    radius_name: m3
+    rot_item:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 3
+    type: negative
+    width: 3
+-   extra: electronic_potentiometer_stick_single_axis_16_mm
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -1.5
+    pos_item:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -3
+    rot:
+    - 0
+    - 0
+    - 0
+    rot_item:
+    - 0
+    - 0
+    - 0
+    shape: oobb_electronic_potentiometer_stick_single_axis_16_mm
+    thickness: 3
+    type: negative
+    width: 3

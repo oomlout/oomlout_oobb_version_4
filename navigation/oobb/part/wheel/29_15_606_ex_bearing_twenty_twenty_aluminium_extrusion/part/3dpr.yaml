@@ -1,0 +1,116 @@
+-   bearing: '606'
+    both_holes: true
+    depth: 6
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    radius: 14.5
+    shape: oobb_cylinder
+    thickness: 15
+    type: positive
+-   bearing: '606'
+    both_holes: true
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    radius: 5
+    shape: oobb_hole
+    thickness: 15
+    type: negative
+-   bearing: '606'
+    both_holes: true
+    depth: 4.5
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 5.25
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    r1: 14.5
+    r2: 10.5
+    shape: oobb_cylinder
+    thickness: 15
+    type: positive
+-   bearing: '606'
+    both_holes: true
+    depth: 4.5
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - -5.25
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    r1: 10.5
+    r2: 14.5
+    shape: oobb_cylinder
+    thickness: 15
+    type: positive
+-   bearing: '606'
+    both_holes: true
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 7.5
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    shape: oobb_bearing
+    thickness: 15
+    type: negative
+    zz: top
+-   bearing: '606'
+    both_holes: true
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - -7.5
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    shape: oobb_bearing
+    thickness: 15
+    type: negative
+    zz: bottom
+-   bearing: '606'
+    both_holes: true
+    diameter: 29
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -7.5
+    shape: oobb_slice
+    thickness: 15
+    type: negative

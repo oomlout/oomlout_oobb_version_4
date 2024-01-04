@@ -1,0 +1,150 @@
+[
+    {
+        "type": "positive",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_circle",
+        "depth": 7.5,
+        "radius": 12.625,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle"
+    },
+    {
+        "type": "negative",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": false,
+        "shape": "oobb_holes",
+        "circle": true,
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "negative",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_tire",
+        "depth": 5,
+        "id": 10.125,
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "negative",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_bearing",
+        "clearance": "top",
+        "m": "#",
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            15.0,
+            7.5,
+            3.75
+        ],
+        "rot": [
+            0,
+            0,
+            30.0
+        ],
+        "depth": 7.5,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -15.0,
+            -7.5,
+            3.75
+        ],
+        "rot": [
+            0,
+            0,
+            30.0
+        ],
+        "depth": 7.5,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            7.5,
+            -15.0,
+            -3.75
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 7.5,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    },
+    {
+        "type": "n",
+        "diameter": 1.75,
+        "thickness": 7.5,
+        "bearing": "606",
+        "both_holes": true,
+        "shape": "oobb_screw_countersunk",
+        "pos": [
+            -7.5,
+            15.0,
+            -3.75
+        ],
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 7.5,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true
+    }
+]

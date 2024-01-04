@@ -135,6 +135,14 @@ def get_default_thing(**kwargs):
     folder = f"things/{id}"
     thing.update({"folder": folder})
 
+    ##make folder
+    #if not os.path.exists(folder):
+    #    os.makedirs(folder)
+
+    #dump thing to working.yaml
+    #import yaml
+    #with open(f'{folder}/working.yaml', 'w') as outfile:
+    #    yaml.dump(thing, outfile, indent=4)
 
     return thing
 

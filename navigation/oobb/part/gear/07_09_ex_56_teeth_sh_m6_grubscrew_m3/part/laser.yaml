@@ -1,0 +1,55 @@
+-   depth: 9
+    diameter: 7
+    diametral_pitch: 0.53333333
+    extra: 56_teeth
+    number_of_teeth: 56
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m6_grubscrew_m3
+    shape: gear
+    thickness: 9
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 7
+    extra: 56_teeth
+    height: 7
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m6_grubscrew_m3
+    shape: oobb_holes
+    thickness: 9
+    type: n
+    width: 7
+-   diameter: 7
+    extra: 56_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    shaft: m6_grubscrew_m3
+    shape: oobb_hole
+    thickness: 9
+    type: n
+-   depth: 100
+    diameter: 7
+    extra: 56_teeth
+    pos:
+    - 0
+    - 0
+    - 4.5
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 45
+    shaft: m6_grubscrew_m3
+    shape: oobb_hole
+    thickness: 9
+    type: n

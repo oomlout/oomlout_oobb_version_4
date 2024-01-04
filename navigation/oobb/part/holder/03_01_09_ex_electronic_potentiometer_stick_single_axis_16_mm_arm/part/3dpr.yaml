@@ -1,0 +1,106 @@
+-   depth: 9
+    extra: electronic_potentiometer_stick_single_axis_16_mm_arm
+    height: 1
+    pos:
+    - 15.0
+    - 0
+    - -4.5
+    pos_plate:
+    - 15.0
+    - 0
+    - -4.5
+    shape: oobb_plate
+    thickness: 9
+    type: positive
+    width: 3
+-   extra: electronic_potentiometer_stick_single_axis_16_mm_arm
+    height: 1
+    pos:
+    - 11
+    - 0
+    - -8
+    pos_plate:
+    - 15.0
+    - 0
+    - -4.5
+    shape: oobb_cube_center
+    size:
+    - 10
+    - 5
+    - 15
+    thickness: 9
+    type: positive
+    width: 3
+-   extra: electronic_potentiometer_stick_single_axis_16_mm_arm
+    height: 1
+    pos:
+    - -4
+    - 0
+    - 0
+    pos_plate:
+    - 15.0
+    - 0
+    - -4.5
+    radius_name: m2d5
+    shape: oobb_hole
+    thickness: 9
+    type: negative
+    width: 3
+-   extra: electronic_potentiometer_stick_single_axis_16_mm_arm
+    height: 1
+    holes: single
+    loc:
+    -   - 3
+        - 1
+    -   - 2
+        - 1
+    pos:
+    - 15.0
+    - 0
+    - -4.5
+    pos_plate:
+    - 15.0
+    - 0
+    - -4.5
+    shape: oobb_holes
+    thickness: 9
+    type: negative
+    width: 3
+-   extra: electronic_potentiometer_stick_single_axis_16_mm_arm
+    height: 1
+    holes: single
+    loc:
+    -   - 2.5
+        - 1
+    pos:
+    - 15.0
+    - 0
+    - -4.5
+    pos_plate:
+    - 15.0
+    - 0
+    - -4.5
+    radius_name: m3
+    shape: oobb_holes
+    thickness: 9
+    type: negative
+    width: 3
+-   extra: electronic_potentiometer_stick_single_axis_16_mm_arm
+    height: 1
+    pos:
+    - -10
+    - 0
+    - -12.5
+    pos_plate:
+    - 15.0
+    - 0
+    - -4.5
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_electronic_potentiometer_stick_single_axis_16_mm
+    thickness: 9
+    type: negative
+    width: 3
+    width_stick: 10

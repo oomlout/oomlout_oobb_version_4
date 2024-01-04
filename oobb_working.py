@@ -67,7 +67,7 @@ def main(**kwargs):
     # plate
     #filter = "ninety_degree"
     #filter = "ex_t"
-    filter = "oobb_plate_03_02_03_ex_t"
+    filter = "oobb_plate_03_03_03_ex_t"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
@@ -122,8 +122,8 @@ def main(**kwargs):
     #save_type = "3dpr"
     save_type = "all"
 
-    overwrite = True
-    #overwrite = False
+    #overwrite = True
+    overwrite = False
     
     #modes = ["laser", "3dpr", "true"]
     modes = ["3dpr"]

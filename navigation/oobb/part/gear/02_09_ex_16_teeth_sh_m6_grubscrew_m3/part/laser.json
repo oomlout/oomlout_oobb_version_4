@@ -1,0 +1,70 @@
+[
+    {
+        "type": "p",
+        "diameter": 2,
+        "thickness": 9,
+        "extra": "16_teeth",
+        "shaft": "m6_grubscrew_m3",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "gear",
+        "diametral_pitch": 0.53333333,
+        "number_of_teeth": 16,
+        "depth": 9
+    },
+    {
+        "type": "n",
+        "diameter": 1.5,
+        "thickness": 9,
+        "extra": "16_teeth",
+        "shaft": "m6_grubscrew_m3",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "width": 2,
+        "height": 2,
+        "shape": "oobb_holes",
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "diameter": 2,
+        "thickness": 9,
+        "extra": "16_teeth",
+        "shaft": "m6_grubscrew_m3",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m6"
+    },
+    {
+        "type": "n",
+        "diameter": 2,
+        "thickness": 9,
+        "extra": "16_teeth",
+        "shaft": "m6_grubscrew_m3",
+        "pos": [
+            0,
+            0,
+            4.5
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m3",
+        "depth": 100,
+        "rot": [
+            0,
+            90,
+            45
+        ]
+    }
+]

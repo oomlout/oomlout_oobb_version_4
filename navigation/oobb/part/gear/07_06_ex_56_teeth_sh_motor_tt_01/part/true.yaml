@@ -1,0 +1,40 @@
+-   depth: 6
+    diameter: 7
+    diametral_pitch: 0.53333333
+    extra: 56_teeth
+    number_of_teeth: 56
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: gear
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 7
+    extra: 56_teeth
+    height: 7
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 7
+-   depth: 50
+    diameter: 7
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 5
+    shaft: motor_tt_01
+    shape: oobb_motor_tt_01
+    thickness: 6
+    type: n

@@ -1,0 +1,44 @@
+-   depth: 3
+    diameter: 1
+    diametral_pitch: 0.53333333
+    extra: 12.0_teeth
+    number_of_teeth: 8
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: gear
+    thickness: 3
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1
+    extra: 12.0_teeth
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_holes
+    thickness: 3
+    type: n
+    width: 1
+-   diameter: 1
+    m: '#'
+    overhang: false
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 2
+    rot:
+    - 0
+    - 0
+    - 45
+    shaft: motor_servo_standard_01
+    shape: oobb_motor_servo_standard_01
+    thickness: 3
+    type: n

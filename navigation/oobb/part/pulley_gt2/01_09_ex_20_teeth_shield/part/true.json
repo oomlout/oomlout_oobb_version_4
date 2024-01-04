@@ -1,0 +1,64 @@
+[
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "20_teeth_shield",
+        "shaft": "",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            1
+        ],
+        "shape": "pulley_gt2",
+        "number_of_teeth": 20,
+        "depth": 9.5
+    },
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "20_teeth_shield",
+        "shaft": "",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0.5
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 7.369426751592356,
+        "depth": 1
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "20_teeth_shield",
+        "shaft": "",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "20_teeth_shield",
+        "shaft": "",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m6"
+    }
+]

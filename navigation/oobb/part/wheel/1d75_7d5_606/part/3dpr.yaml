@@ -1,0 +1,120 @@
+-   bearing: '606'
+    both_holes: true
+    depth: 7.5
+    diameter: 1.75
+    pos:
+    - 0
+    - 0
+    - 0
+    radius: 12.625
+    shape: oobb_circle
+    thickness: 7.5
+    type: positive
+    zz: middle
+-   bearing: '606'
+    both_holes: false
+    circle: true
+    diameter: 1.75
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_holes
+    thickness: 7.5
+    type: negative
+-   bearing: '606'
+    both_holes: true
+    depth: 5
+    diameter: 1.75
+    id: 10.125
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_tire
+    thickness: 7.5
+    type: negative
+-   bearing: '606'
+    both_holes: true
+    clearance: top
+    diameter: 1.75
+    m: '#'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_bearing
+    thickness: 7.5
+    type: negative
+-   bearing: '606'
+    both_holes: true
+    depth: 7.5
+    diameter: 1.75
+    nut: true
+    overhang: true
+    pos:
+    - 15.0
+    - 7.5
+    - 3.75
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
+    shape: oobb_screw_countersunk
+    thickness: 7.5
+    type: n
+-   bearing: '606'
+    both_holes: true
+    depth: 7.5
+    diameter: 1.75
+    nut: true
+    overhang: true
+    pos:
+    - -15.0
+    - -7.5
+    - 3.75
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
+    shape: oobb_screw_countersunk
+    thickness: 7.5
+    type: n
+-   bearing: '606'
+    both_holes: true
+    depth: 7.5
+    diameter: 1.75
+    nut: true
+    overhang: true
+    pos:
+    - 7.5
+    - -15.0
+    - -3.75
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 7.5
+    type: n
+-   bearing: '606'
+    both_holes: true
+    depth: 7.5
+    diameter: 1.75
+    nut: true
+    overhang: true
+    pos:
+    - -7.5
+    - 15.0
+    - -3.75
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 7.5
+    type: n

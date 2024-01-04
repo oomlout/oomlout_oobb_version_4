@@ -1,0 +1,39 @@
+-   depth: 3
+    diameter: 5
+    diametral_pitch: 0.53333333
+    extra: 40_teeth
+    number_of_teeth: 40
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: gear
+    thickness: 3
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 5
+    extra: 40_teeth
+    height: 5
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_holes
+    thickness: 3
+    type: n
+    width: 5
+-   diameter: 5
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_electronic_potentiometer_17_mm
+    thickness: 3
+    type: n

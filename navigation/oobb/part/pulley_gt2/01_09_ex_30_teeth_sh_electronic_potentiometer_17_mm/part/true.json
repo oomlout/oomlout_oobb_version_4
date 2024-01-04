@@ -1,0 +1,49 @@
+[
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "30_teeth",
+        "shaft": "electronic_potentiometer_17_mm",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "pulley_gt2",
+        "number_of_teeth": 30,
+        "depth": 9.5
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "30_teeth",
+        "shaft": "electronic_potentiometer_17_mm",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "shaft": "electronic_potentiometer_17_mm",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_electronic_potentiometer_17_mm",
+        "part": "shaft",
+        "m": "#"
+    }
+]
