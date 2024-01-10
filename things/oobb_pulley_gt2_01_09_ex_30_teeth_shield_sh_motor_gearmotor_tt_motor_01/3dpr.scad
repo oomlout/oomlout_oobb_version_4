@@ -11,22 +11,8 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 1]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description pulley_gt2_shape_p_type_9.5_depth_0_0_1_pos_9_thickness_30_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_1_diameter_30_number_of_teeth", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, 1]) {
 			pulley_gt2(depth = 9.5000000000, number_of_teeth = 30);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0.5000000000]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_cylinder_shape_p_type_1_depth_0_0_0.5_pos_9_thickness_30_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_1_diameter_10.554140127388534_radius", valign = "center");
-				}
-			}
 		}
 		cylinder(h = 1, r = 10.5541401274);
 	}
@@ -60,20 +46,6 @@ difference() {
 			translate(v = [0, 7, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_9_thickness_30_teeth_shield_extra_motor_gearmotor_tt_motor_01_shaft_1_diameter_1_width_1_height_true_both_holes_true_circle_false_middle", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_gearmotor_tt_motor_01_shape_n_type_9_thickness_motor_gearmotor_tt_motor_01_shaft_1_diameter_shaft_part", valign = "center");
 				}
 			}
 		}

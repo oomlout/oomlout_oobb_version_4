@@ -18,13 +18,6 @@ union() {
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 1) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description pulley_gt2_shape_p_type_6.5_depth_6_thickness_48_teeth_extra_motor_servo_standard_01_shaft_2_diameter_48_number_of_teeth", valign = "center");
-								}
-							}
-						}
 						pulley_gt2(depth = 6.5000000000, number_of_teeth = 48);
 					}
 					union() {
@@ -89,22 +82,6 @@ union() {
 							translate(v = [0, 7, 0]) {
 								linear_extrude(height = 1) {
 									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 1) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_6_thickness_48_teeth_extra_motor_servo_standard_01_shaft_1.5_diameter_1_width_1_height_true_both_holes_true_circle_false_middle", valign = "center");
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 2]) {
-								rotate(a = [0, 0, 45]) {
-									linear_extrude(height = 1) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_servo_standard_01_shape_n_type_0_0_2_pos_6_thickness_motor_servo_standard_01_shaft_2_diameter_shaft_part_0_0_45_rot_false_overhang", valign = "center");
-									}
 								}
 							}
 						}
@@ -128,13 +105,6 @@ union() {
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 1) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description pulley_gt2_shape_p_type_6.5_depth_6_thickness_48_teeth_extra_motor_servo_standard_01_shaft_2_diameter_48_number_of_teeth", valign = "center");
-								}
-							}
-						}
 						pulley_gt2(depth = 6.5000000000, number_of_teeth = 48);
 					}
 					union() {
@@ -199,22 +169,6 @@ union() {
 							translate(v = [0, 7, 0]) {
 								linear_extrude(height = 1) {
 									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 1) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_6_thickness_48_teeth_extra_motor_servo_standard_01_shaft_1.5_diameter_1_width_1_height_true_both_holes_true_circle_false_middle", valign = "center");
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 2]) {
-								rotate(a = [0, 0, 45]) {
-									linear_extrude(height = 1) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_motor_servo_standard_01_shape_n_type_0_0_2_pos_6_thickness_motor_servo_standard_01_shaft_2_diameter_shaft_part_0_0_45_rot_false_overhang", valign = "center");
-									}
 								}
 							}
 						}

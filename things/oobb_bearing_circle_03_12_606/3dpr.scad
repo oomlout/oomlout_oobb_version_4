@@ -123,12 +123,12 @@ difference() {
 		translate(v = [0, 0, -3.0000000000]) {
 			union() {
 				difference() {
-					cylinder(h = 6, r = 8.5500000000);
+					cylinder(h = 6, r = 8.5750000000);
 					cylinder(h = 6, r = 3.0000000000);
 				}
 				difference() {
 					translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 6.2750000000);
+						cylinder(h = 100, r = 6.2875000000);
 					}
 				}
 			}

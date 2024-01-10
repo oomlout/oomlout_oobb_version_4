@@ -37,6 +37,73 @@ def get_oobb_circle(**kwargs):
     p3["h"] = depth
     return [opsc.opsc_easy(**p3)]
 
+# coupler
+#      coupler_flanged
+def get_oobb_coupler_flanged(**kwargs):
+    typ = kwargs.get("type", "p")
+    kwargs["type"] = "p" #setting it to positive because it's a rotation object
+    
+
+    rot = get_rot(**kwargs)   
+    kwargs.pop("rot","")
+    kwargs.pop("rot_x","")
+    kwargs.pop("rot_y","")
+    kwargs.pop("rot_z","")
+    pos = copy.deepcopy(kwargs.get("pos", [0, 0, 0]))
+    pos_original = copy.deepcopy(pos)
+    pos = [0,0,0]
+    kwargs["pos"]  = pos    
+    #z zero is base of shaft
+    part = kwargs.get("part", "all")
+
+    return_value = []
+
+    if part == "all" or part == "only_holes":        
+        pass
+    elif part == "shaft":
+        
+        pos = copy.deepcopy(pos)
+        
+        p3 = copy.deepcopy(kwargs)        
+        p3["shape"] = "oobb_hole"
+        p3["radius_name"] = "m3"
+        poss = []
+        shift = 5.657
+        pos1 = copy.deepcopy(pos)
+        pos1[0] += shift
+        pos1[1] += shift
+        pos2 = copy.deepcopy(pos)
+        pos2[0] += -shift
+        pos2[1] += -shift
+        pos3 = copy.deepcopy(pos)
+        pos3[0] += shift
+        pos3[1] += -shift
+        pos4 = copy.deepcopy(pos)
+        pos4[0] += -shift
+        pos4[1] += shift        
+        poss.append(pos1)
+        poss.append(pos2)
+        poss.append(pos3)
+        poss.append(pos4)
+        p3["pos"] = poss
+        #p3["m"] = "#"
+        return_value.extend(oobb_base.oobb_easy(**p3))
+
+        p3 = copy.deepcopy(kwargs)
+        p3["shape"] = "oobb_hole"
+        p3["radius_name"] = "m8"
+        return_value.extend(oobb_base.oobb_easy(**p3))
+
+        return_value_2 = {}
+        return_value_2["type"]  = "rotation"
+        return_value_2["typetype"]  = typ
+        return_value_2["pos"] = pos_original
+        return_value_2["rot"] = rot
+        return_value_2["objects"] = return_value
+        return_value_2 = [return_value_2]
+
+        return return_value_2
+
 # cube
 def get_oobb_cube(**kwargs):
     return get_oobb_cube_center(**kwargs)
@@ -110,13 +177,17 @@ def get_oobb_cube_new(**kwargs):
         p3["pos"] = pos1
         return_value.append(opsc.opsc_easy(**p3))
     
-    # packaging as a rotation object
+    components_second = copy.deepcopy(thing["components"])
+
+    #put into a rotation object
     return_value_2 = {}
     return_value_2["type"]  = "rotation"
-    return_value_2["typetype"]  = typ
-    return_value_2["pos"] = pos_original
-    return_value_2["rot"] = rot_original
-    return_value_2["objects"] = return_value
+    return_value_2["typetype"]  = "p"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += 50
+    return_value_2["pos"] = pos1
+    return_value_2["rot"] = [180,0,0]
+    return_value_2["objects"] = components_second
     return_value_2 = [return_value_2]
 
 

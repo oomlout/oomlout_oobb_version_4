@@ -96,6 +96,12 @@ def get_circles(size="oobb"):
         for t in thicknesses:
             circles.append({"type": "circle", "diameter": s, "thickness": t, "size": size})
 
+    shafts = ["coupler_flanged"]
+    circle_size = [3, 5, 7]
+    for shaft in shafts:
+        for s in circle_size:
+            circles.append({"type": "circle", "diameter": s, "thickness": 3, "size": size, "shaft":shaft})
+
 
     #circles.append({"type": "circle", "diameter": 1.5, "thickness": 12, "extra":"nut_m6", "size": size})
 
@@ -497,6 +503,16 @@ def get_pulleys(size="oobb"):
             for s in pulley_size:
                 for t in thicknesses:                
                     pulleys.append({"type": "pulley_gt2", "thickness": t, "size": size, "extra":f"{s}_teeth{shield}", "shaft":shaft})
+
+    #bearing cores
+    pulley_size = [72]    
+    bearings = ["6705"]
+    shields = ["_shield", "_shield_double"]
+    t = 6
+    for bearing in bearings:
+        for s in pulley_size:
+            for shield in shields:
+                pulleys.append({"type": "pulley_gt2", "thickness": t, "size": size, "extra":f"{s}_teeth{shield}", "bearing":bearing})
 
 
     return pulleys

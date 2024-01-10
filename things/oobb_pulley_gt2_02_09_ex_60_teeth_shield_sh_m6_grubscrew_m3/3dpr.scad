@@ -11,22 +11,8 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 1]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description pulley_gt2_shape_p_type_9.5_depth_0_0_1_pos_9_thickness_60_teeth_shield_extra_m6_grubscrew_m3_shaft_2_diameter_60_number_of_teeth", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, 1]) {
 			pulley_gt2(depth = 9.5000000000, number_of_teeth = 60);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0.5000000000]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_cylinder_shape_p_type_1_depth_0_0_0.5_pos_9_thickness_60_teeth_shield_extra_m6_grubscrew_m3_shaft_2_diameter_20.108280254777068_radius", valign = "center");
-				}
-			}
 		}
 		cylinder(h = 1, r = 20.1082802548);
 	}
@@ -74,62 +60,12 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_9_thickness_60_teeth_shield_extra_m6_grubscrew_m3_shaft_1.5_diameter_1_width_1_height_true_both_holes_true_circle_false_middle", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_hole_shape_n_type_m6_grubscrew_m3_radius_name_9_thickness_60_teeth_shield_extra_m6_grubscrew_m3_shaft_2_diameter", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, -50.0000000000]) {
 			cylinder(h = 100, r = 0);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 4.7500000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_hole_shape_n_type_m3_radius_name_100_depth_0_0_4.75_pos_9_thickness_60_teeth_shield_extra_m6_grubscrew_m3_shaft_2_diameter_0_90_45_rot", valign = "center");
-					}
-				}
-			}
 		}
 		translate(v = [0, 0, 4.7500000000]) {
 			rotate(a = [0, 90, 45]) {
 				cylinder(h = 100, r = 1.8000000000);
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [3, 17, 4.7500000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_n_type_m3_radius_name_3_3_4.75_pos_9_thickness_m6_grubscrew_m3_shaft_2_diameter_0_90_45_rot", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [3, 17, 7.7500000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_n_type_m3_radius_name_3_3_7.75_pos_9_thickness_m6_grubscrew_m3_shaft_2_diameter_0_90_45_rot", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [3, 17, 10.7500000000]) {
-				rotate(a = [0, 90, 45]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_n_type_m3_radius_name_3_3_10.75_pos_9_thickness_m6_grubscrew_m3_shaft_2_diameter_0_90_45_rot", valign = "center");
-					}
-				}
 			}
 		}
 	}

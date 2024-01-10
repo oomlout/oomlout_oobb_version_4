@@ -581,12 +581,11 @@ def get_oobe_holes(**kwargs):
                             x = pos_start[0] + w*spacing
                             y = pos_start[1] + h*spacing
                             # only include if inside a circle of radius width * ob,gv("osp")/2
-                            r = width*spacing/2 - 5
-                            if math.sqrt(x**2 + y**2) <= r:
-                                # check if middle
-                                if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
-                                    pass
-                                else:
+                            r = width*spacing/2 - 1.5
+                            distance_to_center = math.sqrt(x**2 + y**2)
+                            if distance_to_center <= r:                                
+                                #if middle make sure r is greater than 15
+                                if middle or distance_to_center > 15:
                                     acceptable_holes.append([w,h])
                     #now add the holes
                     for mode in modes:
@@ -594,7 +593,7 @@ def get_oobe_holes(**kwargs):
                             x = pos_start[0] + hole[0]*spacing
                             y = pos_start[1] + hole[1]*spacing
                             objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[x, y, 0], radius_name=radius_name, m=m))                    
-            if "circle" in holes:
+            if "circle_old" in holes:
                 # find the start point needs to be half the width_mm plus half osp
                 pos_start = [xx + -(width*spacing/2) + spacing/2,
                             yy + -(height*spacing/2) + spacing/2, 0]

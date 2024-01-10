@@ -1,0 +1,36 @@
+-   depth: 3
+    diameter: 7
+    height: 7
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: coupler_flanged
+    shape: oobb_circle
+    thickness: 3
+    type: p
+    width: 7
+-   both_holes: true
+    circle: true
+    diameter: 7
+    height: 7
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: coupler_flanged
+    shape: oobb_holes
+    thickness: 3
+    type: n
+    width: 7
+-   diameter: 7
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: coupler_flanged
+    shape: oobb_coupler_flanged
+    thickness: 3
+    type: n

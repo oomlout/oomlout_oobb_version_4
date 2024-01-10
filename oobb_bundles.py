@@ -290,8 +290,8 @@ def copy_folder_production(**kwargs):
 
 if __name__ == "__main__":
     kwargs = {}
-    #filter = "bunting"
-    filter = ""
+    filter = "bunting"
+    #filter = ""
     kwargs["filter"] = filter
     
     rend = False

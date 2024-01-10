@@ -21,12 +21,13 @@ def initialize_variables():
     #   25.6 prints as 25.4 od 02 too small
 
     bearing_d["606"] = {"id":6, "id_e":0, "od":17, "od_e":0.075, "depth":6, "depth_e":0, "inner_holes":0}
+    bearing_d["676"] = {"id":6, "id_e":0, "od":10, "od_e":0.05, "depth":3, "depth_e":0, "inner_holes":0}
     bearing_d["696"] = {"id":6, "id_e":0, "od":15, "od_e":0.05, "depth":5, "depth_e":0, "inner_holes":0}
     bearing_d["6701"] = {"id":12, "id_e":0, "od":18, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6702"] = {"id":15, "id_e":0, "od":21, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6703"] = {"id":17, "id_e":0, "od":23, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6704"] = {"id":20, "id_e":0, "od":27, "od_e":0.2, "depth":4, "depth_e":-0.4, "inner_holes":1}
-    bearing_d["6705"] = {"id":25, "id_e":0, "od":32, "od_e":0.15, "depth":4, "depth_e":0.4, "inner_holes":1}
+    bearing_d["6705"] = {"id":25, "id_e":0, "od":32, "od_e":0.15, "depth":4, "depth_e":-0.4, "inner_holes":1}
     bearing_d["6706"] = {"id":30, "id_e":0, "od":37, "od_e":0.2, "depth":4, "depth_e":0, "inner_holes":1}
     bearing_d["6707"] = {"id":35, "id_e":0, "od":44, "od_e":0.2, "depth":5, "depth_e":0, "inner_holes":1}
     bearing_d["6800"] = {"id":10, "id_e":0, "od":19, "od_e":0.2, "depth":5, "depth_e":0, "inner_holes":1}
@@ -39,7 +40,7 @@ def initialize_variables():
     bearing_d["6807"] = {"id":35, "id_e":0, "od":47, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
     bearing_d["6808"] = {"id":40, "id_e":0, "od":52, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
     bearing_d["6809"] = {"id":45, "id_e":0, "od":58, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
-    bearing_d["6810"] = {"id":50, "id_e":0, "od":65, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
+    bearing_d["6810"] = {"id":50, "id_e":0, "od":65, "od_e":0.2, "depth":7, "depth_e":-0.2, "inner_holes":3}
     bearing_d["6811"] = {"id":55, "id_e":0, "od":72, "od_e":0.2, "depth":9, "depth_e":0, "inner_holes":3}
     bearing_d["6812"] = {"id":60, "id_e":0, "od":78, "od_e":0.2, "depth":10, "depth_e":0, "inner_holes":4}
     bearing_d["6813"] = {"id":65, "id_e":0, "od":85, "od_e":0.2, "depth":10, "depth_e":0, "inner_holes":4}

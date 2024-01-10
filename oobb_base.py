@@ -677,13 +677,14 @@ def append_full(thing, **kwargs):
                 p4["m"] = "*"
                 if comment_display:
                     p4["m"] = m
-                th.extend(get_comment(**p4))
+                pass 
+                #th.extend(get_comment(**p4))
             
             # description
             p4 = copy.deepcopy(p3)
             p4["comment"] = f"description {string_to_add}\n"
             p4["m"] = "*"
-            th.extend(get_comment(**p4))
+            #th.extend(get_comment(**p4))
 
             p4 = copy.deepcopy(p3)
             th.extend(oobb_easy(**p4))

@@ -31,7 +31,10 @@ def main(**kwargs):
     #filter = "oobb_bunting_alphabet_13"
 
     # circle
+    #filter = "circle"
     #filter = "circle_1d5"
+    #filter = "circle_03_03"
+    #filter = "circle_03_03_sh"
 
     # electronic
     #filter = "holder_03_03_03_ex_electronic_potentiometer"
@@ -67,17 +70,20 @@ def main(**kwargs):
     # plate
     #filter = "ninety_degree"
     #filter = "ex_t"
-    filter = "oobb_plate_03_03_03_ex_t"
+    #filter = "oobb_plate_03_03_03_ex_t"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = "oobb_plate_03_03_44_ex_ninety_degree"
+    #filter = "oobb_plate_20_20_03"
 
     # pulley
     #filter = "pulley"
     #filter = "pulley_gt2_01_06_ex_20_teeth_shield_sh_motor_n20"
     #filter = "72_teeth_shield_sh_m6_grub"
     #filter = "20_teeth_shield_sh_motor_n20"
+    #filter = "oobb_pulley_gt2"
+    filter = "_6705_ex_72_teeth_shield_double"
 
     # shaft
     #filter = "shaft"
@@ -120,10 +126,10 @@ def main(**kwargs):
     save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
-    save_type = "all"
+    #save_type = "all"
 
-    #overwrite = True
-    overwrite = False
+    overwrite = True
+    #overwrite = False
     
     #modes = ["laser", "3dpr", "true"]
     modes = ["3dpr"]
