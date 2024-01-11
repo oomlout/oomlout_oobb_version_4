@@ -1,30 +1,15 @@
--   depth: 9.5
+-   depth: 11.5
     diameter: 1
     extra: 24_teeth
     number_of_teeth: 24
     pos:
     - 0
     - 0
-    - 0
+    - -5.75
     shaft: m3
     shape: pulley_gt2
     thickness: 9
     type: p
--   both_holes: true
-    circle: true
-    diameter: 1
-    extra: 24_teeth
-    height: 1
-    middle: false
-    pos:
-    - 0
-    - 0
-    - 0
-    shaft: m3
-    shape: oobb_holes
-    thickness: 9
-    type: n
-    width: 1
 -   diameter: 1
     extra: 24_teeth
     pos:
@@ -34,5 +19,15 @@
     radius_name: m3
     shaft: m3
     shape: oobb_hole
+    thickness: 9
+    type: n
+-   diameter: 1
+    extra: 24_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m3
+    shape: oobb_slice
     thickness: 9
     type: n

@@ -1,12 +1,12 @@
 -   bearing: '6705'
-    depth: 6.5
+    depth: 8.5
     diameter: 3
     extra: 72_teeth_shield
     number_of_teeth: 72
     pos:
     - 0
     - 0
-    - 1
+    - -4.25
     shape: pulley_gt2
     thickness: 6
     type: p
@@ -17,7 +17,7 @@
     pos:
     - 0
     - 0
-    - 0.5
+    - -3.75
     radius: 23.929936305732483
     shape: oobb_cylinder
     thickness: 6
@@ -29,7 +29,7 @@
     pos:
     - 0
     - 0
-    - 8.0
+    - 3.75
     radius: 23.929936305732483
     shape: oobb_cylinder
     thickness: 6
@@ -40,9 +40,43 @@
     extra: 72_teeth_shield
     nut_include: true
     pos:
-    - -12.728
-    - 12.728
-    - 8.5
+    - -5.303
+    - -5.303
+    - -4.25
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   bearing: '6705'
+    depth: 8.5
+    diameter: 3
+    extra: 72_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - 5.303
+    - -4.25
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   bearing: '6705'
+    depth: 8.5
+    diameter: 3
+    extra: 72_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - 5.303
+    - 4.25
     radius_name: m3
     shape: oobb_screw_countersunk
     thickness: 6
@@ -53,9 +87,22 @@
     extra: 72_teeth_shield
     nut_include: true
     pos:
-    - 12.728
-    - -12.728
-    - 0
+    - 5.303
+    - -5.303
+    - 4.25
+    radius_name: m3
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   bearing: '6705'
+    depth: 8.5
+    diameter: 3
+    extra: 72_teeth_shield
+    nut_include: true
+    pos:
+    - -13
+    - -13
+    - -4.25
     radius_name: m3
     rot:
     - 0
@@ -65,20 +112,48 @@
     thickness: 6
     type: n
 -   bearing: '6705'
-    both_holes: true
-    circle: true
+    depth: 8.5
     diameter: 3
     extra: 72_teeth_shield
-    height: 1
-    middle: false
+    nut_include: true
     pos:
+    - 13
+    - 13
+    - -4.25
+    radius_name: m3
+    rot:
     - 0
+    - 180
     - 0
-    - 0
-    shape: oobb_holes
+    shape: oobb_screw_countersunk
     thickness: 6
     type: n
-    width: 1
+-   bearing: '6705'
+    depth: 8.5
+    diameter: 3
+    extra: 72_teeth_shield
+    nut_include: true
+    pos:
+    - -13
+    - 13
+    - 4.25
+    radius_name: m3
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   bearing: '6705'
+    depth: 8.5
+    diameter: 3
+    extra: 72_teeth_shield
+    nut_include: true
+    pos:
+    - 13
+    - -13
+    - 4.25
+    radius_name: m3
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
 -   bearing: '6705'
     diameter: 3
     extra: 72_teeth_shield
@@ -96,7 +171,7 @@
     pos:
     - 0
     - 0
-    - 4.25
+    - 0
     shape: oobb_bearing
     thickness: 6
     type: n
@@ -106,7 +181,7 @@
     pos:
     - 0
     - 0
-    - 4.25
+    - 0
     shape: oobb_slice
     thickness: 6
     type: n

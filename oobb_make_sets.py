@@ -796,13 +796,20 @@ def get_wires(size="oobb"):
     
     
     extra = ["motor", "basic"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size})
+    extra = ["higher_voltage", "motor_stepper"]
     wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size}) 
     extra = ["basic", "basic", "motor"]
+    
     wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})  
+    
     extra = ["basic","basic","basic","basic"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})      
     wis.append({"type": "wire", "extra": extra, "thickness": 15, "width": 3, "height": 3, "size": size})  
-    extra = ["basic","basic","basic"]
-    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})  
+    
+    #stepper motor driver
+    extra = ["higher_voltage", "basic", "basic", "motor_stepper"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 15, "width": 3, "height": 3, "size": size})
         
 
 

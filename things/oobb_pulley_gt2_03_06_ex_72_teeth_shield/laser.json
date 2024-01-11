@@ -8,68 +8,52 @@
         "pos": [
             0,
             0,
-            1
+            -4.25
         ],
         "shape": "pulley_gt2",
         "number_of_teeth": 72,
-        "depth": 6.5
-    },
-    {
-        "type": "p",
-        "thickness": 6,
-        "extra": "72_teeth_shield",
-        "shaft": "",
-        "diameter": 3,
-        "pos": [
-            0,
-            0,
-            0.5
-        ],
-        "shape": "oobb_cylinder",
-        "radius": 23.929936305732483,
-        "depth": 1
-    },
-    {
-        "type": "p",
-        "thickness": 6,
-        "extra": "72_teeth_shield",
-        "shaft": "",
-        "diameter": 3,
-        "pos": [
-            0,
-            0,
-            8.0
-        ],
-        "shape": "oobb_cylinder",
-        "radius": 23.929936305732483,
-        "depth": 1
-    },
-    {
-        "type": "n",
-        "thickness": 6,
-        "extra": "72_teeth_shield",
-        "shaft": "",
-        "diameter": 3,
-        "pos": [
-            -5.303,
-            5.303,
-            8.5
-        ],
-        "shape": "oobb_screw_countersunk",
-        "radius_name": "m3",
-        "nut_include": true,
         "depth": 8.5
     },
     {
+        "type": "p",
+        "thickness": 6,
+        "extra": "72_teeth_shield",
+        "shaft": "",
+        "diameter": 3,
+        "pos": [
+            0,
+            0,
+            -3.75
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 23.929936305732483,
+        "depth": 1
+    },
+    {
+        "type": "p",
+        "thickness": 6,
+        "extra": "72_teeth_shield",
+        "shaft": "",
+        "diameter": 3,
+        "pos": [
+            0,
+            0,
+            3.75
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 23.929936305732483,
+        "depth": 1
+    },
+    {
         "type": "n",
         "thickness": 6,
         "extra": "72_teeth_shield",
         "shaft": "",
         "diameter": 3,
         "pos": [
-            5.303,
             -5.303,
-            0
+            -5.303,
+            -4.25
         ],
         "shape": "oobb_screw_countersunk",
         "radius_name": "m3",
@@ -88,16 +72,51 @@
         "shaft": "",
         "diameter": 3,
         "pos": [
-            0,
-            0,
-            0
+            5.303,
+            5.303,
+            -4.25
         ],
-        "shape": "oobb_holes",
-        "width": 1,
-        "height": 1,
-        "both_holes": true,
-        "circle": true,
-        "middle": false
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 8.5,
+        "rot": [
+            0,
+            180,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "thickness": 6,
+        "extra": "72_teeth_shield",
+        "shaft": "",
+        "diameter": 3,
+        "pos": [
+            -5.303,
+            5.303,
+            4.25
+        ],
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 8.5
+    },
+    {
+        "type": "n",
+        "thickness": 6,
+        "extra": "72_teeth_shield",
+        "shaft": "",
+        "diameter": 3,
+        "pos": [
+            5.303,
+            -5.303,
+            4.25
+        ],
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 8.5
     },
     {
         "type": "n",
@@ -122,7 +141,7 @@
         "pos": [
             0,
             0,
-            4.25
+            0
         ],
         "shape": "oobb_slice"
     }

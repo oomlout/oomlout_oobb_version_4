@@ -1,11 +1,11 @@
--   depth: 9.5
+-   depth: 11.5
     diameter: 1
     extra: 30_teeth_shield
     number_of_teeth: 30
     pos:
     - 0
     - 0
-    - 1
+    - -5.75
     shaft: motor_servo_standard_01
     shape: pulley_gt2
     thickness: 9
@@ -16,27 +16,24 @@
     pos:
     - 0
     - 0
-    - 0.5
+    - -5.25
     radius: 10.554140127388534
     shaft: motor_servo_standard_01
     shape: oobb_cylinder
     thickness: 9
     type: p
--   both_holes: true
-    circle: true
+-   depth: 1
     diameter: 1
     extra: 30_teeth_shield
-    height: 1
-    middle: false
     pos:
     - 0
     - 0
-    - 0
+    - 5.25
+    radius: 10.554140127388534
     shaft: motor_servo_standard_01
-    shape: oobb_holes
+    shape: oobb_cylinder
     thickness: 9
-    type: n
-    width: 1
+    type: p
 -   diameter: 1
     m: '#'
     overhang: false
@@ -51,5 +48,15 @@
     - 45
     shaft: motor_servo_standard_01
     shape: oobb_motor_servo_standard_01
+    thickness: 9
+    type: n
+-   diameter: 1
+    extra: 30_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_slice
     thickness: 9
     type: n

@@ -8,11 +8,11 @@
         "pos": [
             0,
             0,
-            1
+            -4.25
         ],
         "shape": "pulley_gt2",
         "number_of_teeth": 36,
-        "depth": 6.5
+        "depth": 8.5
     },
     {
         "type": "p",
@@ -23,7 +23,22 @@
         "pos": [
             0,
             0,
-            0.5
+            -3.75
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 12.464968152866241,
+        "depth": 1
+    },
+    {
+        "type": "p",
+        "thickness": 6,
+        "extra": "36_teeth_shield",
+        "shaft": "",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            3.75
         ],
         "shape": "oobb_cylinder",
         "radius": 12.464968152866241,
@@ -40,12 +55,8 @@
             0,
             0
         ],
-        "shape": "oobb_holes",
-        "width": 1,
-        "height": 1,
-        "both_holes": true,
-        "circle": true,
-        "middle": false
+        "shape": "oobb_hole",
+        "radius_name": "m6"
     },
     {
         "type": "n",
@@ -58,7 +69,6 @@
             0,
             0
         ],
-        "shape": "oobb_hole",
-        "radius_name": "m6"
+        "shape": "oobb_slice"
     }
 ]

@@ -1,11 +1,11 @@
--   depth: 9.5
+-   depth: 11.5
     diameter: 2
     extra: 40_teeth_shield
     number_of_teeth: 40
     pos:
     - 0
     - 0
-    - 1
+    - -5.75
     shaft: electronic_potentiometer_17_mm
     shape: pulley_gt2
     thickness: 9
@@ -16,27 +16,24 @@
     pos:
     - 0
     - 0
-    - 0.5
+    - -5.25
     radius: 13.738853503184712
     shaft: electronic_potentiometer_17_mm
     shape: oobb_cylinder
     thickness: 9
     type: p
--   both_holes: true
-    circle: true
-    diameter: 1.5
+-   depth: 1
+    diameter: 2
     extra: 40_teeth_shield
-    height: 1
-    middle: false
     pos:
     - 0
     - 0
-    - 0
+    - 5.25
+    radius: 13.738853503184712
     shaft: electronic_potentiometer_17_mm
-    shape: oobb_holes
+    shape: oobb_cylinder
     thickness: 9
-    type: n
-    width: 1
+    type: p
 -   diameter: 2
     m: '#'
     part: shaft
@@ -46,5 +43,15 @@
     - 0
     shaft: electronic_potentiometer_17_mm
     shape: oobb_electronic_potentiometer_17_mm
+    thickness: 9
+    type: n
+-   diameter: 2
+    extra: 40_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_slice
     thickness: 9
     type: n

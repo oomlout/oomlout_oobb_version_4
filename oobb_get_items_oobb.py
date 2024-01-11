@@ -812,255 +812,18 @@ def get_pulley_gt2(**kwargs):
     extra = kwargs.get("extra", "")
     shaft = kwargs.get("shaft", "m6")
     shield = False    
-    
+    if "shield" in extra:
+        shield = True    
+
     if "double" in extra:
         return get_pulley_gt2_shield_double(**kwargs)
-    else:
-        
-        if "shield" in extra:
-            shield = True        
-        teeth = int(extra.replace("_teeth","").replace("_shield",""))
-        full_object = kwargs.get("full_object", True)
-        thickness_shield = 1
-
-        #figuring out diameter
-        diameter_pulley = (teeth * 2)/3.14
-        diameter = math.ceil((diameter_pulley-10) / 15)
-        kwargs["diameter"] = diameter
-
-        screws_connecting = False
-        if shield and diameter > 2:
-            screws_connecting = True
-        if bearing != "":
-            screws_connecting = True
-
-
-        # extra sets
-        holes = kwargs.get("holes", True)
-        both_holes = kwargs.get("both_holes", True)    
-        kwargs["pos"] = pos
-        
-        # get the default thing
-        thing = oobb_base.get_default_thing(**kwargs)
-        th = thing["components"]
-        kwargs.pop("size","")
-
-        th.append(oobb_base.get_comment("gear main","p"))
-        # add plate
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "p"   
-        p3["shape"] = f"pulley_gt2"
-        p3["number_of_teeth"] = teeth
-        p3["depth"] = thickness
-        pos1 = copy.deepcopy(pos)
-        if shield:
-            pos1[2] = thickness_shield
-        p3["pos"] = pos1
-        #p3["m"] = ""  
-        oobb_base.append_full(thing,**p3)      
-        
-        #add shields
-        if shield:
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "p"   
-            p3["shape"] = f"oobb_cylinder"
-            
-            p3["radius"] = diameter_pulley/2+1 #guess needs figuring out
-            p3["depth"] = thickness_shield
-            pos1 = copy.deepcopy(pos)
-            pos1[2] += thickness_shield/2 
-            pos2 = copy.deepcopy(pos)
-            pos2[2] += thickness + thickness_shield*3/2 
-            poss = []
-            poss.append(pos1)
-            if diameter > 2:
-                poss.append(pos2)
-            p3["pos"] = poss
-            #p3["m"] = "#"  
-            oobb_base.append_full(thing,**p3)
-
-        if screws_connecting:     
-            shift = 5.303
-            if bearing == "6705":
-                shift = 12.728
-            pos1 = copy.deepcopy(pos)
-            pos1[0] += -shift
-            pos1[1] += shift
-
-            pos1[2] += thickness + thickness_shield * 2
-            p3 = copy.deepcopy(kwargs)
-            #if diameter rounded is even
-            p3["type"] = "n"
-            p3["shape"] = f"{size}_screw_countersunk"
-            p3["radius_name"] = "m3"
-            p3["nut_include"] = True
-            p3["depth"] = thickness + thickness_shield * 2
-            p3["pos"] = pos1
-
-            #p3["m"] = "#"
-            oobb_base.append_full(thing,**p3)      
-            
-            p4 = copy.deepcopy(p3)
-            pos1 = copy.deepcopy(pos)
-            pos1[0] += shift
-            pos1[1] += -shift
-            pos1[2] += 0
-            p4["pos"] = pos1
-            rot = [0,180,0]
-            p4["rot"] = rot
-            p3["zz"] = "bottom"
-            oobb_base.append_full(thing,**p4)
-
-
-        # add holes
-        if holes:
-            th.append(oobb_base.get_comment("holes main","n"))
-            p3 = copy.deepcopy(kwargs)
-            #if diameter rounded is even
-            if math.floor(diameter) % 2 == 0:
-                p3["diameter"] = diameter - 0.5
-                p3["width"] = width - 0.5
-                p3["height"] = height - 0.5
-            p3["type"] = "n"
-            p3["shape"] = f"{size}_holes"        
-            p3["width"] = width
-            p3["height"] = height
-            p3["pos"] = pos
-            p3["both_holes"] = both_holes
-            p3["circle"] = True
-            p3["middle"] = False
-            #p3["m"] = "#"
-            oobb_base.append_full(thing,**p3)      
-            #th.extend(oobb_base.oobb_easy(**p3))   
-            
-        # shaft
-        if shaft == "":
-            shaft = "m6"
-        if shaft.startswith("m6") or shaft.startswith("m3"):
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "n"
-            p3["shape"] = f"{size}_hole"
-            p3["radius_name"] = shaft        
-            pos1 = copy.deepcopy(pos)        
-            p3["pos"] = pos1
-            #p3["m"] = "#"  
-            oobb_base.append_full(thing,**p3)        
-        else:
-            p3 = copy.deepcopy(kwargs)
-            p3.pop("extra","")
-            p3["type"] = "n"
-            p3["shape"] = f"oobb_{shaft}"     
-            p3["part"] = "shaft"   
-            pos1 = copy.deepcopy(pos)        
-            
-            
-            if shaft == "motor_servo_standard_01":
-                p3["rot"] = [0,0,45]
-                pos1[2] += 2
-                p3["overhang"] = False
-            p3["pos"] = pos1
-            p3["m"] = "#"  
-            oobb_base.append_full(thing,**p3)
-
-        # if grub screw
-        if "grubscrew" in shaft:
-            #get grubscrew size split based on _ and it's the one after "grubscrew"
-            grubscrew_list = shaft.split("_")
-            size_grubscrew = "m3"
-            for i, s in enumerate(grubscrew_list):
-                if s == "grubscrew":
-                    size_grubscrew = grubscrew_list[i+1]
-                    break
-            #add raised hub
-            #add the hole
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "n"
-            p3["shape"] = f"{size}_hole"
-            p3["radius_name"] = size_grubscrew
-            depth = 100
-            p3["depth"] = depth
-            pos1 = copy.deepcopy(pos)
-            pos1[2] += thickness/2
-            p3["pos"] = pos1
-            p3["rot"] = [0,90,45]
-            #p3["m"] = "#"
-            oobb_base.append_full(thing,**p3)
-
-            p4 = copy.deepcopy(p3)
-            p4.pop("extra","")
-            p4.pop("depth","")
-            p4["shape"] = f"{size}_nut"
-            pos1 = copy.deepcopy(p3["pos"])    
-            dist = 3    
-            pos1[0] += dist
-            pos1[1] += dist
-            posa = copy.deepcopy(pos1)
-            posa[2] += 3
-            posb = copy.deepcopy(pos1)
-            posb[2] += 6
-            p4["pos"] = [pos1,posa,posb]
-            #p4["m"] = "#"
-            oobb_base.append_full(thing,**p4)
-
-
-        #bearing 
-        if bearing != "":
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "n"
-            p3["shape"] = f"oobb_bearing"
-            p3["bearing"] = bearing
-            pos1 = copy.deepcopy(pos)
-            pos1[2] = thickness/2 + thickness_shield
-            p3["pos"] = pos1
-            #p3["m"] = "#"
-            oobb_base.append_full(thing,**p3)
-
-
-        #if shields slice at thickness / 2
-            #slice if it's a bearing
-        if shield and diameter > 2 or bearing != "":        
-            p3 = copy.deepcopy(kwargs)
-            p3["type"] = "n"
-            p3["shape"] = f"oobb_slice"
-            pos1 = copy.deepcopy(pos)
-            pos1[2] = thickness/2 + thickness_shield
-
-            p3["pos"] = pos1
-
-            #p3["m"] = "#"  
-            oobb_base.append_full(thing,**p3)
-
-        if full_object:   
-            return thing
-        else: # only return the elements
-            return th
-
-def get_pulley_gt2_shield_double(**kwargs):
-
-    # default sets
-    width = kwargs.get("width", 1)
-    height = kwargs.get("height", 1)
-    diameter = kwargs.get("diameter", 1)
-    bearing = kwargs.get("bearing", "")
-
-    width = diameter
-    height = diameter   
-    thickness = kwargs.get("thickness", 3)
-
-    thickness_extra = kwargs.get("thickness_extra", 0.5)
-    thickness = thickness + thickness_extra
-    size = kwargs.get("size", "oobb")
-    pos = kwargs.get("pos", [0, 0, 0])
-    extra = kwargs.get("extra", "")
-    shaft = kwargs.get("shaft", "m6")
-    shield = False    
-    if "shield" in extra:
-        shield = True        
+    
+    
     teeth = int(extra.replace("_teeth","").replace("_shield","").replace("_double",""))
     full_object = kwargs.get("full_object", True)
     thickness_shield = 1
-
-    thickness = thickness * 2 + thickness_shield * 3
+    thickness_belt = 6
+    thickness = thickness + thickness_shield * 2
 
     #figuring out diameter
     diameter_pulley = (teeth * 2)/3.14
@@ -1092,8 +855,7 @@ def get_pulley_gt2_shield_double(**kwargs):
     p3["number_of_teeth"] = teeth
     p3["depth"] = thickness
     pos1 = copy.deepcopy(pos)
-    if shield:
-        pos1[2] = thickness_shield
+    pos1[2] += -thickness/2
     p3["pos"] = pos1
     #p3["m"] = ""  
     oobb_base.append_full(thing,**p3)      
@@ -1107,68 +869,49 @@ def get_pulley_gt2_shield_double(**kwargs):
         p3["radius"] = diameter_pulley/2+1 #guess needs figuring out
         p3["depth"] = thickness_shield
         pos1 = copy.deepcopy(pos)
-        pos1[2] += thickness_shield/2 
+        pos1[2] += -thickness/2 + thickness_shield/2
         pos2 = copy.deepcopy(pos)
-        pos2[2] += 0
-        pos3 = copy.deepcopy(pos)
-        pos3[2] += thickness /2
+        pos2[2] += thickness/2 - thickness_shield/2
         poss = []
 
         poss.append(pos1)
-        if diameter > 2:
-            poss.append(pos2)
-        poss.append(pos3)
+        poss.append(pos2)
         p3["pos"] = poss
         #p3["m"] = "#"  
         oobb_base.append_full(thing,**p3)
 
     if screws_connecting:     
-        shift = 5.303
+        shifts = []
+        shifts.append(5.303)
         if bearing == "6705":
-            shift = 12.728        
+            shifts.append(13)
+        screws = []
+        for shift in shifts:                    
+            screws.append([-shift,-shift,True])
+            screws.append([shift,shift,True])
+            screws.append([-shift,shift,False])
+            screws.append([shift,-shift,False])
+            
+        for screw in screws:       
+            p3 = copy.deepcopy(kwargs)
+            #if diameter rounded is even
+            p3["type"] = "n"
+            p3["shape"] = f"{size}_screw_countersunk"
+            p3["radius_name"] = "m3"
+            p3["nut_include"] = True
+            p3["depth"] = thickness
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += screw[0]
+            pos1[1] += screw[1]
+            pos1[2] += thickness/2
+            p3["pos"] = pos1            
+            if screw[2]:                
+                p3["rot"] = [0,180,0]
+                pos1[2] += -thickness
+            #p3["m"] = "#"
+            oobb_base.append_full(thing,**p3)      
         
-        p3 = copy.deepcopy(kwargs)
-        #if diameter rounded is even
-        p3["type"] = "n"
-        p3["shape"] = f"{size}_screw_countersunk"
-        p3["radius_name"] = "m3"
-        p3["nut_include"] = True
-        p3["depth"] = thickness + thickness_shield * 2
-        poss = []
-        pos1 = copy.deepcopy(pos)
-        pos1[0] += shift
-        pos1[1] += shift
-        pos1[2] += thickness
-        poss.append(pos1)
-        pos2 = copy.deepcopy(pos)
-        pos2[0] += -shift
-        pos2[1] += -shift
-        pos2[2] += thickness
-        poss.append(pos2)
-        p3["pos"] = poss
-
-        p3["m"] = "#"
-        oobb_base.append_full(thing,**p3)      
         
-        p4 = copy.deepcopy(p3)
-        poss = []
-        pos1 = copy.deepcopy(pos)
-        pos1[0] += shift
-        pos1[1] += -shift
-        pos1[2] += 0
-        poss.append(pos1)
-        pos2 = copy.deepcopy(pos)
-        pos2[0] += -shift
-        pos2[1] += shift
-        pos2[2] += 0
-        poss.append(pos2)
-        p4["pos"] = poss
-        rot = [0,180,0]
-        p4["rot"] = rot
-        p4["zz"] = "top"
-        #p4["m"] = "#"
-        oobb_base.append_full(thing,**p4)
-
 
     # add holes
     if holes:
@@ -1227,27 +970,236 @@ def get_pulley_gt2_shield_double(**kwargs):
         p3["type"] = "n"
         p3["shape"] = f"oobb_bearing"
         p3["bearing"] = bearing
+        poss = []
         pos1 = copy.deepcopy(pos)
-        pos1[2] = thickness/2 + thickness_shield
-        p3["pos"] = pos1
+        bearing_height_1 = -thickness/2 + thickness_shield + thickness_extra / 2 + thickness_belt / 2
+        pos1[2] += bearing_height_1
+        pos2 = copy.deepcopy(pos)
+        pos2[2] += thickness/2 - thickness_shield - thickness_extra / 2 - thickness_belt / 2
+        pos3 = copy.deepcopy(pos)
+        pos3[2] += 0
+        #poss.append(pos1)
+        #poss.append(pos2)
+        poss.append(pos3)
+        p3["pos"] = poss
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)
 
+    # add_slice
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_slice"
+    pos1 = copy.deepcopy(pos)
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing,**p3)
+    
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return th
 
-    #if shields slice at thickness / 2
-        #slice if it's a bearing
-    if shield and diameter > 2 or bearing != "":        
+
+def get_pulley_gt2_shield_double(**kwargs):
+
+    # default sets
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    diameter = kwargs.get("diameter", 1)
+    bearing = kwargs.get("bearing", "")
+
+    width = diameter
+    height = diameter   
+    thickness = kwargs.get("thickness", 3)
+
+    thickness_extra = kwargs.get("thickness_extra", 0.5)
+    thickness_extra = thickness_extra * 2
+    thickness = thickness + thickness_extra
+    size = kwargs.get("size", "oobb")
+    pos = kwargs.get("pos", [0, 0, 0])
+    extra = kwargs.get("extra", "")
+    shaft = kwargs.get("shaft", "m6")
+    shield = False    
+    if "shield" in extra:
+        shield = True        
+    teeth = int(extra.replace("_teeth","").replace("_shield","").replace("_double",""))
+    full_object = kwargs.get("full_object", True)
+    thickness_shield = 1
+    thickness_belt = 6
+    thickness = thickness * 2 + thickness_shield * 3
+
+    #figuring out diameter
+    diameter_pulley = (teeth * 2)/3.14
+    diameter = math.ceil((diameter_pulley-10) / 15)
+    kwargs["diameter"] = diameter
+
+    screws_connecting = False
+    if shield and diameter > 2:
+        screws_connecting = True
+    if bearing != "":
+        screws_connecting = True
+
+
+    # extra sets
+    holes = kwargs.get("holes", False)
+    both_holes = kwargs.get("both_holes", True)    
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    th = thing["components"]
+    kwargs.pop("size","")
+
+    th.append(oobb_base.get_comment("gear main","p"))
+    # add plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"   
+    p3["shape"] = f"pulley_gt2"
+    p3["number_of_teeth"] = teeth
+    p3["depth"] = thickness
+    pos1 = copy.deepcopy(pos)
+    pos1[2] += -thickness/2
+    p3["pos"] = pos1
+    #p3["m"] = ""  
+    oobb_base.append_full(thing,**p3)      
+    
+    #add shields
+    if shield:
         p3 = copy.deepcopy(kwargs)
-        p3["type"] = "n"
-        p3["shape"] = f"oobb_slice"
+        p3["type"] = "p"   
+        p3["shape"] = f"oobb_cylinder"
+        
+        p3["radius"] = diameter_pulley/2+1 #guess needs figuring out
+        p3["depth"] = thickness_shield
         pos1 = copy.deepcopy(pos)
-        pos1[2] = thickness/2
+        pos1[2] += -thickness/2 + thickness_shield/2
+        pos2 = copy.deepcopy(pos)
+        pos2[2] += 0
+        pos3 = copy.deepcopy(pos)
+        pos3[2] += thickness/2 - thickness_shield/2
+        poss = []
 
-        p3["pos"] = pos1
-
+        poss.append(pos1)
+        poss.append(pos2)
+        poss.append(pos3)
+        p3["pos"] = poss
         #p3["m"] = "#"  
         oobb_base.append_full(thing,**p3)
 
+    if screws_connecting:     
+        shifts = []
+        shifts.append(5.303)
+        if bearing == "6705":
+            shifts.append(13)
+        screws = []
+        for shift in shifts:                    
+            screws.append([-shift,-shift,True])
+            screws.append([shift,shift,True])
+            screws.append([-shift,shift,False])
+            screws.append([shift,-shift,False])
+            
+        for screw in screws:       
+            p3 = copy.deepcopy(kwargs)
+            #if diameter rounded is even
+            p3["type"] = "n"
+            p3["shape"] = f"{size}_screw_countersunk"
+            p3["radius_name"] = "m3"
+            p3["nut_include"] = True
+            p3["depth"] = thickness
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += screw[0]
+            pos1[1] += screw[1]
+            pos1[2] += thickness/2
+            p3["pos"] = pos1            
+            if screw[2]:                
+                p3["rot"] = [0,180,0]
+                pos1[2] += -thickness
+            #p3["m"] = "#"
+            oobb_base.append_full(thing,**p3)      
+        
+        
+
+    # add holes
+    if holes:
+        th.append(oobb_base.get_comment("holes main","n"))
+        p3 = copy.deepcopy(kwargs)
+        #if diameter rounded is even
+        if math.floor(diameter) % 2 == 0:
+            p3["diameter"] = diameter - 0.5
+            p3["width"] = width - 0.5
+            p3["height"] = height - 0.5
+        p3["type"] = "n"
+        p3["shape"] = f"{size}_holes"        
+        p3["width"] = width
+        p3["height"] = height
+        p3["pos"] = pos
+        p3["both_holes"] = both_holes
+        p3["circle"] = True
+        p3["middle"] = False
+        #p3["m"] = "#"
+        oobb_base.append_full(thing,**p3)      
+        #th.extend(oobb_base.oobb_easy(**p3))   
+        
+    # shaft
+    if shaft == "":
+        shaft = "m6"
+    if shaft.startswith("m6") or shaft.startswith("m3"):
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"{size}_hole"
+        p3["radius_name"] = shaft        
+        pos1 = copy.deepcopy(pos)        
+        p3["pos"] = pos1
+        #p3["m"] = "#"  
+        oobb_base.append_full(thing,**p3)        
+    else:
+        p3 = copy.deepcopy(kwargs)
+        p3.pop("extra","")
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_{shaft}"     
+        p3["part"] = "shaft"   
+        pos1 = copy.deepcopy(pos)        
+        
+        
+        if shaft == "motor_servo_standard_01":
+            p3["rot"] = [0,0,45]
+            pos1[2] += 2
+            p3["overhang"] = False
+        p3["pos"] = pos1
+        p3["m"] = "#"  
+        oobb_base.append_full(thing,**p3)
+
+    
+    #bearing 
+    if bearing != "":
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_bearing"
+        p3["bearing"] = bearing
+        poss = []
+        pos1 = copy.deepcopy(pos)
+        bearing_height_1 = -thickness/2 + thickness_shield + thickness_extra / 2 + thickness_belt / 2
+        pos1[2] += bearing_height_1
+        pos2 = copy.deepcopy(pos)
+        pos2[2] += thickness/2 - thickness_shield - thickness_extra / 2 - thickness_belt / 2
+        pos3 = copy.deepcopy(pos)
+        pos3[2] += 0
+        #poss.append(pos1)
+        #poss.append(pos2)
+        poss.append(pos3)
+        p3["pos"] = poss
+        #p3["m"] = "#"
+        oobb_base.append_full(thing,**p3)
+
+    # add_slice
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_slice"
+    pos1 = copy.deepcopy(pos)
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing,**p3)
+    
     if full_object:   
         return thing
     else: # only return the elements

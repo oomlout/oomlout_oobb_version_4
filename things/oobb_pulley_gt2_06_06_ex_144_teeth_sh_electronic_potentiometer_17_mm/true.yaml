@@ -1,30 +1,15 @@
--   depth: 6.5
+-   depth: 8.5
     diameter: 6
     extra: 144_teeth
     number_of_teeth: 144
     pos:
     - 0
     - 0
-    - 0
+    - -4.25
     shaft: electronic_potentiometer_17_mm
     shape: pulley_gt2
     thickness: 6
     type: p
--   both_holes: true
-    circle: true
-    diameter: 5.5
-    extra: 144_teeth
-    height: 1
-    middle: false
-    pos:
-    - 0
-    - 0
-    - 0
-    shaft: electronic_potentiometer_17_mm
-    shape: oobb_holes
-    thickness: 6
-    type: n
-    width: 1
 -   diameter: 6
     m: '#'
     part: shaft
@@ -34,5 +19,15 @@
     - 0
     shaft: electronic_potentiometer_17_mm
     shape: oobb_electronic_potentiometer_17_mm
+    thickness: 6
+    type: n
+-   diameter: 6
+    extra: 144_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_slice
     thickness: 6
     type: n

@@ -17,6 +17,12 @@ def get_wire_basic_basic_basic_basic(**kwargs):
 def get_wire_higher_voltage(**kwargs):
     return get_oobb_wire_base(**kwargs)
 
+def get_wire_higher_voltage_basic_basic_motor_stepper(**kwargs):
+    return get_oobb_wire_base(**kwargs)
+
+def get_wire_higher_voltage_motor_stepper(**kwargs):
+    return get_oobb_wire_base(**kwargs)
+
 def get_wire_i2c(**kwargs):
     return get_oobb_wire_base(**kwargs)
 

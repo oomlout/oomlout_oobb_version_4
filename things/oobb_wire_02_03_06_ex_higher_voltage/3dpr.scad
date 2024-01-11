@@ -3,13 +3,6 @@ $fn = 50;
 
 difference() {
 	union() {
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, -6]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_positive_type_6_depth_0_0_-6_pos_higher_voltage_extra_6_thickness_2_width_3_height_0_0_-6_pos_plate", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, -6]) {
 			hull() {
 				translate(v = [-9.5000000000, 17.0000000000, 0]) {
@@ -23,22 +16,6 @@ difference() {
 				}
 				translate(v = [9.5000000000, -17.0000000000, 0]) {
 					cylinder(h = 6, r = 5);
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, -6]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_p_type_0_0_-6_pos_higher_voltage_extra_6_thickness_2_width_3_height_0_0_-6_pos_plate_'left'_'right'_hole_sides_'left'_'right'_holes_true_both_holes", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-7.5000000000, 14, -3]) {
-				rotate(a = [0, 0, 180]) {
-					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_wire_higher_voltage_shape_-7.5_0_-3_pos_higher_voltage_extra_6_thickness_2_width_3_height_0_0_-6_pos_plate_0_0_180_rot", valign = "center");
-					}
 				}
 			}
 		}
@@ -250,20 +227,6 @@ difference() {
 		}
 		translate(v = [7.5000000000, -15.0000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, -1, -6]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_negative_type_m3_radius_name_0_-15_-6_pos_6_thickness_2_width_3_height_0_0_-6_pos_plate_bottom_zz_true_overhang_0_0_0_rot_false_nut_true_hole", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 29, -6]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_nut_shape_negative_type_m3_radius_name_0_15_-6_pos_6_thickness_2_width_3_height_0_0_-6_pos_plate_bottom_zz_true_overhang_0_0_0_rot_false_nut_true_hole", valign = "center");
-				}
-			}
 		}
 	}
 }

@@ -8,11 +8,11 @@
         "pos": [
             0,
             0,
-            1
+            -5.75
         ],
         "shape": "pulley_gt2",
         "number_of_teeth": 60,
-        "depth": 9.5
+        "depth": 11.5
     },
     {
         "type": "p",
@@ -23,29 +23,26 @@
         "pos": [
             0,
             0,
-            0.5
+            -5.25
         ],
         "shape": "oobb_cylinder",
         "radius": 20.108280254777068,
         "depth": 1
     },
     {
-        "type": "n",
+        "type": "p",
         "thickness": 9,
         "extra": "60_teeth_shield",
         "shaft": "m6_grubscrew_m3",
-        "diameter": 1.5,
+        "diameter": 2,
         "pos": [
             0,
             0,
-            0
+            5.25
         ],
-        "width": 1,
-        "height": 1,
-        "shape": "oobb_holes",
-        "both_holes": true,
-        "circle": true,
-        "middle": false
+        "shape": "oobb_cylinder",
+        "radius": 20.108280254777068,
+        "depth": 1
     },
     {
         "type": "n",
@@ -70,69 +67,8 @@
         "pos": [
             0,
             0,
-            4.75
+            0
         ],
-        "shape": "oobb_hole",
-        "radius_name": "m3",
-        "depth": 100,
-        "rot": [
-            0,
-            90,
-            45
-        ]
-    },
-    {
-        "type": "n",
-        "thickness": 9,
-        "shaft": "m6_grubscrew_m3",
-        "diameter": 2,
-        "pos": [
-            3,
-            3,
-            4.75
-        ],
-        "shape": "oobb_nut",
-        "radius_name": "m3",
-        "rot": [
-            0,
-            90,
-            45
-        ]
-    },
-    {
-        "type": "n",
-        "thickness": 9,
-        "shaft": "m6_grubscrew_m3",
-        "diameter": 2,
-        "pos": [
-            3,
-            3,
-            7.75
-        ],
-        "shape": "oobb_nut",
-        "radius_name": "m3",
-        "rot": [
-            0,
-            90,
-            45
-        ]
-    },
-    {
-        "type": "n",
-        "thickness": 9,
-        "shaft": "m6_grubscrew_m3",
-        "diameter": 2,
-        "pos": [
-            3,
-            3,
-            10.75
-        ],
-        "shape": "oobb_nut",
-        "radius_name": "m3",
-        "rot": [
-            0,
-            90,
-            45
-        ]
+        "shape": "oobb_slice"
     }
 ]

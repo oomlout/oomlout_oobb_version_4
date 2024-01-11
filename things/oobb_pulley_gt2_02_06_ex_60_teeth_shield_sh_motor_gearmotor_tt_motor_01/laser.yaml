@@ -1,11 +1,11 @@
--   depth: 6.5
+-   depth: 8.5
     diameter: 2
     extra: 60_teeth_shield
     number_of_teeth: 60
     pos:
     - 0
     - 0
-    - 1
+    - -4.25
     shaft: motor_gearmotor_tt_motor_01
     shape: pulley_gt2
     thickness: 6
@@ -16,27 +16,24 @@
     pos:
     - 0
     - 0
-    - 0.5
+    - -3.75
     radius: 20.108280254777068
     shaft: motor_gearmotor_tt_motor_01
     shape: oobb_cylinder
     thickness: 6
     type: p
--   both_holes: true
-    circle: true
-    diameter: 1.5
+-   depth: 1
+    diameter: 2
     extra: 60_teeth_shield
-    height: 1
-    middle: false
     pos:
     - 0
     - 0
-    - 0
+    - 3.75
+    radius: 20.108280254777068
     shaft: motor_gearmotor_tt_motor_01
-    shape: oobb_holes
+    shape: oobb_cylinder
     thickness: 6
-    type: n
-    width: 1
+    type: p
 -   diameter: 2
     m: '#'
     part: shaft
@@ -46,5 +43,15 @@
     - 0
     shaft: motor_gearmotor_tt_motor_01
     shape: oobb_motor_gearmotor_tt_motor_01
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 60_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_gearmotor_tt_motor_01
+    shape: oobb_slice
     thickness: 6
     type: n

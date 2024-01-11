@@ -1,11 +1,11 @@
--   depth: 9.5
+-   depth: 11.5
     diameter: 1
     extra: 20_teeth_shield
     number_of_teeth: 20
     pos:
     - 0
     - 0
-    - 1
+    - -5.75
     shaft: ''
     shape: pulley_gt2
     thickness: 9
@@ -16,27 +16,24 @@
     pos:
     - 0
     - 0
-    - 0.5
+    - -5.25
     radius: 7.369426751592356
     shaft: ''
     shape: oobb_cylinder
     thickness: 9
     type: p
--   both_holes: true
-    circle: true
+-   depth: 1
     diameter: 1
     extra: 20_teeth_shield
-    height: 1
-    middle: false
     pos:
     - 0
     - 0
-    - 0
+    - 5.25
+    radius: 7.369426751592356
     shaft: ''
-    shape: oobb_holes
+    shape: oobb_cylinder
     thickness: 9
-    type: n
-    width: 1
+    type: p
 -   diameter: 1
     extra: 20_teeth_shield
     pos:
@@ -46,5 +43,15 @@
     radius_name: m6
     shaft: ''
     shape: oobb_hole
+    thickness: 9
+    type: n
+-   diameter: 1
+    extra: 20_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: ''
+    shape: oobb_slice
     thickness: 9
     type: n

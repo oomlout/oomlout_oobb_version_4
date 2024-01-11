@@ -8,29 +8,11 @@
         "pos": [
             0,
             0,
-            0
+            -5.75
         ],
         "shape": "pulley_gt2",
         "number_of_teeth": 30,
-        "depth": 9.5
-    },
-    {
-        "type": "n",
-        "thickness": 9,
-        "extra": "30_teeth",
-        "shaft": "m3",
-        "diameter": 1,
-        "pos": [
-            0,
-            0,
-            0
-        ],
-        "shape": "oobb_holes",
-        "width": 1,
-        "height": 1,
-        "both_holes": true,
-        "circle": true,
-        "middle": false
+        "depth": 11.5
     },
     {
         "type": "n",
@@ -45,5 +27,18 @@
         ],
         "shape": "oobb_hole",
         "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "30_teeth",
+        "shaft": "m3",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_slice"
     }
 ]

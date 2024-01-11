@@ -83,7 +83,7 @@ def main(**kwargs):
     #filter = "72_teeth_shield_sh_m6_grub"
     #filter = "20_teeth_shield_sh_motor_n20"
     #filter = "oobb_pulley_gt2"
-    filter = "_6705_ex_72_teeth_shield_double"
+    #filter = "_6705_ex_72_teeth_shield"
 
     # shaft
     #filter = "shaft"
@@ -98,7 +98,8 @@ def main(**kwargs):
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"
     #filter = "oobb_wire_02_03_06_ex_basic"
-    #filter = "basic"
+    filter = "motor_stepper"
+    #filter = "oobb_wire_03_03_09_ex_higher_voltage_motor_stepper"
 
     #oobb_servo_holder
     #filter = []
@@ -123,10 +124,10 @@ def main(**kwargs):
     #oobb_base.dump("json")
     #oobb_base.dump("folder")
 
-    save_type = "none"
+    #save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
-    #save_type = "all"
+    save_type = "all"
 
     overwrite = True
     #overwrite = False

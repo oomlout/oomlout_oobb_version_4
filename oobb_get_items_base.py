@@ -707,6 +707,7 @@ def get_oobb_slice(**kwargs):
     
     modes = p3.get("mode", ["laser", "3dpr", "true"])
     pos = copy.deepcopy(p3.get("pos", [0, 0, 0]))
+    size = copy.deepcopy(p3.get("size", [500, 500, 500]))
     p3["pos"] = pos
     zz = p3.get("zz", "bottom")
 
@@ -714,7 +715,7 @@ def get_oobb_slice(**kwargs):
 
 
     if pos[0] == 0 and pos[1] == 0:
-        pos = [-250,-250,pos[2]]
+        pos = [-size[0]/2,-size[1]/2,pos[2]]
         p3["pos"] = pos
     
     if modes == "all":
@@ -723,15 +724,18 @@ def get_oobb_slice(**kwargs):
     if type(modes) == str:
         modes = [modes]
 
-    for mode in modes:        
+    shift = -size[2]
+    p4 = copy.deepcopy(p3)
+    for mode in modes:
+        p3 = copy.deepcopy(p4)        
         p3["shape"] = "cube"
-        p3["size"] = [500,500,500]
+        p3["size"] = copy.deepcopy(size)
         
         #shift 250
         if zz == "bottom":
-            p3["pos"][2] = p3["pos"][2] 
+            p3["pos"][2] += 0
         elif zz == "top":
-            p3["pos"][2] = p3["pos"][2] - 500
+            p3["pos"][2] += shift
         kwargs.update({"inclusion": mode})
         #p3["m"] = "#"
         return_value.append(opsc.opsc_easy(**p3))

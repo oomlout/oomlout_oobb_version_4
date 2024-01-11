@@ -8,29 +8,11 @@
         "pos": [
             0,
             0,
-            0
+            -4.25
         ],
         "shape": "pulley_gt2",
         "number_of_teeth": 144,
-        "depth": 6.5
-    },
-    {
-        "type": "n",
-        "thickness": 6,
-        "extra": "144_teeth",
-        "shaft": "motor_servo_standard_01",
-        "diameter": 5.5,
-        "pos": [
-            0,
-            0,
-            0
-        ],
-        "width": 1,
-        "height": 1,
-        "shape": "oobb_holes",
-        "both_holes": true,
-        "circle": true,
-        "middle": false
+        "depth": 8.5
     },
     {
         "type": "n",
@@ -51,5 +33,18 @@
         ],
         "overhang": false,
         "m": "#"
+    },
+    {
+        "type": "n",
+        "thickness": 6,
+        "extra": "144_teeth",
+        "shaft": "motor_servo_standard_01",
+        "diameter": 6,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_slice"
     }
 ]
