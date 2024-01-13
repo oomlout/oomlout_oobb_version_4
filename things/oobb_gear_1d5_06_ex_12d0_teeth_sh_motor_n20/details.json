@@ -1,0 +1,146 @@
+{
+    "description": "gear 0x0x6",
+    "id": "oobb_gear_1d5_06_ex_12d0_teeth_sh_motor_n20",
+    "type": "gear",
+    "diameter": 1.5,
+    "thickness": 6,
+    "extra": "12.0_teeth",
+    "shaft": "motor_n20",
+    "thickness_mm": 6,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "gear main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT gear main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "gear",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "depth": 6,
+                "extra": "12.0_teeth",
+                "number_of_teeth": 8,
+                "diametral_pitch": 0.53333333
+            }
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "holes main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT holes main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "d_shaft",
+                    "comment": [
+                        "shaft for n20 motor"
+                    ],
+                    "r": 1.75,
+                    "pos": [
+                        0,
+                        0,
+                        125
+                    ],
+                    "m": "#",
+                    "id": 2.75,
+                    "depth": 250
+                }
+            ]
+        ]
+    ],
+    "components_string": [
+        "gear_shape_p_type_6_depth_1_diameter_6_thickness_12.0_teeth_extra_motor_n20_shaft_0.53333333_diametral_pitch_8_number_of_teeth",
+        "oobb_holes_shape_n_type_1_diameter_6_thickness_12.0_teeth_extra_motor_n20_shaft_1_width_1_height_true_both_holes_true_circle_false_middle",
+        "oobb_motor_n20_shape_n_type_1_diameter_6_thickness_motor_n20_shaft_shaft_part"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "diameter": 1,
+            "thickness": 6,
+            "extra": "12.0_teeth",
+            "shaft": "motor_n20",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "gear",
+            "diametral_pitch": 0.53333333,
+            "number_of_teeth": 8,
+            "depth": 6
+        },
+        {
+            "type": "n",
+            "diameter": 1,
+            "thickness": 6,
+            "extra": "12.0_teeth",
+            "shaft": "motor_n20",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_holes",
+            "width": 1,
+            "height": 1,
+            "both_holes": true,
+            "circle": true,
+            "middle": false
+        },
+        {
+            "type": "n",
+            "diameter": 1,
+            "thickness": 6,
+            "shaft": "motor_n20",
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_motor_n20",
+            "part": "shaft",
+            "m": "#"
+        }
+    ],
+    "folder": "things/oobb_gear_1d5_06_ex_12d0_teeth_sh_motor_n20"
+}

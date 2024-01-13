@@ -1,0 +1,880 @@
+{
+    "description": "wire 3x3x3",
+    "id": "oobb_wire_03_03_03_ex_motor",
+    "type": "wire",
+    "width": 3,
+    "height": 3,
+    "thickness": 3,
+    "extra": "motor",
+    "width_mm": 44,
+    "thickness_mm": 3,
+    "height_mm": 44,
+    "components": [
+        [
+            {
+                "type": "positive",
+                "shape": "rounded_rectangle",
+                "size": [
+                    44,
+                    44,
+                    3
+                ],
+                "pos": [
+                    0,
+                    0,
+                    -3
+                ],
+                "height": 3,
+                "width": 3,
+                "depth": 3,
+                "extra": "motor"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "negative",
+                "pos": [
+                    22.5,
+                    0,
+                    -3
+                ],
+                "rot": [
+                    0,
+                    0,
+                    180
+                ],
+                "objects": [
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        5,
+                                        3.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        23.067,
+                                        1.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        6,
+                                        5.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        0.3540000000000001,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        14,
+                                        5.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        9.038,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        2.54,
+                                        10.16,
+                                        3
+                                    ],
+                                    "pos": [
+                                        6.5,
+                                        -2.54,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        10,
+                                        3
+                                    ],
+                                    "pos": [
+                                        25.044,
+                                        -5.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "depth": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        5,
+                                        3.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        23.067,
+                                        1.0,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        6.300000000000001,
+                                        5.38,
+                                        3
+                                    ],
+                                    "pos": [
+                                        0.20399999999999974,
+                                        -0.1499999999999999,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        14.3,
+                                        5.38,
+                                        3
+                                    ],
+                                    "pos": [
+                                        8.888,
+                                        -0.1499999999999999,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        2.84,
+                                        10.46,
+                                        3
+                                    ],
+                                    "pos": [
+                                        6.35,
+                                        -2.6900000000000004,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        10,
+                                        3
+                                    ],
+                                    "pos": [
+                                        25.044,
+                                        -5.0,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "depth": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        5,
+                                        3.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        23.067,
+                                        1.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        6,
+                                        5.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        0.3540000000000001,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        14,
+                                        5.08,
+                                        3
+                                    ],
+                                    "pos": [
+                                        9.038,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        2.54,
+                                        10.16,
+                                        3
+                                    ],
+                                    "pos": [
+                                        6.5,
+                                        -2.54,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        10,
+                                        3
+                                    ],
+                                    "pos": [
+                                        25.044,
+                                        -5.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "m": "#",
+                                    "depth": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_positive_type_3_depth_0_0_-3_pos_motor_extra_3_thickness_3_width_3_height_0_0_-3_pos_plate",
+        "oobb_holes_shape_p_type_0_0_-3_pos_motor_extra_3_thickness_3_width_3_height_0_0_-3_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes",
+        "oobb_wire_motor_shape_0_0_-3_pos_motor_extra_3_thickness_3_width_3_height_0_0_-3_pos_plate_0_0_180_rot"
+    ],
+    "components_objects": [
+        {
+            "extra": "motor",
+            "thickness": 3,
+            "width": 3,
+            "height": 3,
+            "pos": [
+                0,
+                0,
+                -3
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -3
+            ],
+            "type": "positive",
+            "shape": "oobb_plate",
+            "depth": 3
+        },
+        {
+            "extra": "motor",
+            "thickness": 3,
+            "width": 3,
+            "height": 3,
+            "pos": [
+                0,
+                0,
+                -3
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -3
+            ],
+            "hole_sides": [
+                "left",
+                "right",
+                "top"
+            ],
+            "type": "p",
+            "shape": "oobb_holes",
+            "holes": [
+                "left",
+                "right",
+                "top"
+            ],
+            "both_holes": true
+        },
+        {
+            "extra": "motor",
+            "thickness": 3,
+            "width": 3,
+            "height": 3,
+            "pos": [
+                0,
+                0,
+                -3
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -3
+            ],
+            "shape": "oobb_wire_motor",
+            "rot": [
+                0,
+                0,
+                180
+            ],
+            "m": "#"
+        }
+    ],
+    "folder": "things/oobb_wire_03_03_03_ex_motor"
+}

@@ -6,44 +6,6 @@
     "components": [
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    14,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_shape_positive_type_true_comment_display\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_shape_positive_type_true_comment_display",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -410,44 +372,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    74,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_stepper_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_stepper_shape_positive_type_0_60_0_pos_true_comment_display\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    74,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_stepper_shape_positive_type_0_60_0_pos_true_comment_display",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -810,44 +734,6 @@
                         ]
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    134,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_basic_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_basic_shape_positive_type_0_120_0_pos_true_comment_display\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    134,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_basic_shape_positive_type_0_120_0_pos_true_comment_display",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -1265,44 +1151,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    194,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_higher_voltage_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_higher_voltage_shape_positive_type_0_180_0_pos_true_comment_display\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    194,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_higher_voltage_shape_positive_type_0_180_0_pos_true_comment_display",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -1716,44 +1564,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    254,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_i2c_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_i2c_shape_positive_type_0_240_0_pos_true_comment_display\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    254,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_i2c_shape_positive_type_0_240_0_pos_true_comment_display",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -2163,44 +1973,6 @@
                         }
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    314,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_spacer_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_spacer_shape_positive_type_0_300_0_pos_true_comment_display\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    314,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_spacer_shape_positive_type_0_300_0_pos_true_comment_display",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -2243,63 +2015,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    14,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    7,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_shape_positive_type_150_0_0_pos_true_comment_display_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_shape_positive_type_150_0_0_pos_true_comment_display_180_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -2666,63 +2381,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    74,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_stepper_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    67,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_stepper_shape_positive_type_150_60_0_pos_true_comment_display_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    74,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_stepper_shape_positive_type_150_60_0_pos_true_comment_display_180_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -3085,63 +2743,6 @@
                         ]
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    134,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_basic_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    127,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_basic_shape_positive_type_150_120_0_pos_true_comment_display_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    134,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_basic_shape_positive_type_150_120_0_pos_true_comment_display_180_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -3559,63 +3160,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    194,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_higher_voltage_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    187,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_higher_voltage_shape_positive_type_150_180_0_pos_true_comment_display_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    194,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_higher_voltage_shape_positive_type_150_180_0_pos_true_comment_display_180_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -4029,63 +3573,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    254,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_i2c_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    247,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_i2c_shape_positive_type_150_240_0_pos_true_comment_display_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    254,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_i2c_shape_positive_type_150_240_0_pos_true_comment_display_180_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -4495,63 +3982,6 @@
                         }
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    314,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_spacer_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\nrot_y : 180",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    307,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_spacer_shape_positive_type_150_300_0_pos_true_comment_display_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    150,
-                    314,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_spacer_shape_positive_type_150_300_0_pos_true_comment_display_180_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -4594,63 +4024,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    14,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    7,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 90",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_shape_positive_type_300_0_0_pos_true_comment_display_90_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_shape_positive_type_300_0_0_pos_true_comment_display_90_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -5017,63 +4390,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    74,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_stepper_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    67,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 90",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_stepper_shape_positive_type_300_60_0_pos_true_comment_display_90_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    74,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_stepper_shape_positive_type_300_60_0_pos_true_comment_display_90_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -5436,63 +4752,6 @@
                         ]
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    134,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_basic_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    127,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 90",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_basic_shape_positive_type_300_120_0_pos_true_comment_display_90_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    134,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_basic_shape_positive_type_300_120_0_pos_true_comment_display_90_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -5910,63 +5169,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    194,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_higher_voltage_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    187,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 90",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_higher_voltage_shape_positive_type_300_180_0_pos_true_comment_display_90_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    194,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_higher_voltage_shape_positive_type_300_180_0_pos_true_comment_display_90_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -6380,63 +5582,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    254,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_i2c_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    247,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 90",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_i2c_shape_positive_type_300_240_0_pos_true_comment_display_90_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    254,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_i2c_shape_positive_type_300_240_0_pos_true_comment_display_90_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -6846,63 +5991,6 @@
                         }
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    314,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_spacer_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\nrot_y : 90",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    307,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_y : 90",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_spacer_shape_positive_type_300_300_0_pos_true_comment_display_90_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    314,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_spacer_shape_positive_type_300_300_0_pos_true_comment_display_90_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -6945,63 +6033,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    14,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    7,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_x : 90 rot_y : 45",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_shape_positive_type_450_0_0_pos_true_comment_display_45_rot_x_45_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_shape_positive_type_450_0_0_pos_true_comment_display_45_rot_x_45_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -7368,63 +6399,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    74,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_motor_stepper_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_motor_stepper_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    67,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_x : 90 rot_y : 45",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_motor_stepper_shape_positive_type_450_60_0_pos_true_comment_display_45_rot_x_45_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    74,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_motor_stepper_shape_positive_type_450_60_0_pos_true_comment_display_45_rot_x_45_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -7787,63 +6761,6 @@
                         ]
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    134,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_basic_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_basic_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    127,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_x : 90 rot_y : 45",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_basic_shape_positive_type_450_120_0_pos_true_comment_display_45_rot_x_45_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    134,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_basic_shape_positive_type_450_120_0_pos_true_comment_display_45_rot_x_45_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -8261,63 +7178,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    194,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_higher_voltage_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_higher_voltage_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    187,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_x : 90 rot_y : 45",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_higher_voltage_shape_positive_type_450_180_0_pos_true_comment_display_45_rot_x_45_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    194,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_higher_voltage_shape_positive_type_450_180_0_pos_true_comment_display_45_rot_x_45_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -8731,63 +7591,6 @@
         ],
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    254,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_i2c_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_i2c_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    247,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_x : 90 rot_y : 45",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_i2c_shape_positive_type_450_240_0_pos_true_comment_display_45_rot_x_45_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    254,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_i2c_shape_positive_type_450_240_0_pos_true_comment_display_45_rot_x_45_rot_y",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "positive",
                 "pos": [
@@ -9197,63 +8000,6 @@
                         }
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    314,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "COMMENT oobb_wire_spacer_",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_wire_spacer_\nrot_x : 90 rot_y : 45",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    307,
-                    0
-                ],
-                "m": "",
-                "depth": 1,
-                "text": "rot_x : 90 rot_y : 45",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "positive",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_wire_spacer_shape_positive_type_450_300_0_pos_true_comment_display_45_rot_x_45_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    450,
-                    314,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_wire_spacer_shape_positive_type_450_300_0_pos_true_comment_display_45_rot_x_45_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [

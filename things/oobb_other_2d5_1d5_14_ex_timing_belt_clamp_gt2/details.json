@@ -1,0 +1,561 @@
+{
+    "description": "other 2.5x1.5x14",
+    "id": "oobb_other_2d5_1d5_14_ex_timing_belt_clamp_gt2",
+    "type": "other",
+    "width": 2.5,
+    "height": 1.5,
+    "thickness": 14,
+    "extra": "timing_belt_clamp_gt2",
+    "width_mm": 36.5,
+    "thickness_mm": 14,
+    "height_mm": 21.5,
+    "components": [
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    40.5,
+                    25.5,
+                    14
+                ],
+                "pos": [
+                    0,
+                    0,
+                    -7.0
+                ],
+                "height": 1.5,
+                "width": 2.5,
+                "extra": "timing_belt_clamp_gt2"
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    15,
+                    7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.8,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    15,
+                    -7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.8,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.8,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    -7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.8,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    -15,
+                    7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.8,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    -15,
+                    -7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.8,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 1.5,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 1.5,
+                        "width": 2.5,
+                        "extra": "timing_belt_clamp_gt2"
+                    }
+                ]
+            }
+        ]
+    ],
+    "components_string": [
+        "rounded_rectangle_shape_p_type_0_0_-7.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_40.5_25.5_14_size",
+        "oobb_hole_new_shape_n_type_m3_radius_name_15_7.5_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_middle_zz_0_0_0_rot",
+        "oobb_hole_new_shape_n_type_m3_radius_name_15_-7.5_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_middle_zz_0_0_0_rot",
+        "oobb_hole_new_shape_n_type_m3_radius_name_0_7.5_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_middle_zz_0_0_0_rot",
+        "oobb_hole_new_shape_n_type_m3_radius_name_0_-7.5_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_middle_zz_0_0_0_rot",
+        "oobb_hole_new_shape_n_type_m3_radius_name_-15_7.5_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_middle_zz_0_0_0_rot",
+        "oobb_hole_new_shape_n_type_m3_radius_name_-15_-7.5_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_14_thickness_middle_zz_0_0_0_rot"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "rounded_rectangle",
+            "size": [
+                40.5,
+                25.5,
+                14
+            ],
+            "pos": [
+                0,
+                0,
+                -7.0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                15,
+                7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                15,
+                -7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                0,
+                7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                0,
+                -7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                -15,
+                7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "extra": "timing_belt_clamp_gt2",
+            "width": 2.5,
+            "height": 1.5,
+            "thickness": 14,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                -15,
+                -7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m3"
+        }
+    ],
+    "folder": "things/oobb_other_2d5_1d5_14_ex_timing_belt_clamp_gt2"
+}

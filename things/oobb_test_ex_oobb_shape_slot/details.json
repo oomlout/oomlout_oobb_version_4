@@ -1,0 +1,1269 @@
+{
+    "description": "test 0x0x0",
+    "id": "oobb_test_ex_oobb_shape_slot",
+    "type": "test",
+    "extra": "oobb_shape_slot",
+    "components": [
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    0,
+                    -5.0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\n",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\n",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\n",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    50,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : top",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : top",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : top",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    100,
+                    -10
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottom",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottom",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottom",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    150,
+                    -5.0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middle",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middle",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middle",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    150,
+                    0,
+                    -5.0
+                ],
+                "rot": [
+                    0,
+                    30.0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    150,
+                    50,
+                    0
+                ],
+                "rot": [
+                    0,
+                    30.0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    150,
+                    100,
+                    -10
+                ],
+                "rot": [
+                    0,
+                    30.0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    150,
+                    150,
+                    -5.0
+                ],
+                "rot": [
+                    0,
+                    30.0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_y : 360/12",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    300,
+                    0,
+                    -5.0
+                ],
+                "rot": [
+                    0,
+                    90,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    300,
+                    50,
+                    0
+                ],
+                "rot": [
+                    0,
+                    90,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    300,
+                    100,
+                    -10
+                ],
+                "rot": [
+                    0,
+                    90,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    300,
+                    150,
+                    -5.0
+                ],
+                "rot": [
+                    0,
+                    90,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_y : 90",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    450,
+                    0,
+                    -5.0
+                ],
+                "rot": [
+                    90,
+                    45,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nrot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    450,
+                    50,
+                    0
+                ],
+                "rot": [
+                    90,
+                    45,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : toprot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    450,
+                    100,
+                    -10
+                ],
+                "rot": [
+                    90,
+                    45,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : bottomrot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    450,
+                    150,
+                    -5.0
+                ],
+                "rot": [
+                    90,
+                    45,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "laser",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "3dpr",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "comment": "oobb_slot\nzz : middlerot_x : 90 rot_y : 45",
+                        "r": "",
+                        "r1": 5,
+                        "r2": 10,
+                        "h": 10,
+                        "inclusion": "true",
+                        "width": 20,
+                        "depth": 10,
+                        "extra": {}
+                    }
+                ]
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_slot_shape_10_depth_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra",
+        "oobb_slot_shape_10_depth_0_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz",
+        "oobb_slot_shape_10_depth_0_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz",
+        "oobb_slot_shape_10_depth_0_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz",
+        "oobb_slot_shape_10_depth_150_0_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra_0_30.0_0_rot",
+        "oobb_slot_shape_10_depth_150_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz_0_30.0_0_rot",
+        "oobb_slot_shape_10_depth_150_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz_0_30.0_0_rot",
+        "oobb_slot_shape_10_depth_150_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz_0_30.0_0_rot",
+        "oobb_slot_shape_10_depth_300_0_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra_0_90_0_rot",
+        "oobb_slot_shape_10_depth_300_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz_0_90_0_rot",
+        "oobb_slot_shape_10_depth_300_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz_0_90_0_rot",
+        "oobb_slot_shape_10_depth_300_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz_0_90_0_rot",
+        "oobb_slot_shape_10_depth_450_0_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra_90_45_0_rot",
+        "oobb_slot_shape_10_depth_450_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz_90_45_0_rot",
+        "oobb_slot_shape_10_depth_450_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz_90_45_0_rot",
+        "oobb_slot_shape_10_depth_450_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz_90_45_0_rot"
+    ],
+    "components_objects": [
+        {
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "",
+            "comment_display": true,
+            "extra": {}
+        },
+        {
+            "pos": [
+                0,
+                50,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : top",
+            "comment_display": true,
+            "extra": {},
+            "zz": "top"
+        },
+        {
+            "pos": [
+                0,
+                100,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : bottom",
+            "comment_display": true,
+            "extra": {},
+            "zz": "bottom"
+        },
+        {
+            "pos": [
+                0,
+                150,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : middle",
+            "comment_display": true,
+            "extra": {},
+            "zz": "middle"
+        },
+        {
+            "pos": [
+                150,
+                0,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "",
+            "comment_display": true,
+            "extra": {},
+            "rot": [
+                0,
+                30.0,
+                0
+            ]
+        },
+        {
+            "pos": [
+                150,
+                50,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : top",
+            "comment_display": true,
+            "extra": {},
+            "zz": "top",
+            "rot": [
+                0,
+                30.0,
+                0
+            ]
+        },
+        {
+            "pos": [
+                150,
+                100,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : bottom",
+            "comment_display": true,
+            "extra": {},
+            "zz": "bottom",
+            "rot": [
+                0,
+                30.0,
+                0
+            ]
+        },
+        {
+            "pos": [
+                150,
+                150,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : middle",
+            "comment_display": true,
+            "extra": {},
+            "zz": "middle",
+            "rot": [
+                0,
+                30.0,
+                0
+            ]
+        },
+        {
+            "pos": [
+                300,
+                0,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "",
+            "comment_display": true,
+            "extra": {},
+            "rot": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "pos": [
+                300,
+                50,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : top",
+            "comment_display": true,
+            "extra": {},
+            "zz": "top",
+            "rot": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "pos": [
+                300,
+                100,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : bottom",
+            "comment_display": true,
+            "extra": {},
+            "zz": "bottom",
+            "rot": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "pos": [
+                300,
+                150,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : middle",
+            "comment_display": true,
+            "extra": {},
+            "zz": "middle",
+            "rot": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "pos": [
+                450,
+                0,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "",
+            "comment_display": true,
+            "extra": {},
+            "rot": [
+                90,
+                45,
+                0
+            ]
+        },
+        {
+            "pos": [
+                450,
+                50,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : top",
+            "comment_display": true,
+            "extra": {},
+            "zz": "top",
+            "rot": [
+                90,
+                45,
+                0
+            ]
+        },
+        {
+            "pos": [
+                450,
+                100,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : bottom",
+            "comment_display": true,
+            "extra": {},
+            "zz": "bottom",
+            "rot": [
+                90,
+                45,
+                0
+            ]
+        },
+        {
+            "pos": [
+                450,
+                150,
+                0
+            ],
+            "shape": "oobb_slot",
+            "r1": 5,
+            "r2": 10,
+            "width": 20,
+            "depth": 10,
+            "comment_shift_line": 15,
+            "comment_extra": "zz : middle",
+            "comment_display": true,
+            "extra": {},
+            "zz": "middle",
+            "rot": [
+                90,
+                45,
+                0
+            ]
+        }
+    ],
+    "folder": "things/oobb_test_ex_oobb_shape_slot"
+}

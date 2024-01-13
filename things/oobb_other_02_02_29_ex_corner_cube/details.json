@@ -1,0 +1,687 @@
+{
+    "description": "other 2x2x29",
+    "id": "oobb_other_02_02_29_ex_corner_cube",
+    "type": "other",
+    "width": 2,
+    "height": 2,
+    "thickness": 29,
+    "extra": "corner_cube",
+    "width_mm": 29,
+    "thickness_mm": 29,
+    "height_mm": 29,
+    "components": [
+        [
+            {
+                "type": "p",
+                "shape": "sphere_rectangle",
+                "size": [
+                    29,
+                    29,
+                    29
+                ],
+                "radius": 2.5,
+                "pos": [
+                    0,
+                    0,
+                    -14.5
+                ],
+                "height": 2,
+                "width": 2,
+                "extra": "corner_cube"
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    7.5,
+                    0,
+                    -7.5
+                ],
+                "rot": [
+                    90,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.25,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    -7.5,
+                    -7.5,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.25,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    7.5,
+                    7.5
+                ],
+                "rot": [
+                    0,
+                    90,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "laser",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.25,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "3dpr",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            -50.0
+                        ],
+                        "inclusion": "true",
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    50,
+                    0,
+                    0
+                ],
+                "rot": [
+                    180,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    50,
+                    0,
+                    0
+                ],
+                "rot": [
+                    180,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    50,
+                    0,
+                    0
+                ],
+                "rot": [
+                    180,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    50,
+                    0,
+                    0
+                ],
+                "rot": [
+                    180,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cube",
+                        "size": [
+                            15,
+                            15,
+                            29
+                        ],
+                        "pos": [
+                            -7.5,
+                            -7.5,
+                            -29
+                        ],
+                        "height": 2,
+                        "width": 2,
+                        "extra": "corner_cube"
+                    }
+                ]
+            }
+        ]
+    ],
+    "components_string": [
+        "sphere_rectangle_shape_p_type_0_0_-14.5_pos_corner_cube_extra_2_width_2_height_29_thickness_2.5_radius_29_29_29_size",
+        "oobb_hole_new_shape_n_type_m6_radius_name_7.5_0_-7.5_pos_corner_cube_extra_2_width_2_height_29_thickness_middle_zz_90_0_0_rot",
+        "oobb_hole_new_shape_n_type_m6_radius_name_-7.5_-7.5_0_pos_corner_cube_extra_2_width_2_height_29_thickness_middle_zz_0_0_0_rot",
+        "oobb_hole_new_shape_n_type_m6_radius_name_0_7.5_7.5_pos_corner_cube_extra_2_width_2_height_29_thickness_middle_zz_0_90_0_rot",
+        "oobb_cube_new_shape_n_type_7.5_0_-7.5_pos_corner_cube_extra_2_width_2_height_29_thickness_15_15_29_size_top_zz_90_0_0_rot",
+        "oobb_cube_new_shape_n_type_-7.5_-7.5_0_pos_corner_cube_extra_2_width_2_height_29_thickness_15_15_29_size_top_zz_0_0_0_rot",
+        "oobb_cube_new_shape_n_type_0_7.5_7.5_pos_corner_cube_extra_2_width_2_height_29_thickness_15_15_29_size_top_zz_0_90_0_rot",
+        "oobb_cube_new_shape_n_type_0_7.5_-7.5_pos_corner_cube_extra_2_width_2_height_29_thickness_15_15_29_size_top_zz_0_90_0_rot"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "sphere_rectangle",
+            "radius": 2.5,
+            "size": [
+                29,
+                29,
+                29
+            ],
+            "pos": [
+                0,
+                0,
+                -14.5
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                7.5,
+                0,
+                -7.5
+            ],
+            "rot": [
+                90,
+                0,
+                0
+            ],
+            "radius_name": "m6"
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                -7.5,
+                -7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "radius_name": "m6"
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_hole_new",
+            "zz": "middle",
+            "pos": [
+                0,
+                7.5,
+                7.5
+            ],
+            "rot": [
+                0,
+                90,
+                0
+            ],
+            "radius_name": "m6"
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_cube_new",
+            "size": [
+                15,
+                15,
+                29
+            ],
+            "zz": "top",
+            "pos": [
+                7.5,
+                0,
+                -7.5
+            ],
+            "rot": [
+                90,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_cube_new",
+            "size": [
+                15,
+                15,
+                29
+            ],
+            "zz": "top",
+            "pos": [
+                -7.5,
+                -7.5,
+                0
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_cube_new",
+            "size": [
+                15,
+                15,
+                29
+            ],
+            "zz": "top",
+            "pos": [
+                0,
+                7.5,
+                7.5
+            ],
+            "rot": [
+                0,
+                90,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "corner_cube",
+            "width": 2,
+            "height": 2,
+            "thickness": 29,
+            "shape": "oobb_cube_new",
+            "size": [
+                15,
+                15,
+                29
+            ],
+            "zz": "top",
+            "pos": [
+                0,
+                7.5,
+                -7.5
+            ],
+            "rot": [
+                0,
+                90,
+                0
+            ]
+        }
+    ],
+    "folder": "things/oobb_other_02_02_29_ex_corner_cube"
+}

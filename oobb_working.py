@@ -88,7 +88,7 @@ def main(**kwargs):
     #filter = "_6705_ex_72_teeth_shield"
 
     # shaft
-    #filter = "shaft"
+    filter = "shaft"
 
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"
@@ -126,10 +126,10 @@ def main(**kwargs):
     #oobb_base.dump("json")
     #oobb_base.dump("folder")
 
-    #save_type = "none"
+    save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
-    save_type = "all"
+    #save_type = "all"
 
     overwrite = True
     #overwrite = False

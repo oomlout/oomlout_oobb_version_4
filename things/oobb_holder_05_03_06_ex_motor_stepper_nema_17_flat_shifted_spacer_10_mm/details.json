@@ -1,0 +1,2412 @@
+{
+    "description": "holder 5x3x6",
+    "id": "oobb_holder_05_03_06_ex_motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+    "type": "holder",
+    "width": 5,
+    "height": 3,
+    "thickness": 6,
+    "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+    "width_mm": 74,
+    "thickness_mm": 6,
+    "height_mm": 44,
+    "components": [
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    75.0,
+                    45.0,
+                    6
+                ],
+                "pos": [
+                    -15,
+                    0,
+                    0
+                ],
+                "height": 3,
+                "width": 5,
+                "depth": 6,
+                "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -22.5,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -22.5,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -22.5,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -22.5,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -22.5,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -22.5,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        -7.5,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        -7.5,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        -7.5,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        7.5,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        7.5,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -45.0,
+                        7.5,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -37.5,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        -7.5,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        -7.5,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        -7.5,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        7.5,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        7.5,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 100,
+                    "pos": [
+                        -30.0,
+                        7.5,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    [
+                        {
+                            "type": "rotation",
+                            "typetype": "p",
+                            "pos": [
+                                15.5,
+                                15.5,
+                                6
+                            ],
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.4,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.8,
+                                        "r2": 3.6,
+                                        "h": 1.9,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.9
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.9,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type": "rotation",
+                            "typetype": "p",
+                            "pos": [
+                                -15.5,
+                                15.5,
+                                6
+                            ],
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.4,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.8,
+                                        "r2": 3.6,
+                                        "h": 1.9,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.9
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.9,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type": "rotation",
+                            "typetype": "p",
+                            "pos": [
+                                15.5,
+                                -15.5,
+                                6
+                            ],
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.4,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.8,
+                                        "r2": 3.6,
+                                        "h": 1.9,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.9
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.9,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type": "rotation",
+                            "typetype": "p",
+                            "pos": [
+                                -15.5,
+                                -15.5,
+                                6
+                            ],
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.4,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.8,
+                                        "r2": 3.6,
+                                        "h": 1.9,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.9
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r1": 1.5,
+                                        "r2": 2.9,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "height": 3,
+                                        "width": 5,
+                                        "depth": 25,
+                                        "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 13.0,
+                            "radius": 13.0,
+                            "h": 250,
+                            "pos": [
+                                0,
+                                0,
+                                -125.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 5,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 13.0,
+                            "radius": 13.0,
+                            "h": 250,
+                            "pos": [
+                                0,
+                                0,
+                                -125.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 5,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 13.0,
+                            "radius": 13.0,
+                            "h": 250,
+                            "pos": [
+                                0,
+                                0,
+                                -125.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 5,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    0,
+                    -6
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    [
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                15.5,
+                                15.5,
+                                -4.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                15.5,
+                                15.5,
+                                -4.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                15.5,
+                                15.5,
+                                -4.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                -15.5,
+                                15.5,
+                                -4.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                -15.5,
+                                15.5,
+                                -4.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                -15.5,
+                                15.5,
+                                -4.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                15.5,
+                                -15.5,
+                                -4.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                15.5,
+                                -15.5,
+                                -4.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                15.5,
+                                -15.5,
+                                -4.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        }
+                    ],
+                    [
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                -15.5,
+                                -15.5,
+                                -4.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                -15.5,
+                                -15.5,
+                                -4.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        },
+                        {
+                            "type": "p",
+                            "shape": "cylinder",
+                            "r": 4.5,
+                            "radius": 4.5,
+                            "h": 10.0,
+                            "pos": [
+                                -15.5,
+                                -15.5,
+                                -4.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 5,
+                            "depth": 10.0,
+                            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+                        }
+                    ]
+                ]
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_p_type_6_depth_-15_0_0_pos_motor_stepper_nema_17_flat_shifted_spacer_10_mm_extra_5_width_3_height_6_thickness_-15_0_0_pos_plate_0_0_0_pos_item_1_1_2_1_1_3_2_3_1_2_2_2_oobb_holes_1.5_1_2.5_1_1.5_3_2.5_3_1_1.5_1_2.5_1.5_2_2_1.5_2_2.5_oobe_holes_true_extra_mm",
+        "oobb_holes_shape_p_type_m6_radius_name_-15_0_0_pos_motor_stepper_nema_17_flat_shifted_spacer_10_mm_extra_5_width_3_height_6_thickness_-15_0_0_pos_plate_0_0_0_pos_item_1_1_2_1_1_3_2_3_1_2_2_2_oobb_holes_1.5_1_2.5_1_1.5_3_2.5_3_1_1.5_1_2.5_1.5_2_2_1.5_2_2.5_oobe_holes_single_holes_1_1_2_1_1_3_2_3_1_2_2_2_loc",
+        "oobb_holes_shape_n_type_m3_radius_name_-15_0_0_pos_motor_stepper_nema_17_flat_shifted_spacer_10_mm_extra_5_width_3_height_6_thickness_-15_0_0_pos_plate_0_0_0_pos_item_1_1_2_1_1_3_2_3_1_2_2_2_oobb_holes_1.5_1_2.5_1_1.5_3_2.5_3_1_1.5_1_2.5_1.5_2_2_1.5_2_2.5_oobe_holes_single_holes_1.5_1_2.5_1_1.5_3_2.5_3_1_1.5_1_2.5_1.5_2_2_1.5_2_2.5_loc",
+        "oobb_motor_stepper_nema_17_shape_n_type_motor_stepper_nema_17_flat_shifted_spacer_10_mm_extra_5_width_3_height_6_thickness_-15_0_0_pos_plate_0_0_0_pos_item_1_1_2_1_1_3_2_3_1_2_2_2_oobb_holes_1.5_1_2.5_1_1.5_3_2.5_3_1_1.5_1_2.5_1.5_2_2_1.5_2_2.5_oobe_holes_true_overhang",
+        "oobb_motor_stepper_nema_17_shape_p_type_0_0_-6_pos_motor_stepper_nema_17_flat_shifted_spacer_10_mm_extra_5_width_3_height_6_thickness_-15_0_0_pos_plate_0_0_0_pos_item_1_1_2_1_1_3_2_3_1_2_2_2_oobb_holes_1.5_1_2.5_1_1.5_3_2.5_3_1_1.5_1_2.5_1.5_2_2_1.5_2_2.5_oobe_holes_10.0_spacer_depth_true_overhang_spacer_part_top_zz"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+            "width": 5,
+            "height": 3,
+            "thickness": 6,
+            "pos_plate": [
+                -15,
+                0,
+                0
+            ],
+            "pos_item": [
+                0,
+                0,
+                0
+            ],
+            "oobb_holes": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    1
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "oobe_holes": [
+                [
+                    1.5,
+                    1
+                ],
+                [
+                    2.5,
+                    1
+                ],
+                [
+                    1.5,
+                    3
+                ],
+                [
+                    2.5,
+                    3
+                ],
+                [
+                    1,
+                    1.5
+                ],
+                [
+                    1,
+                    2.5
+                ],
+                [
+                    1.5,
+                    2
+                ],
+                [
+                    2,
+                    1.5
+                ],
+                [
+                    2,
+                    2.5
+                ]
+            ],
+            "connecting_screws": [],
+            "shape": "oobb_plate",
+            "depth": 6,
+            "extra_mm": true,
+            "pos": [
+                -15,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "p",
+            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+            "width": 5,
+            "height": 3,
+            "thickness": 6,
+            "pos_plate": [
+                -15,
+                0,
+                0
+            ],
+            "pos_item": [
+                0,
+                0,
+                0
+            ],
+            "oobb_holes": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    1
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "oobe_holes": [
+                [
+                    1.5,
+                    1
+                ],
+                [
+                    2.5,
+                    1
+                ],
+                [
+                    1.5,
+                    3
+                ],
+                [
+                    2.5,
+                    3
+                ],
+                [
+                    1,
+                    1.5
+                ],
+                [
+                    1,
+                    2.5
+                ],
+                [
+                    1.5,
+                    2
+                ],
+                [
+                    2,
+                    1.5
+                ],
+                [
+                    2,
+                    2.5
+                ]
+            ],
+            "connecting_screws": [],
+            "shape": "oobb_holes",
+            "holes": "single",
+            "radius_name": "m6",
+            "loc": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    1
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "pos": [
+                -15,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+            "width": 5,
+            "height": 3,
+            "thickness": 6,
+            "pos_plate": [
+                -15,
+                0,
+                0
+            ],
+            "pos_item": [
+                0,
+                0,
+                0
+            ],
+            "oobb_holes": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    1
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "oobe_holes": [
+                [
+                    1.5,
+                    1
+                ],
+                [
+                    2.5,
+                    1
+                ],
+                [
+                    1.5,
+                    3
+                ],
+                [
+                    2.5,
+                    3
+                ],
+                [
+                    1,
+                    1.5
+                ],
+                [
+                    1,
+                    2.5
+                ],
+                [
+                    1.5,
+                    2
+                ],
+                [
+                    2,
+                    1.5
+                ],
+                [
+                    2,
+                    2.5
+                ]
+            ],
+            "connecting_screws": [],
+            "shape": "oobb_holes",
+            "radius_name": "m3",
+            "holes": "single",
+            "loc": [
+                [
+                    1.5,
+                    1
+                ],
+                [
+                    2.5,
+                    1
+                ],
+                [
+                    1.5,
+                    3
+                ],
+                [
+                    2.5,
+                    3
+                ],
+                [
+                    1,
+                    1.5
+                ],
+                [
+                    1,
+                    2.5
+                ],
+                [
+                    1.5,
+                    2
+                ],
+                [
+                    2,
+                    1.5
+                ],
+                [
+                    2,
+                    2.5
+                ]
+            ],
+            "pos": [
+                -15,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+            "width": 5,
+            "height": 3,
+            "thickness": 6,
+            "pos_plate": [
+                -15,
+                0,
+                0
+            ],
+            "pos_item": [
+                0,
+                0,
+                0
+            ],
+            "oobb_holes": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    1
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "oobe_holes": [
+                [
+                    1.5,
+                    1
+                ],
+                [
+                    2.5,
+                    1
+                ],
+                [
+                    1.5,
+                    3
+                ],
+                [
+                    2.5,
+                    3
+                ],
+                [
+                    1,
+                    1.5
+                ],
+                [
+                    1,
+                    2.5
+                ],
+                [
+                    1.5,
+                    2
+                ],
+                [
+                    2,
+                    1.5
+                ],
+                [
+                    2,
+                    2.5
+                ]
+            ],
+            "connecting_screws": [],
+            "shape": "oobb_motor_stepper_nema_17",
+            "overhang": true,
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "p",
+            "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm",
+            "width": 5,
+            "height": 3,
+            "thickness": 6,
+            "pos_plate": [
+                -15,
+                0,
+                0
+            ],
+            "pos_item": [
+                0,
+                0,
+                0
+            ],
+            "oobb_holes": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    2,
+                    1
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    2,
+                    3
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    2,
+                    2
+                ]
+            ],
+            "oobe_holes": [
+                [
+                    1.5,
+                    1
+                ],
+                [
+                    2.5,
+                    1
+                ],
+                [
+                    1.5,
+                    3
+                ],
+                [
+                    2.5,
+                    3
+                ],
+                [
+                    1,
+                    1.5
+                ],
+                [
+                    1,
+                    2.5
+                ],
+                [
+                    1.5,
+                    2
+                ],
+                [
+                    2,
+                    1.5
+                ],
+                [
+                    2,
+                    2.5
+                ]
+            ],
+            "connecting_screws": [],
+            "spacer_depth": 10.0,
+            "shape": "oobb_motor_stepper_nema_17",
+            "overhang": true,
+            "pos": [
+                0,
+                0,
+                -6
+            ],
+            "part": "spacer",
+            "zz": "top"
+        }
+    ],
+    "folder": "things/oobb_holder_05_03_06_ex_motor_stepper_nema_17_flat_shifted_spacer_10_mm"
+}

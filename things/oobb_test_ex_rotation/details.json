@@ -6,44 +6,6 @@
     "components": [
         [
             {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_screw_socket_cap_shape_p_type_m3_radius_name_12.0_depth\n",
-                "size": 4.5,
-                "pos": [
-                    0,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_screw_socket_cap_shape_p_type_m3_radius_name_12.0_depth",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
                 "type": "rotation",
                 "typetype": "p",
                 "pos": [
@@ -197,6 +159,62 @@
                     ],
                     [
                         [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "comment": "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth\n",
+                                        "size": [
+                                            3.5,
+                                            6.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -3.25,
+                                            -0.3
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "depth": 12.0
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "comment": "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth\n",
+                                        "size": [
+                                            3.5,
+                                            3.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -1.75,
+                                            -0.6
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "depth": 12.0
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        [
                             {
                                 "type": "positive",
                                 "shape": "cylinder",
@@ -265,44 +283,6 @@
                         }
                     ]
                 ]
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y : 180\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y : 180",
-                "font": "Arial:style=Bold"
-            }
-        ],
-        [
-            {
-                "type": "p",
-                "shape": "text",
-                "color": "gray",
-                "center": true,
-                "comment": "description oobb_screw_socket_cap_shape_p_type_m3_radius_name_12.0_depth_300_0_0_pos_180_rot_y\n",
-                "size": 4.5,
-                "pos": [
-                    300,
-                    14,
-                    0
-                ],
-                "m": "*",
-                "depth": 1,
-                "text": "COMMENT description oobb_screw_socket_cap_shape_p_type_m3_radius_name_12.0_depth_300_0_0_pos_180_rot_y",
-                "font": "Arial:style=Bold"
             }
         ],
         [
@@ -457,6 +437,62 @@
                             "m": "",
                             "depth": 12.0
                         }
+                    ],
+                    [
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "comment": "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y : 180\n",
+                                        "size": [
+                                            3.5,
+                                            6.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -3.25,
+                                            -0.3
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "depth": 12.0
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "comment": "oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y : 180\n",
+                                        "size": [
+                                            3.5,
+                                            3.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -1.75,
+                                            -0.6
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "depth": 12.0
+                                    }
+                                ]
+                            ]
+                        ]
                     ],
                     [
                         [

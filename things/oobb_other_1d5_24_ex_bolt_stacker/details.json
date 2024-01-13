@@ -1,0 +1,356 @@
+{
+    "description": "other 0x0x24",
+    "id": "oobb_other_1d5_24_ex_bolt_stacker",
+    "type": "other",
+    "diameter": 1.5,
+    "thickness": 24,
+    "extra": "bolt_stacker",
+    "thickness_mm": 24,
+    "components": [
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.75,
+                "radius": 10.75,
+                "h": 24,
+                "pos": [
+                    0,
+                    0,
+                    0.0
+                ],
+                "inclusion": "laser",
+                "depth": 24,
+                "extra": "bolt_stacker"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.75,
+                "radius": 10.75,
+                "h": 24,
+                "pos": [
+                    0,
+                    0,
+                    0.0
+                ],
+                "inclusion": "3dpr",
+                "depth": 24,
+                "extra": "bolt_stacker"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.75,
+                "radius": 10.75,
+                "h": 24,
+                "pos": [
+                    0,
+                    0,
+                    0.0
+                ],
+                "inclusion": "true",
+                "depth": 24,
+                "extra": "bolt_stacker"
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "laser",
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.25,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "3dpr",
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "cylinder",
+                        "r": 3.0,
+                        "h": 100,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "true",
+                        "extra": "bolt_stacker"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    0,
+                    1.5
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 5.77,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "laser",
+                        "sides": 6,
+                        "height": 6,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 5.914249999999999,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "3dpr",
+                        "sides": 6,
+                        "height": 6,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 5.77,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "true",
+                        "sides": 6,
+                        "height": 6,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 6.5,
+                "radius": 6.5,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    7.5
+                ],
+                "inclusion": "laser",
+                "depth": 6,
+                "extra": "bolt_stacker"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 6.5,
+                "radius": 6.5,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    7.5
+                ],
+                "inclusion": "3dpr",
+                "depth": 6,
+                "extra": "bolt_stacker"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 6.5,
+                "radius": 6.5,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    7.5
+                ],
+                "inclusion": "true",
+                "depth": 6,
+                "extra": "bolt_stacker"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r1": 6.5,
+                "r2": 10.75,
+                "h": 10.5,
+                "pos": [
+                    0,
+                    0,
+                    13.5
+                ],
+                "inclusion": "laser",
+                "depth": 10.5,
+                "extra": "bolt_stacker"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r1": 6.5,
+                "r2": 10.75,
+                "h": 10.5,
+                "pos": [
+                    0,
+                    0,
+                    13.5
+                ],
+                "inclusion": "3dpr",
+                "depth": 10.5,
+                "extra": "bolt_stacker"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r1": 6.5,
+                "r2": 10.75,
+                "h": 10.5,
+                "pos": [
+                    0,
+                    0,
+                    13.5
+                ],
+                "inclusion": "true",
+                "depth": 10.5,
+                "extra": "bolt_stacker"
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_cylinder_shape_p_type_24_depth_bolt_stacker_extra_1.5_diameter_24_thickness_10.75_radius_bottom_zz",
+        "oobb_hole_new_shape_n_type_m6_radius_name_bolt_stacker_extra_1.5_diameter_24_thickness",
+        "oobb_nut_shape_n_type_m6_radius_name_6_depth_0_0_1.5_pos_bolt_stacker_extra_1.5_diameter_24_thickness_bottom_zz",
+        "oobb_cylinder_shape_n_type_6_depth_0_0_7.5_pos_bolt_stacker_extra_1.5_diameter_24_thickness_6.5_radius_bottom_zz",
+        "oobb_cylinder_shape_n_type_10.5_depth_0_0_24_pos_bolt_stacker_extra_1.5_diameter_24_thickness_10.75_r2_6.5_r1_top_zz"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "extra": "bolt_stacker",
+            "diameter": 1.5,
+            "thickness": 24,
+            "shape": "oobb_cylinder",
+            "radius": 10.75,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "depth": 24,
+            "zz": "bottom"
+        },
+        {
+            "type": "n",
+            "extra": "bolt_stacker",
+            "diameter": 1.5,
+            "thickness": 24,
+            "shape": "oobb_hole_new",
+            "radius_name": "m6",
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "bolt_stacker",
+            "diameter": 1.5,
+            "thickness": 24,
+            "shape": "oobb_nut",
+            "radius_name": "m6",
+            "depth": 6,
+            "pos": [
+                0,
+                0,
+                1.5
+            ],
+            "zz": "bottom"
+        },
+        {
+            "type": "n",
+            "extra": "bolt_stacker",
+            "diameter": 1.5,
+            "thickness": 24,
+            "shape": "oobb_cylinder",
+            "radius": 6.5,
+            "depth": 6,
+            "pos": [
+                0,
+                0,
+                7.5
+            ],
+            "zz": "bottom"
+        },
+        {
+            "type": "n",
+            "extra": "bolt_stacker",
+            "diameter": 1.5,
+            "thickness": 24,
+            "shape": "oobb_cylinder",
+            "r2": 10.75,
+            "r1": 6.5,
+            "depth": 10.5,
+            "pos": [
+                0,
+                0,
+                24
+            ],
+            "zz": "top"
+        }
+    ],
+    "folder": "things/oobb_other_1d5_24_ex_bolt_stacker"
+}

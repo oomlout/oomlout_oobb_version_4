@@ -1,0 +1,118 @@
+{
+    "description": "nut m8x6.5",
+    "id": "hardware_nut_m8",
+    "type": "nut",
+    "radius_name": "m8",
+    "components": [
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 7.5009999999999994,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "laser",
+                        "sides": 6,
+                        "height": 6.5
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 7.789499999999999,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "3dpr",
+                        "sides": 6,
+                        "height": 6.5
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 7.5009999999999994,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "inclusion": "true",
+                        "sides": 6,
+                        "height": 6.5
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.0,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "z": -10,
+                "inclusion": "laser",
+                "m": "",
+                "depth": 100
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.25,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "z": -10,
+                "inclusion": "3dpr",
+                "m": "",
+                "depth": 100
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.0,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "z": -10,
+                "inclusion": "true",
+                "m": "",
+                "depth": 100
+            }
+        ]
+    ],
+    "components_string": [],
+    "components_objects": [],
+    "folder": "things/hardware_nut_m8",
+    "width_mm": 7.5009999999999994,
+    "depth_mm": 6.5,
+    "height_mm": 6.5
+}

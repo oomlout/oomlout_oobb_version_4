@@ -177,7 +177,7 @@ def get_oobb_cube_new(**kwargs):
         p3["pos"] = pos1
         return_value.append(opsc.opsc_easy(**p3))
     
-    components_second = copy.deepcopy(thing["components"])
+    #components_second = copy.deepcopy(thing["components"])
 
     #put into a rotation object
     return_value_2 = {}
@@ -187,7 +187,7 @@ def get_oobb_cube_new(**kwargs):
     pos1[0] += 50
     return_value_2["pos"] = pos1
     return_value_2["rot"] = [180,0,0]
-    return_value_2["objects"] = components_second
+    return_value_2["objects"] = return_value
     return_value_2 = [return_value_2]
 
 

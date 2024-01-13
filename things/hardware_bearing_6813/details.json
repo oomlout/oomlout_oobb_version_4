@@ -1,0 +1,93 @@
+{
+    "description": "bearing 6813",
+    "id": "hardware_bearing_6813",
+    "type": "bearing",
+    "bearing_name": "6813",
+    "components": [
+        [
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 42.5,
+                "h": 10,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "laser",
+                "depth": "bearing_6813_depth"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 42.7,
+                "h": 10,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "3dpr",
+                "depth": "bearing_6813_depth"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 42.5,
+                "h": 10,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "true",
+                "depth": "bearing_6813_depth"
+            }
+        ],
+        [
+            {
+                "type": "negative",
+                "shape": "cylinder",
+                "r": 32.5,
+                "h": 10,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "laser",
+                "depth": "bearing_6813_depth"
+            },
+            {
+                "type": "negative",
+                "shape": "cylinder",
+                "r": 32.5,
+                "h": 10,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "3dpr",
+                "depth": "bearing_6813_depth"
+            },
+            {
+                "type": "negative",
+                "shape": "cylinder",
+                "r": 32.5,
+                "h": 10,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "true",
+                "depth": "bearing_6813_depth"
+            }
+        ]
+    ],
+    "components_string": [],
+    "components_objects": [],
+    "folder": "things/hardware_bearing_6813"
+}

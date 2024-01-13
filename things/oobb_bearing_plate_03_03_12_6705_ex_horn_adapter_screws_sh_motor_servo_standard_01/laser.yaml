@@ -7,7 +7,11 @@
     - 0
     - 0
     - 0
-    radius: 14.2
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius: 14.149999999999999
     shaft: motor_servo_standard_01
     shape: oobb_cylinder
     thickness: 12
@@ -21,136 +25,168 @@
     - 0
     - 0
     - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     shaft: motor_servo_standard_01
     shape: oobb_bearing
     thickness: 12
     type: n
     width: 3
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - 7.5
     - 0
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - -7.5
     - 0
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - 0
     - 7.5
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - 0
     - -7.5
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - 7.5
     - 0
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_nut
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - -7.5
     - 0
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_nut
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - 0
     - 7.5
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_nut
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
-    depth: 9
     height: 3
     hole: true
     pos:
     - 0
     - -7.5
-    - -6.0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_nut
     thickness: 12
     type: n
     width: 3
-    zz: bottom
+    zz: middle
 -   bearing: '6705'
     extra: horn_adapter_screws
     height: 3
     holes: perimeter_miss_middle
     pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
     - 0
     - 0
     - 0
@@ -165,6 +201,10 @@
     height: 3
     part: shaft
     pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
     - 0
     - 0
     - 0
@@ -185,6 +225,10 @@
     - 0
     - 0
     - -3
+    pos_plate:
+    - 0
+    - 0
+    - 0
     shaft: motor_servo_standard_01
     shape: oobb_bearing
     thickness: 12
@@ -198,6 +242,10 @@
     - 0
     - 0
     - -6
+    pos_plate:
+    - 0
+    - 0
+    - 0
     shaft: motor_servo_standard_01
     shape: oobb_bearing
     thickness: 12
@@ -213,6 +261,10 @@
     - 8.0
     - -18.0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -233,6 +285,10 @@
     - -8.0
     - 18.0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -253,6 +309,10 @@
     - -8.0
     - -18.0
     - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -273,6 +333,10 @@
     - 8.0
     - 18.0
     - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -283,11 +347,51 @@
     thickness: 12
     type: n
     width: 3
--   mode: 3dpr
+-   bearing: '6705'
+    depth: 12
+    extra: horn_adapter_screws
+    height: 3
+    nut: true
+    overhang: true
     pos:
+    - 5.303
+    - 5.303
+    - 6.0
+    pos_plate:
     - 0
     - 0
-    - -20
-    shape: oobb_slice
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 12
     type: n
-    zz: top
+    width: 3
+-   bearing: '6705'
+    depth: 12
+    extra: horn_adapter_screws
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -5.303
+    - -5.303
+    - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3

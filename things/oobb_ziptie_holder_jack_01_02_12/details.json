@@ -1,0 +1,467 @@
+{
+    "description": "ziptie holder jack 1x2x12",
+    "id": "oobb_ziptie_holder_jack_01_02_12",
+    "type": "ziptie_holder_jack",
+    "width": 1,
+    "height": 2,
+    "thickness": 12,
+    "width_mm": 14,
+    "thickness_mm": 12,
+    "height_mm": 29,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "rounded_rectangle",
+                    "size": [
+                        14,
+                        29,
+                        12
+                    ],
+                    "pos": [
+                        0,
+                        21.0,
+                        -6.0
+                    ],
+                    "height": 2,
+                    "width": 1,
+                    "depth": 12
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    14,
+                    29,
+                    12
+                ],
+                "pos": [
+                    0,
+                    21.0,
+                    -6.0
+                ],
+                "height": 2,
+                "width": 1,
+                "depth": 12
+            }
+        ],
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "cube",
+                    "size": [
+                        14,
+                        13.5,
+                        12
+                    ],
+                    "pos": [
+                        -7.0,
+                        0,
+                        -6.0
+                    ]
+                }
+            ]
+        ],
+        [
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                10.75,
+                                -50
+                            ],
+                            "inclusion": "laser",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                17.75,
+                                -50
+                            ],
+                            "inclusion": "laser",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                10.75,
+                                -50
+                            ],
+                            "inclusion": "3dpr",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                17.75,
+                                -50
+                            ],
+                            "inclusion": "3dpr",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                3,
+                                1,
+                                100
+                            ],
+                            "pos": [
+                                -1.5,
+                                11.0,
+                                -50
+                            ],
+                            "inclusion": "true",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                3,
+                                1,
+                                100
+                            ],
+                            "pos": [
+                                -1.5,
+                                18.0,
+                                -50
+                            ],
+                            "inclusion": "true",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ]
+        ],
+        [
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                25.75,
+                                -50
+                            ],
+                            "inclusion": "laser",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                32.75,
+                                -50
+                            ],
+                            "inclusion": "laser",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                25.75,
+                                -50
+                            ],
+                            "inclusion": "3dpr",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                4,
+                                1.5,
+                                100
+                            ],
+                            "pos": [
+                                -2.0,
+                                32.75,
+                                -50
+                            ],
+                            "inclusion": "3dpr",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                3,
+                                1,
+                                100
+                            ],
+                            "pos": [
+                                -1.5,
+                                26.0,
+                                -50
+                            ],
+                            "inclusion": "true",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ],
+            [
+                [
+                    [
+                        {
+                            "type": "n",
+                            "shape": "cube",
+                            "center": true,
+                            "size": [
+                                3,
+                                1,
+                                100
+                            ],
+                            "pos": [
+                                -1.5,
+                                33.0,
+                                -50
+                            ],
+                            "inclusion": "true",
+                            "m": ""
+                        }
+                    ]
+                ]
+            ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.0,
+                "h": 8,
+                "pos": [
+                    0.0,
+                    8,
+                    0
+                ],
+                "rotX": 90,
+                "inclusion": "laser",
+                "m": "",
+                "depth": 8
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.25,
+                "h": 8,
+                "pos": [
+                    0.0,
+                    8,
+                    0
+                ],
+                "rotX": 90,
+                "inclusion": "3dpr",
+                "m": "",
+                "depth": 8
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.0,
+                "h": 8,
+                "pos": [
+                    0.0,
+                    8,
+                    0
+                ],
+                "rotX": 90,
+                "inclusion": "true",
+                "m": "",
+                "depth": 8
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0.0,
+                    9,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 5.77,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotX": 90,
+                        "inclusion": "laser",
+                        "sides": 6,
+                        "height": 13.5,
+                        "m": "",
+                        "depth": 13.5
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 5.914249999999999,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotX": 90,
+                        "inclusion": "3dpr",
+                        "sides": 6,
+                        "height": 13.5,
+                        "m": "",
+                        "depth": 13.5
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 5.77,
+                        "pos": [
+                            0,
+                            0,
+                            0
+                        ],
+                        "rotX": 90,
+                        "inclusion": "true",
+                        "sides": 6,
+                        "height": 13.5,
+                        "m": "",
+                        "depth": 13.5
+                    }
+                ]
+            }
+        ]
+    ],
+    "components_string": [],
+    "components_objects": [],
+    "folder": "things/oobb_ziptie_holder_jack_01_02_12"
+}

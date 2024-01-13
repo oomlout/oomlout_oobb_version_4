@@ -7,6 +7,10 @@
     - 0
     - 0
     - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius: 11.7
     shaft: motor_servo_standard_01
     shape: oobb_cylinder
@@ -18,6 +22,10 @@
     extra: horn_adapter_printed
     height: 3
     pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
     - 0
     - 0
     - 0
@@ -33,6 +41,10 @@
     - 7.5
     - 0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
@@ -47,6 +59,10 @@
     - -7.5
     - 0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
@@ -61,6 +77,10 @@
     - 0
     - 7.5
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
@@ -75,6 +95,10 @@
     - 0
     - -7.5
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_hole
@@ -89,6 +113,10 @@
     - 7.5
     - 0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_threaded_insert
@@ -103,6 +131,10 @@
     - -7.5
     - 0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_threaded_insert
@@ -117,6 +149,10 @@
     - 0
     - 7.5
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_threaded_insert
@@ -131,6 +167,10 @@
     - 0
     - -7.5
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_threaded_insert
@@ -143,6 +183,10 @@
     height: 3
     holes: perimeter_miss_middle
     pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
     - 0
     - 0
     - 0
@@ -160,6 +204,10 @@
     - 0
     - 0
     - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     rot:
     - 0
     - 0
@@ -179,6 +227,10 @@
     - 18.0
     - 0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -199,6 +251,10 @@
     - -18.0
     - 0
     - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -219,6 +275,10 @@
     - 0
     - 18.0
     - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -239,6 +299,10 @@
     - 0
     - -18.0
     - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
     radius_name: m3
     rot:
     - 0
@@ -249,11 +313,51 @@
     thickness: 12
     type: n
     width: 3
--   mode: 3dpr
+-   bearing: '6704'
+    depth: 12
+    extra: horn_adapter_printed
+    height: 3
+    nut: true
+    overhang: true
     pos:
+    - 5.303
+    - 5.303
+    - 6.0
+    pos_plate:
     - 0
     - 0
     - 0
-    shape: oobb_slice
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 12
     type: n
-    zz: top
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    extra: horn_adapter_printed
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -5.303
+    - -5.303
+    - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3

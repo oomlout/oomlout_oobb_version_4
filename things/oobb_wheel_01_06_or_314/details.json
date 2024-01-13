@@ -1,0 +1,243 @@
+{
+    "description": "wheel 0x0x6",
+    "id": "oobb_wheel_01_06_or_314",
+    "type": "wheel",
+    "diameter": 1,
+    "thickness": 6,
+    "oring_type": "314",
+    "thickness_mm": 6,
+    "components": [
+        [
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 7.0,
+                "radius": 11.875,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    -3.0
+                ],
+                "depth": 6
+            }
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            {
+                "type": "negative",
+                "shape": "oring",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "laser",
+                "id": 10.21,
+                "od": 14.54,
+                "depth": 5.33
+            },
+            {
+                "type": "negative",
+                "shape": "oring",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "true",
+                "id": 10.21,
+                "od": 14.54,
+                "depth": 5.33
+            },
+            {
+                "type": "negative",
+                "shape": "oring",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "inclusion": "3dpr",
+                "id": 10.21,
+                "od": 14.739999999999998,
+                "depth": 5.33
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_circle_shape_positive_type_6_depth_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter_11.875_radius_middle_zz",
+        "oobb_holes_shape_negative_type_6_thickness_314_oring_type_false_both_holes_1.5833333333333333_diameter_true_circle",
+        "oobb_oring_shape_negative_type_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter"
+    ],
+    "components_objects": [
+        {
+            "type": "positive",
+            "thickness": 6,
+            "oring_type": "314",
+            "both_holes": true,
+            "diameter": 1.5833333333333333,
+            "shape": "oobb_circle",
+            "depth": 6,
+            "radius": 11.875,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "zz": "middle"
+        },
+        {
+            "type": "negative",
+            "thickness": 6,
+            "oring_type": "314",
+            "both_holes": false,
+            "diameter": 1.5833333333333333,
+            "shape": "oobb_holes",
+            "circle": true,
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "negative",
+            "thickness": 6,
+            "oring_type": "314",
+            "both_holes": true,
+            "diameter": 1.5833333333333333,
+            "shape": "oobb_oring",
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "folder": "things/oobb_wheel_01_06_or_314"
+}

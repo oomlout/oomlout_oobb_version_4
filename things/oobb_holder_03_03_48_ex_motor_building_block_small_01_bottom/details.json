@@ -1,0 +1,1475 @@
+{
+    "description": "holder 3x3x48",
+    "id": "oobb_holder_03_03_48_ex_motor_building_block_small_01_bottom",
+    "type": "holder",
+    "width": 3,
+    "height": 3,
+    "thickness": 48,
+    "extra": "motor_building_block_small_01_bottom",
+    "width_mm": 44,
+    "thickness_mm": 48,
+    "height_mm": 44,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "rounded_rectangle",
+                    "size": [
+                        45.0,
+                        45.0,
+                        42
+                    ],
+                    "pos": [
+                        0,
+                        0,
+                        6
+                    ],
+                    "height": 3.066666666666667,
+                    "width": 3.066666666666667,
+                    "depth": 42
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    45.0,
+                    45.0,
+                    42
+                ],
+                "pos": [
+                    0,
+                    0,
+                    6
+                ],
+                "height": 3.066666666666667,
+                "width": 3.066666666666667,
+                "depth": 42
+            }
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 100,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -50.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    18,
+                    38
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 2.9,
+                                "h": 3,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "rotY": 0,
+                                "inclusion": "laser",
+                                "height": 3,
+                                "width": 3,
+                                "m": "",
+                                "extra": "motor_building_block_small_01_bottom"
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 3.0,
+                                "h": 3.2,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "rotY": 0,
+                                "inclusion": "3dpr",
+                                "height": 3,
+                                "width": 3,
+                                "m": "",
+                                "extra": "motor_building_block_small_01_bottom"
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    [
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "size": [
+                                            3.5,
+                                            6.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -3.25,
+                                            -0.3
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "extra": "motor_building_block_small_01_bottom"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "size": [
+                                            3.5,
+                                            3.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -1.75,
+                                            -0.6
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "extra": "motor_building_block_small_01_bottom"
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 2.9,
+                                "h": 3,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "rotY": 0,
+                                "inclusion": "true",
+                                "height": 3,
+                                "width": 3,
+                                "m": "",
+                                "extra": "motor_building_block_small_01_bottom"
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    -18,
+                    38
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 2.9,
+                                "h": 3,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "rotY": 0,
+                                "inclusion": "laser",
+                                "height": 3,
+                                "width": 3,
+                                "m": "",
+                                "extra": "motor_building_block_small_01_bottom"
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 3.0,
+                                "h": 3.2,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "rotY": 0,
+                                "inclusion": "3dpr",
+                                "height": 3,
+                                "width": 3,
+                                "m": "",
+                                "extra": "motor_building_block_small_01_bottom"
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    [
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "size": [
+                                            3.5,
+                                            6.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -3.25,
+                                            -0.3
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "extra": "motor_building_block_small_01_bottom"
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "size": [
+                                            3.5,
+                                            3.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -1.75,
+                                            -0.6
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "m": "",
+                                        "extra": "motor_building_block_small_01_bottom"
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 2.9,
+                                "h": 3,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "rotY": 0,
+                                "inclusion": "true",
+                                "height": 3,
+                                "width": 3,
+                                "m": "",
+                                "extra": "motor_building_block_small_01_bottom"
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -300.0
+                            ],
+                            "rotY": 0,
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 13.5,
+                "radius": 13.5,
+                "h": 47,
+                "pos": [
+                    0,
+                    0,
+                    -1.0
+                ],
+                "inclusion": "laser",
+                "height": 3,
+                "width": 3,
+                "m": "",
+                "depth": 47,
+                "extra": "motor_building_block_small_01_bottom"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 13.5,
+                "radius": 13.5,
+                "h": 47,
+                "pos": [
+                    0,
+                    0,
+                    -1.0
+                ],
+                "inclusion": "3dpr",
+                "height": 3,
+                "width": 3,
+                "m": "",
+                "depth": 47,
+                "extra": "motor_building_block_small_01_bottom"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 13.5,
+                "radius": 13.5,
+                "h": 47,
+                "pos": [
+                    0,
+                    0,
+                    -1.0
+                ],
+                "inclusion": "true",
+                "height": 3,
+                "width": 3,
+                "m": "",
+                "depth": 47,
+                "extra": "motor_building_block_small_01_bottom"
+            }
+        ],
+        [
+            [
+                [
+                    {
+                        "type": "n",
+                        "shape": "cube",
+                        "comment": "oobb_wire_clearance_square",
+                        "size": [
+                            7,
+                            10,
+                            10
+                        ],
+                        "pos": [
+                            2.5439999999999996,
+                            -5.0,
+                            46
+                        ],
+                        "height": 3,
+                        "width": 3,
+                        "m": "#",
+                        "depth": 10,
+                        "extra": "motor_building_block_small_01_bottom"
+                    }
+                ]
+            ]
+        ],
+        [
+            [
+                [
+                    {
+                        "type": "n",
+                        "shape": "cube",
+                        "comment": "oobb_wire_clearance_square",
+                        "size": [
+                            7,
+                            10,
+                            10
+                        ],
+                        "pos": [
+                            7.5440000000000005,
+                            -5.0,
+                            46
+                        ],
+                        "height": 3,
+                        "width": 3,
+                        "m": "#",
+                        "depth": 10,
+                        "extra": "motor_building_block_small_01_bottom"
+                    }
+                ]
+            ]
+        ],
+        [
+            {
+                "type": "pp",
+                "shape": "cylinder",
+                "r": 6.0,
+                "radius": 6.0,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    41.25
+                ],
+                "inclusion": "laser",
+                "height": 3,
+                "width": 3,
+                "depth": 4.5,
+                "extra": "motor_building_block_small_01_bottom"
+            },
+            {
+                "type": "pp",
+                "shape": "cylinder",
+                "r": 6.0,
+                "radius": 6.0,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    41.25
+                ],
+                "inclusion": "3dpr",
+                "height": 3,
+                "width": 3,
+                "depth": 4.5,
+                "extra": "motor_building_block_small_01_bottom"
+            },
+            {
+                "type": "pp",
+                "shape": "cylinder",
+                "r": 6.0,
+                "radius": 6.0,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    41.25
+                ],
+                "inclusion": "true",
+                "height": 3,
+                "width": 3,
+                "depth": 4.5,
+                "extra": "motor_building_block_small_01_bottom"
+            }
+        ],
+        [
+            {
+                "type": "nn",
+                "shape": "cylinder",
+                "r": 4.0,
+                "radius": 4.0,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    39.0
+                ],
+                "inclusion": "laser",
+                "height": 3,
+                "width": 3,
+                "depth": 4.5,
+                "extra": "motor_building_block_small_01_bottom"
+            },
+            {
+                "type": "nn",
+                "shape": "cylinder",
+                "r": 4.0,
+                "radius": 4.0,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    39.0
+                ],
+                "inclusion": "3dpr",
+                "height": 3,
+                "width": 3,
+                "depth": 4.5,
+                "extra": "motor_building_block_small_01_bottom"
+            },
+            {
+                "type": "nn",
+                "shape": "cylinder",
+                "r": 4.0,
+                "radius": 4.0,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    39.0
+                ],
+                "inclusion": "true",
+                "height": 3,
+                "width": 3,
+                "depth": 4.5,
+                "extra": "motor_building_block_small_01_bottom"
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    -7.5,
+                    7.5,
+                    41
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 3.1734999999999998,
+                        "pos": [
+                            0,
+                            0,
+                            -2.5
+                        ],
+                        "inclusion": "laser",
+                        "sides": 6,
+                        "height": 2.5,
+                        "width": 3,
+                        "m": "",
+                        "extra": "motor_building_block_small_01_bottom"
+                    },
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 3.4619999999999997,
+                        "pos": [
+                            0,
+                            0,
+                            -2.5
+                        ],
+                        "inclusion": "3dpr",
+                        "sides": 6,
+                        "height": 2.5,
+                        "width": 3,
+                        "m": "",
+                        "extra": "motor_building_block_small_01_bottom"
+                    },
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 3.1734999999999998,
+                        "pos": [
+                            0,
+                            0,
+                            -2.5
+                        ],
+                        "inclusion": "true",
+                        "sides": 6,
+                        "height": 2.5,
+                        "width": 3,
+                        "m": "",
+                        "extra": "motor_building_block_small_01_bottom"
+                    },
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ]
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    -7.5,
+                    -7.5,
+                    41
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 3.1734999999999998,
+                        "pos": [
+                            0,
+                            0,
+                            -2.5
+                        ],
+                        "inclusion": "laser",
+                        "sides": 6,
+                        "height": 2.5,
+                        "width": 3,
+                        "m": "",
+                        "extra": "motor_building_block_small_01_bottom"
+                    },
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 3.4619999999999997,
+                        "pos": [
+                            0,
+                            0,
+                            -2.5
+                        ],
+                        "inclusion": "3dpr",
+                        "sides": 6,
+                        "height": 2.5,
+                        "width": 3,
+                        "m": "",
+                        "extra": "motor_building_block_small_01_bottom"
+                    },
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ],
+                    {
+                        "type": "positive",
+                        "shape": "polyg",
+                        "r": 3.1734999999999998,
+                        "pos": [
+                            0,
+                            0,
+                            -2.5
+                        ],
+                        "inclusion": "true",
+                        "sides": 6,
+                        "height": 2.5,
+                        "width": 3,
+                        "m": "",
+                        "extra": "motor_building_block_small_01_bottom"
+                    },
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "laser",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "3dpr",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "h": 100,
+                            "pos": [
+                                0,
+                                0,
+                                -50.0
+                            ],
+                            "inclusion": "true",
+                            "height": 3,
+                            "width": 3,
+                            "m": "",
+                            "extra": "motor_building_block_small_01_bottom"
+                        }
+                    ]
+                ]
+            }
+        ]
+    ],
+    "components_string": [],
+    "components_objects": [],
+    "folder": "things/oobb_holder_03_03_48_ex_motor_building_block_small_01_bottom"
+}

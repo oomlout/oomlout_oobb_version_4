@@ -1,0 +1,266 @@
+{
+    "description": "screw socket cap m3x12",
+    "id": "hardware_screw_socket_cap_m3_12",
+    "type": "screw_socket_cap",
+    "radius_name": "m3",
+    "depth": 12,
+    "components": [
+        [
+            {
+                "type": "rotation",
+                "typetype": "positive",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 2.9,
+                                "h": 3,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "inclusion": "laser",
+                                "depth": 12
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "laser",
+                            "depth": 12
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "3dpr",
+                            "depth": 12
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "true",
+                            "depth": 12
+                        }
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 3.0,
+                                "h": 3.2,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "inclusion": "3dpr",
+                                "depth": 12
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "laser",
+                            "depth": 12
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "3dpr",
+                            "depth": 12
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.8,
+                            "radius": 1.8,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "true",
+                            "depth": 12
+                        }
+                    ],
+                    [
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "size": [
+                                            3.5,
+                                            6.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -3.25,
+                                            -0.3
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "depth": 12
+                                    }
+                                ]
+                            ]
+                        ],
+                        [
+                            [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cube",
+                                        "size": [
+                                            3.5,
+                                            3.5,
+                                            0.3
+                                        ],
+                                        "pos": [
+                                            -1.75,
+                                            -1.75,
+                                            -0.6
+                                        ],
+                                        "rotX": 0,
+                                        "rotY": 0,
+                                        "rotZ": 0,
+                                        "inclusion": "3dpr",
+                                        "depth": 12
+                                    }
+                                ]
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cylinder",
+                                "r": 2.9,
+                                "h": 3,
+                                "pos": [
+                                    0,
+                                    0,
+                                    0
+                                ],
+                                "inclusion": "true",
+                                "depth": 12
+                            }
+                        ]
+                    ],
+                    [
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "laser",
+                            "depth": 12
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "3dpr",
+                            "depth": 12
+                        },
+                        {
+                            "type": "positive",
+                            "shape": "cylinder",
+                            "r": 1.5,
+                            "radius": 1.5,
+                            "h": 12,
+                            "pos": [
+                                0,
+                                0,
+                                -12.0
+                            ],
+                            "inclusion": "true",
+                            "depth": 12
+                        }
+                    ]
+                ]
+            }
+        ]
+    ],
+    "components_string": [],
+    "components_objects": [],
+    "folder": "things/hardware_screw_socket_cap_m3_12",
+    "depth_mm": 12
+}

@@ -1,0 +1,494 @@
+{
+    "description": "wheel 0x0x15",
+    "id": "oobb_wheel_29_15_606_ex_bearing_twenty_twenty_aluminium_extrusion",
+    "type": "wheel",
+    "diameter": 29,
+    "thickness": 15,
+    "bearing": "606",
+    "extra": "bearing_twenty_twenty_aluminium_extrusion",
+    "thickness_mm": 15,
+    "components": [
+        [
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 14.5,
+                "radius": 14.5,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    -3.0
+                ],
+                "inclusion": "laser",
+                "depth": 6,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 14.5,
+                "radius": 14.5,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    -3.0
+                ],
+                "inclusion": "3dpr",
+                "depth": 6,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r": 14.5,
+                "radius": 14.5,
+                "h": 6,
+                "pos": [
+                    0,
+                    0,
+                    -3.0
+                ],
+                "inclusion": "true",
+                "depth": 6,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ],
+        [
+            {
+                "type": "negative",
+                "shape": "cylinder",
+                "r": 5,
+                "radius": 5,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "laser",
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "cylinder",
+                "r": 5,
+                "radius": 5,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "3dpr",
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "cylinder",
+                "r": 5,
+                "radius": 5,
+                "h": 100,
+                "pos": [
+                    0,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "true",
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ],
+        [
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r1": 14.5,
+                "r2": 10.5,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    3.0
+                ],
+                "inclusion": "laser",
+                "depth": 4.5,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r1": 14.5,
+                "r2": 10.5,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    3.0
+                ],
+                "inclusion": "3dpr",
+                "depth": 4.5,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r1": 14.5,
+                "r2": 10.5,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    3.0
+                ],
+                "inclusion": "true",
+                "depth": 4.5,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ],
+        [
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r1": 10.5,
+                "r2": 14.5,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    -7.5
+                ],
+                "inclusion": "laser",
+                "depth": 4.5,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r1": 10.5,
+                "r2": 14.5,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    -7.5
+                ],
+                "inclusion": "3dpr",
+                "depth": 4.5,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "positive",
+                "shape": "cylinder",
+                "r1": 10.5,
+                "r2": 14.5,
+                "h": 4.5,
+                "pos": [
+                    0,
+                    0,
+                    -7.5
+                ],
+                "inclusion": "true",
+                "depth": 4.5,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ],
+        [
+            {
+                "type": "negative",
+                "shape": "bearing",
+                "pos": [
+                    0,
+                    0,
+                    4.5
+                ],
+                "inclusion": "laser",
+                "id": 3.0,
+                "od": 8.5,
+                "depth": 6,
+                "exclude_clearance": false,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "bearing",
+                "pos": [
+                    0,
+                    0,
+                    4.5
+                ],
+                "inclusion": "true",
+                "id": 3.0,
+                "od": 8.5,
+                "depth": 6,
+                "exclude_clearance": false,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "bearing",
+                "pos": [
+                    0,
+                    0,
+                    4.5
+                ],
+                "inclusion": "3dpr",
+                "id": 3.0,
+                "od": 8.575,
+                "depth": 6,
+                "exclude_clearance": false,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ],
+        [
+            {
+                "type": "negative",
+                "shape": "bearing",
+                "pos": [
+                    0,
+                    0,
+                    -4.5
+                ],
+                "inclusion": "laser",
+                "id": 3.0,
+                "od": 8.5,
+                "depth": 6,
+                "exclude_clearance": false,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "bearing",
+                "pos": [
+                    0,
+                    0,
+                    -4.5
+                ],
+                "inclusion": "true",
+                "id": 3.0,
+                "od": 8.5,
+                "depth": 6,
+                "exclude_clearance": false,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "bearing",
+                "pos": [
+                    0,
+                    0,
+                    -4.5
+                ],
+                "inclusion": "3dpr",
+                "id": 3.0,
+                "od": 8.575,
+                "depth": 6,
+                "exclude_clearance": false,
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ],
+        [
+            {
+                "type": "negative",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            },
+            {
+                "type": "negative",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "bearing_twenty_twenty_aluminium_extrusion"
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_cylinder_shape_positive_type_6_depth_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate_14.5_radius",
+        "oobb_hole_shape_negative_type_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate_5_radius",
+        "oobb_cylinder_shape_positive_type_4.5_depth_0_0_5.25_pos_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate_14.5_r1_10.5_r2",
+        "oobb_cylinder_shape_positive_type_4.5_depth_0_0_-5.25_pos_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate_10.5_r1_14.5_r2",
+        "oobb_bearing_shape_negative_type_0_0_7.5_pos_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate_top_zz",
+        "oobb_bearing_shape_negative_type_0_0_-7.5_pos_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate_bottom_zz",
+        "oobb_slice_shape_negative_type_15_thickness_29_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_606_bearing_true_both_holes_0_0_-7.5_pos_plate"
+    ],
+    "components_objects": [
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "positive",
+            "shape": "oobb_cylinder",
+            "depth": 6,
+            "radius": 14.5
+        },
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "negative",
+            "shape": "oobb_hole",
+            "radius": 5
+        },
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                5.25
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "positive",
+            "shape": "oobb_cylinder",
+            "r1": 14.5,
+            "r2": 10.5,
+            "depth": 4.5
+        },
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                -5.25
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "positive",
+            "shape": "oobb_cylinder",
+            "r1": 10.5,
+            "r2": 14.5,
+            "depth": 4.5
+        },
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                7.5
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "negative",
+            "shape": "oobb_bearing",
+            "zz": "top"
+        },
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                -7.5
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "negative",
+            "shape": "oobb_bearing",
+            "zz": "bottom"
+        },
+        {
+            "thickness": 15,
+            "diameter": 29,
+            "extra": "bearing_twenty_twenty_aluminium_extrusion",
+            "bearing": "606",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -7.5
+            ],
+            "type": "negative",
+            "shape": "oobb_slice"
+        }
+    ],
+    "folder": "things/oobb_wheel_29_15_606_ex_bearing_twenty_twenty_aluminium_extrusion"
+}

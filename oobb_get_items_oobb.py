@@ -126,7 +126,7 @@ def get_circle_base(**kwargs):
         #th.extend(oobb_base.oobb_easy(**p3))   
         
     if shaft != "":
-        get_shaft(thing, **kwargs)    
+        get_shaft_center(thing, **kwargs)    
 
     if full_object:   
         return thing
@@ -1206,7 +1206,7 @@ def get_pulley_gt2_shield_double(**kwargs):
         return th
 
 
-def get_shaft(thing, **kwargs):
+def get_shaft_center(thing, **kwargs):
     shaft = kwargs.get("shaft", "")
     size = kwargs.get("size", "oobb")
     pos = kwargs.get("pos", [0,0,0])

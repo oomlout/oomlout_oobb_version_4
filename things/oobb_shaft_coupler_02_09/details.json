@@ -1,0 +1,189 @@
+{
+    "description": "shaft coupler 0x0x9",
+    "id": "oobb_shaft_coupler_02_09",
+    "type": "shaft_coupler",
+    "diameter": 2,
+    "thickness": 9,
+    "thickness_mm": 9,
+    "components": [
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    0,
+                    7.5,
+                    -50.0
+                ],
+                "inclusion": "laser",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    0,
+                    7.5,
+                    -50.0
+                ],
+                "inclusion": "3dpr",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    0,
+                    7.5,
+                    -50.0
+                ],
+                "inclusion": "true",
+                "m": ""
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    7.5,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "laser",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    7.5,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "3dpr",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    7.5,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "true",
+                "m": ""
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    -7.5,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "laser",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    -7.5,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "3dpr",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    -7.5,
+                    0,
+                    -50.0
+                ],
+                "inclusion": "true",
+                "m": ""
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    0,
+                    -7.5,
+                    -50.0
+                ],
+                "inclusion": "laser",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    0,
+                    -7.5,
+                    -50.0
+                ],
+                "inclusion": "3dpr",
+                "m": ""
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.5,
+                "radius": 3.5,
+                "h": 100,
+                "pos": [
+                    0,
+                    -7.5,
+                    -50.0
+                ],
+                "inclusion": "true",
+                "m": ""
+            }
+        ]
+    ],
+    "components_string": [],
+    "components_objects": [],
+    "folder": "things/oobb_shaft_coupler_02_09"
+}
