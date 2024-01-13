@@ -24,7 +24,9 @@ def main(**kwargs):
     #filter = "oobb_bearing_plate_03_03_12_6705_sh_motor_tt_01"
     #filter = "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01"
     #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
-    #filter = "606"
+    #filter = "6810"
+    #filter = "oobb_bearing_plate_03_03_12_6705"
+    filter = "oobb_bearing_plate_05_05_12_6810_ex_three_quarter"
 
     # bunting
     #filter = "bunting"
@@ -98,7 +100,7 @@ def main(**kwargs):
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"
     #filter = "oobb_wire_02_03_06_ex_basic"
-    filter = "motor_stepper"
+    #filter = "motor_stepper"
     #filter = "oobb_wire_03_03_09_ex_higher_voltage_motor_stepper"
 
     #oobb_servo_holder

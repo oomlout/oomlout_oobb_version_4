@@ -10,13 +10,6 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_p_type_3_depth_5_width_1_height_3_thickness_false_full_object", valign = "center");
-				}
-			}
-		}
 		hull() {
 			translate(v = [-32.0000000000, 2.0000000000, 0]) {
 				cylinder(h = 3, r = 5);
@@ -35,13 +28,6 @@ difference() {
 			translate(v = [0, 7, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT plate main", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 21.5000000000, 0]) {
-				linear_extrude(height = 2) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_p_type_3_depth_0_7.5_0_pos_1_width_2_height_3_thickness_false_full_object", valign = "center");
 				}
 			}
 		}
@@ -67,13 +53,6 @@ difference() {
 			translate(v = [0, 7, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_5_width_1_height_3_thickness_false_full_object_true_both_holes", valign = "center");
 				}
 			}
 		}
@@ -147,13 +126,6 @@ difference() {
 			translate(v = [0, 7, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 21.5000000000, 0]) {
-				linear_extrude(height = 2) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_0_7.5_0_pos_1_width_2_height_3_thickness_false_full_object_true_both_holes", valign = "center");
 				}
 			}
 		}

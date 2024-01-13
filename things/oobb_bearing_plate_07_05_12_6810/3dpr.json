@@ -1,0 +1,104 @@
+[
+    {
+        "type": "p",
+        "width": 7,
+        "height": 5,
+        "thickness": 12,
+        "bearing": "6810",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_plate",
+        "extra_mm": true,
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            -6.0
+        ],
+        "holes": false
+    },
+    {
+        "type": "n",
+        "width": 7,
+        "height": 5,
+        "thickness": 12,
+        "bearing": "6810",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_bearing",
+        "depth": 12,
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "width": 5,
+        "height": 5,
+        "thickness": 12,
+        "bearing": "6810",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "holes": "corners",
+        "radius_name": "m6",
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "width": 7,
+        "height": 5,
+        "thickness": 12,
+        "bearing": "6810",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "holes": "just_middle",
+        "radius_name": "m6"
+    },
+    {
+        "type": "n",
+        "shape": "oobb_slice",
+        "mode": "3dpr",
+        "pos": [
+            0,
+            0,
+            6.0
+        ],
+        "zz": "bottom"
+    },
+    {
+        "type": "n",
+        "shape": "oobb_slice",
+        "mode": "3dpr",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "zz": "top"
+    }
+]

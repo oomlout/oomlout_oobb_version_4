@@ -163,6 +163,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     circle = kwargs.get("circle", False)
     diameter_full = int(kwargs.get("diameter", 0))
     diameter = diameter_full
+    diameter_clearance = kwargs.get("diameter_clearance", 7.5)
     if diameter_full % 1 != 0:
         diameter = diameter_full - diameter_full % 1
     if diameter != 0:
@@ -200,6 +201,9 @@ def get_oobb_holes(holes=["all"], **kwargs):
                 objects.extend(ob.oobb_easy_array(type="negative", shape="hole", inclusion=mode, repeats=[
                             width, height], pos_start=pos_start, shift_arr=[spacing, spacing], middle=middle, r=ob.gv(f"hole_radius_{radius_name}", mode)))
         else:
+            if diameter != 0:
+                width = diameter
+                height = diameter
             acceptable_holes  = []            
             pos_start = [xx + -(width*spacing/2) + spacing/2,
                         yy + -(height*spacing/2) + spacing/2, z]
@@ -209,7 +213,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
                     # only include if inside a circle of radius width * ob,gv("osp")/2
-                    r = width*spacing/2 - 7.5
+                    r = width*spacing/2 - diameter_clearance
                     if math.sqrt(x**2 + y**2) <= r:
                         # check if middle
                         if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
@@ -547,7 +551,8 @@ def get_oobe_holes(**kwargs):
 
     circle = kwargs.get("circle", False)
     diameter = kwargs.get("diameter", 0)
-    if diameter != 0 and width == 0 and height == 0:
+    diameter_clearance = kwargs.get("diameter_clearance", 1.5)
+    if diameter != 0:
         width = diameter
         height = diameter
 
@@ -581,7 +586,7 @@ def get_oobe_holes(**kwargs):
                             x = pos_start[0] + w*spacing
                             y = pos_start[1] + h*spacing
                             # only include if inside a circle of radius width * ob,gv("osp")/2
-                            r = width*spacing/2 - 1.5
+                            r = width*spacing/2 - (diameter_clearance)
                             distance_to_center = math.sqrt(x**2 + y**2)
                             if distance_to_center <= r:                                
                                 #if middle make sure r is greater than 15

@@ -57,6 +57,11 @@ def get_bearing_plates(size="oobb"):
     bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
     bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705", "size": size, "shaft": "motor_tt_01"})
     
+    # 6810
+    b = "6810"
+    bps.append({"type": "bearing_plate", "width": 7, "height": 5, "thickness": 12, "bearing": b,"size": size})
+    bps.append({"type": "bearing_plate", "width": 5, "height": 5, "thickness": 12, "bearing": b,"size": size})
+    bps.append({"type": "bearing_plate", "width": 5, "height": 5, "thickness": 12, "bearing": b,"size": size, "extra":"three_quarter"})
 
     return bps
 
