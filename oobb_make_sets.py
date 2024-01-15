@@ -101,6 +101,14 @@ def get_circles(size="oobb"):
         for t in thicknesses:
             circles.append({"type": "circle", "diameter": s, "thickness": t, "size": size})
 
+    #extra thin ones
+    circle_size = [1.5]
+    thicknesses = [0.5, 0.75, 1.5]
+    for s in circle_size:
+        for t in thicknesses:
+            circles.append({"type": "circle", "diameter": s, "thickness": t, "size": size})
+
+
     shafts = ["coupler_flanged"]
     circle_size = [3, 5, 7]
     for shaft in shafts:

@@ -1,0 +1,47 @@
+[
+    {
+        "type": "p",
+        "diameter": 7,
+        "thickness": 3,
+        "shaft": "coupler_flanged",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_circle",
+        "width": 7,
+        "height": 7,
+        "depth": 3
+    },
+    {
+        "type": "n",
+        "diameter": 7,
+        "thickness": 3,
+        "shaft": "coupler_flanged",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 7,
+        "height": 7,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "diameter": 7,
+        "thickness": 3,
+        "shaft": "coupler_flanged",
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_coupler_flanged",
+        "part": "shaft"
+    }
+]

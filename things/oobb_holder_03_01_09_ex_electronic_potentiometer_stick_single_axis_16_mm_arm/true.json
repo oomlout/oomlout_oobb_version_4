@@ -1,0 +1,142 @@
+[
+    {
+        "type": "positive",
+        "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm",
+        "width": 3,
+        "height": 1,
+        "thickness": 9,
+        "pos_plate": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "shape": "oobb_plate",
+        "depth": 9,
+        "pos": [
+            15.0,
+            0,
+            -4.5
+        ]
+    },
+    {
+        "type": "positive",
+        "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm",
+        "width": 3,
+        "height": 1,
+        "thickness": 9,
+        "pos_plate": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "shape": "oobb_cube_center",
+        "size": [
+            10,
+            5,
+            15
+        ],
+        "pos": [
+            11,
+            0,
+            -8
+        ]
+    },
+    {
+        "type": "negative",
+        "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm",
+        "width": 3,
+        "height": 1,
+        "thickness": 9,
+        "pos_plate": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m2d5",
+        "pos": [
+            -4,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "negative",
+        "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm",
+        "width": 3,
+        "height": 1,
+        "thickness": 9,
+        "pos_plate": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "shape": "oobb_holes",
+        "holes": "single",
+        "loc": [
+            [
+                3,
+                1
+            ],
+            [
+                2,
+                1
+            ]
+        ],
+        "pos": [
+            15.0,
+            0,
+            -4.5
+        ]
+    },
+    {
+        "type": "negative",
+        "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm",
+        "width": 3,
+        "height": 1,
+        "thickness": 9,
+        "pos_plate": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "shape": "oobb_holes",
+        "holes": "single",
+        "loc": [
+            [
+                2.5,
+                1
+            ]
+        ],
+        "pos": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "radius_name": "m3"
+    },
+    {
+        "type": "negative",
+        "extra": "electronic_potentiometer_stick_single_axis_16_mm_arm",
+        "width": 3,
+        "height": 1,
+        "thickness": 9,
+        "pos_plate": [
+            15.0,
+            0,
+            -4.5
+        ],
+        "shape": "oobb_electronic_potentiometer_stick_single_axis_16_mm",
+        "pos": [
+            -10,
+            0,
+            -12.5
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ],
+        "width_stick": 10
+    }
+]

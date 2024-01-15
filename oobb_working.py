@@ -26,7 +26,7 @@ def main(**kwargs):
     #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
     #filter = "6810"
     #filter = "oobb_bearing_plate_03_03_12_6705"
-    filter = "oobb_bearing_plate_05_05_12_6810_ex_three_quarter"
+    #filter = "oobb_bearing_plate_05_05_12_6810_ex_three_quarter"
 
     # bunting
     #filter = "bunting"
@@ -34,7 +34,7 @@ def main(**kwargs):
 
     # circle
     #filter = "circle"
-    #filter = "circle_1d5"
+    filter = "circle_1d5"
     #filter = "circle_03_03"
     #filter = "circle_03_03_sh"
 
@@ -88,7 +88,7 @@ def main(**kwargs):
     #filter = "_6705_ex_72_teeth_shield"
 
     # shaft
-    filter = "shaft"
+    #filter = "shaft"
 
     # wheel
     #filter = "twenty_twenty_aluminium_extrusion"
@@ -126,10 +126,10 @@ def main(**kwargs):
     #oobb_base.dump("json")
     #oobb_base.dump("folder")
 
-    save_type = "none"
+    #save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
-    #save_type = "all"
+    save_type = "all"
 
     overwrite = True
     #overwrite = False

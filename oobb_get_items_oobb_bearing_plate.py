@@ -131,7 +131,7 @@ def get_bearing_plate(**kwargs):
         #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
     elif extra == "three_quarter":
-        thickness_bearing = 7 - 0.4
+        thickness_bearing = oobb_base.gv(f'bearing_{bearing}_depth',"3dpr")
         thickness_plate = (thickness - thickness_bearing) / 2
         z_level = thickness/2 - thickness_plate
         p3 = {}

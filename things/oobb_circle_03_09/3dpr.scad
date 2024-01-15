@@ -10,13 +10,6 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_circle_shape_p_type_9_depth_3_diameter_9_thickness_3_width_3_height", valign = "center");
-				}
-			}
-		}
 		cylinder(h = 9, r = 22.0000000000);
 	}
 	union() {
@@ -24,13 +17,6 @@ difference() {
 			translate(v = [0, 7, 0]) {
 				linear_extrude(height = 1) {
 					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT holes main", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_3_diameter_9_thickness_3_width_3_height_true_both_holes_true_circle", valign = "center");
 				}
 			}
 		}

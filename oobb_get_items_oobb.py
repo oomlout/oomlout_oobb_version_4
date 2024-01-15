@@ -117,7 +117,7 @@ def get_circle_base(**kwargs):
         p3["height"] = height
         p3["pos"] = pos
         p3["both_holes"] = both_holes
-        p3["circle"] = True
+        p3["circle"] = True        
         if shaft != "":
             p3["middle"] = False
             pass
@@ -125,6 +125,26 @@ def get_circle_base(**kwargs):
         oobb_base.append_full(thing,**p3)      
         #th.extend(oobb_base.oobb_easy(**p3))   
         
+        if diameter == 1.5:
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "n"
+            p3["shape"] = f"{size}_hole"
+            p3["width"] = width
+            p3["height"] = height
+            p3["pos"] = pos            
+            p3["radius_name"] = "m3"
+            poss = []
+            shift = 5.303
+            poss.append([shift,shift,0])
+            poss.append([-shift,shift,0])
+            poss.append([shift,-shift,0])
+            poss.append([-shift,-shift,0])
+            p3["pos"] = poss            
+            p3["m"] = "#"
+            oobb_base.append_full(thing,**p3)    
+            
+
+
     if shaft != "":
         get_shaft_center(thing, **kwargs)    
 
