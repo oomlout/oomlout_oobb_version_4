@@ -1469,6 +1469,14 @@ def get_oobb_screw(**kwargs):
         if nut_include:
             pos1 = copy.deepcopy(pos_for_overhang)
             p3 = copy.deepcopy(kwargs)
+            if "top" in clearance:
+                if clearance == "top":
+                    p3.pop("clearance", "")
+                elif "top" in clearance:
+                    for i in range(len(clearance)):
+                        if clearance[i] == "top":
+                            clearance.pop(i)                            
+
             p3.pop("zz","")
             # maybe add a nut level argument later
             p3["shape"] = "oobb_nut"

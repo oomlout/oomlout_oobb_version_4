@@ -1,0 +1,91 @@
+[
+    {
+        "type": "p",
+        "diameter": 1.5,
+        "thickness": 0.5,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_circle",
+        "width": 1.5,
+        "height": 1.5,
+        "depth": 0.5
+    },
+    {
+        "type": "n",
+        "diameter": 1.5,
+        "thickness": 0.5,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1.5,
+        "height": 1.5,
+        "both_holes": true,
+        "circle": true
+    },
+    {
+        "type": "n",
+        "diameter": 1.5,
+        "thickness": 0.5,
+        "pos": [
+            5.303,
+            5.303,
+            0
+        ],
+        "shape": "oobb_hole",
+        "width": 1.5,
+        "height": 1.5,
+        "radius_name": "m3",
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "diameter": 1.5,
+        "thickness": 0.5,
+        "pos": [
+            -5.303,
+            5.303,
+            0
+        ],
+        "shape": "oobb_hole",
+        "width": 1.5,
+        "height": 1.5,
+        "radius_name": "m3",
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "diameter": 1.5,
+        "thickness": 0.5,
+        "pos": [
+            5.303,
+            -5.303,
+            0
+        ],
+        "shape": "oobb_hole",
+        "width": 1.5,
+        "height": 1.5,
+        "radius_name": "m3",
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "diameter": 1.5,
+        "thickness": 0.5,
+        "pos": [
+            -5.303,
+            -5.303,
+            0
+        ],
+        "shape": "oobb_hole",
+        "width": 1.5,
+        "height": 1.5,
+        "radius_name": "m3",
+        "m": "#"
+    }
+]
