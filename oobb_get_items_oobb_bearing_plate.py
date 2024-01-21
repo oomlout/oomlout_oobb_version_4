@@ -628,14 +628,12 @@ def get_bearing_plate_hole_shaft(thing, **kwargs):
         poss = []
         pos1 = copy.deepcopy(pos)
         lift = 3
-        pos1[2] = pos1[2] - thickness/2 + 6
+        pos1[2] = pos1[2] - thickness/2 + 6 + lift
         pos2 = copy.deepcopy(pos)
-        pos2[2] = pos2[2] - thickness/2 + 6 + lift
-        poss.append(pos1)
-        poss.append(pos2)
-        p3["pos"] = poss
+        p3["pos"] = pos1
+        p3["clearance"] = "bottom"
         p3["part"] = "shaft"
-        p3["m"] = "#"
+        #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
         #add an extra bearing clearance below
         # bearing

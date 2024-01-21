@@ -816,10 +816,15 @@ def get_oobb_motor_gearmotor_01(**kwargs):
 
         p3 = copy.deepcopy(kwargs)
         p3["shape"] = "oobb_cube_center"
-        p3["size"] = [shaft_dia + radius_extra, shaft_height + radius_extra, depth]
+        dep = depth
+        if "bottom" in clearance:
+            dep = 100
+        p3["size"] = [shaft_dia + radius_extra, shaft_height + radius_extra, dep]
+
         pos1 = copy.deepcopy(pos)
-        pos1[2] += -depth
+        pos1[2] += -dep
         p3["pos"] = pos1
+        p3["m"] = "#"
         objects.append(ob.oobb_easy(**p3))
 
         #add screw hole 2d5

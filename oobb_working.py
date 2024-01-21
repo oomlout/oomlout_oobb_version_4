@@ -21,7 +21,7 @@ def main(**kwargs):
     # bearing plate
     #filter = "bearing_plate"
     #filter = "oobb_bearing_plate_03_03_12_6705"
-    #filter = "oobb_bearing_plate_03_03_12_6705_ex_sandwich_sh_motor_tt_01"
+    filter = "oobb_bearing_plate_03_03_12_6705_ex_sandwich_sh_motor_tt_01"
     #filter = "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01"
     #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
     #filter = "6810"
@@ -35,7 +35,7 @@ def main(**kwargs):
 
     # circle
     #filter = "circle"
-    filter = "doughnut"
+    #filter = "doughnut"
     #filter = "oobb_circle_05_03_ex_doughnut_2"
     #filter = "circle_1d5"
     #filter = "circle_03_03"

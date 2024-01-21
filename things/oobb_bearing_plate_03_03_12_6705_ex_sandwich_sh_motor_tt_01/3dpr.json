@@ -258,32 +258,10 @@
         "pos": [
             0,
             0,
-            0.0
-        ],
-        "part": "shaft",
-        "m": "#"
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "bearing": "6705",
-        "shaft": "motor_tt_01",
-        "extra": "sandwich",
-        "pos_plate": [
-            0,
-            0,
-            0
-        ],
-        "shape": "oobb_motor_tt_01",
-        "pos": [
-            0,
-            0,
             3.0
         ],
-        "part": "shaft",
-        "m": "#"
+        "clearance": "bottom",
+        "part": "shaft"
     },
     {
         "type": "n",
