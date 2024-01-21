@@ -1475,7 +1475,8 @@ def get_oobb_screw(**kwargs):
                 elif "top" in clearance:
                     for i in range(len(clearance)):
                         if clearance[i] == "top":
-                            clearance.pop(i)                            
+                            clearance.pop(i) 
+                            break                           
 
             p3.pop("zz","")
             # maybe add a nut level argument later

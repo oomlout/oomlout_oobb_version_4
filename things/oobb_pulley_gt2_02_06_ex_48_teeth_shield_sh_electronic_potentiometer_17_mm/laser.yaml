@@ -34,6 +34,125 @@
     shape: oobb_cylinder
     thickness: 6
     type: p
+-   depth: 8.5
+    diameter: 2
+    extra: 48_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - -5.303
+    - -4.25
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   depth: 8.5
+    diameter: 2
+    extra: 48_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - 5.303
+    - -4.25
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   depth: 8.5
+    diameter: 2
+    extra: 48_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - 5.303
+    - 4.25
+    radius_name: m3
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   depth: 8.5
+    diameter: 2
+    extra: 48_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - -5.303
+    - 4.25
+    radius_name: m3
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_screw_countersunk
+    thickness: 6
+    type: n
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 48_teeth_shield
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 1
+-   diameter: 2
+    extra: 48_teeth_shield
+    pos:
+    - 7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth_shield
+    pos:
+    - -7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth_shield
+    pos:
+    - 0
+    - 7.5
+    - 0
+    radius_name: m3
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth_shield
+    pos:
+    - 0
+    - -7.5
+    - 0
+    radius_name: m3
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_hole
+    thickness: 6
+    type: n
 -   diameter: 2
     m: '#'
     part: shaft

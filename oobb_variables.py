@@ -40,7 +40,7 @@ def initialize_variables():
     bearing_d["6807"] = {"id":35, "id_e":0, "od":47, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
     bearing_d["6808"] = {"id":40, "id_e":0, "od":52, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
     bearing_d["6809"] = {"id":45, "id_e":0, "od":58, "od_e":0.2, "depth":7, "depth_e":0, "inner_holes":3}
-    bearing_d["6810"] = {"id":50, "id_e":0.2, "od":65, "od_e":0.2, "depth":7, "depth_e":-0.2, "inner_holes":3}
+    bearing_d["6810"] = {"id":50, "id_e":0.1, "od":65, "od_e":0.2, "depth":7, "depth_e":-0.2, "inner_holes":3}
     bearing_d["6811"] = {"id":55, "id_e":0, "od":72, "od_e":0.2, "depth":9, "depth_e":0, "inner_holes":3}
     bearing_d["6812"] = {"id":60, "id_e":0, "od":78, "od_e":0.2, "depth":10, "depth_e":0, "inner_holes":4}
     bearing_d["6813"] = {"id":65, "id_e":0, "od":85, "od_e":0.2, "depth":10, "depth_e":0, "inner_holes":4}

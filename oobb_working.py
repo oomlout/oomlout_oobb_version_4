@@ -21,11 +21,12 @@ def main(**kwargs):
     # bearing plate
     #filter = "bearing_plate"
     #filter = "oobb_bearing_plate_03_03_12_6705"
-    #filter = "oobb_bearing_plate_03_03_12_6705_sh_motor_tt_01"
+    #filter = "oobb_bearing_plate_03_03_12_6705_ex_sandwich_sh_motor_tt_01"
     #filter = "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01"
     #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
     #filter = "6810"
     #filter = "oobb_bearing_plate_03_03_12_6705"
+    #filter = "oobb_bearing_plate_03_03_09_6705_ex_minimal"
     #filter = "oobb_bearing_plate_05_05_12_6810_ex_three_quarter"
 
     # bunting
@@ -34,9 +35,12 @@ def main(**kwargs):
 
     # circle
     #filter = "circle"
-    filter = "circle_1d5"
+    filter = "doughnut"
+    #filter = "oobb_circle_05_03_ex_doughnut_2"
+    #filter = "circle_1d5"
     #filter = "circle_03_03"
     #filter = "circle_03_03_sh"
+
 
     # electronic
     #filter = "holder_03_03_03_ex_electronic_potentiometer"
@@ -62,6 +66,7 @@ def main(**kwargs):
 
     # mounting_plate
     #filter = "netgear_5_port_gigabit_switch_gs105v5"
+    #filter = "electrolama_a_lot_of_jacks"
 
     # other
     #filter = "_other"
@@ -86,6 +91,7 @@ def main(**kwargs):
     #filter = "20_teeth_shield_sh_motor_n20"
     #filter = "oobb_pulley_gt2"
     #filter = "_6705_ex_72_teeth_shield"
+    #filter = "40_teeth_shield"
 
     # shaft
     #filter = "shaft"
@@ -134,8 +140,9 @@ def main(**kwargs):
     overwrite = True
     #overwrite = False
     
-    #modes = ["laser", "3dpr", "true"]
-    modes = ["3dpr"]
+    modes = ["laser", "3dpr", "true"]
+    #modes = ["3dpr"]
+    #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
     #copy_files = True

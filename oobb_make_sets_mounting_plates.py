@@ -171,6 +171,28 @@ def get_mounting_plates_electrolama(size="oobb"):
     mounting_holes.append({"x": 31.5, "y": -10})
     mounting_plates.append({"type": "mounting_plate", "width": 7, "height": 4, "thickness": 3, "mounting_holes": mounting_holes, "radius_hole": "m3", "name": "electrolama_basic_hub", "size": size})
     
+    pl = { "type": "mounting_plate",
+            "name": "electrolama_a_lot_of_jacks",
+            "width": 6,
+            "height": 6,
+            "thickness": 3,
+            "width_mounting": 30,
+            "height_mounting": 30,
+            "radius_hole": "m2",
+            "size": size}
+    mounting_holes = []
+    mounting_holes.append({"x": 0, "y": 21.5})
+    mounting_holes.append({"x": 0, "y": -21.5})
+    mounting_holes.append({"x": 23, "y": 0})
+    mounting_holes.append({"x": -23, "y": 0})
+    mounting_plates.append({"type": "mounting_plate", 
+                            "width": 6, 
+                            "height": 6, 
+                            "thickness": 3, 
+                            "mounting_holes": mounting_holes, "radius_hole": "m2", 
+                            "name": "electrolama_a_lot_of_jacks", 
+                            "size": size})
+    mounting_plates.append(pl)
 
     return mounting_plates
 

@@ -94,6 +94,21 @@
     shape: oobb_screw_countersunk
     thickness: 9
     type: n
+-   both_holes: true
+    circle: true
+    diameter: 5.5
+    extra: 144_teeth_shield
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_holes
+    thickness: 9
+    type: n
+    width: 1
 -   diameter: 6
     m: '#'
     part: shaft

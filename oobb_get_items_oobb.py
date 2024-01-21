@@ -57,7 +57,7 @@ def get_circle(**kwargs):
     elif zz == "top":
         pos[2] += -thickness
 
-    if extra != "":
+    if extra != "" and "doughnut" not in extra:        
         # Get the module object for the current file        
         function_name = "get_plate_" + extra
         # Call the function using the string variable
@@ -106,6 +106,21 @@ def get_circle_base(**kwargs):
     #p3["m"] = ""  
     oobb_base.append_full(thing,**p3)      
     
+    doughnut_diameter = 0
+    #doughnut_cutout
+    if "doughnut" in extra:
+        doughnut_diameter = float(extra.replace("doughnut_",""))
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"{size}_circle"
+        p3["width"] = doughnut_diameter
+        p3["height"] = doughnut_diameter
+        p3["depth"] = thickness
+        p3["pos"] = pos
+        p3["diameter"] = doughnut_diameter
+        #p3["m"] = "#"
+        oobb_base.append_full(thing,**p3)
+
     
     # add holes
     if holes:
@@ -121,6 +136,7 @@ def get_circle_base(**kwargs):
         if shaft != "":
             p3["middle"] = False
             pass
+        
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)      
         #th.extend(oobb_base.oobb_easy(**p3))   
@@ -851,14 +867,14 @@ def get_pulley_gt2(**kwargs):
     kwargs["diameter"] = diameter
 
     screws_connecting = False
-    if shield and diameter > 2:
+    if shield and teeth >= 40:
         screws_connecting = True
     if bearing != "":
         screws_connecting = True
 
 
     # extra sets
-    holes = kwargs.get("holes", False)
+    holes = kwargs.get("holes", True)
     both_holes = kwargs.get("both_holes", True)    
     kwargs["pos"] = pos
     
@@ -952,7 +968,36 @@ def get_pulley_gt2(**kwargs):
         p3["middle"] = False
         #p3["m"] = "#"
         oobb_base.append_full(thing,**p3)      
-        #th.extend(oobb_base.oobb_easy(**p3))   
+        #th.extend(oobb_base.oobb_easy(**p3)) 
+        if diameter == 2:
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "n"
+            p3["shape"] = f"oobb_hole"
+            p3["radius_name"] = "m3"
+            #p3["depth"] = thickness
+            poss = []
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += 7.5
+            pos1[1] += 0            
+            poss.append(pos1)
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += -7.5
+            pos1[1] += 0
+            poss.append(pos1)
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += 0
+            pos1[1] += 7.5
+            poss.append(pos1)
+            pos1 = copy.deepcopy(pos)
+            pos1[0] += 0
+            pos1[1] += -7.5
+            poss.append(pos1)
+            p3["pos"] = poss
+            #p3["m"] = "#"
+            oobb_base.append_full(thing,**p3)
+
+
+
         
     # shaft
     if shaft == "":

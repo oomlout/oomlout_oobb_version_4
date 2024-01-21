@@ -2160,7 +2160,7 @@ def get_mounting_plate_generic(**kwargs):
     th = thing["components"]
     th.append(ob.oobb_easy(t="p", s="oobb_plate", width=width,
               height=height, depth=depth, pos=[0, 0, 0]))
-    th.extend(ob.oobb_easy(t="n", s="oobb_holes", width=width, height=height, pos=[0, 0, 0], holes=hole_pattern, radius_name="m6", both_holes=True))
+    th.extend(ob.oobb_easy(t="n", s="oobb_holes", width=width, height=height, pos=[0, 0, 0], holes=hole_pattern, radius_name="m6", both_holes=True, diameter=0))
     
     # add mounting holes
     if mounting_holes == "":

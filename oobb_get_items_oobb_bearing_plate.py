@@ -15,6 +15,8 @@ def get_bearing_plate(**kwargs):
     pos = kwargs.get("pos", [0, 0, 0])
     extra = kwargs.get("extra", "")
     full_object = kwargs.get("full_object", True)
+    just_screws = kwargs.get("just_screws", False)
+    screws = []
 
     # extra sets
     shaft = kwargs.get("shaft", "m6")
@@ -31,118 +33,133 @@ def get_bearing_plate(**kwargs):
     kwargs.pop("size","")
     #kwargs.pop("bearing", "")
 
+
     # plate     
-    pos_plate = [0,0,0]
-    if extra == "shifted":
-        pos_plate[1] = pos_plate[1] + 15/2
-    kwargs["pos_plate"] = pos_plate
-    get_bearing_plate_plate(thing, **kwargs)
+    if not just_screws:
+        pos_plate = [0,0,0]
+        if extra == "shifted":
+            pos_plate[1] = pos_plate[1] + 15/2
+        kwargs["pos_plate"] = pos_plate
+        get_bearing_plate_plate(thing, **kwargs)
             
     # bearing
-    p3 = copy.deepcopy(kwargs)
-    p3["type"] = "n" 
-    p3["shape"] = f"{size}_bearing"
-    p3["bearing"] = bearing
-    p3["width"] = width             
-    p3["height"] = height  
-    p3["depth"] = thickness
-    p3["pos"] = pos
-    #p3["m"] = "#"
-    oobb_base.append_full(thing, **p3)
+    if not just_screws:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative" 
+        p3["shape"] = f"{size}_bearing"
+        p3["bearing"] = bearing
+        p3["width"] = width             
+        p3["height"] = height  
+        p3["depth"] = thickness
+        p3["pos"] = pos
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
 
     # hole
     #      center
-    p3 = copy.deepcopy(kwargs)
-    #p3["m"] = "#"
-    get_bearing_plate_hole_center(thing,**p3)
+    if not just_screws:
+        p3 = copy.deepcopy(kwargs)
+        #p3["m"] = "#"
+        get_bearing_plate_hole_center(thing,**p3)
 
     #      perimeter
-    p3 = copy.deepcopy(kwargs)
-    #p3["m"] = "#"
-    get_bearing_plate_hole_perimeter(thing,**p3)
+    if not just_screws:
+        p3 = copy.deepcopy(kwargs)
+        #p3["m"] = "#"
+        get_bearing_plate_hole_perimeter(thing,**p3)
 
     #      shaft
-    p3 = copy.deepcopy(kwargs)
-    #p3["m"] = "#"
-    get_bearing_plate_hole_shaft(thing,**p3)
+    if not just_screws:
+        p3 = copy.deepcopy(kwargs)
+        #p3["m"] = "#"
+        get_bearing_plate_hole_shaft(thing,**p3)
 
     # connecting_screw
     #      perimeter    
     p3 = copy.deepcopy(kwargs)
     #p3["m"] = "#"
-    get_bearing_plate_connecting_screw_perimeter(thing,**p3)
+    screws.append(get_bearing_plate_connecting_screw_perimeter(thing,**p3))
 
     #      center
     p3 = copy.deepcopy(kwargs)
     #p3["m"] = "#"
-    get_bearing_plate_connecting_screw_center(thing,**p3)
+    screws.append(get_bearing_plate_connecting_screw_center(thing,**p3))
+
+
+    
 
     # slice section
-    
-    z_level = pos[2]
-    if extra == "horn_adapter_screws":   
-        #z_level = -20 # NO SLIC
+    if not just_screws:
         z_level = pos[2]
-    elif shaft == "motor_tt_01":
-        z_level = pos[2] # NO SLIC
-    else: 
-        z_level = pos[2]
-    
-    # slices and conditional slices
-    if extra == "":
-        if (shaft == "m6" or shaft == "motor_tt_01" or shaft == "motor_servo_standard_01") and extra != "no_center":
-            #shift coomponents to the right and down half thickness
-            components_second = copy.deepcopy(thing["components"])
+        if extra == "horn_adapter_screws":   
+            #z_level = -20 # NO SLIC
+            z_level = pos[2]
+        elif shaft == "motor_tt_01":
+            z_level = pos[2] # NO SLIC
+        else: 
+            z_level = pos[2]
+        
+        # extra
+        # extra_missing_middle_3_mm
+        shift_slice = 0
+        if "missing_middle_3_mm" in extra:
+            shift_slice = 1.5
 
-            #put into a rotation object
-            return_value_2 = {}
-            return_value_2["type"]  = "rotation"
-            return_value_2["typetype"]  = "p"
-            pos1 = copy.deepcopy(pos)
-            pos1[0] += width * 15 + 15
-            return_value_2["pos"] = pos1
-            return_value_2["rot"] = [180,0,0]
-            return_value_2["objects"] = components_second
-            return_value_2 = [return_value_2]
+        # slices and conditional slices
+        if extra == "" or "missing_middle_3_mm"  in extra or "removable" in extra or "sandwich" in extra:
+            if (shaft == "m6" or shaft == "motor_tt_01" or shaft == "motor_servo_standard_01") and extra != "no_center":
+                #shift coomponents to the right and down half thickness
+                components_second = copy.deepcopy(thing["components"])
+
+                #put into a rotation object
+                return_value_2 = {}
+                return_value_2["type"]  = "rotation"
+                return_value_2["typetype"]  = "p"
+                pos1 = copy.deepcopy(pos)
+                pos1[0] += width * 15 + 15
+                return_value_2["pos"] = pos1
+                return_value_2["rot"] = [180,0,0]
+                return_value_2["objects"] = components_second
+                return_value_2 = [return_value_2]
 
 
-            #components_second = oobb_base.shift(components_second, shift = [50, 0 , +thickness/2])
-            thing["components"] = thing["components"] + return_value_2
-            
+                #components_second = oobb_base.shift(components_second, shift = [50, 0 , +thickness/2])
+                thing["components"] = thing["components"] + return_value_2
+                
 
+
+                p3 = {}
+                p3["type"] = "n"
+                p3["shape"] = f"oobb_slice"
+                p3["mode"] = "3dpr"
+                p3["pos"] = [0,0,thickness/2]
+                p3["comment"] = "bearing_plate_slice"
+                p3["zz"] = "bottom"
+                #p3["m"] = "#"
+                oobb_base.append_full(thing, **p3)
 
             p3 = {}
             p3["type"] = "n"
             p3["shape"] = f"oobb_slice"
             p3["mode"] = "3dpr"
-            p3["pos"] = [0,0,thickness/2]
+            p3["pos"] = [0,0,z_level + shift_slice]
+            p3["comment"] = "bearing_plate_slice"
+            p3["zz"] = "top"
+            #p3["m"] = "#"
+            oobb_base.append_full(thing, **p3)
+        elif extra == "three_quarter":
+            thickness_bearing = oobb_base.gv(f'bearing_{bearing}_depth',"3dpr")
+            thickness_plate = (thickness - thickness_bearing) / 2
+            z_level = thickness/2 - thickness_plate
+            p3 = {}
+            p3["type"] = "n"
+            p3["shape"] = f"oobb_slice"
+            p3["mode"] = "3dpr"
+            p3["pos"] = [0,0,z_level]
             p3["comment"] = "bearing_plate_slice"
             p3["zz"] = "bottom"
             #p3["m"] = "#"
             oobb_base.append_full(thing, **p3)
-
-        p3 = {}
-        p3["type"] = "n"
-        p3["shape"] = f"oobb_slice"
-        p3["mode"] = "3dpr"
-        p3["pos"] = [0,0,z_level]
-        p3["comment"] = "bearing_plate_slice"
-        p3["zz"] = "top"
-        #p3["m"] = "#"
-        oobb_base.append_full(thing, **p3)
-    elif extra == "three_quarter":
-        thickness_bearing = oobb_base.gv(f'bearing_{bearing}_depth',"3dpr")
-        thickness_plate = (thickness - thickness_bearing) / 2
-        z_level = thickness/2 - thickness_plate
-        p3 = {}
-        p3["type"] = "n"
-        p3["shape"] = f"oobb_slice"
-        p3["mode"] = "3dpr"
-        p3["pos"] = [0,0,z_level]
-        p3["comment"] = "bearing_plate_slice"
-        p3["zz"] = "bottom"
-        #p3["m"] = "#"
-        oobb_base.append_full(thing, **p3)
 
 
     if full_object:   
@@ -221,6 +238,7 @@ def get_bearing_plate_connecting_screw_center(thing, **kwargs):
 
 def get_bearing_plate_connecting_screw_perimeter(thing, **kwargs):
     return_value = []
+    screws = []
     # default sets
     thickness = kwargs.get("thickness", 3)
     pos = kwargs.get("pos", [0, 0, 0])
@@ -607,11 +625,17 @@ def get_bearing_plate_hole_shaft(thing, **kwargs):
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "n"
         p3["shape"] = f"oobb_motor_tt_01"
+        poss = []
         pos1 = copy.deepcopy(pos)
+        lift = 3
         pos1[2] = pos1[2] - thickness/2 + 6
-        p3["pos"] = pos1
+        pos2 = copy.deepcopy(pos)
+        pos2[2] = pos2[2] - thickness/2 + 6 + lift
+        poss.append(pos1)
+        poss.append(pos2)
+        p3["pos"] = poss
         p3["part"] = "shaft"
-        #p3["m"] = "#"
+        p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
         #add an extra bearing clearance below
         # bearing
@@ -628,7 +652,8 @@ def get_bearing_plate_hole_shaft(thing, **kwargs):
         p3["height"] = height  
         p3["depth"] = thickness
         p3["pos"] = poss
-        oobb_base.append_full(thing, **p3)
+        if "removable" in extra:
+             oobb_base.append_full(thing, **p3)
     elif shaft == "motor_n20":
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "n"
@@ -698,38 +723,66 @@ def get_bearing_plate_plate(thing, **kwargs):
     bearing_od = ob.gv(f"bearing_{bearing}_od", "3dpr") - 2
     extra = kwargs.get("extra", "")
 
-    if shaft == "m6":        
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "p";           
-        p3["shape"] = f"{size}_plate";    
-        p3["width"] = width;   
-        p3["height"] = height;   
-        p3["extra_mm"] = True
-        p3["depth"] = thickness;  
-        pos1 = copy.deepcopy(pos_plate)
-        pos1[2] = pos1[2] - thickness/2 
-        p3["pos"] = pos1
-        #holes is false
-        p3["holes"] = False
-        #p3["m"] = "#" 
-        p3["comment"] = "bearing_plate_plate"
-        oobb_base.append_full(thing, **p3)
-    
-    if shaft != "m6" or extra == "no_center": 
-        #add a 24mm cylinder thickness thick
+    if "minimal" not in extra:
+        if shaft == "m6":        
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "p";           
+            p3["shape"] = f"{size}_plate";    
+            p3["width"] = width;   
+            p3["height"] = height;   
+            p3["extra_mm"] = True
+            p3["depth"] = thickness;  
+            pos1 = copy.deepcopy(pos_plate)
+            pos1[2] = pos1[2] - thickness/2 
+            p3["pos"] = pos1
+            #holes is false
+            p3["holes"] = False
+            #p3["m"] = "#" 
+            p3["comment"] = "bearing_plate_plate"
+            oobb_base.append_full(thing, **p3)
+        
+        if shaft != "m6" or extra == "no_center": 
+            #add a 24mm cylinder thickness thick
+            p3 = copy.deepcopy(kwargs)
+            p3.pop("size","")
+            p3["type"] = "positive";           
+            if extra == "no_center":
+                p3["type"] = "negative";                   
+            p3["shape"] = "oobb_cylinder"
+            p3["depth"] = thickness
+            p3["radius"] = bearing_od
+            p3["height"] = thickness
+            p3["pos"] = pos_plate
+            p3["mode"] = "all"
+            p3["comment"] = "bearing_plate_plate"
+            thing = oobb_base.append_full(thing, **p3)
+
+    else: ### minimal plate
+        #just 7605 at the moment
+        pass
+        radius_bearing = 32/2
+        radius_exrta = 3/2
         p3 = copy.deepcopy(kwargs)
         p3.pop("size","")
-        p3["type"] = "positive";           
-        if extra == "no_center":
-            p3["type"] = "negative";                   
+        p3["type"] = "positive"
         p3["shape"] = "oobb_cylinder"
         p3["depth"] = thickness
-        p3["radius"] = bearing_od
+        p3["radius"] = radius_bearing + radius_exrta
         p3["height"] = thickness
-        p3["pos"] = pos_plate
-        p3["mode"] = "all"
-        p3["comment"] = "bearing_plate_plate"
-        thing = oobb_base.append_full(thing, **p3)
+        p3["zz"] = "middle"
+        oobb_base.append_full(thing, **p3)
+        #add plate for connecting botlts
+        p3 = copy.deepcopy(kwargs)
+        p3.pop("size","")
+        p3["type"] = "positive"
+        p3["shape"] = "rounded_rectangle"
+        size = [26,44,thickness]
+        p3["size"] = size
+        pos1 = copy.deepcopy(pos_plate)
+        pos1[2] = pos1[2] - thickness/2
+        p3["pos"] = pos1
+        oobb_base.append_full(thing, **p3)
+    
 
     if thing == "":
         return return_value

@@ -164,6 +164,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     diameter_full = int(kwargs.get("diameter", 0))
     diameter = diameter_full
     diameter_clearance = kwargs.get("diameter_clearance", 7.5)
+    diameter_center_clearance = kwargs.get("diameter_center_clearance", 0)
     if diameter_full % 1 != 0:
         diameter = diameter_full - diameter_full % 1
     if diameter != 0:
@@ -413,7 +414,8 @@ def get_oobb_holes(holes=["all"], **kwargs):
         if diameter != diameter_full:
             p2["diameter"] = (diameter_full+0.5) * 2 - 1        
         else:
-            p2["diameter"] = (diameter_full) * 2 - 1        
+            if diameter != 0:
+                p2["diameter"] = (diameter_full) * 2 - 1        
         #add holes
         p2["holes"] = holes
         #p2["m"] = "#"

@@ -1,0 +1,76 @@
+[
+    {
+        "type": "p",
+        "extra": "bolt_stacker",
+        "diameter": 1.5,
+        "thickness": 24,
+        "shape": "oobb_cylinder",
+        "radius": 10.75,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "depth": 24,
+        "zz": "bottom"
+    },
+    {
+        "type": "n",
+        "extra": "bolt_stacker",
+        "diameter": 1.5,
+        "thickness": 24,
+        "shape": "oobb_hole_new",
+        "radius_name": "m6",
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "bolt_stacker",
+        "diameter": 1.5,
+        "thickness": 24,
+        "shape": "oobb_nut",
+        "radius_name": "m6",
+        "depth": 6,
+        "pos": [
+            0,
+            0,
+            1.5
+        ],
+        "zz": "bottom"
+    },
+    {
+        "type": "n",
+        "extra": "bolt_stacker",
+        "diameter": 1.5,
+        "thickness": 24,
+        "shape": "oobb_cylinder",
+        "radius": 6.5,
+        "depth": 6,
+        "pos": [
+            0,
+            0,
+            7.5
+        ],
+        "zz": "bottom"
+    },
+    {
+        "type": "n",
+        "extra": "bolt_stacker",
+        "diameter": 1.5,
+        "thickness": 24,
+        "shape": "oobb_cylinder",
+        "r2": 10.75,
+        "r1": 6.5,
+        "depth": 10.5,
+        "pos": [
+            0,
+            0,
+            24
+        ],
+        "zz": "top"
+    }
+]

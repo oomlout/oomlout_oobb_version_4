@@ -34,6 +34,125 @@
     shape: oobb_cylinder
     thickness: 9
     type: p
+-   depth: 11.5
+    diameter: 2
+    extra: 40_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - -5.303
+    - -5.75
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   depth: 11.5
+    diameter: 2
+    extra: 40_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - 5.303
+    - -5.75
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   depth: 11.5
+    diameter: 2
+    extra: 40_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - 5.303
+    - 5.75
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   depth: 11.5
+    diameter: 2
+    extra: 40_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - -5.303
+    - 5.75
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 40_teeth_shield
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_servo_standard_01
+    shape: oobb_holes
+    thickness: 9
+    type: n
+    width: 1
+-   diameter: 2
+    extra: 40_teeth_shield
+    pos:
+    - 7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 9
+    type: n
+-   diameter: 2
+    extra: 40_teeth_shield
+    pos:
+    - -7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 9
+    type: n
+-   diameter: 2
+    extra: 40_teeth_shield
+    pos:
+    - 0
+    - 7.5
+    - 0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 9
+    type: n
+-   diameter: 2
+    extra: 40_teeth_shield
+    pos:
+    - 0
+    - -7.5
+    - 0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 9
+    type: n
 -   diameter: 2
     m: '#'
     overhang: false

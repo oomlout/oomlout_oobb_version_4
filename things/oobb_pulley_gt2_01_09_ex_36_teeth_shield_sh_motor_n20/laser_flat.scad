@@ -18,10 +18,15 @@ union() {
 								}
 							}
 						}
-						translate(v = [0, 0, 1]) {
-							pulley_gt2(depth = 9.5000000000, number_of_teeth = 36);
+						translate(v = [0, 0, -5.7500000000]) {
+							pulley_gt2(depth = 11.5000000000, number_of_teeth = 36);
 						}
-						cylinder(h = 1, r = 12.4649681529);
+						translate(v = [0, 0, -5.7500000000]) {
+							cylinder(h = 1, r = 12.4649681529);
+						}
+						translate(v = [0, 0, 4.7500000000]) {
+							cylinder(h = 1, r = 12.4649681529);
+						}
 					}
 					union() {
 						*color(alpha = 1.0000000000, c = "gray") {
@@ -40,6 +45,15 @@ union() {
 									cube(size = [3.5000000000, 0.7500000000, 250]);
 								}
 							}
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
 						}
 					}
 				}
@@ -61,10 +75,15 @@ union() {
 								}
 							}
 						}
-						translate(v = [0, 0, 1]) {
-							pulley_gt2(depth = 9.5000000000, number_of_teeth = 36);
+						translate(v = [0, 0, -5.7500000000]) {
+							pulley_gt2(depth = 11.5000000000, number_of_teeth = 36);
 						}
-						cylinder(h = 1, r = 12.4649681529);
+						translate(v = [0, 0, -5.7500000000]) {
+							cylinder(h = 1, r = 12.4649681529);
+						}
+						translate(v = [0, 0, 4.7500000000]) {
+							cylinder(h = 1, r = 12.4649681529);
+						}
 					}
 					union() {
 						*color(alpha = 1.0000000000, c = "gray") {
@@ -83,6 +102,15 @@ union() {
 									cube(size = [3.5000000000, 0.7500000000, 250]);
 								}
 							}
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
 						}
 					}
 				}
@@ -104,10 +132,15 @@ union() {
 								}
 							}
 						}
-						translate(v = [0, 0, 1]) {
-							pulley_gt2(depth = 9.5000000000, number_of_teeth = 36);
+						translate(v = [0, 0, -5.7500000000]) {
+							pulley_gt2(depth = 11.5000000000, number_of_teeth = 36);
 						}
-						cylinder(h = 1, r = 12.4649681529);
+						translate(v = [0, 0, -5.7500000000]) {
+							cylinder(h = 1, r = 12.4649681529);
+						}
+						translate(v = [0, 0, 4.7500000000]) {
+							cylinder(h = 1, r = 12.4649681529);
+						}
 					}
 					union() {
 						*color(alpha = 1.0000000000, c = "gray") {
@@ -126,6 +159,15 @@ union() {
 									cube(size = [3.5000000000, 0.7500000000, 250]);
 								}
 							}
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
+						}
+						translate(v = [-250.0000000000, -250.0000000000, 0]) {
+							cube(size = [500, 500, 500]);
 						}
 					}
 				}

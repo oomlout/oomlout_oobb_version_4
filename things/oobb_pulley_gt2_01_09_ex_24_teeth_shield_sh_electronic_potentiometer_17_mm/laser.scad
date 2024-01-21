@@ -11,10 +11,15 @@ difference() {
 				}
 			}
 		}
-		translate(v = [0, 0, 1]) {
-			pulley_gt2(depth = 9.5000000000, number_of_teeth = 24);
+		translate(v = [0, 0, -5.7500000000]) {
+			pulley_gt2(depth = 11.5000000000, number_of_teeth = 24);
 		}
-		cylinder(h = 1, r = 8.6433121019);
+		translate(v = [0, 0, -5.7500000000]) {
+			cylinder(h = 1, r = 8.6433121019);
+		}
+		translate(v = [0, 0, 4.7500000000]) {
+			cylinder(h = 1, r = 8.6433121019);
+		}
 	}
 	union() {
 		*color(alpha = 1.0000000000, c = "gray") {
@@ -26,6 +31,15 @@ difference() {
 		}
 		#translate(v = [0, 0, -50.0000000000]) {
 			cylinder(h = 100, r = 2.9500000000);
+		}
+		translate(v = [-250.0000000000, -250.0000000000, 0]) {
+			cube(size = [500, 500, 500]);
+		}
+		translate(v = [-250.0000000000, -250.0000000000, 0]) {
+			cube(size = [500, 500, 500]);
+		}
+		translate(v = [-250.0000000000, -250.0000000000, 0]) {
+			cube(size = [500, 500, 500]);
 		}
 	}
 }

@@ -17,6 +17,24 @@
     {
         "type": "n",
         "thickness": 6,
+        "extra": "36_teeth",
+        "shaft": "motor_n20",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 6,
         "shaft": "motor_n20",
         "diameter": 1,
         "pos": [

@@ -52,10 +52,24 @@ def get_bearing_plates(size="oobb"):
     bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6704", "size": size, "shaft": "motor_n20"})
 
     # 6705
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705","size": size})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705","extra": "no_center", "size": size})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705", "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
-    bps.append({"type": "bearing_plate", "width": 3, "height": 3, "thickness": 12, "bearing": "6705", "size": size, "shaft": "motor_tt_01"})
+    b = "6705"
+    w = 3
+    h = 3
+    
+    t = 9    
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b,"size": size})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b,"size": size, "extra":"missing_middle_3_mm"})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b,"size": size, "extra":"minimal_missing_middle_3_mm"})
+
+    t = 12
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b,"size": size})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b,"size": size, "extra":"missing_middle_3_mm"})
+    
+    
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b,"extra": "no_center", "size": size})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "motor_tt_01", "extra":"sandwich"})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "motor_tt_01", "extra":"removable"})
     
     # 6810
     b = "6810"
@@ -124,6 +138,15 @@ def get_circles(size="oobb"):
     
     #circles.append({"type": "circle_captive", "diameter": 3, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
     #circles.append({"type": "circle_captive", "diameter": 1.5, "thickness": 9, "shaft":"motor_gearmotor_01", "size": size})
+
+    #doughnuts
+    circles = []
+    circle_size = [5, 7, 9, 11, 13, 15, 17, 19, 21]
+    doughnuts = [2.5,3,5]
+    for s in circle_size:
+        for d in doughnuts:
+            if s > d:
+                circles.append({"type": "circle", "diameter": s, "thickness": 3, "size": size,"extra":f"doughnut_{d}"})
 
     return circles
 

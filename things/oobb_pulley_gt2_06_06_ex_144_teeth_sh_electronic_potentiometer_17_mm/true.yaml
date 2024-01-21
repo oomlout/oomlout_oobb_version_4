@@ -10,6 +10,21 @@
     shape: pulley_gt2
     thickness: 6
     type: p
+-   both_holes: true
+    circle: true
+    diameter: 5.5
+    extra: 144_teeth
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 1
 -   diameter: 6
     m: '#'
     part: shaft
