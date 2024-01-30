@@ -723,7 +723,7 @@ def get_oobb_motor_gearmotor_01(**kwargs):
     part = kwargs.get("part", "all")
     screw_lift = kwargs.get("screw_lift", -3)
     radius_extra = kwargs.get("radius_extra", 0.4)
-    clearance = kwargs.get("clearance", 1)
+    clearance = kwargs.get("clearance", "")
     if part == "all":
         objects = []
         pos = kwargs.get("pos", [0, 0, 0])
@@ -794,6 +794,8 @@ def get_oobb_motor_gearmotor_01(**kwargs):
         width = 65
         height = 22            
         depth = 19
+        if clearance == "":
+            clearance = 0
         p3["size"] = [width + clearance, height + clearance, depth]
         pos1 = copy.deepcopy(pos_original)        
         pos1[0] += -width/2 + 11.35
@@ -824,7 +826,7 @@ def get_oobb_motor_gearmotor_01(**kwargs):
         pos1 = copy.deepcopy(pos)
         pos1[2] += -dep
         p3["pos"] = pos1
-        p3["m"] = "#"
+        #p3["m"] = "#"
         objects.append(ob.oobb_easy(**p3))
 
         #add screw hole 2d5

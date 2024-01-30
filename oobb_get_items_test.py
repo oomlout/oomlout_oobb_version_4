@@ -1,5 +1,6 @@
 import copy
 import oobb_base
+import math
 
 # gear
 def get_test_gear(**kwargs):
@@ -99,6 +100,79 @@ def get_test_gear(**kwargs):
     else: # only return the elements
         return thing["components"]
 
+#hole
+def get_test_hole(**kwargs):
+    # default sets
+    style = kwargs.get("style", "socket_cap")
+    kwargs.pop("style","")
+    pos = kwargs.get("pos", [0, 0, 0])    
+    full_object = kwargs.get("full_object", True)
+    hole_size = kwargs.get("shaft", 3)    
+    increment = kwargs.get("bearing", 0.5)
+
+
+
+    # extra sets
+    kwargs["pos"] = pos
+    
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")    
+    kwargs.pop("extra","")
+    kwargs.pop("type","")
+    width = kwargs.get("width", 3)
+    height = kwargs.get("height", 3)
+
+
+    pos_current = [0,0,0]
+    pos_shift = 15
+    comment_extra = ""
+    thickness = kwargs.get("thickness", 3)
+
+    #main_plate
+    p3 = copy.deepcopy(kwargs)
+    p3["shape"] = f"oobb_plate"
+    p3["type"] = "positive"
+    p3["width"] = width
+    p3["height"] = height
+    p3["depth"] = thickness
+    oobb_base.append_full(thing, **p3)
+
+    #hole test
+    wid = width
+    hei = height
+    extra = -increment * 4
+    for w in range(0,wid):
+        for h in range(0,hei):
+            p3 = copy.deepcopy(kwargs)
+            p3["shape"] = f"oobb_hole"
+            p3["type"] = "negative"
+            p3["width"] = wid
+            p3["height"] = hei
+            p3["depth"] = 3
+            x = (w*15) - math.floor(wid/2) * 15
+            y = (h*15) - math.floor(hei/2) * 15
+            pos1 = copy.deepcopy(p3["pos"])
+            pos1[0] += x
+            pos1[1] += y
+            p3["pos"] = pos1
+            p3["radius"] = (hole_size + extra) / 2
+            oobb_base.append_full(thing, **p3)
+            extra += increment
+        
+
+
+
+
+
+
+    
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+    
 
 # rotation
 def get_test_rotation(**kwargs):
@@ -197,7 +271,8 @@ def get_test_motor_tt_01(**kwargs):
     versions = []
     base = {}    
     base["type"] = "p"   
-    base["shape"] = f"oobb_motor_tt_01"  
+    base["shape"] = f"oobb_motor_tt_01" 
+    base.pop("clearance","") 
     #base["part"] = f"shaft"    
     #base["depth"] = 50
     base["pos"] = pos_current

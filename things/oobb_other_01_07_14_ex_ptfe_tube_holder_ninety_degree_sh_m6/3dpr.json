@@ -1,0 +1,106 @@
+[
+    {
+        "type": "p",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 7.2,
+        "thickness": 14,
+        "shaft": "m6",
+        "shape": "oobb_plate",
+        "radius": 2.5,
+        "depth": 14,
+        "pos": [
+            0,
+            0,
+            -7.0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 7,
+        "thickness": 14,
+        "shaft": "m6",
+        "shape": "oobb_holes",
+        "holes": "single",
+        "loc": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ],
+            [
+                1,
+                3
+            ],
+            [
+                1,
+                4
+            ],
+            [
+                1,
+                5
+            ],
+            [
+                1,
+                6
+            ]
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 7,
+        "thickness": 14,
+        "shaft": "m6",
+        "shape": "oobb_hole",
+        "radius_name": "m3",
+        "pos": [
+            -50,
+            45,
+            0
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ],
+        "depth": 100
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 7,
+        "thickness": 14,
+        "shaft": "m6",
+        "shape": "oobb_hole",
+        "radius": 3.0,
+        "pos": [
+            -100,
+            45,
+            0
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ],
+        "depth": 100
+    }
+]

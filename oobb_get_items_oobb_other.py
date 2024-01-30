@@ -449,6 +449,165 @@ def get_other_corner_cube_relief(**kwargs):
     else: # only return the elements
         return thing["components"]
 
+def get_other_ptfe_tube_holder(**kwargs):    
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos_plate = kwargs.get("pos_plate", copy.deepcopy(pos))
+    pos_item = kwargs.get("pos_item", copy.deepcopy(pos))
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    extra_mm = 1 / oobb_base.gv("osp")
+    bearing = kwargs.get("bearing", "6705")
+    oobb_holes = kwargs.get("oobb_holes", [])
+    oobe_holes = kwargs.get("oobe_holes", [])
+    connecting_screws = kwargs.get("connecting_screws", [])
+
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")
+    kwargs.pop("bearing", "")
+
+    shift_plate = [0,0,-thickness/2]
+    pos_plate[0] += shift_plate[0]
+    pos_plate[1] += shift_plate[1]
+    pos_plate[2] += shift_plate[2]
+
+
+    #plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = "oobb_plate"
+    p3["width"] = width + extra_mm * 3
+    p3["height"] = height
+    p3["depth"] = thickness
+    p3["pos"] = pos_plate    
+    oobb_base.append_full(thing, **p3)
+
+    
+    #oobb_holes
+    holes = []
+    for i in range(1,height):
+        holes.append([1,i])
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_holes"
+    p3["holes"] = "single"
+    p3["loc"] = holes
+    p3["rot"] = [0,0,0]
+    #p3["m"] = "#"    
+    oobb_base.append_full(thing, **p3)
+    #ptfe_hole
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_hole"
+    p3["radius"] = 9.7/2
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += 0
+    pos1[1] += math.floor(height/2)*15 
+    p3["pos"] = pos1
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
+def get_other_ptfe_tube_holder_ninety_degree(**kwargs):    
+    width = kwargs.get("width", 1)
+    height = kwargs.get("height", 1)
+    thickness = kwargs.get("thickness", 3)
+    size = kwargs.get("size", "oobb");
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos_plate = kwargs.get("pos_plate", copy.deepcopy(pos))
+    pos_item = kwargs.get("pos_item", copy.deepcopy(pos))
+    extra = kwargs.get("extra", "")
+    full_object = kwargs.get("full_object", True)
+    extra_mm = 1 / oobb_base.gv("osp")
+    bearing = kwargs.get("bearing", "6705")
+    oobb_holes = kwargs.get("oobb_holes", [])
+    oobe_holes = kwargs.get("oobe_holes", [])
+    connecting_screws = kwargs.get("connecting_screws", [])
+    shaft = kwargs.get("shaft", "m6")
+
+    # get the default thing
+    thing = oobb_base.get_default_thing(**kwargs)
+    kwargs.pop("size","")
+    kwargs.pop("bearing", "")
+
+    shift_plate = [0,0,-thickness/2]
+    pos_plate[0] += shift_plate[0]
+    pos_plate[1] += shift_plate[1]
+    pos_plate[2] += shift_plate[2]
+
+
+    #plate
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "p"
+    p3["shape"] = "oobb_plate"
+    p3["radius"] = 2.5
+    p3["width"] = width
+    p3["height"] = height + extra_mm * 3
+    p3["depth"] = thickness
+    p3["pos"] = pos_plate    
+    oobb_base.append_full(thing, **p3)
+
+    
+    #oobb_holes
+    holes = []
+    for i in range(1,height):
+        holes.append([1,i])
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_holes"
+    p3["holes"] = "single"
+    p3["loc"] = holes
+    p3["rot"] = [0,0,0]
+    #p3["m"] = "#"    
+    oobb_base.append_full(thing, **p3)
+
+    #ptfe_hole_through
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_hole"
+    p3["radius_name"] = "m3"
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += -50
+    pos1[1] += math.floor(height/2)*15 
+    p3["pos"] = pos1
+    p3["rot"] = [0,90,0]
+    p3["depth"] = 100
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+    
+    #ptfe_hole_bulkhead
+    p3 = copy.deepcopy(kwargs)
+    p3["type"] = "n"
+    p3["shape"] = f"oobb_hole"
+    r = 9.7/2
+    if shaft == "m6":
+        r = 6/2
+    p3["radius"] = r
+    pos1 = copy.deepcopy(pos)
+    pos1[0] += -100
+    pos1[1] += math.floor(height/2)*15 
+    p3["pos"] = pos1
+    p3["rot"] = [0,90,0]
+    p3["depth"] = 100
+    #p3["m"] = "#"
+    oobb_base.append_full(thing, **p3)
+
+
+    if full_object:   
+        return thing
+    else: # only return the elements
+        return thing["components"]
+
 def get_other_timing_belt_clamp_gt2(**kwargs):    
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)

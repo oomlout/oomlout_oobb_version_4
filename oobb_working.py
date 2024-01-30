@@ -21,7 +21,7 @@ def main(**kwargs):
     # bearing plate
     #filter = "bearing_plate"
     #filter = "oobb_bearing_plate_03_03_12_6705"
-    filter = "oobb_bearing_plate_03_03_12_6705_ex_sandwich_sh_motor_tt_01"
+    #filter = "oobb_bearing_plate_03_03_12_6705_ex_sandwich_sh_motor_tt_01"
     #filter = "oobb_bearing_plate_03_03_12_6705_ex_horn_adapter_screws_sh_motor_servo_standard_01"
     #filter = "oobb_bearing_plate_03_04_12_606_ex_shifted"
     #filter = "6810"
@@ -73,6 +73,7 @@ def main(**kwargs):
     #filter = "bolt_stacker"
     #filter = "oobb_other_01_06_03_ex_bolt_stacker"
     #filter = "oobb_other_02_02_29_ex_corner_cube"
+    filter = "ptfe"
 
     # plate
     #filter = "ninety_degree"
@@ -123,6 +124,9 @@ def main(**kwargs):
     #filter = "oobb_test_ex_oobb_nut"
     #filter = "oobb_test_ex_oobb_shape_slot"
     #filter = "test"
+    #filter = "oobb_test_0d1_ex_hole_sh_9d5"
+    #filter = "oobb_test_0d1_ex_hole_sh_6"
+    
 
     #filter = ""
 
@@ -132,7 +136,7 @@ def main(**kwargs):
     #oobb_base.dump("json")
     #oobb_base.dump("folder")
 
-    #save_type = "none"
+    save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
     save_type = "all"
@@ -140,8 +144,8 @@ def main(**kwargs):
     overwrite = True
     #overwrite = False
     
-    modes = ["laser", "3dpr", "true"]
-    #modes = ["3dpr"]
+    #modes = ["laser", "3dpr", "true"]
+    modes = ["3dpr"]
     #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 

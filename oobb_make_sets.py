@@ -317,6 +317,14 @@ def get_others(size="oobb"):
 
     ots.append({"type": "other", "extra": "bolt_stacker","width": 1,  "height":6, "thickness": 3, "size": size})
 
+    #      ptfe_tube_holder
+    heights = [7,5,3]
+    shafts = ["m6", "quarter_inch_pipe_thread"]
+    for h in heights:
+        for s in shafts:
+            ots.append({"type": "other", "extra": "ptfe_tube_holder","width": 1,  "height":h, "thickness": 14, "size": size, "shaft":s})
+            ots.append({"type": "other", "extra": "ptfe_tube_holder_ninety_degree","width": 1,  "height":h, "thickness": 14, "size": size, "shaft":s})
+
 
     return ots
 
@@ -958,11 +966,13 @@ def get_screws():
 def get_tests():
     tests = []
 
-    
-    
-
     # gear test
     tests.append({"type": "test", "size": "oobb", "extra": "gear"})
+
+    # hole test
+    shafts = [9.5, 6]
+    for s in shafts:
+        tests.append({"type": "test", "size": "oobb", "extra": "hole", "shaft":s, "bearing":0.1 })
 
     # motor test#
     

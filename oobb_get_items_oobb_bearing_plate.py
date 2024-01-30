@@ -637,11 +637,17 @@ def get_bearing_plate_hole_shaft(thing, **kwargs):
         oobb_base.append_full(thing, **p3)
         #add an extra bearing clearance below
         # bearing
-        pos1 = copy.deepcopy(pos)
-        pos1[2] = pos1[2] - 3
-        pos2 = copy.deepcopy(pos)
-        pos2[2] = pos2[2] - 6
-        poss = [pos1, pos2]
+        poss = []
+        if "removable" in extra:
+            pos1 = copy.deepcopy(pos)
+            pos1[2] = pos1[2] - 3
+            pos2 = copy.deepcopy(pos)
+            pos2[2] = pos2[2] - 6
+            poss = [pos1, pos2]
+        elif "sandwich" in extra:
+            pos1 = copy.deepcopy(pos)
+            pos1[2] = pos1[2] - 6
+            poss = [pos1]
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "n" 
         p3["shape"] = f"{size}_bearing"
@@ -650,8 +656,9 @@ def get_bearing_plate_hole_shaft(thing, **kwargs):
         p3["height"] = height  
         p3["depth"] = thickness
         p3["pos"] = poss
-        if "removable" in extra:
-             oobb_base.append_full(thing, **p3)
+        #p3["m"] =   "#"
+        
+        oobb_base.append_full(thing, **p3)
     elif shaft == "motor_n20":
         p3 = copy.deepcopy(kwargs)
         p3["type"] = "n"
