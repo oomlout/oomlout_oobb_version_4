@@ -106,8 +106,8 @@ def get_bearing_plate(**kwargs):
             shift_slice = 1.5
 
         # slices and conditional slices
-        if extra == "" or "missing_middle_3_mm"  in extra or "removable" in extra or "sandwich" in extra:
-            if (shaft == "m6" or shaft == "motor_tt_01" or shaft == "motor_servo_standard_01") and extra != "no_center":
+        if extra == "" or "missing_middle_3_mm"  in extra or "removable" in extra or "sandwich" in extra or shaft == "coupler_flanged" or "no_center" in extra:
+            if (shaft == "m6" or shaft == "motor_tt_01" or shaft == "motor_servo_standard_01" or shaft == "coupler_flanged") :
                 #shift coomponents to the right and down half thickness
                 components_second = copy.deepcopy(thing["components"])
 
@@ -147,6 +147,55 @@ def get_bearing_plate(**kwargs):
             p3["zz"] = "top"
             #p3["m"] = "#"
             oobb_base.append_full(thing, **p3)
+
+            if shaft == "coupler_flanged":
+                shift_extra_nut = 105
+                #add extra nut holder for coupler_flanged
+                #create the extra piece for getting the nuts in
+                p3 = copy.deepcopy(kwargs)
+                p3["type"] = "p"
+                p3["shape"] = f"oobb_cylinder"
+                pos1 = copy.deepcopy(pos)
+                pos1[0] += shift_extra_nut
+                dep = 4
+                pos1[2] += dep/2
+                p3["pos"] = pos1
+                p3["radius"] = 22/2
+                p3["depth"] = dep
+                #p3["m"] = "#"
+                oobb_base.append_full(thing, **p3)
+                #remvoe 10.5mm hole
+                p3 = copy.deepcopy(kwargs)
+                p3["type"] = "n"
+                p3["shape"] = f"oobb_hole"
+                pos1 = copy.deepcopy(pos)
+                pos1[0] += shift_extra_nut
+                p3["pos"] = pos1
+                p3["radius"] = 6/2
+                #p3["m"] = "#"
+                oobb_base.append_full(thing, **p3)
+                shift = 5.657
+                hole_positions = []
+                z_shift = 0
+                hole_positions.append([[shift, shift, z_shift],360/24])
+                hole_positions.append([[-shift, -shift, z_shift],360/24])
+                hole_positions.append([[shift, -shift, z_shift],-360/24])
+                hole_positions.append([[-shift, shift, z_shift],-360/24])
+                for posa in hole_positions:
+                    p3 = copy.deepcopy(kwargs)
+                    p3["type"] = "n"
+                    p3["shape"] = "oobb_nut"
+                    pos1 = copy.deepcopy(posa[0])
+                    pos1[0] += shift_extra_nut
+                    p3["pos"] = pos1
+                    p3["radius_name"] = "m3"
+                    p3["nut"] = True
+                    p3["hole"] = True
+                    p3["overhang"] = True        
+                    p3["rot"] = [0,0,posa[1]]
+                    #p3["m"] = "#"
+                    oobb_base.append_full(thing, **p3)
+
         elif extra == "three_quarter":
             thickness_bearing = oobb_base.gv(f'bearing_{bearing}_depth',"3dpr")
             thickness_plate = (thickness - thickness_bearing) / 2
@@ -210,6 +259,28 @@ def get_bearing_plate_connecting_screw_center(thing, **kwargs):
             #p3["m"] = "#"   
             #p3["comment"]  = "bearing_plate_connecting_screw_center"
             oobb_base.append_full(thing, **p3)
+    elif ((bearing == "6704" or bearing == "6705") and shaft == "coupler_flanged"):
+        #coupler_flanged
+        shift = 5.657
+        hole_positions = []
+        z_shift = thickness/2
+        hole_positions.append([shift, shift, z_shift])
+        hole_positions.append([-shift, -shift, z_shift])
+        hole_positions.append([shift, -shift, z_shift])
+        hole_positions.append([-shift, shift, z_shift])
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = "oobb_screw_countersunk"
+        p3["pos"] = hole_positions
+        p3["rot"] = [0,0,0]
+        p3["depth"] = thickness + 10
+        p3["radius_name"] = "m3"
+        p3["nut"] = True
+        p3["overhang"] = True        
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+        
+    
     if ( bearing == "6704" or bearing == "6705") and shaft == "m6":
         hole_positions = []
         # 90 degrees
@@ -245,40 +316,40 @@ def get_bearing_plate_connecting_screw_perimeter(thing, **kwargs):
     bearing = kwargs.get("bearing", "6704")
     extra = kwargs.get("extra", "")
 
-    z = pos[2]+thickness/2
+    z = thickness/2
     hole_positions = []
     
     if bearing == "606":
         joint_dis = 15*2        
-        hole_positions.append([[joint_dis/2, joint_dis/4, pos[2]+z], [0,0,360/12]])
-        hole_positions.append([[-joint_dis/2, -joint_dis/4, pos[2]+z], [0,0,360/12]])
-        hole_positions.append([[joint_dis/4, -joint_dis/2, pos[2]+z-thickness], [0,180,0]])
-        hole_positions.append([[-joint_dis/4, joint_dis/2, pos[2]+z-thickness], [0,180,0]])
+        hole_positions.append([[joint_dis/2, joint_dis/4, z], [0,0,360/12]])
+        hole_positions.append([[-joint_dis/2, -joint_dis/4, z], [0,0,360/12]])
+        hole_positions.append([[joint_dis/4, -joint_dis/2, z-thickness], [0,180,0]])
+        hole_positions.append([[-joint_dis/4, joint_dis/2, z-thickness], [0,180,0]])
     if bearing == "6704":         
         joint_dis = 18*2        
-        hole_positions.append([[joint_dis/2, 0, pos[2]+z], [0,180,360/12]])
-        hole_positions.append([[-joint_dis/2, 0, pos[2]+z], [0,180,360/12]])
-        hole_positions.append([[0, joint_dis/2, pos[2]+z-thickness], [0,0,0]])
-        hole_positions.append([[0, -joint_dis/2, pos[2]+z-thickness], [0,0,0]])
+        hole_positions.append([[joint_dis/2, 0, z], [0,180,360/12]])
+        hole_positions.append([[-joint_dis/2, 0, z], [0,180,360/12]])
+        hole_positions.append([[0, joint_dis/2, z-thickness], [0,0,0]])
+        hole_positions.append([[0, -joint_dis/2, z-thickness], [0,0,0]])
     if bearing == "6705": 
         joint_dis_y = 18*2
         joint_dis_x = 16
-        hole_positions.append([[joint_dis_x/2, -joint_dis_y/2, pos[2]+z], [0,0,0]])
-        hole_positions.append([[-joint_dis_x/2, joint_dis_y/2, pos[2]+z], [0,0,0]])
-        hole_positions.append([[-joint_dis_x/2, -joint_dis_y/2, pos[2]+z-thickness], [0,180,0]])
-        hole_positions.append([[joint_dis_x/2, joint_dis_y/2, pos[2]+z-thickness], [0,180,0]])
+        hole_positions.append([[joint_dis_x/2, -joint_dis_y/2, z], [0,0,0]])
+        hole_positions.append([[-joint_dis_x/2, joint_dis_y/2, z], [0,0,0]])
+        hole_positions.append([[-joint_dis_x/2, -joint_dis_y/2, z-thickness], [0,180,0]])
+        hole_positions.append([[joint_dis_x/2, joint_dis_y/2, z-thickness], [0,180,0]])
     if bearing == "6810":
         joint_dis_y = 60
         joint_dis_x = 60
         joint_shift = 7.5
-        hole_positions.append([[joint_dis_x/2, -joint_dis_y/2 + joint_shift, pos[2]+z], [0,0,0]])
-        hole_positions.append([[-joint_dis_x/2, joint_dis_y/2 - joint_shift, pos[2]+z], [0,0,0]])
+        hole_positions.append([[joint_dis_x/2, -joint_dis_y/2 + joint_shift, z], [0,0,0]])
+        hole_positions.append([[-joint_dis_x/2, joint_dis_y/2 - joint_shift, z], [0,0,0]])
         if extra == "three_quarter": # all screws on direction
-            hole_positions.append([[-joint_dis_x/2 + joint_shift, -joint_dis_y/2, pos[2]+z], [0,0,0]])
-            hole_positions.append([[joint_dis_x/2 - joint_shift, joint_dis_y/2, pos[2]+z], [0,0,0]])
+            hole_positions.append([[-joint_dis_x/2 + joint_shift, -joint_dis_y/2, z], [0,0,0]])
+            hole_positions.append([[joint_dis_x/2 - joint_shift, joint_dis_y/2, z], [0,0,0]])
         else:
-            hole_positions.append([[-joint_dis_x/2 + joint_shift, -joint_dis_y/2, pos[2]+z-thickness], [0,180,0]])
-            hole_positions.append([[joint_dis_x/2 - joint_shift, joint_dis_y/2, pos[2]+z-thickness], [0,180,0]])
+            hole_positions.append([[-joint_dis_x/2 + joint_shift, -joint_dis_y/2, z-thickness], [0,180,0]])
+            hole_positions.append([[joint_dis_x/2 - joint_shift, joint_dis_y/2, z-thickness], [0,180,0]])
 
 
     for posa in hole_positions:
@@ -315,40 +386,48 @@ def get_bearing_plate_hole_center(thing, **kwargs):
     if bearing == "6705" or bearing == "6704":  
         #m3 holes and nuts     
         p3 = copy.deepcopy(kwargs)
+        posss = []
         poss = []
         poss.append([7.5, 0, 0])
         poss.append([-7.5,0, 0])
+        posss.append(poss)
+        poss = []
         poss.append([0, 7.5, 0])
         poss.append([0,-7.5, 0])
-        p3["type"] = "n"
-        shap = "oobb_hole"
-        if bearing == "6705":
-            shap = ["oobb_hole", "oobb_nut"]
-            #p3["overhang"] = True
-            p3["zz"] = "middle"
-        if shaft == "motor_servo_standard_01" or shaft == "motor_tt_01":
-            #move to bottom
-            for pos in poss:
-                pos[2] = -thickness/2
-                p3["zz"] = "bottom"                
-                p3["hole"] = True
-                if bearing == "6705":
-                    #p3["depth"] = 4
-                    pos[2] = 0
-                    p3["zz"] = "middle"
-                    pass
-                if bearing == "6704": ##clearance for pocket nut on 6705 bearing
-                    shap = ["oobb_hole", "oobb_threaded_insert"]                    
-                    for pos in poss:
-                        pos[2] = thickness/2
-        p3["shape"] = shap
-        p3["pos"] = poss
-        p3["radius_name"] = "m3"
-        p3["hole"] = True
-        #p3["m"] = "#"
-        
-        p3.pop("extra", "")
-        oobb_base.append_full(thing, **p3)
+        posss.append(poss)
+        rot = [0,0,360/12]
+        for poss in posss:
+            p3["type"] = "n"
+            shap = "oobb_hole"
+            if bearing == "6705":
+                shap = ["oobb_hole", "oobb_nut"]
+                #p3["overhang"] = True
+                p3["zz"] = "middle"
+                p3["rot"] = rot
+                rot = [0,0,0]
+            if shaft == "motor_servo_standard_01" or shaft == "motor_tt_01":
+                #move to bottom
+                for pos in poss:
+                    pos[2] = -thickness/2
+                    p3["zz"] = "bottom"                
+                    p3["hole"] = True
+                    if bearing == "6705":
+                        #p3["depth"] = 4
+                        pos[2] = 0
+                        p3["zz"] = "middle"
+                        pass
+                    if bearing == "6704": ##clearance for pocket nut on 6705 bearing
+                        shap = ["oobb_hole", "oobb_threaded_insert"]                    
+                        for pos in poss:
+                            pos[2] = thickness/2
+            p3["shape"] = shap
+            p3["pos"] = poss
+            p3["radius_name"] = "m3"
+            p3["hole"] = True
+            #p3["m"] = "#"
+            
+            p3.pop("extra", "")
+            oobb_base.append_full(thing, **p3)
     if bearing == "6810":
         p3 = copy.deepcopy(kwargs)
         p3.pop("extra", "")
@@ -612,6 +691,26 @@ def get_bearing_plate_hole_shaft(thing, **kwargs):
         p3["holes"] = "just_middle"
         p3["radius_name"] = radius_name
         oobb_base.append_full(thing, **p3)
+    elif shaft == "coupler_flanged": 
+        p3 = copy.deepcopy(kwargs)       
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_hole"
+        p3["pos"] = pos
+        p3["radius"] = 10.5/2
+        oobb_base.append_full(thing, **p3)
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "n"
+        p3["shape"] = f"oobb_hole"
+        p3["pos"] = pos
+        p3["radius_name"] = "m3"
+        p3["depth"] = 25
+        p3["rot"] = [0,90,90]
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+
+        
+
+
     elif shaft == "motor_building_block_large_01":
         posa = copy.deepcopy(pos)
         posa[2] = posa[2] - thickness/2

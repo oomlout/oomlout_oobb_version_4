@@ -1,0 +1,162 @@
+components:
+-   -   objects:
+        -   -   -   depth: 30
+                    h: 3
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+        -   -   depth: 30
+                h: 30
+                inclusion: laser
+                pos: &id001
+                - 0
+                - 0
+                - -30.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 30
+                h: 30
+                inclusion: 3dpr
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 30
+                h: 30
+                inclusion: 'true'
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        -   -   -   depth: 30
+                    h: 3.2
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.0
+                    shape: cylinder
+                    type: positive
+        -   -   depth: 30
+                h: 30
+                inclusion: laser
+                pos: &id002
+                - 0
+                - 0
+                - -30.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   depth: 30
+                h: 30
+                inclusion: 3dpr
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   depth: 30
+                h: 30
+                inclusion: 'true'
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+        -   -   -   -   -   depth: 30
+                            inclusion: 3dpr
+                            pos:
+                            - -1.75
+                            - -3.25
+                            - -0.3
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 3.5
+                            - 6.5
+                            - 0.3
+                            type: positive
+            -   -   -   -   depth: 30
+                            inclusion: 3dpr
+                            pos:
+                            - -1.75
+                            - -1.75
+                            - -0.6
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 3.5
+                            - 3.5
+                            - 0.3
+                            type: positive
+        -   -   -   depth: 30
+                    h: 3
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+        -   -   depth: 30
+                h: 30
+                inclusion: laser
+                pos: &id003
+                - 0
+                - 0
+                - -30.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 30
+                h: 30
+                inclusion: 3dpr
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 30
+                h: 30
+                inclusion: 'true'
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+components_objects: []
+components_string: []
+depth: 30
+depth_mm: 30
+description: screw socket cap m3x30
+folder: things/hardware_screw_socket_cap_m3_30
+id: hardware_screw_socket_cap_m3_30
+radius_name: m3
+type: screw_socket_cap

@@ -1,0 +1,162 @@
+components:
+-   -   objects:
+        -   -   -   depth: 10
+                    h: 1.25
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.5
+                    shape: cylinder
+                    type: positive
+        -   -   depth: 10
+                h: 10
+                inclusion: laser
+                pos: &id001
+                - 0
+                - 0
+                - -10.0
+                r: 0.75
+                radius: 0.75
+                shape: cylinder
+                type: positive
+            -   depth: 10
+                h: 10
+                inclusion: 3dpr
+                pos: *id001
+                r: 0.75
+                radius: 0.75
+                shape: cylinder
+                type: positive
+            -   depth: 10
+                h: 10
+                inclusion: 'true'
+                pos: *id001
+                r: 0.75
+                radius: 0.75
+                shape: cylinder
+                type: positive
+        -   -   -   depth: 10
+                    h: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.75
+                    shape: cylinder
+                    type: positive
+        -   -   depth: 10
+                h: 10
+                inclusion: laser
+                pos: &id002
+                - 0
+                - 0
+                - -10.0
+                r: 1.0
+                radius: 1.0
+                shape: cylinder
+                type: positive
+            -   depth: 10
+                h: 10
+                inclusion: 3dpr
+                pos: *id002
+                r: 1.0
+                radius: 1.0
+                shape: cylinder
+                type: positive
+            -   depth: 10
+                h: 10
+                inclusion: 'true'
+                pos: *id002
+                r: 1.0
+                radius: 1.0
+                shape: cylinder
+                type: positive
+        -   -   -   -   -   depth: 10
+                            inclusion: 3dpr
+                            pos:
+                            - -1.25
+                            - -2.75
+                            - -0.3
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 2.5
+                            - 5.5
+                            - 0.3
+                            type: positive
+            -   -   -   -   depth: 10
+                            inclusion: 3dpr
+                            pos:
+                            - -1.25
+                            - -1.25
+                            - -0.6
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 2.5
+                            - 2.5
+                            - 0.3
+                            type: positive
+        -   -   -   depth: 10
+                    h: 1.3
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.5
+                    shape: cylinder
+                    type: positive
+        -   -   depth: 10
+                h: 10
+                inclusion: laser
+                pos: &id003
+                - 0
+                - 0
+                - -10.0
+                r: 0.75
+                radius: 0.75
+                shape: cylinder
+                type: positive
+            -   depth: 10
+                h: 10
+                inclusion: 3dpr
+                pos: *id003
+                r: 0.75
+                radius: 0.75
+                shape: cylinder
+                type: positive
+            -   depth: 10
+                h: 10
+                inclusion: 'true'
+                pos: *id003
+                r: 0.75
+                radius: 0.75
+                shape: cylinder
+                type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+components_objects: []
+components_string: []
+depth: 10
+depth_mm: 10
+description: screw self tapping m2x10
+folder: things/hardware_screw_self_tapping_m2_10
+id: hardware_screw_self_tapping_m2_10
+radius_name: m2
+type: screw_self_tapping

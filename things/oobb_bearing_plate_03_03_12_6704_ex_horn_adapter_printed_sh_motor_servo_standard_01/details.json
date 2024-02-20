@@ -70,7 +70,7 @@
         ],
         [
             {
-                "type": "n",
+                "type": "negative",
                 "shape": "bearing",
                 "pos": [
                     0,
@@ -87,7 +87,7 @@
                 "extra": "horn_adapter_printed"
             },
             {
-                "type": "n",
+                "type": "negative",
                 "shape": "bearing",
                 "pos": [
                     0,
@@ -104,7 +104,7 @@
                 "extra": "horn_adapter_printed"
             },
             {
-                "type": "n",
+                "type": "negative",
                 "shape": "bearing",
                 "pos": [
                     0,
@@ -126,11 +126,11 @@
                 "type": "n",
                 "shape": "cylinder",
                 "r": 1.5,
-                "h": 100,
+                "h": 200,
                 "pos": [
                     7.5,
                     0,
-                    -44.0
+                    -94.0
                 ],
                 "inclusion": "laser",
                 "height": 3,
@@ -140,11 +140,11 @@
                 "type": "n",
                 "shape": "cylinder",
                 "r": 1.8,
-                "h": 100,
+                "h": 200,
                 "pos": [
                     7.5,
                     0,
-                    -44.0
+                    -94.0
                 ],
                 "inclusion": "3dpr",
                 "height": 3,
@@ -154,11 +154,11 @@
                 "type": "n",
                 "shape": "cylinder",
                 "r": 1.5,
-                "h": 100,
+                "h": 200,
                 "pos": [
                     7.5,
                     0,
-                    -44.0
+                    -94.0
                 ],
                 "inclusion": "true",
                 "height": 3,
@@ -170,11 +170,11 @@
                 "type": "n",
                 "shape": "cylinder",
                 "r": 1.5,
-                "h": 100,
+                "h": 200,
                 "pos": [
                     -7.5,
                     0,
-                    -44.0
+                    -94.0
                 ],
                 "inclusion": "laser",
                 "height": 3,
@@ -184,11 +184,11 @@
                 "type": "n",
                 "shape": "cylinder",
                 "r": 1.8,
-                "h": 100,
+                "h": 200,
                 "pos": [
                     -7.5,
                     0,
-                    -44.0
+                    -94.0
                 ],
                 "inclusion": "3dpr",
                 "height": 3,
@@ -198,99 +198,11 @@
                 "type": "n",
                 "shape": "cylinder",
                 "r": 1.5,
-                "h": 100,
+                "h": 200,
                 "pos": [
                     -7.5,
                     0,
-                    -44.0
-                ],
-                "inclusion": "true",
-                "height": 3,
-                "width": 3
-            }
-        ],
-        [
-            {
-                "type": "n",
-                "shape": "cylinder",
-                "r": 1.5,
-                "h": 100,
-                "pos": [
-                    0,
-                    7.5,
-                    -44.0
-                ],
-                "inclusion": "laser",
-                "height": 3,
-                "width": 3
-            },
-            {
-                "type": "n",
-                "shape": "cylinder",
-                "r": 1.8,
-                "h": 100,
-                "pos": [
-                    0,
-                    7.5,
-                    -44.0
-                ],
-                "inclusion": "3dpr",
-                "height": 3,
-                "width": 3
-            },
-            {
-                "type": "n",
-                "shape": "cylinder",
-                "r": 1.5,
-                "h": 100,
-                "pos": [
-                    0,
-                    7.5,
-                    -44.0
-                ],
-                "inclusion": "true",
-                "height": 3,
-                "width": 3
-            }
-        ],
-        [
-            {
-                "type": "n",
-                "shape": "cylinder",
-                "r": 1.5,
-                "h": 100,
-                "pos": [
-                    0,
-                    -7.5,
-                    -44.0
-                ],
-                "inclusion": "laser",
-                "height": 3,
-                "width": 3
-            },
-            {
-                "type": "n",
-                "shape": "cylinder",
-                "r": 1.8,
-                "h": 100,
-                "pos": [
-                    0,
-                    -7.5,
-                    -44.0
-                ],
-                "inclusion": "3dpr",
-                "height": 3,
-                "width": 3
-            },
-            {
-                "type": "n",
-                "shape": "cylinder",
-                "r": 1.5,
-                "h": 100,
-                "pos": [
-                    0,
-                    -7.5,
-                    -44.0
+                    -94.0
                 ],
                 "inclusion": "true",
                 "height": 3,
@@ -350,11 +262,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -364,11 +276,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -378,11 +290,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -441,11 +353,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -455,11 +367,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -469,11 +381,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -532,11 +444,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -546,11 +458,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -560,11 +472,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -625,11 +537,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -639,11 +551,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -653,11 +565,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -716,11 +628,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -730,11 +642,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -744,11 +656,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -807,11 +719,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -821,11 +733,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -835,17 +747,105 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -7.5,
                         0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
                     "width": 3
                 }
             ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    7.5,
+                    -94.0
+                ],
+                "inclusion": "laser",
+                "height": 3,
+                "width": 3
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.8,
+                "h": 200,
+                "pos": [
+                    0,
+                    7.5,
+                    -94.0
+                ],
+                "inclusion": "3dpr",
+                "height": 3,
+                "width": 3
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    7.5,
+                    -94.0
+                ],
+                "inclusion": "true",
+                "height": 3,
+                "width": 3
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    -7.5,
+                    -94.0
+                ],
+                "inclusion": "laser",
+                "height": 3,
+                "width": 3
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.8,
+                "h": 200,
+                "pos": [
+                    0,
+                    -7.5,
+                    -94.0
+                ],
+                "inclusion": "3dpr",
+                "height": 3,
+                "width": 3
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    -7.5,
+                    -94.0
+                ],
+                "inclusion": "true",
+                "height": 3,
+                "width": 3
+            }
         ],
         [
             [
@@ -900,11 +900,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -914,11 +914,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -928,11 +928,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -991,11 +991,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -1005,11 +1005,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -1019,11 +1019,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -1082,11 +1082,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -1096,11 +1096,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -1110,11 +1110,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -1175,11 +1175,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -1189,11 +1189,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -1203,11 +1203,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -1266,11 +1266,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -1280,11 +1280,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -1294,11 +1294,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -1357,11 +1357,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "height": 3,
@@ -1371,11 +1371,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.8,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "height": 3,
@@ -1385,11 +1385,11 @@
                     "type": "n",
                     "shape": "cylinder",
                     "r": 1.5,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         0,
                         -7.5,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "height": 3,
@@ -1403,11 +1403,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -15.0,
                         -15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "m": ""
@@ -1416,11 +1416,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.25,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -15.0,
                         -15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "m": ""
@@ -1429,11 +1429,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -15.0,
                         -15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "m": ""
@@ -1444,11 +1444,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -15.0,
                         15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "m": ""
@@ -1457,11 +1457,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.25,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -15.0,
                         15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "m": ""
@@ -1470,11 +1470,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         -15.0,
                         15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "m": ""
@@ -1485,11 +1485,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         15.0,
                         -15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "m": ""
@@ -1498,11 +1498,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.25,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         15.0,
                         -15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "m": ""
@@ -1511,11 +1511,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         15.0,
                         -15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "m": ""
@@ -1526,11 +1526,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         15.0,
                         15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "laser",
                     "m": ""
@@ -1539,11 +1539,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.25,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         15.0,
                         15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "3dpr",
                     "m": ""
@@ -1552,11 +1552,11 @@
                     "type": "negative",
                     "shape": "cylinder",
                     "r": 3.0,
-                    "h": 100,
+                    "h": 200,
                     "pos": [
                         15.0,
                         15.0,
-                        -50.0
+                        -100.0
                     ],
                     "inclusion": "true",
                     "m": ""
@@ -1583,11 +1583,11 @@
                             "type": "p",
                             "shape": "cylinder",
                             "r": 1.25,
-                            "h": 100,
+                            "h": 200,
                             "pos": [
                                 0,
                                 0,
-                                -50.0
+                                -100.0
                             ],
                             "inclusion": "laser",
                             "height": 3,
@@ -1598,11 +1598,11 @@
                             "type": "p",
                             "shape": "cylinder",
                             "r": 1.55,
-                            "h": 100,
+                            "h": 200,
                             "pos": [
                                 0,
                                 0,
-                                -50.0
+                                -100.0
                             ],
                             "inclusion": "3dpr",
                             "height": 3,
@@ -1613,11 +1613,11 @@
                             "type": "p",
                             "shape": "cylinder",
                             "r": 1.25,
-                            "h": 100,
+                            "h": 200,
                             "pos": [
                                 0,
                                 0,
-                                -50.0
+                                -100.0
                             ],
                             "inclusion": "true",
                             "height": 3,
@@ -10270,13 +10270,13 @@
     ],
     "components_string": [
         "oobb_cylinder_shape_positive_type_12_depth_3_width_12_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_horn_adapter_printed_extra_0_0_0_pos_plate_11.7_radius_all_mode",
-        "oobb_bearing_shape_n_type_12_depth_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_horn_adapter_printed_extra_0_0_0_pos_plate",
+        "oobb_bearing_shape_negative_type_12_depth_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_horn_adapter_printed_extra_0_0_0_pos_plate",
         "oobb_hole_shape_n_type_m3_radius_name_7.5_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
         "oobb_hole_shape_n_type_m3_radius_name_-7.5_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
-        "oobb_hole_shape_n_type_m3_radius_name_0_7.5_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
-        "oobb_hole_shape_n_type_m3_radius_name_0_-7.5_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
         "oobb_threaded_insert_shape_n_type_m3_radius_name_7.5_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
         "oobb_threaded_insert_shape_n_type_m3_radius_name_-7.5_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
+        "oobb_hole_shape_n_type_m3_radius_name_0_7.5_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
+        "oobb_hole_shape_n_type_m3_radius_name_0_-7.5_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
         "oobb_threaded_insert_shape_n_type_m3_radius_name_0_7.5_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
         "oobb_threaded_insert_shape_n_type_m3_radius_name_0_-7.5_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_0_0_0_pos_plate_bottom_zz_true_hole",
         "oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_6704_bearing_motor_servo_standard_01_shaft_horn_adapter_printed_extra_0_0_0_pos_plate_perimeter_miss_middle_holes",
@@ -10313,7 +10313,7 @@
             "mode": "all"
         },
         {
-            "type": "n",
+            "type": "negative",
             "width": 3,
             "height": 3,
             "thickness": 12,
@@ -10391,50 +10391,6 @@
             ],
             "zz": "bottom",
             "hole": true,
-            "shape": "oobb_hole",
-            "pos": [
-                0,
-                7.5,
-                6.0
-            ],
-            "radius_name": "m3"
-        },
-        {
-            "type": "n",
-            "width": 3,
-            "height": 3,
-            "thickness": 12,
-            "bearing": "6704",
-            "shaft": "motor_servo_standard_01",
-            "pos_plate": [
-                0,
-                0,
-                0
-            ],
-            "zz": "bottom",
-            "hole": true,
-            "shape": "oobb_hole",
-            "pos": [
-                0,
-                -7.5,
-                6.0
-            ],
-            "radius_name": "m3"
-        },
-        {
-            "type": "n",
-            "width": 3,
-            "height": 3,
-            "thickness": 12,
-            "bearing": "6704",
-            "shaft": "motor_servo_standard_01",
-            "pos_plate": [
-                0,
-                0,
-                0
-            ],
-            "zz": "bottom",
-            "hole": true,
             "shape": "oobb_threaded_insert",
             "pos": [
                 7.5,
@@ -10461,6 +10417,50 @@
             "pos": [
                 -7.5,
                 0,
+                6.0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "width": 3,
+            "height": 3,
+            "thickness": 12,
+            "bearing": "6704",
+            "shaft": "motor_servo_standard_01",
+            "pos_plate": [
+                0,
+                0,
+                0
+            ],
+            "zz": "bottom",
+            "hole": true,
+            "shape": "oobb_hole",
+            "pos": [
+                0,
+                7.5,
+                6.0
+            ],
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "width": 3,
+            "height": 3,
+            "thickness": 12,
+            "bearing": "6704",
+            "shaft": "motor_servo_standard_01",
+            "pos_plate": [
+                0,
+                0,
+                0
+            ],
+            "zz": "bottom",
+            "hole": true,
+            "shape": "oobb_hole",
+            "pos": [
+                0,
+                -7.5,
                 6.0
             ],
             "radius_name": "m3"

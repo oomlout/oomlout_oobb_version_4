@@ -1,0 +1,174 @@
+-   depth: 12
+    extra:
+    - basic
+    - basic
+    - basic
+    - higher_voltage
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -12
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    shape: oobb_plate
+    thickness: 12
+    type: positive
+    width: 3
+-   both_holes: true
+    extra:
+    - basic
+    - basic
+    - basic
+    - higher_voltage
+    height: 3
+    hole_sides:
+    - left
+    - right
+    - top
+    holes:
+    - left
+    - right
+    - top
+    pos:
+    - 0
+    - 0
+    - -12
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    shape: oobb_holes
+    thickness: 12
+    type: p
+    width: 3
+-   height: 3
+    hole: true
+    nut: false
+    overhang: true
+    pos:
+    - 7.5
+    - -15
+    - -12
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 12
+    type: negative
+    width: 3
+    zz: bottom
+-   height: 3
+    hole: true
+    nut: false
+    overhang: true
+    pos:
+    - 7.5
+    - 15
+    - -12
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 12
+    type: negative
+    width: 3
+    zz: bottom
+-   extra:
+    - basic
+    - basic
+    - basic
+    - higher_voltage
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -2.6
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    rot:
+    - 0
+    - 0
+    - 180
+    shape: oobb_wire_basic
+    thickness: 12
+    width: 3
+-   extra:
+    - basic
+    - basic
+    - basic
+    - higher_voltage
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -5.2
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    rot:
+    - 0
+    - 0
+    - 180
+    shape: oobb_wire_basic
+    thickness: 12
+    width: 3
+-   extra:
+    - basic
+    - basic
+    - basic
+    - higher_voltage
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -7.800000000000001
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    rot:
+    - 0
+    - 0
+    - 180
+    shape: oobb_wire_basic
+    thickness: 12
+    width: 3
+-   extra:
+    - basic
+    - basic
+    - basic
+    - higher_voltage
+    height: 3
+    pos:
+    - 0
+    - 0
+    - -10.4
+    pos_plate:
+    - 0
+    - 0
+    - -12
+    rot:
+    - 0
+    - 0
+    - 180
+    shape: oobb_wire_higher_voltage
+    thickness: 12
+    width: 3

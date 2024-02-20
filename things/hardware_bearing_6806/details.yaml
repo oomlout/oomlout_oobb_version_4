@@ -1,0 +1,56 @@
+bearing_name: '6806'
+components:
+-   -   depth: bearing_6806_depth
+        h: 7
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 21.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6806_depth
+        h: 7
+        inclusion: 3dpr
+        pos: *id001
+        r: 21.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6806_depth
+        h: 7
+        inclusion: 'true'
+        pos: *id001
+        r: 21.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6806_depth
+        h: 7
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 15.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6806_depth
+        h: 7
+        inclusion: 3dpr
+        pos: *id002
+        r: 15.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6806_depth
+        h: 7
+        inclusion: 'true'
+        pos: *id002
+        r: 15.0
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6806
+folder: things/hardware_bearing_6806
+id: hardware_bearing_6806
+type: bearing

@@ -1,0 +1,112 @@
+components:
+-   -   -   depth: 6
+            h: 6
+            inclusion: laser
+            pos: &id001
+            - 0
+            - 0
+            - -6.0
+            r: 1.9
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 3dpr
+            pos: *id001
+            r: 2.1
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 'true'
+            pos: *id001
+            r: 2.1
+            shape: cylinder
+            type: p
+    -   -   depth: 6
+            h: 6
+            inclusion: laser
+            pos: &id002
+            - 0
+            - 0
+            - -6.0
+            r: 1.9
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 3dpr
+            pos: *id002
+            r: 2.1
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 'true'
+            pos: *id002
+            r: 2.1
+            shape: cylinder
+            type: p
+    -   -   depth: 6
+            h: 6
+            inclusion: laser
+            pos: &id003
+            - 0
+            - 0
+            - -6.0
+            r: 1.9
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 3dpr
+            pos: *id003
+            r: 2.1
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 'true'
+            pos: *id003
+            r: 2.1
+            shape: cylinder
+            type: p
+-   -   depth: 100
+        h: 100
+        inclusion: laser
+        m: ''
+        pos: &id004
+        - 0
+        - 0
+        - 0
+        r: 1.5
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 3dpr
+        m: ''
+        pos: *id004
+        r: 1.8
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 'true'
+        m: ''
+        pos: *id004
+        r: 1.5
+        shape: cylinder
+        type: n
+        z: -10
+components_objects: []
+components_string: []
+depth_mm: 6
+description: threaded insert m3x6
+folder: things/hardware_threaded_insert_m3
+id: hardware_threaded_insert_m3
+radius_name: m3
+type: threaded_insert
+width_mm: 2.1

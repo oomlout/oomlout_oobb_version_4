@@ -43,7 +43,7 @@
     pos:
     - 7.5
     - -15
-    - -9
+    - 3
     pos_plate:
     - 0
     - 0
@@ -57,7 +57,7 @@
     thickness: 9
     type: negative
     width: 3
-    zz: bottom
+    zz: top
 -   height: 2
     hole: true
     nut: false
@@ -65,7 +65,7 @@
     pos:
     - 7.5
     - 15
-    - -9
+    - 3
     pos_plate:
     - 0
     - 0
@@ -79,14 +79,13 @@
     thickness: 9
     type: negative
     width: 3
-    zz: bottom
+    zz: top
 -   extra: spacer_long
     height: 2
-    m: '#'
     pos:
     - 0
     - 0
-    - -3
+    - -2.6
     pos_plate:
     - 0
     - 0

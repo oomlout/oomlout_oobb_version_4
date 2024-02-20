@@ -1,0 +1,99 @@
+-   depth: 9
+    extra: spacer_long_extra_mm
+    height: 2.066666666666667
+    pos:
+    - 0
+    - 0
+    - -6
+    pos_plate:
+    - 0
+    - 0
+    - -9
+    shape: oobb_plate
+    thickness: 9
+    type: positive
+    width: 3.066666666666667
+-   both_holes: true
+    extra: spacer_long_extra_mm
+    height: 2
+    hole_sides:
+    - left
+    - right
+    - top
+    holes:
+    - left
+    - right
+    - top
+    pos:
+    - 0
+    - 0
+    - -9
+    pos_plate:
+    - 0
+    - 0
+    - -9
+    shape: oobb_holes
+    thickness: 9
+    type: p
+    width: 3
+-   height: 2
+    hole: true
+    nut: false
+    overhang: true
+    pos:
+    - 7.5
+    - -15
+    - 3
+    pos_plate:
+    - 0
+    - 0
+    - -9
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 9
+    type: negative
+    width: 3
+    zz: top
+-   height: 2
+    hole: true
+    nut: false
+    overhang: true
+    pos:
+    - 7.5
+    - 15
+    - 3
+    pos_plate:
+    - 0
+    - 0
+    - -9
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 9
+    type: negative
+    width: 3
+    zz: top
+-   extra: spacer_long_extra_mm
+    height: 2
+    pos:
+    - 0
+    - 0
+    - -2.6
+    pos_plate:
+    - 0
+    - 0
+    - -9
+    rot:
+    - 0
+    - 0
+    - 180
+    shape: oobb_wire_spacer_long_extra_mm
+    thickness: 9
+    width: 3

@@ -1,0 +1,56 @@
+bearing_name: '6830'
+components:
+-   -   depth: bearing_6830_depth
+        h: 20
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 95.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6830_depth
+        h: 20
+        inclusion: 3dpr
+        pos: *id001
+        r: 95.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6830_depth
+        h: 20
+        inclusion: 'true'
+        pos: *id001
+        r: 95.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6830_depth
+        h: 20
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 75.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6830_depth
+        h: 20
+        inclusion: 3dpr
+        pos: *id002
+        r: 75.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6830_depth
+        h: 20
+        inclusion: 'true'
+        pos: *id002
+        r: 75.0
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6830
+folder: things/hardware_bearing_6830
+id: hardware_bearing_6830
+type: bearing

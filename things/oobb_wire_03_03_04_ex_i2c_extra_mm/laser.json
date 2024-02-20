@@ -1,0 +1,126 @@
+[
+    {
+        "extra": "i2c_extra_mm",
+        "thickness": 4,
+        "width": 3.066666666666667,
+        "height": 3.066666666666667,
+        "pos": [
+            0,
+            0,
+            -4
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -4
+        ],
+        "type": "positive",
+        "shape": "oobb_plate",
+        "depth": 4
+    },
+    {
+        "extra": "i2c_extra_mm",
+        "thickness": 4,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -4
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -4
+        ],
+        "hole_sides": [
+            "left",
+            "right",
+            "top"
+        ],
+        "type": "p",
+        "shape": "oobb_holes",
+        "holes": [
+            "left",
+            "right",
+            "top"
+        ],
+        "both_holes": true
+    },
+    {
+        "thickness": 4,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            7.5,
+            -15,
+            -4
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -4
+        ],
+        "type": "negative",
+        "shape": "oobb_nut",
+        "radius_name": "m3",
+        "zz": "bottom",
+        "overhang": true,
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "nut": false,
+        "hole": true
+    },
+    {
+        "thickness": 4,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            7.5,
+            15,
+            -4
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -4
+        ],
+        "type": "negative",
+        "shape": "oobb_nut",
+        "radius_name": "m3",
+        "zz": "bottom",
+        "overhang": true,
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "nut": false,
+        "hole": true
+    },
+    {
+        "extra": "i2c_extra_mm",
+        "thickness": 4,
+        "width": 3,
+        "height": 3,
+        "pos": [
+            0,
+            0,
+            -2.6
+        ],
+        "pos_plate": [
+            0,
+            0,
+            -4
+        ],
+        "shape": "oobb_wire_i2c_extra_mm",
+        "rot": [
+            0,
+            0,
+            180
+        ]
+    }
+]

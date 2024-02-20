@@ -1,0 +1,56 @@
+bearing_name: '6807'
+components:
+-   -   depth: bearing_6807_depth
+        h: 7
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 23.5
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6807_depth
+        h: 7
+        inclusion: 3dpr
+        pos: *id001
+        r: 23.7
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6807_depth
+        h: 7
+        inclusion: 'true'
+        pos: *id001
+        r: 23.5
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6807_depth
+        h: 7
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 17.5
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6807_depth
+        h: 7
+        inclusion: 3dpr
+        pos: *id002
+        r: 17.5
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6807_depth
+        h: 7
+        inclusion: 'true'
+        pos: *id002
+        r: 17.5
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6807
+folder: things/hardware_bearing_6807
+id: hardware_bearing_6807
+type: bearing

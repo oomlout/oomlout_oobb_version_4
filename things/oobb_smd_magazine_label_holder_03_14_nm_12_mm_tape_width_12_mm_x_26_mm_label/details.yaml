@@ -1,0 +1,86 @@
+components:
+-   -   -   -   m: ''
+                pos:
+                - -15.0
+                - -7.0
+                - 0
+                shape: cube
+                size:
+                - 30
+                - 14
+                - 2
+                type: p
+-   -   -   -   m: ''
+                pos:
+                - -13.0
+                - -5.0
+                - 0
+                shape: cube
+                size:
+                - 26
+                - 10
+                - 2
+                type: n
+-   -   -   -   m: ''
+                pos:
+                - -15.0
+                - -6.0
+                - 1
+                shape: cube
+                size:
+                - 29
+                - 12
+                - 1
+                type: n
+-   -   -   depth: 20
+            h: 20
+            inclusion: laser
+            m: '#'
+            pos: &id001
+            - -25.0
+            - 0
+            - 9
+            r: 1.5
+            rotY: 90
+            shape: cylinder
+            type: n
+        -   depth: 20
+            h: 20
+            inclusion: 3dpr
+            m: '#'
+            pos: *id001
+            r: 1.8
+            rotY: 90
+            shape: cylinder
+            type: n
+        -   depth: 20
+            h: 20
+            inclusion: 'true'
+            m: '#'
+            pos: *id001
+            r: 1.5
+            rotY: 90
+            shape: cylinder
+            type: n
+-   -   -   -   m: ''
+                pos:
+                - -18.0
+                - -7.0
+                - 0
+                shape: cube
+                size:
+                - 3
+                - 14
+                - 15
+                type: p
+components_objects: []
+components_string: []
+description: smd magazine label holder 3x0x14
+folder: things/oobb_smd_magazine_label_holder_03_14_nm_12_mm_tape_width_12_mm_x_26_mm_label
+id: oobb_smd_magazine_label_holder_03_14_nm_12_mm_tape_width_12_mm_x_26_mm_label
+name: 12_mm_tape_width_12_mm_x_26_mm_label
+thickness: 14
+thickness_mm: 14
+type: smd_magazine_label_holder
+width: 3
+width_mm: 44

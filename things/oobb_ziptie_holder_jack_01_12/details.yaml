@@ -1,0 +1,201 @@
+components:
+-   -   -   depth: 12
+            h: 12
+            height: 1
+            pos:
+            - 0
+            - 13.5
+            - -6.0
+            r: 7.0
+            shape: cylinder
+            type: p
+            width: 1
+-   -   depth: 12
+        h: 12
+        height: 1
+        pos:
+        - 0
+        - 13.5
+        - -6.0
+        r: 7.0
+        shape: cylinder
+        type: p
+        width: 1
+-   -   -   pos:
+            - -7.0
+            - 0
+            - -6.0
+            shape: cube
+            size:
+            - 14
+            - 13.5
+            - 12
+            type: p
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -2.0
+                    - 10.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -2.0
+                    - 17.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -2.0
+                    - 10.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -2.0
+                    - 17.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -1.5
+                    - 11.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -1.5
+                    - 18.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   depth: 8
+        h: 8
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 0.0
+        - 8
+        - 0
+        r: 3.0
+        rotX: 90
+        shape: cylinder
+        type: n
+    -   depth: 8
+        h: 8
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.25
+        rotX: 90
+        shape: cylinder
+        type: n
+    -   depth: 8
+        h: 8
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.0
+        rotX: 90
+        shape: cylinder
+        type: n
+-   -   objects:
+        -   depth: 13.5
+            height: 13.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.77
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        -   depth: 13.5
+            height: 13.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.914249999999999
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        -   depth: 13.5
+            height: 13.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.77
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0.0
+        - 9
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+components_objects: []
+components_string: []
+description: ziptie holder jack 1x0x12
+folder: things/oobb_ziptie_holder_jack_01_12
+id: oobb_ziptie_holder_jack_01_12
+thickness: 12
+thickness_mm: 12
+type: ziptie_holder_jack
+width: 1
+width_mm: 14

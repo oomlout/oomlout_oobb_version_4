@@ -1,0 +1,259 @@
+components:
+-   -   depth: 1
+        extra: o
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: rounded_rectangle
+        size:
+        - 44
+        - 14
+        - 1
+        type: p
+        width: 3
+-   -   -   -   inclusion: laser
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -7.5
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 7.5
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+-   -   -   extra: o
+            font: DejaVu Sans Mono:style=Bold
+            halign: center
+            height: 1
+            pos:
+            - 0
+            - -5
+            - 0
+            shape: text
+            size: 19.0
+            text: O
+            type: p
+            valign: top
+            width: 3
+components_objects:
+-   depth: 1
+    extra: o
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_plate
+    size: oobb
+    thickness: 1
+    type: p
+    width: 3
+-   both_holes: true
+    extra: o
+    height: 1
+    holes:
+    - all
+    m: '#'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_holes
+    size: oobb
+    thickness: 1
+    type: n
+    width: 3
+components_string:
+- oobb_plate_shape_p_type_1_depth_3_width_1_thickness_o_extra_oobb_size
+- oobb_holes_shape_n_type_3_width_1_thickness_o_extra_oobb_size_1_height_'all'_holes_true_both_holes
+description: bunting alphabet 3x0x1
+extra: o
+folder: things/oobb_bunting_alphabet_03_01_ex_o
+id: oobb_bunting_alphabet_03_01_ex_o
+thickness: 1
+thickness_mm: 1
+type: bunting_alphabet
+width: 3
+width_mm: 44

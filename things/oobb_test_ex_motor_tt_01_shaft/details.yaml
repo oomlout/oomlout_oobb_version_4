@@ -1,0 +1,1181 @@
+components:
+-   -   depth: 7
+        height: 5
+        pos:
+        - 0
+        - 0
+        - -6
+        shape: rounded_rectangle
+        size:
+        - 21.5
+        - 74
+        - 7
+        type: p
+        width: 1.5
+-   -   -   -   -   comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                    depth: 50
+                    extra: {}
+                    pos:
+                    - -2.5
+                    - -31.675
+                    - -50
+                    shape: cube
+                    size:
+                    - 5.0
+                    - 3.35
+                    - 50
+                    type: n
+    -   -   -   objects:
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.25
+                            inclusion: laser
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id001
+                        - top
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: &id002 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id003
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id001
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: *id002
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id003
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id001
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: *id002
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id003
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                            depth: 12
+                            extra: {}
+                            h: 52.5
+                            inclusion: 3dpr
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.75
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id004
+                        - top
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: &id005 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id006
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id004
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: *id005
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id006
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id004
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: *id005
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id006
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                -   -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0_0\n radius_extra\
+                                        \ : 0\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -2.75
+                                    - -0.3
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 5.5
+                                    - 0.3
+                                    type: positive
+                    -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0_0\n radius_extra\
+                                        \ : 0\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -1.25
+                                    - -0.6
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 2.5
+                                    - 0.3
+                                    type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.3
+                            inclusion: 'true'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id007
+                        - top
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: &id008 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id009
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id007
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: *id008
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id009
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id007
+                        comment: "oobb_motor_tt_01_0_0\n radius_extra : 0\n"
+                        depth: 12
+                        extra: *id008
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id009
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                pos:
+                - 0
+                - -30
+                - 2
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: n
+-   -   -   -   -   comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                    depth: 50
+                    extra: {}
+                    pos:
+                    - -2.55
+                    - -16.725
+                    - -50
+                    shape: cube
+                    size:
+                    - 5.1
+                    - 3.45
+                    - 50
+                    type: n
+    -   -   -   objects:
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.25
+                            inclusion: laser
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id010
+                        - top
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: &id011 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id012
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id010
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: *id011
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id012
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id010
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: *id011
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id012
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                            depth: 12
+                            extra: {}
+                            h: 52.5
+                            inclusion: 3dpr
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.75
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id013
+                        - top
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: &id014 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id015
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id013
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: *id014
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id015
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id013
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: *id014
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id015
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                -   -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra\
+                                        \ : 0.1\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -2.75
+                                    - -0.3
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 5.5
+                                    - 0.3
+                                    type: positive
+                    -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra\
+                                        \ : 0.1\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -1.25
+                                    - -0.6
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 2.5
+                                    - 0.3
+                                    type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.3
+                            inclusion: 'true'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id016
+                        - top
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: &id017 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id018
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id016
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: *id017
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id018
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id016
+                        comment: "oobb_motor_tt_01_0.1_0.1\n radius_extra : 0.1\n"
+                        depth: 12
+                        extra: *id017
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id018
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                pos:
+                - 0
+                - -15
+                - 2
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: n
+-   -   -   -   -   comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                    depth: 50
+                    extra: {}
+                    pos:
+                    - -2.6
+                    - -1.7750000000000001
+                    - -50
+                    shape: cube
+                    size:
+                    - 5.2
+                    - 3.5500000000000003
+                    - 50
+                    type: n
+    -   -   -   objects:
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.25
+                            inclusion: laser
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id019
+                        - top
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: &id020 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id021
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id019
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: *id020
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id021
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id019
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: *id020
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id021
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                            depth: 12
+                            extra: {}
+                            h: 52.5
+                            inclusion: 3dpr
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.75
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id022
+                        - top
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: &id023 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id024
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id022
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: *id023
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id024
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id022
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: *id023
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id024
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                -   -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra\
+                                        \ : 0.2\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -2.75
+                                    - -0.3
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 5.5
+                                    - 0.3
+                                    type: positive
+                    -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra\
+                                        \ : 0.2\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -1.25
+                                    - -0.6
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 2.5
+                                    - 0.3
+                                    type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.3
+                            inclusion: 'true'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id025
+                        - top
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: &id026 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id027
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id025
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: *id026
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id027
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id025
+                        comment: "oobb_motor_tt_01_0.2_0.2\n radius_extra : 0.2\n"
+                        depth: 12
+                        extra: *id026
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id027
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                pos:
+                - 0
+                - 0
+                - 2
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: n
+-   -   -   -   -   comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                    depth: 50
+                    extra: {}
+                    pos:
+                    - -2.65
+                    - 13.175
+                    - -50
+                    shape: cube
+                    size:
+                    - 5.3
+                    - 3.65
+                    - 50
+                    type: n
+    -   -   -   objects:
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.25
+                            inclusion: laser
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id028
+                        - top
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: &id029 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id030
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id028
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: *id029
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id030
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id028
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: *id029
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id030
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                            depth: 12
+                            extra: {}
+                            h: 52.5
+                            inclusion: 3dpr
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.75
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id031
+                        - top
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: &id032 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id033
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id031
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: *id032
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id033
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id031
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: *id032
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id033
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                -   -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra\
+                                        \ : 0.3\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -2.75
+                                    - -0.3
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 5.5
+                                    - 0.3
+                                    type: positive
+                    -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra\
+                                        \ : 0.3\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -1.25
+                                    - -0.6
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 2.5
+                                    - 0.3
+                                    type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.3
+                            inclusion: 'true'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id034
+                        - top
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: &id035 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id036
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id034
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: *id035
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id036
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id034
+                        comment: "oobb_motor_tt_01_0.3_0.3\n radius_extra : 0.3\n"
+                        depth: 12
+                        extra: *id035
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id036
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                pos:
+                - 0
+                - 15
+                - 2
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: n
+-   -   -   -   -   comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                    depth: 50
+                    extra: {}
+                    pos:
+                    - -2.7
+                    - 28.125
+                    - -50
+                    shape: cube
+                    size:
+                    - 5.4
+                    - 3.75
+                    - 50
+                    type: n
+    -   -   -   objects:
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.25
+                            inclusion: laser
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id037
+                        - top
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: &id038 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id039
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id037
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: *id038
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id039
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id037
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: *id038
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id039
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                            depth: 12
+                            extra: {}
+                            h: 52.5
+                            inclusion: 3dpr
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.75
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id040
+                        - top
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: &id041 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id042
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id040
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: *id041
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id042
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id040
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: *id041
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id042
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                -   -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra\
+                                        \ : 0.4\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -2.75
+                                    - -0.3
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 5.5
+                                    - 0.3
+                                    type: positive
+                    -   -   -   -   clearance:
+                                    - top
+                                    comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra\
+                                        \ : 0.4\n"
+                                    depth: 12
+                                    extra: {}
+                                    inclusion: 3dpr
+                                    pos:
+                                    - -1.25
+                                    - -1.25
+                                    - -0.6
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 2.5
+                                    - 0.3
+                                    type: positive
+                -   -   -   clearance:
+                            - top
+                            comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                            depth: 12
+                            extra: {}
+                            h: 1.3
+                            inclusion: 'true'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id043
+                        - top
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: &id044 {}
+                        h: 12
+                        inclusion: laser
+                        pos: &id045
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id043
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: *id044
+                        h: 12
+                        inclusion: 3dpr
+                        pos: *id045
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id043
+                        comment: "oobb_motor_tt_01_0.4_0.4\n radius_extra : 0.4\n"
+                        depth: 12
+                        extra: *id044
+                        h: 12
+                        inclusion: 'true'
+                        pos: *id045
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                pos:
+                - 0
+                - 30
+                - 2
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: n
+components_objects:
+-   depth: 7
+    height: 5
+    pos:
+    - 0
+    - 0
+    - -6
+    shape: oobb_plate
+    type: p
+    width: 1.5
+-   comment_extra: ''
+    comment_shift_line: 30
+    depth: 50
+    extra: {}
+    part: shaft
+    pos:
+    - 0
+    - -30
+    - 0
+    radius_extra: 0
+    shape: oobb_motor_tt_01
+    type: n
+-   comment_extra: ''
+    comment_shift_line: 30
+    depth: 50
+    extra: {}
+    part: shaft
+    pos:
+    - 0
+    - -15
+    - 0
+    radius_extra: 0.1
+    shape: oobb_motor_tt_01
+    type: n
+-   comment_extra: ''
+    comment_shift_line: 30
+    depth: 50
+    extra: {}
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_extra: 0.2
+    shape: oobb_motor_tt_01
+    type: n
+-   comment_extra: ''
+    comment_shift_line: 30
+    depth: 50
+    extra: {}
+    part: shaft
+    pos:
+    - 0
+    - 15
+    - 0
+    radius_extra: 0.3
+    shape: oobb_motor_tt_01
+    type: n
+-   comment_extra: ''
+    comment_shift_line: 30
+    depth: 50
+    extra: {}
+    part: shaft
+    pos:
+    - 0
+    - 30
+    - 0
+    radius_extra: 0.4
+    shape: oobb_motor_tt_01
+    type: n
+components_string:
+- oobb_plate_shape_p_type_7_depth_0_0_-6_pos_1.5_width_5_height
+- oobb_motor_tt_01_shape_n_type_50_depth_0_-30_0_pos_shaft_part_30_comment_shift_line_{}_extra_0_radius_extra
+- oobb_motor_tt_01_shape_n_type_50_depth_0_-15_0_pos_shaft_part_30_comment_shift_line_{}_extra_0.1_radius_extra
+- oobb_motor_tt_01_shape_n_type_50_depth_shaft_part_30_comment_shift_line_{}_extra_0.2_radius_extra
+- oobb_motor_tt_01_shape_n_type_50_depth_0_15_0_pos_shaft_part_30_comment_shift_line_{}_extra_0.3_radius_extra
+- oobb_motor_tt_01_shape_n_type_50_depth_0_30_0_pos_shaft_part_30_comment_shift_line_{}_extra_0.4_radius_extra
+description: test 0x0x0
+extra: motor_tt_01_shaft
+folder: things/oobb_test_ex_motor_tt_01_shaft
+id: oobb_test_ex_motor_tt_01_shaft
+type: test

@@ -70,6 +70,7 @@ def get_bearing_plates(size="oobb"):
     bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "motor_servo_standard_01", "extra": "horn_adapter_screws"})
     bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "motor_tt_01", "extra":"sandwich"})
     bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "motor_tt_01", "extra":"removable"})
+    bps.append({"type": "bearing_plate", "width": w, "height": h, "thickness": t, "bearing": b, "size": size, "shaft": "coupler_flanged"})
     
     # 6810
     b = "6810"
@@ -189,7 +190,9 @@ def get_holders(size="oobb"):
     hls = []
     
     
-    
+    #electronic
+    #      breadboard
+    hls.append({"type": "holder", "extra": "electronic_prototyping_breadboard_400_point","width": 6, "height": 8, "thickness": 3, "size": size})
 
     # fan
 
@@ -226,7 +229,7 @@ def get_holders(size="oobb"):
 
 
     #### stepper nema 17
-    thicknesses = [3,6]
+    thicknesses = [3,6,9]
     for t in thicknesses:
         ##shifted nema 17s    
         hls.append({"type": "holder", "extra": "motor_stepper_nema_17_flat_shifted","width": 5, "height": 3, "thickness": t, "size": size})
@@ -234,6 +237,9 @@ def get_holders(size="oobb"):
         hls.append({"type": "holder", "extra": "motor_stepper_nema_17_flat_shifted_spacer_10_mm","width": 5, "height": 3, "thickness": t, "size": size})
         ##normal nema 17s
         hls.append({"type": "holder", "extra": "motor_stepper_nema_17_flat","width": 5, "height": 3, "thickness": t, "size": size})
+
+    #      with_encoder
+    hls.append({"type": "holder", "extra": "mechanical_motor_with_encoder_30_mm_diameter_cricut_maker_compatible","width": 5, "height": 5, "thickness": 3, "size": size})
 
     #electronics
     #      battery_box_aa_battery_4_cell
@@ -345,7 +351,9 @@ def get_plates(size="oobb"):
                                 "height": hei, "thickness": 3, "size": size})
 
         #all thicknesses 1x1
-        depths = [3, 6, 9, 12, 15, 18, 21, 24, 27, 30]
+        depths = []
+        for i in range(1, 34):
+            depths.append(i*3)
         for dep in depths:
             plates.append({"type": "plate", "width": 1, "height": 1,
                     "thickness": dep, "size": size})
@@ -528,7 +536,7 @@ def get_pulleys(size="oobb"):
     #extra thicknesses
     pulley_size = [16,20,24,30,36,40,48,60,72,144]    
     thicknesses = [6,9]
-    shafts = ["", "m3", "electronic_potentiometer_17_mm", "motor_n20", "motor_servo_standard_01","motor_gearmotor_tt_motor_01"]
+    shafts = ["", "m3", "electronic_potentiometer_17_mm", "motor_n20", "motor_servo_standard_01","motor_tt_01"]
     shields = ["_shield", ""]
 
     for shaft in shafts:
@@ -751,8 +759,8 @@ def get_trays(size="oobb"):
     ts = []    
     
 
-    wids = 12 + 1
-    heis = 12 + 1
+    wids = 20 + 1
+    heis = 20 + 1
     wids = list(range(1,wids))
     wids.append(1.5)
     for wid in wids:
@@ -817,55 +825,55 @@ def get_wheels(size="oobb"):
 
 def get_wires(size="oobb"):
     wis = []
-    thicknesses = [3,6]
-    widths = [3]
-    #widths = [3]
-    extras = ["motor","basic","higher_voltage","i2c","motor_stepper"]
-    #extras = ["basic"]
-    for thickness in thicknesses:        
-        for width in widths:
-            for extra in extras:
-                wis.append({"type": "wire", "extra": extra, "thickness": thickness, "width": width, "height": 3, "size": size})
     
-    thicknesses = [6]
-    widths = [2]
-    extras = ["motor","basic","higher_voltage","i2c","motor_stepper"]
-    #extras = ["basic"]
-    for thickness in thicknesses:        
-        for width in widths:
-            for extra in extras:
-                wis.append({"type": "wire", "extra": extra, "thickness": thickness, "width": width, "height": 3, "size": size})
+    extra_mms = ["", "_extra_mm"]
     
-    
-    
-    
+    for extra_mm in extra_mms:
+        thicknesses = [2.54,4]
+        widths = [3]
+        extras = ["motor","basic","higher_voltage","i2c","motor_stepper"]
+        #extras = ["basic"]
+        for thickness in thicknesses:        
+            for width in widths:
+                for extra in extras:
+                    wis.append({"type": "wire", "extra": f"{extra}{extra_mm}", "thickness": thickness, "width": width, "height": 3, "size": size})
+        
+        #spacer    
+        thicknesses = [3,6,9,12]
+        heights = [3]
+        for height in heights:
+            for thickness in thicknesses:
+                wis.append({"type": "wire", "extra": f"spacer{extra_mm}", "thickness": thickness, "width": 3, "height": 2, "size": size})  
+                wis.append({"type": "wire", "extra": f"spacer_long{extra_mm}", "thickness": thickness, "width": 3, "height": 2, "size": size}) 
+                wis.append({"type": "wire", "extra": f"spacer_u{extra_mm}", "thickness": thickness, "width": 3, "height": 2, "size": size})                    
+        
+        
+        
     extra = ["motor", "basic"]
-    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size})
-    extra = ["higher_voltage", "motor_stepper"]
-    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size}) 
-    extra = ["basic", "basic", "motor"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 6, "width": 3, "height": 3, "size": size})
     
-    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})  
+    extra = ["higher_voltage", "motor_stepper"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 6, "width": 3, "height": 3, "size": size}) 
+    
+    extra = ["higher_voltage", "higher_voltage"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 6, "width": 3, "height": 3, "size": size}) 
+
+    extra = ["basic", "basic", "motor"]    
+    wis.append({"type": "wire", "extra": extra, "thickness": 9, "width": 3, "height": 3, "size": size})  
     
     extra = ["basic","basic","basic","basic"]
-    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})      
-    wis.append({"type": "wire", "extra": extra, "thickness": 15, "width": 3, "height": 3, "size": size})  
+    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})          
     
+    extra = ["basic","basic","basic","higher_voltage"]
+    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})  
+
     #stepper motor driver
     extra = ["higher_voltage", "basic", "basic", "motor_stepper"]
-    wis.append({"type": "wire", "extra": extra, "thickness": 15, "width": 3, "height": 3, "size": size})
+    wis.append({"type": "wire", "extra": extra, "thickness": 12, "width": 3, "height": 3, "size": size})
+            
+
+
         
-
-
-    #spacer    
-    thicknesses = [3,6,9,12]
-    heights = [3]
-    for height in heights:
-        for thickness in thicknesses:
-            wis.append({"type": "wire", "extra": "spacer", "thickness": thickness, "width": 3, "height": 2, "size": size})  
-            wis.append({"type": "wire", "extra": "spacer_long", "thickness": thickness, "width": 3, "height": 2, "size": size}) 
-            wis.append({"type": "wire", "extra": "spacer_u", "thickness": thickness, "width": 3, "height": 2, "size": size})                    
-    
 
     return wis
 

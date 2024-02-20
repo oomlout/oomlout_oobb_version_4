@@ -1,0 +1,71 @@
+-   depth: 3
+    extra: mechanical_motor_with_encoder_30_mm_diameter_cricut_maker_compatible
+    height: 5
+    hole_sides:
+    - left
+    - right
+    - top
+    - bottom
+    include_connecting_screws: false
+    pos:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -1.5
+    shape: oobb_plate
+    thickness: 3
+    type: positive
+    width: 5
+-   both_holes: true
+    extra: mechanical_motor_with_encoder_30_mm_diameter_cricut_maker_compatible
+    height: 5
+    hole_sides:
+    - left
+    - right
+    - top
+    - bottom
+    holes:
+    - left
+    - right
+    - top
+    - bottom
+    include_connecting_screws: false
+    pos:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -1.5
+    shape: oobb_holes
+    thickness: 3
+    type: p
+    width: 5
+-   extra: mechanical_motor_with_encoder_30_mm_diameter_cricut_maker_compatible
+    height: 5
+    hole_sides:
+    - left
+    - right
+    - top
+    - bottom
+    include_connecting_screws: false
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -1.5
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_mechanical_motor_with_encoder_30_mm_diameter_cricut_maker_compatible
+    thickness: 3
+    type: negative
+    width: 5

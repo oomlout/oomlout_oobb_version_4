@@ -1,0 +1,5696 @@
+components:
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                '
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                '
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                '
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                '
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                '
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                '
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        pos:
+        - 0
+        - 50
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                '
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id001
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id001
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id001
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                '
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id002
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id002
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id002
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                '
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    '
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id003
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id003
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    '
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id003
+                r: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 0
+        - 100
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                '
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                '
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                '
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 150
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                '
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                '
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                '
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 200
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                '
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                '
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                '
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 250
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 300
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 350
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                '
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 400
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                '
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                '
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                '
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 450
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                '
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                '
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                '
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 500
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 0
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        pos:
+        - 150
+        - 50
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id004
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id004
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id004
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id005
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id005
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id005
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 360/12'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id006
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id006
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 360/12'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id006
+                r: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 150
+        - 100
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 150
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 200
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_y : 360/12'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 250
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 300
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 350
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_y : 360/12'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 400
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_y : 360/12'
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_y : 360/12'
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_y : 360/12'
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 450
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_y : 360/12'
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_y : 360/12'
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_y : 360/12'
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 150
+        - 500
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 0
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        pos:
+        - 300
+        - 50
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id007
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id007
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id007
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id008
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id008
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id008
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_y : 90'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id009
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id009
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_y : 90'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id009
+                r: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 300
+        - 100
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 150
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 200
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_y : 90'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 250
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 300
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 350
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_y : 90'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 400
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_y : 90'
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_y : 90'
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_y : 90'
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 450
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_y : 90'
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_y : 90'
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_y : 90'
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 300
+        - 500
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 0
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        pos:
+        - 450
+        - 50
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id010
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id010
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id010
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id011
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id011
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id011
+                r: 1.5
+                shape: cylinder
+                type: positive
+        -   comment: 'oobb_nut_m3
+
+                overhang : True hole: True
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - -0.3
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - -0.6
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -3.0
+                                - 2.5
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 6.0
+                                - 0.3
+                                type: positive
+                -   -   -   -   comment: 'oobb_nut_m3
+
+                                    overhang : True hole: True
+
+                                    rot_x : 90 rot_y : 45'
+                                inclusion: 3dpr
+                                m: ''
+                                pos:
+                                - -1.8
+                                - -1.8
+                                - 2.8
+                                rotX: 0
+                                rotY: 0
+                                rotZ: 0
+                                shape: cube
+                                size:
+                                - 3.6
+                                - 3.6
+                                - 0.3
+                                type: positive
+        -   -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: laser
+                m: ''
+                pos: &id012
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id012
+                r: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_nut_m3
+
+                    overhang : True hole: True
+
+                    rot_x : 90 rot_y : 45'
+                h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id012
+                r: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 450
+        - 100
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 150
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : bottom
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 200
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle
+
+                rot_x : 90 rot_y : 45'
+            height: 2.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -1.25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 250
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 300
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : top depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -25
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 350
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   comment: 'oobb_nut_m3
+
+                zz : middle depth : 25
+
+                rot_x : 90 rot_y : 45'
+            depth: 25
+            height: 25
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -12.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 400
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_x : 90 rot_y : 45'
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_x : 90 rot_y : 45'
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: top
+            comment: 'oobb_nut_m3
+
+                clearance : top
+
+                rot_x : 90 rot_y : 45'
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 450
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+-   -   objects:
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_x : 90 rot_y : 45'
+            height: 52.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_x : 90 rot_y : 45'
+            height: 102.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+        -   clearance: bottom
+            comment: 'oobb_nut_m3
+
+                clearance : bottom
+
+                rot_x : 90 rot_y : 45'
+            height: 152.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - -100
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 450
+        - 500
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: positive
+components_objects:
+-   comment_display: true
+    m: ''
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    overhang: true
+    pos:
+    - 0
+    - 50
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    hole: true
+    m: ''
+    overhang: true
+    pos:
+    - 0
+    - 100
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 0
+    - 150
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    m: ''
+    pos:
+    - 0
+    - 200
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: bottom
+-   comment_display: true
+    m: ''
+    pos:
+    - 0
+    - 250
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 0
+    - 300
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 0
+    - 350
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 0
+    - 400
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   clearance: top
+    comment_display: true
+    m: ''
+    pos:
+    - 0
+    - 450
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   clearance: bottom
+    comment_display: true
+    m: ''
+    pos:
+    - 0
+    - 500
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 150
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    overhang: true
+    pos:
+    - 150
+    - 50
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    hole: true
+    m: ''
+    overhang: true
+    pos:
+    - 150
+    - 100
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 150
+    - 150
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    m: ''
+    pos:
+    - 150
+    - 200
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: bottom
+-   comment_display: true
+    m: ''
+    pos:
+    - 150
+    - 250
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 150
+    - 300
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 150
+    - 350
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 150
+    - 400
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   clearance: top
+    comment_display: true
+    m: ''
+    pos:
+    - 150
+    - 450
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   clearance: bottom
+    comment_display: true
+    m: ''
+    pos:
+    - 150
+    - 500
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 300
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    overhang: true
+    pos:
+    - 300
+    - 50
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    hole: true
+    m: ''
+    overhang: true
+    pos:
+    - 300
+    - 100
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 300
+    - 150
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    m: ''
+    pos:
+    - 300
+    - 200
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: bottom
+-   comment_display: true
+    m: ''
+    pos:
+    - 300
+    - 250
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 300
+    - 300
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 300
+    - 350
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 300
+    - 400
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   clearance: top
+    comment_display: true
+    m: ''
+    pos:
+    - 300
+    - 450
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+-   clearance: bottom
+    comment_display: true
+    m: ''
+    pos:
+    - 300
+    - 500
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 450
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    overhang: true
+    pos:
+    - 450
+    - 50
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    hole: true
+    m: ''
+    overhang: true
+    pos:
+    - 450
+    - 100
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    m: ''
+    pos:
+    - 450
+    - 150
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    m: ''
+    pos:
+    - 450
+    - 200
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: bottom
+-   comment_display: true
+    m: ''
+    pos:
+    - 450
+    - 250
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 450
+    - 300
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 450
+    - 350
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: top
+-   comment_display: true
+    depth: 25
+    m: ''
+    pos:
+    - 450
+    - 400
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+    zz: middle
+-   clearance: top
+    comment_display: true
+    m: ''
+    pos:
+    - 450
+    - 450
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+-   clearance: bottom
+    comment_display: true
+    m: ''
+    pos:
+    - 450
+    - 500
+    - 0
+    radius_name: m3
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_nut
+    type: positive
+components_string:
+- oobb_nut_shape_positive_type_m3_radius_name_true_comment_display_0_0_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_0_50_0_pos_true_comment_display_0_0_0_rot_true_overhang
+- oobb_nut_shape_positive_type_m3_radius_name_0_100_0_pos_true_comment_display_0_0_0_rot_true_overhang_true_hole
+- oobb_nut_shape_positive_type_m3_radius_name_0_150_0_pos_true_comment_display_0_0_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_0_200_0_pos_true_comment_display_0_0_0_rot_bottom_zz
+- oobb_nut_shape_positive_type_m3_radius_name_0_250_0_pos_true_comment_display_0_0_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_0_300_0_pos_true_comment_display_0_0_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_0_350_0_pos_true_comment_display_0_0_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_0_400_0_pos_true_comment_display_0_0_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_0_450_0_pos_true_comment_display_0_0_0_rot_top_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_0_500_0_pos_true_comment_display_0_0_0_rot_bottom_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_150_0_0_pos_true_comment_display_0_30.0_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_150_50_0_pos_true_comment_display_0_30.0_0_rot_true_overhang
+- oobb_nut_shape_positive_type_m3_radius_name_150_100_0_pos_true_comment_display_0_30.0_0_rot_true_overhang_true_hole
+- oobb_nut_shape_positive_type_m3_radius_name_150_150_0_pos_true_comment_display_0_30.0_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_150_200_0_pos_true_comment_display_0_30.0_0_rot_bottom_zz
+- oobb_nut_shape_positive_type_m3_radius_name_150_250_0_pos_true_comment_display_0_30.0_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_150_300_0_pos_true_comment_display_0_30.0_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_150_350_0_pos_true_comment_display_0_30.0_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_150_400_0_pos_true_comment_display_0_30.0_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_150_450_0_pos_true_comment_display_0_30.0_0_rot_top_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_150_500_0_pos_true_comment_display_0_30.0_0_rot_bottom_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_300_0_0_pos_true_comment_display_0_90_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_300_50_0_pos_true_comment_display_0_90_0_rot_true_overhang
+- oobb_nut_shape_positive_type_m3_radius_name_300_100_0_pos_true_comment_display_0_90_0_rot_true_overhang_true_hole
+- oobb_nut_shape_positive_type_m3_radius_name_300_150_0_pos_true_comment_display_0_90_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_300_200_0_pos_true_comment_display_0_90_0_rot_bottom_zz
+- oobb_nut_shape_positive_type_m3_radius_name_300_250_0_pos_true_comment_display_0_90_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_300_300_0_pos_true_comment_display_0_90_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_300_350_0_pos_true_comment_display_0_90_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_300_400_0_pos_true_comment_display_0_90_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_300_450_0_pos_true_comment_display_0_90_0_rot_top_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_300_500_0_pos_true_comment_display_0_90_0_rot_bottom_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_450_0_0_pos_true_comment_display_90_45_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_450_50_0_pos_true_comment_display_90_45_0_rot_true_overhang
+- oobb_nut_shape_positive_type_m3_radius_name_450_100_0_pos_true_comment_display_90_45_0_rot_true_overhang_true_hole
+- oobb_nut_shape_positive_type_m3_radius_name_450_150_0_pos_true_comment_display_90_45_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_450_200_0_pos_true_comment_display_90_45_0_rot_bottom_zz
+- oobb_nut_shape_positive_type_m3_radius_name_450_250_0_pos_true_comment_display_90_45_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_450_300_0_pos_true_comment_display_90_45_0_rot
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_450_350_0_pos_true_comment_display_90_45_0_rot_top_zz
+- oobb_nut_shape_positive_type_m3_radius_name_25_depth_450_400_0_pos_true_comment_display_90_45_0_rot_middle_zz
+- oobb_nut_shape_positive_type_m3_radius_name_450_450_0_pos_true_comment_display_90_45_0_rot_top_clearance
+- oobb_nut_shape_positive_type_m3_radius_name_450_500_0_pos_true_comment_display_90_45_0_rot_bottom_clearance
+description: test 0x0x0
+extra: oobb_nut
+folder: things/oobb_test_ex_oobb_nut
+id: oobb_test_ex_oobb_nut
+type: test

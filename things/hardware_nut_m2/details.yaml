@@ -1,0 +1,82 @@
+components:
+-   -   objects:
+        -   height: 1.6
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 2.308
+            shape: polyg
+            sides: 6
+            type: positive
+        -   height: 1.6
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 2.4234
+            shape: polyg
+            sides: 6
+            type: positive
+        -   height: 1.6
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 2.308
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   depth: 100
+        h: 100
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 1.0
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 1.35
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 1.0
+        shape: cylinder
+        type: n
+        z: -10
+components_objects: []
+components_string: []
+depth_mm: 1.6
+description: nut m2x1.6
+folder: things/hardware_nut_m2
+height_mm: 2.0
+id: hardware_nut_m2
+radius_name: m2
+type: nut
+width_mm: 2.308

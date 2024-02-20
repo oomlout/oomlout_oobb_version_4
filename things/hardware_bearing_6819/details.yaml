@@ -1,0 +1,56 @@
+bearing_name: '6819'
+components:
+-   -   depth: bearing_6819_depth
+        h: 13
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 60.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6819_depth
+        h: 13
+        inclusion: 3dpr
+        pos: *id001
+        r: 60.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6819_depth
+        h: 13
+        inclusion: 'true'
+        pos: *id001
+        r: 60.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6819_depth
+        h: 13
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 47.5
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6819_depth
+        h: 13
+        inclusion: 3dpr
+        pos: *id002
+        r: 47.5
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6819_depth
+        h: 13
+        inclusion: 'true'
+        pos: *id002
+        r: 47.5
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6819
+folder: things/hardware_bearing_6819
+id: hardware_bearing_6819
+type: bearing

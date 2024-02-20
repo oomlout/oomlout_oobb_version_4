@@ -435,8 +435,18 @@ def get_holder(**kwargs):
         current_module = __import__("oobb_get_items_oobb_holder")
         function_name = "get_holder_" + extra
         # Call the function using the string variable
-        function_to_call = getattr(current_module, function_name)
-        return function_to_call(**kwargs)
+        try:
+            function_to_call = getattr(current_module, function_name)
+            return function_to_call(**kwargs)
+        except:
+            if "get_holder" in function_name:
+                import oobb_get_items_oobb_holder_electronic
+                p4 = copy.deepcopy(kwargs)
+                p4["hole_sides"] = ["left","right","top","bottom"]
+                p4["include_connecting_screws"] = False
+                p4["pos_plate"] = [0,0,1.5]
+                return oobb_get_items_oobb_holder_electronic.get_holder_electronic_base(**p4)
+        
     else:
         Exception("No extra")
 
@@ -1353,7 +1363,10 @@ def get_wire(**kwargs):
         current_module = __import__("oobb_get_items_oobb_wire")
         function_name = "get_wire_" + extra
         # Call the function using the string variable
-        function_to_call = getattr(current_module, function_name)
+        try:
+            function_to_call = getattr(current_module, function_name)
+        except:
+            function_to_call = getattr(current_module, "get_oobb_wire_base")
         return function_to_call(**kwargs)
     else:
         Exception("No extra")

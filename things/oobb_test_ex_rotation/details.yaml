@@ -1,0 +1,459 @@
+components:
+-   -   objects:
+        -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                        '
+                    depth: 12.0
+                    h: 3
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+        -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: laser
+                m: ''
+                pos: &id001
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 3dpr
+                m: ''
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 'true'
+                m: ''
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                        '
+                    depth: 12.0
+                    h: 3.2
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.0
+                    shape: cylinder
+                    type: positive
+        -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: laser
+                m: ''
+                pos: &id002
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 3dpr
+                m: ''
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 'true'
+                m: ''
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+        -   -   -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                                '
+                            depth: 12.0
+                            inclusion: 3dpr
+                            m: ''
+                            pos:
+                            - -1.75
+                            - -3.25
+                            - -0.3
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 3.5
+                            - 6.5
+                            - 0.3
+                            type: positive
+            -   -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                                '
+                            depth: 12.0
+                            inclusion: 3dpr
+                            m: ''
+                            pos:
+                            - -1.75
+                            - -1.75
+                            - -0.6
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 3.5
+                            - 3.5
+                            - 0.3
+                            type: positive
+        -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                        '
+                    depth: 12.0
+                    h: 3
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+        -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: laser
+                m: ''
+                pos: &id003
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 3dpr
+                m: ''
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 'true'
+                m: ''
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+                        rot_y : 180
+
+                        '
+                    depth: 12.0
+                    h: 3
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+        -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: laser
+                m: ''
+                pos: &id004
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 3dpr
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 'true'
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+                        rot_y : 180
+
+                        '
+                    depth: 12.0
+                    h: 3.2
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.0
+                    shape: cylinder
+                    type: positive
+        -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: laser
+                m: ''
+                pos: &id005
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 3dpr
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 'true'
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+        -   -   -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+                                rot_y : 180
+
+                                '
+                            depth: 12.0
+                            inclusion: 3dpr
+                            m: ''
+                            pos:
+                            - -1.75
+                            - -3.25
+                            - -0.3
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 3.5
+                            - 6.5
+                            - 0.3
+                            type: positive
+            -   -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+                                rot_y : 180
+
+                                '
+                            depth: 12.0
+                            inclusion: 3dpr
+                            m: ''
+                            pos:
+                            - -1.75
+                            - -1.75
+                            - -0.6
+                            rotX: 0
+                            rotY: 0
+                            rotZ: 0
+                            shape: cube
+                            size:
+                            - 3.5
+                            - 3.5
+                            - 0.3
+                            type: positive
+        -   -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth
+                        rot_y : 180
+
+                        '
+                    depth: 12.0
+                    h: 3
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+        -   -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: laser
+                m: ''
+                pos: &id006
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 3dpr
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   comment: 'oobb_screw_socket_cap_shape_m3_radius_name_12_mm_depth rot_y
+                    : 180
+
+                    '
+                depth: 12.0
+                h: 12.0
+                inclusion: 'true'
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 300
+        - 0
+        - 0
+        rot:
+        - 0
+        - 180
+        - 0
+        type: rotation
+        typetype: p
+components_objects:
+-   depth: 12.0
+    m: ''
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shape: oobb_screw_socket_cap
+    type: p
+-   depth: 12.0
+    m: ''
+    pos:
+    - 300
+    - 0
+    - 0
+    radius_name: m3
+    rot_y: 180
+    shape: oobb_screw_socket_cap
+    type: p
+components_string:
+- oobb_screw_socket_cap_shape_p_type_m3_radius_name_12.0_depth
+- oobb_screw_socket_cap_shape_p_type_m3_radius_name_12.0_depth_300_0_0_pos_180_rot_y
+description: test 0x0x0
+extra: rotation
+folder: things/oobb_test_ex_rotation
+id: oobb_test_ex_rotation
+type: test

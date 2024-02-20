@@ -1,0 +1,331 @@
+{
+    "description": "pulley gt2 0x0x9",
+    "id": "oobb_pulley_gt2_01_09_ex_24_teeth_shield_sh_motor_n20",
+    "type": "pulley_gt2",
+    "diameter": 1,
+    "thickness": 9,
+    "extra": "24_teeth_shield",
+    "shaft": "motor_n20",
+    "thickness_mm": 9,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "gear main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT gear main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "pulley_gt2",
+                "pos": [
+                    0,
+                    0,
+                    -5.75
+                ],
+                "depth": 11.5,
+                "extra": "24_teeth_shield",
+                "number_of_teeth": 24
+            }
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 8.643312101910828,
+                "radius": 8.643312101910828,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    -5.75
+                ],
+                "inclusion": "laser",
+                "depth": 1,
+                "extra": "24_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 8.643312101910828,
+                "radius": 8.643312101910828,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    -5.75
+                ],
+                "inclusion": "3dpr",
+                "depth": 1,
+                "extra": "24_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 8.643312101910828,
+                "radius": 8.643312101910828,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    -5.75
+                ],
+                "inclusion": "true",
+                "depth": 1,
+                "extra": "24_teeth_shield"
+            }
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 8.643312101910828,
+                "radius": 8.643312101910828,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    4.75
+                ],
+                "inclusion": "laser",
+                "depth": 1,
+                "extra": "24_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 8.643312101910828,
+                "radius": 8.643312101910828,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    4.75
+                ],
+                "inclusion": "3dpr",
+                "depth": 1,
+                "extra": "24_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 8.643312101910828,
+                "radius": 8.643312101910828,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    4.75
+                ],
+                "inclusion": "true",
+                "depth": 1,
+                "extra": "24_teeth_shield"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "holes main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT holes main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "d_shaft",
+                    "comment": [
+                        "shaft for n20 motor"
+                    ],
+                    "r": 1.75,
+                    "pos": [
+                        0,
+                        0,
+                        125
+                    ],
+                    "m": "#",
+                    "id": 2.75,
+                    "depth": 250
+                }
+            ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "24_teeth_shield"
+            },
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "24_teeth_shield"
+            },
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "24_teeth_shield"
+            }
+        ]
+    ],
+    "components_string": [
+        "pulley_gt2_shape_p_type_11.5_depth_0_0_-5.75_pos_9_thickness_24_teeth_shield_extra_motor_n20_shaft_1_diameter_24_number_of_teeth",
+        "oobb_cylinder_shape_p_type_1_depth_0_0_-5.25_pos_9_thickness_24_teeth_shield_extra_motor_n20_shaft_1_diameter_8.643312101910828_radius",
+        "oobb_cylinder_shape_p_type_1_depth_0_0_5.25_pos_9_thickness_24_teeth_shield_extra_motor_n20_shaft_1_diameter_8.643312101910828_radius",
+        "oobb_holes_shape_n_type_9_thickness_24_teeth_shield_extra_motor_n20_shaft_1_diameter_1_width_1_height_true_both_holes_true_circle_false_middle",
+        "oobb_motor_n20_shape_n_type_9_thickness_motor_n20_shaft_1_diameter_shaft_part",
+        "oobb_slice_shape_n_type_9_thickness_24_teeth_shield_extra_motor_n20_shaft_1_diameter"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "thickness": 9,
+            "extra": "24_teeth_shield",
+            "shaft": "motor_n20",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                -5.75
+            ],
+            "shape": "pulley_gt2",
+            "number_of_teeth": 24,
+            "depth": 11.5
+        },
+        {
+            "type": "p",
+            "thickness": 9,
+            "extra": "24_teeth_shield",
+            "shaft": "motor_n20",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                -5.25
+            ],
+            "shape": "oobb_cylinder",
+            "radius": 8.643312101910828,
+            "depth": 1
+        },
+        {
+            "type": "p",
+            "thickness": 9,
+            "extra": "24_teeth_shield",
+            "shaft": "motor_n20",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                5.25
+            ],
+            "shape": "oobb_cylinder",
+            "radius": 8.643312101910828,
+            "depth": 1
+        },
+        {
+            "type": "n",
+            "thickness": 9,
+            "extra": "24_teeth_shield",
+            "shaft": "motor_n20",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_holes",
+            "width": 1,
+            "height": 1,
+            "both_holes": true,
+            "circle": true,
+            "middle": false
+        },
+        {
+            "type": "n",
+            "thickness": 9,
+            "shaft": "motor_n20",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_motor_n20",
+            "part": "shaft",
+            "m": "#"
+        },
+        {
+            "type": "n",
+            "thickness": 9,
+            "extra": "24_teeth_shield",
+            "shaft": "motor_n20",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_slice"
+        }
+    ],
+    "folder": "things/oobb_pulley_gt2_01_09_ex_24_teeth_shield_sh_motor_n20"
+}

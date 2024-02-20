@@ -1,0 +1,123 @@
+components:
+-   -   -   center: true
+            color: gray
+            comment: gear main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT gear main
+            type: p
+-   -   depth: 3
+        diametral_pitch: 0.53333333
+        extra: 8_teeth
+        number_of_teeth: 8
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: gear
+        type: p
+-   -   -   center: true
+            color: gray
+            comment: holes main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT holes main
+            type: n
+- []
+-   -   -   h: 200
+            inclusion: laser
+            m: '#'
+            pos: &id001
+            - 0
+            - 0
+            - -100.0
+            r: 2.95
+            rot: &id002
+            - 0
+            - 0
+            - 0
+            shape: cylinder
+            type: n
+        -   h: 200
+            inclusion: 3dpr
+            m: '#'
+            pos: *id001
+            r: 2.95
+            rot: *id002
+            shape: cylinder
+            type: n
+        -   h: 200
+            inclusion: 'true'
+            m: '#'
+            pos: *id001
+            r: 2.95
+            rot: *id002
+            shape: cylinder
+            type: n
+components_objects:
+-   depth: 3
+    diameter: 1
+    diametral_pitch: 0.53333333
+    extra: 8_teeth
+    number_of_teeth: 8
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: gear
+    thickness: 3
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1
+    extra: 8_teeth
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_holes
+    thickness: 3
+    type: n
+    width: 1
+-   diameter: 1
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: electronic_potentiometer_17_mm
+    shape: oobb_electronic_potentiometer_17_mm
+    thickness: 3
+    type: n
+components_string:
+- gear_shape_p_type_3_depth_1_diameter_3_thickness_8_teeth_extra_electronic_potentiometer_17_mm_shaft_0.53333333_diametral_pitch_8_number_of_teeth
+- oobb_holes_shape_n_type_1_diameter_3_thickness_8_teeth_extra_electronic_potentiometer_17_mm_shaft_1_width_1_height_true_both_holes_true_circle_false_middle
+- oobb_electronic_potentiometer_17_mm_shape_n_type_1_diameter_3_thickness_electronic_potentiometer_17_mm_shaft_shaft_part
+description: gear 0x0x3
+diameter: 1
+extra: 8_teeth
+folder: things/oobb_gear_01_03_ex_8_teeth_sh_electronic_potentiometer_17_mm
+id: oobb_gear_01_03_ex_8_teeth_sh_electronic_potentiometer_17_mm
+shaft: electronic_potentiometer_17_mm
+thickness: 3
+thickness_mm: 3
+type: gear

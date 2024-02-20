@@ -56,6 +56,11 @@
             0
         ],
         "zz": "middle",
+        "rot": [
+            0,
+            0,
+            30.0
+        ],
         "hole": true,
         "shape": "oobb_hole",
         "pos": [
@@ -78,6 +83,11 @@
             0
         ],
         "zz": "middle",
+        "rot": [
+            0,
+            0,
+            30.0
+        ],
         "hole": true,
         "shape": "oobb_hole",
         "pos": [
@@ -100,50 +110,11 @@
             0
         ],
         "zz": "middle",
-        "hole": true,
-        "shape": "oobb_hole",
-        "pos": [
+        "rot": [
             0,
-            7.5,
-            0
+            0,
+            30.0
         ],
-        "radius_name": "m3"
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "bearing": "6705",
-        "shaft": "motor_tt_01",
-        "pos_plate": [
-            0,
-            0,
-            0
-        ],
-        "zz": "middle",
-        "hole": true,
-        "shape": "oobb_hole",
-        "pos": [
-            0,
-            -7.5,
-            0
-        ],
-        "radius_name": "m3"
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "bearing": "6705",
-        "shaft": "motor_tt_01",
-        "pos_plate": [
-            0,
-            0,
-            0
-        ],
-        "zz": "middle",
         "hole": true,
         "shape": "oobb_nut",
         "pos": [
@@ -166,6 +137,11 @@
             0
         ],
         "zz": "middle",
+        "rot": [
+            0,
+            0,
+            30.0
+        ],
         "hole": true,
         "shape": "oobb_nut",
         "pos": [
@@ -188,6 +164,65 @@
             0
         ],
         "zz": "middle",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "hole": true,
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            7.5,
+            0
+        ],
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "shaft": "motor_tt_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "hole": true,
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            -7.5,
+            0
+        ],
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6705",
+        "shaft": "motor_tt_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "zz": "middle",
+        "rot": [
+            0,
+            0,
+            0
+        ],
         "hole": true,
         "shape": "oobb_nut",
         "pos": [
@@ -210,6 +245,11 @@
             0
         ],
         "zz": "middle",
+        "rot": [
+            0,
+            0,
+            0
+        ],
         "hole": true,
         "shape": "oobb_nut",
         "pos": [

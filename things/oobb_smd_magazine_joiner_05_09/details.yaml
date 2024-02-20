@@ -1,0 +1,232 @@
+components:
+-   -   -   depth: 3
+            height: 1
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 74
+            - 14
+            - 3
+            type: p
+            width: 5
+-   -   -   depth: 3
+            height: 4
+            m: ''
+            pos:
+            - 7.5
+            - 22.5
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 59
+            - 59
+            - 3
+            type: p
+            width: 4
+-   -   -   -   -   inclusion: laser
+                    pos:
+                    - -30.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: laser
+                    pos:
+                    - -15.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: laser
+                    pos:
+                    - 0.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: laser
+                    pos:
+                    - 15.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: laser
+                    pos:
+                    - 30.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 3dpr
+                    pos:
+                    - -30.0
+                    - 0.0
+                    - 0
+                    r: 3.25
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 3dpr
+                    pos:
+                    - -15.0
+                    - 0.0
+                    - 0
+                    r: 3.25
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 3dpr
+                    pos:
+                    - 0.0
+                    - 0.0
+                    - 0
+                    r: 3.25
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 3dpr
+                    pos:
+                    - 15.0
+                    - 0.0
+                    - 0
+                    r: 3.25
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 3dpr
+                    pos:
+                    - 30.0
+                    - 0.0
+                    - 0
+                    r: 3.25
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 'true'
+                    pos:
+                    - -30.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 'true'
+                    pos:
+                    - -15.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 'true'
+                    pos:
+                    - 0.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 'true'
+                    pos:
+                    - 15.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+        -   -   -   inclusion: 'true'
+                    pos:
+                    - 30.0
+                    - 0.0
+                    - 0
+                    r: 3.0
+                    shape: hole
+                    type: negative
+-   -   -   depth: 9
+            h: 9
+            height: 1
+            m: ''
+            pos:
+            - 30.0
+            - 0
+            - 0
+            r: 7.0
+            shape: cylinder
+            type: p
+            width: 1
+-   -   -   depth: 9
+            height: 1
+            m: ''
+            pos:
+            - -22.5
+            - 0
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 29
+            - 14
+            - 9
+            type: p
+            width: 2
+-   -   -   objects:
+            -   depth: 6
+                height: 6
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -6
+                r: 5.77
+                shape: polyg
+                sides: 6
+                type: positive
+            -   depth: 6
+                height: 6
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -6
+                r: 5.914249999999999
+                shape: polyg
+                sides: 6
+                type: positive
+            -   depth: 6
+                height: 6
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -6
+                r: 5.77
+                shape: polyg
+                sides: 6
+                type: positive
+            pos:
+            - -15.0
+            - 0
+            - 9
+            rot:
+            - 0
+            - 0
+            - 0
+            type: rotation
+            typetype: n
+components_objects: []
+components_string: []
+description: smd magazine joiner 5x0x9
+folder: things/oobb_smd_magazine_joiner_05_09
+id: oobb_smd_magazine_joiner_05_09
+thickness: 9
+thickness_mm: 9
+type: smd_magazine_joiner
+width: 5
+width_mm: 74

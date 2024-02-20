@@ -60,6 +60,10 @@ def get_oobb_wire_base(**kwargs):
     size = kwargs.get("size", "oobb")
     pos = kwargs.get("pos", [0, 0, 0])
     extra = kwargs.get("extra", "")
+    extra_mm = False
+    if "extra_mm" in extra:
+        extra_mm = True
+        extra = extra.replace("_extra__mm","")
     full_object = kwargs.get("full_object", True)
         
     # extra sets
@@ -79,6 +83,9 @@ def get_oobb_wire_base(**kwargs):
 
     # plate
     p3 = copy.deepcopy(kwargs)
+    if extra_mm:
+        p3["width"] = width + 1/15
+        p3["height"] = height + 1/15
     p3 = oobb_get_items_oobb.get_plate_dict(**p3) 
     if thickness == 9:
         p3["pos"][2] += 3
@@ -100,8 +107,9 @@ def get_oobb_wire_base(**kwargs):
         #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
     
+    depth_universal = 2.6
     # cutout
-    z_shift = -3    
+    z_shift = -depth_universal    
     if type(extra) is not list:
         extras = [extra]
     else:
@@ -115,9 +123,9 @@ def get_oobb_wire_base(**kwargs):
             x_shift += 7.5
         p3["pos"][0] += x_shift
         p3["pos"][2] += z_shift
-        p3["m"] = "#"
+        #p3["m"] = "#"
         oobb_base.append_full(thing, **p3)
-        z_shift += -3 
+        z_shift += -depth_universal 
 
 
     if full_object:   
@@ -132,7 +140,10 @@ def get_plate_nut_dict(**kwargs):
     width = kwargs.get("width", 1)
 
     poss = []
-    dep = -thickness
+    if thickness == 9:
+        dep = 3
+    else:
+        dep = -thickness
     if width == 3:
         poss.append([7.5,-15,dep])
         poss.append([7.5,15,dep])
@@ -146,7 +157,10 @@ def get_plate_nut_dict(**kwargs):
     p3["shape"] = f"oobb_nut"    
     p3["radius_name"] = "m3"
     #p3["depth"] = thickness
-    p3["zz"] = "bottom"
+    if thickness == 9:
+        p3["zz"] = "top"
+    else:
+        p3["zz"] = "bottom"
     p3["overhang"] = True
     p3["rot"] = [0,0,0]
     p3["nut"] = False

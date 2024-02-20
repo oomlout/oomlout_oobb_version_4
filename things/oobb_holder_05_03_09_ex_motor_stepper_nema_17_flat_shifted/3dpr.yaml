@@ -1,0 +1,247 @@
+-   connecting_screws: []
+    depth: 9
+    extra: motor_stepper_nema_17_flat_shifted
+    extra_mm: true
+    height: 3
+    oobb_holes:
+    -   - 1
+        - 1
+    -   - 2
+        - 1
+    -   - 1
+        - 3
+    -   - 2
+        - 3
+    -   - 1
+        - 2
+    -   - 2
+        - 2
+    oobe_holes:
+    -   - 1.5
+        - 1
+    -   - 2.5
+        - 1
+    -   - 1.5
+        - 3
+    -   - 2.5
+        - 3
+    -   - 1
+        - 1.5
+    -   - 1
+        - 2.5
+    -   - 1.5
+        - 2
+    -   - 2
+        - 1.5
+    -   - 2
+        - 2.5
+    pos:
+    - -15
+    - 0
+    - 0
+    pos_item:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - -15
+    - 0
+    - 0
+    shape: oobb_plate
+    thickness: 9
+    type: p
+    width: 5
+-   connecting_screws: []
+    extra: motor_stepper_nema_17_flat_shifted
+    height: 3
+    holes: single
+    loc:
+    -   - 1
+        - 1
+    -   - 2
+        - 1
+    -   - 1
+        - 3
+    -   - 2
+        - 3
+    -   - 1
+        - 2
+    -   - 2
+        - 2
+    oobb_holes:
+    -   - 1
+        - 1
+    -   - 2
+        - 1
+    -   - 1
+        - 3
+    -   - 2
+        - 3
+    -   - 1
+        - 2
+    -   - 2
+        - 2
+    oobe_holes:
+    -   - 1.5
+        - 1
+    -   - 2.5
+        - 1
+    -   - 1.5
+        - 3
+    -   - 2.5
+        - 3
+    -   - 1
+        - 1.5
+    -   - 1
+        - 2.5
+    -   - 1.5
+        - 2
+    -   - 2
+        - 1.5
+    -   - 2
+        - 2.5
+    pos:
+    - -15
+    - 0
+    - 0
+    pos_item:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - -15
+    - 0
+    - 0
+    radius_name: m6
+    shape: oobb_holes
+    thickness: 9
+    type: p
+    width: 5
+-   connecting_screws: []
+    extra: motor_stepper_nema_17_flat_shifted
+    height: 3
+    holes: single
+    loc:
+    -   - 1.5
+        - 1
+    -   - 2.5
+        - 1
+    -   - 1.5
+        - 3
+    -   - 2.5
+        - 3
+    -   - 1
+        - 1.5
+    -   - 1
+        - 2.5
+    -   - 1.5
+        - 2
+    -   - 2
+        - 1.5
+    -   - 2
+        - 2.5
+    oobb_holes:
+    -   - 1
+        - 1
+    -   - 2
+        - 1
+    -   - 1
+        - 3
+    -   - 2
+        - 3
+    -   - 1
+        - 2
+    -   - 2
+        - 2
+    oobe_holes:
+    -   - 1.5
+        - 1
+    -   - 2.5
+        - 1
+    -   - 1.5
+        - 3
+    -   - 2.5
+        - 3
+    -   - 1
+        - 1.5
+    -   - 1
+        - 2.5
+    -   - 1.5
+        - 2
+    -   - 2
+        - 1.5
+    -   - 2
+        - 2.5
+    pos:
+    - -15
+    - 0
+    - 0
+    pos_item:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - -15
+    - 0
+    - 0
+    radius_name: m3
+    shape: oobb_holes
+    thickness: 9
+    type: n
+    width: 5
+-   connecting_screws: []
+    extra: motor_stepper_nema_17_flat_shifted
+    height: 3
+    oobb_holes:
+    -   - 1
+        - 1
+    -   - 2
+        - 1
+    -   - 1
+        - 3
+    -   - 2
+        - 3
+    -   - 1
+        - 2
+    -   - 2
+        - 2
+    oobe_holes:
+    -   - 1.5
+        - 1
+    -   - 2.5
+        - 1
+    -   - 1.5
+        - 3
+    -   - 2.5
+        - 3
+    -   - 1
+        - 1.5
+    -   - 1
+        - 2.5
+    -   - 1.5
+        - 2
+    -   - 2
+        - 1.5
+    -   - 2
+        - 2.5
+    overhang: true
+    pos:
+    - 0
+    - 0
+    - 9
+    pos_item:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - -15
+    - 0
+    - 0
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_motor_stepper_nema_17
+    thickness: 9
+    type: n
+    width: 5

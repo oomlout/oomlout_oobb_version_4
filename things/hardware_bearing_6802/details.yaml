@@ -1,0 +1,56 @@
+bearing_name: '6802'
+components:
+-   -   depth: bearing_6802_depth
+        h: 5
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 12.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6802_depth
+        h: 5
+        inclusion: 3dpr
+        pos: *id001
+        r: 12.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6802_depth
+        h: 5
+        inclusion: 'true'
+        pos: *id001
+        r: 12.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6802_depth
+        h: 5
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 7.5
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6802_depth
+        h: 5
+        inclusion: 3dpr
+        pos: *id002
+        r: 7.5
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6802_depth
+        h: 5
+        inclusion: 'true'
+        pos: *id002
+        r: 7.5
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6802
+folder: things/hardware_bearing_6802
+id: hardware_bearing_6802
+type: bearing

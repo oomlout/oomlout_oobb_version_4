@@ -1,0 +1,3524 @@
+components:
+-   -   -   depth: 15
+            height: 3
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 45.0
+            - 45.0
+            - 15
+            type: p
+            width: 3
+-   -   -   m: ''
+            pos:
+            - 0
+            - 0
+            - 3
+            r: 4
+            shape: sphere_rectangle
+            size:
+            - 42
+            - 42
+            - 35
+            type: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id001
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id002
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id003
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        pos:
+        - -15.0
+        - -15.0
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id004
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id005
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id006
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        pos:
+        - 15.0
+        - -15.0
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id007
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id007
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id007
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id008
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id008
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id008
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id009
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id009
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id009
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        pos:
+        - -15.0
+        - 15.0
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id010
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id010
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id010
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id011
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id011
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id011
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 3
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 3
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: laser
+                m: ''
+                pos: &id012
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 3dpr
+                m: ''
+                pos: *id012
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 3
+                inclusion: 'true'
+                m: ''
+                pos: *id012
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        pos:
+        - 15.0
+        - 15.0
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id013
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id013
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id013
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id014
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id014
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id014
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id015
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id015
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id015
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -15.0
+        - -7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id016
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id016
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id016
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id017
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id017
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id017
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id018
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id018
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id018
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -15.0
+        - 0.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id019
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id019
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id019
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id020
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id020
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id020
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id021
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id021
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id021
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -15.0
+        - 7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id022
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id022
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id022
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id023
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id023
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id023
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id024
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id024
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id024
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -7.5
+        - -15.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id025
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id025
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id025
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id026
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id026
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id026
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id027
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id027
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id027
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -7.5
+        - -7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id028
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id028
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id028
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id029
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id029
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id029
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id030
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id030
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id030
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -7.5
+        - 0.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id031
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id031
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id031
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id032
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id032
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id032
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id033
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id033
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id033
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -7.5
+        - 7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id034
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id034
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id034
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id035
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id035
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id035
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id036
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id036
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id036
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - -7.5
+        - 15.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id037
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id037
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id037
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id038
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id038
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id038
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id039
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id039
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id039
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 0.0
+        - -15.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id040
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id040
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id040
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id041
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id041
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id041
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id042
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id042
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id042
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 0.0
+        - -7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id043
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id043
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id043
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id044
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id044
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id044
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id045
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id045
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id045
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 0.0
+        - 0.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id046
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id046
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id046
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id047
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id047
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id047
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id048
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id048
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id048
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 0.0
+        - 7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id049
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id049
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id049
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id050
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id050
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id050
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id051
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id051
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id051
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 0.0
+        - 15.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id052
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id052
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id052
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id053
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id053
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id053
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id054
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id054
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id054
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 7.5
+        - -15.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id055
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id055
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id055
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id056
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id056
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id056
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id057
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id057
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id057
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 7.5
+        - -7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id058
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id058
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id058
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id059
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id059
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id059
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id060
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id060
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id060
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 7.5
+        - 0.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id061
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id061
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id061
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id062
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id062
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id062
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id063
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id063
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id063
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 7.5
+        - 7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id064
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id064
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id064
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id065
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id065
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id065
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id066
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id066
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id066
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 7.5
+        - 15.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id067
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id067
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id067
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id068
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id068
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id068
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id069
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id069
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id069
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 15.0
+        - -7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id070
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id070
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id070
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id071
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id071
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id071
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id072
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id072
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id072
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 15.0
+        - 0.0
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   h: 2.2
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id073
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id073
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id073
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        -   -   h: 2.4
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.4
+                r1: 2.3
+                r2: 4.1
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id074
+                - 0
+                - 0
+                - -350.0
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id074
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id074
+                r: 2.3
+                radius: 2.3
+                shape: cylinder
+                type: positive
+        -   -   h: 2.2
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -2.2
+                r1: 2.0
+                r2: 3.4
+                shape: cylinder
+                type: positive
+        -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id075
+                - 0
+                - 0
+                - -350.0
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id075
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id075
+                r: 2.0
+                radius: 2.0
+                shape: cylinder
+                type: positive
+        pos:
+        - 15.0
+        - 7.5
+        - 3
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+components_objects: []
+components_string: []
+description: jig screw sorter m3 03 03 3x3x15
+folder: things/oobb_jig_screw_sorter_m3_03_03_03_03_15
+height: 3
+height_mm: 44
+id: oobb_jig_screw_sorter_m3_03_03_03_03_15
+thickness: 15
+thickness_mm: 15
+type: jig_screw_sorter_m3_03_03
+width: 3
+width_mm: 44

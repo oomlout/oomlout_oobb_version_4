@@ -1,0 +1,2709 @@
+{
+    "description": "wire 3x3x2.54",
+    "id": "oobb_wire_03_03_2d54_ex_motor",
+    "type": "wire",
+    "width": 3,
+    "height": 3,
+    "thickness": 2.54,
+    "extra": "motor",
+    "width_mm": 44,
+    "thickness_mm": 2.54,
+    "height_mm": 44,
+    "components": [
+        [
+            {
+                "type": "positive",
+                "shape": "rounded_rectangle",
+                "size": [
+                    44,
+                    44,
+                    2.54
+                ],
+                "pos": [
+                    0,
+                    0,
+                    -2.54
+                ],
+                "height": 3,
+                "width": 3,
+                "depth": 2.54,
+                "extra": "motor"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -7.5,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        7.5,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        -7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        7.5,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.8,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 1.5,
+                    "h": 200,
+                    "pos": [
+                        15.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "negative",
+                "pos": [
+                    22.5,
+                    0,
+                    -2.6
+                ],
+                "rot": [
+                    0,
+                    0,
+                    180
+                ],
+                "objects": [
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        5,
+                                        3.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        23.067,
+                                        1.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        5.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        -0.6459999999999999,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        14,
+                                        5.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        9.038,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        2.54,
+                                        10.16,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        6.5,
+                                        -2.54,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        10,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        25.044,
+                                        -5.0,
+                                        0
+                                    ],
+                                    "inclusion": "laser",
+                                    "height": 3,
+                                    "width": 3,
+                                    "depth": 2.6,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        5,
+                                        3.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        23.067,
+                                        1.0,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7.300000000000001,
+                                        5.38,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        -0.7960000000000003,
+                                        -0.1499999999999999,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        14.3,
+                                        5.38,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        8.888,
+                                        -0.1499999999999999,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        2.84,
+                                        10.46,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        6.35,
+                                        -2.6900000000000004,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        10,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        25.044,
+                                        -5.0,
+                                        0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "height": 3,
+                                    "width": 3,
+                                    "depth": 2.6,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        5,
+                                        3.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        23.067,
+                                        1.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        5.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        -0.6459999999999999,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        14,
+                                        5.08,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        9.038,
+                                        0.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        2.54,
+                                        10.16,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        6.5,
+                                        -2.54,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "size": [
+                                        7,
+                                        10,
+                                        2.6
+                                    ],
+                                    "pos": [
+                                        25.044,
+                                        -5.0,
+                                        0
+                                    ],
+                                    "inclusion": "true",
+                                    "height": 3,
+                                    "width": 3,
+                                    "depth": 2.6,
+                                    "extra": "motor"
+                                }
+                            ]
+                        ]
+                    ]
+                ]
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_positive_type_2.54_depth_0_0_-2.54_pos_motor_extra_2.54_thickness_3_width_3_height_0_0_-2.54_pos_plate",
+        "oobb_holes_shape_p_type_0_0_-2.54_pos_motor_extra_2.54_thickness_3_width_3_height_0_0_-2.54_pos_plate_'left'_'right'_'top'_hole_sides_'left'_'right'_'top'_holes_true_both_holes",
+        "oobb_wire_motor_shape_0_0_-2.6_pos_motor_extra_2.54_thickness_3_width_3_height_0_0_-2.54_pos_plate_0_0_180_rot"
+    ],
+    "components_objects": [
+        {
+            "extra": "motor",
+            "thickness": 2.54,
+            "width": 3,
+            "height": 3,
+            "pos": [
+                0,
+                0,
+                -2.54
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -2.54
+            ],
+            "type": "positive",
+            "shape": "oobb_plate",
+            "depth": 2.54
+        },
+        {
+            "extra": "motor",
+            "thickness": 2.54,
+            "width": 3,
+            "height": 3,
+            "pos": [
+                0,
+                0,
+                -2.54
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -2.54
+            ],
+            "hole_sides": [
+                "left",
+                "right",
+                "top"
+            ],
+            "type": "p",
+            "shape": "oobb_holes",
+            "holes": [
+                "left",
+                "right",
+                "top"
+            ],
+            "both_holes": true
+        },
+        {
+            "extra": "motor",
+            "thickness": 2.54,
+            "width": 3,
+            "height": 3,
+            "pos": [
+                0,
+                0,
+                -2.6
+            ],
+            "pos_plate": [
+                0,
+                0,
+                -2.54
+            ],
+            "shape": "oobb_wire_motor",
+            "rot": [
+                0,
+                0,
+                180
+            ]
+        }
+    ],
+    "folder": "things/oobb_wire_03_03_2d54_ex_motor"
+}

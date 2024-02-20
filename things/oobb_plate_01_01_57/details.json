@@ -1,0 +1,197 @@
+{
+    "description": "plate 1x1x57",
+    "id": "oobb_plate_01_01_57",
+    "type": "plate",
+    "width": 1,
+    "height": 1,
+    "thickness": 57,
+    "width_mm": 14,
+    "thickness_mm": 57,
+    "height_mm": 14,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "plate main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT plate main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 7.0,
+                "h": 57,
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "height": 1,
+                "width": 1,
+                "depth": 57
+            }
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "holes main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT holes main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ]
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_p_type_57_depth_1_width_1_height_57_thickness_true_both_holes",
+        "oobb_holes_shape_n_type_1_width_1_height_57_thickness_true_both_holes"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "width": 1,
+            "height": 1,
+            "thickness": 57,
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_plate",
+            "depth": 57
+        },
+        {
+            "type": "n",
+            "width": 1,
+            "height": 1,
+            "thickness": 57,
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_holes"
+        }
+    ],
+    "folder": "things/oobb_plate_01_01_57"
+}

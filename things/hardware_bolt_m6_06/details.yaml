@@ -1,0 +1,73 @@
+components:
+-   -   -   -   depth: 6
+                h: 4
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - 0
+                r: 5.77
+                rotY: 0
+                shape: polyg
+                sides: 6
+                type: positive
+    -   -   -   depth: 6
+                h: 4.5
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - 0
+                r: 5.914249999999999
+                rotY: 0
+                shape: polyg
+                sides: 6
+                type: positive
+    -   -   -   depth: 6
+                h: 4
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - 0
+                r: 5.77
+                rotY: 0
+                shape: polyg
+                sides: 6
+                type: positive
+    -   -   depth: 6
+            h: 6
+            inclusion: laser
+            pos: &id001
+            - 0
+            - 0
+            - -6
+            r: 3.0
+            rotY: 0
+            shape: cylinder
+            type: positive
+        -   depth: 6
+            h: 6
+            inclusion: 3dpr
+            pos: *id001
+            r: 3.25
+            rotY: 0
+            shape: cylinder
+            type: positive
+        -   depth: 6
+            h: 6
+            inclusion: 'true'
+            pos: *id001
+            r: 3.0
+            rotY: 0
+            shape: cylinder
+            type: positive
+components_objects: []
+components_string: []
+depth: 6
+depth_mm: 6
+description: bolt m6x6
+folder: things/hardware_bolt_m6_06
+id: hardware_bolt_m6_06
+radius_name: m6
+type: bolt

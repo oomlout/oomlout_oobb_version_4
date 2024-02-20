@@ -1,0 +1,72 @@
+components:
+-   -   -   depth: 6
+            h: 6
+            inclusion: laser
+            m: ''
+            pos: &id001
+            - 0
+            - 0
+            - 0
+            r: 1.5
+            shape: cylinder
+            type: n
+        -   depth: 6
+            h: 6
+            inclusion: 3dpr
+            m: ''
+            pos: *id001
+            r: 1.8
+            shape: cylinder
+            type: n
+        -   depth: 6
+            h: 6
+            inclusion: 'true'
+            m: ''
+            pos: *id001
+            r: 1.5
+            shape: cylinder
+            type: n
+    -   depth: 6
+        height: 6
+        inclusion: laser
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.3465999999999996
+        shape: polyg
+        sides: 6
+        type: p
+    -   depth: 6
+        height: 6
+        inclusion: 3dpr
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.6350999999999996
+        shape: polyg
+        sides: 6
+        type: p
+    -   depth: 6
+        height: 6
+        inclusion: 'true'
+        pos:
+        - 0
+        - 0
+        - 0
+        r: 3.3465999999999996
+        shape: polyg
+        sides: 6
+        type: p
+components_objects: []
+components_string: []
+depth: 6
+depth_mm: 6
+description: standoff m3x6x6
+folder: things/hardware_standoff_m3_06
+height_mm: 2.75
+id: hardware_standoff_m3_06
+radius_name: m3
+type: standoff
+width_mm: 3.1734999999999998

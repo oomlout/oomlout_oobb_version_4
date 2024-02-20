@@ -64,7 +64,8 @@ def main(**kwargs):
     # wire
     #filter = "oobb_wire_03_03_12_ex_basic"
     #filter = "oobb_wire_02_03_06_ex_basic"
-    filter = "oobb_wire"
+    #filter = "oobb_wire"
+    filter = "wire"
 
     #oobb_servo_holder
     #filter = []
@@ -88,7 +89,7 @@ def main(**kwargs):
     #oobb_base.dump("json")
     #oobb_base.dump("folder")
 
-    save_type = "none"
+    #save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"
     save_type = "all"
@@ -96,8 +97,8 @@ def main(**kwargs):
     overwrite = True
     overwrite = False
     
-    #modes = ["laser", "3dpr", "true"]
-    modes = ["3dpr"]
+    modes = ["laser", "3dpr", "true"]
+    #modes = ["3dpr"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
     #copy_files = True

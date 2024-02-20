@@ -1,0 +1,677 @@
+components:
+-   -   -   depth: 12
+            height: 3
+            pos:
+            - 0
+            - 28.5
+            - -6.0
+            shape: rounded_rectangle
+            size:
+            - 29
+            - 44
+            - 12
+            type: p
+            width: 2
+-   -   depth: 12
+        height: 3
+        pos:
+        - 0
+        - 28.5
+        - -6.0
+        shape: rounded_rectangle
+        size:
+        - 29
+        - 44
+        - 12
+        type: p
+        width: 2
+-   -   -   pos:
+            - -14.5
+            - 0
+            - -6.0
+            shape: cube
+            size:
+            - 29
+            - 13.5
+            - 12
+            type: p
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 10.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 17.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 10.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 17.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -9.0
+                    - 11.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -9.0
+                    - 18.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 25.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 32.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 25.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 32.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -9.0
+                    - 26.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -9.0
+                    - 33.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 40.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 47.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 40.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - -9.5
+                    - 47.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -9.0
+                    - 41.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - -9.0
+                    - 48.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   depth: 8
+        h: 8
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - -7.5
+        - 8
+        - 0
+        r: 3.0
+        rotX: 90
+        shape: cylinder
+        type: n
+    -   depth: 8
+        h: 8
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.25
+        rotX: 90
+        shape: cylinder
+        type: n
+    -   depth: 8
+        h: 8
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.0
+        rotX: 90
+        shape: cylinder
+        type: n
+-   -   objects:
+        -   depth: 13.5
+            height: 13.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.77
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        -   depth: 13.5
+            height: 13.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.914249999999999
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        -   depth: 13.5
+            height: 13.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.77
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - -7.5
+        - 9
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 10.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 17.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 10.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 17.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 6.0
+                    - 11.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 6.0
+                    - 18.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 25.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 32.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 25.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 32.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 6.0
+                    - 26.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 6.0
+                    - 33.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 40.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 47.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 40.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 5.5
+                    - 47.75
+                    - -50
+                    shape: cube
+                    size:
+                    - 4
+                    - 1.5
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 6.0
+                    - 41.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+    -   -   -   -   center: true
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 6.0
+                    - 48.0
+                    - -50
+                    shape: cube
+                    size:
+                    - 3
+                    - 1
+                    - 100
+                    type: n
+-   -   depth: 8
+        h: 8
+        inclusion: laser
+        m: ''
+        pos: &id002
+        - 7.5
+        - 8
+        - 0
+        r: 3.0
+        rotX: 90
+        shape: cylinder
+        type: n
+    -   depth: 8
+        h: 8
+        inclusion: 3dpr
+        m: ''
+        pos: *id002
+        r: 3.25
+        rotX: 90
+        shape: cylinder
+        type: n
+    -   depth: 8
+        h: 8
+        inclusion: 'true'
+        m: ''
+        pos: *id002
+        r: 3.0
+        rotX: 90
+        shape: cylinder
+        type: n
+-   -   objects:
+        -   depth: 13.5
+            height: 13.5
+            inclusion: laser
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.77
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        -   depth: 13.5
+            height: 13.5
+            inclusion: 3dpr
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.914249999999999
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        -   depth: 13.5
+            height: 13.5
+            inclusion: 'true'
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 5.77
+            rotX: 90
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 7.5
+        - 9
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+components_objects: []
+components_string: []
+description: ziptie holder jack 2x3x12
+folder: things/oobb_ziptie_holder_jack_02_03_12
+height: 3
+height_mm: 44
+id: oobb_ziptie_holder_jack_02_03_12
+thickness: 12
+thickness_mm: 12
+type: ziptie_holder_jack
+width: 2
+width_mm: 29

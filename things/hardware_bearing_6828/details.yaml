@@ -1,0 +1,56 @@
+bearing_name: '6828'
+components:
+-   -   depth: bearing_6828_depth
+        h: 18
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 87.5
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6828_depth
+        h: 18
+        inclusion: 3dpr
+        pos: *id001
+        r: 87.7
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6828_depth
+        h: 18
+        inclusion: 'true'
+        pos: *id001
+        r: 87.5
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6828_depth
+        h: 18
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 70.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6828_depth
+        h: 18
+        inclusion: 3dpr
+        pos: *id002
+        r: 70.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6828_depth
+        h: 18
+        inclusion: 'true'
+        pos: *id002
+        r: 70.0
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6828
+folder: things/hardware_bearing_6828
+id: hardware_bearing_6828
+type: bearing

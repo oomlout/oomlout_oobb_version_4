@@ -1,0 +1,403 @@
+components:
+-   -   depth: 1
+        extra: '2'
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: rounded_rectangle
+        size:
+        - 74
+        - 14
+        - 1
+        type: p
+        width: 5
+-   -   -   -   inclusion: laser
+                pos:
+                - -30.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 30.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -30.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 30.0
+                - 0.0
+                - 0
+                r: 3.25
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -30.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 30.0
+                - 0.0
+                - 0
+                r: 3.0
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -30.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -22.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - -7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 22.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: laser
+                pos:
+                - 30.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -30.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -22.5
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - -7.5
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 7.5
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 22.5
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 3dpr
+                pos:
+                - 30.0
+                - 0.0
+                - 0
+                r: 1.8
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -30.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -22.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - -7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 0.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 7.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 15.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 22.5
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+    -   -   -   inclusion: 'true'
+                pos:
+                - 30.0
+                - 0.0
+                - 0
+                r: 1.5
+                shape: hole
+                type: negative
+-   -   -   extra: '2'
+            font: DejaVu Sans Mono:style=Bold
+            halign: center
+            height: 1
+            pos:
+            - 0
+            - -5
+            - 0
+            shape: text
+            size: 57.0
+            text: '2'
+            type: p
+            valign: top
+            width: 5
+components_objects:
+-   depth: 1
+    extra: '2'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_plate
+    size: oobb
+    thickness: 1
+    type: p
+    width: 5
+-   both_holes: true
+    extra: '2'
+    height: 1
+    holes:
+    - all
+    m: '#'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_holes
+    size: oobb
+    thickness: 1
+    type: n
+    width: 5
+components_string:
+- oobb_plate_shape_p_type_1_depth_5_width_1_thickness_2_extra_oobb_size
+- oobb_holes_shape_n_type_5_width_1_thickness_2_extra_oobb_size_1_height_'all'_holes_true_both_holes
+description: bunting alphabet 5x0x1
+extra: '2'
+folder: things/oobb_bunting_alphabet_05_01_ex_2
+id: oobb_bunting_alphabet_05_01_ex_2
+thickness: 1
+thickness_mm: 1
+type: bunting_alphabet
+width: 5
+width_mm: 74

@@ -1,0 +1,56 @@
+bearing_name: '6812'
+components:
+-   -   depth: bearing_6812_depth
+        h: 10
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 39.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6812_depth
+        h: 10
+        inclusion: 3dpr
+        pos: *id001
+        r: 39.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6812_depth
+        h: 10
+        inclusion: 'true'
+        pos: *id001
+        r: 39.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6812_depth
+        h: 10
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 30.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6812_depth
+        h: 10
+        inclusion: 3dpr
+        pos: *id002
+        r: 30.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6812_depth
+        h: 10
+        inclusion: 'true'
+        pos: *id002
+        r: 30.0
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6812
+folder: things/hardware_bearing_6812
+id: hardware_bearing_6812
+type: bearing

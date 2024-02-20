@@ -1,0 +1,327 @@
+{
+    "description": "other 1x5x14",
+    "id": "oobb_other_01_05_14_ex_ptfe_tube_holder_sh_m6",
+    "type": "other",
+    "width": 1,
+    "height": 5,
+    "thickness": 14,
+    "extra": "ptfe_tube_holder",
+    "shaft": "m6",
+    "width_mm": 14,
+    "thickness_mm": 14,
+    "height_mm": 74,
+    "components": [
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    17.0,
+                    74,
+                    14
+                ],
+                "pos": [
+                    0,
+                    0,
+                    -7.0
+                ],
+                "height": 5,
+                "width": 1.2,
+                "depth": 14,
+                "extra": "ptfe_tube_holder"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -30.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -30.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -30.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        -15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        0.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ],
+            [
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "laser",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.25,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": ""
+                },
+                {
+                    "type": "negative",
+                    "shape": "cylinder",
+                    "r": 3.0,
+                    "h": 200,
+                    "pos": [
+                        0.0,
+                        15.0,
+                        -100.0
+                    ],
+                    "inclusion": "true",
+                    "m": ""
+                }
+            ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.85,
+                "radius": 4.85,
+                "h": 200,
+                "pos": [
+                    0,
+                    30,
+                    -100.0
+                ],
+                "inclusion": "laser",
+                "height": 5,
+                "width": 1,
+                "extra": "ptfe_tube_holder"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.85,
+                "radius": 4.85,
+                "h": 200,
+                "pos": [
+                    0,
+                    30,
+                    -100.0
+                ],
+                "inclusion": "3dpr",
+                "height": 5,
+                "width": 1,
+                "extra": "ptfe_tube_holder"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 4.85,
+                "radius": 4.85,
+                "h": 200,
+                "pos": [
+                    0,
+                    30,
+                    -100.0
+                ],
+                "inclusion": "true",
+                "height": 5,
+                "width": 1,
+                "extra": "ptfe_tube_holder"
+            }
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_p_type_14_depth_0_0_-7.0_pos_ptfe_tube_holder_extra_1.2_width_5_height_14_thickness_m6_shaft",
+        "oobb_holes_shape_n_type_ptfe_tube_holder_extra_1_width_5_height_14_thickness_m6_shaft_single_holes_1_1_1_2_1_3_1_4_loc_0_0_0_rot",
+        "oobb_hole_shape_n_type_0_30_0_pos_ptfe_tube_holder_extra_1_width_5_height_14_thickness_m6_shaft_4.85_radius"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "extra": "ptfe_tube_holder",
+            "width": 1.2,
+            "height": 5,
+            "thickness": 14,
+            "shaft": "m6",
+            "shape": "oobb_plate",
+            "depth": 14,
+            "pos": [
+                0,
+                0,
+                -7.0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "ptfe_tube_holder",
+            "width": 1,
+            "height": 5,
+            "thickness": 14,
+            "shaft": "m6",
+            "shape": "oobb_holes",
+            "holes": "single",
+            "loc": [
+                [
+                    1,
+                    1
+                ],
+                [
+                    1,
+                    2
+                ],
+                [
+                    1,
+                    3
+                ],
+                [
+                    1,
+                    4
+                ]
+            ],
+            "rot": [
+                0,
+                0,
+                0
+            ],
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "ptfe_tube_holder",
+            "width": 1,
+            "height": 5,
+            "thickness": 14,
+            "shaft": "m6",
+            "shape": "oobb_hole",
+            "radius": 4.85,
+            "pos": [
+                0,
+                30,
+                0
+            ]
+        }
+    ],
+    "folder": "things/oobb_other_01_05_14_ex_ptfe_tube_holder_sh_m6"
+}

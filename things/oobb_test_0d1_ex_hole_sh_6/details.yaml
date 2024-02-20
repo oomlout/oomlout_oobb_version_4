@@ -1,0 +1,449 @@
+bearing: 0.1
+components:
+-   -   depth: 3
+        height: 3
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: rounded_rectangle
+        size:
+        - 44
+        - 44
+        - 3
+        type: positive
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id001
+        - -15
+        - -15
+        - 0
+        r: 2.8
+        radius: 2.8
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id001
+        r: 2.8
+        radius: 2.8
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id001
+        r: 2.8
+        radius: 2.8
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id002
+        - -15
+        - 0
+        - 0
+        r: 2.85
+        radius: 2.85
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id002
+        r: 2.85
+        radius: 2.85
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id002
+        r: 2.85
+        radius: 2.85
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id003
+        - -15
+        - 15
+        - 0
+        r: 2.9
+        radius: 2.9
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id003
+        r: 2.9
+        radius: 2.9
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id003
+        r: 2.9
+        radius: 2.9
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id004
+        - 0
+        - -15
+        - 0
+        r: 2.95
+        radius: 2.95
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id004
+        r: 2.95
+        radius: 2.95
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id004
+        r: 2.95
+        radius: 2.95
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id005
+        - 0
+        - 0
+        - 0
+        r: 3.0
+        radius: 3.0
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id005
+        r: 3.0
+        radius: 3.0
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id005
+        r: 3.0
+        radius: 3.0
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id006
+        - 0
+        - 15
+        - 0
+        r: 3.05
+        radius: 3.05
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id006
+        r: 3.05
+        radius: 3.05
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id006
+        r: 3.05
+        radius: 3.05
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id007
+        - 15
+        - -15
+        - 0
+        r: 3.1
+        radius: 3.1
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id007
+        r: 3.1
+        radius: 3.1
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id007
+        r: 3.1
+        radius: 3.1
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id008
+        - 15
+        - 0
+        - 0
+        r: 3.15
+        radius: 3.15
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id008
+        r: 3.15
+        radius: 3.15
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id008
+        r: 3.15
+        radius: 3.15
+        shape: cylinder
+        type: negative
+        width: 3
+-   -   depth: 3
+        h: 3
+        height: 3
+        inclusion: laser
+        pos: &id009
+        - 15
+        - 15
+        - 0
+        r: 3.2
+        radius: 3.2
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 3dpr
+        pos: *id009
+        r: 3.2
+        radius: 3.2
+        shape: cylinder
+        type: negative
+        width: 3
+    -   depth: 3
+        h: 3
+        height: 3
+        inclusion: 'true'
+        pos: *id009
+        r: 3.2
+        radius: 3.2
+        shape: cylinder
+        type: negative
+        width: 3
+components_objects:
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: 6
+    shape: oobb_plate
+    type: positive
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - -15
+    - -15
+    - 0
+    radius: 2.8
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - -15
+    - 0
+    - 0
+    radius: 2.85
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - -15
+    - 15
+    - 0
+    radius: 2.9
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 0
+    - -15
+    - 0
+    radius: 2.95
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 0
+    - 0
+    - 0
+    radius: 3.0
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 0
+    - 15
+    - 0
+    radius: 3.05
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 15
+    - -15
+    - 0
+    radius: 3.1
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 15
+    - 0
+    - 0
+    radius: 3.15
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+-   bearing: 0.1
+    depth: 3
+    height: 3
+    pos:
+    - 15
+    - 15
+    - 0
+    radius: 3.2
+    shaft: 6
+    shape: oobb_hole
+    type: negative
+    width: 3
+components_string:
+- oobb_plate_shape_positive_type_3_depth_6_shaft_0.1_bearing_3_width_3_height
+- oobb_hole_shape_negative_type_3_depth_-15_-15_0_pos_6_shaft_0.1_bearing_3_width_3_height_2.8_radius
+- oobb_hole_shape_negative_type_3_depth_-15_0_0_pos_6_shaft_0.1_bearing_3_width_3_height_2.85_radius
+- oobb_hole_shape_negative_type_3_depth_-15_15_0_pos_6_shaft_0.1_bearing_3_width_3_height_2.9_radius
+- oobb_hole_shape_negative_type_3_depth_0_-15_0_pos_6_shaft_0.1_bearing_3_width_3_height_2.95_radius
+- oobb_hole_shape_negative_type_3_depth_6_shaft_0.1_bearing_3_width_3_height_3.0_radius
+- oobb_hole_shape_negative_type_3_depth_0_15_0_pos_6_shaft_0.1_bearing_3_width_3_height_3.05_radius
+- oobb_hole_shape_negative_type_3_depth_15_-15_0_pos_6_shaft_0.1_bearing_3_width_3_height_3.1_radius
+- oobb_hole_shape_negative_type_3_depth_15_0_0_pos_6_shaft_0.1_bearing_3_width_3_height_3.15_radius
+- oobb_hole_shape_negative_type_3_depth_15_15_0_pos_6_shaft_0.1_bearing_3_width_3_height_3.2_radius
+description: test 0x0x0
+extra: hole
+folder: things/oobb_test_0d1_ex_hole_sh_6
+id: oobb_test_0d1_ex_hole_sh_6
+shaft: 6
+type: test

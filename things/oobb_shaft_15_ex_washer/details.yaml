@@ -1,0 +1,82 @@
+components:
+-   -   depth: 3
+        h: 3
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -1.5
+        r: 1.0
+        radius: 1.0
+        shape: cylinder
+        type: p
+    -   depth: 3
+        h: 3
+        inclusion: 3dpr
+        pos: *id001
+        r: 1.0
+        radius: 1.0
+        shape: cylinder
+        type: p
+    -   depth: 3
+        h: 3
+        inclusion: 'true'
+        pos: *id001
+        r: 1.0
+        radius: 1.0
+        shape: cylinder
+        type: p
+-   -   depth: 18
+        h: 18
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - -1.5
+        r: 3.0
+        shape: cylinder
+        type: p
+    -   depth: 18
+        h: 18
+        inclusion: 3dpr
+        pos: *id002
+        r: 2.85
+        shape: cylinder
+        type: p
+    -   depth: 18
+        h: 18
+        inclusion: 'true'
+        pos: *id002
+        r: 3.0
+        shape: cylinder
+        type: p
+-   -   h: 200
+        inclusion: laser
+        pos: &id003
+        - 0
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 3dpr
+        pos: *id003
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 'true'
+        pos: *id003
+        r: 1.5
+        shape: cylinder
+        type: n
+components_objects: []
+components_string: []
+description: shaft 0x0x15
+extra: washer
+folder: things/oobb_shaft_15_ex_washer
+id: oobb_shaft_15_ex_washer
+thickness: 15
+thickness_mm: 15
+type: shaft

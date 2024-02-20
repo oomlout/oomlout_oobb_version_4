@@ -44,6 +44,10 @@
     - 0
     - 0
     radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
     shape: oobb_hole
     thickness: 12
     type: n
@@ -61,40 +65,10 @@
     - 0
     - 0
     radius_name: m3
-    shape: oobb_hole
-    thickness: 12
-    type: n
-    width: 3
-    zz: middle
--   bearing: '6705'
-    height: 3
-    hole: true
-    pos:
-    - 0
-    - 7.5
-    - 0
-    pos_plate:
+    rot:
     - 0
     - 0
-    - 0
-    radius_name: m3
-    shape: oobb_hole
-    thickness: 12
-    type: n
-    width: 3
-    zz: middle
--   bearing: '6705'
-    height: 3
-    hole: true
-    pos:
-    - 0
-    - -7.5
-    - 0
-    pos_plate:
-    - 0
-    - 0
-    - 0
-    radius_name: m3
+    - 30.0
     shape: oobb_hole
     thickness: 12
     type: n
@@ -112,6 +86,10 @@
     - 0
     - 0
     radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
     shape: oobb_nut
     thickness: 12
     type: n
@@ -129,6 +107,10 @@
     - 0
     - 0
     radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
     shape: oobb_nut
     thickness: 12
     type: n
@@ -146,6 +128,52 @@
     - 0
     - 0
     radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+    zz: middle
+-   bearing: '6705'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+    zz: middle
+-   bearing: '6705'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
     shape: oobb_nut
     thickness: 12
     type: n
@@ -163,6 +191,10 @@
     - 0
     - 0
     radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
     shape: oobb_nut
     thickness: 12
     type: n

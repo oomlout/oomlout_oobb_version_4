@@ -713,136 +713,13 @@ def get_oobe_holes(**kwargs):
         return objects
 
 
-def get_oobb_motor_tt_01(**kwargs):
-    return get_oobb_motor_gearmotor_01(**kwargs)
+# def get_oobb_motor_tt_01(**kwargs):
+#     return get_oobb_motor_gearmotor_01(**kwargs)
 
-def get_oobb_motor_gearmotor_tt_motor_01(**kwargs):
-    return get_oobb_motor_gearmotor_01(**kwargs)
-
-def get_oobb_motor_gearmotor_01(**kwargs):
-    part = kwargs.get("part", "all")
-    screw_lift = kwargs.get("screw_lift", -3)
-    radius_extra = kwargs.get("radius_extra", 0.4)
-    clearance = kwargs.get("clearance", "")
-    if part == "all":
-        objects = []
-        pos = kwargs.get("pos", [0, 0, 0])
-        pos_original = copy.deepcopy(pos)
-        x = pos[0]
-        y = pos[1]
-        z = pos[2]
-        thickness = kwargs.get("thickness", 3)
-
-        # kwargs["m"] = "#"
-
-        # shaft hole
-        p2 = copy.deepcopy(kwargs)
-        p2["pos"] = [x, y, z]
-        p2["shape"] = "oobb_hole"
-        p2["radius"] = 26/2
-        objects.extend(ob.oobb_easy(**p2))
-
-        # clearance hole
-        p3 = copy.deepcopy(kwargs)
-        p3["pos"] = [x-11, y, z]
-        p3["shape"] = "oobb_hole"
-        p3["radius_name"] = "m6" 
-        #p3["m"] = "#"       
-        objects.extend(ob.oobb_easy(**p3))
-
-        # mounting holes
-        poss = [-20, 8.5, thickness], [-20, -8.5, thickness] #, [12, 0, thickness]
-        for pos in poss:
-            p4 = copy.deepcopy(kwargs)
-            p4["pos"] = [x+pos[0], y+pos[1], z+pos[2]+screw_lift]
-            p4["shape"] = "oobb_screw_countersunk"
-            p4["radius_name"] = "m3"
-            p4["include_nut"] = False
-            p4["depth"] = 25
-            p4["top_clearance"] = True
-            objects.extend(ob.oobb_easy(**p4))
-
-        # rear clearance cubes
-        p5 = copy.deepcopy(kwargs)
-        height = 30
-        width = 12
-        p5["pos"] = [x-31-height/2-9.5, y-width/2, z]
-        p5["shape"] = "cube"
-        p5["size"] = [height, width, 2]
-        #p5["m"] = "#"
-        objects.append(ob.oobb_easy(**p5))
-        p5 = copy.deepcopy(kwargs)
-        height = 18
-        width = 8
-        p5["pos"] = [x-45-height/2, y-width/2, z]
-        p5["shape"] = "cube"
-        p5["size"] = [height, width, 2]
-        #p5["m"] = "#"
-        objects.append(ob.oobb_easy(**p5))
-
-        # hole escape hole
-        p5 = copy.deepcopy(kwargs)
-        p5["pos"] = [x-29.569, y, z]
-        p5["shape"] = "oobb_cube_center"
-        p5["size"] = [8, 6, 20]
-        #p5["m"] = ""
-        objects.append(ob.oobb_easy(**p5))
-
-        #main_cube
-        p3 = copy.deepcopy(kwargs)
-        p3["shape"] = "oobb_cube_center"
-        width = 65
-        height = 22            
-        depth = 19
-        if clearance == "":
-            clearance = 0
-        p3["size"] = [width + clearance, height + clearance, depth]
-        pos1 = copy.deepcopy(pos_original)        
-        pos1[0] += -width/2 + 11.35
-        pos1[2] += -depth
-        p3["pos"] = pos1
-        
-        
-        #p3["m"] = "#"
-        objects.append(ob.oobb_easy(**p3))
+# def get_oobb_motor_gearmotor_tt_motor_01(**kwargs):
+#     return get_oobb_motor_gearmotor_01(**kwargs)
 
 
-        return objects
-    elif part == "shaft":
-        objects = []
-        pos = kwargs.get("pos", [0, 0, 0])
-        depth = kwargs.get("depth", 6)
-
-        shaft_dia = 5.5 - 0.5
-        shaft_height = (3.75+.1) - 0.5
-
-        p3 = copy.deepcopy(kwargs)
-        p3["shape"] = "oobb_cube_center"
-        dep = depth
-        if "bottom" in clearance:
-            dep = 100
-        p3["size"] = [shaft_dia + radius_extra, shaft_height + radius_extra, dep]
-
-        pos1 = copy.deepcopy(pos)
-        pos1[2] += -dep
-        p3["pos"] = pos1
-        #p3["m"] = "#"
-        objects.append(ob.oobb_easy(**p3))
-
-        #add screw hole 2d5
-        p3 = copy.deepcopy(kwargs)
-        p3["shape"] = "oobb_screw_self_tapping"
-        p3["radius_name"] = "m2"
-        p3["clearance"] = ["top"]
-        p3["depth"] = 12
-        pos1 = copy.deepcopy(pos)
-        pos1[2] += 2
-        p3["pos"] = pos1
-        #p3["m"] = "#"  
-        objects.append(ob.oobb_easy(**p3))
-
-
-        return objects
 
 
 def get_oobb_motor_servo_micro_01(**kwargs):
@@ -1863,7 +1740,7 @@ def get_oobb_hole(**kwargs):
     try:
         depth = kwargs["depth"]
     except:
-        depth = 100
+        depth = 200
         try:
             kwargs["pos"][2] = pos[2] - depth / 2
         except:
@@ -2309,17 +2186,17 @@ def get_oobb_standoff(loose=False, hole=False, **kwargs):
 
 
 # hv
-def get_oobb_wire_higher_voltage(**kwargs):
+def get_oobb_wire_higher_voltage_old(**kwargs):
     kwargs["num_pins"] = 2
     kwargs.update({"polarized": True})
     return get_oobb_wire_generic(**kwargs)
 # i2c
-def get_oobb_wire_i2c(**kwargs):
+def get_oobb_wire_i2c_old(**kwargs):
     kwargs["num_pins"] = 4
     kwargs.update({"polarized": True})
     return get_oobb_wire_generic(**kwargs)
 
-def get_oobb_wire_motor(**kwargs):
+def get_oobb_wire_motor_old(**kwargs):
     kwargs["num_pins"] = 2
     kwargs.update({"polarized": False})
     return get_oobb_wire_generic(**kwargs)
@@ -2329,7 +2206,7 @@ def get_oobb_wire_motor(**kwargs):
 # 2 wire unpolarized 
 
 # space
-def get_oobb_wire_spacer(**kwargs):
+def get_oobb_wire_spacer_old(**kwargs):
     pos = kwargs.get("pos", [0, 0, 0])    
     kwargs.update({"polarized": False})
     depth = kwargs.get("depth", 3)
@@ -2365,7 +2242,7 @@ def get_oobb_wire_spacer(**kwargs):
     return return_value
 
 
-def get_oobb_wire_spacer_long(**kwargs):
+def get_oobb_wire_spacer_long_old(**kwargs):
     pos = kwargs.get("pos", [0, 0, 0])    
     kwargs.update({"polarized": False})
     depth = kwargs.get("depth", 3)
@@ -2400,7 +2277,7 @@ def get_oobb_wire_spacer_long(**kwargs):
 
     return return_value
 
-def get_oobb_wire_spacer_u(**kwargs):
+def get_oobb_wire_spacer_u_old(**kwargs):
     pos = kwargs.get("pos", [0, 0, 0])    
     kwargs.update({"polarized": False})
     depth = kwargs.get("depth", 3)

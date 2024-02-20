@@ -122,6 +122,7 @@
                 0
             ]
         ],
+        "screws": false,
         "shape": "oobb_plate",
         "depth": 6,
         "extra_mm": true,
@@ -254,6 +255,7 @@
                 0
             ]
         ],
+        "screws": false,
         "shape": "oobb_holes",
         "holes": "single",
         "radius_name": "m6",
@@ -444,6 +446,7 @@
                 0
             ]
         ],
+        "screws": false,
         "shape": "oobb_holes",
         "radius_name": "m3",
         "holes": "single",
@@ -618,6 +621,7 @@
                 0
             ]
         ],
+        "screws": false,
         "shape": "oobb_screw_socket_cap",
         "radius_name": "m3",
         "depth": 26,
@@ -755,11 +759,17 @@
                 0
             ]
         ],
+        "screws": false,
         "shape": "oobb_motor_stepper_nema_17",
         "overhang": true,
         "pos": [
             0,
             0,
+            6
+        ],
+        "rot": [
+            0,
+            180,
             0
         ]
     },
@@ -768,12 +778,16 @@
         "extra": "motor_tt_01",
         "width": 6,
         "height": 3,
-        "thickness": 12,
+        "thickness": 16,
         "bearing": "6705",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
         "pos": [
             8.0,
             -18.0,
-            10.5
+            13.0
         ],
         "shape": "oobb_screw_countersunk",
         "rot": [
@@ -781,7 +795,7 @@
             0,
             0
         ],
-        "depth": 12,
+        "depth": 16,
         "radius_name": "m3",
         "nut": true,
         "overhang": true
@@ -791,12 +805,16 @@
         "extra": "motor_tt_01",
         "width": 6,
         "height": 3,
-        "thickness": 12,
+        "thickness": 16,
         "bearing": "6705",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
         "pos": [
             -8.0,
             18.0,
-            10.5
+            13.0
         ],
         "shape": "oobb_screw_countersunk",
         "rot": [
@@ -804,7 +822,7 @@
             0,
             0
         ],
-        "depth": 12,
+        "depth": 16,
         "radius_name": "m3",
         "nut": true,
         "overhang": true
@@ -814,12 +832,16 @@
         "extra": "motor_tt_01",
         "width": 6,
         "height": 3,
-        "thickness": 12,
+        "thickness": 16,
         "bearing": "6705",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
         "pos": [
             -8.0,
             -18.0,
-            -1.5
+            -3.0
         ],
         "shape": "oobb_screw_countersunk",
         "rot": [
@@ -827,7 +849,7 @@
             180,
             0
         ],
-        "depth": 12,
+        "depth": 16,
         "radius_name": "m3",
         "nut": true,
         "overhang": true
@@ -837,12 +859,16 @@
         "extra": "motor_tt_01",
         "width": 6,
         "height": 3,
-        "thickness": 12,
+        "thickness": 16,
         "bearing": "6705",
+        "clearance": [
+            "top",
+            "bottom"
+        ],
         "pos": [
             8.0,
             18.0,
-            -1.5
+            -3.0
         ],
         "shape": "oobb_screw_countersunk",
         "rot": [
@@ -850,7 +876,7 @@
             180,
             0
         ],
-        "depth": 12,
+        "depth": 16,
         "radius_name": "m3",
         "nut": true,
         "overhang": true

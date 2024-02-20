@@ -1,0 +1,219 @@
+components:
+-   -   depth: 3
+        h: 3
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -1.5
+        r: 7.0
+        radius: 7.0
+        shape: cylinder
+        type: p
+    -   depth: 3
+        h: 3
+        inclusion: 3dpr
+        pos: *id001
+        r: 7.0
+        radius: 7.0
+        shape: cylinder
+        type: p
+    -   depth: 3
+        h: 3
+        inclusion: 'true'
+        pos: *id001
+        r: 7.0
+        radius: 7.0
+        shape: cylinder
+        type: p
+-   -   depth: 6
+        h: 6
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - -1.5
+        r: 3.0
+        shape: cylinder
+        type: p
+    -   depth: 6
+        h: 6
+        inclusion: 3dpr
+        pos: *id002
+        r: 2.85
+        shape: cylinder
+        type: p
+    -   depth: 6
+        h: 6
+        inclusion: 'true'
+        pos: *id002
+        r: 3.0
+        shape: cylinder
+        type: p
+-   -   h: 200
+        inclusion: laser
+        pos: &id003
+        - 0
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 3dpr
+        pos: *id003
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 'true'
+        pos: *id003
+        r: 1.5
+        shape: cylinder
+        type: n
+-   -   objects:
+        -   -   depth: 6
+                h: 1.7
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+        -   -   depth: 6
+                h: 6
+                inclusion: laser
+                m: ''
+                pos: &id004
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 6
+                h: 6
+                inclusion: 3dpr
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 6
+                h: 6
+                inclusion: 'true'
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        -   -   depth: 6
+                h: 1.9
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+        -   -   depth: 6
+                h: 6
+                inclusion: laser
+                m: ''
+                pos: &id005
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   depth: 6
+                h: 6
+                inclusion: 3dpr
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   depth: 6
+                h: 6
+                inclusion: 'true'
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+        -   -   depth: 6
+                h: 1.7
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   depth: 6
+                h: 6
+                inclusion: laser
+                m: ''
+                pos: &id006
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 6
+                h: 6
+                inclusion: 3dpr
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 6
+                h: 6
+                inclusion: 'true'
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 0
+        - 0
+        - -1.5
+        rot:
+        - 0
+        - 180
+        - 0
+        type: rotation
+        typetype: n
+components_objects: []
+components_string: []
+description: shaft 0x0x3
+extra: countersunk
+folder: things/oobb_shaft_03_ex_countersunk
+id: oobb_shaft_03_ex_countersunk
+thickness: 3
+thickness_mm: 3
+type: shaft

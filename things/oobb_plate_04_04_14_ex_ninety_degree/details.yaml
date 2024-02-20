@@ -1,0 +1,2856 @@
+components:
+-   -   -   center: true
+            color: gray
+            comment: plate main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT plate main
+            type: p
+-   -   depth: 14
+        extra: ninety_degree
+        height: 4
+        pos:
+        - 0
+        - 0
+        - -7.0
+        r: 2.5
+        shape: rounded_rectangle
+        size:
+        - 59
+        - 59
+        - 14
+        type: p
+        width: 4
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -7.5
+        - -22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -7.5
+        - -7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -7.5
+        - 7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -7.5
+        - 22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 22.5
+        - -22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 22.5
+        - -7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 22.5
+        - 7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 22.5
+        - 22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -22.5
+        - -22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -22.5
+        - -7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -22.5
+        - 7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -22.5
+        - 22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 7.5
+        - -22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 7.5
+        - -7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 7.5
+        - 7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.25
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 3.0
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 7.5
+        - 22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - -22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - -7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - 7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - 22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - -22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - -7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - 7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - 22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - -22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - -7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - 7.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - 22.5
+        - 0.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - -22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - -7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - 7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - -15.0
+        - 22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - -22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - -7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - 7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 0.0
+        - 22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - -22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - -7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - 7.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.8
+            shape: cylinder
+            type: positive
+            width: 4
+        -   depth: 250
+            extra: ninety_degree
+            h: 250
+            height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -125.0
+            r: 1.5
+            shape: cylinder
+            type: positive
+            width: 4
+        pos:
+        - 15.0
+        - 22.5
+        - 0.0
+        rot:
+        - 90
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+components_objects:
+-   depth: 14
+    extra: ninety_degree
+    height: 4
+    pos:
+    - 0
+    - 0
+    - -7.0
+    r: 2.5
+    shape: oobb_plate
+    thickness: 14
+    type: p
+    width: 4
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -7.5
+    - -22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -7.5
+    - -7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -7.5
+    - 7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -7.5
+    - 22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 22.5
+    - -22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 22.5
+    - -7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 22.5
+    - 7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 22.5
+    - 22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -22.5
+    - -22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -22.5
+    - -7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -22.5
+    - 7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -22.5
+    - 22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 7.5
+    - -22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 7.5
+    - -7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 7.5
+    - 7.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 7.5
+    - 22.5
+    - 0.0
+    radius_name: m6
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - -22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - -7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - 7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - 22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - -22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - -7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - 7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - 22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - -22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - -7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - 7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - 22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - -22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - -7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - 7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - -15.0
+    - 22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - -22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - -7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - 7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 0.0
+    - 22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - -22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - -7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - 7.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+-   both_holes: true
+    depth: 250
+    extra: ninety_degree
+    height: 4
+    holes: single
+    pos:
+    - 15.0
+    - 22.5
+    - 0.0
+    radius_name: m3
+    rot:
+    - 90
+    - 0
+    - 0
+    shape: oobb_hole_new
+    thickness: 14
+    type: n
+    width: 4
+    zz: middle
+components_string:
+- oobb_plate_shape_p_type_14_depth_0_0_-7.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_2.5_r
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-7.5_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-7.5_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-7.5_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-7.5_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_22.5_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_22.5_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_22.5_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_22.5_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-22.5_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-22.5_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-22.5_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_-22.5_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_7.5_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_7.5_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_7.5_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m6_radius_name_250_depth_7.5_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_0_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_-15.0_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_0.0_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_-22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_-7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_7.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+- oobb_hole_new_shape_n_type_m3_radius_name_250_depth_15.0_22.5_0.0_pos_4_width_4_height_14_thickness_ninety_degree_extra_true_both_holes_single_holes_90_0_0_rot_middle_zz
+description: plate 4x4x14
+extra: ninety_degree
+folder: things/oobb_plate_04_04_14_ex_ninety_degree
+height: 4
+height_mm: 59
+id: oobb_plate_04_04_14_ex_ninety_degree
+thickness: 14
+thickness_mm: 14
+type: plate
+width: 4
+width_mm: 59

@@ -42,8 +42,8 @@ difference() {
 		}
 	}
 	union() {
-		translate(v = [0, 0, 0]) {
-			rotate(a = [0, 0, 0]) {
+		translate(v = [0, 0, 3]) {
+			rotate(a = [0, 180, 0]) {
 				difference() {
 					union() {
 						translate(v = [15.5000000000, 15.5000000000, 3]) {
@@ -131,7 +131,7 @@ difference() {
 							}
 						}
 						translate(v = [0, 0, -125.0000000000]) {
-							cylinder(h = 250, r = 13.0000000000);
+							cylinder(h = 250, r = 14.5000000000);
 						}
 					}
 					union();

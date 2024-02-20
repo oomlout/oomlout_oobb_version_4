@@ -1,0 +1,82 @@
+components:
+-   -   objects:
+        -   height: 3.2
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 4.039
+            shape: polyg
+            sides: 6
+            type: positive
+        -   height: 3.2
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 4.2698
+            shape: polyg
+            sides: 6
+            type: positive
+        -   height: 3.2
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 4.039
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   depth: 100
+        h: 100
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 2.0
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 2.25
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 2.0
+        shape: cylinder
+        type: n
+        z: -10
+components_objects: []
+components_string: []
+depth_mm: 3.2
+description: nut m4x3.2
+folder: things/hardware_nut_m4
+height_mm: 3.5
+id: hardware_nut_m4
+radius_name: m4
+type: nut
+width_mm: 4.039

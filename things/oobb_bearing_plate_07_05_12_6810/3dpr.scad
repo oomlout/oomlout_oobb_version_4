@@ -1349,14 +1349,14 @@ difference() {
 							union() {
 								difference() {
 									cylinder(h = 6.8000000000, r = 32.7000000000);
-									cylinder(h = 6.8000000000, r = 25.2000000000);
+									cylinder(h = 6.8000000000, r = 25.1000000000);
 								}
 								difference() {
 									translate(v = [0, 0, -50]) {
-										cylinder(h = 100, r = 29.4500000000);
+										cylinder(h = 100, r = 29.4000000000);
 									}
 									translate(v = [0, 0, -50]) {
-										cylinder(h = 100, r = 28.4500000000);
+										cylinder(h = 100, r = 28.4000000000);
 									}
 								}
 							}
@@ -3076,14 +3076,14 @@ difference() {
 			union() {
 				difference() {
 					cylinder(h = 6.8000000000, r = 32.7000000000);
-					cylinder(h = 6.8000000000, r = 25.2000000000);
+					cylinder(h = 6.8000000000, r = 25.1000000000);
 				}
 				difference() {
 					translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 29.4500000000);
+						cylinder(h = 100, r = 29.4000000000);
 					}
 					translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 28.4500000000);
+						cylinder(h = 100, r = 28.4000000000);
 					}
 				}
 			}

@@ -1,0 +1,118 @@
+components:
+-   -   h: 200
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 0
+        - 7.5
+        - -100.0
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+-   -   h: 200
+        inclusion: laser
+        m: ''
+        pos: &id002
+        - 7.5
+        - 0
+        - -100.0
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id002
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id002
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+-   -   h: 200
+        inclusion: laser
+        m: ''
+        pos: &id003
+        - -7.5
+        - 0
+        - -100.0
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id003
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id003
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+-   -   h: 200
+        inclusion: laser
+        m: ''
+        pos: &id004
+        - 0
+        - -7.5
+        - -100.0
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 3dpr
+        m: ''
+        pos: *id004
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+    -   h: 200
+        inclusion: 'true'
+        m: ''
+        pos: *id004
+        r: 3.5
+        radius: 3.5
+        shape: cylinder
+        type: n
+components_objects: []
+components_string: []
+description: shaft coupler 0x0x9
+diameter: 2
+folder: things/oobb_shaft_coupler_02_09
+id: oobb_shaft_coupler_02_09
+thickness: 9
+thickness_mm: 9
+type: shaft_coupler

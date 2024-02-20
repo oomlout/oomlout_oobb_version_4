@@ -1,0 +1,308 @@
+components:
+-   -   -   depth: 18
+            height: 5
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 74
+            - 74
+            - 18
+            type: p
+            width: 5
+-   -   -   -   m: ''
+                pos:
+                - -37.0
+                - 31.0
+                - 0
+                shape: cube
+                size:
+                - 6
+                - 6
+                - 18
+                type: p
+-   -   -   -   m: ''
+                pos:
+                - -36.0
+                - 36.0
+                - 0.5
+                shape: cube
+                size:
+                - 32
+                - 1
+                - 16
+                type: n
+-   -   -   objects:
+            -   depth: 250
+                h: 250
+                inclusion: laser
+                m: ''
+                r: 3.0
+                rotZ: 0
+                shape: slot
+                type: positive
+                w: 15
+            -   depth: 250
+                h: 250
+                inclusion: 3dpr
+                m: ''
+                r: 3.25
+                rotZ: 0
+                shape: slot
+                type: positive
+                w: 15
+            -   depth: 250
+                h: 250
+                inclusion: 'true'
+                m: ''
+                r: 3.0
+                rotZ: 0
+                shape: slot
+                type: positive
+                w: 15
+            pos:
+            - -37.5
+            - -30.0
+            - -250.0
+            rot:
+            - 0
+            - 0
+            - 0
+            type: rotation
+            typetype: n
+-   -   -   objects:
+            -   depth: 250
+                h: 250
+                inclusion: laser
+                m: ''
+                r: 3.0
+                rotZ: 0
+                shape: slot
+                type: positive
+                w: 15
+            -   depth: 250
+                h: 250
+                inclusion: 3dpr
+                m: ''
+                r: 3.25
+                rotZ: 0
+                shape: slot
+                type: positive
+                w: 15
+            -   depth: 250
+                h: 250
+                inclusion: 'true'
+                m: ''
+                r: 3.0
+                rotZ: 0
+                shape: slot
+                type: positive
+                w: 15
+            pos:
+            - -37.5
+            - 30.0
+            - -250.0
+            rot:
+            - 0
+            - 0
+            - 0
+            type: rotation
+            typetype: n
+-   -   -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id001
+                - 30.0
+                - -30.0
+                - -100.0
+                r: 3.0
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id001
+                r: 3.25
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id001
+                r: 3.0
+                shape: cylinder
+                type: negative
+-   -   -   depth: 20.4
+            h: 20.4
+            height: 5
+            inclusion: laser
+            m: ''
+            pos: &id002
+            - 0
+            - 0
+            - 0.5999999999999996
+            r: 34.0
+            radius: 34.0
+            shape: cylinder
+            type: n
+        -   depth: 20.4
+            h: 20.4
+            height: 5
+            inclusion: 3dpr
+            m: ''
+            pos: *id002
+            r: 34.0
+            radius: 34.0
+            shape: cylinder
+            type: n
+        -   depth: 20.4
+            h: 20.4
+            height: 5
+            inclusion: 'true'
+            m: ''
+            pos: *id002
+            r: 34.0
+            radius: 34.0
+            shape: cylinder
+            type: n
+-   -   -   depth: 18
+            h: 18
+            inclusion: laser
+            m: ''
+            pos: &id003
+            - 0
+            - 0
+            - -9.0
+            r: 6.5
+            radius: 6.5
+            shape: cylinder
+            type: n
+        -   depth: 18
+            h: 18
+            inclusion: 3dpr
+            m: ''
+            pos: *id003
+            r: 6.5
+            radius: 6.5
+            shape: cylinder
+            type: n
+        -   depth: 18
+            h: 18
+            inclusion: 'true'
+            m: ''
+            pos: *id003
+            r: 6.5
+            radius: 6.5
+            shape: cylinder
+            type: n
+-   -   -   -   m: ''
+                pos:
+                - 0.0
+                - 32.5
+                - 0.6
+                shape: cube
+                size:
+                - 37.0
+                - 1.5
+                - 20.4
+                type: n
+-   -   -   -   m: ''
+                pos:
+                - 27.0
+                - 32.5
+                - 0.6
+                shape: cube
+                size:
+                - 10
+                - 4.5
+                - 20.4
+                type: n
+-   -   -   -   m: ''
+                pos:
+                - 16.0
+                - 32.5
+                - 16.5
+                shape: cube
+                size:
+                - 21
+                - 4.5
+                - 1.5
+                type: n
+-   -   -   -   m: ''
+                pos:
+                - 13.25
+                - 37.75
+                - 0.6
+                rotZ: -45
+                shape: cube
+                size:
+                - 7.5
+                - 1.5
+                - 20.4
+                type: n
+-   -   -   objects:
+            -   depth: 18
+                h: 18
+                inclusion: laser
+                m: '#'
+                r: 1.0
+                radius: 1.0
+                shape: slot
+                type: positive
+                w: 5
+            -   depth: 18
+                h: 18
+                inclusion: 3dpr
+                m: '#'
+                r: 1.0
+                radius: 1.0
+                shape: slot
+                type: positive
+                w: 5
+            -   depth: 18
+                h: 18
+                inclusion: 'true'
+                m: '#'
+                r: 1.0
+                radius: 1.0
+                shape: slot
+                type: positive
+                w: 5
+            pos:
+            - 16.311
+            - 31.5
+            - -9.0
+            rot:
+            - 0
+            - 0
+            - 0
+            type: rotation
+            typetype: pp
+-   -   -   -   m: ''
+                pos:
+                - 7.061
+                - 30.5
+                - 0.6
+                shape: cube
+                size:
+                - 7.5
+                - 2
+                - 17.4
+                type: n
+components_objects: []
+components_string: []
+description: smd magazine 5x5x18
+extra: 1.5
+folder: things/oobb_smd_magazine_05_05_18_nm_16_mm_tape_width_1_5_mm_tape_thickness_ex_1d5
+height: 5
+height_mm: 74
+id: oobb_smd_magazine_05_05_18_nm_16_mm_tape_width_1_5_mm_tape_thickness_ex_1d5
+name: 16_mm_tape_width_1_5_mm_tape_thickness
+thickness: 18
+thickness_mm: 18
+type: smd_magazine
+width: 5
+width_mm: 74

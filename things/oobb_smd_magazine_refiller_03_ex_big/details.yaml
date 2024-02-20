@@ -1,0 +1,177 @@
+components:
+-   -   -   depth: 6
+            h: 6
+            inclusion: laser
+            m: ''
+            pos: &id001
+            - 0
+            - 0
+            - 0.0
+            r: 22.0
+            radius: 22.0
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 3dpr
+            m: ''
+            pos: *id001
+            r: 22.0
+            radius: 22.0
+            shape: cylinder
+            type: p
+        -   depth: 6
+            h: 6
+            inclusion: 'true'
+            m: ''
+            pos: *id001
+            r: 22.0
+            radius: 22.0
+            shape: cylinder
+            type: p
+-   -   -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id002
+                - -15.0
+                - 0.0
+                - -100.0
+                r: 3.0
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id002
+                r: 3.25
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id002
+                r: 3.0
+                shape: cylinder
+                type: negative
+-   -   -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id003
+                - 0.0
+                - -15.0
+                - -100.0
+                r: 3.0
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id003
+                r: 3.25
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id003
+                r: 3.0
+                shape: cylinder
+                type: negative
+-   -   -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id004
+                - 0.0
+                - 15.0
+                - -100.0
+                r: 3.0
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id004
+                r: 3.25
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id004
+                r: 3.0
+                shape: cylinder
+                type: negative
+-   -   -   -   h: 200
+                inclusion: laser
+                m: ''
+                pos: &id005
+                - 15.0
+                - 0.0
+                - -100.0
+                r: 3.0
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 3dpr
+                m: ''
+                pos: *id005
+                r: 3.25
+                shape: cylinder
+                type: negative
+            -   h: 200
+                inclusion: 'true'
+                m: ''
+                pos: *id005
+                r: 3.0
+                shape: cylinder
+                type: negative
+-   -   -   depth: 20
+            h: 20
+            inclusion: laser
+            m: ''
+            pos: &id006
+            - 0
+            - 0
+            - 3.0
+            r: 14.5
+            radius: 14.5
+            shape: cylinder
+            type: p
+        -   depth: 20
+            h: 20
+            inclusion: 3dpr
+            m: ''
+            pos: *id006
+            r: 14.5
+            radius: 14.5
+            shape: cylinder
+            type: p
+        -   depth: 20
+            h: 20
+            inclusion: 'true'
+            m: ''
+            pos: *id006
+            r: 14.5
+            radius: 14.5
+            shape: cylinder
+            type: p
+-   -   -   -   m: ''
+                pos:
+                - -27.0
+                - -2.25
+                - 6
+                shape: cube
+                size:
+                - 54
+                - 4.5
+                - 20
+                type: n
+components_objects: []
+components_string: []
+description: smd magazine refiller 3x0x0
+extra: big
+folder: things/oobb_smd_magazine_refiller_03_ex_big
+id: oobb_smd_magazine_refiller_03_ex_big
+type: smd_magazine_refiller
+width: 3
+width_mm: 44

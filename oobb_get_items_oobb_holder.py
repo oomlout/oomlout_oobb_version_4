@@ -505,6 +505,9 @@ def get_holder_motor_stepper_nema_17_flat_shifted(**kwargs):
 def get_holder_motor_stepper_nema_17_flat(**kwargs):
     width = kwargs.get("width", 1)
     pos = kwargs.get("pos", [0, 0, 0])
+    thickness = kwargs.get("thickness", 3)  
+    
+    
 
     p3 = copy.deepcopy(kwargs)
     
@@ -548,10 +551,32 @@ def get_holder_motor_stepper_nema_17_flat(**kwargs):
     connecting_screws = []
     #connecting_screws.append([0,0,0])
     p3["connecting_screws"] = connecting_screws
-    
     return_value = get_holder_motor_generic(**p3)
 
+    thickness_extra = 20
+
+    # add bearing block screws
+    p3 = copy.deepcopy(kwargs)
+    p3.pop("size","")
+    #p3["m"] = "#"
+    p3["thickness"] = 12
+    p3["bearing"] = "6705"
+    pos1 = copy.deepcopy(pos)    
+    if thickness == 3:
+        pos1[2] = pos1[2] + 1.5
+    elif thickness == 6:
+        pos1[2] = pos1[2] - 2.33
+    elif thickness == 9:
+        pos1[2] = pos1[2] -1.8
+    p3["pos"] = pos1 
+    
+
+    p3["thickness"] = thickness + thickness_extra
     thing = return_value
+
+    get_bearing_plate_connecting_screw_perimeter(thing,**p3)
+
+
 
     return thing
    
@@ -560,7 +585,7 @@ def get_holder_motor_stepper_nema_17_flat(**kwargs):
 def get_holder_motor_tt_01(**kwargs):
     width = kwargs.get("width", 1)
     pos = kwargs.get("pos", [0, 0, 0])
-
+    thickness = kwargs.get("thickness", 3)
     p3 = copy.deepcopy(kwargs)
     
     #pos_plate
@@ -605,6 +630,7 @@ def get_holder_motor_tt_01(**kwargs):
     connecting_screws = []
     connecting_screws.append([0,0,0])
     p3["connecting_screws"] = connecting_screws
+    p3["screws"] = False
     
     return_value = get_holder_motor_generic(**p3)
 
@@ -614,10 +640,12 @@ def get_holder_motor_tt_01(**kwargs):
     p3 = copy.deepcopy(kwargs)
     p3.pop("size","")
     #p3["m"] = "#"
-    p3["thickness"] = 12
+    dep = 16
+    p3["thickness"] = dep
     p3["bearing"] = "6705"
+    p3["clearance"] = ["top","bottom"]
     pos1 = copy.deepcopy(pos)
-    pos1[2] = pos1[2] + 1.5
+    pos1[2] += dep/2 - thickness / 2 + 2 # to make 16 mm screws work
     p3["pos"] = pos1
 
     get_bearing_plate_connecting_screw_perimeter(thing,**p3)
@@ -764,9 +792,13 @@ def get_holder_motor_generic(**kwargs):
     pos1 = copy.deepcopy(pos_item)
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "n" 
-    p3["shape"] = f"oobb_motor_stepper_nema_17"  
+    p3["shape"] = f"oobb_{extra}"  
     p3["overhang"] = True
+    pos1[2] += thickness
+    pos1 = [0,0,0]
     p3["pos"] = pos1
+
+    p3["rot"] = [0,0,0]
     #p3["part"] = "shaft"
     #p3["m"] = "#"
     oobb_base.append_full(thing, **p3)

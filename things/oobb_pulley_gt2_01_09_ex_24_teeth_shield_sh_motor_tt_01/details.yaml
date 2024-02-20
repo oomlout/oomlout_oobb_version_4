@@ -1,0 +1,420 @@
+components:
+-   -   -   center: true
+            color: gray
+            comment: gear main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT gear main
+            type: p
+-   -   depth: 11.5
+        extra: 24_teeth_shield
+        number_of_teeth: 24
+        pos:
+        - 0
+        - 0
+        - -5.75
+        shape: pulley_gt2
+        type: p
+-   -   depth: 1
+        extra: 24_teeth_shield
+        h: 1
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -5.75
+        r: 8.643312101910828
+        radius: 8.643312101910828
+        shape: cylinder
+        type: p
+    -   depth: 1
+        extra: 24_teeth_shield
+        h: 1
+        inclusion: 3dpr
+        pos: *id001
+        r: 8.643312101910828
+        radius: 8.643312101910828
+        shape: cylinder
+        type: p
+    -   depth: 1
+        extra: 24_teeth_shield
+        h: 1
+        inclusion: 'true'
+        pos: *id001
+        r: 8.643312101910828
+        radius: 8.643312101910828
+        shape: cylinder
+        type: p
+-   -   depth: 1
+        extra: 24_teeth_shield
+        h: 1
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 4.75
+        r: 8.643312101910828
+        radius: 8.643312101910828
+        shape: cylinder
+        type: p
+    -   depth: 1
+        extra: 24_teeth_shield
+        h: 1
+        inclusion: 3dpr
+        pos: *id002
+        r: 8.643312101910828
+        radius: 8.643312101910828
+        shape: cylinder
+        type: p
+    -   depth: 1
+        extra: 24_teeth_shield
+        h: 1
+        inclusion: 'true'
+        pos: *id002
+        r: 8.643312101910828
+        radius: 8.643312101910828
+        shape: cylinder
+        type: p
+-   -   -   center: true
+            color: gray
+            comment: holes main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT holes main
+            type: n
+- []
+-   -   -   -   -   m: '#'
+                    pos:
+                    - -2.7
+                    - -1.875
+                    - -6
+                    shape: cube
+                    size:
+                    - 5.4
+                    - 3.75
+                    - 6
+                    type: n
+    -   -   -   objects:
+                -   -   -   clearance:
+                            - top
+                            depth: 12
+                            h: 1.25
+                            inclusion: laser
+                            m: '#'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id003
+                        - top
+                        depth: 12
+                        h: 12
+                        inclusion: laser
+                        m: '#'
+                        pos: &id004
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id003
+                        depth: 12
+                        h: 12
+                        inclusion: 3dpr
+                        m: '#'
+                        pos: *id004
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id003
+                        depth: 12
+                        h: 12
+                        inclusion: 'true'
+                        m: '#'
+                        pos: *id004
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                -   -   -   clearance:
+                            - top
+                            depth: 12
+                            h: 52.5
+                            inclusion: 3dpr
+                            m: '#'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.75
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id005
+                        - top
+                        depth: 12
+                        h: 12
+                        inclusion: laser
+                        m: '#'
+                        pos: &id006
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id005
+                        depth: 12
+                        h: 12
+                        inclusion: 3dpr
+                        m: '#'
+                        pos: *id006
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id005
+                        depth: 12
+                        h: 12
+                        inclusion: 'true'
+                        m: '#'
+                        pos: *id006
+                        r: 1.0
+                        radius: 1.0
+                        shape: cylinder
+                        type: positive
+                -   -   -   -   -   clearance:
+                                    - top
+                                    depth: 12
+                                    inclusion: 3dpr
+                                    m: '#'
+                                    pos:
+                                    - -1.25
+                                    - -2.75
+                                    - -0.3
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 5.5
+                                    - 0.3
+                                    type: positive
+                    -   -   -   -   clearance:
+                                    - top
+                                    depth: 12
+                                    inclusion: 3dpr
+                                    m: '#'
+                                    pos:
+                                    - -1.25
+                                    - -1.25
+                                    - -0.6
+                                    rotX: 0
+                                    rotY: 0
+                                    rotZ: 0
+                                    shape: cube
+                                    size:
+                                    - 2.5
+                                    - 2.5
+                                    - 0.3
+                                    type: positive
+                -   -   -   clearance:
+                            - top
+                            depth: 12
+                            h: 1.3
+                            inclusion: 'true'
+                            m: '#'
+                            pos:
+                            - 0
+                            - 0
+                            - 0
+                            r: 2.5
+                            shape: cylinder
+                            type: positive
+                -   -   clearance: &id007
+                        - top
+                        depth: 12
+                        h: 12
+                        inclusion: laser
+                        m: '#'
+                        pos: &id008
+                        - 0
+                        - 0
+                        - -12.0
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id007
+                        depth: 12
+                        h: 12
+                        inclusion: 3dpr
+                        m: '#'
+                        pos: *id008
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                    -   clearance: *id007
+                        depth: 12
+                        h: 12
+                        inclusion: 'true'
+                        m: '#'
+                        pos: *id008
+                        r: 0.75
+                        radius: 0.75
+                        shape: cylinder
+                        type: positive
+                pos:
+                - 0
+                - 0
+                - 2
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: n
+-   -   extra: 24_teeth_shield
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+    -   extra: 24_teeth_shield
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+    -   extra: 24_teeth_shield
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+components_objects:
+-   depth: 11.5
+    diameter: 1
+    extra: 24_teeth_shield
+    number_of_teeth: 24
+    pos:
+    - 0
+    - 0
+    - -5.75
+    shaft: motor_tt_01
+    shape: pulley_gt2
+    thickness: 9
+    type: p
+-   depth: 1
+    diameter: 1
+    extra: 24_teeth_shield
+    pos:
+    - 0
+    - 0
+    - -5.25
+    radius: 8.643312101910828
+    shaft: motor_tt_01
+    shape: oobb_cylinder
+    thickness: 9
+    type: p
+-   depth: 1
+    diameter: 1
+    extra: 24_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 5.25
+    radius: 8.643312101910828
+    shaft: motor_tt_01
+    shape: oobb_cylinder
+    thickness: 9
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1
+    extra: 24_teeth_shield
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_holes
+    thickness: 9
+    type: n
+    width: 1
+-   diameter: 1
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_motor_tt_01
+    thickness: 9
+    type: n
+-   diameter: 1
+    extra: 24_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_slice
+    thickness: 9
+    type: n
+components_string:
+- pulley_gt2_shape_p_type_11.5_depth_0_0_-5.75_pos_9_thickness_24_teeth_shield_extra_motor_tt_01_shaft_1_diameter_24_number_of_teeth
+- oobb_cylinder_shape_p_type_1_depth_0_0_-5.25_pos_9_thickness_24_teeth_shield_extra_motor_tt_01_shaft_1_diameter_8.643312101910828_radius
+- oobb_cylinder_shape_p_type_1_depth_0_0_5.25_pos_9_thickness_24_teeth_shield_extra_motor_tt_01_shaft_1_diameter_8.643312101910828_radius
+- oobb_holes_shape_n_type_9_thickness_24_teeth_shield_extra_motor_tt_01_shaft_1_diameter_1_width_1_height_true_both_holes_true_circle_false_middle
+- oobb_motor_tt_01_shape_n_type_9_thickness_motor_tt_01_shaft_1_diameter_shaft_part
+- oobb_slice_shape_n_type_9_thickness_24_teeth_shield_extra_motor_tt_01_shaft_1_diameter
+description: pulley gt2 0x0x9
+diameter: 1
+extra: 24_teeth_shield
+folder: things/oobb_pulley_gt2_01_09_ex_24_teeth_shield_sh_motor_tt_01
+id: oobb_pulley_gt2_01_09_ex_24_teeth_shield_sh_motor_tt_01
+shaft: motor_tt_01
+thickness: 9
+thickness_mm: 9
+type: pulley_gt2

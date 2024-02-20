@@ -1,0 +1,58 @@
+bearing: '6704'
+components:
+-   -   depth: 2
+        h: 2
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -1.0
+        r: 12.0
+        shape: cylinder
+        type: p
+    -   depth: 2
+        h: 2
+        inclusion: 3dpr
+        pos: *id001
+        r: 12.2
+        shape: cylinder
+        type: p
+    -   depth: 2
+        h: 2
+        inclusion: 'true'
+        pos: *id001
+        r: 12.0
+        shape: cylinder
+        type: p
+-   -   depth: 2
+        h: 2
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - -1.0
+        r: 8.5
+        shape: cylinder
+        type: n
+    -   depth: 2
+        h: 2
+        inclusion: 3dpr
+        pos: *id002
+        r: 8.5
+        shape: cylinder
+        type: n
+    -   depth: 2
+        h: 2
+        inclusion: 'true'
+        pos: *id002
+        r: 8.5
+        shape: cylinder
+        type: n
+components_objects: []
+components_string: []
+description: bearing plate shim 0x0x2
+folder: things/oobb_bearing_plate_shim_02_6704
+id: oobb_bearing_plate_shim_02_6704
+thickness: 2
+thickness_mm: 2
+type: bearing_plate_shim

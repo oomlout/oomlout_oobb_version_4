@@ -1,0 +1,82 @@
+components:
+-   -   objects:
+        -   height: 4
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 4.616
+            shape: polyg
+            sides: 6
+            type: positive
+        -   height: 4
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 4.8468
+            shape: polyg
+            sides: 6
+            type: positive
+        -   height: 4
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - 0
+            r: 4.616
+            shape: polyg
+            sides: 6
+            type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   depth: 100
+        h: 100
+        inclusion: laser
+        m: ''
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 2.5
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 3dpr
+        m: ''
+        pos: *id001
+        r: 2.75
+        shape: cylinder
+        type: n
+        z: -10
+    -   depth: 100
+        h: 100
+        inclusion: 'true'
+        m: ''
+        pos: *id001
+        r: 2.5
+        shape: cylinder
+        type: n
+        z: -10
+components_objects: []
+components_string: []
+depth_mm: 4
+description: nut m5x4
+folder: things/hardware_nut_m5
+height_mm: 4.0
+id: hardware_nut_m5
+radius_name: m5
+type: nut
+width_mm: 4.616

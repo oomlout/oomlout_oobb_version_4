@@ -1,0 +1,3994 @@
+bearing: '6704'
+components:
+-   -   comment: bearing_plate_plate
+        depth: 12
+        h: 12
+        height: 12
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -6.0
+        r: 11.7
+        radius: 11.7
+        shape: cylinder
+        type: positive
+        width: 3
+    -   comment: bearing_plate_plate
+        depth: 12
+        h: 12
+        height: 12
+        inclusion: 3dpr
+        pos: *id001
+        r: 11.7
+        radius: 11.7
+        shape: cylinder
+        type: positive
+        width: 3
+    -   comment: bearing_plate_plate
+        depth: 12
+        h: 12
+        height: 12
+        inclusion: 'true'
+        pos: *id001
+        r: 11.7
+        radius: 11.7
+        shape: cylinder
+        type: positive
+        width: 3
+-   -   depth: 4
+        exclude_clearance: false
+        height: 3
+        id: 10.0
+        inclusion: laser
+        od: 13.5
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: bearing
+        type: negative
+        width: 3
+    -   depth: 4
+        exclude_clearance: false
+        height: 3
+        id: 10.0
+        inclusion: 'true'
+        od: 13.5
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: bearing
+        type: negative
+        width: 3
+    -   depth: 3.6
+        exclude_clearance: false
+        height: 3
+        id: 10.0
+        inclusion: 3dpr
+        od: 13.7
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: bearing
+        type: negative
+        width: 3
+-   -   h: 200
+        height: 3
+        inclusion: laser
+        pos: &id002
+        - 7.5
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 3dpr
+        pos: *id002
+        r: 1.8
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 'true'
+        pos: *id002
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+-   -   h: 200
+        height: 3
+        inclusion: laser
+        pos: &id003
+        - -7.5
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 3dpr
+        pos: *id003
+        r: 1.8
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 'true'
+        pos: *id003
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+-   -   h: 200
+        height: 3
+        inclusion: laser
+        pos: &id004
+        - 0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 3dpr
+        pos: *id004
+        r: 1.8
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 'true'
+        pos: *id004
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+-   -   h: 200
+        height: 3
+        inclusion: laser
+        pos: &id005
+        - 0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 3dpr
+        pos: *id005
+        r: 1.8
+        shape: cylinder
+        type: n
+        width: 3
+    -   h: 200
+        height: 3
+        inclusion: 'true'
+        pos: *id005
+        r: 1.5
+        shape: cylinder
+        type: n
+        width: 3
+-   -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id006
+            - -15.0
+            - -15.0
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id006
+            r: 3.25
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id006
+            r: 3.0
+            shape: cylinder
+            type: negative
+    -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id007
+            - -15.0
+            - 15.0
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id007
+            r: 3.25
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id007
+            r: 3.0
+            shape: cylinder
+            type: negative
+    -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id008
+            - 15.0
+            - -15.0
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id008
+            r: 3.25
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id008
+            r: 3.0
+            shape: cylinder
+            type: negative
+    -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id009
+            - 15.0
+            - 15.0
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id009
+            r: 3.25
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id009
+            r: 3.0
+            shape: cylinder
+            type: negative
+-   -   -   comment:
+            - shaft for n20 motor
+            depth: 250
+            height: 3
+            id: 2.75
+            pos:
+            - 0
+            - 0
+            - 125
+            r: 1.75
+            shape: d_shaft
+            type: n
+            width: 3
+-   -   objects:
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id010
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id010
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id010
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id011
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id011
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id011
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id012
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id012
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id012
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        pos:
+        - 18.0
+        - 0
+        - 6.0
+        rot:
+        - 0
+        - 180
+        - 30.0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id013
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id013
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id013
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id014
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id014
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id014
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id015
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id015
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id015
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        pos:
+        - -18.0
+        - 0
+        - 6.0
+        rot:
+        - 0
+        - 180
+        - 30.0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id016
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id016
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id016
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id017
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id017
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id017
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id018
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id018
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id018
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        pos:
+        - 0
+        - 18.0
+        - -6.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id019
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id019
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id019
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.9
+                height: 3
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id020
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id020
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id020
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        -   -   depth: 12
+                h: 1.7
+                height: 3
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   depth: 12
+                h: 12
+                height: 3
+                inclusion: laser
+                pos: &id021
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 3dpr
+                pos: *id021
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+            -   depth: 12
+                h: 12
+                height: 3
+                inclusion: 'true'
+                pos: *id021
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 3
+        -   -   objects:
+                -   height: 2.5
+                    inclusion: laser
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 3dpr
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.4619999999999997
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   height: 2.5
+                    inclusion: 'true'
+                    pos:
+                    - 0
+                    - 0
+                    - 0
+                    r: 3.1734999999999998
+                    shape: polyg
+                    sides: 6
+                    type: positive
+                    width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - -0.3
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - -0.6
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                -   -   -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -3.0
+                                        - 2.5
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 6.0
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                        -   -   -   -   height: 3
+                                        inclusion: 3dpr
+                                        pos:
+                                        - -1.8
+                                        - -1.8
+                                        - 2.8
+                                        rotX: 0
+                                        rotY: 0
+                                        rotZ: 0
+                                        shape: cube
+                                        size:
+                                        - 3.6
+                                        - 3.6
+                                        - 0.3
+                                        type: positive
+                                        width: 3
+                pos:
+                - 0
+                - 0
+                - -12.0
+                rot:
+                - 0
+                - 0
+                - 0
+                type: rotation
+                typetype: positive
+        pos:
+        - 0
+        - -18.0
+        - -6.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   comment: bearing_plate_slice
+        pos:
+        - -250.0
+        - -250.0
+        - -500
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+components_objects:
+-   bearing: '6704'
+    depth: 12
+    height: 12
+    mode: all
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius: 11.7
+    shaft: motor_n20
+    shape: oobb_cylinder
+    thickness: 12
+    type: positive
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_bearing
+    thickness: 12
+    type: negative
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 7.5
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_n20
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - -7.5
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_n20
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_n20
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_n20
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    holes: perimeter_miss_middle
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    shaft: motor_n20
+    shape: oobb_holes
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    height: 3
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_motor_n20
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 18.0
+    - 0
+    - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 30.0
+    shaft: motor_n20
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -18.0
+    - 0
+    - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 30.0
+    shaft: motor_n20
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - 18.0
+    - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   bearing: '6704'
+    depth: 12
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 0
+    - -18.0
+    - -6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_screw_countersunk
+    thickness: 12
+    type: n
+    width: 3
+-   mode: 3dpr
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_slice
+    type: n
+    zz: top
+components_string:
+- oobb_cylinder_shape_positive_type_12_depth_3_width_12_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_11.7_radius_all_mode
+- oobb_bearing_shape_negative_type_12_depth_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate
+- oobb_hole_shape_n_type_m3_radius_name_7.5_0_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_true_hole
+- oobb_hole_shape_n_type_m3_radius_name_-7.5_0_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_true_hole
+- oobb_hole_shape_n_type_m3_radius_name_0_7.5_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_true_hole
+- oobb_hole_shape_n_type_m3_radius_name_0_-7.5_0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_true_hole
+- oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_perimeter_miss_middle_holes
+- oobb_motor_n20_shape_n_type_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_shaft_part
+- oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_18.0_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_0_180_30.0_rot_true_nut_true_overhang
+- oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-18.0_0_6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_0_180_30.0_rot_true_nut_true_overhang
+- oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_18.0_-6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_0_0_0_rot_true_nut_true_overhang
+- oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_0_-18.0_-6.0_pos_3_width_3_height_12_thickness_6704_bearing_motor_n20_shaft_0_0_0_pos_plate_0_0_0_rot_true_nut_true_overhang
+- oobb_slice_shape_n_type_3dpr_mode_top_zz
+description: bearing plate 3x3x12
+folder: things/oobb_bearing_plate_03_03_12_6704_sh_motor_n20
+height: 3
+height_mm: 44
+id: oobb_bearing_plate_03_03_12_6704_sh_motor_n20
+shaft: motor_n20
+thickness: 12
+thickness_mm: 12
+type: bearing_plate
+width: 3
+width_mm: 44

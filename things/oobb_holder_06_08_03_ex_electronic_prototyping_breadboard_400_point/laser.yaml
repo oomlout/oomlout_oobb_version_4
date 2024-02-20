@@ -1,0 +1,71 @@
+-   depth: 3
+    extra: electronic_prototyping_breadboard_400_point
+    height: 8
+    hole_sides:
+    - left
+    - right
+    - top
+    - bottom
+    include_connecting_screws: false
+    pos:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -1.5
+    shape: oobb_plate
+    thickness: 3
+    type: positive
+    width: 6
+-   both_holes: true
+    extra: electronic_prototyping_breadboard_400_point
+    height: 8
+    hole_sides:
+    - left
+    - right
+    - top
+    - bottom
+    holes:
+    - left
+    - right
+    - top
+    - bottom
+    include_connecting_screws: false
+    pos:
+    - 0
+    - 0
+    - -1.5
+    pos_plate:
+    - 0
+    - 0
+    - -1.5
+    shape: oobb_holes
+    thickness: 3
+    type: p
+    width: 6
+-   extra: electronic_prototyping_breadboard_400_point
+    height: 8
+    hole_sides:
+    - left
+    - right
+    - top
+    - bottom
+    include_connecting_screws: false
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -1.5
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_electronic_prototyping_breadboard_400_point
+    thickness: 3
+    type: negative
+    width: 6

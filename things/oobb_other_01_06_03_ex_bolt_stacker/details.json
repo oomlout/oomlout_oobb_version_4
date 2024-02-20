@@ -1,0 +1,991 @@
+{
+    "description": "other 1x6x3",
+    "id": "oobb_other_01_06_03_ex_bolt_stacker",
+    "type": "other",
+    "width": 1,
+    "height": 6,
+    "thickness": 3,
+    "extra": "bolt_stacker",
+    "width_mm": 14,
+    "thickness_mm": 3,
+    "height_mm": 89,
+    "components": [
+        [
+            {
+                "type": "p",
+                "shape": "rounded_rectangle",
+                "size": [
+                    16.0,
+                    90.0,
+                    3
+                ],
+                "pos": [
+                    0,
+                    0,
+                    6
+                ],
+                "height": 6.066666666666666,
+                "width": 1.1333333333333333,
+                "depth": 3,
+                "extra": "bolt_stacker"
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    90
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "r1": 19.0,
+                        "r2": 8.0,
+                        "h": 6,
+                        "inclusion": "laser",
+                        "height": 6,
+                        "width": 74,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "r1": 19.0,
+                        "r2": 8.0,
+                        "h": 6,
+                        "inclusion": "3dpr",
+                        "height": 6,
+                        "width": 74,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "r1": 19.0,
+                        "r2": 8.0,
+                        "h": 6,
+                        "inclusion": "true",
+                        "height": 6,
+                        "width": 74,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    }
+                ]
+            }
+        ],
+        [
+            {
+                "type": "rotation",
+                "typetype": "n",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    90
+                ],
+                "objects": [
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "r1": 17.5,
+                        "r2": 6.5,
+                        "h": 6,
+                        "inclusion": "laser",
+                        "height": 6,
+                        "width": 71.0,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "r1": 17.5,
+                        "r2": 6.5,
+                        "h": 6,
+                        "inclusion": "3dpr",
+                        "height": 6,
+                        "width": 71.0,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    },
+                    {
+                        "type": "positive",
+                        "shape": "slot",
+                        "r1": 17.5,
+                        "r2": 6.5,
+                        "h": 6,
+                        "inclusion": "true",
+                        "height": 6,
+                        "width": 71.0,
+                        "depth": 6,
+                        "extra": "bolt_stacker"
+                    }
+                ]
+            }
+        ],
+        [
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            -37.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            -22.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            -7.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            7.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            22.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            37.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            -37.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            -22.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            -7.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            7.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            22.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.25,
+                        "pos": [
+                            0.0,
+                            37.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            -37.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            -22.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            -7.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            7.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            22.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 3.0,
+                        "pos": [
+                            0.0,
+                            37.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -37.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -30.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -22.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -15.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -7.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            7.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            15.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            22.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            30.0,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            37.5,
+                            0
+                        ],
+                        "inclusion": "laser"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            -37.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            -30.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            -22.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            -15.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            -7.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            7.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            15.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            22.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            30.0,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.8,
+                        "pos": [
+                            0.0,
+                            37.5,
+                            0
+                        ],
+                        "inclusion": "3dpr"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -37.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -30.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -22.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -15.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            -7.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            0.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            7.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            15.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            22.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            30.0,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ],
+            [
+                [
+                    {
+                        "type": "negative",
+                        "shape": "hole",
+                        "r": 1.5,
+                        "pos": [
+                            0.0,
+                            37.5,
+                            0
+                        ],
+                        "inclusion": "true"
+                    }
+                ]
+            ]
+        ]
+    ],
+    "components_string": [
+        "oobb_plate_shape_p_type_3_depth_0_0_9_pos_bolt_stacker_extra_1.1333333333333333_width_6.066666666666666_height_3_thickness_top_zz",
+        "oobb_slot_shape_p_type_6_depth_bolt_stacker_extra_74_width_6_height_3_thickness_19.0_radius_1_8.0_radius_2_0_0_90_rot_top_zz",
+        "oobb_slot_shape_n_type_6_depth_bolt_stacker_extra_71.0_width_6_height_3_thickness_17.5_radius_1_6.5_radius_2_0_0_90_rot_top_zz",
+        "oobb_holes_shape_n_type_bolt_stacker_extra_1_width_6_height_3_thickness_true_both_holes"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "extra": "bolt_stacker",
+            "width": 1.1333333333333333,
+            "height": 6.066666666666666,
+            "thickness": 3,
+            "shape": "oobb_plate",
+            "depth": 3,
+            "pos": [
+                0,
+                0,
+                9
+            ],
+            "zz": "top"
+        },
+        {
+            "type": "p",
+            "extra": "bolt_stacker",
+            "width": 74,
+            "height": 6,
+            "thickness": 3,
+            "shape": "oobb_slot",
+            "radius_1": 19.0,
+            "radius_2": 8.0,
+            "depth": 6,
+            "rot": [
+                0,
+                0,
+                90
+            ],
+            "zz": "top",
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "bolt_stacker",
+            "width": 71.0,
+            "height": 6,
+            "thickness": 3,
+            "shape": "oobb_slot",
+            "radius_1": 17.5,
+            "radius_2": 6.5,
+            "depth": 6,
+            "rot": [
+                0,
+                0,
+                90
+            ],
+            "zz": "top",
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        },
+        {
+            "type": "n",
+            "extra": "bolt_stacker",
+            "width": 1,
+            "height": 6,
+            "thickness": 3,
+            "shape": "oobb_holes",
+            "both_holes": true,
+            "pos": [
+                0,
+                0,
+                0
+            ]
+        }
+    ],
+    "folder": "things/oobb_other_01_06_03_ex_bolt_stacker"
+}

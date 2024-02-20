@@ -1,0 +1,117 @@
+components:
+-   -   -   center: true
+            color: gray
+            comment: gear main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT gear main
+            type: p
+-   -   depth: 6
+        diametral_pitch: 0.53333333
+        extra: 16_teeth
+        number_of_teeth: 16
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: gear
+        type: p
+-   -   -   center: true
+            color: gray
+            comment: holes main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT holes main
+            type: n
+- []
+-   -   extra: 16_teeth
+        h: 200
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -100.0
+        r: 3.0
+        shape: cylinder
+        type: n
+    -   extra: 16_teeth
+        h: 200
+        inclusion: 3dpr
+        pos: *id001
+        r: 3.25
+        shape: cylinder
+        type: n
+    -   extra: 16_teeth
+        h: 200
+        inclusion: 'true'
+        pos: *id001
+        r: 3.0
+        shape: cylinder
+        type: n
+components_objects:
+-   depth: 6
+    diameter: 2
+    diametral_pitch: 0.53333333
+    extra: 16_teeth
+    number_of_teeth: 16
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: ''
+    shape: gear
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 16_teeth
+    height: 2
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: ''
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 2
+-   diameter: 2
+    extra: 16_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6
+    shaft: ''
+    shape: oobb_hole
+    thickness: 6
+    type: n
+components_string:
+- gear_shape_p_type_6_depth_2_diameter_6_thickness_16_teeth_extra_0.53333333_diametral_pitch_16_number_of_teeth
+- oobb_holes_shape_n_type_1.5_diameter_6_thickness_16_teeth_extra_2_width_2_height_true_both_holes_true_circle_false_middle
+- oobb_hole_shape_n_type_m6_radius_name_2_diameter_6_thickness_16_teeth_extra
+description: gear 0x0x6
+diameter: 2
+extra: 16_teeth
+folder: things/oobb_gear_02_06_ex_16_teeth
+id: oobb_gear_02_06_ex_16_teeth
+shaft: ''
+thickness: 6
+thickness_mm: 6
+type: gear

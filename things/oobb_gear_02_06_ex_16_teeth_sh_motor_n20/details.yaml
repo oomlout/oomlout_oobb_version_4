@@ -1,0 +1,105 @@
+components:
+-   -   -   center: true
+            color: gray
+            comment: gear main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT gear main
+            type: p
+-   -   depth: 6
+        diametral_pitch: 0.53333333
+        extra: 16_teeth
+        number_of_teeth: 16
+        pos:
+        - 0
+        - 0
+        - 0
+        shape: gear
+        type: p
+-   -   -   center: true
+            color: gray
+            comment: holes main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT holes main
+            type: n
+- []
+-   -   -   comment:
+            - shaft for n20 motor
+            depth: 250
+            id: 2.75
+            m: '#'
+            pos:
+            - 0
+            - 0
+            - 125
+            r: 1.75
+            shape: d_shaft
+            type: n
+components_objects:
+-   depth: 6
+    diameter: 2
+    diametral_pitch: 0.53333333
+    extra: 16_teeth
+    number_of_teeth: 16
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: gear
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 16_teeth
+    height: 2
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 2
+-   diameter: 2
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_n20
+    shape: oobb_motor_n20
+    thickness: 6
+    type: n
+components_string:
+- gear_shape_p_type_6_depth_2_diameter_6_thickness_16_teeth_extra_motor_n20_shaft_0.53333333_diametral_pitch_16_number_of_teeth
+- oobb_holes_shape_n_type_1.5_diameter_6_thickness_16_teeth_extra_motor_n20_shaft_2_width_2_height_true_both_holes_true_circle_false_middle
+- oobb_motor_n20_shape_n_type_2_diameter_6_thickness_motor_n20_shaft_shaft_part
+description: gear 0x0x6
+diameter: 2
+extra: 16_teeth
+folder: things/oobb_gear_02_06_ex_16_teeth_sh_motor_n20
+id: oobb_gear_02_06_ex_16_teeth_sh_motor_n20
+shaft: motor_n20
+thickness: 6
+thickness_mm: 6
+type: gear

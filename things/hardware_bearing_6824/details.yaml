@@ -1,0 +1,56 @@
+bearing_name: '6824'
+components:
+-   -   depth: bearing_6824_depth
+        h: 16
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 75.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6824_depth
+        h: 16
+        inclusion: 3dpr
+        pos: *id001
+        r: 75.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6824_depth
+        h: 16
+        inclusion: 'true'
+        pos: *id001
+        r: 75.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6824_depth
+        h: 16
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 60.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6824_depth
+        h: 16
+        inclusion: 3dpr
+        pos: *id002
+        r: 60.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6824_depth
+        h: 16
+        inclusion: 'true'
+        pos: *id002
+        r: 60.0
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6824
+folder: things/hardware_bearing_6824
+id: hardware_bearing_6824
+type: bearing

@@ -1,0 +1,357 @@
+bearing: '696'
+components:
+-   -   depth: 6
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 6
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - -3.0
+        r: 12.0
+        radius: 12.0
+        shape: cylinder
+        type: positive
+    -   depth: 6
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 6
+        inclusion: 3dpr
+        pos: *id001
+        r: 12.0
+        radius: 12.0
+        shape: cylinder
+        type: positive
+    -   depth: 6
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 6
+        inclusion: 'true'
+        pos: *id001
+        r: 12.0
+        radius: 12.0
+        shape: cylinder
+        type: positive
+-   -   extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 200
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - -100.0
+        r: 5
+        radius: 5
+        shape: cylinder
+        type: negative
+    -   extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 200
+        inclusion: 3dpr
+        pos: *id002
+        r: 5
+        radius: 5
+        shape: cylinder
+        type: negative
+    -   extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 200
+        inclusion: 'true'
+        pos: *id002
+        r: 5
+        radius: 5
+        shape: cylinder
+        type: negative
+-   -   depth: 2.0999999999999996
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 2.0999999999999996
+        inclusion: laser
+        pos: &id003
+        - 0
+        - 0
+        - 3.0
+        r1: 12.0
+        r2: 8.0
+        shape: cylinder
+        type: positive
+    -   depth: 2.0999999999999996
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 2.0999999999999996
+        inclusion: 3dpr
+        pos: *id003
+        r1: 12.0
+        r2: 8.0
+        shape: cylinder
+        type: positive
+    -   depth: 2.0999999999999996
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 2.0999999999999996
+        inclusion: 'true'
+        pos: *id003
+        r1: 12.0
+        r2: 8.0
+        shape: cylinder
+        type: positive
+-   -   depth: 2.0999999999999996
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 2.0999999999999996
+        inclusion: laser
+        pos: &id004
+        - 0
+        - 0
+        - -5.1
+        r1: 8.0
+        r2: 12.0
+        shape: cylinder
+        type: positive
+    -   depth: 2.0999999999999996
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 2.0999999999999996
+        inclusion: 3dpr
+        pos: *id004
+        r1: 8.0
+        r2: 12.0
+        shape: cylinder
+        type: positive
+    -   depth: 2.0999999999999996
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        h: 2.0999999999999996
+        inclusion: 'true'
+        pos: *id004
+        r1: 8.0
+        r2: 12.0
+        shape: cylinder
+        type: positive
+-   -   depth: 5
+        exclude_clearance: false
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        id: 3.0
+        inclusion: laser
+        od: 7.5
+        pos:
+        - 0
+        - 0
+        - 2.5999999999999996
+        shape: bearing
+        type: negative
+    -   depth: 5
+        exclude_clearance: false
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        id: 3.0
+        inclusion: 'true'
+        od: 7.5
+        pos:
+        - 0
+        - 0
+        - 2.5999999999999996
+        shape: bearing
+        type: negative
+    -   depth: 5
+        exclude_clearance: false
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        id: 3.0
+        inclusion: 3dpr
+        od: 7.55
+        pos:
+        - 0
+        - 0
+        - 2.5999999999999996
+        shape: bearing
+        type: negative
+-   -   depth: 5
+        exclude_clearance: false
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        id: 3.0
+        inclusion: laser
+        od: 7.5
+        pos:
+        - 0
+        - 0
+        - -2.5999999999999996
+        shape: bearing
+        type: negative
+    -   depth: 5
+        exclude_clearance: false
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        id: 3.0
+        inclusion: 'true'
+        od: 7.5
+        pos:
+        - 0
+        - 0
+        - -2.5999999999999996
+        shape: bearing
+        type: negative
+    -   depth: 5
+        exclude_clearance: false
+        extra: bearing_twenty_twenty_aluminium_extrusion
+        id: 3.0
+        inclusion: 3dpr
+        od: 7.55
+        pos:
+        - 0
+        - 0
+        - -2.5999999999999996
+        shape: bearing
+        type: negative
+-   -   extra: bearing_twenty_twenty_aluminium_extrusion
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: negative
+    -   extra: bearing_twenty_twenty_aluminium_extrusion
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: negative
+    -   extra: bearing_twenty_twenty_aluminium_extrusion
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: negative
+components_objects:
+-   bearing: '696'
+    both_holes: true
+    depth: 6
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    radius: 12.0
+    shape: oobb_cylinder
+    thickness: 10.2
+    type: positive
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    radius: 5
+    shape: oobb_hole
+    thickness: 10.2
+    type: negative
+-   bearing: '696'
+    both_holes: true
+    depth: 2.0999999999999996
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 4.05
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    r1: 12.0
+    r2: 8.0
+    shape: oobb_cylinder
+    thickness: 10.2
+    type: positive
+-   bearing: '696'
+    both_holes: true
+    depth: 2.0999999999999996
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - -4.05
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    r1: 8.0
+    r2: 12.0
+    shape: oobb_cylinder
+    thickness: 10.2
+    type: positive
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 5.1
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    shape: oobb_bearing
+    thickness: 10.2
+    type: negative
+    zz: top
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - -5.1
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    shape: oobb_bearing
+    thickness: 10.2
+    type: negative
+    zz: bottom
+-   bearing: '696'
+    both_holes: true
+    diameter: 24
+    extra: bearing_twenty_twenty_aluminium_extrusion
+    pos:
+    - 0
+    - 0
+    - 0
+    pos_plate:
+    - 0
+    - 0
+    - -5.1
+    shape: oobb_slice
+    thickness: 10.2
+    type: negative
+components_string:
+- oobb_cylinder_shape_positive_type_6_depth_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate_12.0_radius
+- oobb_hole_shape_negative_type_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate_5_radius
+- oobb_cylinder_shape_positive_type_2.0999999999999996_depth_0_0_4.05_pos_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate_12.0_r1_8.0_r2
+- oobb_cylinder_shape_positive_type_2.0999999999999996_depth_0_0_-4.05_pos_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate_8.0_r1_12.0_r2
+- oobb_bearing_shape_negative_type_0_0_5.1_pos_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate_top_zz
+- oobb_bearing_shape_negative_type_0_0_-5.1_pos_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate_bottom_zz
+- oobb_slice_shape_negative_type_10.2_thickness_24_diameter_bearing_twenty_twenty_aluminium_extrusion_extra_696_bearing_true_both_holes_0_0_-5.1_pos_plate
+description: wheel 0x0x10.2
+diameter: 24
+extra: bearing_twenty_twenty_aluminium_extrusion
+folder: things/oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion
+id: oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion
+thickness: 10.2
+thickness_mm: 10.2
+type: wheel

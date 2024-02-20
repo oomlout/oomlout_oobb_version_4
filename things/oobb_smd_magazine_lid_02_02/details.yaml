@@ -1,0 +1,104 @@
+components:
+-   -   -   depth: 0.6
+            height: 2
+            m: ''
+            pos:
+            - -7.5
+            - 0
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 29
+            - 29
+            - 0.6
+            type: p
+            width: 2
+-   -   -   depth: 0.6
+            height: 1
+            m: ''
+            pos:
+            - 0.0
+            - -7.5
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 29
+            - 14
+            - 0.6
+            type: p
+            width: 2
+-   -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id001
+            - 7.5
+            - -7.5
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: n
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id001
+            r: 3.25
+            shape: cylinder
+            type: n
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id001
+            r: 3.0
+            shape: cylinder
+            type: n
+-   -   -   -   m: ''
+                pos:
+                - -22.0
+                - 8.5
+                - 0
+                shape: cube
+                size:
+                - 6
+                - 6
+                - 0.6
+                type: p
+-   -   -   depth: 0.6
+            h: 0.6
+            inclusion: laser
+            m: ''
+            pos: &id002
+            - -7.5
+            - 0
+            - 0.0
+            r: 6.5
+            radius: 6.5
+            shape: cylinder
+            type: n
+        -   depth: 0.6
+            h: 0.6
+            inclusion: 3dpr
+            m: ''
+            pos: *id002
+            r: 6.5
+            radius: 6.5
+            shape: cylinder
+            type: n
+        -   depth: 0.6
+            h: 0.6
+            inclusion: 'true'
+            m: ''
+            pos: *id002
+            r: 6.5
+            radius: 6.5
+            shape: cylinder
+            type: n
+components_objects: []
+components_string: []
+description: smd magazine lid 2x2x0
+folder: things/oobb_smd_magazine_lid_02_02
+height: 2
+height_mm: 29
+id: oobb_smd_magazine_lid_02_02
+type: smd_magazine_lid
+width: 2
+width_mm: 29

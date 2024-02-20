@@ -1,0 +1,135 @@
+components:
+-   -   objects:
+        -   -   depth: 12
+                h: 1.7
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+        -   -   depth: 12
+                h: 12
+                inclusion: laser
+                pos: &id001
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 12
+                h: 12
+                inclusion: 3dpr
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 12
+                h: 12
+                inclusion: 'true'
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        -   -   depth: 12
+                h: 1.9
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+        -   -   depth: 12
+                h: 12
+                inclusion: laser
+                pos: &id002
+                - 0
+                - 0
+                - -12.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   depth: 12
+                h: 12
+                inclusion: 3dpr
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+            -   depth: 12
+                h: 12
+                inclusion: 'true'
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+        -   -   depth: 12
+                h: 1.7
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+        -   -   depth: 12
+                h: 12
+                inclusion: laser
+                pos: &id003
+                - 0
+                - 0
+                - -12.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 12
+                h: 12
+                inclusion: 3dpr
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+            -   depth: 12
+                h: 12
+                inclusion: 'true'
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+        pos:
+        - 0
+        - 0
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: positive
+components_objects: []
+components_string: []
+depth: 12
+depth_mm: 12
+description: screw countersunk m3x12
+folder: things/hardware_screw_countersunk_m3_12
+id: hardware_screw_countersunk_m3_12
+radius_name: m3
+type: screw_countersunk

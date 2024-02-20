@@ -1,0 +1,231 @@
+components:
+-   -   depth: 14
+        extra: ptfe_tube_holder_ninety_degree
+        height: 3.2
+        pos:
+        - 0
+        - 0
+        - -7.0
+        radius: 2.5
+        shape: rounded_rectangle
+        size:
+        - 14
+        - 47.0
+        - 14
+        type: p
+        width: 1
+-   -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id001
+            - 0.0
+            - -15.0
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id001
+            r: 3.25
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id001
+            r: 3.0
+            shape: cylinder
+            type: negative
+    -   -   h: 200
+            inclusion: laser
+            m: ''
+            pos: &id002
+            - 0.0
+            - 0.0
+            - -100.0
+            r: 3.0
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 3dpr
+            m: ''
+            pos: *id002
+            r: 3.25
+            shape: cylinder
+            type: negative
+        -   h: 200
+            inclusion: 'true'
+            m: ''
+            pos: *id002
+            r: 3.0
+            shape: cylinder
+            type: negative
+-   -   depth: 100
+        extra: ptfe_tube_holder_ninety_degree
+        h: 100
+        height: 3
+        inclusion: laser
+        pos: &id003
+        - -50
+        - 15
+        - 0
+        r: 1.5
+        rot: &id004
+        - 0
+        - 90
+        - 0
+        shape: cylinder
+        type: n
+        width: 1
+    -   depth: 100
+        extra: ptfe_tube_holder_ninety_degree
+        h: 100
+        height: 3
+        inclusion: 3dpr
+        pos: *id003
+        r: 1.8
+        rot: *id004
+        shape: cylinder
+        type: n
+        width: 1
+    -   depth: 100
+        extra: ptfe_tube_holder_ninety_degree
+        h: 100
+        height: 3
+        inclusion: 'true'
+        pos: *id003
+        r: 1.5
+        rot: *id004
+        shape: cylinder
+        type: n
+        width: 1
+-   -   depth: 100
+        extra: ptfe_tube_holder_ninety_degree
+        h: 100
+        height: 3
+        inclusion: laser
+        pos: &id005
+        - -100
+        - 15
+        - 0
+        r: 3.0
+        radius: 3.0
+        rot: &id006
+        - 0
+        - 90
+        - 0
+        shape: cylinder
+        type: n
+        width: 1
+    -   depth: 100
+        extra: ptfe_tube_holder_ninety_degree
+        h: 100
+        height: 3
+        inclusion: 3dpr
+        pos: *id005
+        r: 3.0
+        radius: 3.0
+        rot: *id006
+        shape: cylinder
+        type: n
+        width: 1
+    -   depth: 100
+        extra: ptfe_tube_holder_ninety_degree
+        h: 100
+        height: 3
+        inclusion: 'true'
+        pos: *id005
+        r: 3.0
+        radius: 3.0
+        rot: *id006
+        shape: cylinder
+        type: n
+        width: 1
+components_objects:
+-   depth: 14
+    extra: ptfe_tube_holder_ninety_degree
+    height: 3.2
+    pos:
+    - 0
+    - 0
+    - -7.0
+    radius: 2.5
+    shaft: m6
+    shape: oobb_plate
+    thickness: 14
+    type: p
+    width: 1
+-   extra: ptfe_tube_holder_ninety_degree
+    height: 3
+    holes: single
+    loc:
+    -   - 1
+        - 1
+    -   - 1
+        - 2
+    pos:
+    - 0
+    - 0
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: m6
+    shape: oobb_holes
+    thickness: 14
+    type: n
+    width: 1
+-   depth: 100
+    extra: ptfe_tube_holder_ninety_degree
+    height: 3
+    pos:
+    - -50
+    - 15
+    - 0
+    radius_name: m3
+    rot:
+    - 0
+    - 90
+    - 0
+    shaft: m6
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 1
+-   depth: 100
+    extra: ptfe_tube_holder_ninety_degree
+    height: 3
+    pos:
+    - -100
+    - 15
+    - 0
+    radius: 3.0
+    rot:
+    - 0
+    - 90
+    - 0
+    shaft: m6
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 1
+components_string:
+- oobb_plate_shape_p_type_14_depth_0_0_-7.0_pos_ptfe_tube_holder_ninety_degree_extra_1_width_3.2_height_14_thickness_m6_shaft_2.5_radius
+- oobb_holes_shape_n_type_ptfe_tube_holder_ninety_degree_extra_1_width_3_height_14_thickness_m6_shaft_single_holes_1_1_1_2_loc_0_0_0_rot
+- oobb_hole_shape_n_type_m3_radius_name_100_depth_-50_15_0_pos_ptfe_tube_holder_ninety_degree_extra_1_width_3_height_14_thickness_m6_shaft_0_90_0_rot
+- oobb_hole_shape_n_type_100_depth_-100_15_0_pos_ptfe_tube_holder_ninety_degree_extra_1_width_3_height_14_thickness_m6_shaft_3.0_radius_0_90_0_rot
+description: other 1x3x14
+extra: ptfe_tube_holder_ninety_degree
+folder: things/oobb_other_01_03_14_ex_ptfe_tube_holder_ninety_degree_sh_m6
+height: 3
+height_mm: 44
+id: oobb_other_01_03_14_ex_ptfe_tube_holder_ninety_degree_sh_m6
+shaft: m6
+thickness: 14
+thickness_mm: 14
+type: other
+width: 1
+width_mm: 14

@@ -79,6 +79,9 @@ def initialize_variables():
     m["d75_3dpr"] = 0.95
     m["1"] = 1
     m["1_3dpr"] = 1.2
+    m["1d4"] = 1.5
+    m["1d4_3dpr"] = 2
+    m["1d4_tight"] = 1.7
     m["1d5"] = 1.6
     m["1d5_3dpr"] = 1.8
     m["2"] = 2
@@ -108,11 +111,16 @@ def initialize_variables():
     vl["hole_radius_md5"] = [m["d5"]/2, m["d5"]/2, m["d5_3dpr"]/2]
     vl["hole_radius_md75"] = [m["d75"]/2, m["d75"]/2, m["d75_3dpr"]/2]
     vl["hole_radius_m1"] = [m["1"]/2, m["1"]/2, m["1_3dpr"]/2]
+    vl["hole_radius_m1_4"] = [m["1d4"]/2, m["1d4"]/2, m["1d4_3dpr"]/2]
+    vl["hole_radius_m1_4_tight"] = [m["1d4_tight"]/2, m["1d4_tight"]/2, m["1d4_tight"]/2]
     vl["hole_radius_m1d5"] = [m["1d5"]/2, m["1d5"]/2, m["1d5_3dpr"]/2]
+    vl["hole_radius_m1_5"] = [m["1d5"]/2, m["1d5"]/2, m["1d5_3dpr"]/2]
     vl["hole_radius_m2"] = [m["2"]/2, m["2"]/2, m["2_3dpr"]/2]
     vl["hole_radius_m2d5"] = [m["2d5"]/2, m["2d5"]/2, m["2d5_3dpr"]/2]
+    vl["hole_radius_m2_5"] = [m["2d5"]/2, m["2d5"]/2, m["2d5_3dpr"]/2]
     vl["hole_radius_m3"] = [m["3"]/2, m["3"]/2, m["3_3dpr"]/2]
     vl["hole_radius_m3d5"] = [m["3d5"]/2, m["3d5"]/2, m["3d5_3dpr"]/2]
+    vl["hole_radius_m3_5"] = [m["3d5"]/2, m["3d5"]/2, m["3d5_3dpr"]/2]
     vl["hole_radius_m3_sort"] = [m["3"]/2+0.5, m["3"]/2+0.5, m["3_3dpr"]/2+0.5]
     vl["hole_radius_m4"] = [m["4"]/2, m["4"]/2, m["4_3dpr"]/2]
     vl["hole_radius_m5"] = [m["5"]/2, m["5"]/2, m["5_3dpr"]/2]

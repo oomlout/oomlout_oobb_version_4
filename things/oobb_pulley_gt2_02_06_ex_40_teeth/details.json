@@ -1,0 +1,450 @@
+{
+    "description": "pulley gt2 0x0x6",
+    "id": "oobb_pulley_gt2_02_06_ex_40_teeth",
+    "type": "pulley_gt2",
+    "diameter": 2,
+    "thickness": 6,
+    "extra": "40_teeth",
+    "shaft": "",
+    "thickness_mm": 6,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "gear main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT gear main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "pulley_gt2",
+                "pos": [
+                    0,
+                    0,
+                    -4.25
+                ],
+                "depth": 8.5,
+                "extra": "40_teeth",
+                "number_of_teeth": 40
+            }
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "holes main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT holes main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    7.5,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "laser",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.8,
+                "h": 200,
+                "pos": [
+                    7.5,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "3dpr",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    7.5,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "true",
+                "extra": "40_teeth"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    -7.5,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "laser",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.8,
+                "h": 200,
+                "pos": [
+                    -7.5,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "3dpr",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    -7.5,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "true",
+                "extra": "40_teeth"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    7.5,
+                    -100.0
+                ],
+                "inclusion": "laser",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.8,
+                "h": 200,
+                "pos": [
+                    0,
+                    7.5,
+                    -100.0
+                ],
+                "inclusion": "3dpr",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    7.5,
+                    -100.0
+                ],
+                "inclusion": "true",
+                "extra": "40_teeth"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    -7.5,
+                    -100.0
+                ],
+                "inclusion": "laser",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.8,
+                "h": 200,
+                "pos": [
+                    0,
+                    -7.5,
+                    -100.0
+                ],
+                "inclusion": "3dpr",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 1.5,
+                "h": 200,
+                "pos": [
+                    0,
+                    -7.5,
+                    -100.0
+                ],
+                "inclusion": "true",
+                "extra": "40_teeth"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.0,
+                "h": 200,
+                "pos": [
+                    0,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "laser",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.25,
+                "h": 200,
+                "pos": [
+                    0,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "3dpr",
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cylinder",
+                "r": 3.0,
+                "h": 200,
+                "pos": [
+                    0,
+                    0,
+                    -100.0
+                ],
+                "inclusion": "true",
+                "extra": "40_teeth"
+            }
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "40_teeth"
+            },
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "40_teeth"
+            }
+        ]
+    ],
+    "components_string": [
+        "pulley_gt2_shape_p_type_8.5_depth_0_0_-4.25_pos_6_thickness_40_teeth_extra_2_diameter_40_number_of_teeth",
+        "oobb_holes_shape_n_type_6_thickness_40_teeth_extra_1.5_diameter_1_width_1_height_true_both_holes_true_circle_false_middle",
+        "oobb_hole_shape_n_type_m3_radius_name_7.5_0_0_pos_6_thickness_40_teeth_extra_2_diameter",
+        "oobb_hole_shape_n_type_m3_radius_name_-7.5_0_0_pos_6_thickness_40_teeth_extra_2_diameter",
+        "oobb_hole_shape_n_type_m3_radius_name_0_7.5_0_pos_6_thickness_40_teeth_extra_2_diameter",
+        "oobb_hole_shape_n_type_m3_radius_name_0_-7.5_0_pos_6_thickness_40_teeth_extra_2_diameter",
+        "oobb_hole_shape_n_type_m6_radius_name_6_thickness_40_teeth_extra_2_diameter",
+        "oobb_slice_shape_n_type_6_thickness_40_teeth_extra_2_diameter"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                0,
+                0,
+                -4.25
+            ],
+            "shape": "pulley_gt2",
+            "number_of_teeth": 40,
+            "depth": 8.5
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 1.5,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "width": 1,
+            "height": 1,
+            "shape": "oobb_holes",
+            "both_holes": true,
+            "circle": true,
+            "middle": false
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                7.5,
+                0,
+                0
+            ],
+            "shape": "oobb_hole",
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                -7.5,
+                0,
+                0
+            ],
+            "shape": "oobb_hole",
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                0,
+                7.5,
+                0
+            ],
+            "shape": "oobb_hole",
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                0,
+                -7.5,
+                0
+            ],
+            "shape": "oobb_hole",
+            "radius_name": "m3"
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_hole",
+            "radius_name": "m6"
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "40_teeth",
+            "shaft": "",
+            "diameter": 2,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_slice"
+        }
+    ],
+    "folder": "things/oobb_pulley_gt2_02_06_ex_40_teeth"
+}

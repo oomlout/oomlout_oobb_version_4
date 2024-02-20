@@ -1,0 +1,1092 @@
+components:
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                '
+            depth: 10
+            extra: &id001 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                '
+            depth: 10
+            extra: *id001
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                '
+            depth: 10
+            extra: *id001
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 0
+        - 0
+        - -5.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : top'
+            depth: 10
+            extra: &id002 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : top'
+            depth: 10
+            extra: *id002
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : top'
+            depth: 10
+            extra: *id002
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 0
+        - 50
+        - 0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : bottom'
+            depth: 10
+            extra: &id003 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottom'
+            depth: 10
+            extra: *id003
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottom'
+            depth: 10
+            extra: *id003
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 0
+        - 100
+        - -10
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : middle'
+            depth: 10
+            extra: &id004 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middle'
+            depth: 10
+            extra: *id004
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middle'
+            depth: 10
+            extra: *id004
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 0
+        - 150
+        - -5.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                rot_y : 360/12'
+            depth: 10
+            extra: &id005 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                rot_y : 360/12'
+            depth: 10
+            extra: *id005
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                rot_y : 360/12'
+            depth: 10
+            extra: *id005
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 150
+        - 0
+        - -5.0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : toprot_y : 360/12'
+            depth: 10
+            extra: &id006 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : toprot_y : 360/12'
+            depth: 10
+            extra: *id006
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : toprot_y : 360/12'
+            depth: 10
+            extra: *id006
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 150
+        - 50
+        - 0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_y : 360/12'
+            depth: 10
+            extra: &id007 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_y : 360/12'
+            depth: 10
+            extra: *id007
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_y : 360/12'
+            depth: 10
+            extra: *id007
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 150
+        - 100
+        - -10
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : middlerot_y : 360/12'
+            depth: 10
+            extra: &id008 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middlerot_y : 360/12'
+            depth: 10
+            extra: *id008
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middlerot_y : 360/12'
+            depth: 10
+            extra: *id008
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 150
+        - 150
+        - -5.0
+        rot:
+        - 0
+        - 30.0
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                rot_y : 90'
+            depth: 10
+            extra: &id009 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                rot_y : 90'
+            depth: 10
+            extra: *id009
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                rot_y : 90'
+            depth: 10
+            extra: *id009
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 300
+        - 0
+        - -5.0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : toprot_y : 90'
+            depth: 10
+            extra: &id010 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : toprot_y : 90'
+            depth: 10
+            extra: *id010
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : toprot_y : 90'
+            depth: 10
+            extra: *id010
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 300
+        - 50
+        - 0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_y : 90'
+            depth: 10
+            extra: &id011 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_y : 90'
+            depth: 10
+            extra: *id011
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_y : 90'
+            depth: 10
+            extra: *id011
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 300
+        - 100
+        - -10
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : middlerot_y : 90'
+            depth: 10
+            extra: &id012 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middlerot_y : 90'
+            depth: 10
+            extra: *id012
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middlerot_y : 90'
+            depth: 10
+            extra: *id012
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 300
+        - 150
+        - -5.0
+        rot:
+        - 0
+        - 90
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                rot_x : 90 rot_y : 45'
+            depth: 10
+            extra: &id013 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                rot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id013
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                rot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id013
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 450
+        - 0
+        - -5.0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : toprot_x : 90 rot_y : 45'
+            depth: 10
+            extra: &id014 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : toprot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id014
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : toprot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id014
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 450
+        - 50
+        - 0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_x : 90 rot_y : 45'
+            depth: 10
+            extra: &id015 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id015
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : bottomrot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id015
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 450
+        - 100
+        - -10
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: p
+-   -   objects:
+        -   comment: 'oobb_slot
+
+                zz : middlerot_x : 90 rot_y : 45'
+            depth: 10
+            extra: &id016 {}
+            h: 10
+            inclusion: laser
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middlerot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id016
+            h: 10
+            inclusion: 3dpr
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        -   comment: 'oobb_slot
+
+                zz : middlerot_x : 90 rot_y : 45'
+            depth: 10
+            extra: *id016
+            h: 10
+            inclusion: 'true'
+            r: ''
+            r1: 5
+            r2: 10
+            shape: slot
+            type: positive
+            width: 20
+        pos:
+        - 450
+        - 150
+        - -5.0
+        rot:
+        - 90
+        - 45
+        - 0
+        type: rotation
+        typetype: p
+components_objects:
+-   comment_display: true
+    comment_extra: ''
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 0
+    - 0
+    - 0
+    r1: 5
+    r2: 10
+    shape: oobb_slot
+    width: 20
+-   comment_display: true
+    comment_extra: 'zz : top'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 0
+    - 50
+    - 0
+    r1: 5
+    r2: 10
+    shape: oobb_slot
+    width: 20
+    zz: top
+-   comment_display: true
+    comment_extra: 'zz : bottom'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 0
+    - 100
+    - 0
+    r1: 5
+    r2: 10
+    shape: oobb_slot
+    width: 20
+    zz: bottom
+-   comment_display: true
+    comment_extra: 'zz : middle'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 0
+    - 150
+    - 0
+    r1: 5
+    r2: 10
+    shape: oobb_slot
+    width: 20
+    zz: middle
+-   comment_display: true
+    comment_extra: ''
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 150
+    - 0
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_slot
+    width: 20
+-   comment_display: true
+    comment_extra: 'zz : top'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 150
+    - 50
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: top
+-   comment_display: true
+    comment_extra: 'zz : bottom'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 150
+    - 100
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: bottom
+-   comment_display: true
+    comment_extra: 'zz : middle'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 150
+    - 150
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 30.0
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: middle
+-   comment_display: true
+    comment_extra: ''
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 300
+    - 0
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_slot
+    width: 20
+-   comment_display: true
+    comment_extra: 'zz : top'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 300
+    - 50
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: top
+-   comment_display: true
+    comment_extra: 'zz : bottom'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 300
+    - 100
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: bottom
+-   comment_display: true
+    comment_extra: 'zz : middle'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 300
+    - 150
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 0
+    - 90
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: middle
+-   comment_display: true
+    comment_extra: ''
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 450
+    - 0
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_slot
+    width: 20
+-   comment_display: true
+    comment_extra: 'zz : top'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 450
+    - 50
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: top
+-   comment_display: true
+    comment_extra: 'zz : bottom'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 450
+    - 100
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: bottom
+-   comment_display: true
+    comment_extra: 'zz : middle'
+    comment_shift_line: 15
+    depth: 10
+    extra: {}
+    pos:
+    - 450
+    - 150
+    - 0
+    r1: 5
+    r2: 10
+    rot:
+    - 90
+    - 45
+    - 0
+    shape: oobb_slot
+    width: 20
+    zz: middle
+components_string:
+- oobb_slot_shape_10_depth_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra
+- oobb_slot_shape_10_depth_0_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz
+- oobb_slot_shape_10_depth_0_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz
+- oobb_slot_shape_10_depth_0_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz
+- oobb_slot_shape_10_depth_150_0_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra_0_30.0_0_rot
+- oobb_slot_shape_10_depth_150_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz_0_30.0_0_rot
+- oobb_slot_shape_10_depth_150_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz_0_30.0_0_rot
+- oobb_slot_shape_10_depth_150_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz_0_30.0_0_rot
+- oobb_slot_shape_10_depth_300_0_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra_0_90_0_rot
+- oobb_slot_shape_10_depth_300_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz_0_90_0_rot
+- oobb_slot_shape_10_depth_300_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz_0_90_0_rot
+- oobb_slot_shape_10_depth_300_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz_0_90_0_rot
+- oobb_slot_shape_10_depth_450_0_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_true_comment_display_{}_extra_90_45_0_rot
+- oobb_slot_shape_10_depth_450_50_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:top_comment_extra_true_comment_display_{}_extra_top_zz_90_45_0_rot
+- oobb_slot_shape_10_depth_450_100_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:bottom_comment_extra_true_comment_display_{}_extra_bottom_zz_90_45_0_rot
+- oobb_slot_shape_10_depth_450_150_0_pos_5_r1_10_r2_20_width_15_comment_shift_line_zz:middle_comment_extra_true_comment_display_{}_extra_middle_zz_90_45_0_rot
+description: test 0x0x0
+extra: oobb_shape_slot
+folder: things/oobb_test_ex_oobb_shape_slot
+id: oobb_test_ex_oobb_shape_slot
+type: test

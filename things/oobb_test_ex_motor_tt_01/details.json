@@ -5,625 +5,673 @@
     "extra": "motor_tt_01",
     "components": [
         [
-            [
-                {
-                    "type": "p",
-                    "shape": "cylinder",
-                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                    "r": 13.0,
-                    "radius": 13.0,
-                    "h": 100,
-                    "pos": [
-                        0,
-                        0,
-                        -50.0
-                    ],
-                    "inclusion": "laser",
-                    "extra": {}
-                },
-                {
-                    "type": "p",
-                    "shape": "cylinder",
-                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                    "r": 13.0,
-                    "radius": 13.0,
-                    "h": 100,
-                    "pos": [
-                        0,
-                        0,
-                        -50.0
-                    ],
-                    "inclusion": "3dpr",
-                    "extra": {}
-                },
-                {
-                    "type": "p",
-                    "shape": "cylinder",
-                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                    "r": 13.0,
-                    "radius": 13.0,
-                    "h": 100,
-                    "pos": [
-                        0,
-                        0,
-                        -50.0
-                    ],
-                    "inclusion": "true",
-                    "extra": {}
-                }
-            ],
-            [
-                {
-                    "type": "p",
-                    "shape": "cylinder",
-                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                    "r": 3.0,
-                    "h": 100,
-                    "pos": [
-                        -11,
-                        0,
-                        -50.0
-                    ],
-                    "inclusion": "laser",
-                    "extra": {}
-                },
-                {
-                    "type": "p",
-                    "shape": "cylinder",
-                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                    "r": 3.25,
-                    "h": 100,
-                    "pos": [
-                        -11,
-                        0,
-                        -50.0
-                    ],
-                    "inclusion": "3dpr",
-                    "extra": {}
-                },
-                {
-                    "type": "p",
-                    "shape": "cylinder",
-                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                    "r": 3.0,
-                    "h": 100,
-                    "pos": [
-                        -11,
-                        0,
-                        -50.0
-                    ],
-                    "inclusion": "true",
-                    "extra": {}
-                }
-            ],
-            [
-                {
-                    "type": "rotation",
-                    "typetype": "p",
-                    "pos": [
-                        -20,
-                        8.5,
-                        0
-                    ],
-                    "rot": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "objects": [
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r1": 1.5,
-                                "r2": 2.4,
-                                "h": 1.7,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -1.7
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r1": 1.8,
-                                "r2": 3.6,
-                                "h": 1.9,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -1.9
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.8,
-                                "radius": 1.8,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.8,
-                                "radius": 1.8,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.8,
-                                "radius": 1.8,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r1": 1.5,
-                                "r2": 2.9,
-                                "h": 1.7,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -1.7
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ]
-                    ]
-                }
-            ],
-            [
-                {
-                    "type": "rotation",
-                    "typetype": "p",
-                    "pos": [
-                        -20,
-                        -8.5,
-                        0
-                    ],
-                    "rot": [
-                        0,
-                        0,
-                        0
-                    ],
-                    "objects": [
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r1": 1.5,
-                                "r2": 2.4,
-                                "h": 1.7,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -1.7
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r1": 1.8,
-                                "r2": 3.6,
-                                "h": 1.9,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -1.9
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.8,
-                                "radius": 1.8,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.8,
-                                "radius": 1.8,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.8,
-                                "radius": 1.8,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r1": 1.5,
-                                "r2": 2.9,
-                                "h": 1.7,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -1.7
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ],
-                        [
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "laser",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "3dpr",
-                                "depth": 25,
-                                "extra": {}
-                            },
-                            {
-                                "type": "positive",
-                                "shape": "cylinder",
-                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                                "r": 1.5,
-                                "radius": 1.5,
-                                "h": 25,
-                                "pos": [
-                                    0,
-                                    0,
-                                    -25.0
-                                ],
-                                "inclusion": "true",
-                                "depth": 25,
-                                "extra": {}
-                            }
-                        ]
-                    ]
-                }
-            ],
-            [
-                [
-                    {
-                        "type": "p",
-                        "shape": "cube",
-                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                        "size": [
-                            30,
-                            12,
-                            2
-                        ],
-                        "pos": [
-                            -55.5,
-                            -6.0,
-                            0
-                        ],
-                        "extra": {}
-                    }
-                ]
-            ],
-            [
-                [
-                    {
-                        "type": "p",
-                        "shape": "cube",
-                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                        "size": [
-                            18,
-                            8,
-                            2
-                        ],
-                        "pos": [
-                            -54.0,
-                            -4.0,
-                            0
-                        ],
-                        "extra": {}
-                    }
-                ]
-            ],
-            [
-                [
+            {
+                "type": "rotation",
+                "typetype": "p",
+                "pos": [
+                    0,
+                    0,
+                    0
+                ],
+                "rot": [
+                    0,
+                    0,
+                    0
+                ],
+                "objects": [
                     [
                         {
-                            "type": "p",
-                            "shape": "cube",
-                            "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                            "size": [
-                                8,
-                                6,
-                                20
-                            ],
+                            "type": "rotation",
+                            "typetype": "positive",
                             "pos": [
-                                -33.569,
-                                -3.0,
+                                0,
+                                0,
                                 0
                             ],
-                            "extra": {}
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                {
+                                    "type": "positive",
+                                    "shape": "cylinder",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "r": 13.0,
+                                    "radius": 13.0,
+                                    "h": 100,
+                                    "pos": [
+                                        0,
+                                        0,
+                                        -50.0
+                                    ],
+                                    "inclusion": "laser",
+                                    "extra": {}
+                                },
+                                {
+                                    "type": "positive",
+                                    "shape": "cylinder",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "r": 13.0,
+                                    "radius": 13.0,
+                                    "h": 100,
+                                    "pos": [
+                                        0,
+                                        0,
+                                        -50.0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "extra": {}
+                                },
+                                {
+                                    "type": "positive",
+                                    "shape": "cylinder",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "r": 13.0,
+                                    "radius": 13.0,
+                                    "h": 100,
+                                    "pos": [
+                                        0,
+                                        0,
+                                        -50.0
+                                    ],
+                                    "inclusion": "true",
+                                    "extra": {}
+                                }
+                            ]
                         }
-                    ]
-                ]
-            ],
-            [
-                [
+                    ],
                     [
                         {
-                            "type": "p",
-                            "shape": "cube",
-                            "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
-                            "size": [
-                                66,
-                                23,
-                                19
-                            ],
+                            "type": "rotation",
+                            "typetype": "positive",
                             "pos": [
-                                -54.15,
-                                -11.5,
-                                -19
+                                -11,
+                                0,
+                                0
                             ],
-                            "extra": {}
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                {
+                                    "type": "positive",
+                                    "shape": "cylinder",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "r": 3.0,
+                                    "h": 100,
+                                    "pos": [
+                                        0,
+                                        0,
+                                        -50.0
+                                    ],
+                                    "inclusion": "laser",
+                                    "extra": {}
+                                },
+                                {
+                                    "type": "positive",
+                                    "shape": "cylinder",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "r": 3.25,
+                                    "h": 100,
+                                    "pos": [
+                                        0,
+                                        0,
+                                        -50.0
+                                    ],
+                                    "inclusion": "3dpr",
+                                    "extra": {}
+                                },
+                                {
+                                    "type": "positive",
+                                    "shape": "cylinder",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "r": 3.0,
+                                    "h": 100,
+                                    "pos": [
+                                        0,
+                                        0,
+                                        -50.0
+                                    ],
+                                    "inclusion": "true",
+                                    "extra": {}
+                                }
+                            ]
                         }
+                    ],
+                    [
+                        {
+                            "type": "rotation",
+                            "typetype": "positive",
+                            "pos": [
+                                -20,
+                                8.5,
+                                3
+                            ],
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r1": 1.5,
+                                        "r2": 2.4,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r1": 1.8,
+                                        "r2": 3.6,
+                                        "h": 1.9,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.9
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r1": 1.5,
+                                        "r2": 2.9,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        {
+                            "type": "rotation",
+                            "typetype": "positive",
+                            "pos": [
+                                -20,
+                                -8.5,
+                                3
+                            ],
+                            "rot": [
+                                0,
+                                0,
+                                0
+                            ],
+                            "objects": [
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r1": 1.5,
+                                        "r2": 2.4,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r1": 1.8,
+                                        "r2": 3.6,
+                                        "h": 1.9,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.9
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.8,
+                                        "radius": 1.8,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r1": 1.5,
+                                        "r2": 2.9,
+                                        "h": 1.7,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -1.7
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ],
+                                [
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "laser",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "3dpr",
+                                        "depth": 25,
+                                        "extra": {}
+                                    },
+                                    {
+                                        "type": "positive",
+                                        "shape": "cylinder",
+                                        "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                        "r": 1.5,
+                                        "radius": 1.5,
+                                        "h": 25,
+                                        "pos": [
+                                            0,
+                                            0,
+                                            -25.0
+                                        ],
+                                        "inclusion": "true",
+                                        "depth": 25,
+                                        "extra": {}
+                                    }
+                                ]
+                            ]
+                        }
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cube",
+                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                "size": [
+                                    30,
+                                    12,
+                                    2
+                                ],
+                                "pos": [
+                                    -55.5,
+                                    -6.0,
+                                    0
+                                ],
+                                "extra": {}
+                            }
+                        ]
+                    ],
+                    [
+                        [
+                            {
+                                "type": "positive",
+                                "shape": "cube",
+                                "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                "size": [
+                                    18,
+                                    8,
+                                    2
+                                ],
+                                "pos": [
+                                    -54.0,
+                                    -4.0,
+                                    0
+                                ],
+                                "extra": {}
+                            }
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "size": [
+                                        8,
+                                        6,
+                                        20
+                                    ],
+                                    "pos": [
+                                        -33.569,
+                                        -3.0,
+                                        0
+                                    ],
+                                    "extra": {}
+                                }
+                            ]
+                        ]
+                    ],
+                    [
+                        [
+                            [
+                                {
+                                    "type": "positive",
+                                    "shape": "cube",
+                                    "comment": "oobb_motor_tt_01_0_0\n radius_extra : 0\n",
+                                    "size": [
+                                        66,
+                                        23,
+                                        19
+                                    ],
+                                    "pos": [
+                                        -54.15,
+                                        -11.5,
+                                        -19
+                                    ],
+                                    "extra": {}
+                                }
+                            ]
+                        ]
                     ]
                 ]
-            ]
+            }
         ]
     ],
     "components_string": [

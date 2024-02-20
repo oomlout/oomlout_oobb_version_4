@@ -9,7 +9,7 @@ difference() {
 	}
 	union() {
 		translate(v = [7.5000000000, 0, 0]) {
-			rotate(a = [0, 0, 0]) {
+			rotate(a = [0, 0, 30.0000000000]) {
 				difference() {
 					union() {
 						translate(v = [0, 0, -50.0000000000]) {
@@ -32,7 +32,7 @@ difference() {
 			}
 		}
 		translate(v = [-7.5000000000, 0, 0]) {
-			rotate(a = [0, 0, 0]) {
+			rotate(a = [0, 0, 30.0000000000]) {
 				difference() {
 					union() {
 						translate(v = [0, 0, -50.0000000000]) {
@@ -1176,10 +1176,14 @@ difference() {
 			}
 		}
 		translate(v = [7.5000000000, 0, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+			rotate(a = [0, 0, 30.0000000000]) {
+				cylinder(h = 100, r = 1.8000000000);
+			}
 		}
 		translate(v = [-7.5000000000, 0, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+			rotate(a = [0, 0, 30.0000000000]) {
+				cylinder(h = 100, r = 1.8000000000);
+			}
 		}
 		translate(v = [0, 7.5000000000, -50.0000000000]) {
 			cylinder(h = 100, r = 1.8000000000);

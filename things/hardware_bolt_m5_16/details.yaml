@@ -1,0 +1,73 @@
+components:
+-   -   -   -   depth: 16
+                h: 3.5
+                inclusion: laser
+                pos:
+                - 0
+                - 0
+                - 0
+                r: 4.616
+                rotY: 0
+                shape: polyg
+                sides: 6
+                type: positive
+    -   -   -   depth: 16
+                h: 3.6
+                inclusion: 3dpr
+                pos:
+                - 0
+                - 0
+                - 0
+                r: 4.8468
+                rotY: 0
+                shape: polyg
+                sides: 6
+                type: positive
+    -   -   -   depth: 16
+                h: 3.5
+                inclusion: 'true'
+                pos:
+                - 0
+                - 0
+                - 0
+                r: 4.616
+                rotY: 0
+                shape: polyg
+                sides: 6
+                type: positive
+    -   -   depth: 16
+            h: 16
+            inclusion: laser
+            pos: &id001
+            - 0
+            - 0
+            - -16
+            r: 2.5
+            rotY: 0
+            shape: cylinder
+            type: positive
+        -   depth: 16
+            h: 16
+            inclusion: 3dpr
+            pos: *id001
+            r: 2.75
+            rotY: 0
+            shape: cylinder
+            type: positive
+        -   depth: 16
+            h: 16
+            inclusion: 'true'
+            pos: *id001
+            r: 2.5
+            rotY: 0
+            shape: cylinder
+            type: positive
+components_objects: []
+components_string: []
+depth: 16
+depth_mm: 16
+description: bolt m5x16
+folder: things/hardware_bolt_m5_16
+id: hardware_bolt_m5_16
+radius_name: m5
+type: bolt

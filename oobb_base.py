@@ -377,6 +377,12 @@ def dump(mode="json"):
                 os.makedirs(os.path.dirname(filename))
             with open(filename, 'w') as outfile:
                 json.dump(oobb.things[thing], outfile, indent=4)
+            # dump to json.yaml
+            import yaml
+            filename = f'things/{thing}/details.yaml'
+            with open(filename, 'w') as outfile:
+                yaml.dump(oobb.things[thing], outfile, indent=4)
+            
 
 def load(mode="json"):
     if mode == "json":
@@ -622,6 +628,8 @@ def append_full(thing, **kwargs):
     #add loop for multiple pos
     kwargs_original = copy.deepcopy(kwargs)
     poss = kwargs.get("pos", [0,0,0])
+    if poss == []:
+        poss = [0,0,0]
     shapes = kwargs.get("shape", "")
     #if poss isn't a list of lists make it one
     if type(poss[0]) != list:
@@ -747,7 +755,9 @@ def oobb_easy(**kwargs):
                     return_value.extend(get_oobe_holes(**kwargs))
                     return_value_2.append(return_value)
                 else:
-                    # Call the function dynamically using its string name
+                    # Call the function dynamically using its string name                    
+                    shape = shape.replace("_extra_mm", "")
+                    shape = shape.replace("_spacer_10_mm", "")
                     func = globals()[f'get_{shape}']
                     return_value_2.append(func(**kwargs))
             else:

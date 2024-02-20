@@ -1,0 +1,56 @@
+bearing_name: '6816'
+components:
+-   -   depth: bearing_6816_depth
+        h: 10
+        inclusion: laser
+        pos: &id001
+        - 0
+        - 0
+        - 0
+        r: 50.0
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6816_depth
+        h: 10
+        inclusion: 3dpr
+        pos: *id001
+        r: 50.2
+        shape: cylinder
+        type: positive
+    -   depth: bearing_6816_depth
+        h: 10
+        inclusion: 'true'
+        pos: *id001
+        r: 50.0
+        shape: cylinder
+        type: positive
+-   -   depth: bearing_6816_depth
+        h: 10
+        inclusion: laser
+        pos: &id002
+        - 0
+        - 0
+        - 0
+        r: 40.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6816_depth
+        h: 10
+        inclusion: 3dpr
+        pos: *id002
+        r: 40.0
+        shape: cylinder
+        type: negative
+    -   depth: bearing_6816_depth
+        h: 10
+        inclusion: 'true'
+        pos: *id002
+        r: 40.0
+        shape: cylinder
+        type: negative
+components_objects: []
+components_string: []
+description: bearing 6816
+folder: things/hardware_bearing_6816
+id: hardware_bearing_6816
+type: bearing

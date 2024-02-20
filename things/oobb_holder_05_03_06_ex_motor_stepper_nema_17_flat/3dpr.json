@@ -399,7 +399,108 @@
         "pos": [
             0,
             0,
+            6
+        ],
+        "rot": [
+            0,
+            180,
             0
         ]
+    },
+    {
+        "type": "n",
+        "extra": "motor_stepper_nema_17_flat",
+        "width": 5,
+        "height": 3,
+        "thickness": 26,
+        "bearing": "6705",
+        "pos": [
+            8.0,
+            -18.0,
+            6.01
+        ],
+        "shape": "oobb_screw_countersunk",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 26,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true,
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "extra": "motor_stepper_nema_17_flat",
+        "width": 5,
+        "height": 3,
+        "thickness": 26,
+        "bearing": "6705",
+        "pos": [
+            -8.0,
+            18.0,
+            6.01
+        ],
+        "shape": "oobb_screw_countersunk",
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "depth": 26,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true,
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "extra": "motor_stepper_nema_17_flat",
+        "width": 5,
+        "height": 3,
+        "thickness": 26,
+        "bearing": "6705",
+        "pos": [
+            -8.0,
+            -18.0,
+            -19.990000000000002
+        ],
+        "shape": "oobb_screw_countersunk",
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 26,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true,
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "extra": "motor_stepper_nema_17_flat",
+        "width": 5,
+        "height": 3,
+        "thickness": 26,
+        "bearing": "6705",
+        "pos": [
+            8.0,
+            18.0,
+            -19.990000000000002
+        ],
+        "shape": "oobb_screw_countersunk",
+        "rot": [
+            0,
+            180,
+            0
+        ],
+        "depth": 26,
+        "radius_name": "m3",
+        "nut": true,
+        "overhang": true,
+        "m": "#"
     }
 ]

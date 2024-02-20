@@ -1,0 +1,1034 @@
+components:
+-   -   extra: timing_belt_clamp_gt2
+        height: 1.5
+        pos:
+        - 0
+        - 0
+        - -3.0
+        shape: rounded_rectangle
+        size:
+        - 40.5
+        - 25.5
+        - 6
+        type: p
+        width: 2.5
+-   -   objects:
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id001
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id001
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id001
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id002
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id002
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id002
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id003
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id003
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id003
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        pos:
+        - 15
+        - 7.5
+        - 3.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id004
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id004
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id004
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id005
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id005
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id005
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id006
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id006
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id006
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        pos:
+        - 15
+        - -7.5
+        - 3.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id007
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id007
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id007
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id008
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id008
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id008
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id009
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id009
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id009
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        pos:
+        - 0
+        - 7.5
+        - 3.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id010
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id010
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id010
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id011
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id011
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id011
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id012
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id012
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id012
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        pos:
+        - 0
+        - -7.5
+        - 3.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id013
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id013
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id013
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id014
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id014
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id014
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id015
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id015
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id015
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        pos:
+        - -15
+        - 7.5
+        - 3.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: laser
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id016
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id016
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id016
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 3dpr
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.4619999999999997
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id017
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id017
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id017
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        -   extra: timing_belt_clamp_gt2
+            height: 2.5
+            inclusion: 'true'
+            pos:
+            - 0
+            - 0
+            - -2.5
+            r: 3.1734999999999998
+            shape: polyg
+            sides: 6
+            type: positive
+            width: 2.5
+        -   -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: laser
+                pos: &id018
+                - 0
+                - 0
+                - -100.0
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 3dpr
+                pos: *id018
+                r: 1.8
+                shape: cylinder
+                type: positive
+                width: 2.5
+            -   extra: timing_belt_clamp_gt2
+                h: 200
+                height: 1.5
+                inclusion: 'true'
+                pos: *id018
+                r: 1.5
+                shape: cylinder
+                type: positive
+                width: 2.5
+        pos:
+        - -15
+        - -7.5
+        - 3.0
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   -   extra: timing_belt_clamp_gt2
+            height: 1.5
+            m: '#'
+            pos:
+            - 6.5
+            - -3.5
+            - -3.0
+            shape: cube
+            size:
+            - 2
+            - 7
+            - 6
+            type: n
+            width: 2.5
+-   -   -   extra: timing_belt_clamp_gt2
+            height: 1.5
+            m: '#'
+            pos:
+            - -8.5
+            - -3.5
+            - -3.0
+            shape: cube
+            size:
+            - 2
+            - 7
+            - 6
+            type: n
+            width: 2.5
+components_objects:
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    pos:
+    - 0
+    - 0
+    - -3.0
+    shape: rounded_rectangle
+    size:
+    - 40.5
+    - 25.5
+    - 6
+    thickness: 6
+    type: p
+    width: 2.5
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    hole: true
+    pos:
+    - 15
+    - 7.5
+    - 3.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: top
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    hole: true
+    pos:
+    - 15
+    - -7.5
+    - 3.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: top
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 3.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: top
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 3.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: top
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    hole: true
+    pos:
+    - -15
+    - 7.5
+    - 3.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: top
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    hole: true
+    pos:
+    - -15
+    - -7.5
+    - 3.0
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_nut
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: top
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    m: '#'
+    pos:
+    - 7.5
+    - 0
+    - 0
+    shape: oobb_cube_center
+    size:
+    - 2
+    - 7
+    - 6
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: middle
+-   extra: timing_belt_clamp_gt2
+    height: 1.5
+    m: '#'
+    pos:
+    - -7.5
+    - 0
+    - 0
+    shape: oobb_cube_center
+    size:
+    - 2
+    - 7
+    - 6
+    thickness: 6
+    type: n
+    width: 2.5
+    zz: middle
+components_string:
+- rounded_rectangle_shape_p_type_0_0_-3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_40.5_25.5_6_size
+- oobb_nut_shape_n_type_m3_radius_name_15_7.5_3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_top_zz_true_hole_0_0_0_rot
+- oobb_nut_shape_n_type_m3_radius_name_15_-7.5_3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_top_zz_true_hole_0_0_0_rot
+- oobb_nut_shape_n_type_m3_radius_name_0_7.5_3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_top_zz_true_hole_0_0_0_rot
+- oobb_nut_shape_n_type_m3_radius_name_0_-7.5_3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_top_zz_true_hole_0_0_0_rot
+- oobb_nut_shape_n_type_m3_radius_name_-15_7.5_3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_top_zz_true_hole_0_0_0_rot
+- oobb_nut_shape_n_type_m3_radius_name_-15_-7.5_3.0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_top_zz_true_hole_0_0_0_rot
+- oobb_cube_center_shape_n_type_7.5_0_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_2_7_6_size_middle_zz
+- oobb_cube_center_shape_n_type_-7.5_0_0_pos_timing_belt_clamp_gt2_extra_2.5_width_1.5_height_6_thickness_2_7_6_size_middle_zz
+description: other 2.5x1.5x6
+extra: timing_belt_clamp_gt2
+folder: things/oobb_other_2d5_1d5_06_ex_timing_belt_clamp_gt2
+height: 1.5
+height_mm: 21.5
+id: oobb_other_2d5_1d5_06_ex_timing_belt_clamp_gt2
+thickness: 6
+thickness_mm: 6
+type: other
+width: 2.5
+width_mm: 36.5

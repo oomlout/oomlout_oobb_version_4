@@ -1,0 +1,303 @@
+components:
+-   -   -   center: true
+            color: gray
+            comment: gear main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT gear main
+            type: p
+-   -   depth: 8.5
+        extra: 48_teeth
+        number_of_teeth: 48
+        pos:
+        - 0
+        - 0
+        - -4.25
+        shape: pulley_gt2
+        type: p
+-   -   -   center: true
+            color: gray
+            comment: holes main
+            depth: 1
+            font: Arial:style=Bold
+            m: '*'
+            pos:
+            - 0
+            - 7
+            - 0
+            shape: text
+            size: 4.5
+            text: COMMENT holes main
+            type: n
+- []
+-   -   extra: 48_teeth
+        h: 200
+        inclusion: laser
+        pos: &id001
+        - 7.5
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 3dpr
+        pos: *id001
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 'true'
+        pos: *id001
+        r: 1.5
+        shape: cylinder
+        type: n
+-   -   extra: 48_teeth
+        h: 200
+        inclusion: laser
+        pos: &id002
+        - -7.5
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 3dpr
+        pos: *id002
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 'true'
+        pos: *id002
+        r: 1.5
+        shape: cylinder
+        type: n
+-   -   extra: 48_teeth
+        h: 200
+        inclusion: laser
+        pos: &id003
+        - 0
+        - 7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 3dpr
+        pos: *id003
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 'true'
+        pos: *id003
+        r: 1.5
+        shape: cylinder
+        type: n
+-   -   extra: 48_teeth
+        h: 200
+        inclusion: laser
+        pos: &id004
+        - 0
+        - -7.5
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 3dpr
+        pos: *id004
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 'true'
+        pos: *id004
+        r: 1.5
+        shape: cylinder
+        type: n
+-   -   extra: 48_teeth
+        h: 200
+        inclusion: laser
+        pos: &id005
+        - 0
+        - 0
+        - -100.0
+        r: 1.5
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 3dpr
+        pos: *id005
+        r: 1.8
+        shape: cylinder
+        type: n
+    -   extra: 48_teeth
+        h: 200
+        inclusion: 'true'
+        pos: *id005
+        r: 1.5
+        shape: cylinder
+        type: n
+-   -   extra: 48_teeth
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+    -   extra: 48_teeth
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+    -   extra: 48_teeth
+        pos:
+        - -250.0
+        - -250.0
+        - 0
+        shape: cube
+        size:
+        - 500
+        - 500
+        - 500
+        type: n
+components_objects:
+-   depth: 8.5
+    diameter: 2
+    extra: 48_teeth
+    number_of_teeth: 48
+    pos:
+    - 0
+    - 0
+    - -4.25
+    shaft: m3
+    shape: pulley_gt2
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 48_teeth
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m3
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 1
+-   diameter: 2
+    extra: 48_teeth
+    pos:
+    - 7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: m3
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth
+    pos:
+    - -7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: m3
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth
+    pos:
+    - 0
+    - 7.5
+    - 0
+    radius_name: m3
+    shaft: m3
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth
+    pos:
+    - 0
+    - -7.5
+    - 0
+    radius_name: m3
+    shaft: m3
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: m3
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 48_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m3
+    shape: oobb_slice
+    thickness: 6
+    type: n
+components_string:
+- pulley_gt2_shape_p_type_8.5_depth_0_0_-4.25_pos_6_thickness_48_teeth_extra_m3_shaft_2_diameter_48_number_of_teeth
+- oobb_holes_shape_n_type_6_thickness_48_teeth_extra_m3_shaft_1.5_diameter_1_width_1_height_true_both_holes_true_circle_false_middle
+- oobb_hole_shape_n_type_m3_radius_name_7.5_0_0_pos_6_thickness_48_teeth_extra_m3_shaft_2_diameter
+- oobb_hole_shape_n_type_m3_radius_name_-7.5_0_0_pos_6_thickness_48_teeth_extra_m3_shaft_2_diameter
+- oobb_hole_shape_n_type_m3_radius_name_0_7.5_0_pos_6_thickness_48_teeth_extra_m3_shaft_2_diameter
+- oobb_hole_shape_n_type_m3_radius_name_0_-7.5_0_pos_6_thickness_48_teeth_extra_m3_shaft_2_diameter
+- oobb_hole_shape_n_type_m3_radius_name_6_thickness_48_teeth_extra_m3_shaft_2_diameter
+- oobb_slice_shape_n_type_6_thickness_48_teeth_extra_m3_shaft_2_diameter
+description: pulley gt2 0x0x6
+diameter: 2
+extra: 48_teeth
+folder: things/oobb_pulley_gt2_02_06_ex_48_teeth_sh_m3
+id: oobb_pulley_gt2_02_06_ex_48_teeth_sh_m3
+shaft: m3
+thickness: 6
+thickness_mm: 6
+type: pulley_gt2

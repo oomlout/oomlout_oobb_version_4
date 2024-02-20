@@ -1,0 +1,369 @@
+{
+    "description": "pulley gt2 0x0x6",
+    "id": "oobb_pulley_gt2_01_06_ex_30_teeth_shield_sh_electronic_potentiometer_17_mm",
+    "type": "pulley_gt2",
+    "diameter": 1,
+    "thickness": 6,
+    "extra": "30_teeth_shield",
+    "shaft": "electronic_potentiometer_17_mm",
+    "thickness_mm": 6,
+    "components": [
+        [
+            [
+                {
+                    "type": "p",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "gear main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT gear main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "pulley_gt2",
+                "pos": [
+                    0,
+                    0,
+                    -4.25
+                ],
+                "depth": 8.5,
+                "extra": "30_teeth_shield",
+                "number_of_teeth": 30
+            }
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.554140127388534,
+                "radius": 10.554140127388534,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    -4.25
+                ],
+                "inclusion": "laser",
+                "depth": 1,
+                "extra": "30_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.554140127388534,
+                "radius": 10.554140127388534,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    -4.25
+                ],
+                "inclusion": "3dpr",
+                "depth": 1,
+                "extra": "30_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.554140127388534,
+                "radius": 10.554140127388534,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    -4.25
+                ],
+                "inclusion": "true",
+                "depth": 1,
+                "extra": "30_teeth_shield"
+            }
+        ],
+        [
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.554140127388534,
+                "radius": 10.554140127388534,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    3.25
+                ],
+                "inclusion": "laser",
+                "depth": 1,
+                "extra": "30_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.554140127388534,
+                "radius": 10.554140127388534,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    3.25
+                ],
+                "inclusion": "3dpr",
+                "depth": 1,
+                "extra": "30_teeth_shield"
+            },
+            {
+                "type": "p",
+                "shape": "cylinder",
+                "r": 10.554140127388534,
+                "radius": 10.554140127388534,
+                "h": 1,
+                "pos": [
+                    0,
+                    0,
+                    3.25
+                ],
+                "inclusion": "true",
+                "depth": 1,
+                "extra": "30_teeth_shield"
+            }
+        ],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "text",
+                    "color": "gray",
+                    "center": true,
+                    "comment": "holes main",
+                    "size": 4.5,
+                    "pos": [
+                        0,
+                        7,
+                        0
+                    ],
+                    "m": "*",
+                    "depth": 1,
+                    "text": "COMMENT holes main",
+                    "font": "Arial:style=Bold"
+                }
+            ]
+        ],
+        [],
+        [
+            [
+                {
+                    "type": "n",
+                    "shape": "cylinder",
+                    "r": 2.95,
+                    "h": 200,
+                    "pos": [
+                        0,
+                        0,
+                        -100.0
+                    ],
+                    "rot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "inclusion": "laser",
+                    "m": "#"
+                },
+                {
+                    "type": "n",
+                    "shape": "cylinder",
+                    "r": 2.95,
+                    "h": 200,
+                    "pos": [
+                        0,
+                        0,
+                        -100.0
+                    ],
+                    "rot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "inclusion": "3dpr",
+                    "m": "#"
+                },
+                {
+                    "type": "n",
+                    "shape": "cylinder",
+                    "r": 2.95,
+                    "h": 200,
+                    "pos": [
+                        0,
+                        0,
+                        -100.0
+                    ],
+                    "rot": [
+                        0,
+                        0,
+                        0
+                    ],
+                    "inclusion": "true",
+                    "m": "#"
+                }
+            ]
+        ],
+        [
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "30_teeth_shield"
+            },
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "30_teeth_shield"
+            },
+            {
+                "type": "n",
+                "shape": "cube",
+                "size": [
+                    500,
+                    500,
+                    500
+                ],
+                "pos": [
+                    -250.0,
+                    -250.0,
+                    0
+                ],
+                "extra": "30_teeth_shield"
+            }
+        ]
+    ],
+    "components_string": [
+        "pulley_gt2_shape_p_type_8.5_depth_0_0_-4.25_pos_6_thickness_30_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_1_diameter_30_number_of_teeth",
+        "oobb_cylinder_shape_p_type_1_depth_0_0_-3.75_pos_6_thickness_30_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_1_diameter_10.554140127388534_radius",
+        "oobb_cylinder_shape_p_type_1_depth_0_0_3.75_pos_6_thickness_30_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_1_diameter_10.554140127388534_radius",
+        "oobb_holes_shape_n_type_6_thickness_30_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_1_diameter_1_width_1_height_true_both_holes_true_circle_false_middle",
+        "oobb_electronic_potentiometer_17_mm_shape_n_type_6_thickness_electronic_potentiometer_17_mm_shaft_1_diameter_shaft_part",
+        "oobb_slice_shape_n_type_6_thickness_30_teeth_shield_extra_electronic_potentiometer_17_mm_shaft_1_diameter"
+    ],
+    "components_objects": [
+        {
+            "type": "p",
+            "thickness": 6,
+            "extra": "30_teeth_shield",
+            "shaft": "electronic_potentiometer_17_mm",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                -4.25
+            ],
+            "shape": "pulley_gt2",
+            "number_of_teeth": 30,
+            "depth": 8.5
+        },
+        {
+            "type": "p",
+            "thickness": 6,
+            "extra": "30_teeth_shield",
+            "shaft": "electronic_potentiometer_17_mm",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                -3.75
+            ],
+            "shape": "oobb_cylinder",
+            "radius": 10.554140127388534,
+            "depth": 1
+        },
+        {
+            "type": "p",
+            "thickness": 6,
+            "extra": "30_teeth_shield",
+            "shaft": "electronic_potentiometer_17_mm",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                3.75
+            ],
+            "shape": "oobb_cylinder",
+            "radius": 10.554140127388534,
+            "depth": 1
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "30_teeth_shield",
+            "shaft": "electronic_potentiometer_17_mm",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_holes",
+            "width": 1,
+            "height": 1,
+            "both_holes": true,
+            "circle": true,
+            "middle": false
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "shaft": "electronic_potentiometer_17_mm",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_electronic_potentiometer_17_mm",
+            "part": "shaft",
+            "m": "#"
+        },
+        {
+            "type": "n",
+            "thickness": 6,
+            "extra": "30_teeth_shield",
+            "shaft": "electronic_potentiometer_17_mm",
+            "diameter": 1,
+            "pos": [
+                0,
+                0,
+                0
+            ],
+            "shape": "oobb_slice"
+        }
+    ],
+    "folder": "things/oobb_pulley_gt2_01_06_ex_30_teeth_shield_sh_electronic_potentiometer_17_mm"
+}

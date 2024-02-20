@@ -30,6 +30,7 @@ def get_holder_electronic_battery_box_aa_battery_4_cell(**kwargs):
 
     return return_value
 
+
 #button
 def get_holder_electronic_button_11_mm_panel_mount(**kwargs):
     thickness = kwargs.get("thickness", 3)
@@ -236,13 +237,17 @@ def get_holder_electronic_base(**kwargs):
         oobb_base.append_full(thing, **p3)
 
     # item    
-    p3 = copy.deepcopy(kwargs)
-    p3["type"] = "negative" 
-    p3["shape"] = f"oobb_{extra}"  
-    p3["pos"] = pos_item
-    p3["rot"] = rot_item
-    #p3["m"] = "#"
-    oobb_base.append_full(thing, **p3)
+    try:
+        p3 = copy.deepcopy(kwargs)
+        p3["type"] = "negative" 
+        p3["shape"] = f"oobb_{extra}"  
+        p3["pos"] = pos_item
+        p3["rot"] = rot_item
+        #p3["m"] = "#"
+        oobb_base.append_full(thing, **p3)
+    except Exception as e:
+        print("insertion item not found in oobb_get_items_oobb_holder_electronic")
+        print(e)
 
     
     if full_object:   
