@@ -23,7 +23,7 @@
         "mode": "all"
     },
     {
-        "type": "n",
+        "type": "negative",
         "width": 3,
         "height": 3,
         "thickness": 12,
@@ -101,50 +101,6 @@
         ],
         "zz": "bottom",
         "hole": true,
-        "shape": "oobb_hole",
-        "pos": [
-            0,
-            7.5,
-            6.0
-        ],
-        "radius_name": "m3"
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "bearing": "6704",
-        "shaft": "motor_servo_standard_01",
-        "pos_plate": [
-            0,
-            0,
-            0
-        ],
-        "zz": "bottom",
-        "hole": true,
-        "shape": "oobb_hole",
-        "pos": [
-            0,
-            -7.5,
-            6.0
-        ],
-        "radius_name": "m3"
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "bearing": "6704",
-        "shaft": "motor_servo_standard_01",
-        "pos_plate": [
-            0,
-            0,
-            0
-        ],
-        "zz": "bottom",
-        "hole": true,
         "shape": "oobb_threaded_insert",
         "pos": [
             7.5,
@@ -171,6 +127,50 @@
         "pos": [
             -7.5,
             0,
+            6.0
+        ],
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_servo_standard_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "zz": "bottom",
+        "hole": true,
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            7.5,
+            6.0
+        ],
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "width": 3,
+        "height": 3,
+        "thickness": 12,
+        "bearing": "6704",
+        "shaft": "motor_servo_standard_01",
+        "pos_plate": [
+            0,
+            0,
+            0
+        ],
+        "zz": "bottom",
+        "hole": true,
+        "shape": "oobb_hole",
+        "pos": [
+            0,
+            -7.5,
             6.0
         ],
         "radius_name": "m3"

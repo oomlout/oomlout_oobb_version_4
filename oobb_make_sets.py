@@ -464,7 +464,7 @@ def get_plates(size="oobb"):
     #plates.append({"type": "plate", "width": 5, "height": 2, "thickness": 3, "extra":"gorm", "size": size})
 
     #ninety_degree plates    
-    max = 12
+    max = 20
     for i in range(2,max):
         plates.append({"type": "plate", "width": i, "height": 1, "thickness": 14, "extra":"ninety_degree", "size": size})
     
@@ -485,7 +485,7 @@ def get_plates(size="oobb"):
 
 
     # l
-    thicknesses = [3,15]
+    thicknesses = [3,6,9,12,15]
     sizes = []
     sizes.append([3,3])
     sizes.append([5,2])
@@ -494,7 +494,7 @@ def get_plates(size="oobb"):
             plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"l", "size": size})
     
     # t
-    thicknesses = [3,15]
+    thicknesses = [3,6,9,12,15]
     thicknesses = [3]
     sizes = []
     sizes.append([3,2])    
@@ -776,7 +776,7 @@ def get_trays(size="oobb"):
     """
     ts.append([3,3])
     """
-    thicknesses = [9, 12, 15, 18, 30]
+    thicknesses = [9, 12, 15, 18, 21,24,27,30]
     for tray in ts:
         #trays.append({"type": "tray_lid", "width": tray[0], "height": tray[1], "thickness": 2, "size": size})
         #trays.append({"type": "tray_lid_thin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})

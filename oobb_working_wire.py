@@ -86,8 +86,8 @@ def main(**kwargs):
 
     oobb_make_sets.make_all(filter=filter)
 
-    #oobb_base.dump("json")
-    #oobb_base.dump("folder")
+    oobb_base.dump("json")
+    oobb_base.dump("folder")
 
     #save_type = "none"
     #save_type = "laser"

@@ -65,14 +65,16 @@ def main(**kwargs):
     #filter = "nema_17"
     #filter = "oobb_holder_05_03_09_ex_motor_stepper_nema_17_flat"
     #filter = "ex_motor_stepper_nema_17_flat"
-    filter = "with_encoder"
+    #filter = "with_encoder"
 
     #
     # filter = "electronic_battery_box_aa_battery_4_cell"
 
     # mounting_plate
+    #filter = "mounting_plate"
     #filter = "netgear_5_port_gigabit_switch_gs105v5"
     #filter = "electrolama_a_lot_of_jacks"
+    #filter = "oobb_mounting_plate_07_04_03_rh_m3_nm_electrolama_basic_hub"
 
     # other
     #filter = "_other"
@@ -84,12 +86,13 @@ def main(**kwargs):
     # plate
     #filter = "ninety_degree"
     #filter = "ex_t"
-    #filter = "oobb_plate_03_03_03_ex_t"
+    filter = "oobb_plate_03_03_12_ex_l"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = "oobb_plate_03_03_44_ex_ninety_degree"
     #filter = "oobb_plate_20_20_03"
+    #filter = "oobb_plate_16_01_14_ex_ninety_degree"
 
     # pulley
     #filter = "pulley"
@@ -152,7 +155,7 @@ def main(**kwargs):
         oobb_base.dump("json")
         oobb_base.dump("folder")
 
-    save_type = "none"
+    #save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"    
     save_type = "all"
@@ -160,8 +163,9 @@ def main(**kwargs):
     overwrite = True
     #overwrite = False
     
-    modes = ["laser", "3dpr", "true"]
-    #modes = ["3dpr"]
+    
+    #modes = ["laser", "3dpr", "true"]
+    modes = ["3dpr"]
     #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 

@@ -32,7 +32,7 @@
     shaft: motor_servo_standard_01
     shape: oobb_bearing
     thickness: 12
-    type: n
+    type: negative
     width: 3
 -   bearing: '6704'
     height: 3
@@ -58,42 +58,6 @@
     pos:
     - -7.5
     - 0
-    - 6.0
-    pos_plate:
-    - 0
-    - 0
-    - 0
-    radius_name: m3
-    shaft: motor_servo_standard_01
-    shape: oobb_hole
-    thickness: 12
-    type: n
-    width: 3
-    zz: bottom
--   bearing: '6704'
-    height: 3
-    hole: true
-    pos:
-    - 0
-    - 7.5
-    - 6.0
-    pos_plate:
-    - 0
-    - 0
-    - 0
-    radius_name: m3
-    shaft: motor_servo_standard_01
-    shape: oobb_hole
-    thickness: 12
-    type: n
-    width: 3
-    zz: bottom
--   bearing: '6704'
-    height: 3
-    hole: true
-    pos:
-    - 0
-    - -7.5
     - 6.0
     pos_plate:
     - 0
@@ -138,6 +102,42 @@
     radius_name: m3
     shaft: motor_servo_standard_01
     shape: oobb_threaded_insert
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - 7.5
+    - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
+    thickness: 12
+    type: n
+    width: 3
+    zz: bottom
+-   bearing: '6704'
+    height: 3
+    hole: true
+    pos:
+    - 0
+    - -7.5
+    - 6.0
+    pos_plate:
+    - 0
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_servo_standard_01
+    shape: oobb_hole
     thickness: 12
     type: n
     width: 3

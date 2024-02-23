@@ -300,8 +300,8 @@ components:
         r: 1.5
         shape: cylinder
         type: n
--   -   depth: 9
-        h: 9
+-   -   depth: 7
+        h: 7
         inclusion: laser
         m: ''
         pos: &id013
@@ -311,16 +311,16 @@ components:
         r: 2.75
         shape: cylinder
         type: p
-    -   depth: 9
-        h: 9
+    -   depth: 7
+        h: 7
         inclusion: 3dpr
         m: ''
         pos: *id013
         r: 3.05
         shape: cylinder
         type: p
-    -   depth: 9
-        h: 9
+    -   depth: 7
+        h: 7
         inclusion: 'true'
         m: ''
         pos: *id013
@@ -328,10 +328,10 @@ components:
         shape: cylinder
         type: p
 -   -   objects:
-        -   -   depth: 9
+        -   -   depth: 7
                 h: 1.7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos:
                 - 0
                 - 0
@@ -340,40 +340,40 @@ components:
                 r2: 2.4
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
-                h: 9
+        -   -   depth: 7
+                h: 7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos: &id014
                 - 0
                 - 0
-                - -9.0
+                - -7.0
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos: *id014
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos: *id014
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
+        -   -   depth: 7
                 h: 1.9
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos:
                 - 0
                 - 0
@@ -382,40 +382,40 @@ components:
                 r2: 3.6
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
-                h: 9
+        -   -   depth: 7
+                h: 7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos: &id015
                 - 0
                 - 0
-                - -9.0
+                - -7.0
                 r: 1.8
                 radius: 1.8
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos: *id015
                 r: 1.8
                 radius: 1.8
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos: *id015
                 r: 1.8
                 radius: 1.8
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
+        -   -   depth: 7
                 h: 1.7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos:
                 - 0
                 - 0
@@ -424,31 +424,31 @@ components:
                 r2: 2.9
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
-                h: 9
+        -   -   depth: 7
+                h: 7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos: &id016
                 - 0
                 - 0
-                - -9.0
+                - -7.0
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos: *id016
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos: *id016
                 r: 1.5
                 radius: 1.5
@@ -488,8 +488,8 @@ components:
         r: 1.5
         shape: cylinder
         type: n
--   -   depth: 9
-        h: 9
+-   -   depth: 7
+        h: 7
         inclusion: laser
         m: ''
         pos: &id018
@@ -499,16 +499,16 @@ components:
         r: 2.75
         shape: cylinder
         type: p
-    -   depth: 9
-        h: 9
+    -   depth: 7
+        h: 7
         inclusion: 3dpr
         m: ''
         pos: *id018
         r: 3.05
         shape: cylinder
         type: p
-    -   depth: 9
-        h: 9
+    -   depth: 7
+        h: 7
         inclusion: 'true'
         m: ''
         pos: *id018
@@ -516,10 +516,10 @@ components:
         shape: cylinder
         type: p
 -   -   objects:
-        -   -   depth: 9
+        -   -   depth: 7
                 h: 1.7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos:
                 - 0
                 - 0
@@ -528,40 +528,40 @@ components:
                 r2: 2.4
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
-                h: 9
+        -   -   depth: 7
+                h: 7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos: &id019
                 - 0
                 - 0
-                - -9.0
+                - -7.0
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos: *id019
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos: *id019
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
+        -   -   depth: 7
                 h: 1.9
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos:
                 - 0
                 - 0
@@ -570,40 +570,40 @@ components:
                 r2: 3.6
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
-                h: 9
+        -   -   depth: 7
+                h: 7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos: &id020
                 - 0
                 - 0
-                - -9.0
+                - -7.0
                 r: 1.8
                 radius: 1.8
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos: *id020
                 r: 1.8
                 radius: 1.8
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos: *id020
                 r: 1.8
                 radius: 1.8
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
+        -   -   depth: 7
                 h: 1.7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos:
                 - 0
                 - 0
@@ -612,31 +612,31 @@ components:
                 r2: 2.9
                 shape: cylinder
                 type: positive
-        -   -   depth: 9
-                h: 9
+        -   -   depth: 7
+                h: 7
                 inclusion: laser
-                m: '#'
+                m: ''
                 pos: &id021
                 - 0
                 - 0
-                - -9.0
+                - -7.0
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 3dpr
-                m: '#'
+                m: ''
                 pos: *id021
                 r: 1.5
                 radius: 1.5
                 shape: cylinder
                 type: positive
-            -   depth: 9
-                h: 9
+            -   depth: 7
+                h: 7
                 inclusion: 'true'
-                m: '#'
+                m: ''
                 pos: *id021
                 r: 1.5
                 radius: 1.5

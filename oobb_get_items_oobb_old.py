@@ -2188,11 +2188,11 @@ def get_mounting_plate_generic(**kwargs):
         pos = [hole["x"], hole["y"], 0]
         th.extend(ob.oobb_easy(t="n", s="oobb_hole", pos=pos, radius_name=radius_hole, m=""))
         pos = [hole["x"], hole["y"], 0]
-        depth2 = depth +6
+        depth2 = depth + 4 #should be the right height for a 12 mm countersunk screw
         if standoff:
             th.extend(ob.oobb_easy(t="p", s="oobb_hole_standoff", pos=pos, radius_name=radius_hole, depth = depth2, m=""))
         pos = [hole["x"], hole["y"], 0]
-        th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk", rot=[0,180,0], pos=pos, radius_name=radius_hole, depth=depth2, include_nut=False, m="#"))
+        th.extend(ob.oobb_easy(t="n", s="oobb_screw_countersunk", rot=[0,180,0], pos=pos, radius_name=radius_hole, depth=depth2, include_nut=False, m=""))
 
     if extra != "":
         p3 = copy.deepcopy(kwargs)

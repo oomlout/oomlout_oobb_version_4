@@ -22,7 +22,7 @@
         "mode": "all"
     },
     {
-        "type": "n",
+        "type": "negative",
         "width": 3,
         "height": 3,
         "thickness": 12,
@@ -162,8 +162,9 @@
         "pos": [
             0,
             0,
-            0.0
+            3.0
         ],
+        "clearance": "bottom",
         "part": "shaft"
     },
     {
@@ -183,27 +184,7 @@
         "pos": [
             0,
             0,
-            -3
-        ]
-    },
-    {
-        "type": "n",
-        "width": 3,
-        "height": 3,
-        "thickness": 12,
-        "bearing": "6704",
-        "shaft": "motor_gearmotor_01",
-        "pos_plate": [
-            0,
-            0,
             0
-        ],
-        "shape": "oobb_bearing",
-        "depth": 12,
-        "pos": [
-            0,
-            0,
-            -6
         ]
     },
     {

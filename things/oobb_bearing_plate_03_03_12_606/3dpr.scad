@@ -3,24 +3,10 @@ $fn = 50;
 
 difference() {
 	union() {
-		translate(v = [50, 0, 0]) {
+		translate(v = [60, 0, 0]) {
 			rotate(a = [180, 0, 0]) {
 				difference() {
 					union() {
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 7, -6.0000000000]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_plate", valign = "center");
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, -6.0000000000]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_p_type_12_depth_0_0_-6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_true_extra_mm_false_holes", valign = "center");
-								}
-							}
-						}
 						translate(v = [0, 0, -6.0000000000]) {
 							hull() {
 								translate(v = [-17.5000000000, 17.5000000000, 0]) {
@@ -699,149 +685,71 @@ difference() {
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_bearing_shape_n_type_12_depth_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate", valign = "center");
-								}
-							}
-						}
 						translate(v = [0, 0, -3.0000000000]) {
 							union() {
 								difference() {
-									cylinder(h = 6, r = 8.5500000000);
+									cylinder(h = 6, r = 8.5750000000);
 									cylinder(h = 6, r = 3.0000000000);
 								}
 								difference() {
 									translate(v = [0, 0, -50]) {
-										cylinder(h = 100, r = 6.2750000000);
+										cylinder(h = 100, r = 6.2875000000);
 									}
 								}
 							}
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_single_holes_1_1_2_1_3_1_1_2_3_2_1_3_2_3_3_3_loc", valign = "center");
-								}
-							}
+						translate(v = [-15.0000000000, -15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [-15.0000000000, -15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [0.0000000000, -15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [0.0000000000, -15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [15.0000000000, -15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [15.0000000000, -15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [-15.0000000000, 0.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [-15.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [15.0000000000, 0.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [15.0000000000, 0.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [-15.0000000000, 15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [-15.0000000000, 15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [0.0000000000, 15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [0.0000000000, 15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [15.0000000000, 15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
-						translate(v = [15.0000000000, 15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
+						translate(v = [-7.5000000000, -15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m3_radius_name_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_single_holes_1.5_1_1_1.5_2.5_1_3_1.5_1_2.5_3_2.5_1.5_3_2.5_3_loc", valign = "center");
-								}
-							}
+						translate(v = [-15.0000000000, -7.5000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [-7.5000000000, -15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
+						translate(v = [7.5000000000, -15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [-15.0000000000, -7.5000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
+						translate(v = [15.0000000000, -7.5000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [7.5000000000, -15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
+						translate(v = [-15.0000000000, 7.5000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [15.0000000000, -7.5000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
+						translate(v = [15.0000000000, 7.5000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [-15.0000000000, 7.5000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
+						translate(v = [-7.5000000000, 15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [15.0000000000, 7.5000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
+						translate(v = [7.5000000000, 15.0000000000, -100.0000000000]) {
+							cylinder(h = 200, r = 1.8000000000);
 						}
-						translate(v = [-7.5000000000, 15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
-						}
-						translate(v = [7.5000000000, 15.0000000000, -50.0000000000]) {
-							cylinder(h = 100, r = 1.8000000000);
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [0, 14, 0]) {
-								linear_extrude(height = 3) {
-									text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_just_middle_holes", valign = "center");
-								}
-							}
-						}
-						translate(v = [0, 0, -50.0000000000]) {
-							cylinder(h = 100, r = 3.2500000000);
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [15.0000000000, 21.5000000000, 6.0000000000]) {
-								rotate(a = [0, 0, 30.0000000000]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_15.0_7.5_6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_0_30.0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [-15.0000000000, 6.5000000000, 6.0000000000]) {
-								rotate(a = [0, 0, 30.0000000000]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-15.0_-7.5_6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_0_30.0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [7.5000000000, -1.0000000000, -6.0000000000]) {
-								rotate(a = [0, 180, 0]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_7.5_-15.0_-6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_180_0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
-						}
-						*color(alpha = 1.0000000000, c = "gray") {
-							translate(v = [-7.5000000000, 29.0000000000, -6.0000000000]) {
-								rotate(a = [0, 180, 0]) {
-									linear_extrude(height = 3) {
-										text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-7.5_15.0_-6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_180_0_rot_true_nut_true_overhang", valign = "center");
-									}
-								}
-							}
+						translate(v = [0, 0, -100.0000000000]) {
+							cylinder(h = 200, r = 3.2500000000);
 						}
 					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 7, -6.0000000000]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_plate", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, -6.0000000000]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_plate_shape_p_type_12_depth_0_0_-6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_true_extra_mm_false_holes", valign = "center");
 				}
 			}
 		}
@@ -858,20 +766,6 @@ difference() {
 				}
 				translate(v = [17.5000000000, -17.5000000000, 0]) {
 					cylinder(h = 12, r = 5);
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 7, 6.0000000000]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_slice", valign = "center");
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 7, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT bearing_plate_slice", valign = "center");
 				}
 			}
 		}
@@ -1537,152 +1431,74 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_bearing_shape_n_type_12_depth_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, -3.0000000000]) {
 			union() {
 				difference() {
-					cylinder(h = 6, r = 8.5500000000);
+					cylinder(h = 6, r = 8.5750000000);
 					cylinder(h = 6, r = 3.0000000000);
 				}
 				difference() {
 					translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 6.2750000000);
+						cylinder(h = 100, r = 6.2875000000);
 					}
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_single_holes_1_1_2_1_3_1_1_2_3_2_1_3_2_3_3_3_loc", valign = "center");
-				}
-			}
+		translate(v = [-15.0000000000, -15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [-15.0000000000, -15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [0.0000000000, -15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [0.0000000000, -15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [15.0000000000, -15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [15.0000000000, -15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [-15.0000000000, 0.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [-15.0000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [15.0000000000, 0.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [15.0000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [-15.0000000000, 15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [-15.0000000000, 15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [0.0000000000, 15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [0.0000000000, 15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [15.0000000000, 15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [15.0000000000, 15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
+		translate(v = [-7.5000000000, -15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m3_radius_name_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_single_holes_1.5_1_1_1.5_2.5_1_3_1.5_1_2.5_3_2.5_1.5_3_2.5_3_loc", valign = "center");
-				}
-			}
+		translate(v = [-15.0000000000, -7.5000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [-7.5000000000, -15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [7.5000000000, -15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [-15.0000000000, -7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [15.0000000000, -7.5000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [7.5000000000, -15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [-15.0000000000, 7.5000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [15.0000000000, -7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [15.0000000000, 7.5000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [-15.0000000000, 7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [-7.5000000000, 15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [15.0000000000, 7.5000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [7.5000000000, 15.0000000000, -100.0000000000]) {
+			cylinder(h = 200, r = 1.8000000000);
 		}
-		translate(v = [-7.5000000000, 15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
+		translate(v = [0, 0, -100.0000000000]) {
+			cylinder(h = 200, r = 3.2500000000);
 		}
-		translate(v = [7.5000000000, 15.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 1.8000000000);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 3) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_n_type_m6_radius_name_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_just_middle_holes", valign = "center");
-				}
-			}
-		}
-		translate(v = [0, 0, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [15.0000000000, 21.5000000000, 6.0000000000]) {
-				rotate(a = [0, 0, 30.0000000000]) {
-					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_15.0_7.5_6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_0_30.0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-15.0000000000, 6.5000000000, 6.0000000000]) {
-				rotate(a = [0, 0, 30.0000000000]) {
-					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-15.0_-7.5_6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_0_30.0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [7.5000000000, -1.0000000000, -6.0000000000]) {
-				rotate(a = [0, 180, 0]) {
-					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_7.5_-15.0_-6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_180_0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-7.5000000000, 29.0000000000, -6.0000000000]) {
-				rotate(a = [0, 180, 0]) {
-					linear_extrude(height = 3) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_12_depth_-7.5_15.0_-6.0_pos_3_width_3_height_12_thickness_606_bearing_0_0_0_pos_plate_0_180_0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 6.0000000000]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_n_type_0_0_6.0_pos_3dpr_mode_bottom_zz", valign = "center");
-				}
-			}
-		}
-		translate(v = [-250, -250, 6.0000000000]) {
+		translate(v = [-250.0000000000, -250.0000000000, 6.0000000000]) {
 			cube(size = [500, 500, 500]);
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_slice_shape_n_type_3dpr_mode_top_zz", valign = "center");
-				}
-			}
-		}
-		translate(v = [-250, -250, -500]) {
+		translate(v = [-250.0000000000, -250.0000000000, -500]) {
 			cube(size = [500, 500, 500]);
 		}
 	}

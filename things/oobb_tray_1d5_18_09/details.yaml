@@ -1,0 +1,899 @@
+components:
+-   -   -   depth: 9
+            height: 18
+            m: ''
+            pos:
+            - 0
+            - 0
+            - 0
+            shape: rounded_rectangle
+            size:
+            - 22.5
+            - 270.0
+            - 9
+            type: p
+            width: 1.5
+-   -   -   m: ''
+            pos:
+            - 0
+            - 0
+            - 3
+            r: 4
+            shape: sphere_rectangle
+            size:
+            - 19.5
+            - 267
+            - 29
+            type: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id001
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id001
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id002
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id002
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id003
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id003
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        pos:
+        - -3.75
+        - -127.5
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id004
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id004
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id005
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id005
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id006
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id006
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        pos:
+        - 3.75
+        - -127.5
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id007
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id007
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id007
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id008
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id008
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id008
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id009
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id009
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id009
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        pos:
+        - -3.75
+        - 127.5
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+-   -   objects:
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: laser
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.4
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: laser
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.4
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id010
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id010
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id010
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.9
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.9
+                r1: 1.8
+                r2: 3.6
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 3dpr
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 3.6
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id011
+                - 0
+                - 0
+                - -6.0
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id011
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id011
+                r: 1.8
+                radius: 1.8
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 1.7
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos:
+                - 0
+                - 0
+                - -1.7
+                r1: 1.5
+                r2: 2.9
+                shape: cylinder
+                type: positive
+                width: 1.5
+        -   -   -   clearance: top
+                    depth: 6
+                    h: 50
+                    height: 18
+                    inclusion: 'true'
+                    m: ''
+                    pos:
+                    - 0
+                    - 0
+                    - 0.0
+                    r: 2.9
+                    shape: cylinder
+                    type: positive
+                    width: 1.5
+        -   -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: laser
+                m: ''
+                pos: &id012
+                - 0
+                - 0
+                - -6.0
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 3dpr
+                m: ''
+                pos: *id012
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+            -   clearance: top
+                depth: 6
+                h: 6
+                height: 18
+                inclusion: 'true'
+                m: ''
+                pos: *id012
+                r: 1.5
+                radius: 1.5
+                shape: cylinder
+                type: positive
+                width: 1.5
+        pos:
+        - 3.75
+        - 127.5
+        - 2
+        rot:
+        - 0
+        - 0
+        - 0
+        type: rotation
+        typetype: n
+components_objects: []
+components_string: []
+description: tray 1.5x18x9
+folder: things/oobb_tray_1d5_18_09
+height: 18
+height_mm: 269
+id: oobb_tray_1d5_18_09
+thickness: 9
+thickness_mm: 9
+type: tray
+width: 1.5
+width_mm: 21.5
