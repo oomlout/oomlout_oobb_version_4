@@ -65,7 +65,7 @@ def main(**kwargs):
     #filter = "nema_17"
     #filter = "oobb_holder_05_03_09_ex_motor_stepper_nema_17_flat"
     #filter = "ex_motor_stepper_nema_17_flat"
-    #filter = "with_encoder"
+    filter = "computer_power_supply_microsoft_surface_standalone_microsoft_model_1625"
 
     #
     # filter = "electronic_battery_box_aa_battery_4_cell"
@@ -86,7 +86,7 @@ def main(**kwargs):
     # plate
     #filter = "ninety_degree"
     #filter = "ex_t"
-    filter = "oobb_plate_03_03_12_ex_l"
+    #filter = "oobb_plate_03_03_09_ex_u"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
@@ -164,8 +164,8 @@ def main(**kwargs):
     #overwrite = False
     
     
-    #modes = ["laser", "3dpr", "true"]
-    modes = ["3dpr"]
+    modes = ["laser", "3dpr", "true"]
+    #modes = ["3dpr"]
     #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 

@@ -29,9 +29,9 @@ def main(**kwargs):
     #modes = ["3dpr"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
-    copy_files = True
-    #copy_files = False
-    if copy_files:
+    copy_files_bool = True
+    #copy_files_bool = False
+    if copy_files_bool:
         copy_files()
         
 def copy_files(**kwargs):

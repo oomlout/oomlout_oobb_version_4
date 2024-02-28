@@ -81,7 +81,7 @@ def initialize_variables():
     m["1_3dpr"] = 1.2
     m["1d4"] = 1.5
     m["1d4_3dpr"] = 2
-    m["1d4_tight"] = 1.7
+    m["1d4_tight"] = 1.4
     m["1d5"] = 1.6
     m["1d5_3dpr"] = 1.8
     m["2"] = 2
