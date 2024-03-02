@@ -270,8 +270,8 @@ def initialize_variables():
 
 
     vl["screw_radius_m2d5"] = m["2d5"]/2, m["2d5"]/2, m["2d5_3dpr"]/2
-    vl["screw_countersunk_radius_m2d5"] = [3.1/2, 4.5/2, 6.7/2]    #added 1.8 to m3 so trying adding 1.8 here
-    vl["screw_countersunk_height_m2d5"] = [1.5/2, 1.5/2, 1.9/2]
+    vl["screw_countersunk_radius_m2d5"] = [3.1/2, 4.5/2, 6.9/2]    #added 1.8 to m3 so trying adding 1.8 here
+    vl["screw_countersunk_height_m2d5"] = [1.5/2, 1.5/2, 2/2]
     vl["screw_countersunk_depth_m2d5"] = vl["screw_countersunk_height_m2d5"]
     vl["screw_countersunk_radius_m2_5"] = vl["screw_countersunk_radius_m2d5"]
     vl["screw_countersunk_height_m2_5"] = vl["screw_countersunk_height_m2d5"]

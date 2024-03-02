@@ -290,9 +290,27 @@ def get_oobb_rounded_rectangle_hollow(**kwargs):
     else:
         p3["width"] += - wall_thickness * 2
         p3["height"] += - wall_thickness * 2
-    rad = p3.get("radius", 5)
-    rad = rad - wall_thickness
-    p3["radius"] = rad
+    if "radius" in p3:
+        rad = p3.get("radius")
+        rad = rad - wall_thickness
+        p3["radius"] = rad
+    elif "r1" in p3:
+        rad1 = p3.get("r1")
+        rad1 += - wall_thickness
+        p3["r1"] = rad1
+        rad2 = p3.get("r2")
+        rad2 += - wall_thickness
+        p3["r2"] = rad2
+        p3.pop("r", None)
+    else:
+        rad = 5
+    
+    #pos = copy.deepcopy(p3.get("pos", [0, 0, 0]))
+    #pos[2] += 50
+    #p3["pos"] = pos
+
+    
+    #p3["m"] = "#"
     return_value.append(opsc.opsc_easy(**p3))
 
     # packaging as a rotation object
