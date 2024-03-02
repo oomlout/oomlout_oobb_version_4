@@ -1801,7 +1801,9 @@ def get_oobb_screw(**kwargs):
             else:
                 p3.pop("depth", None)
             #dealing with rot_Z
-                
+            rotation_nut = kwargs.get("rotation_nut", None)
+            if rotation_nut != None:
+                p3["rot"] = rotation_nut    
 
             #p3["m"] = "#"
             return_value.extend(oobb_base.oobb_easy(**p3))

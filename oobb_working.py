@@ -65,7 +65,7 @@ def main(**kwargs):
     #filter = "nema_17"
     #filter = "oobb_holder_05_03_09_ex_motor_stepper_nema_17_flat"
     #filter = "ex_motor_stepper_nema_17_flat"
-    filter = "computer_power_supply_microsoft_surface_standalone_microsoft_model_1625"
+    #filter = "computer_power_supply_microsoft_surface_standalone_microsoft_model_1625"
 
     #
     # filter = "electronic_battery_box_aa_battery_4_cell"
@@ -74,7 +74,7 @@ def main(**kwargs):
     #filter = "mounting_plate"
     #filter = "netgear_5_port_gigabit_switch_gs105v5"
     #filter = "electrolama_a_lot_of_jacks"
-    #filter = "oobb_mounting_plate_07_04_03_rh_m3_nm_electrolama_basic_hub"
+    filter = "electronic_breakout_board_servo_tester_32_mm_width_28_mm_height_hw_141"
 
     # other
     #filter = "_other"
@@ -169,8 +169,8 @@ def main(**kwargs):
     #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 
-    #generate_release = False
-    generate_release = True
+    generate_release = False
+    #generate_release = True
     if generate_release:
         print("generate_release")
         import action_generate_release_3d_printable

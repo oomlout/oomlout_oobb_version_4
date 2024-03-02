@@ -98,6 +98,17 @@ def get_mounting_plates_aliexpress(size="oobb"):
     pl2.pop("extra", "")
     mounting_plates.append(pl2)
 
+    # oomp
+
+    #       breakout_board
+
+    #             servo_tester
+    board = "electronic_breakout_board_servo_tester_32_mm_width_28_mm_height_hw_141"
+    mounting_holes = []
+    mounting_holes.append({"x": -13.5, "y": 11})
+    mounting_holes.append({"x": 6.5, "y": -11})
+    mounting_plates.append({"type": "mounting_plate", "width": 4, "height": 4, "thickness": 3, "mounting_holes": mounting_holes, "radius_hole": "m2_5", "name": board, "size": size})
+
     
     return mounting_plates
 

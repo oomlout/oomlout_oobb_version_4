@@ -273,7 +273,9 @@ def initialize_variables():
     vl["screw_countersunk_radius_m2d5"] = [3.1/2, 4.5/2, 6.7/2]    #added 1.8 to m3 so trying adding 1.8 here
     vl["screw_countersunk_height_m2d5"] = [1.5/2, 1.5/2, 1.9/2]
     vl["screw_countersunk_depth_m2d5"] = vl["screw_countersunk_height_m2d5"]
-
+    vl["screw_countersunk_radius_m2_5"] = vl["screw_countersunk_radius_m2d5"]
+    vl["screw_countersunk_height_m2_5"] = vl["screw_countersunk_height_m2d5"]
+    vl["screw_countersunk_depth_m2_5"] = vl["screw_countersunk_height_m2d5"]
 
     vl["screw_radius_m3"] = m["3"]/2, m["3"]/2, m["3_3dpr"]/2
     vl["screw_countersunk_radius_m3"] = [4.8/2, 5.8/2, 7.2/2]
@@ -302,6 +304,8 @@ def initialize_variables():
     vl["screw_countersunk_radius_m6"] = [6/2, 6/2, 7.2/2]
     vl["screw_countersunk_height_m6"] = [3.3, 3.3, 3.7]
     vl["screw_countersunk_depth_m6"] = vl["screw_countersunk_height_m6"]
+    vl["screw_socket_cap_radius_m6"] = [10/2, 10/2, 11/2]
+    vl["screw_socket_cap_height_m6"] = [6, 6, 6.2]
 
     ##### wire variables
     wi_extra = 0.3
