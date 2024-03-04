@@ -109,6 +109,8 @@ def get_oobb_cube(**kwargs):
     return get_oobb_cube_center(**kwargs)
 
 def get_oobb_cube_center(**kwargs):
+
+
     p3 = copy.deepcopy(kwargs)
     zz = kwargs.get("zz", "bottom")
     
@@ -138,11 +140,13 @@ def get_oobb_cube_new(**kwargs):
     # setting up for rotation object
     typ = kwargs.get("type", "p")
     kwargs["type"] = "positive" #needs to be positive for the difference to work
-    rot_original = get_rot(**kwargs)   
+    rot_original = get_rot(**kwargs)       
     kwargs.pop("rot", None)
     kwargs.pop("rot_x", None)
     kwargs.pop("rot_y", None)
     kwargs.pop("rot_z", None)
+    rot_shift_original = copy.deepcopy(kwargs.get("rot_shift", None))
+    kwargs.pop("rot_shift", None)
 
     # storing pos and popping it out to add it in rotation element     
     pos_original = copy.deepcopy(copy.deepcopy(kwargs.get("pos", [0, 0, 0])))
@@ -152,42 +156,38 @@ def get_oobb_cube_new(**kwargs):
     kwargs["pos"] = pos
 
 
-    # modes
-    if modes == "all":
-        modes = ["laser", "3dpr", "true"]
-    if type(modes) == str:
-        modes = [modes]
-
     return_value = []
-    for mode in modes:
-        p3 = copy.deepcopy(kwargs)
-        zz = kwargs.get("zz", "bottom")
-        
-        p3["shape"] = "cube"
-        pos1 = copy.deepcopy(p3["pos"])
-        pos1[0] = pos1[0] - p3["size"][0]/2
-        pos1[1] = pos1[1] - p3["size"][1]/2
-        if zz == "center" or zz == "middle":
-            pos1[2] = pos1[2] - p3["size"][2]/2
-        elif zz == "top":
-            pos1[2] = pos1[2] - p3["size"][2]
-        elif zz == "bottom":
-            pos1[2] = pos1[2]
+    p3 = copy.deepcopy(kwargs)
+    zz = kwargs.get("zz", "bottom")
+    
+    p3["shape"] = "cube"
+    pos1 = copy.deepcopy(p3["pos"])
+    pos1[0] = pos1[0] - p3["size"][0]/2
+    pos1[1] = pos1[1] - p3["size"][1]/2
+    if zz == "center" or zz == "middle":
+        pos1[2] = pos1[2] - p3["size"][2]/2
+    elif zz == "top":
+        pos1[2] = pos1[2] - p3["size"][2]
+    elif zz == "bottom":
+        pos1[2] = pos1[2]
 
-        p3["pos"] = pos1
-        return_value.append(opsc.opsc_easy(**p3))
+    p3["pos"] = pos1
+    return_value.append(opsc.opsc_easy(**p3))
+
     
     #components_second = copy.deepcopy(thing["components"])
 
     #put into a rotation object
     return_value_2 = {}
     return_value_2["type"]  = "rotation"
-    return_value_2["typetype"]  = "p"
+    return_value_2["typetype"]  = typ
     pos1 = copy.deepcopy(pos)
-    pos1[0] += 50
+    #pos1[0] += 50
     return_value_2["pos"] = pos1
-    return_value_2["rot"] = [180,0,0]
+    return_value_2["rot"] = rot_original
     return_value_2["objects"] = return_value
+    if rot_shift_original != None:
+        return_value_2["rot_shift"] = rot_shift_original
     return_value_2 = [return_value_2]
 
 
