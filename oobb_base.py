@@ -629,80 +629,90 @@ def append_full(thing, **kwargs):
     kwargs_original = copy.deepcopy(kwargs)
     poss = kwargs.get("pos", [0,0,0])
     if poss == []:
-        poss = [0,0,0]
-    shapes = kwargs.get("shape", "")
-    #if poss isn't a list of lists make it one
+        poss = [0,0,0]        
     if type(poss[0]) != list:
         poss = [poss]
+
+    #add loop for multipe shapes
+    shapes = kwargs.get("shape", "")
     if type(shapes) != list:
         shapes = [shapes]
 
+    rot_shifts = kwargs.get("rot_shift", None)
+    if type(rot_shifts) != list:
+        rot_shifts = [rot_shifts]
+
     for shape in shapes:
         for pos in poss:
-            kwargs = copy.deepcopy(kwargs_original)
-            kwargs["pos"] = pos
-            kwargs["shape"] = shape
+            for rot_shift in rot_shifts:
+                kwargs = copy.deepcopy(kwargs_original)
+                kwargs["pos"] = pos
+                kwargs["shape"] = shape
+                if rot_shift is not None:
+                    kwargs["rot_shift"] = rot_shift
+                else:
+                    kwargs.pop("rot_shift", None)
 
-            #thing = kwargs.get("thing", "")
-            comment = kwargs.get("comment", "")
-            comment_display = kwargs.get("comment_display", False)
-            m = kwargs.get("m", "")
-            item = kwargs.get("item", "")
-            
+                #thing = kwargs.get("thing", "")
+                comment = kwargs.get("comment", "")
+                comment_display = kwargs.get("comment_display", False)
+                m = kwargs.get("m", "")
+                item = kwargs.get("item", "")
+                
 
-            p3 = copy.deepcopy(kwargs)
-            if item != "": #item means we are defining by string
-                string_params = oobb_easy_string_params(item=item)
-                p3.update(string_params)
+                p3 = copy.deepcopy(kwargs)
+                if item != "": #item means we are defining by string
+                    string_params = oobb_easy_string_params(item=item)
+                    p3.update(string_params)
 
-            # add yaml to components   
-            ths = thing["components_objects"]
-            p4 = copy.deepcopy(p3)
-            p4.pop("comment", None)
-            p4.pop("thing", None)
-            p4.pop("item", None)
-            ths.append(p4)
-
-
-            # descriptino to txt
-            ths = thing["components_string"]
-            p4 = copy.deepcopy(p3)
-            p4.pop("comment", None)
-            p4.pop("thing", None)
-            p4.pop("item", None)
-            p4.pop("objects", "")
-            string_to_add = oobb_easy_get_string(**p4)
-            ths.append(string_to_add)
-
-            # add item to components
-            th = thing["components"]
-
-            # comment
-            if comment != "":        
+                # add yaml to components   
+                ths = thing["components_objects"]
                 p4 = copy.deepcopy(p3)
-                p4.pop("rot","")
-                p4.pop("type", None)
+                p4.pop("comment", None)
+                p4.pop("thing", None)
+                p4.pop("item", None)
+                ths.append(p4)
+
+
+                # descriptino to txt
+                ths = thing["components_string"]
+                p4 = copy.deepcopy(p3)
+                p4.pop("comment", None)
+                p4.pop("thing", None)
+                p4.pop("item", None)
+                p4.pop("objects", "")
+                string_to_add = oobb_easy_get_string(**p4)
+                ths.append(string_to_add)
+
+                # add item to components
+                th = thing["components"]
+
+                # comment
+                if comment != "":        
+                    p4 = copy.deepcopy(p3)
+                    p4.pop("rot","")
+                    p4.pop("type", None)
+                    p4["m"] = "*"
+                    if comment_display:
+                        p4["m"] = m
+                    pass 
+                    #th.extend(get_comment(**p4))
+                
+                # description
+                p4 = copy.deepcopy(p3)
+                p4["comment"] = f"description {string_to_add}\n"
                 p4["m"] = "*"
-                if comment_display:
-                    p4["m"] = m
-                pass 
                 #th.extend(get_comment(**p4))
-            
-            # description
-            p4 = copy.deepcopy(p3)
-            p4["comment"] = f"description {string_to_add}\n"
-            p4["m"] = "*"
-            #th.extend(get_comment(**p4))
 
-            p4 = copy.deepcopy(p3)
-            th.extend(oobb_easy(**p4))
-            
-            
-            
+                p4 = copy.deepcopy(p3)
+                th.extend(oobb_easy(**p4))
+                
+                
+                
 
 
-            
-            pass
+                
+                pass
 
     
 
