@@ -74,7 +74,7 @@ def main(**kwargs):
     #filter = "mounting_plate"
     #filter = "netgear_5_port_gigabit_switch_gs105v5"
     #filter = "electrolama_a_lot_of_jacks"
-    filter = "electronic_breakout_board_servo_tester_32_mm_width_28_mm_height_hw_141"
+    #filter = "electronic_breakout_board_servo_tester_32_mm_width_28_mm_height_hw_141"
 
     # other
     #filter = "_other"
@@ -108,7 +108,7 @@ def main(**kwargs):
 
     # tray
     #filter = "tray"
-    #filter = "tray_06_16"
+    filter = "tray_03_03_90"
 
 
     # wheel
@@ -155,6 +155,7 @@ def main(**kwargs):
         oobb_base.dump("json")
         oobb_base.dump("folder")
 
+    
     #save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"    

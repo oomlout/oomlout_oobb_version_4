@@ -227,7 +227,87 @@
     - 0
     - 0
     - 0
+    rot:
+    - 0
+    - 0
+    - 0
     shape: oobb_motor_stepper_nema_17
     thickness: 6
+    type: n
+    width: 5
+-   bearing: '6705'
+    depth: 26
+    extra: motor_stepper_nema_17_flat
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 8.0
+    - -18.0
+    - 10.67
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 26
+    type: n
+    width: 5
+-   bearing: '6705'
+    depth: 26
+    extra: motor_stepper_nema_17_flat
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -8.0
+    - 18.0
+    - 10.67
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 26
+    type: n
+    width: 5
+-   bearing: '6705'
+    depth: 26
+    extra: motor_stepper_nema_17_flat
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - -8.0
+    - -18.0
+    - -15.33
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 26
+    type: n
+    width: 5
+-   bearing: '6705'
+    depth: 26
+    extra: motor_stepper_nema_17_flat
+    height: 3
+    nut: true
+    overhang: true
+    pos:
+    - 8.0
+    - 18.0
+    - -15.33
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 26
     type: n
     width: 5

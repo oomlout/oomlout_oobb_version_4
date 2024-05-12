@@ -698,7 +698,7 @@ def get_trays(size="oobb"):
     """
     ts.append([3,3])
     """
-    thicknesses = [9, 12, 15, 18, 21,24,27,30]
+    thicknesses = [9, 12, 15, 18, 21,24,27,30,60,90]
     for tray in ts:
         #trays.append({"type": "tray_lid", "width": tray[0], "height": tray[1], "thickness": 2, "size": size})
         #trays.append({"type": "tray_lid_thin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})

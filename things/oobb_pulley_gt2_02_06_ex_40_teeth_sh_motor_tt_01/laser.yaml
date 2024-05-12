@@ -1,0 +1,92 @@
+-   depth: 8.5
+    diameter: 2
+    extra: 40_teeth
+    number_of_teeth: 40
+    pos:
+    - 0
+    - 0
+    - -4.25
+    shaft: motor_tt_01
+    shape: pulley_gt2
+    thickness: 6
+    type: p
+-   both_holes: true
+    circle: true
+    diameter: 1.5
+    extra: 40_teeth
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_holes
+    thickness: 6
+    type: n
+    width: 1
+-   diameter: 2
+    extra: 40_teeth
+    pos:
+    - 7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_tt_01
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 40_teeth
+    pos:
+    - -7.5
+    - 0
+    - 0
+    radius_name: m3
+    shaft: motor_tt_01
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 40_teeth
+    pos:
+    - 0
+    - 7.5
+    - 0
+    radius_name: m3
+    shaft: motor_tt_01
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 40_teeth
+    pos:
+    - 0
+    - -7.5
+    - 0
+    radius_name: m3
+    shaft: motor_tt_01
+    shape: oobb_hole
+    thickness: 6
+    type: n
+-   diameter: 2
+    m: '#'
+    part: shaft
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_motor_tt_01
+    thickness: 6
+    type: n
+-   diameter: 2
+    extra: 40_teeth
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: motor_tt_01
+    shape: oobb_slice
+    thickness: 6
+    type: n

@@ -1,0 +1,62 @@
+[
+    {
+        "type": "p",
+        "thickness": 6,
+        "extra": "36_teeth",
+        "shaft": "motor_tt_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            -4.25
+        ],
+        "shape": "pulley_gt2",
+        "number_of_teeth": 36,
+        "depth": 8.5
+    },
+    {
+        "type": "n",
+        "thickness": 6,
+        "extra": "36_teeth",
+        "shaft": "motor_tt_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_holes",
+        "width": 1,
+        "height": 1,
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 6,
+        "shaft": "motor_tt_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_motor_tt_01",
+        "part": "shaft",
+        "m": "#"
+    },
+    {
+        "type": "n",
+        "thickness": 6,
+        "extra": "36_teeth",
+        "shaft": "motor_tt_01",
+        "diameter": 1,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_slice"
+    }
+]

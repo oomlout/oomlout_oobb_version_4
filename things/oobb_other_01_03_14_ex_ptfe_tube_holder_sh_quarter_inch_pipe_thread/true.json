@@ -1,0 +1,62 @@
+[
+    {
+        "type": "p",
+        "extra": "ptfe_tube_holder",
+        "width": 1.2,
+        "height": 3,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_plate",
+        "depth": 14,
+        "pos": [
+            0,
+            0,
+            -7.0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder",
+        "width": 1,
+        "height": 3,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_holes",
+        "holes": "single",
+        "loc": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ]
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder",
+        "width": 1,
+        "height": 3,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_hole",
+        "radius": 4.85,
+        "pos": [
+            0,
+            15,
+            0
+        ]
+    }
+]

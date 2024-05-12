@@ -1,0 +1,222 @@
+[
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            0,
+            -5.75
+        ],
+        "shape": "pulley_gt2",
+        "number_of_teeth": 60,
+        "depth": 11.5
+    },
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            0,
+            -5.25
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 20.108280254777068,
+        "depth": 1
+    },
+    {
+        "type": "p",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            0,
+            5.25
+        ],
+        "shape": "oobb_cylinder",
+        "radius": 20.108280254777068,
+        "depth": 1
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            -5.303,
+            -5.303,
+            -5.75
+        ],
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 11.5,
+        "rot": [
+            0,
+            180,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            5.303,
+            5.303,
+            -5.75
+        ],
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 11.5,
+        "rot": [
+            0,
+            180,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            -5.303,
+            5.303,
+            5.75
+        ],
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 11.5
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            5.303,
+            -5.303,
+            5.75
+        ],
+        "shape": "oobb_screw_countersunk",
+        "radius_name": "m3",
+        "nut_include": true,
+        "depth": 11.5
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 1.5,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "width": 1,
+        "height": 1,
+        "shape": "oobb_holes",
+        "both_holes": true,
+        "circle": true,
+        "middle": false
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            7.5,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            -7.5,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            7.5,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            -7.5,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m3"
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_hole",
+        "radius_name": "m6_grubscrew_m3"
+    },
+    {
+        "type": "n",
+        "thickness": 9,
+        "extra": "60_teeth_shield",
+        "shaft": "m6_grubscrew_m3",
+        "diameter": 2,
+        "pos": [
+            0,
+            0,
+            0
+        ],
+        "shape": "oobb_slice"
+    }
+]

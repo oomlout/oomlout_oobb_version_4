@@ -1,0 +1,90 @@
+[
+    {
+        "type": "p",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 3.2,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_plate",
+        "radius": 2.5,
+        "depth": 14,
+        "pos": [
+            0,
+            0,
+            -7.0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 3,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_holes",
+        "holes": "single",
+        "loc": [
+            [
+                1,
+                1
+            ],
+            [
+                1,
+                2
+            ]
+        ],
+        "rot": [
+            0,
+            0,
+            0
+        ],
+        "pos": [
+            0,
+            0,
+            0
+        ]
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 3,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_hole",
+        "radius_name": "m3",
+        "pos": [
+            -50,
+            15,
+            0
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ],
+        "depth": 100
+    },
+    {
+        "type": "n",
+        "extra": "ptfe_tube_holder_ninety_degree",
+        "width": 1,
+        "height": 3,
+        "thickness": 14,
+        "shaft": "quarter_inch_pipe_thread",
+        "shape": "oobb_hole",
+        "radius": 4.85,
+        "pos": [
+            -100,
+            15,
+            0
+        ],
+        "rot": [
+            0,
+            90,
+            0
+        ],
+        "depth": 100
+    }
+]

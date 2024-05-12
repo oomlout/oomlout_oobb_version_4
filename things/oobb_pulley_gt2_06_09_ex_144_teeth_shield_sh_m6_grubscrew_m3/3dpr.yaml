@@ -1,0 +1,132 @@
+-   depth: 11.5
+    diameter: 6
+    extra: 144_teeth_shield
+    number_of_teeth: 144
+    pos:
+    - 0
+    - 0
+    - -5.75
+    shaft: m6_grubscrew_m3
+    shape: pulley_gt2
+    thickness: 9
+    type: p
+-   depth: 1
+    diameter: 6
+    extra: 144_teeth_shield
+    pos:
+    - 0
+    - 0
+    - -5.25
+    radius: 46.859872611464965
+    shaft: m6_grubscrew_m3
+    shape: oobb_cylinder
+    thickness: 9
+    type: p
+-   depth: 1
+    diameter: 6
+    extra: 144_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 5.25
+    radius: 46.859872611464965
+    shaft: m6_grubscrew_m3
+    shape: oobb_cylinder
+    thickness: 9
+    type: p
+-   depth: 11.5
+    diameter: 6
+    extra: 144_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - -5.303
+    - -5.75
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: m6_grubscrew_m3
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   depth: 11.5
+    diameter: 6
+    extra: 144_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - 5.303
+    - -5.75
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shaft: m6_grubscrew_m3
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   depth: 11.5
+    diameter: 6
+    extra: 144_teeth_shield
+    nut_include: true
+    pos:
+    - -5.303
+    - 5.303
+    - 5.75
+    radius_name: m3
+    shaft: m6_grubscrew_m3
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   depth: 11.5
+    diameter: 6
+    extra: 144_teeth_shield
+    nut_include: true
+    pos:
+    - 5.303
+    - -5.303
+    - 5.75
+    radius_name: m3
+    shaft: m6_grubscrew_m3
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   both_holes: true
+    circle: true
+    diameter: 5.5
+    extra: 144_teeth_shield
+    height: 1
+    middle: false
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m6_grubscrew_m3
+    shape: oobb_holes
+    thickness: 9
+    type: n
+    width: 1
+-   diameter: 6
+    extra: 144_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    radius_name: m6_grubscrew_m3
+    shaft: m6_grubscrew_m3
+    shape: oobb_hole
+    thickness: 9
+    type: n
+-   diameter: 6
+    extra: 144_teeth_shield
+    pos:
+    - 0
+    - 0
+    - 0
+    shaft: m6_grubscrew_m3
+    shape: oobb_slice
+    thickness: 9
+    type: n

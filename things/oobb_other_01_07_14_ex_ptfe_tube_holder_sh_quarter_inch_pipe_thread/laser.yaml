@@ -1,0 +1,53 @@
+-   depth: 14
+    extra: ptfe_tube_holder
+    height: 7
+    pos:
+    - 0
+    - 0
+    - -7.0
+    shaft: quarter_inch_pipe_thread
+    shape: oobb_plate
+    thickness: 14
+    type: p
+    width: 1.2
+-   extra: ptfe_tube_holder
+    height: 7
+    holes: single
+    loc:
+    -   - 1
+        - 1
+    -   - 1
+        - 2
+    -   - 1
+        - 3
+    -   - 1
+        - 4
+    -   - 1
+        - 5
+    -   - 1
+        - 6
+    pos:
+    - 0
+    - 0
+    - 0
+    rot:
+    - 0
+    - 0
+    - 0
+    shaft: quarter_inch_pipe_thread
+    shape: oobb_holes
+    thickness: 14
+    type: n
+    width: 1
+-   extra: ptfe_tube_holder
+    height: 7
+    pos:
+    - 0
+    - 45
+    - 0
+    radius: 4.85
+    shaft: quarter_inch_pipe_thread
+    shape: oobb_hole
+    thickness: 14
+    type: n
+    width: 1
