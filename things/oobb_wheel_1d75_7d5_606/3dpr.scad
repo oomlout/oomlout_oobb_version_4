@@ -3,13 +3,6 @@ $fn = 50;
 
 difference() {
 	union() {
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_circle_shape_positive_type_7.5_depth_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_12.625_radius_middle_zz", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, -3.7500000000]) {
 			cylinder(h = 7.5000000000, r = 12.6250000000);
 		}
@@ -675,86 +668,20 @@ difference() {
 				}
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_holes_shape_negative_type_1.75_diameter_7.5_thickness_606_bearing_false_both_holes_true_circle", valign = "center");
-				}
-			}
-		}
-		translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
-		}
-		translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
-		}
-		translate(v = [0.0000000000, 0.0000000000, -50.0000000000]) {
-			cylinder(h = 100, r = 3.2500000000);
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_tire_shape_negative_type_5_depth_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_10.125_id", valign = "center");
-				}
-			}
-		}
 		rotate_extrude(angle = 360) {
 			translate(v = [12.6250000000, 0, 0]) {
 				circle(r = 2.5000000000);
 			}
 		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [0, 14, 0]) {
-				linear_extrude(height = 1) {
-					text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_bearing_shape_negative_type_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_top_clearance", valign = "center");
-				}
-			}
-		}
 		translate(v = [0, 0, -3.0000000000]) {
 			union() {
 				difference() {
-					#cylinder(h = 256, r = 8.5500000000);
+					#cylinder(h = 256, r = 8.5750000000);
 					#cylinder(h = 256, r = 3.0000000000);
 				}
 				difference() {
 					#translate(v = [0, 0, -50]) {
-						cylinder(h = 100, r = 6.2750000000);
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [15.0000000000, 21.5000000000, 3.7500000000]) {
-				rotate(a = [0, 0, 30.0000000000]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_7.5_depth_15.0_7.5_3.75_pos_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_0_0_30.0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-15.0000000000, 6.5000000000, 3.7500000000]) {
-				rotate(a = [0, 0, 30.0000000000]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_7.5_depth_-15.0_-7.5_3.75_pos_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_0_0_30.0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [7.5000000000, -1.0000000000, -3.7500000000]) {
-				rotate(a = [0, 180, 0]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_7.5_depth_7.5_-15.0_-3.75_pos_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_0_180_0_rot_true_nut_true_overhang", valign = "center");
-					}
-				}
-			}
-		}
-		*color(alpha = 1.0000000000, c = "gray") {
-			translate(v = [-7.5000000000, 29.0000000000, -3.7500000000]) {
-				rotate(a = [0, 180, 0]) {
-					linear_extrude(height = 1) {
-						text(font = "Arial:style=Bold", halign = "center", size = 4.5000000000, text = "COMMENT description oobb_screw_countersunk_shape_n_type_m3_radius_name_7.5_depth_-7.5_15.0_-3.75_pos_1.75_diameter_7.5_thickness_606_bearing_true_both_holes_0_180_0_rot_true_nut_true_overhang", valign = "center");
+						cylinder(h = 100, r = 6.2875000000);
 					}
 				}
 			}

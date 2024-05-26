@@ -2,11 +2,12 @@ import copy
 import oobb_base
 import oobb_get_items_oobb_old
 
-
-
+def get_wheel_no_tire(**kwargs):
+    return get_wheel(**kwargs)
 
 def get_wheel(**kwargs):
     bearing = kwargs.get("bearing", "")
+    extra = kwargs.get("extra", "")
     connecting_screws = kwargs.get("connecting_screws", False)
     thickness = kwargs.get("thickness", 3)
     oring_type = kwargs.get("oring_type", "")
@@ -57,28 +58,30 @@ def get_wheel(**kwargs):
     p3 = copy.deepcopy(kwargs)
     p3["type"] = "negative"
     p3["shape"] = "oobb_holes"
+    p3["diameter_center_clearance"] = 15
     p3["circle"] = True
-    p3["both_holes"] = False
+    p3["both_holes"] = True
     #p3["m"] = "#"
     oobb_base.append_full(thing, **p3)
 
     #oring
-    if oring_type != "":
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "negative"
-        p3["shape"] = "oobb_oring"
-        p3["oring_type"] = oring_type
-        #p3["m"] = "#"
-        oobb_base.append_full(thing, **p3)
-    else:
-        p3 = copy.deepcopy(kwargs)
-        p3["type"] = "negative"
-        p3["shape"] = "oobb_tire"
-        radius_tube = 5
-        p3["depth"] = radius_tube
-        p3["id"] = radius - radius_tube/2
-        #p3["m"] = "#"
-        oobb_base.append_full(thing, **p3)
+    if extra != "no_tire":
+        if oring_type != "":
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "negative"
+            p3["shape"] = "oobb_oring"
+            p3["oring_type"] = oring_type
+            #p3["m"] = "#"
+            oobb_base.append_full(thing, **p3)
+        else:
+            p3 = copy.deepcopy(kwargs)
+            p3["type"] = "negative"
+            p3["shape"] = "oobb_tire"
+            radius_tube = 5
+            p3["depth"] = radius_tube
+            p3["id"] = radius - radius_tube/2
+            #p3["m"] = "#"
+            oobb_base.append_full(thing, **p3)
 
     
     #bearing 
@@ -109,7 +112,7 @@ def get_wheel(**kwargs):
         return_value_2["type"]  = "rotation"
         return_value_2["typetype"]  = "p"
         pos1 = copy.deepcopy(pos)
-        pos1[0] += 50
+        pos1[0] += diameter * 15 + 15
         return_value_2["pos"] = pos1
         return_value_2["rot"] = [180,0,0]
         return_value_2["objects"] = components_second

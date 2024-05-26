@@ -728,7 +728,11 @@ def get_wheels(size="oobb"):
         #wheels.append({"type": type, "thickness": thickness, "oring_type":"333", "size": size})
         #wheels.append({"type": type, "thickness": thickness, "oring_type":"339", "size": size})
     
+
     wheels.append({"type": "wheel", "diameter":3, "thickness": 9, "bearing":"606", "size": size})
+    wheels.append({"type": "wheel", "diameter":3, "thickness": 9, "bearing":"606", "size": size, "extra":"no_tire"})    
+    wheels.append({"type": "wheel", "diameter":5, "thickness": 9, "bearing":"606", "size": size})
+    wheels.append({"type": "wheel", "diameter":5, "thickness": 9, "bearing":"606", "size": size, "extra":"no_tire"})
     wheels.append({"type": "wheel", "diameter":1.75, "thickness": 7.5, "bearing":"606", "size": size})
 
     wheels.append({"type": "wheel", "thickness": 10.2, "diameter":24, "extra": "bearing_twenty_twenty_aluminium_extrusion" ,"bearing" : "696", "size": size})

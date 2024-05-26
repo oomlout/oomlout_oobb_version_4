@@ -108,7 +108,7 @@ def main(**kwargs):
 
     # tray
     #filter = "tray"
-    filter = "tray_03_05_90"
+    #filter = "tray_03_05_90"
 
 
     # wheel
@@ -116,7 +116,8 @@ def main(**kwargs):
     #filter = "oobb_wheel_24_10d2_696_ex_bearing_twenty_twenty_aluminium_extrusion"
     #filter = "oobb_wheel_01_06_or_314"
     #filter = "oobb_wheel_1d75_7d5_606"
-    #filter = "wheel"
+    #filter = "oobb_wheel_05_09_606_ex_no_tire"
+    filter = "wheel"
 
     # wire
     #filter = "wire"

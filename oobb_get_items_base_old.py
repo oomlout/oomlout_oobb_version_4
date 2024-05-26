@@ -220,7 +220,11 @@ def get_oobb_holes(holes=["all"], **kwargs):
                         if w == math.floor(width/2) and h == math.floor(height/2) and not middle:
                             pass
                         else:
-                            acceptable_holes.append([w,h])
+                            #make sure diameter_center_clearance is met
+                            if math.sqrt(x**2 + y**2) >= diameter_center_clearance:
+                                acceptable_holes.append([w,h])
+                            else:
+                                pass
             #now add the holes
             for mode in modes:
                 for hole in acceptable_holes:
@@ -545,6 +549,7 @@ def get_oobe_holes(**kwargs):
     holes = kwargs.get("holes", ["all"])
     radius_name = kwargs.get("radius_name", "m3")
     extra = kwargs.get("extra", "")
+    diameter_center_clearance = kwargs.get("diameter_center_clearance", 0)
     m = kwargs.get("m", "")
     x = kwargs["pos"][0]
     y = kwargs["pos"][1]
@@ -592,8 +597,12 @@ def get_oobe_holes(**kwargs):
                             distance_to_center = math.sqrt(x**2 + y**2)
                             if distance_to_center <= r:                                
                                 #if middle make sure r is greater than 15
-                                if middle or distance_to_center > 15:
-                                    acceptable_holes.append([w,h])
+                                if middle or distance_to_center > 15:                                    
+                                    #make sure diameter_center_clearance is met
+                                    if math.sqrt(x**2 + y**2) >= diameter_center_clearance:
+                                        acceptable_holes.append([w,h])
+                                    else:
+                                        pass                                            
                     #now add the holes
                     for mode in modes:
                         for hole in acceptable_holes:
