@@ -681,8 +681,8 @@ def get_trays(size="oobb"):
     ts = []    
     
 
-    wids = 20 + 1
-    heis = 20 + 1
+    wids = 15 + 1
+    heis = 15 + 1
     wids = list(range(1,wids))
     wids.append(1.5)
     for wid in wids:
