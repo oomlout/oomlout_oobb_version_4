@@ -22,131 +22,7 @@
                 "depth": 6
             }
         ],
-        [
-            [
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.0,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "laser",
-                    "m": ""
-                },
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.25,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "3dpr",
-                    "m": ""
-                },
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.0,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "true",
-                    "m": ""
-                }
-            ],
-            [
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.0,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "laser",
-                    "m": ""
-                },
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.25,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "3dpr",
-                    "m": ""
-                },
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.0,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "true",
-                    "m": ""
-                }
-            ],
-            [
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.0,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "laser",
-                    "m": ""
-                },
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.25,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "3dpr",
-                    "m": ""
-                },
-                {
-                    "type": "negative",
-                    "shape": "cylinder",
-                    "r": 3.0,
-                    "h": 200,
-                    "pos": [
-                        0.0,
-                        0.0,
-                        -100.0
-                    ],
-                    "inclusion": "true",
-                    "m": ""
-                }
-            ]
-        ],
+        [],
         [
             {
                 "type": "negative",
@@ -191,7 +67,7 @@
     ],
     "components_string": [
         "oobb_circle_shape_positive_type_6_depth_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter_11.875_radius_middle_zz",
-        "oobb_holes_shape_negative_type_6_thickness_314_oring_type_false_both_holes_1.5833333333333333_diameter_true_circle",
+        "oobb_holes_shape_negative_type_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter_15_diameter_center_clearance_true_circle",
         "oobb_oring_shape_negative_type_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter"
     ],
     "components_objects": [
@@ -215,9 +91,10 @@
             "type": "negative",
             "thickness": 6,
             "oring_type": "314",
-            "both_holes": false,
+            "both_holes": true,
             "diameter": 1.5833333333333333,
             "shape": "oobb_holes",
+            "diameter_center_clearance": 15,
             "circle": true,
             "pos": [
                 0,

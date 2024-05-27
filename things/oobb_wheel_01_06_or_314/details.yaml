@@ -9,83 +9,12 @@ components:
         radius: 11.875
         shape: cylinder
         type: positive
--   -   -   h: 200
-            inclusion: laser
-            m: ''
-            pos: &id001
-            - 0.0
-            - 0.0
-            - -100.0
-            r: 3.0
-            shape: cylinder
-            type: negative
-        -   h: 200
-            inclusion: 3dpr
-            m: ''
-            pos: *id001
-            r: 3.25
-            shape: cylinder
-            type: negative
-        -   h: 200
-            inclusion: 'true'
-            m: ''
-            pos: *id001
-            r: 3.0
-            shape: cylinder
-            type: negative
-    -   -   h: 200
-            inclusion: laser
-            m: ''
-            pos: &id002
-            - 0.0
-            - 0.0
-            - -100.0
-            r: 3.0
-            shape: cylinder
-            type: negative
-        -   h: 200
-            inclusion: 3dpr
-            m: ''
-            pos: *id002
-            r: 3.25
-            shape: cylinder
-            type: negative
-        -   h: 200
-            inclusion: 'true'
-            m: ''
-            pos: *id002
-            r: 3.0
-            shape: cylinder
-            type: negative
-    -   -   h: 200
-            inclusion: laser
-            m: ''
-            pos: &id003
-            - 0.0
-            - 0.0
-            - -100.0
-            r: 3.0
-            shape: cylinder
-            type: negative
-        -   h: 200
-            inclusion: 3dpr
-            m: ''
-            pos: *id003
-            r: 3.25
-            shape: cylinder
-            type: negative
-        -   h: 200
-            inclusion: 'true'
-            m: ''
-            pos: *id003
-            r: 3.0
-            shape: cylinder
-            type: negative
+- []
 -   -   depth: 5.33
         id: 10.21
         inclusion: laser
         od: 14.54
-        pos: &id004
+        pos: &id001
         - 0
         - 0
         - 0
@@ -95,14 +24,14 @@ components:
         id: 10.21
         inclusion: 'true'
         od: 14.54
-        pos: *id004
+        pos: *id001
         shape: oring
         type: negative
     -   depth: 5.33
         id: 10.21
         inclusion: 3dpr
         od: 14.739999999999998
-        pos: *id004
+        pos: *id001
         shape: oring
         type: negative
 components_objects:
@@ -119,9 +48,10 @@ components_objects:
     thickness: 6
     type: positive
     zz: middle
--   both_holes: false
+-   both_holes: true
     circle: true
     diameter: 1.5833333333333333
+    diameter_center_clearance: 15
     oring_type: '314'
     pos:
     - 0
@@ -142,7 +72,7 @@ components_objects:
     type: negative
 components_string:
 - oobb_circle_shape_positive_type_6_depth_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter_11.875_radius_middle_zz
-- oobb_holes_shape_negative_type_6_thickness_314_oring_type_false_both_holes_1.5833333333333333_diameter_true_circle
+- oobb_holes_shape_negative_type_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter_15_diameter_center_clearance_true_circle
 - oobb_oring_shape_negative_type_6_thickness_314_oring_type_true_both_holes_1.5833333333333333_diameter
 description: wheel 0x0x6
 diameter: 1
