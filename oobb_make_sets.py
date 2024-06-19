@@ -266,8 +266,8 @@ def get_plates(size="oobb"):
     
     for size in sizes:
         #all 3m thicks 1x1 to 10x10
-        for wid in range(1, 10):
-            for hei in range(1, 10):
+        for wid in range(1, 11):
+            for hei in range(1, 11):
                 if wid >= hei:
                     plates.append({"type": "plate", "width": wid,
                                 "height": hei, "thickness": 3, "size": size})

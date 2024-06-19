@@ -91,7 +91,7 @@ def main(**kwargs):
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = "oobb_plate_03_03_44_ex_ninety_degree"
-    #filter = "oobb_plate_20_20_03"
+    filter = "oobb_plate_10_06_03"
     #filter = "oobb_plate_16_01_14_ex_ninety_degree"
 
     # pulley
@@ -117,7 +117,7 @@ def main(**kwargs):
     #filter = "oobb_wheel_01_06_or_314"
     #filter = "oobb_wheel_1d75_7d5_606"
     #filter = "oobb_wheel_05_09_606_ex_no_tire"
-    filter = "wheel"
+    #filter = "wheel"
 
     # wire
     #filter = "wire"

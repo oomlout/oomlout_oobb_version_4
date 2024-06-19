@@ -1,5 +1,5 @@
 # oobb_other_01_03_14_ex_ptfe_tube_holder_ninety_degree_sh_m6  
-  
+![true.png](true.png)  
 other 1x3x14
 # details
 | Key                | Value                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
@@ -42,4 +42,7 @@ other 1x3x14
 | PNG Images |
 | --- |
 | ![3dpr.png](3dpr.png) |
+| ![laser.png](laser.png) |
+| ![laser_flat.png](laser_flat.png) |
+| ![true.png](true.png) |
 
