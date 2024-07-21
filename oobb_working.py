@@ -85,13 +85,14 @@ def main(**kwargs):
 
     # plate
     #filter = "ninety_degree"
-    #filter = "ex_t"
+    filter = "ex_u"
+    #filter = "ex_label"
     #filter = "oobb_plate_03_03_09_ex_u"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = "oobb_plate_03_03_44_ex_ninety_degree"
-    filter = "oobb_plate_10_06_03"
+    #filter = "oobb_plate_10_06_03"
     #filter = "oobb_plate_16_01_14_ex_ninety_degree"
 
     # pulley
@@ -157,17 +158,17 @@ def main(**kwargs):
         oobb_base.dump("folder")
 
     
-    #save_type = "none"
+    save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"    
-    save_type = "all"
+    #save_type = "all"
 
     overwrite = True
     #overwrite = False
     
     
-    #modes = ["laser", "3dpr", "true"]
-    modes = ["3dpr"]
+    modes = ["laser", "3dpr", "true"]
+    #modes = ["3dpr"]
     #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 

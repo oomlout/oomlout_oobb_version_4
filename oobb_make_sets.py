@@ -431,6 +431,7 @@ def get_plates(size="oobb"):
     thicknesses = [3,6,9,12,15]
     sizes = []
     sizes.append([3,3])
+    sizes.append([5,5])
     for thick in thicknesses:
         for siz in sizes:
             plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"u", "size": size})
@@ -448,7 +449,21 @@ def get_plates(size="oobb"):
 
     #plates.append({"type": "plate", "width": 3, "height": 3, "thickness": thickness, "extra":"slip_corner", "size": size})
 
-
+    # labels only the top row of holes
+    # t
+    thicknesses = [3]
+    sizes = []
+    sizes.append([3,2])    
+    sizes.append([3,3])  
+    sizes.append([5,2])  
+    sizes.append([5,3]) 
+    sizes.append([7,3]) 
+    sizes.append([5,5])  
+    sizes.append([7,5])
+    sizes.append([9,5])
+    for thick in thicknesses:
+        for siz in sizes:
+            plates.append({"type": "plate", "width": siz[0], "height": siz[1], "thickness": thick, "extra":"label", "size": size})
 
     return plates
 
