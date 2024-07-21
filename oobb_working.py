@@ -158,10 +158,10 @@ def main(**kwargs):
         oobb_base.dump("folder")
 
     
-    save_type = "none"
+    #save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"    
-    #save_type = "all"
+    save_type = "all"
 
     overwrite = True
     #overwrite = False
