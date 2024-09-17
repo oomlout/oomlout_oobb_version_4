@@ -1,6 +1,7 @@
 import copy
 
 from oobb_get_items_base_old import *
+from solid import *
 
 # circle
 def get_oobb_circle(**kwargs):
@@ -356,6 +357,8 @@ def get_oobb_rounded_rectangle_hollow(**kwargs):
         return_value_2 = [return_value_2]
 
         return return_value_2        
+
+
 
 # cylinder
 def get_oobb_cylinder(**kwargs):

@@ -1,0 +1,126 @@
+-   bearing: '606'
+    both_holes: true
+    depth: 9
+    diameter: 3
+    extra: no_tire
+    pos:
+    - 0
+    - 0
+    - 0
+    radius: 22.0
+    shape: oobb_circle
+    thickness: 9
+    type: positive
+    zz: middle
+-   bearing: '606'
+    both_holes: true
+    circle: true
+    diameter: 3
+    diameter_center_clearance: 15
+    extra: no_tire
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_holes
+    thickness: 9
+    type: negative
+-   bearing: '606'
+    both_holes: true
+    diameter: 3
+    extra: no_tire
+    m: '#'
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_bearing
+    thickness: 9
+    type: negative
+-   bearing: '606'
+    both_holes: true
+    depth: 9
+    diameter: 3
+    extra: no_tire
+    nut: true
+    overhang: true
+    pos:
+    - 15.0
+    - 7.5
+    - 4.5
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   bearing: '606'
+    both_holes: true
+    depth: 9
+    diameter: 3
+    extra: no_tire
+    nut: true
+    overhang: true
+    pos:
+    - -15.0
+    - -7.5
+    - 4.5
+    radius_name: m3
+    rot:
+    - 0
+    - 0
+    - 30.0
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   bearing: '606'
+    both_holes: true
+    depth: 9
+    diameter: 3
+    extra: no_tire
+    nut: true
+    overhang: true
+    pos:
+    - 7.5
+    - -15.0
+    - -4.5
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   bearing: '606'
+    both_holes: true
+    depth: 9
+    diameter: 3
+    extra: no_tire
+    nut: true
+    overhang: true
+    pos:
+    - -7.5
+    - 15.0
+    - -4.5
+    radius_name: m3
+    rot:
+    - 0
+    - 180
+    - 0
+    shape: oobb_screw_countersunk
+    thickness: 9
+    type: n
+-   bearing: '606'
+    both_holes: true
+    diameter: 3
+    extra: no_tire
+    pos:
+    - 0
+    - 0
+    - 0
+    shape: oobb_slice
+    thickness: 9
+    type: negative

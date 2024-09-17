@@ -20,8 +20,9 @@
         "diameter": 3,
         "thickness": 9,
         "bearing": "606",
-        "both_holes": false,
+        "both_holes": true,
         "shape": "oobb_holes",
+        "diameter_center_clearance": 15,
         "circle": true,
         "pos": [
             0,
