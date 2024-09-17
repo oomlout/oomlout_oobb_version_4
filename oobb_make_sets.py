@@ -710,6 +710,10 @@ def get_trays(size="oobb"):
     ts.append([2,2.5])
     ts.append([3,2.5])
     ts.append([4,2.5])
+    ts.append([5,2.5])
+    ts.append([6,2.5])
+    ts.append([7,2.5])
+    ts.append([8,2.5])
     """
     ts.append([3,3])
     """
