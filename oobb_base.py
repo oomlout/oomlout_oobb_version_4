@@ -639,8 +639,16 @@ def append_full(thing, **kwargs):
         shapes = [shapes]
 
     rot_shifts = kwargs.get("rot_shift", None)
-    if type(rot_shifts) != list:
+    #test if rot_shifts is a list of lists
+    if type(rot_shifts) == list:
+        if type(rot_shifts[0]) == list:
+            rot_shifts = rot_shifts
+        else:
+            rot_shifts = [rot_shifts]
+    else:
         rot_shifts = [rot_shifts]
+
+    
 
     for shape in shapes:
         for pos in poss:

@@ -7,7 +7,9 @@ oobb_base.dump("folder")
 oobb_base.dump("json")
 oobb_base.dump("pickle")
 oobb_base.build_things(overwrite=False, save_type="all")
-import action_generate_releases
-action_generate_releases.main()
+import action_generate_release_3d_printable
+action_generate_release_3d_printable.main()
+import action_generate_release_laser_cut
+action_generate_release_laser_cut.main()
 input = input("Press Enter to continue...")
 

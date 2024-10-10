@@ -132,6 +132,7 @@ def get_circle_base(**kwargs):
         p3["width"] = width
         p3["height"] = height
         p3["pos"] = pos
+        p3["holes"] = "all"
         p3["both_holes"] = both_holes
         p3["circle"] = True        
         if shaft != "":

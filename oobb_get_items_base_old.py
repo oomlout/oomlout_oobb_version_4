@@ -379,6 +379,12 @@ def get_oobb_holes(holes=["all"], **kwargs):
     if "single" in holes:
         # find the start point needs to be half the width_mm plus half osp
         locs = kwargs.get("loc", [0, 0])
+        if locs == [0, 0]:
+            locs = kwargs.get("location", [0, 0])
+            if locs == [0, 0]:
+                locs = kwargs.get("locations", [0, 0])
+                if locs == [0, 0]:
+                    locs = kwargs.get("positions", [0, 0])
         #if loc isn't an array of arrays then make it one
         if not isinstance(locs[0], list):
             locs = [locs]
