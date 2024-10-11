@@ -4600,9 +4600,9 @@ def get_tray_vertical(**kwargs):
     th = thing["components"]
     
     thick = 3
-    x=-width*15/2+thick/2
+    x=-width*15/2+thick
     y=0
-    z=15
+    z=thickness
     
     wid = 2 * 15
     hei = height * 15
@@ -4612,9 +4612,9 @@ def get_tray_vertical(**kwargs):
     for xx in range(0, int(height)):
         x = -width * 15 / 2 - 15
         y = -(height/2*15) + 7.5 + xx * 15
-        z = 15 + 7.5
+        z = 7.5 + thickness
         rotY=90
-        th.extend(ob.oe(type="n", shape="oobb_hole", radius_name="m6",  pos=[x, y, z], rotY=rotY, depth = 20, m=""))
+        th.extend(ob.oe(type="n", shape="oobb_hole", radius_name="m6",  pos=[x, y, z], rotY=rotY, depth = 20, m="#"))
 
 
     """

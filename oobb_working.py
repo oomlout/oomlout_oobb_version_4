@@ -85,7 +85,7 @@ def main(**kwargs):
 
     # plate
     #filter = "ninety_degree"
-    filter = "ex_u"
+    #filter = "ex_u"
     #filter = "ex_label"
     #filter = "oobb_plate_03_03_09_ex_u"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
@@ -110,6 +110,7 @@ def main(**kwargs):
     # tray
     #filter = "tray"
     #filter = "tray_03_05_90"
+    filter = "tray_vertical_03_02_60"
 
 
     # wheel
@@ -158,7 +159,7 @@ def main(**kwargs):
         oobb_base.dump("folder")
 
     
-    #save_type = "none"
+    save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"    
     save_type = "all"
