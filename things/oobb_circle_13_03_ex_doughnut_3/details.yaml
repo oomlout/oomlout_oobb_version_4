@@ -42849,6 +42849,7 @@ components_objects:
     diameter: 13
     extra: doughnut_3
     height: 13
+    holes: all
     pos:
     - 0
     - 0
@@ -42860,7 +42861,7 @@ components_objects:
 components_string:
 - oobb_circle_shape_p_type_3_depth_13_diameter_3_thickness_doughnut_3_extra_13_width_13_height
 - oobb_circle_shape_n_type_3_depth_3.0_diameter_3_thickness_doughnut_3_extra_3.0_width_3.0_height
-- oobb_holes_shape_n_type_13_diameter_3_thickness_doughnut_3_extra_13_width_13_height_true_both_holes_true_circle
+- oobb_holes_shape_n_type_13_diameter_3_thickness_doughnut_3_extra_13_width_13_height_all_holes_true_both_holes_true_circle
 description: circle 0x0x3
 diameter: 13
 extra: doughnut_3

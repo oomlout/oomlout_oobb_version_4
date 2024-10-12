@@ -887,9 +887,9 @@ components:
         typetype: n
 -   m: ''
     pos:
-    - -36.0
+    - -34.5
     - 0
-    - 15
+    - 24
     rotY: 90
     shape: rounded_rectangle
     size:
@@ -900,11 +900,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id013
         - -52.5
         - -15.0
-        - 22.5
+        - 31.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -912,7 +912,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.25
         rotY: 90
@@ -921,7 +921,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.0
         rotY: 90
@@ -930,11 +930,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id014
         - -52.5
         - 0.0
-        - 22.5
+        - 31.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -942,7 +942,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id014
         r: 3.25
         rotY: 90
@@ -951,7 +951,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id014
         r: 3.0
         rotY: 90
@@ -960,11 +960,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id015
         - -52.5
         - 15.0
-        - 22.5
+        - 31.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -972,7 +972,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id015
         r: 3.25
         rotY: 90
@@ -981,7 +981,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id015
         r: 3.0
         rotY: 90

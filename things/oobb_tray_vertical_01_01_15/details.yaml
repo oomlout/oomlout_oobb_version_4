@@ -885,7 +885,7 @@ components:
         typetype: n
 -   m: ''
     pos:
-    - -6.0
+    - -4.5
     - 0
     - 15
     rotY: 90
@@ -898,7 +898,7 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id013
         - -22.5
         - 0.0
@@ -910,7 +910,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.25
         rotY: 90
@@ -919,7 +919,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.0
         rotY: 90

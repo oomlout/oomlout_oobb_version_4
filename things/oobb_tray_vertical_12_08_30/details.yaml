@@ -887,9 +887,9 @@ components:
         typetype: n
 -   m: ''
     pos:
-    - -88.5
+    - -87.0
     - 0
-    - 15
+    - 30
     rotY: 90
     shape: rounded_rectangle
     size:
@@ -900,11 +900,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id013
         - -105.0
         - -52.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -912,7 +912,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.25
         rotY: 90
@@ -921,7 +921,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.0
         rotY: 90
@@ -930,11 +930,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id014
         - -105.0
         - -37.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -942,7 +942,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id014
         r: 3.25
         rotY: 90
@@ -951,7 +951,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id014
         r: 3.0
         rotY: 90
@@ -960,11 +960,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id015
         - -105.0
         - -22.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -972,7 +972,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id015
         r: 3.25
         rotY: 90
@@ -981,7 +981,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id015
         r: 3.0
         rotY: 90
@@ -990,11 +990,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id016
         - -105.0
         - -7.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -1002,7 +1002,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id016
         r: 3.25
         rotY: 90
@@ -1011,7 +1011,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id016
         r: 3.0
         rotY: 90
@@ -1020,11 +1020,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id017
         - -105.0
         - 7.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -1032,7 +1032,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id017
         r: 3.25
         rotY: 90
@@ -1041,7 +1041,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id017
         r: 3.0
         rotY: 90
@@ -1050,11 +1050,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id018
         - -105.0
         - 22.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -1062,7 +1062,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id018
         r: 3.25
         rotY: 90
@@ -1071,7 +1071,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id018
         r: 3.0
         rotY: 90
@@ -1080,11 +1080,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id019
         - -105.0
         - 37.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -1092,7 +1092,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id019
         r: 3.25
         rotY: 90
@@ -1101,7 +1101,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id019
         r: 3.0
         rotY: 90
@@ -1110,11 +1110,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id020
         - -105.0
         - 52.5
-        - 22.5
+        - 37.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -1122,7 +1122,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id020
         r: 3.25
         rotY: 90
@@ -1131,7 +1131,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id020
         r: 3.0
         rotY: 90

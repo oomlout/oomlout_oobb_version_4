@@ -51995,7 +51995,7 @@
     "components_string": [
         "oobb_circle_shape_p_type_3_depth_11_diameter_3_thickness_doughnut_2.5_extra_11_width_11_height",
         "oobb_circle_shape_n_type_3_depth_2.5_diameter_3_thickness_doughnut_2.5_extra_2.5_width_2.5_height",
-        "oobb_holes_shape_n_type_11_diameter_3_thickness_doughnut_2.5_extra_11_width_11_height_true_both_holes_true_circle"
+        "oobb_holes_shape_n_type_11_diameter_3_thickness_doughnut_2.5_extra_11_width_11_height_all_holes_true_both_holes_true_circle"
     ],
     "components_objects": [
         {
@@ -52041,6 +52041,7 @@
             "shape": "oobb_holes",
             "width": 11,
             "height": 11,
+            "holes": "all",
             "both_holes": true,
             "circle": true
         }

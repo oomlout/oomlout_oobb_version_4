@@ -11,5 +11,5 @@ import action_generate_release_3d_printable
 action_generate_release_3d_printable.main()
 import action_generate_release_laser_cut
 action_generate_release_laser_cut.main()
-input = input("Press Enter to continue...")
+#input = input("Press Enter to continue...")
 

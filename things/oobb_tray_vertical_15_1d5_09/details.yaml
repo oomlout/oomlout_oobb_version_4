@@ -887,9 +887,9 @@ components:
         typetype: n
 -   m: ''
     pos:
-    - -111.0
+    - -109.5
     - 0
-    - 15
+    - 9
     rotY: 90
     shape: rounded_rectangle
     size:
@@ -900,11 +900,11 @@ components:
 -   -   depth: 20
         h: 20
         inclusion: laser
-        m: ''
+        m: '#'
         pos: &id013
         - -127.5
         - -3.75
-        - 22.5
+        - 16.5
         r: 3.0
         rotY: 90
         shape: cylinder
@@ -912,7 +912,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 3dpr
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.25
         rotY: 90
@@ -921,7 +921,7 @@ components:
     -   depth: 20
         h: 20
         inclusion: 'true'
-        m: ''
+        m: '#'
         pos: *id013
         r: 3.0
         rotY: 90

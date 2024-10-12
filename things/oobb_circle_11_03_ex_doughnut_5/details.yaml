@@ -30465,6 +30465,7 @@ components_objects:
     diameter: 11
     extra: doughnut_5
     height: 11
+    holes: all
     pos:
     - 0
     - 0
@@ -30476,7 +30477,7 @@ components_objects:
 components_string:
 - oobb_circle_shape_p_type_3_depth_11_diameter_3_thickness_doughnut_5_extra_11_width_11_height
 - oobb_circle_shape_n_type_3_depth_5.0_diameter_3_thickness_doughnut_5_extra_5.0_width_5.0_height
-- oobb_holes_shape_n_type_11_diameter_3_thickness_doughnut_5_extra_11_width_11_height_true_both_holes_true_circle
+- oobb_holes_shape_n_type_11_diameter_3_thickness_doughnut_5_extra_11_width_11_height_all_holes_true_both_holes_true_circle
 description: circle 0x0x3
 diameter: 11
 extra: doughnut_5
