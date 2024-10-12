@@ -142,48 +142,48 @@ difference() {
 			}
 		}
 		translate(v = [0, 0, 3]) {
-			hull() {
+			#hull() {
 				union() {
 					translate(v = [-32.0000000000, 32.0000000000, 4]) {
-						cylinder(h = 72, r = 4);
+						cylinder(h = 53, r = 4);
 					}
 					translate(v = [-32.0000000000, 32.0000000000, 4]) {
 						sphere(r = 4);
 					}
-					translate(v = [-32.0000000000, 32.0000000000, 76]) {
+					translate(v = [-32.0000000000, 32.0000000000, 57]) {
 						sphere(r = 4);
 					}
 				}
 				union() {
 					translate(v = [32.0000000000, 32.0000000000, 4]) {
-						cylinder(h = 72, r = 4);
+						cylinder(h = 53, r = 4);
 					}
 					translate(v = [32.0000000000, 32.0000000000, 4]) {
 						sphere(r = 4);
 					}
-					translate(v = [32.0000000000, 32.0000000000, 76]) {
+					translate(v = [32.0000000000, 32.0000000000, 57]) {
 						sphere(r = 4);
 					}
 				}
 				union() {
 					translate(v = [-32.0000000000, -32.0000000000, 4]) {
-						cylinder(h = 72, r = 4);
+						cylinder(h = 53, r = 4);
 					}
 					translate(v = [-32.0000000000, -32.0000000000, 4]) {
 						sphere(r = 4);
 					}
-					translate(v = [-32.0000000000, -32.0000000000, 76]) {
+					translate(v = [-32.0000000000, -32.0000000000, 57]) {
 						sphere(r = 4);
 					}
 				}
 				union() {
 					translate(v = [32.0000000000, -32.0000000000, 4]) {
-						cylinder(h = 72, r = 4);
+						cylinder(h = 53, r = 4);
 					}
 					translate(v = [32.0000000000, -32.0000000000, 4]) {
 						sphere(r = 4);
 					}
-					translate(v = [32.0000000000, -32.0000000000, 76]) {
+					translate(v = [32.0000000000, -32.0000000000, 57]) {
 						sphere(r = 4);
 					}
 				}

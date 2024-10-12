@@ -4,6 +4,8 @@ import oobb_base as ob
 from oobb_get_items_oobb import *
 from oobb_get_items_oobb_old import *
 
+import copy
+
 def get_bearing_circle(**kwargs):
     thing = ob.get_default_thing(**kwargs)
 
@@ -4172,7 +4174,7 @@ def get_tool_holder_vertical(**kwargs):
     return thing
 
 def get_tray(**kwargs):
-
+    pos = kwargs.get("pos", [0, 0, 0])
     width = kwargs.get("width", 1)
     height = kwargs.get("height", 1)
     thickness = kwargs.get("thickness", 3)
@@ -4188,7 +4190,23 @@ def get_tray(**kwargs):
     height=height, depth=thickness, pos=[0, 0, 0], extra_mm=True, m=""))
 
     #take out the inside    
-    th.append(ob.oobb_easy(t="n", s=f"sphere_rectangle", size=[(width*15)-3,(height*15)-3,thickness+20], pos=[0, 0, 3], r=4, m=""))
+    bottom_thickness = 3
+    sphere_radius = 4
+    p3 = {}
+    p3["type"] = "n"
+    p3["shape"] = "sphere_rectangle"
+    wid = width * 15 - 3
+    hei = height * 15 - 3
+    dep = thickness + sphere_radius - bottom_thickness
+    p3["size"] = [wid,hei,dep]
+    pos1 = copy.deepcopy(pos)
+    pos1[2] = bottom_thickness
+    p3["pos"] = pos1
+    p3["r"] = sphere_radius
+    p3["m"] = "#"
+    th.append(ob.oobb_easy(**p3))
+    
+    #th.append(ob.oobb_easy(t="n", s=f"sphere_rectangle", size=[(width*15)-3,(height*15)-3,thickness+20], pos=[0, 0, 3], r=4, m=""))
 
 
     #add countersunk to four corners
