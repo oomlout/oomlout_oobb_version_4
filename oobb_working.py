@@ -110,7 +110,7 @@ def main(**kwargs):
     # tray
     #filter = "tray"
     #filter = "tray_03_05_90"
-    filter = "tray_vertical_03_02_60"
+    filter = "tray_vertical_05_05_60"
 
 
     # wheel
