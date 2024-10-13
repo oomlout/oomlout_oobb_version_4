@@ -103,7 +103,7 @@ def initialize_variables():
     m["5"] = 5
     m["5_3dpr"] = 5.5
     m["5_screw_wood"] = 4.5
-    m["5_screw_wood_3dpr"] = 5
+    m["5_screw_wood_3dpr"] = 5.5
     m["6"] = 6
     m["6_3dpr"] = 6.5
     m["7"] = 7
@@ -311,9 +311,9 @@ def initialize_variables():
     vl["screw_countersunk_height_m4_screw_wood"] = [3.7, 3.7, 3.9]
     vl["screw_countersunk_depth_m4_screw_wood"] = vl["screw_countersunk_height_m4_screw_wood"]
     
-    vl["screw_radius_m5_screw_wood"] = m["5"]/2, m["5"]/2, m["5_3dpr"]/2
-    vl["screw_countersunk_radius_m5_screw_wood"] = [9.75/2, 9.75/2, 11.8/2]
-    vl["screw_countersunk_height_m5_screw_wood"] = [4.2, 4.2, 5.9]
+    vl["screw_radius_m5_screw_wood"] = [m["5"]/2, m["5"]/2, m["5_3dpr"]/2]
+    vl["screw_countersunk_radius_m5_screw_wood"] = [9.75/2, 9.75/2, 11/2]
+    vl["screw_countersunk_height_m5_screw_wood"] = [3.75, 3.75, 4.2]
     vl["screw_countersunk_depth_m5_screw_wood"] = vl["screw_countersunk_height_m5_screw_wood"]
 
     #larger for a screw sort jig
