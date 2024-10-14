@@ -431,6 +431,7 @@ def get_plates(size="oobb"):
     thicknesses = [3,6,9,12,15]
     sizes = []
     sizes.append([3,3])
+    sizes.append([5,3])
     sizes.append([5,5])
     for thick in thicknesses:
         for siz in sizes:
