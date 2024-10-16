@@ -775,6 +775,9 @@ def get_oobb_overhang(**kwargs):
     elif radius_name == "m2":    
         width = 2.5
         height = 5.5    
+    elif radius_name == "m6":    
+        width = 5.75
+        height = 10    
     else:
         width = 3.5
         height = 6.5
@@ -1600,7 +1603,7 @@ def get_oobb_nut(**kwargs):
             else:
                 p3["pos"][2] += 0
             p3["shape"] = "oobb_overhang" 
-            p3["radius_name"] = "m3_nut"
+            #p3["radius_name"] = "m3_nut"
             p3["inclusion"] = "3dpr"
             pos1 = copy.deepcopy(p3["pos"])                   
             pos1[2] += 0
@@ -1646,8 +1649,10 @@ def get_oobb_plate(**kwargs):
     depth_mm = kwargs.get("depth", 3)
     pos = copy.deepcopy(kwargs.get("pos", [0, 0, 0]))
     zz = kwargs.get("zz", "bottom")
+    holes = kwargs.get("holes", False)
+    include = kwargs.get("include", "")
 
-    
+    return_value = []
 
     if zz == "top":
         pos[2] += -depth_mm
@@ -1675,7 +1680,7 @@ def get_oobb_plate(**kwargs):
         p3["shape"] = "cylinder"
         p3["r"] = (width * oobb_base.gv("osp") - oobb_base.gv("osp_minus"))/2
         p3["h"] = depth_mm
-        return [opsc.opsc_easy(**p3)]
+        return_value.append(opsc.opsc_easy(**p3))
 
     else:
         p3 = copy.deepcopy(kwargs)
@@ -1683,9 +1688,23 @@ def get_oobb_plate(**kwargs):
         p3["width_mm"] = width_mm
         p3["height_mm"] = height_mm
         p3["size"] = [ width_mm, height_mm, depth_mm]
-        return [opsc.opsc_easy(**p3)]
+        return_value.append(opsc.opsc_easy(**p3))
+        
 
+    if holes or "hole" in include:
+        p3 = copy.deepcopy(kwargs)
+        p3["shape"] = "oobb_holes"
+        p3["both_holes"] = True  
+        p3.pop("holes", None)
+        rot = p3.get("rot", [0, 0, 0])
+        if rot[2] == 90:   #if rotated 90 degrees do the hole swap
+            wid = p3["width"]
+            hei = p3["height"]
+            p3["width"] = hei
+            p3["height"] = wid
+        return_value.extend(oobb_base.oobb_easy(**p3))
 
+    return return_value
 
 #screw
 def get_oobb_screw_countersunk(**kwargs):
