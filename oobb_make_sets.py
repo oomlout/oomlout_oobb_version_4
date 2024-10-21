@@ -634,6 +634,7 @@ def get_tool_holders(size="oobb"):
     
     ## screwdriver
     tools.append(["tool_screwdriver_hex_wera_60_mm_x4",7,5,18+extra_thick])  
+    tools.append(["tool_screwdriver_hex_wera_60_mm_x5",9,5,18+extra_thick])  
     tools.append(["tool_screwdriver_hex_wera_60_mm_x2",5,5,18+extra_thick])  
     tools.append(["tool_screwdriver_hex_m1d5_wera_60_mm",3,5,18+extra_thick])  
     tools.append(["tool_screwdriver_hex_m2_wera_60_mm",3,5,18+extra_thick])  
@@ -649,6 +650,7 @@ def get_tool_holders(size="oobb"):
     tools.append(["tool_marker_sharpie",3,5,13+extra_thick])
     tools.append(["tool_marker_sharpie_x2",5,5,13+extra_thick])
     tools.append(["tool_marker_sharpie_x5",8,5,13+extra_thick])
+    tools.append(["tool_marker_sharpie_x6",9,5,13+extra_thick])
 
     tools.append(["tool_marker_bic_clear_lid",3,5,9+extra_thick])
     tools.append(["tool_marker_bic_clear_lid_x6",8,5,9+extra_thick])

@@ -3904,6 +3904,16 @@ def get_tool_holder_vertical(**kwargs):
         extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
         shift = 25/2
         cur_x = -37.5
+    if extra == "tool_screwdriver_hex_wera_60_mm_x5":
+        extra = []
+        extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
+        extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
+        extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
+        extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
+        extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
+        shift = 25/2
+        cur_x = -50
+    
     if extra == "tool_screwdriver_hex_wera_60_mm_x2":
         extra = []
         extra.append("tool_screwdriver_hex_m2d5_wera_60_mm")
@@ -3961,7 +3971,17 @@ def get_tool_holder_vertical(**kwargs):
         extra.append("tool_marker_sharpie")
         extra.append("tool_marker_sharpie")
         shift = 18.75/2
-        cur_x = -37.5    
+        cur_x = -37.5  
+    if extra == "tool_marker_sharpie_x6":
+        extra = []
+        extra.append("tool_marker_sharpie")
+        extra.append("tool_marker_sharpie")
+        extra.append("tool_marker_sharpie")
+        extra.append("tool_marker_sharpie")
+        extra.append("tool_marker_sharpie")
+        extra.append("tool_marker_sharpie")
+        shift = 18.75/2
+        cur_x = -46.875
     
     if extra == "tool_wrench_m10_x2":
         extra = []

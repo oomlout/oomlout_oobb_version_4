@@ -155,6 +155,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     width = kwargs.get("width", 0)
     height = kwargs.get("height", 0)
     pos = kwargs.get("pos", [0, 0, 0])
+    depth = kwargs.get("depth", 100)
     pos = copy.deepcopy(pos)
     radius_name = kwargs.get("radius_name", "m6")
     middle = kwargs.get("middle", True)
@@ -394,7 +395,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
             x = pos_start[0] + (loc[0]-1)*spacing
             y = pos_start[1] + (loc[1]-1)*spacing
             objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[
-                        x, y, 0], radius_name=radius_name, m=m))
+                        x, y, z], radius_name=radius_name, m=m, depth=depth))
     if "missing_middle" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
@@ -1741,6 +1742,7 @@ def get_oobb_threaded_insert(**kwargs):
 
 
 def get_oobb_hole(**kwargs):
+    pos = kwargs.get("pos", [0, 0, 0])
     modes = kwargs.get("mode", ["laser", "3dpr", "true"])
     if modes == "all":
         modes = ["laser", "3dpr", "true"]

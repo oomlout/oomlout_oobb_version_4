@@ -85,7 +85,7 @@ def main(**kwargs):
 
     # plate
     #filter = "ninety_degree"
-    filter = "ex_u"
+    # filter = "ex_u"
     #filter = "ex_label"
     #filter = "oobb_plate_03_03_09_ex_u"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
@@ -146,6 +146,9 @@ def main(**kwargs):
     #filter = "oobb_test_0d1_ex_hole_sh_9d5"
     #filter = "oobb_test_0d1_ex_hole_sh_6"
     
+    #filter = "tool"
+    filter = "tool_screwdriver_hex_wera_60_mm_x5"
+    #filter = "tool_marker_sharpie_x6"
 
     #filter = ""
 
@@ -162,7 +165,7 @@ def main(**kwargs):
     save_type = "none"
     #save_type = "laser"
     #save_type = "3dpr"    
-    #save_type = "all"
+    save_type = "all"
 
     overwrite = True
     #overwrite = False
