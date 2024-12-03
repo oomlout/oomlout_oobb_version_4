@@ -27,6 +27,8 @@ def get_thing_from_dict(thing_dict):
     
     pass
 
+things_folder_absolute = "C:\\gh\\oomlout_oobb_version_4_generated_parts\\thigns"
+
 # base functions
 def get_default_thing(**kwargs):
 
@@ -132,7 +134,7 @@ def get_default_thing(**kwargs):
     thing.update({"components_string": []})
     thing.update({"components_objects": []})
 
-    folder = f"things/{id}"
+    folder = f"{things_folder_absolute}\\{id}"
     thing.update({"folder": folder})
 
     ##make folder
@@ -372,14 +374,14 @@ def dump(mode="json"):
         for thing in oobb.things:
             #print a single dot with no new line
             print(".", end="")
-            filename = f'things/{thing}/details.json'
+            filename = f'{things_folder_absolute}/{thing}/details.json'
             if not os.path.exists(os.path.dirname(filename)):
                 os.makedirs(os.path.dirname(filename))
             with open(filename, 'w') as outfile:
                 json.dump(oobb.things[thing], outfile, indent=4)
             # dump to json.yaml
             import yaml
-            filename = f'things/{thing}/details.yaml'
+            filename = f'{things_folder_absolute}/{thing}/details.yaml'
             with open(filename, 'w') as outfile:
                 yaml.dump(oobb.things[thing], outfile, indent=4)
             
@@ -392,9 +394,9 @@ def load(mode="json"):
             variables = json.load(json_file)
     elif mode == "folder":
         # load all the details.json files from the fodlers in things directory
-        for thing in os.listdir("things"):
+        for thing in os.listdir(f"{things_folder_absolute}"):
             try:
-                with open(f'things/{thing}/details.json') as json_file:
+                with open(f'{things_folder_absolute}/{thing}/details.json') as json_file:
                     oobb.things.update({thing: json.load(json_file)})
             except FileNotFoundError:
                 pass
@@ -426,20 +428,21 @@ def build_thing(thing, save_type="all", overwrite=True, modes=["3dpr", "laser", 
             start = 1.5 - (layers / 2)*3
         if "bunting" in thing:
             start = 0.5
-        #opsc.opsc_make_object(f'things/{thing}/{mode}.scad', oobb.things[thing]["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)
-        filename = f'things/{thing}/{mode}'    
+        #opsc.opsc_make_object(f'things/{thing}/{mode}.scad', oobb.things[thing]["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)            
+        filename = f'{things_folder_absolute}/{thing}/{mode}.scad'    
+        opsc.opsc_make_object(filename, oobb.things[thing]["components"], mode=mode, save_type=save_type, overwrite=overwrite, layers=layers, tilediff=tilediff, start=start)
         # make the description file
-        with open(f'things/{thing}/{mode}.txt', 'w') as outfile:
+        with open(f'{things_folder_absolute}/{thing}/{mode}.txt', 'w') as outfile:
             component_strings = oobb.things[thing]["components_string"]
             for component in component_strings:
                 outfile.write(f'{component}\n')
         # make the json file
-        with open(f'things/{thing}/{mode}.json', 'w') as outfile:
+        with open(f'{things_folder_absolute}/{thing}/{mode}.json', 'w') as outfile:
             json.dump(oobb.things[thing]["components_objects"], outfile, indent=4)
 
         # make the yaml file
         import yaml
-        with open(f'things/{thing}/{mode}.yaml', 'w') as outfile:
+        with open(f'{things_folder_absolute}/{thing}/{mode}.yaml', 'w') as outfile:
             yaml.dump(oobb.things[thing]["components_objects"], outfile, indent=4)
             
 
