@@ -667,6 +667,7 @@ def get_tool_holders(size="oobb"):
     tools.append(["tool_marker_patterned_thicker",3,5,12+extra_thick])
     tools.append(["tool_marker_patterned_thicker_x6",8,5,12+extra_thick])
 
+
     #tools.append(["tool_knife_exacto_17mm_black",3,5,12]) # too thick
     tools.append(["tool_side_cutters_generic_110_mm_red",5,5,11+extra_thick])
     tools.append(["tool_wire_strippers_generic_120_red",5,5,11+extra_thick])
@@ -685,6 +686,8 @@ def get_tool_holders(size="oobb"):
     
 
     tools.append(["tool_measure_tape_measure_5000_mm_length_stanley_1_30_696",7,3,42+extra_thick])
+
+    tools.append(["tool_timer_80_mm_diameter_30_mm_depth_black",7,3,32+extra_thick])
 
     #tdpb tools
     tools.append(["tool_tdpb_nozzle_changer",3,5,12+extra_thick])

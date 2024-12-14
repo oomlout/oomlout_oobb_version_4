@@ -4145,6 +4145,8 @@ def get_tool_holder_vertical(**kwargs):
                 default_y = bottom
         elif "tool_knife_utility_blade_disposal_can_olfa_dc_3" in e:
             default_y = 27.5
+        elif "tool_timer_80_mm_diameter_30_mm_depth_black" in e:
+            default_y = 33
             
 
 

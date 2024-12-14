@@ -87,7 +87,7 @@ def main(**kwargs):
     #filter = "ninety_degree"
     # filter = "ex_u"
     #filter = "ex_label"
-    filter = "oobb_plate_05_05_15_ex_u_double"
+    #filter = "oobb_plate_05_05_15_ex_u_double"
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
     #filter = ["ex_l","_u"]
     #filter = "oobb_plate_07_01_14_ex_ninety_degree"
@@ -151,6 +151,7 @@ def main(**kwargs):
     #filter = "tool_marker_sharpie_x6"
     #filter = "tape_measure"
     #filter = "tool_knife_utility_blade_disposal_can_olfa_dc_3"
+    filter = "tool_timer_80_mm_diameter_30_mm_depth_black"
 
     #filter = ""
 

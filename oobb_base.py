@@ -27,7 +27,7 @@ def get_thing_from_dict(thing_dict):
     
     pass
 
-things_folder_absolute = "C:\\gh\\oomlout_oobb_version_4_generated_parts\\thigns"
+things_folder_absolute = "C:\\gh\\oomlout_oobb_version_4_generated_parts\\things"
 
 # base functions
 def get_default_thing(**kwargs):

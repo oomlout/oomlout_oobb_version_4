@@ -2852,6 +2852,18 @@ def get_oobb_tool_side_cutters_generic_110_mm_red(**kwargs):
         
     return return_value
 
+def get_oobb_tool_timer_80_mm_diameter_30_mm_depth_black(**kwargs):
+    
+    pos = kwargs.get("pos", [0, 0, 0])
+
+    pos1 = copy.deepcopy(pos)
+
+    kwargs["pos"] = pos1
+    kwargs["depth"] = 32
+    kwargs["radius"] = 82 / 2
+
+    return get_tool_cylinder_horizontal(**kwargs)
+
 def get_oobb_tool_wire_strippers_generic_120_red(**kwargs):
     extra = kwargs.get("extra", "cutout")
     return_value = []

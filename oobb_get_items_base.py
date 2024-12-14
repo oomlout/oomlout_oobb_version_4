@@ -400,6 +400,17 @@ def get_oobb_cylinder(**kwargs):
                     kwargs.update({"r": kwargs["r"]})
                 except:
                     #using r1 and r2
+                    try:
+                        kwargs.update({"r1": kwargs["radius_1"]})
+                        kwargs.update({"r2": kwargs["radius_2"]})
+                    except:
+                        try:
+                            kwargs.update({"r1": kwargs["r1"]})
+                            kwargs.update({"r2": kwargs["r2"]})
+                        except:
+                            print("no radius defined errror in oobb_get_items get_oobb_cylinder")
+                            pass
+
                     pass
                 
         if isinstance(depth, str):
