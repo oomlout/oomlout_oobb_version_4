@@ -1540,6 +1540,7 @@ def get_oobb_nut(**kwargs):
     zz = kwargs.get("zz", "bottom")
     clearance = kwargs.get("clearance", "")
     hole = kwargs.get("hole", False) #whether or not to include a hole
+    extra_clearance = kwargs.get("extra_clearance", 0)
 
     # setting up for rotation object
     typ = kwargs.get("type", "p")

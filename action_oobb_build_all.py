@@ -4,8 +4,8 @@ import oobb_make_sets
 
 
 
-#just_yaml_files = False
-just_yaml_files = True
+just_yaml_files = False
+#just_yaml_files = True
 
 
 oobb_make_sets.make_all()

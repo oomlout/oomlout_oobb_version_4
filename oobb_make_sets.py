@@ -708,7 +708,7 @@ def get_trays(size="oobb"):
     trays = []
 
     ts = []    
-    
+    trays_all = []
 
     wids = 15 + 1
     heis = 15 + 1
@@ -719,7 +719,9 @@ def get_trays(size="oobb"):
             #don't add duplicates
             if [hei,wid] not in ts:
                 ts.append([wid,hei])
-
+                trays_all.append([wid,hei])
+            else:
+                trays_all.append([wid,hei])
     ts.append([3,1.5])    
     ts.append([2,2.5])
     ts.append([3,2.5])
@@ -737,14 +739,16 @@ def get_trays(size="oobb"):
         #trays.append({"type": "tray_lid_thin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})
         #trays.append({"type": "tray_lid_thin_spin", "width": tray[0], "height": tray[1], "thickness": 4, "size": size})
         for thickness in thicknesses:
-            trays.append({"type": "tray", "width": tray[0], "height": tray[1], "thickness": thickness, "size": size})
-            #trv vertical ones with oobb added for mounting on a wall
-            trays.append({"type": "tray_vertical", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
+            trays.append({"type": "tray", "width": tray[0], "height": tray[1], "thickness": thickness, "size": size})            
             #trt thin trays for faster printing
             trays.append({"type": "tray_thin", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
             #trts thin trays for faster printing with a screw holder
             #trays.append({"type": "tray_thin_spin", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
 
+    for tray in trays_all:
+        for thickness in thicknesses:
+            #trv vertical ones with oobb added for mounting on a wall
+            trays.append({"type": "tray_vertical", "width": tray[1], "height": tray[0], "thickness": thickness, "size": size})
 
     return trays
 
