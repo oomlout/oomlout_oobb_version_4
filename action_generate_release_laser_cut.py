@@ -5,8 +5,20 @@ import json
 def main(**kwargs):
     print("action_generate_release_laser_cut")
     pass
-    folder_things = "things"
+    folder_things = "C:\\gh\\oomlout_oobb_version_4_generated_parts\\things"
     folder_release = "C:/gh/oomlout_oobb_release_laser_cut"
+
+    #if folder doesn't exist clone in from github
+    if not os.path.exists(folder_release):
+        #save cwd
+        cwd = os.getcwd()
+        #change to folder c:\gh
+        os.chdir("C:/gh")
+        #clone in
+        os.system(f"git clone https://github.com/oomlout/oomlout_oobb_release_laser_cut")
+        #change back to cwd
+        os.chdir(cwd)
+
     folder_laser = f"{folder_release}/laser_cut"
     #make directory
     os.makedirs(folder_laser, exist_ok=True)

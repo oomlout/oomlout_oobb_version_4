@@ -5,8 +5,20 @@ import json
 def main(**kwargs):
     print("action_generate_release_3d_printable")
     pass
-    folder_things = "things"
+    folder_things = "C:\\gh\\oomlout_oobb_version_4_generated_parts\\things"
     folder_release = "C:/gh/oomlout_oobb_release_3d_print"
+
+    #if folder doesn't exist clone in from github
+    if not os.path.exists(folder_release):
+        #save cwd
+        cwd = os.getcwd()
+        #change to folder c:\gh
+        os.chdir("C:/gh")
+        #clone in
+        os.system(f"git clone https://github.com/oomlout/oomlout_oobb_release_3d_print")
+        #change back to cwd
+        os.chdir(cwd)
+
     folder_3dpr = f"{folder_release}/3dpr"
     
     #make directory
