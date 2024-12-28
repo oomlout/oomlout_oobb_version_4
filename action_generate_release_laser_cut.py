@@ -32,6 +32,9 @@ def main(**kwargs):
         file_laser_flat_source = f"{folder_things}/{folder}/laser_flat"
         file_laser_flat_source_svg = f"{file_laser_flat_source}.svg"
         file_laser_flat_source_dxf = f"{file_laser_flat_source}.dxf"        
+        file_laser_flat_source_png = f"{file_laser_flat_source}.png"
+        file_working_yaml = f"{folder_things}/{folder}/working.yaml"
+
         if os.path.isfile(file_laser_flat_source_svg):
             #load json file
             if os.path.isfile(json_file):
@@ -62,12 +65,17 @@ def main(**kwargs):
                 height = data.get("height", "0")
                 file_3dpr_navigation_svg = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/laser.svg"
                 file_3dpr_navigation_dxf = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/laser.dxf"
-                
+                file_3dpr_navigation_png = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/laser.png"
+                file_3dpr_navigation_working_yaml = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/working.yaml"
+
+
                 if os.path.isfile(file_laser_flat_source_svg):
                     print(f"copying {file_laser_flat_source_svg} to {file_3dpr_navigation_svg}")
                     os.makedirs(os.path.dirname(file_3dpr_navigation_svg), exist_ok=True)
                     shutil.copy(file_laser_flat_source_svg, file_3dpr_navigation_svg)
                     shutil.copy(file_laser_flat_source_dxf, file_3dpr_navigation_dxf)
+                    shutil.copy(file_laser_flat_source_png, file_3dpr_navigation_png)
+                    shutil.copy(file_working_yaml, file_3dpr_navigation_working_yaml)
             pass    
 
 

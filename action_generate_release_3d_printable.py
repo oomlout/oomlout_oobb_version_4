@@ -39,6 +39,9 @@ def main(**kwargs):
                 
                 #3dpr copy
                 file_3dpr_destination = f"{folder_3dpr}/{folder}/3dpr.stl"
+                file_3dpr_source_png = f"{folder_things}/{folder}/3dpr.png"
+                file_working_yaml = f"{folder_things}/{folder}/working.yaml"
+
                 #make directory
                 os.makedirs(os.path.dirname(file_3dpr_destination), exist_ok=True)
                 #if source exists
@@ -51,10 +54,14 @@ def main(**kwargs):
                 width = data.get("width", "0")
                 height = data.get("height", "0")
                 file_3dpr_navigation = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/3dpr.stl"
+                file_3dpr_navigation_png = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/3dpr.png"
+                file_3dpr_navigation_working_yaml = f"{folder_navigation}/{type}/width_{width}/height_{height}/{folder}/working.yaml"
                 
                 if os.path.isfile(file_3dpr_source):
                     os.makedirs(os.path.dirname(file_3dpr_navigation), exist_ok=True)
-                    shutil.copy(file_3dpr_source, file_3dpr_navigation)
+                    shutil.copy(file_3dpr_source, file_3dpr_navigation)                    
+                    shutil.copy(file_3dpr_source_png, file_3dpr_navigation_png)
+                    shutil.copy(file_working_yaml, file_3dpr_navigation_working_yaml)
             pass    
 
 
