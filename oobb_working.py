@@ -94,6 +94,7 @@ def main(**kwargs):
     #filter = "oobb_plate_03_03_44_ex_ninety_degree"
     #filter = "oobb_plate_10_06_03"
     #filter = "oobb_plate_16_01_14_ex_ninety_degree"
+    filter = "kallax"
 
     # pulley
     #filter = "pulley"
@@ -151,7 +152,7 @@ def main(**kwargs):
     #filter = "tool_marker_sharpie_x6"
     #filter = "tape_measure"
     #filter = "tool_knife_utility_blade_disposal_can_olfa_dc_3"
-    filter = "tool_timer_80_mm_diameter_30_mm_depth_black"
+    #filter = "tool_timer_80_mm_diameter_30_mm_depth_black"
 
     #filter = ""
 
@@ -174,8 +175,8 @@ def main(**kwargs):
     #overwrite = False
     
     
-    #modes = ["laser", "3dpr", "true"]
-    modes = ["3dpr"]
+    modes = ["laser", "3dpr", "true"]
+    #modes = ["3dpr"]
     #modes = ["laser"]
     oobb_base.build_things(overwrite=overwrite, filter=filter, save_type=save_type, modes=modes)
 

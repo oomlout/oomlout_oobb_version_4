@@ -480,8 +480,13 @@ def get_plate(**kwargs):
         import sys
         import importlib
         importlib.reload(sys.modules[__name__])
-        function_to_call = getattr(sys.modules[__name__],function_name)
-        return function_to_call(**kwargs)
+        #try function with extra added
+        try:
+            function_to_call = getattr(sys.modules[__name__],function_name)
+            return function_to_call(**kwargs)
+        except:            
+            print(f"Function {function_name} not found using basic plate")
+            return get_plate_base(**kwargs)        
     else:
         return get_plate_base(**kwargs)
 

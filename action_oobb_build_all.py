@@ -13,6 +13,12 @@ oobb_base.dump("pickle")
 oobb_base.dump("folder")
 #oobb_base.dump("json")
 
+#make readmes
+if True:
+    command = f"python C:\gh\oomlout_oomp_utility_readme_generation\working.py"
+    import os
+    os.system(command)
+
 if not just_yaml_files:    
     oobb_base.build_things(overwrite=False, save_type="all")
     import action_generate_release_3d_printable

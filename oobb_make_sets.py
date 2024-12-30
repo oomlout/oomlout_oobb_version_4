@@ -354,13 +354,15 @@ def get_plates(size="oobb"):
 
     size = "oobb"
     plates.append({"type": "plate", "width": 28, "height": 20,
-                "thickness": 3, "size": size, "name": "oobb_pl_a3"})
+                "thickness": 3, "size": size, "extra": "paper_sheet_a3"})
     plates.append({"type": "plate", "width": 20, "height": 14,
-                "thickness": 3, "size": size, "name": "oobb_pl_a4"})
+                "thickness": 3, "size": size, "extra": "paper_sheet_a4"})
     plates.append({"type": "plate", "width": 14, "height": 10,
-                "thickness": 3, "size": size, "name": "oobb_pl_a5"})
+                "thickness": 3, "size": size, "extra": "paper_sheet_a5"})
     plates.append({"type": "plate", "width": 10, "height": 7,
-                "thickness": 3, "size": size, "name": "oobb_pl_a6"})
+                "thickness": 3, "size": size, "extra": "paper_sheet_a6"})
+    plates.append({"type": "plate", "width": 25, "height": 20,
+                "thickness": 3, "size": size, "extra": "furniture_shelf_ikea_kallax"})
 
     """
     size = "oobe"

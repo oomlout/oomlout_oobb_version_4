@@ -134,17 +134,124 @@ def get_default_thing(**kwargs):
     thing.update({"components_string": []})
     thing.update({"components_objects": []})
 
-    folder = f"{things_folder_absolute}\\{id}"
-    thing.update({"folder": folder})
+    
 
     ##make folder
     #if not os.path.exists(folder):
     #    os.makedirs(folder)
 
+
+    #adding oomp id
+    if True:
+        part = thing
+        size = part["type"] #different in oomp
+        
+        attributes = ["width","height","diameter","thickness"]
+        description_main = ""
+        for attribute in attributes:
+            test_value = part.get(attribute, "")
+            #if it's a list
+            if isinstance(test_value, list):
+                attribute_new = ""
+                for value in test_value:
+                    attribute_new += f"{value}_"
+                test_value = attribute_new[:-1]
+            if test_value != "":
+                if description_main != "":
+                    description_main += "_"
+                attribute_name = attribute
+                if attribute == "thickness":
+                    attribute_name = "mm_depth"
+                description_main += f"{test_value}_{attribute_name}"
+        
+        #remove anything after "ex_" in the description
+        string_extra = ""
+        tests = ["bearing","shaft","extra","bearing_name","radius_name","depth","oring_type"]
+        for test in tests:
+            if test in part:
+                deet = part.get(test, "")
+                #if it's a list
+                if isinstance(deet, list):
+                    attribute_new = ""
+                    for value in deet:
+                        attribute_new += f"{value}_"
+                    deet = attribute_new[:-1]
+                
+                if deet != "":
+                    if string_extra != "":
+                        string_extra += "_"
+                    string_extra += f"{deet}_{test}"        
+        description_extra = string_extra
+
+        part_details = {}
+        part_details["classification"] = "oobb"
+        part_details["type"] = "part"
+        part_details["size"] = size
+        part_details["color"] = ""
+        
+        part_details["description_main"] = description_main
+        part_details["description_extra"] = description_extra
+        part_details["manufacturer"] = ""
+        part_details["part_number"] = ""
+        part_details["short_name"] = ""
+
+        thing.update(part_details)
+        
+        
+        id_parts = ["classification","type","size","color","description_main","description_extra","manufacturer","part_number"]
+        id = ""
+        for id_part in id_parts:
+            value = part_details.get(id_part, "")
+            if value != "":
+                id += f"{part[id_part]}_"
+        id = id[:-1]
+        id = id.replace(".0_","_")
+        id = id.replace(".","d")
+        part_details["id"] = id 
+        thing.update(part_details)
+        
+        name = id.replace("_"," ").title()
+        name = name.replace("Mm","mm")
+        thing.update({"name": name})
+
+        short_name = name
+        short_name = short_name.replace("Oobb Part ","")
+        short_name = short_name.replace(" Width ","x")
+        short_name = short_name.replace(" Height ","x")
+        short_name = short_name.replace(" Diameter ","x")
+        short_name = short_name.replace(" Thickness ","x")
+        short_name = short_name.replace("mm Depth "," ")
+        short_name = short_name.replace("mm Depth","")
+        short_name = short_name.replace("  "," ")
+        short_name = short_name.replace("  "," ")
+        #max length 20 characters
+        length_max = 40
+        if len(short_name) > length_max: 
+            #split at space
+            short_name = short_name.split(" ")
+            short_name_working = ""
+            for word in short_name:
+                if len(short_name_working) + len(word) < length_max:
+                    short_name_working += word + " "
+                else:
+                    break
+            short_name_working = short_name_working.strip()
+            short_name = short_name_working
+            
+        thing.update({"name_short": short_name})
+
+    #deciding folder
+    if True:
+        folder = f"{things_folder_absolute}\\{id}"
+        thing.update({"folder": folder})
+        if not os.path.exists(folder):
+            os.makedirs(folder)
+
     #dump thing to working.yaml
-    #import yaml
-    #with open(f'{folder}/working.yaml', 'w') as outfile:
-    #    yaml.dump(thing, outfile, indent=4)
+    import yaml    
+    with open(f'{folder}/working.yaml', 'w') as outfile:
+        yaml.dump(thing, outfile, indent=4)
+    
 
     return thing
 
