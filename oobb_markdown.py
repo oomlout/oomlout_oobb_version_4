@@ -3,7 +3,7 @@ import json
 
 def make_markdown():
     # Set the base directory
-    base_dir = "things"
+    base_dir = "parts"
 
     # Create a dictionary to store the categories and their corresponding directories
     categories = {}

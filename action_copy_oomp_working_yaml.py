@@ -4,7 +4,7 @@ import shutil
 
 def main(**kwargs):
     #get a list of directories in things folder
-    things_dir = "things"
+    things_dir = "parts"
     things_list = glob.glob(things_dir + "/*/")
     for thing in things_list:
         #get just the top directory name

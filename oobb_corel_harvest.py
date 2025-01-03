@@ -6,7 +6,7 @@ import os
 import shutil
 
 def main():
-    folder_things = "things"
+    folder_things = "parts"
 
     filter =""
     overwrite = False
@@ -45,7 +45,7 @@ def main():
     
 def make_svgs():
     #go through all folders in things
-    folder_things = "things"
+    folder_things = "parts"
     for folder in os.listdir(folder_things):
         files = ["outline_neg","outline_pos","indent",]
         for file in files:
@@ -64,7 +64,7 @@ import subprocess
 
 def make_corel(file, format, folder):
     #open file and export as format
-    folder_things = "things"
+    folder_things = "parts"
     print(f"    making {folder}/{file}.{format}")
     corel_app = r'CorelDRW.exe'
     #open file with corel draw 

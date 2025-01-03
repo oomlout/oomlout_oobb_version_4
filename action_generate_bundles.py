@@ -22,7 +22,7 @@ def main(**kwargs):
     
 
     pass
-    folder_things = "things"
+    folder_things = "parts"
     details = []    
     #smd
     details.append({    "name":"oomlout_oobb_bundle_smd_magazine", "matches": ["smd"],

@@ -1,7 +1,7 @@
 import oomB
 
 def dxf_copy_to_laser():
-    directory_base = fr"things"
+    directory_base = fr"parts"
     directory_laser= fr'C:\GH\oomlout_oobb_version_4\useful_files\oobb_laser'
     oomB.file_copy_search(directory_base,"laser-flat.dxf",output_dir=directory_laser)
 
