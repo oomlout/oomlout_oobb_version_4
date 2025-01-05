@@ -195,6 +195,13 @@ def get_default_thing(**kwargs):
         part_details["part_number"] = ""
         part_details["short_name"] = ""
 
+        part_details["link_redirect"] = f"https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/parts/{part['id']}"
+        navigate_link = f"{part_details["classification"]}/{part_details["type"]}/{part_details["size"]}/{part_details["description_main"]}"
+        if part_details["description_extra"] != "":
+            navigate_link += f"/{part_details["description_extra"]}"
+        part_details["link_main"] = f"https://github.com/oomlout/oomlout_oobb_version_4_generated_parts/tree/main/navigation_oomp/{navigate_link}/part"
+
+
         thing.update(part_details)
         
         
