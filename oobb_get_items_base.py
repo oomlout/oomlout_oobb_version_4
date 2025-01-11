@@ -1597,6 +1597,30 @@ def get_oobb_nut(**kwargs):
         if "bottom" in clearance:
             depth += 50
             p2["pos"][2] -= 100
+        #side clearance
+        if True:
+            p4 = copy.deepcopy(p2)
+            p4["shape"] = "cube"
+            hei = r*2 + extra_clearance * 0.866
+            wid = 20
+            dep = depth + extra_clearance          
+            p4.pop("r", "")
+            p4.pop("radius", "")
+            p4.pop("radius_name", "")
+            p4["size"] = [wid, hei, dep]
+            pos1 = copy.deepcopy(p2["pos"])
+            pos1[0] += -wid/2
+            pos1[1] += -hei/2
+            if "left" in clearance:                
+                pos1[0] += wid/2
+                p4["pos"] = pos1
+                return_value.append(oobb_base.oobb_easy(**p4))
+            if "right" in clearance:                
+                pos1[0] += -wid/2
+                p4["pos"] = pos1
+                return_value.append(oobb_base.oobb_easy(**p4))
+            
+            
 
 
         p2["height"] = depth

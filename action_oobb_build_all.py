@@ -15,7 +15,7 @@ oobb_base.dump("folder")
 
 #make readmes
 if True:
-    command = f"python C:\gh\oomlout_oomp_utility_readme_generation\working.py"
+    command = f"python C:\gh\oomlout_oomp_utility_readme_generation\\working.py"
     import os
     os.system(command)
 
