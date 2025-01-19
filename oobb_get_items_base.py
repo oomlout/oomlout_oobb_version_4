@@ -1792,7 +1792,8 @@ def get_oobb_screw(**kwargs):
         modes = [modes] 
 
     
-    for mode in modes:        
+    for mode in modes: 
+        depth_clearance_top = 250       
         pos_for_overhang = [0, 0, 0]
         pos_base = [0, 0, 0]
         # screw top      
@@ -1809,7 +1810,7 @@ def get_oobb_screw(**kwargs):
 
             #needs to happen after zz is sorted
             if "top" in clearance and mode == "3dpr":            
-                depth_head = depth_head + 50            
+                depth_head = depth_head + depth_clearance_top            
 
             pos1 = copy.deepcopy(pos_for_overhang)
             # screw top
@@ -1846,7 +1847,7 @@ def get_oobb_screw(**kwargs):
             clearance = kwargs.get("clearance", "")
             if "top" in clearance:      
                       
-                depth_head = 50  
+                depth_head = depth_clearance_top  
                 # screw top
                 p3 = copy.deepcopy(kwargs)        
                 p3["shape"] = "cylinder"                
@@ -1904,8 +1905,9 @@ def get_oobb_screw(**kwargs):
             p3.pop("extra", "")
             if "bottom" in clearance:
                 h_nut = oobb_base.gv(f'nut_depth_{radius_name}', mode)
-                p3["depth"] = 50 
-                p3["pos"][2] = p3["pos"][2] + h_nut
+                dep = depth_clearance_top
+                p3["depth"] = dep
+                p3["pos"][2] = p3["pos"][2] + h_nut + dep
                 p3["zz"] = "top"
             else:
                 p3.pop("depth", None)

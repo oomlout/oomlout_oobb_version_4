@@ -1,5 +1,4 @@
 ##### oobb imports
-from oobb_base import *
 import oobb_variables
 
 # variable definition
