@@ -329,8 +329,8 @@ def initialize_variables():
     vl["screw_socket_cap_height_m3"] = [3, 3, 3.2]
     
     vl["screw_radius_m3_screw_wood"] = m["3"]/2, m["3"]/2, m["3_3dpr"]/2
-    vl["screw_countersunk_radius_m3_screw_wood"] = [7.85/2, 7.85/2, 8.75/2]
-    vl["screw_countersunk_height_m3_screw_wood"] = [3.5, 3.5, 3.7]
+    vl["screw_countersunk_radius_m3_screw_wood"] = [7/2, 7/2, 7.5/2]
+    vl["screw_countersunk_height_m3_screw_wood"] = [2.5, 2.5, 3]
     vl["screw_countersunk_depth_m3_screw_wood"] = vl["screw_countersunk_height_m3_screw_wood"]
     
     vl["screw_radius_m3d5_screw_wood"] = m["3d5"]/2, m["3d5"]/2, m["3d5_3dpr"]/2

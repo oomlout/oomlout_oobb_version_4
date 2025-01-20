@@ -1907,8 +1907,9 @@ def get_oobb_screw(**kwargs):
                 h_nut = oobb_base.gv(f'nut_depth_{radius_name}', mode)
                 dep = depth_clearance_top
                 p3["depth"] = dep
-                p3["pos"][2] = p3["pos"][2] + h_nut + dep
+                p3["pos"][2] = p3["pos"][2] + h_nut #- dep
                 p3["zz"] = "top"
+                p3.pop("clearance", "")
             else:
                 p3.pop("depth", None)
             #dealing with rot_Z
