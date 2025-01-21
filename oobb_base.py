@@ -146,7 +146,7 @@ def get_default_thing(**kwargs):
         part = thing
         size = part["type"] #different in oomp
         
-        attributes = ["width","height","diameter","thickness"]
+        attributes = ["width","height","diameter","thickness","extra"]
         description_main = ""
         for attribute in attributes:
             test_value = part.get(attribute, "")
