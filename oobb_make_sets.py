@@ -688,6 +688,7 @@ def get_tool_holders(size="oobb"):
     
 
     tools.append(["tool_measure_tape_measure_5000_mm_length_stanley_1_30_696",7,3,42+extra_thick])
+    tools.append(["tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30",7,6,16+extra_thick])
 
     tools.append(["tool_timer_80_mm_diameter_30_mm_depth_black",7,3,32+extra_thick])
 

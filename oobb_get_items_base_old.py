@@ -2741,6 +2741,16 @@ def get_oobb_tool_marker_sharpie(**kwargs):
         
     return return_value
 
+def get_oobb_tool_measure_caliper_digital_150_mm_length_mitutoyo_mit500_196_30(**kwargs):
+    kwargs["w"] = 78
+    kwargs["h"] = 78
+    kwargs["depth"] = 16
+    pos = kwargs.get("pos", [0, 0, 0])
+    pos[0] += 0
+    pos[1] += -10
+    pos[2] += 0
+    return get_oobb_tool_wrench(**kwargs)
+
 def get_oobb_tool_measure_tape_measure_5000_mm_length_stanley_1_30_696(**kwargs):
     kwargs["w"] = 78
     kwargs["h"] = 74

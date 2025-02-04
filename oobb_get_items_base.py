@@ -1603,7 +1603,9 @@ def get_oobb_nut(**kwargs):
             p4["shape"] = "cube"
             hei = r*2 + extra_clearance * 0.866
             wid = 20
-            dep = depth + extra_clearance          
+            dep = depth
+            if extra_clearance > 0:
+                dep += extra_clearance          
             p4.pop("r", "")
             p4.pop("radius", "")
             p4.pop("radius_name", "")

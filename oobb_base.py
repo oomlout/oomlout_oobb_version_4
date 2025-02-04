@@ -33,7 +33,7 @@ things_folder_absolute = "C:\\gh\\oomlout_oobb_version_4_generated_parts\\parts"
 def get_default_thing(**kwargs):
 
     thing = {}
-
+    extra = kwargs.get("extra", "")
     typ = kwargs["type"]
     type_string = typ.replace("_"," ")
     width = kwargs.get("width", "0")
@@ -146,7 +146,7 @@ def get_default_thing(**kwargs):
         part = thing
         size = part["type"] #different in oomp
         
-        attributes = ["width","height","diameter","thickness","extra"]
+        attributes = ["width","height","diameter","thickness"]
         description_main = ""
         for attribute in attributes:
             test_value = part.get(attribute, "")
@@ -259,6 +259,8 @@ def get_default_thing(**kwargs):
     with open(f'{folder}/working.yaml', 'w') as outfile:
         yaml.dump(thing, outfile, indent=4)
     
+    if "caliper_digital" in str(extra):
+        pass
 
     return thing
 
@@ -270,7 +272,7 @@ def get_comment(comment, type="p", **kwargs):
     m = kwargs.get("m", "*")
     pos = kwargs.get("pos", [0,0,0])
     pos = copy.deepcopy(pos)
-    line_length = kwargs.get("line_length", 50)
+    line_length = kwargs.get("line_length", 30)
     comment_shift_line = kwargs.get("comment_shift_line", 0)
     shift_line = 7
     pos[1] = pos[1] + shift_line + comment_shift_line
