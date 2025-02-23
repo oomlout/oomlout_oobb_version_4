@@ -184,7 +184,7 @@ def get_oobb_cube_new(**kwargs):
     return_value_2["typetype"]  = typ
     pos1 = copy.deepcopy(pos)
     #pos1[0] += 50
-    return_value_2["pos"] = pos1
+    return_value_2["pos"] = pos_original
     return_value_2["rot"] = rot_original
     return_value_2["objects"] = return_value
     if rot_shift_original != None:
