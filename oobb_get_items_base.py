@@ -2031,6 +2031,111 @@ def get_oobb_slot(**kwargs):
 
     return return_value_2
 
+#tube
+def get_oobb_tube(**kwargs):
+    
+    # setting up for rotation object
+    typ = kwargs.get("type", "p")
+    kwargs["type"] = "positive" #needs to be positive for the difference to work
+    rot_original = get_rot(**kwargs)   
+    kwargs.pop("rot", None)
+    kwargs.pop("rot_x", None)
+    kwargs.pop("rot_y", None)
+    kwargs.pop("rot_z", None)
+
+    # storing pos and popping it out to add it in rotation element     
+    pos_original = copy.deepcopy(copy.deepcopy(kwargs.get("pos", [0, 0, 0])))
+    pos_original_original = copy.deepcopy(pos_original)
+    kwargs.pop("pos", None)
+    
+    m_original = kwargs.get("m", "")
+    kwargs.pop("m", None)
+
+    r = kwargs.get("r", kwargs.get("r", ""))
+    if r == "":
+        r = kwargs.get("radius", "")
+        #update r
+        kwargs["r"] = r
+        # pop radius
+        kwargs.pop("radius", "")
+
+
+    if kwargs["type"] == "p" or kwargs["type"] == "positive":
+        kwargs["type"] = "negative"
+    else:
+        kwargs["type"] = "positive"
+    kwargs["wall_thickness"] = kwargs.get("wall_thickness", 0.5)
+    modes = kwargs.get("mode", ["laser", "3dpr", "true"])
+    if modes == "all":
+        modes = ["laser", "3dpr", "true"]
+    if type(modes) == str:
+        modes = [modes]
+
+    z = kwargs.get("z", 0)
+    if z == 0:
+        pos = kwargs.get("pos", [0, 0, 0])
+        pos = copy.deepcopy(pos)
+    return_value = []
+    try:
+        depth = kwargs["depth"]
+    except:
+        depth = 250
+        try:
+            kwargs["pos"][2] = pos[2] - depth / 2
+        except:
+            kwargs["z"] = z - depth / 2
+
+    try:
+        radius_name = kwargs["radius_name"]
+        for mode in modes:
+            kwargs["shape"] = "cylinder"
+            try:
+                kwargs.update({"r": ob.gv("hole_radius_"+radius_name, mode)})
+            except:
+                r = ob.gv(radius_name, mode)
+                kwargs.update({"r": r})                
+            kwargs.update({"h": depth})
+            kwargs.update({"inclusion": mode})
+            return_value.append(opsc.opsc_easy(**kwargs))
+            #tube innard
+            p2 = copy.deepcopy(kwargs)
+            if p2["type"] == "p" or p2["type"] == "positive":
+                p2["type"] = "negative"
+            else:
+                p2["type"] = "positive"
+            p2["r"] = p2["r"] + p2["wall_thickness"]
+            return_value.append(opsc.opsc_easy(**p2))
+
+    except:
+        for mode in modes:
+            r = kwargs.get("r", kwargs.get("radius", 0))
+            kwargs["shape"] = "cylinder"
+            kwargs.update({"r": r})
+            kwargs.update({"h": depth})
+            kwargs.update({"inclusion": mode})
+            return_value.append(opsc.opsc_easy(**kwargs))
+            #tube innard
+            p2 = copy.deepcopy(kwargs)
+            if p2["type"] == "p" or p2["type"] == "positive":
+                p2["type"] = "negative"
+            else:
+                p2["type"] = "positive"
+            p2["r"] = p2["r"] + p2["wall_thickness"] 
+            return_value.append(opsc.opsc_easy(**p2))
+    
+    # packaging as a rotation object
+    return_value_2 = {}
+    return_value_2["type"]  = "rotation"
+    return_value_2["typetype"]  = typ
+    return_value_2["pos"] = pos_original
+    return_value_2["rot"] = rot_original
+    return_value_2["objects"] = return_value
+    return_value_2["m"] = m_original
+    return_value_2 = [return_value_2]
+
+
+    return return_value_2
+
 # wire
 def get_oobb_wire_basic(**kwargs):
     kwargs["num_pins"] = 3

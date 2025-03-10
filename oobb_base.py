@@ -163,6 +163,7 @@ def get_default_thing(**kwargs):
                 if attribute == "thickness":
                     attribute_name = "mm_depth"
                 description_main += f"{test_value}_{attribute_name}"
+                description_main = description_main.replace(".","_")
         
         #remove anything after "ex_" in the description
         string_extra = ""
