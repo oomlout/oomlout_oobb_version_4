@@ -139,6 +139,7 @@ def initialize_variables():
     vl["hole_radius_m3_screw_wood"] = [m["3_screw_wood"]/2, m["3_screw_wood"]/2, m["3_screw_wood_3dpr"]/2]
     vl["hole_radius_m3d5"] = [m["3d5"]/2, m["3d5"]/2, m["3d5_3dpr"]/2]
     vl["hole_radius_m3d5_screw_wood"] = [m["3d5_screw_wood"]/2, m["3d5_screw_wood"]/2, m["3d5_screw_wood_3dpr"]/2]
+    vl["hole_radius_m3_5_screw_wood"] = [m["3d5_screw_wood"]/2, m["3d5_screw_wood"]/2, m["3d5_screw_wood_3dpr"]/2]
     vl["hole_radius_m3_5"] = [m["3d5"]/2, m["3d5"]/2, m["3d5_3dpr"]/2]
     vl["hole_radius_m3_sort"] = [m["3"]/2+0.5, m["3"]/2+0.5, m["3_3dpr"]/2+0.5]
     vl["hole_radius_m4"] = [m["4"]/2, m["4"]/2, m["4_3dpr"]/2]
@@ -175,6 +176,8 @@ def initialize_variables():
 
     vl["nut_radius_m2d5"] = [5*1.154/2, 5*1.154/2, 5.4 * 1.154/2]
     vl["nut_depth_m2d5"] = [1.9, 1.9, 2.1]
+    vl["nut_radius_m2_5"] = vl["nut_radius_m2d5"]
+    vl["nut_depth_m2_5"] = vl["nut_depth_m2d5"]
 
     vl["nut_radius_m3"] = [5.5*1.154/2, 5.5*1.154/2, 6 * 1.154/2]
     vl["standoff_radius_m3"] = [5.8*1.154/2, 5.8*1.154/2, 6.3 * 1.154/2]
@@ -340,6 +343,13 @@ def initialize_variables():
     vl["screw_countersunk_radius_m3d5_screw_wood"] = [7.8/2, 7.8/2, 9/2]
     vl["screw_countersunk_height_m3d5_screw_wood"] = [4, 4, 4.2]
     vl["screw_countersunk_depth_m3d5_screw_wood"] = vl["screw_countersunk_height_m3d5_screw_wood"]
+
+    vl["screw_radius_m3_5_screw_wood"] = m["3d5"]/2, m["3d5"]/2, m["3d5_3dpr"]/2
+    vl["screw_countersunk_radius_m3_5_screw_wood"] = [7.8/2, 7.8/2, 9/2]
+    vl["screw_countersunk_height_m3_5_screw_wood"] = [4, 4, 4.2]
+    vl["screw_countersunk_depth_m3_5_screw_wood"] = vl["screw_countersunk_height_m3d5_screw_wood"]
+
+
 
     vl["screw_radius_m4_screw_wood"] = m["4"]/2, m["4"]/2, m["4_3dpr"]/2
     vl["screw_countersunk_radius_m4_screw_wood"] = [9.8/2, 10.8/2, 10.8/2]
