@@ -1541,6 +1541,7 @@ def get_oobb_nut(**kwargs):
     clearance = kwargs.get("clearance", "")
     hole = kwargs.get("hole", False) #whether or not to include a hole
     extra_clearance = kwargs.get("extra_clearance", 0)
+    clearance_tightness = kwargs.get("clearance_tightness", 0) #tight or loose
 
     # setting up for rotation object
     typ = kwargs.get("type", "p")
@@ -1577,6 +1578,7 @@ def get_oobb_nut(**kwargs):
         #    extra_str = f"_{extra}"
         
         r = oobb_base.gv(f"nut_radius_{l_string}{radius_name}{extra_str}", mode)
+        r = r + clearance_tightness
         p2.update({"r": r})
         
         #getting depth of nut
