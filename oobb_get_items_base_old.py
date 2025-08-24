@@ -275,7 +275,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     if "top" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
-                     yy + -(height*spacing/2) + spacing/2, 0]
+                     yy + -(height*spacing/2) + spacing/2, z]
         # pos_start = [0,0,0]
         for w in range(0, int(width)):
             for h in range(0, int(height)):
@@ -287,7 +287,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     if "bottom" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
-                     yy + -(height*spacing/2) + spacing/2, 0]
+                     yy + -(height*spacing/2) + spacing/2, z]
         # pos_start = [0,0,0]
         for w in range(0, int(width)):
             for h in range(0, int(height)):
@@ -299,7 +299,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     if "right" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
-                     yy + -(height*spacing/2) + spacing/2, 0]
+                     yy + -(height*spacing/2) + spacing/2, z]
         # pos_start = [0,0,0]
         for w in range(0, int(width)):
             for h in range(0, int(height)):
@@ -311,7 +311,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
     if "left" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
-                     yy + -(height*spacing/2) + spacing/2, 0]
+                     yy + -(height*spacing/2) + spacing/2, z]
         # pos_start = [0,0,0]
         for w in range(0, int(width)):
             for h in range(0, int(height)):
