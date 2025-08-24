@@ -283,7 +283,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
                     objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[
-                                   x, y, 0], radius_name=radius_name, m=m,depth=depth))
+                                   x, y, z], radius_name=radius_name, m=m,depth=depth))
     if "bottom" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
@@ -295,7 +295,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
                     objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[
-                                   x, y, 0], radius_name=radius_name, m=m,depth=depth))
+                                   x, y, z], radius_name=radius_name, m=m,depth=depth))
     if "right" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
@@ -307,7 +307,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
                     objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[
-                                   x, y, 0], radius_name=radius_name, m=m,depth=depth))
+                                   x, y, z], radius_name=radius_name, m=m,depth=depth))
     if "left" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
@@ -319,7 +319,7 @@ def get_oobb_holes(holes=["all"], **kwargs):
                     x = pos_start[0] + w*spacing
                     y = pos_start[1] + h*spacing
                     objects.extend(ob.oobb_easy(type="negative", shape="oobb_hole", pos=[
-                                   x, y, 0], radius_name=radius_name, m=m,depth=depth))
+                                   x, y, z], radius_name=radius_name, m=m,depth=depth))
     if "bottom_bottom" in holes:
         # find the start point needs to be half the width_mm plus half osp
         pos_start = [xx + -(width*spacing/2) + spacing/2,
