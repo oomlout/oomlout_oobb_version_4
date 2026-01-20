@@ -361,7 +361,8 @@ def get_oobb_rounded_rectangle_hollow(**kwargs):
 def get_oobb_rounded_rectangle_rounded(**kwargs):
     extra = kwargs.get("extra", "")
     pos = kwargs.get("pos", [0, 0, 0])
-    rot = kwargs.get("rot",[0,0,0])
+    #rot = kwargs.get("rot",[0,0,0])
+    rot = [0,0,0]
     radius = kwargs.get("radius", 5)
     radius_rounded = kwargs.get("radius_rounded", 2.5)
     size = kwargs.get("size", [20, 10, 5])
